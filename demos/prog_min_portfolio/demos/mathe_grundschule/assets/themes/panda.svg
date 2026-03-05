@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bamboo" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d9f2d9"/>
+      <stop offset="60%" stop-color="#c2e7c2"/>
+      <stop offset="100%" stop-color="#b4dfb2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#bamboo)"/>
+  <rect x="140" y="0" width="16" height="900" fill="#7cbf6a" opacity="0.7"/>
+  <rect x="200" y="0" width="14" height="900" fill="#6ba85b" opacity="0.7"/>
+  <rect x="1040" y="0" width="16" height="900" fill="#7cbf6a" opacity="0.7"/>
+  <rect x="1100" y="0" width="12" height="900" fill="#6ba85b" opacity="0.7"/>
+  <ellipse cx="720" cy="760" rx="620" ry="180" fill="#c3e3c3" opacity="0.9"/>
+  <ellipse cx="760" cy="800" rx="480" ry="140" fill="#b0d7b0" opacity="0.9"/>
+  <g transform="translate(1020 380) scale(0.8)">
+    <circle cx="120" cy="180" r="80" fill="#f7fafc" stroke="#1f2937" stroke-width="10"/>
+    <ellipse cx="80" cy="140" rx="28" ry="32" fill="#1f2937"/>
+    <ellipse cx="160" cy="140" rx="28" ry="32" fill="#1f2937"/>
+    <circle cx="90" cy="160" r="14" fill="#f7fafc"/>
+    <circle cx="150" cy="160" r="14" fill="#f7fafc"/>
+    <path d="M90 210 q30 22 60 0" stroke="#1f2937" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <ellipse cx="120" cy="230" rx="22" ry="16" fill="#1f2937"/>
+  </g>
+</svg>

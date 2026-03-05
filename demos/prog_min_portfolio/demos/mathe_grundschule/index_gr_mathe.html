@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mathe – Start</title>
+  <link rel="stylesheet" href="core/styles.css">
+  <style>
+    .mathe-hero { padding: 14px; border-radius: 14px; background: rgba(255,255,255,0.9); box-shadow: 0 10px 26px rgba(0,0,0,0.08); margin-bottom: 16px; display: grid; gap: 10px; }
+    .quick-links { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .quick-links a, .quick-links button { padding: 10px 14px; border-radius: 999px; border: 1px solid #d9e2f5; background: #e8f0ff; color: #0b3a6f; font-weight: 700; text-decoration: none; cursor: pointer; }
+    .quick-links a:hover, .quick-links button:hover { background: #d7e6ff; }
+    .section-title { margin: 0 0 8px; }
+    .avatar-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+    .avatar-card { border: 1px solid #d9e2f5; border-radius: 12px; padding: 8px; background: #f8fafc; text-align: center; }
+    .avatar-card img { width: 100%; border-radius: 10px; box-shadow: 0 6px 12px rgba(0,0,0,0.12); }
+    .avatar-card small { display: block; margin-top: 6px; font-weight: 700; color: #0f172a; }
+  </style>
+  <script src="core/scripts.js" defer></script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <div id="welcome"></div>
+
+    <section class="mathe-hero">
+      <h2 class="section-title">Mathe-Start</h2>
+      <div class="quick-links">
+        <a id="home-link" href="../index.html">Home</a>
+        <a href="levels/level0.html">Aufgaben</a>
+        <button id="btn-avatar" type="button">Avatar wählen</button>
+        <button id="btn-theme" type="button">Hintergrund wählen</button>
+      </div>
+      <div id="theme-preview" class="theme-preview" aria-hidden="true">
+        <span class="theme-label">Aktueller Hintergrund</span>
+      </div>
+    </section>
+
+    <section>
+      <h3>Avatar-Auswahl (Übersicht)</h3>
+      <div class="avatar-list">
+        <div class="avatar-card">
+          <img src="assets/avatars/pinguin.jpg" alt="Pinguin">
+          <small>Pinguin · Hintergrund: Arctic</small>
+        </div>
+        <div class="avatar-card">
+          <img src="assets/avatars/panda.jpg" alt="Panda">
+          <small>Panda · Hintergrund: Bamboo</small>
+        </div>
+        <div class="avatar-card">
+          <img src="assets/avatars/frosch.jpg" alt="Frosch">
+          <small>Frosch · Hintergrund: Teich</small>
+        </div>
+        <div class="avatar-card">
+          <img src="assets/avatars/eichhoernchen.jpg" alt="Eichhörnchen">
+          <small>Eichhörnchen · Hintergrund: Wald</small>
+        </div>
+        <div class="avatar-card">
+          <img src="assets/avatars/tigr.jpg" alt="Tiger">
+          <small>Tiger · Hintergrund: Savanne</small>
+        </div>
+      </div>
+    </section>
+
+    <h3>Level-Karte</h3>
+    <div class="levels"></div>
+  </main>
+  <div id="footer-placeholder"></div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const preview = document.getElementById('theme-preview');
+      const refreshPreview = () => {
+        const theme = getTheme() || themeForAvatar(getAvatar() || AVATARS[0]);
+        if (preview) preview.style.backgroundImage = `url(${theme})`;
+      };
+      const avatarBtn = document.getElementById('btn-avatar');
+      if (avatarBtn) avatarBtn.addEventListener('click', openAvatarModal);
+      const themeBtn = document.getElementById('btn-theme');
+      if (themeBtn) themeBtn.addEventListener('click', () => {
+        openBackgroundModal();
+      });
+      refreshPreview();
+      document.addEventListener('avatar-theme-updated', refreshPreview);
+    });
+  </script>
+  <script src="../../assets/js/header-widgets.js" defer></script>
+</body>
+</html>

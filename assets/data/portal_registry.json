@@ -73,6 +73,12 @@
       "type": "page"
     },
     {
+      "title": "Portfolio",
+      "url": "demos/prog_min_portfolio/index.html",
+      "group": "Sonstiges",
+      "type": "page"
+    },
+    {
       "title": "Brüche · Schokolade (Visuell)",
       "url": "pages/faecher/mathematik-realschule/apps/brueche-schokolade/index.html",
       "group": "Fächer",
