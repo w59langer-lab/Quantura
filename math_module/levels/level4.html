@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 4 – Division ohne Rest</title>
+  <link rel="stylesheet" href="../core/styles.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <div id="welcome"></div>
+    <section class="level-info-card">
+      <h2>Level 4 – Division ohne Rest</h2>
+      <p>Einfache Divisionen mit ganzzahligem Ergebnis</p>
+      <label class="time-mode-toggle">
+        <input type="checkbox" id="timeModeToggle">
+        Zeitmodus (60 Sek. pro Aufgabe)
+      </label>
+      <p class="time-mode-note">Bei Zeitablauf zählt ein Versuch als falsch.</p>
+      <div id="timerBox" class="timer-box" hidden>
+        <span class="hourglass" aria-hidden="true">⏳</span>
+        <span id="timerText">01:00</span>
+      </div>
+    </section>
+
+    <div id="tasks"></div>
+    <p id="loadError" class="load-error" hidden>Aufgaben konnten nicht geladen werden.</p>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../core/scripts.js" defer></script>
+</body>
+</html>

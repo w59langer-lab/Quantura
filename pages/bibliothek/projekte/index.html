@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bibliothek – Projekte</title>
+
+  <link rel="stylesheet" href="../../../core/assets/style.css" />
+  <script defer src="../../../core/js/core_init.js"></script>
+
+  <style>
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 16px; }
+    .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .cardx { border: 1px solid rgba(255,255,255,.15); border-radius: 14px; padding: 12px 14px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-top: 12px; }
+    .muted { opacity: .75; font-size: .95em; }
+    input { padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,.15); background: transparent; color: inherit; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .tag { padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,.15); cursor: pointer; user-select: none; }
+    .tag.active { outline: 2px solid rgba(255,255,255,.25); }
+    a.btnx { display: inline-block; padding: 8px 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,.15); text-decoration: none; }
+  </style>
+</head>
+
+<body>
+  <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+
+  <main class="wrap">
+    <h1>Projekte</h1>
+    <p class="muted">Herzensprojekte und wichtige Projekte – zentral aus der Datenbank.</p>
+
+    <div class="row cardx">
+      <input id="q" type="search" placeholder="Suchen: Titel, Tag, Notiz…" style="flex:1; min-width: 220px;">
+      <a class="btnx" href="../index.html">← Bibliothek</a>
+    </div>
+
+    <div id="tagbar" class="tags"></div>
+    <div id="list" class="grid"></div>
+  </main>
+
+  <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+
+  <script>
+    const DB_URL = "../../../datenbanken/bibliothek/projekte.json";
+
+    const elQ = document.getElementById("q");
+    const elList = document.getElementById("list");
+    const elTagbar = document.getElementById("tagbar");
+
+    let items = [];
+    let activeTag = "";
+
+    function norm(s){ return (s||"").toString().toLowerCase(); }
+
+    function buildTagbar() {
+      const tags = new Map();
+      items.forEach(it => (it.tags||[]).forEach(t => tags.set(t, (tags.get(t)||0)+1)));
+
+      elTagbar.innerHTML = "";
+      if (tags.size === 0) return;
+
+      const all = document.createElement("div");
+      all.className = "tag" + (activeTag==="" ? " active":"");
+      all.textContent = "Alle Tags";
+      all.onclick = () => { activeTag=""; render(); buildTagbar(); };
+      elTagbar.appendChild(all);
+
+      [...tags.keys()].sort((a,b)=>a.localeCompare(b,'de')).forEach(t => {
+        const d = document.createElement("div");
+        d.className = "tag" + (activeTag===t ? " active":"");
+        d.textContent = t;
+        d.onclick = () => { activeTag = (activeTag===t ? "" : t); render(); buildTagbar(); };
+        elTagbar.appendChild(d);
+      });
+    }
+
+    function render() {
+      const q = norm(elQ.value);
+
+      const filtered = items.filter(it => {
+        if (activeTag && !(it.tags||[]).includes(activeTag)) return false;
+
+        const hay = [
+          it.title, it.subtitle, it.path, it.note,
+          ...(it.tags||[])
+        ].map(norm).join(" ");
+        return hay.includes(q);
+      });
+
+      elList.innerHTML = "";
+      filtered.forEach(it => {
+        const card = document.createElement("div");
+        card.className = "cardx";
+
+        const h = document.createElement("div");
+        h.innerHTML = `<strong>${it.title || "Ohne Titel"}</strong>` + (it.subtitle ? ` <span class="muted">— ${it.subtitle}</span>` : "");
+        card.appendChild(h);
+
+        if (it.note) {
+          const p = document.createElement("div");
+          p.className = "muted";
+          p.style.marginTop = "6px";
+          p.textContent = it.note;
+          card.appendChild(p);
+        }
+
+        const a = document.createElement("a");
+        a.href = "../../../" + (it.path || "");
+        a.className = "btnx";
+        a.style.marginTop = "10px";
+        a.textContent = "Öffnen";
+        card.appendChild(a);
+
+        const tags = document.createElement("div");
+        tags.className = "tags";
+        (it.tags||[]).forEach(tag => {
+          const b = document.createElement("div");
+          b.className = "tag";
+          b.textContent = tag;
+          b.onclick = () => { activeTag = tag; render(); buildTagbar(); };
+          tags.appendChild(b);
+        });
+        card.appendChild(tags);
+
+        elList.appendChild(card);
+      });
+
+      if (filtered.length === 0) {
+        elList.innerHTML = `<div class="muted">Keine Treffer.</div>`;
+      }
+    }
+
+    async function init(){
+      const r = await fetch(DB_URL, { cache: "no-store" });
+      items = await r.json();
+      buildTagbar();
+      render();
+    }
+
+    elQ.addEventListener("input", render);
+
+    init().catch(err => {
+      console.error(err);
+      elList.innerHTML = `<div class="muted">Fehler beim Laden der Datenbank: ${DB_URL}</div>`;
+    });
+  </script>
+</body>
+</html>

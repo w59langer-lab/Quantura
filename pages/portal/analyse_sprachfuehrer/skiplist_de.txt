@@ -1,0 +1,10 @@
+Ja
+Nein
+Hallo
+Tschüss
+Danke
+Bitte
+Guten Morgen
+Guten Abend
+Gute Nacht
+Entschuldigung

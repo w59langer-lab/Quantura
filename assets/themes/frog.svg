@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pond" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#dff7e7"/>
+      <stop offset="55%" stop-color="#bfead1"/>
+      <stop offset="100%" stop-color="#a4dfc0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#pond)"/>
+  <ellipse cx="720" cy="760" rx="620" ry="180" fill="#8ccfb5" opacity="0.9"/>
+  <ellipse cx="780" cy="790" rx="460" ry="140" fill="#7ac5a7" opacity="0.9"/>
+  <ellipse cx="460" cy="720" rx="240" ry="90" fill="#6bbd9c" opacity="0.85"/>
+  <circle cx="260" cy="200" r="26" fill="#fff" opacity="0.35"/>
+  <circle cx="340" cy="150" r="18" fill="#fff" opacity="0.3"/>
+  <circle cx="1120" cy="180" r="22" fill="#fff" opacity="0.3"/>
+  <g transform="translate(1000 360) scale(0.8)">
+    <ellipse cx="80" cy="200" rx="90" ry="110" fill="#2f9e44"/>
+    <ellipse cx="200" cy="200" rx="90" ry="110" fill="#2f9e44"/>
+    <ellipse cx="140" cy="230" rx="130" ry="120" fill="#3ebf5c"/>
+    <circle cx="80" cy="140" r="32" fill="#3ebf5c" stroke="#1b7f36" stroke-width="8"/>
+    <circle cx="200" cy="140" r="32" fill="#3ebf5c" stroke="#1b7f36" stroke-width="8"/>
+    <circle cx="80" cy="140" r="12" fill="#0b1725"/>
+    <circle cx="200" cy="140" r="12" fill="#0b1725"/>
+    <path d="M90 240 q50 30 100 0" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

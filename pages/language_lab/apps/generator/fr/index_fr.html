@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>Français – Générateur de phrases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="../shared/lg_tts.css" />
+    <link rel="stylesheet" href="../shared/lang_switch.css" />
+    <link rel="stylesheet" href="../shared/translation_panel.css" />
+    <script src="../../../../../core/js/core_init.js" defer></script>
+    <script src="../shared/lg_tts.js" defer></script>
+    <script src="../shared/lang_switch.js" defer></script>
+    <script src="../shared/lg_translate.js" defer></script>
+
+    <script src="../../../../../datenbanken/fr/fr_verbs/fr_verbs.js" defer></script>
+    <script src="../../../../../datenbanken/fr/fr_pronouns/fr_pronouns.js" defer></script>
+    <script src="../../../../../datenbanken/fr/fr_adjectives/fr_adjectives.js" defer></script>
+    <script src="../../../../../datenbanken/fr/fr_adverbs/fr_adverbs.js" defer></script>
+    <script src="../../../../../datenbanken/fr/fr_preps/fr_preps.js" defer></script>
+
+    <script src="fr_script.js" defer></script>
+  </head>
+  <body>
+    <div
+      data-partial="header"
+      data-partial-path="../../../../../core/partials/header.html"
+    ></div>
+
+    <!-- =========================================================
+         DE: Sprachumschalter – Buttons
+         EN: Language switcher – buttons
+         RU: Переключатель языков – кнопки
+         ========================================================= -->
+    <div class="page-wrapper">
+      <div class="lang-switch" data-active-lang="fr">
+        <button class="lang-switch__btn" data-lang="de">Deutsch</button>
+        <button class="lang-switch__btn" data-lang="en">English</button>
+        <button class="lang-switch__btn" data-lang="fr">Français</button>
+        <button class="lang-switch__btn" data-lang="it">Italiano</button>
+        <button class="lang-switch__btn" data-lang="ru">Русский</button>
+        <button class="lang-switch__btn" data-lang="es">Español</button>
+      </div>
+    </div>
+
+    <main class="page-wrapper">
+      <div class="card">
+        <h1>Français – Générateur de phrases</h1>
+        <p class="hint-text">
+          Choisis les types de mots et le type de phrase puis clique sur
+          « Générer ». Les données viennent de <code>datenbanken/fr</code>.
+        </p>
+
+        <section class="language-grid">
+          <div class="language-panel">
+            <div class="language-panel__title">Réglages</div>
+            <div class="language-panel__subtitle">
+              Type de phrase, temps, catégories.
+            </div>
+
+            <div class="form-row">
+              <label for="frSentenceType">Type de phrase</label>
+              <select id="frSentenceType">
+                <option value="aussage">Déclarative</option>
+                <option value="frage">Question</option>
+                <option value="verneinung">Négation</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="frTense">Temps</label>
+              <select id="frTense">
+                <option value="praesens">Présent</option>
+                <option value="perfekt">Passé composé</option>
+                <option value="praeteritum">Imparfait / Passé simple</option>
+                <option value="futur1">Futur proche</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="pronounSelect">Pronom</label>
+              <select id="pronounSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="verbSelect">Verbe</label>
+              <select id="verbSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="adjSelect">Adjectif</label>
+              <select id="adjSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="advSelect">Adverbe</label>
+              <select id="advSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="prepSelect">Préposition</label>
+              <select id="prepSelect"></select>
+            </div>
+
+            <div class="btn-row">
+              <button id="frGenerateBtn" class="btn btn-primary" type="button">
+                Générer
+              </button>
+              <button id="frClearBtn" class="btn" type="button">
+                Réinitialiser
+              </button>
+            </div>
+          </div>
+
+          <div class="language-panel">
+            <div class="language-panel__title">Sortie</div>
+            <div class="language-panel__subtitle">
+              La phrase générée apparaît ici.
+            </div>
+            <div id="frSentenceOutput" class="sentence-output"></div>
+            <!-- =====================================================
+                 DE: Übersetzung auf Deutsch
+                 EN: Translation into German
+                 RU: Перевод на немецкий
+                 ===================================================== -->
+            <div class="translation-panel">
+              <div class="translation-label">
+                <!-- DE: Deutsch -->Deutsch
+                <!-- EN: German -->
+                <!-- RU: Немецкий -->
+              </div>
+              <div class="translation-box" id="translationDeBox">–</div>
+              <div class="translation-actions">
+                <button type="button" class="translation-btn" id="translationSpeakDeBtn">
+                  <!-- DE: vorlesen / EN: speak / RU: озвучить -->
+                  ▶
+                </button>
+              </div>
+            </div>
+            <p id="frHintLine" class="hint-text">
+              Aucune phrase générée pour le moment.
+            </p>
+            <!-- =====================================================
+                 DE: TTS-Steuerung
+                 EN: TTS controls
+                 RU: Управление озвучкой
+                 ===================================================== -->
+            <div class="lg-tts-panel">
+              <div class="lg-tts-row">
+                <span class="lg-tts-label">
+                  <!-- DE: Geschwindigkeit / EN: Speed / RU: Скорость -->
+                  Vitesse
+                </span>
+                <input
+                  id="ttsRateSlider"
+                  class="lg-tts-slider"
+                  type="range"
+                  min="0.5"
+                  max="1.5"
+                  step="0.1"
+                  value="1.0"
+                />
+              </div>
+
+              <div class="lg-tts-row">
+                <button type="button" class="lg-tts-btn" id="ttsSlowBtn">
+                  <!-- DE: langsam / EN: slow / RU: медленно -->
+                  lent
+                </button>
+                <button type="button" class="lg-tts-btn primary" id="ttsNormalBtn">
+                  <!-- DE: normal / EN: normal / RU: нормально -->
+                  normal
+                </button>
+                <button type="button" class="lg-tts-btn" id="ttsFastBtn">
+                  <!-- DE: schnell / EN: fast / RU: быстро -->
+                  rapide
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsSpeakBtn">
+                  <!-- DE: abspielen / EN: play / RU: произнести -->
+                  ▶
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsStopBtn">
+                  <!-- DE: stoppen / EN: stop / RU: стоп -->
+                  ■
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div
+      data-partial="footer"
+      data-partial-path="../../../../../core/partials/footer.html"
+    ></div>
+  </body>
+</html>

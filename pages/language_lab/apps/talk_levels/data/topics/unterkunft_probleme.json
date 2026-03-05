@@ -1,0 +1,258 @@
+{
+  "id": "unterkunft_probleme",
+  "title": "Unterkunft: Probleme",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "room_dirty",
+      "mnemoHint": "CLEAN",
+      "de": "Das Zimmer ist nicht sauber.",
+      "en": "The room is not clean.",
+      "it": "La stanza non è pulita.",
+      "fr": "La chambre n'est pas propre.",
+      "es": "La habitación no está limpia.",
+      "ru": "Комната не убрана.",
+      "tr": "Oda temiz değil.",
+      "pronIpa": {
+        "tr": "Oda temiz deil."
+      },
+      "pronRu": {
+        "tr": "ода темиз деил."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "no_hot_water",
+      "mnemoHint": "H2O",
+      "de": "Es gibt kein warmes Wasser.",
+      "en": "There is no hot water.",
+      "it": "Non c'è acqua calda.",
+      "fr": "Il n'y a pas d'eau chaude.",
+      "es": "No hay agua caliente.",
+      "ru": "Нет горячей воды.",
+      "tr": "Sıcak su yok.",
+      "pronIpa": {
+        "tr": "Sɯd͡ʒak su yok."
+      },
+      "pronRu": {
+        "tr": "сыджак су йок."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "ac_broken_room",
+      "mnemoHint": "AC",
+      "de": "Die Klimaanlage funktioniert nicht.",
+      "en": "The air conditioning is not working.",
+      "it": "L'aria condizionata non funziona.",
+      "fr": "La climatisation ne marche pas.",
+      "es": "El aire acondicionado no funciona.",
+      "ru": "Кондиционер не работает.",
+      "tr": "Klima çalışmıyor.",
+      "pronIpa": {
+        "tr": "Klima t͡ʃalɯʃmɯyor."
+      },
+      "pronRu": {
+        "tr": "клима чалышмыйор."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "heater",
+      "mnemoHint": "HEAT",
+      "de": "Die Heizung funktioniert nicht.",
+      "en": "The heating is not working.",
+      "it": "Il riscaldamento non funziona.",
+      "fr": "Le chauffage ne fonctionne pas.",
+      "es": "La calefacción no funciona.",
+      "ru": "Отопление не работает.",
+      "tr": "Isıtıcı çalışmıyor.",
+      "pronIpa": {
+        "tr": "Isɯtɯd͡ʒɯ t͡ʃalɯʃmɯyor."
+      },
+      "pronRu": {
+        "tr": "исытыджы чалышмыйор."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "too_noisy",
+      "mnemoHint": "NOISE",
+      "de": "Es ist zu laut im Zimmer.",
+      "en": "It is too noisy in the room.",
+      "it": "È troppo rumoroso in camera.",
+      "fr": "Il y a trop de bruit dans la chambre.",
+      "es": "Hay demasiado ruido en la habitación.",
+      "ru": "В комнате слишком шумно.",
+      "tr": "Oda çok gürültülü.",
+      "pronIpa": {
+        "tr": "Oda t͡ʃok gyryltyly."
+      },
+      "pronRu": {
+        "tr": "ода чок гюрюлтюлю."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "need_pillow",
+      "mnemoHint": "PILLOW",
+      "de": "Ich brauche ein zusätzliches Kissen.",
+      "en": "I need an extra pillow.",
+      "it": "Ho bisogno di un cuscino in più.",
+      "fr": "J'ai besoin d'un oreiller supplémentaire.",
+      "es": "Necesito una almohada extra.",
+      "ru": "Мне нужна дополнительная подушка.",
+      "tr": "Ekstra bir yastığa ihtiyacım var.",
+      "pronIpa": {
+        "tr": "Ekstra bir yastɯa ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "екстра бир йастыа ихтийаджым вар."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "change_room",
+      "mnemoHint": "MOVE",
+      "de": "Kann ich das Zimmer wechseln?",
+      "en": "Can I change the room?",
+      "it": "Posso cambiare camera?",
+      "fr": "Puis-je changer de chambre ?",
+      "es": "¿Puedo cambiar de habitación?",
+      "ru": "Можно поменять комнату?",
+      "tr": "Odayı değiştirebilir miyim?",
+      "pronIpa": {
+        "tr": "Odayɯ deiʃtirebilir miyim?"
+      },
+      "pronRu": {
+        "tr": "одайы деиштиребилир мийим?"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "key_not_working",
+      "mnemoHint": "KEY",
+      "de": "Die Schlüsselkarte funktioniert nicht.",
+      "en": "The key card is not working.",
+      "it": "La tessera non funziona.",
+      "fr": "La carte-clé ne fonctionne pas.",
+      "es": "La tarjeta llave no funciona.",
+      "ru": "Ключ-карта не работает.",
+      "tr": "Oda kartı çalışmıyor.",
+      "pronIpa": {
+        "tr": "Oda kartɯ t͡ʃalɯʃmɯyor."
+      },
+      "pronRu": {
+        "tr": "ода карты чалышмыйор."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "water_leak",
+      "mnemoHint": "LEAK",
+      "de": "Es gibt ein Leck im Bad.",
+      "en": "There is a leak in the bathroom.",
+      "it": "C'è una perdita in bagno.",
+      "fr": "Il y a une fuite dans la salle de bain.",
+      "es": "Hay una fuga en el baño.",
+      "ru": "В ванной течёт.",
+      "tr": "Banyoda sızıntı var.",
+      "pronIpa": {
+        "tr": "Banyoda sɯzɯntɯ var."
+      },
+      "pronRu": {
+        "tr": "банйода сызынты вар."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "window_not_close",
+      "mnemoHint": "LOCK",
+      "de": "Das Fenster lässt sich nicht schließen.",
+      "en": "The window won't close.",
+      "it": "La finestra non si chiude.",
+      "fr": "La fenêtre ne se ferme pas.",
+      "es": "La ventana no se cierra.",
+      "ru": "Окно не закрывается.",
+      "tr": "Pencere kapanmıyor.",
+      "pronIpa": {
+        "tr": "Pend͡ʒere kapanmɯyor."
+      },
+      "pronRu": {
+        "tr": "пенджере капанмыйор."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "refund_night",
+      "mnemoHint": "REF",
+      "de": "Ich möchte die letzte Nacht erstattet bekommen.",
+      "en": "I would like a refund for the last night.",
+      "it": "Vorrei un rimborso per l'ultima notte.",
+      "fr": "Je voudrais être remboursé pour la dernière nuit.",
+      "es": "Quiero un reembolso por la última noche.",
+      "ru": "Я хочу возврат за прошлую ночь.",
+      "tr": "Son gece için para iadesi istiyorum.",
+      "pronIpa": {
+        "tr": "Son ged͡ʒe it͡ʃin para iadesi istiyorum."
+      },
+      "pronRu": {
+        "tr": "сон гедже ичин пара иадеси истийорум."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "insects",
+      "mnemoHint": "BUG",
+      "de": "Es sind Insekten im Zimmer.",
+      "en": "There are insects in the room.",
+      "it": "Ci sono insetti in camera.",
+      "fr": "Il y a des insectes dans la chambre.",
+      "es": "Hay insectos en la habitación.",
+      "ru": "В комнате есть насекомые.",
+      "tr": "Odada böcekler var.",
+      "pronIpa": {
+        "tr": "Odada bød͡ʒekler var."
+      },
+      "pronRu": {
+        "tr": "одада бёджеклер вар."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "safe_locked",
+      "mnemoHint": "SAFE",
+      "de": "Der Safe ist blockiert.",
+      "en": "The safe is locked/blocked.",
+      "it": "La cassaforte è bloccata.",
+      "fr": "Le coffre-fort est bloqué.",
+      "es": "La caja fuerte está bloqueada.",
+      "ru": "Сейф заблокирован.",
+      "tr": "Kasa kilitli/sıkışmış.",
+      "pronIpa": {
+        "tr": "Kasa kilitli/sɯkɯʃmɯʃ."
+      },
+      "pronRu": {
+        "tr": "каса килитли/сыкышмыш."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "more_towels",
+      "mnemoHint": "TOWEL",
+      "de": "Kann ich mehr Handtücher bekommen?",
+      "en": "Can I get more towels?",
+      "it": "Posso avere più asciugamani?",
+      "fr": "Puis-je avoir plus de serviettes ?",
+      "es": "¿Puedo recibir más toallas?",
+      "ru": "Можно получить больше полотенец?",
+      "tr": "Daha fazla havlu alabilir miyim?",
+      "pronIpa": {
+        "tr": "Daha fazla havlu alabilir miyim?"
+      },
+      "pronRu": {
+        "tr": "даха фазла хавлу алабилир мийим?"
+      }
+    }
+  ]
+}

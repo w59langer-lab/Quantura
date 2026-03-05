@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lektion 02: HTML &amp; JavaScript – Erste Interaktivität</title>
+  <link rel="stylesheet" href="../../../../core/assets/style.css">
+  <link rel="stylesheet" href="../common/informatik_style.css">
+  <script src="../../../../core/js/core_init.js" defer></script>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+  <main class="page-wrapper">
+    <div class="card">
+      <header>
+        <h1>Lektion 02: HTML &amp; JavaScript – Erste Interaktivität</h1>
+        <p class="lead">HTML liefert die Struktur, JavaScript macht sie lebendig – wir verknüpfen beides mit einfachen DOM-Operationen.</p>
+      </header>
+
+      <section>
+        <h2>Lernziele</h2>
+        <ul>
+          <li>Das DOM als Schnittstelle zwischen HTML-Struktur und JavaScript verstehen.</li>
+          <li>Elemente mit <code>querySelector</code> gezielt auswählen.</li>
+          <li>Mit <code>addEventListener("click", ...)</code> auf Benutzeraktionen reagieren.</li>
+          <li>Textinhalte über <code>textContent</code> oder <code>innerText</code> ändern.</li>
+          <li>Eigenen Mini-Playground nutzen, um HTML &amp; JS auszuprobieren.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Wiederholung: HTML-Grundgerüst</h2>
+        <p>Eine HTML-Seite besteht aus <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> und <code>&lt;body&gt;</code>. Im <code>&lt;head&gt;</code> stehen Meta-Infos, Titel und Styles; im <code>&lt;body&gt;</code> stehen die sichtbaren Elemente wie Überschriften, Absätze und Buttons.</p>
+        <p>Wichtige Tags: <code>h1</code>–<code>h6</code> für Überschriften, <code>p</code> für Absätze, <code>button</code> für Klicks, <code>div</code> und <code>section</code> als Container.</p>
+      </section>
+
+      <section>
+        <h2>JavaScript Basics im DOM</h2>
+        <p><strong>DOM?</strong> Das Document Object Model ist die Baumstruktur, in der der Browser dein HTML darstellt. JS greift auf Knoten zu, liest Werte aus oder ändert sie.</p>
+        <p><strong>querySelector</strong> wählt ein Element per CSS-Selektor: <code>document.querySelector("#meinButton")</code>.</p>
+        <p><strong>addEventListener("click", ...)</strong> registriert eine Funktion, die bei einem Klick ausgeführt wird.</p>
+        <p><strong>textContent / innerText</strong> setzen den sichtbaren Text eines Elements: <code>element.textContent = "Neu";</code>.</p>
+      </section>
+
+      <section>
+        <h2>Mini-Beispiel</h2>
+        <p>Ein Klick auf den Button ändert den Absatztext:</p>
+<pre><code class="language-html">&lt;p id="status"&gt;Noch nichts passiert.&lt;/p&gt;
+&lt;button id="klickMich"&gt;Klick mich&lt;/button&gt;
+&lt;script&gt;
+  const status = document.querySelector("#status");
+  const btn = document.querySelector("#klickMich");
+  btn.addEventListener("click", () =&gt; {
+    status.textContent = "Button wurde geklickt!";
+  });
+&lt;/script&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>Übungen</h2>
+        <ol>
+          <li>Ändere den Text im Beispiel auf einen eigenen Satz und teste.</li>
+          <li>Füge einen zweiten Button hinzu, der den Text wieder zurücksetzt.</li>
+          <li>Erweitere das Beispiel, sodass ein Klick den Hintergrund eines <code>div</code> einfärbt.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Mini-Playground</h2>
+        <p>HTML &amp; JS hier eintippen, auf „Ausführen“ klicken – das Ergebnis erscheint im Frame.</p>
+        <label for="codeInput" class="sr-only">Code</label>
+        <textarea id="codeInput" rows="12" style="width: 100%; font-family: monospace;"></textarea>
+        <div class="button-row" style="margin: 8px 0;">
+          <button id="runBtn" type="button">Ausführen</button>
+        </div>
+        <iframe id="previewFrame" title="Preview" sandbox="allow-scripts" style="width: 100%; min-height: 220px; border: 1px solid var(--border-color, #ddd);"></iframe>
+      </section>
+
+      <section>
+        <a class="link" href="lesson_01_rechnen.html">Zurück zu Lektion 01</a><br>
+        <a class="link" href="index.html">Zurück zur Kurs-Übersicht</a><br>
+        <a class="link" href="../index.html">Zurück zur Informatik-Übersicht</a>
+      </section>
+    </div>
+  </main>
+
+  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+
+  <script>
+    // Einfacher Playground: Textarea-Inhalt als srcdoc in das iframe schreiben.
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("codeInput");
+      const runBtn = document.getElementById("runBtn");
+      const frame = document.getElementById("previewFrame");
+      const defaultCode = `<!DOCTYPE html>
+<html>
+  <body>
+    <p id="status">Bereit zum Klicken?</p>
+    <button id="btn">Klick!</button>
+    <script>
+      const status = document.querySelector("#status");
+      const btn = document.querySelector("#btn");
+      btn.addEventListener("click", () => {
+        status.textContent = "Hallo aus dem Playground!";
+      });
+    <\\/script>
+  </body>
+</html>`;
+      input.value = defaultCode;
+      const run = () => {
+        frame.srcdoc = input.value;
+      };
+      runBtn.addEventListener("click", run);
+      run();
+    });
+  </script>
+</body>
+</html>

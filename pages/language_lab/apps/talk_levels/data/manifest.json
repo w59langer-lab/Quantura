@@ -1,0 +1,20 @@
+{
+  "files": [
+    "topics_bundle.json",
+    "topics/allgemein.json",
+    "topics/arzt_apotheke.json",
+    "topics/bahn_flug.json",
+    "topics/einkaufen.json",
+    "topics/hotel.json",
+    "topics/index.json",
+    "topics/notfall.json",
+    "topics/restaurant.json",
+    "topics/telefon_internet.json",
+    "topics/unterkunft_probleme.json",
+    "topics/unterwegs.json",
+    "topics/verkehr_auto.json",
+    "topics/verkehr_auto_from_root_001.json",
+    "topics/survival_plus.json",
+    "topics/survival_more.json"
+  ]
+}

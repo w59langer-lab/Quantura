@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karten – Level-Training</title>
+    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="../karten_style.css" />
+    <script src="../../../../../core/js/core_init.js" defer></script>
+    <script src="../karten_level_data.js" defer></script>
+    <script src="../karten_level_logic.js" defer></script>
+  </head>
+  <body class="karten-level-page">
+    <div data-partial="header" data-partial-path="../../../../../core/partials/header.html"></div>
+
+    <main class="page-wrapper">
+      <div class="card karten-card">
+        <div class="karten-card__header">
+          <div>
+            <h1>Karten – Level-Training</h1>
+            <p class="hint-text">
+              Sprachführer mit gemeinsamen Sätzen pro Level. Wähle Eingabe- und Ausgabesprache,
+              nutze die TTS-Steuerung pro Spalte und lade neue Karten pro Level. Starte am besten
+              über die Level-Übersicht.
+            </p>
+            <div class="level-heading" id="levelHeading">Level wird geladen …</div>
+            <p class="hint-text" id="levelInfo"></p>
+          </div>
+          <a class="btn btn-ghost" href="../level_overview.html">← Zur Level-Übersicht</a>
+        </div>
+
+        <section class="level-layout">
+          <div class="level-column">
+            <div class="level-column__header">
+              <h2>Eingabe</h2>
+              <p class="hint-text">Ausgangssprache wählen und vorlesen lassen.</p>
+            </div>
+            <div class="lang-btn-row">
+              <button class="lang-chip is-active" type="button" data-input-lang="de">DE</button>
+              <button class="lang-chip" type="button" data-input-lang="en">EN</button>
+              <button class="lang-chip" type="button" data-input-lang="it">IT</button>
+              <button class="lang-chip" type="button" data-input-lang="fr">FR</button>
+              <button class="lang-chip" type="button" data-input-lang="ru">RU</button>
+              <button class="lang-chip" type="button" data-input-lang="es">ES</button>
+            </div>
+            <div class="tts-controls">
+              <div class="btn-row">
+                <button id="levelInputSpeakBtn" class="btn" type="button">Vorlesen</button>
+                <button id="levelInputStopBtn" class="btn" type="button">Stop</button>
+              </div>
+              <div class="tts-rate">
+                <label for="levelInputRate">Tempo</label>
+                <select id="levelInputRate">
+                  <option value="0.85">Langsam</option>
+                  <option value="1" selected>Normal</option>
+                  <option value="1.2">Schnell</option>
+                </select>
+              </div>
+              <div class="tts-slider">
+                <label for="levelInputRateSlider">Feiner-Regler</label>
+                <input
+                  type="range"
+                  id="levelInputRateSlider"
+                  min="0.6"
+                  max="1.4"
+                  step="0.05"
+                  value="1"
+                />
+                <span id="levelInputRateValue">1.00×</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="level-column">
+            <div class="level-column__header">
+              <h2>Ausgabe</h2>
+              <p class="hint-text">Zielsprache wählen und Antwort anhören.</p>
+            </div>
+            <div class="lang-btn-row">
+              <button class="lang-chip" type="button" data-output-lang="de">DE</button>
+              <button class="lang-chip is-active" type="button" data-output-lang="en">EN</button>
+              <button class="lang-chip" type="button" data-output-lang="it">IT</button>
+              <button class="lang-chip" type="button" data-output-lang="fr">FR</button>
+              <button class="lang-chip" type="button" data-output-lang="ru">RU</button>
+              <button class="lang-chip" type="button" data-output-lang="es">ES</button>
+            </div>
+            <div class="tts-controls">
+              <div class="btn-row">
+                <button id="levelOutputSpeakBtn" class="btn" type="button">Vorlesen</button>
+                <button id="levelOutputStopBtn" class="btn" type="button">Stop</button>
+              </div>
+              <div class="tts-rate">
+                <label for="levelOutputRate">Tempo</label>
+                <select id="levelOutputRate">
+                  <option value="0.85">Langsam</option>
+                  <option value="1" selected>Normal</option>
+                  <option value="1.2">Schnell</option>
+                </select>
+              </div>
+              <div class="tts-slider">
+                <label for="levelOutputRateSlider">Feiner-Regler</label>
+                <input
+                  type="range"
+                  id="levelOutputRateSlider"
+                  min="0.6"
+                  max="1.4"
+                  step="0.05"
+                  value="1"
+                />
+                <span id="levelOutputRateValue">1.00×</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="level-card-area">
+          <div class="card-view level-card-grid">
+            <div class="card-side">
+              <div class="label">Front (Eingabesprache)</div>
+              <div id="levelCardFront" class="card-text"></div>
+            </div>
+            <div class="card-side hidden" id="levelCardBackSide">
+              <div class="label">Back (Ausgabesprache)</div>
+              <div id="levelCardBack" class="card-text"></div>
+            </div>
+          </div>
+
+          <div class="level-nav-row">
+            <button class="btn" type="button" id="levelPrevCardBtn">Zurück</button>
+            <button id="levelToggleBtn" class="btn" type="button">Antwort anzeigen</button>
+            <button class="btn btn-primary" type="button" id="levelNextCardBtn">Weiter</button>
+          </div>
+
+          <div class="level-quick-row">
+            <span class="label">Level-Direktwahl</span>
+            <div class="level-chip-row">
+              <button class="level-chip" type="button" data-level="1">1</button>
+              <button class="level-chip" type="button" data-level="2">2</button>
+              <button class="level-chip" type="button" data-level="3">3</button>
+              <button class="level-chip" type="button" data-level="4">4</button>
+              <button class="level-chip" type="button" data-level="5">5</button>
+              <button class="level-chip" type="button" data-level="6">6</button>
+              <button class="level-chip" type="button" data-level="7">7</button>
+              <button class="level-chip" type="button" data-level="8">8</button>
+              <button class="level-chip" type="button" data-level="9">9</button>
+              <button class="level-chip" type="button" data-level="10">10</button>
+            </div>
+          </div>
+
+          <p class="hint-text" id="levelStatus"></p>
+        </section>
+      </div>
+    </main>
+
+    <div data-partial="footer" data-partial-path="../../../../../core/partials/footer.html"></div>
+  </body>
+</html>

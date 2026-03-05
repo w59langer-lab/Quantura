@@ -1,0 +1,14 @@
+Import-Report (vorlage -> _import_vorlage)
+Quelle: /home/mx-ahs/Dokumente/ALTE_PROJEKTE/MÜLL_Alle/vorlage
+Ziel:   /home/mx-ahs/Dokumente/Sprachfuehrer06.12_Work/pages/bibliothek/media/video/_import_vorlage
+
+Gefundene Dateien:
+./seiten/physik/v_ph/elektroklingeln.mp4 -> elektroklingeln.mp4 (3877082 bytes)
+./seiten/technik/a_tc/multivibrator.mp4 -> multivibrator.mp4 (13010898 bytes)
+./seiten/technik/a_tc/roboter_max.mp4 -> roboter_max.mp4 (15770449 bytes)
+./seiten/technik/a_tc/mixer_fischer.mp4 -> mixer_fischer.mp4 (16080904 bytes)
+./seiten/technik/a_tc/roboter_und_joda.mp4 -> roboter_und_joda.mp4 (34228113 bytes)
+
+Anzahl Dateien: 5
+Kopiert: 6
+Zielgröße: 80M

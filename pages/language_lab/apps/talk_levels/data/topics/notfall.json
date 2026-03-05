@@ -1,0 +1,366 @@
+{
+  "id": "notfall",
+  "title": "Notfall",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "headache",
+      "mnemoHint": "MED",
+      "de": "Ich habe Kopfschmerzen.",
+      "en": "I have a headache.",
+      "it": "Ho mal di testa.",
+      "fr": "J'ai mal à la tête.",
+      "es": "Tengo dolor de cabeza.",
+      "ru": "У меня болит голова.",
+      "tr": "Başım ağrıyor.",
+      "pronIpa": {
+        "tr": "Baʃɯm arɯyor."
+      },
+      "pronRu": {
+        "tr": "башым арыйор."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "dizzy",
+      "mnemoHint": "DIZ",
+      "de": "Mir ist schwindelig.",
+      "en": "I feel dizzy.",
+      "it": "Mi gira la testa.",
+      "fr": "J'ai la tête qui tourne.",
+      "es": "Me siento mareado/a.",
+      "ru": "У меня кружится голова.",
+      "tr": "Başım dönüyor.",
+      "pronIpa": {
+        "tr": "Baʃɯm dønyyor."
+      },
+      "pronRu": {
+        "tr": "башым дёнюйор."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "fever_meds",
+      "mnemoHint": "TEMP",
+      "de": "Haben Sie etwas gegen Fieber?",
+      "en": "Do you have something for fever?",
+      "it": "Avete qualcosa contro la febbre?",
+      "fr": "Avez-vous quelque chose contre la fièvre ?",
+      "es": "¿Tiene algo para la fiebre?",
+      "ru": "У вас есть что-то от температуры?",
+      "tr": "Ateş için bir şeyiniz var mı?",
+      "pronIpa": {
+        "tr": "Ateʃ it͡ʃin bir ʃeyiniz var mɯ?"
+      },
+      "pronRu": {
+        "tr": "атеш ичин бир шейиниз вар мы?"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "need_doctor",
+      "mnemoHint": "DR",
+      "de": "Ich brauche einen Arzt.",
+      "en": "I need a doctor.",
+      "it": "Ho bisogno di un medico.",
+      "fr": "J'ai besoin d'un médecin.",
+      "es": "Necesito un médico.",
+      "ru": "Мне нужен врач.",
+      "tr": "Bir doktora ihtiyacım var.",
+      "pronIpa": {
+        "tr": "Bir doktora ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "бир доктора ихтийаджым вар."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "hurt_self",
+      "mnemoHint": "CUT",
+      "de": "Ich habe mich verletzt.",
+      "en": "I hurt myself.",
+      "it": "Mi sono ferito/a.",
+      "fr": "Je me suis blessé(e).",
+      "es": "Me he herido.",
+      "ru": "Я поранился.",
+      "tr": "Kendimi yaraladım.",
+      "pronIpa": {
+        "tr": "Kendimi yaraladɯm."
+      },
+      "pronRu": {
+        "tr": "кендими йараладым."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "nearest_pharmacy",
+      "mnemoHint": "RX",
+      "de": "Wo ist die nächste Apotheke?",
+      "en": "Where is the nearest pharmacy?",
+      "it": "Dov'è la farmacia più vicina?",
+      "fr": "Où est la pharmacie la plus proche ?",
+      "es": "¿Dónde está la farmacia más cercana?",
+      "ru": "Где ближайшая аптека?",
+      "tr": "En yakın eczane nerede?",
+      "pronIpa": {
+        "tr": "En yakɯn ed͡ʒzane nerede?"
+      },
+      "pronRu": {
+        "tr": "ен йакын еджзане нереде?"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "penicillin_allergy",
+      "mnemoHint": "PEN",
+      "de": "Ich habe eine Allergie gegen Penicillin.",
+      "en": "I am allergic to penicillin.",
+      "it": "Sono allergico/a alla penicillina.",
+      "fr": "Je suis allergique à la pénicilline.",
+      "es": "Soy alérgico/a a la penicilina.",
+      "ru": "У меня аллергия на пенициллин.",
+      "tr": "Penisiline alerjim var.",
+      "pronIpa": {
+        "tr": "Penisiline alerʒim var."
+      },
+      "pronRu": {
+        "tr": "пенисилине алержим вар."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "painkillers",
+      "mnemoHint": "MED",
+      "de": "Ich brauche Schmerzmittel.",
+      "en": "I need painkillers.",
+      "it": "Ho bisogno di antidolorifici.",
+      "fr": "J'ai besoin d'analgésiques.",
+      "es": "Necesito analgésicos.",
+      "ru": "Мне нужны обезболивающие.",
+      "tr": "Ağrı kesiciye ihtiyacım var.",
+      "pronIpa": {
+        "tr": "Arɯ kesid͡ʒiye ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "ары кесиджийе ихтийаджым вар."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "fever_since_yesterday",
+      "mnemoHint": "24h",
+      "de": "Ich habe Fieber seit gestern.",
+      "en": "I have had a fever since yesterday.",
+      "it": "Ho la febbre da ieri.",
+      "fr": "J'ai de la fièvre depuis hier.",
+      "es": "Tengo fiebre desde ayer.",
+      "ru": "У меня температура со вчера.",
+      "tr": "Dünden beri ateşim var.",
+      "pronIpa": {
+        "tr": "Dynden beri ateʃim var."
+      },
+      "pronRu": {
+        "tr": "дюнден бери атешим вар."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "appointment",
+      "mnemoHint": "APT",
+      "de": "Kann ich einen Termin bekommen?",
+      "en": "Can I get an appointment?",
+      "it": "Posso avere un appuntamento?",
+      "fr": "Puis-je obtenir un rendez-vous ?",
+      "es": "¿Puedo conseguir una cita?",
+      "ru": "Могу записаться на приём?",
+      "tr": "Randevu alabilir miyim?",
+      "pronIpa": {
+        "tr": "Randevu alabilir miyim?"
+      },
+      "pronRu": {
+        "tr": "рандеву алабилир мийим?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "luggage_lost_sos",
+      "mnemoHint": "BAG",
+      "de": "Mein Gepäck ist verloren gegangen.",
+      "en": "My luggage is lost.",
+      "it": "Il mio bagaglio è stato smarrito.",
+      "fr": "Mes bagages ont été perdus.",
+      "es": "Mi equipaje se ha perdido.",
+      "ru": "Мой багаж потерялся.",
+      "tr": "Bagajım kayboldu.",
+      "pronIpa": {
+        "tr": "Bagaʒɯm kayboldu."
+      },
+      "pronRu": {
+        "tr": "багажым кайболду."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "ac_not_working",
+      "mnemoHint": "AC",
+      "de": "Die Klimaanlage funktioniert nicht.",
+      "en": "The air conditioning is not working.",
+      "it": "L'aria condizionata non funziona.",
+      "fr": "La climatisation ne marche pas.",
+      "es": "El aire acondicionado no funciona.",
+      "ru": "Кондиционер не работает.",
+      "tr": "Klima çalışmıyor.",
+      "pronIpa": {
+        "tr": "Klima t͡ʃalɯʃmɯyor."
+      },
+      "pronRu": {
+        "tr": "клима чалышмыйор."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "send_someone_now",
+      "mnemoHint": "CALL",
+      "de": "Bitte schicken Sie jemanden vorbei.",
+      "en": "Please send someone over.",
+      "it": "Per favore mandi qualcuno.",
+      "fr": "Veuillez envoyer quelqu'un.",
+      "es": "Por favor envíe a alguien.",
+      "ru": "Пожалуйста, пришлите кого-нибудь.",
+      "tr": "Lütfen birini gönderin.",
+      "pronIpa": {
+        "tr": "Lytfen birini gønderin."
+      },
+      "pronRu": {
+        "tr": "лютфен бирини гёндерин."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "keys_lost",
+      "mnemoHint": "KEY",
+      "de": "Ich habe meine Schlüssel verloren.",
+      "en": "I lost my keys.",
+      "it": "Ho perso le chiavi.",
+      "fr": "J'ai perdu mes clés.",
+      "es": "Perdí mis llaves.",
+      "ru": "Я потерял ключи.",
+      "tr": "Anahtarlarımı kaybettim.",
+      "pronIpa": {
+        "tr": "Anahtarlarɯmɯ kaybettim."
+      },
+      "pronRu": {
+        "tr": "анахтарларымы кайбеттим."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "internet_slow_sos",
+      "mnemoHint": "NET",
+      "de": "Das Internet ist sehr langsam.",
+      "en": "The internet is very slow.",
+      "it": "Internet è molto lento.",
+      "fr": "Internet est très lent.",
+      "es": "Internet es muy lento.",
+      "ru": "Интернет очень медленный.",
+      "tr": "İnternet çok yavaş.",
+      "pronIpa": {
+        "tr": "İnternet t͡ʃok yavaʃ."
+      },
+      "pronRu": {
+        "tr": "İнтернет чок йаваш."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "need_help_now",
+      "mnemoHint": "SOS",
+      "de": "Ich brauche sofort Hilfe.",
+      "en": "I need help immediately.",
+      "it": "Ho bisogno di aiuto subito.",
+      "fr": "J'ai besoin d'aide immédiatement.",
+      "es": "Necesito ayuda de inmediato.",
+      "ru": "Мне нужна помощь немедленно.",
+      "tr": "Hemen yardıma ihtiyacım var.",
+      "pronIpa": {
+        "tr": "Hemen yardɯma ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "хемен йардыма ихтийаджым вар."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "help_short",
+      "mnemoHint": "SOS",
+      "de": "Hilfe!",
+      "en": "Help!",
+      "fr": "Au secours !",
+      "it": "Aiuto!",
+      "es": "¡Ayuda!",
+      "ru": "Помогите!",
+      "tr": "Yardım!"
+    },
+    {
+      "level": 1,
+      "mnemoKey": "can_you_help",
+      "mnemoHint": "ASK",
+      "de": "Können Sie mir helfen?",
+      "en": "Can you help me?",
+      "fr": "Pouvez-vous m'aider ?",
+      "it": "Può aiutarmi?",
+      "es": "¿Puede ayudarme?",
+      "ru": "Вы можете мне помочь?",
+      "tr": "Bana yardım eder misiniz?"
+    },
+    {
+      "level": 1,
+      "mnemoKey": "call_ambulance",
+      "mnemoHint": "AMB",
+      "de": "Bitte rufen Sie einen Krankenwagen.",
+      "en": "Please call an ambulance.",
+      "fr": "Appelez une ambulance, s'il vous plaît.",
+      "it": "Chiami un'ambulanza, per favore.",
+      "es": "Llame a una ambulancia, por favor.",
+      "ru": "Пожалуйста, вызовите скорую.",
+      "tr": "Lütfen bir ambulans çağırın."
+    },
+    {
+      "level": 1,
+      "mnemoKey": "where_exit",
+      "mnemoHint": "EXIT",
+      "de": "Wo ist der Notausgang?",
+      "en": "Where is the emergency exit?",
+      "fr": "Où est la sortie de secours ?",
+      "it": "Dov'è l'uscita di emergenza?",
+      "es": "¿Dónde está la salida de emergencia?",
+      "ru": "Где аварийный выход?",
+      "tr": "Acil çıkış nerede?"
+    },
+    {
+      "level": 2,
+      "mnemoKey": "hospital_address",
+      "mnemoHint": "ADDR",
+      "de": "Ich brauche die Adresse des nächsten Krankenhauses.",
+      "en": "I need the address of the nearest hospital.",
+      "fr": "J'ai besoin de l'adresse de l'hôpital le plus proche.",
+      "it": "Ho bisogno dell'indirizzo dell'ospedale più vicino.",
+      "es": "Necesito la dirección del hospital más cercano.",
+      "ru": "Мне нужен адрес ближайшей больницы.",
+      "tr": "En yakın hastanenin adresine ihtiyacım var."
+    },
+    {
+      "level": 3,
+      "mnemoKey": "review_emergency_plan",
+      "mnemoHint": "PLAN",
+      "de": "Können wir einen Notfallplan durchgehen?",
+      "en": "Can we go through an emergency plan?",
+      "fr": "Peut-on passer en revue un plan d'urgence ?",
+      "it": "Possiamo rivedere un piano di emergenza?",
+      "es": "¿Podemos revisar un plan de emergencia?",
+      "ru": "Давайте обсудим план на случай ЧС?",
+      "tr": "Bir acil durum planını gözden geçirebilir miyiz?"
+    }
+  ]
+}

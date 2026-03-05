@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brüche · Schokolade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Brüche · Schokolade</h1>
+      <p class="sub">
+        Geometrisch → rechnerisch. Beispiel: <strong>1/2 + 1/3</strong> (weiter unten auch frei wählbar)
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <div class="ctrl">
+          <label>Bruch A</label>
+          <div class="frac">
+            <input id="aNum" type="number" min="1" value="1" />
+            <span>/</span>
+            <input id="aDen" type="number" min="2" value="2" />
+          </div>
+        </div>
+
+        <div class="ctrl plus">+</div>
+
+        <div class="ctrl">
+          <label>Bruch B</label>
+          <div class="frac">
+            <input id="bNum" type="number" min="1" value="1" />
+            <span>/</span>
+            <input id="bDen" type="number" min="2" value="3" />
+          </div>
+        </div>
+
+        <button id="btn" class="btn" type="button">Berechnen</button>
+      </div>
+
+      <div class="hint">
+        Begriffe: <strong>kgV</strong> · <strong>Erweitern</strong> · <strong>gemeinsamer Nenner</strong><br/>
+        RU: <strong>НОК</strong> · <strong>общий знаменатель</strong>
+      </div>
+    </section>
+
+    <section class="gridWrap">
+      <div class="card">
+        <h2>Schokoladentafel (gemeinsamer Nenner)</h2>
+        <div id="grid" class="grid" aria-label="Schokoladentafel"></div>
+        <div class="legend">
+          <span class="leg a">A</span> Bruch A
+          <span class="leg b">B</span> Bruch B
+          <span class="leg ab">A∪B</span> Summe (vereinigt)
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Rechnung</h2>
+        <pre id="steps" class="steps"></pre>
+      </div>
+    </section>
+
+    <footer class="foot">
+      Tipp: Als Nächstes können wir Primfaktoren (2·2·3 …) für kgV / НОК anzeigen.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

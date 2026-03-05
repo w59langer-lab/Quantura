@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quantura – Portal</title>
+  <link rel="stylesheet" href="/core/assets/style.css" />
+  <link rel="stylesheet" href="/pages/portal_v2/portal.css" />
+  <script src="/core/loader/loader.js" defer></script>
+  <script src="/core/js/core_init.js" defer></script>
+  <script src="/pages/portal_v2/portal.js" defer></script>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+  <main class="portal-main">
+    <section class="card portal-welcome">
+      <div>
+        <h1>Herzlich willkommen auf Quantura.</h1>
+        <p>Hier kannst du lernen, üben und Themen entdecken – und passende Apps/Tools sofort öffnen oder Materialien (z. B. EPUB) herunterladen, falls vorhanden.</p>
+        <p class="portal-note"><em>Quantura = Quant + (h)ora (Zeit) — Maß & Klarheit.</em></p>
+        <p class="portal-label">Wähle ein Thema aus:</p>
+      </div>
+    </section>
+
+    <section class="card portal-topics">
+      <div class="topic-controls">
+        <input type="search" id="topicSearch" placeholder="Thema suchen …" autocomplete="off" />
+        <select id="topicSelect">
+          <option value="">Thema wählen …</option>
+        </select>
+      </div>
+    </section>
+  </main>
+  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+</body>
+</html>

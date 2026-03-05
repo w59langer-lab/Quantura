@@ -1,0 +1,74 @@
+[
+  {
+    "id": "generator",
+    "title": "Generator",
+    "category": "language",
+    "description": "Satzgeneratoren für DE/EN/IT/FR/ES/RU.",
+    "href": "/pages/language_lab/apps/generator/",
+    "icon": "/core/assets/favicon.ico"
+  },
+  {
+    "id": "talk_levels",
+    "title": "Talk Levels",
+    "category": "language",
+    "description": "Alle Themen und Level mit Filtern und TTS.",
+    "href": "/pages/language_lab/apps/talk_levels/",
+    "icon": "/core/assets/favicon.ico"
+  },
+  {
+    "id": "karten",
+    "title": "Karten",
+    "category": "language",
+    "description": "Sprachführer-Karten und Level-Übersicht.",
+    "href": "/pages/language_lab/apps/karten/",
+    "icon": "/core/assets/favicon.ico"
+  },
+  {
+    "id": "analyse_zaz",
+    "title": "Analyse ZAZ",
+    "category": "language",
+    "description": "DB-Sätze laden und eigene Sätze analysieren.",
+    "href": "/pages/language_lab/apps/analyse_zaz/",
+    "icon": "/core/assets/favicon.ico"
+  },
+  {
+    "id": "mathe_hub",
+    "title": "Mathe-Hub",
+    "category": "mathe",
+    "description": "Zentrale Sammlung der Mathe-Bereiche.",
+    "href": "/pages/faecher/index.html",
+    "icon": "/core/assets/favicon.ico"
+  },
+  {
+    "id": "quadratgleichung",
+    "title": "Quadratgleichung",
+    "category": "mathe",
+    "description": "Rechner & Training mit 10 Aufgaben, offline-fähig.",
+    "href": "/pages/language_lab/apps/mathe/quadratgleichung/",
+    "icon": "/pages/language_lab/apps/mathe/quadratgleichung/icons/icon-192.png"
+  },
+  {
+    "id": "auto_kauf_assistent",
+    "title": "Auto-Kauf-Assistent",
+    "category": "tools",
+    "description": "Offline PWA mit Checkliste, Kosten, Score & Export.",
+    "href": "/pages/language_lab/apps/tools/auto-kauf-assistent/",
+    "icon": "/core/assets/favicon.ico"
+  },
+  {
+    "id": "glossar",
+    "title": "Glossar",
+    "category": "tools",
+    "description": "Mehrsprachige Begriffe mit Tags, Suche, Import/Export.",
+    "href": "/pages/language_lab/apps/tools/glossar/",
+    "icon": "/pages/language_lab/apps/tools/glossar/icons/icon-192.png"
+  },
+  {
+    "id": "werkstatt",
+    "title": "Werkstatt",
+    "category": "tools",
+    "description": "Werkstatt-Bereich für TagBook und Tools.",
+    "href": "/pages/portal/werkstatt/",
+    "icon": "/core/assets/favicon.ico"
+  }
+]

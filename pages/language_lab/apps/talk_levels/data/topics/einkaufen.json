@@ -1,0 +1,312 @@
+{
+  "id": "einkaufen",
+  "title": "Einkaufen",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "price_check",
+      "mnemoHint": "€",
+      "de": "Wie viel kostet das?",
+      "en": "How much does this cost?",
+      "it": "Quanto costa questo?",
+      "fr": "Combien ça coûte ?",
+      "es": "¿Cuánto cuesta esto?",
+      "ru": "Сколько это стоит?",
+      "tr": "Bu ne kadar?",
+      "pronIpa": {
+        "tr": "Bu ne kadar?"
+      },
+      "pronRu": {
+        "tr": "бу не кадар?"
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "other_size",
+      "mnemoHint": "SIZE",
+      "de": "Haben Sie das in einer anderen Größe?",
+      "en": "Do you have this in another size?",
+      "it": "Ce l'avete in un'altra taglia?",
+      "fr": "L'avez-vous dans une autre taille ?",
+      "es": "¿Lo tiene en otra talla?",
+      "ru": "У вас есть это другого размера?",
+      "tr": "Bunun başka bedeni var mı?",
+      "pronIpa": {
+        "tr": "Bunun baʃka bedeni var mɯ?"
+      },
+      "pronRu": {
+        "tr": "бунун башка бедени вар мы?"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "pay_cash",
+      "mnemoHint": "CASH",
+      "de": "Ich zahle bar.",
+      "en": "I pay in cash.",
+      "it": "Pago in contanti.",
+      "fr": "Je paie en espèces.",
+      "es": "Pago en efectivo.",
+      "ru": "Я плачу наличными.",
+      "tr": "Nakit ödüyorum.",
+      "pronIpa": {
+        "tr": "Nakit ødyyorum."
+      },
+      "pronRu": {
+        "tr": "накит ёдюйорум."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "pay_card",
+      "mnemoHint": "CARD",
+      "de": "Kann ich mit Karte zahlen?",
+      "en": "Can I pay by card?",
+      "it": "Posso pagare con la carta?",
+      "fr": "Puis-je payer par carte ?",
+      "es": "¿Puedo pagar con tarjeta?",
+      "ru": "Можно оплатить картой?",
+      "tr": "Kartla ödeyebilir miyim?",
+      "pronIpa": {
+        "tr": "Kartla ødeyebilir miyim?"
+      },
+      "pronRu": {
+        "tr": "картла ёдейебилир мийим?"
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "need_shopping",
+      "mnemoHint": "LIST",
+      "de": "Ich muss noch einkaufen gehen.",
+      "en": "I still need to go shopping.",
+      "it": "Devo ancora andare a fare la spesa.",
+      "fr": "Je dois encore faire des courses.",
+      "es": "Aún tengo que ir de compras.",
+      "ru": "Мне ещё нужно сходить за покупками.",
+      "tr": "Hâlâ alışverişe gitmem gerekiyor.",
+      "pronIpa": {
+        "tr": "Hâlâ alɯʃveriʃe gitmem gerekiyor."
+      },
+      "pronRu": {
+        "tr": "хâлâ алышверише гитмем герекийор."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "receipt",
+      "mnemoHint": "REC",
+      "de": "Kann ich eine Quittung bekommen?",
+      "en": "Can I get a receipt?",
+      "it": "Posso avere una ricevuta?",
+      "fr": "Puis-je avoir un reçu ?",
+      "es": "¿Puedo obtener un recibo?",
+      "ru": "Можно получить чек?",
+      "tr": "Fiş alabilir miyim?",
+      "pronIpa": {
+        "tr": "Fiʃ alabilir miyim?"
+      },
+      "pronRu": {
+        "tr": "фиш алабилир мийим?"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "try_on",
+      "mnemoHint": "FIT",
+      "de": "Kann ich das anprobieren?",
+      "en": "Can I try this on?",
+      "it": "Posso provarlo?",
+      "fr": "Puis-je l'essayer ?",
+      "es": "¿Puedo probármelo?",
+      "ru": "Могу я это примерить?",
+      "tr": "Bunu deneyebilir miyim?",
+      "pronIpa": {
+        "tr": "Bunu deneyebilir miyim?"
+      },
+      "pronRu": {
+        "tr": "буну денейебилир мийим?"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "color_choice",
+      "mnemoHint": "COL",
+      "de": "Haben Sie das in Blau?",
+      "en": "Do you have this in blue?",
+      "it": "Lo avete in blu?",
+      "fr": "L'avez-vous en bleu ?",
+      "es": "¿Lo tiene en azul?",
+      "ru": "У вас есть это в синем цвете?",
+      "tr": "Bunun mavisi var mı?",
+      "pronIpa": {
+        "tr": "Bunun mavisi var mɯ?"
+      },
+      "pronRu": {
+        "tr": "бунун мависи вар мы?"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "discount",
+      "mnemoHint": "%",
+      "de": "Gibt es einen Rabatt?",
+      "en": "Is there a discount?",
+      "it": "C'è uno sconto?",
+      "fr": "Y a-t-il une réduction ?",
+      "es": "¿Hay un descuento?",
+      "ru": "Есть скидка?",
+      "tr": "İndirim var mı?",
+      "pronIpa": {
+        "tr": "İndirim var mɯ?"
+      },
+      "pronRu": {
+        "tr": "İндирим вар мы?"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "bag_needed",
+      "mnemoHint": "BAG",
+      "de": "Brauchen Sie eine Tüte?",
+      "en": "Do you need a bag?",
+      "it": "Serve una busta?",
+      "fr": "Avez-vous besoin d'un sac ?",
+      "es": "¿Necesita una bolsa?",
+      "ru": "Вам нужен пакет?",
+      "tr": "Poşet ister misiniz?",
+      "pronIpa": {
+        "tr": "Poʃet ister misiniz?"
+      },
+      "pronRu": {
+        "tr": "пошет истер мисиниз?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "return_item",
+      "mnemoHint": "RET",
+      "de": "Kann ich das zurückgeben?",
+      "en": "Can I return this?",
+      "it": "Posso restituirlo?",
+      "fr": "Puis-je le retourner ?",
+      "es": "¿Puedo devolver esto?",
+      "ru": "Могу я это вернуть?",
+      "tr": "Bunu iade edebilir miyim?",
+      "pronIpa": {
+        "tr": "Bunu iade edebilir miyim?"
+      },
+      "pronRu": {
+        "tr": "буну иаде едебилир мийим?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "open_hours",
+      "mnemoHint": "TIME",
+      "de": "Bis wann sind Sie geöffnet?",
+      "en": "Until what time are you open?",
+      "it": "Fino a che ora siete aperti?",
+      "fr": "Jusqu'à quelle heure êtes-vous ouverts ?",
+      "es": "¿Hasta qué hora están abiertos?",
+      "ru": "До скольки вы открыты?",
+      "tr": "Kaça kadar açıksınız?",
+      "pronIpa": {
+        "tr": "Kat͡ʃa kadar at͡ʃɯksɯnɯz?"
+      },
+      "pronRu": {
+        "tr": "кача кадар ачыксыныз?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "gift_search",
+      "mnemoHint": "GIFT",
+      "de": "Ich suche ein Geschenk.",
+      "en": "I am looking for a gift.",
+      "it": "Cerco un regalo.",
+      "fr": "Je cherche un cadeau.",
+      "es": "Busco un regalo.",
+      "ru": "Я ищу подарок.",
+      "tr": "Bir hediye arıyorum.",
+      "pronIpa": {
+        "tr": "Bir hediye arɯyorum."
+      },
+      "pronRu": {
+        "tr": "бир хедийе арыйорум."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "fresh_fruit",
+      "mnemoHint": "FRUT",
+      "de": "Haben Sie frisches Obst?",
+      "en": "Do you have fresh fruit?",
+      "it": "Avete frutta fresca?",
+      "fr": "Avez-vous des fruits frais ?",
+      "es": "¿Tiene fruta fresca?",
+      "ru": "У вас есть свежие фрукты?",
+      "tr": "Taze meyveniz var mı?",
+      "pronIpa": {
+        "tr": "Taze meyveniz var mɯ?"
+      },
+      "pronRu": {
+        "tr": "тазе мейвениз вар мы?"
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "half_kilo",
+      "mnemoHint": "0.5K",
+      "de": "Bitte ein halbes Kilo davon.",
+      "en": "Half a kilo of that, please.",
+      "it": "Mezzo chilo di quello, per favore.",
+      "fr": "Un demi-kilo de cela, s'il vous plaît.",
+      "es": "Medio kilo de eso, por favor.",
+      "ru": "Полкило этого, пожалуйста.",
+      "tr": "Şundan yarım kilo lütfen.",
+      "pronIpa": {
+        "tr": "ʃundan yarɯm kilo lytfen."
+      },
+      "pronRu": {
+        "tr": "шундан йарым кило лютфен."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "price_per_kilo",
+      "mnemoHint": "€/KG",
+      "de": "Wie viel kostet es pro Kilo?",
+      "en": "How much is it per kilo?",
+      "it": "Quanto costa al chilo?",
+      "fr": "Combien ça coûte au kilo ?",
+      "es": "¿Cuánto cuesta por kilo?",
+      "ru": "Сколько стоит за килограмм?",
+      "tr": "Kilosu ne kadar?",
+      "pronIpa": {
+        "tr": "Kilosu ne kadar?"
+      },
+      "pronRu": {
+        "tr": "килосу не кадар?"
+      }
+    },
+    {
+      "level": 8,
+      "mnemoKey": "where_checkout",
+      "mnemoHint": "PAY",
+      "de": "Wo ist die Kasse?",
+      "en": "Where is the checkout?",
+      "it": "Dov'è la cassa?",
+      "fr": "Où est la caisse ?",
+      "es": "¿Dónde está la caja?",
+      "ru": "Где касса?",
+      "tr": "Kasa nerede?",
+      "pronIpa": {
+        "tr": "Kasa nerede?"
+      },
+      "pronRu": {
+        "tr": "каса нереде?"
+      }
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "id": "verkehr_auto",
+  "title": "Verkehr & Auto",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "car_broken",
+      "mnemoHint": "STOP",
+      "de": "Mein Auto ist liegengeblieben.",
+      "en": "My car has broken down.",
+      "it": "La mia auto si è rotta.",
+      "fr": "Ma voiture est en panne.",
+      "es": "Mi coche se averió.",
+      "ru": "Моя машина сломалась.",
+      "tr": "Arabam bozuldu.",
+      "pronIpa": {
+        "tr": "Arabam bozuldu."
+      },
+      "pronRu": {
+        "tr": "арабам бозулду."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "need_tow",
+      "mnemoHint": "TOW",
+      "de": "Ich brauche einen Abschleppdienst.",
+      "en": "I need a tow truck.",
+      "it": "Ho bisogno di un carro attrezzi.",
+      "fr": "J'ai besoin d'une dépanneuse.",
+      "es": "Necesito una grúa.",
+      "ru": "Мне нужен эвакуатор.",
+      "tr": "Çekiciye ihtiyacım var.",
+      "pronIpa": {
+        "tr": "t͡ʃekid͡ʒiye ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "чекиджийе ихтийаджым вар."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "flat_tire",
+      "mnemoHint": "TIRE",
+      "de": "Ich habe einen platten Reifen.",
+      "en": "I have a flat tire.",
+      "it": "Ho una gomma a terra.",
+      "fr": "J'ai un pneu crevé.",
+      "es": "Tengo un neumático pinchado.",
+      "ru": "У меня проколото колесо.",
+      "tr": "Lastiğim patladı.",
+      "pronIpa": {
+        "tr": "Lastiim patladɯ."
+      },
+      "pronRu": {
+        "tr": "ластиим патлады."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "no_fuel",
+      "mnemoHint": "0%",
+      "de": "Ich habe keinen Kraftstoff mehr.",
+      "en": "I am out of fuel.",
+      "it": "Sono senza carburante.",
+      "fr": "Je n'ai plus de carburant.",
+      "es": "Me quedé sin combustible.",
+      "ru": "У меня закончился бензин.",
+      "tr": "Yakıtım bitti.",
+      "pronIpa": {
+        "tr": "Yakɯtɯm bitti."
+      },
+      "pronRu": {
+        "tr": "йакытым битти."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "need_gas",
+      "mnemoHint": "FUEL",
+      "de": "Wo ist die nächste Tankstelle?",
+      "en": "Where is the nearest gas station?",
+      "it": "Dov'è la stazione di servizio più vicina?",
+      "fr": "Où est la station-service la plus proche ?",
+      "es": "¿Dónde está la gasolinera más cercana?",
+      "ru": "Где ближайшая заправка?",
+      "tr": "En yakın benzin istasyonu nerede?",
+      "pronIpa": {
+        "tr": "En yakɯn benzin istasyonu nerede?"
+      },
+      "pronRu": {
+        "tr": "ен йакын бензин истасйону нереде?"
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "battery_dead",
+      "mnemoHint": "BAT",
+      "de": "Die Batterie ist leer.",
+      "en": "The battery is dead.",
+      "it": "La batteria è scarica.",
+      "fr": "La batterie est à plat.",
+      "es": "La batería está descargada.",
+      "ru": "Аккумулятор сел.",
+      "tr": "Akü bitti.",
+      "pronIpa": {
+        "tr": "Aky bitti."
+      },
+      "pronRu": {
+        "tr": "акю битти."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "accident_police",
+      "mnemoHint": "911",
+      "de": "Es gab einen Unfall, bitte rufen Sie die Polizei.",
+      "en": "There was an accident, please call the police.",
+      "it": "C'è stato un incidente, chiami la polizia per favore.",
+      "fr": "Il y a eu un accident, appelez la police s'il vous plaît.",
+      "es": "Hubo un accidente, por favor llame a la policía.",
+      "ru": "Произошла авария, пожалуйста вызовите полицию.",
+      "tr": "Kaza oldu, lütfen polisi çağırın.",
+      "pronIpa": {
+        "tr": "Kaza oldu, lytfen polisi t͡ʃaɯrɯn."
+      },
+      "pronRu": {
+        "tr": "каза олду, лютфен полиси чаырын."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "insurance_papers",
+      "mnemoHint": "DOC",
+      "de": "Hier sind meine Versicherungsunterlagen.",
+      "en": "Here are my insurance papers.",
+      "it": "Ecco i miei documenti assicurativi.",
+      "fr": "Voici mes papiers d'assurance.",
+      "es": "Aquí están mis papeles del seguro.",
+      "ru": "Вот мои страховые документы.",
+      "tr": "İşte sigorta evraklarım.",
+      "pronIpa": {
+        "tr": "İʃte sigorta evraklarɯm."
+      },
+      "pronRu": {
+        "tr": "İште сигорта евракларым."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "need_mechanic",
+      "mnemoHint": "FIX",
+      "de": "Können Sie einen Mechaniker schicken?",
+      "en": "Can you send a mechanic?",
+      "it": "Potete mandare un meccanico?",
+      "fr": "Pouvez-vous envoyer un mécanicien ?",
+      "es": "¿Puede enviar a un mecánico?",
+      "ru": "Можете прислать механика?",
+      "tr": "Bir tamirci gönderebilir misiniz?",
+      "pronIpa": {
+        "tr": "Bir tamird͡ʒi gønderebilir misiniz?"
+      },
+      "pronRu": {
+        "tr": "бир тамирджи гёндеребилир мисиниз?"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "rental_car",
+      "mnemoHint": "RENT",
+      "de": "Kann ich ein Ersatzfahrzeug mieten?",
+      "en": "Can I rent a replacement car?",
+      "it": "Posso noleggiare un'auto sostitutiva?",
+      "fr": "Puis-je louer un véhicule de remplacement ?",
+      "es": "¿Puedo alquilar un coche de sustitución?",
+      "ru": "Могу ли я взять машину напрокат взамен?",
+      "tr": "Yedek araç kiralayabilir miyim?",
+      "pronIpa": {
+        "tr": "Yedek arat͡ʃ kiralayabilir miyim?"
+      },
+      "pronRu": {
+        "tr": "йедек арач киралайабилир мийим?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "show_license",
+      "mnemoHint": "ID",
+      "de": "Hier ist mein Führerschein.",
+      "en": "Here is my driver's license.",
+      "it": "Ecco la mia patente.",
+      "fr": "Voici mon permis de conduire.",
+      "es": "Aquí está mi carnet de conducir.",
+      "ru": "Вот мои права.",
+      "tr": "İşte ehliyetim.",
+      "pronIpa": {
+        "tr": "İʃte ehliyetim."
+      },
+      "pronRu": {
+        "tr": "İште ехлийетим."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "hazard_lights",
+      "mnemoHint": "⚠",
+      "de": "Schalten Sie die Warnblinkanlage ein.",
+      "en": "Turn on the hazard lights.",
+      "it": "Accendi le luci di emergenza.",
+      "fr": "Allumez les feux de détresse.",
+      "es": "Encienda las luces de emergencia.",
+      "ru": "Включите аварийку.",
+      "tr": "Dörtlüleri açın.",
+      "pronIpa": {
+        "tr": "Dørtlyleri at͡ʃɯn."
+      },
+      "pronRu": {
+        "tr": "дёртлюлери ачын."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "wait_time",
+      "mnemoHint": "ETA",
+      "de": "Wie lange dauert es, bis Hilfe kommt?",
+      "en": "How long until help arrives?",
+      "it": "Quanto ci vorrà per l'arrivo dell'aiuto?",
+      "fr": "Combien de temps avant que l'aide arrive ?",
+      "es": "¿Cuánto tardará en llegar la ayuda?",
+      "ru": "Сколько времени ждать помощи?",
+      "tr": "Yardım gelene kadar ne kadar sürer?",
+      "pronIpa": {
+        "tr": "Yardɯm gelene kadar ne kadar syrer?"
+      },
+      "pronRu": {
+        "tr": "йардым гелене кадар не кадар сюрер?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "traffic_jam",
+      "mnemoHint": "JAM",
+      "de": "Es gibt einen Stau vor uns.",
+      "en": "There is a traffic jam ahead.",
+      "it": "C'è una coda davanti a noi.",
+      "fr": "Il y a un embouteillage devant.",
+      "es": "Hay un atasco delante.",
+      "ru": "Впереди пробка.",
+      "tr": "İleride trafik sıkışıklığı var.",
+      "pronIpa": {
+        "tr": "İleride trafik sɯkɯʃɯklɯɯ var."
+      },
+      "pronRu": {
+        "tr": "İлериде трафик сыкышыклыы вар."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "road_closed",
+      "mnemoHint": "X",
+      "de": "Die Straße ist gesperrt, gibt es eine Umleitung?",
+      "en": "The road is closed, is there a detour?",
+      "it": "La strada è chiusa, c'è una deviazione?",
+      "fr": "La route est fermée, y a-t-il une déviation ?",
+      "es": "La carretera está cerrada, ¿hay un desvío?",
+      "ru": "Дорога перекрыта, есть объезд?",
+      "tr": "Yol kapalı, alternatif var mı?",
+      "pronIpa": {
+        "tr": "Yol kapalɯ, alternatif var mɯ?"
+      },
+      "pronRu": {
+        "tr": "йол капалы, алтернатиф вар мы?"
+      }
+    }
+  ]
+}

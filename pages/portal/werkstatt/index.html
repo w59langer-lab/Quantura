@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Werkstatt (WorkHub)</title>
+
+  <!-- RU: Дата: 19.12.2025 — подключение core (loader + header/footer) -->
+  <!-- DE: Datum: 19.12.2025 — Core-Anbindung (loader + header/footer) -->
+  <!-- EN: Date: 2025-12-19 — core wiring (loader + header/footer) -->
+
+  <link rel="stylesheet" href="/core/assets/style.css" />
+  <script src="/core/loader/loader.js" defer></script>
+  <script src="/core/js/core_init.js" defer></script>
+  <style>
+    .werkstatt-page {
+      padding: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .werkstatt-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 10px;
+      background: #eef2ff;
+      color: #1f2a44;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .card-link {
+      display: block;
+      border: 1px solid #e0e4ec;
+      border-radius: 12px;
+      padding: 18px;
+      background: #fff;
+      color: inherit;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      transition: transform 120ms ease, box-shadow 120ms ease,
+        border-color 120ms ease;
+    }
+    .card-link:hover,
+    .card-link:focus-visible {
+      transform: translateY(-2px);
+      border-color: #c7cfdf;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      outline: none;
+    }
+    .card-link h3 {
+      margin: 0 0 6px;
+      font-size: 20px;
+    }
+    .card-link p {
+      margin: 0;
+      color: #40485a;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+
+  <main class="werkstatt-page">
+    <div class="werkstatt-badge" aria-hidden="true">Werkstatt (WorkHub)</div>
+    <h1>Werkstatt (WorkHub)</h1>
+    <p>Wähle einen Bereich aus, um in der Werkstatt weiterzuarbeiten.</p>
+
+    <section class="cards-grid">
+      <a class="card-link" href="/pages/portal/werkstatt/tagbook/index.html">
+        <h3>TagBook</h3>
+        <p>Arbeitsnotizen / Struktur / Experimente</p>
+      </a>
+
+      <a class="card-link" href="/pages/language_lab/apps/">
+        <h3>LanguageLab Apps</h3>
+        <p>Generator, Talk Levels, Karten, Analysen …</p>
+      </a>
+
+      <a class="card-link" href="/pages/faecher/informatik/">
+        <h3>Informatik – Web-Kurs</h3>
+        <p>HTML/CSS/JS auf Basis dieses Projekts</p>
+      </a>
+    </section>
+  </main>
+
+  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karten (DE) – Leitner + TTS</title>
+    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="../karten_style.css" />
+    <script src="../../../../../core/js/core_init.js" defer></script>
+    <script src="../karten_data.js" defer></script>
+    <script src="../karten_tts.js" defer></script>
+    <script src="../karten_logic.js" defer></script>
+    <script src="../karten_audio.js" defer></script>
+    <script src="../karten_export.js" defer></script>
+  </head>
+  <body>
+    <div data-partial="header" data-partial-path="../../../../../core/partials/header.html"></div>
+
+    <main class="page-wrapper">
+      <div class="card karten-card">
+        <div class="karten-card__header">
+          <div>
+            <h1>Karten – Leitner 1–7 (DE)</h1>
+            <p class="hint-text">
+              TTS zum Vorlesen, Geschwindigkeit einstellbar. Eigene Karten werden lokal gespeichert
+              und ins Leitner-System integriert.
+            </p>
+          </div>
+          <div class="karten-stats" id="kartenStats"></div>
+        </div>
+
+        <section class="karten-grid">
+          <aside class="karten-panel">
+            <div class="panel-title">Filter</div>
+            <div class="form-row">
+              <label for="langFilter">Sprache</label>
+              <select id="langFilter">
+                <option value="all">Alle</option>
+                <option value="de" selected>DE</option>
+                <option value="en">EN</option>
+                <option value="it">IT</option>
+                <option value="fr">FR</option>
+                <option value="ru">RU</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="boxFilter">Box</label>
+              <select id="boxFilter">
+                <option value="all">Alle (1–7)</option>
+                <option value="1">Box 1</option>
+                <option value="2">Box 2</option>
+                <option value="3">Box 3</option>
+                <option value="4">Box 4</option>
+                <option value="5">Box 5</option>
+                <option value="6">Box 6</option>
+                <option value="7">Box 7</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="searchInput">Suche / Search</label>
+              <input id="searchInput" type="text" placeholder="Text in front/back..." />
+            </div>
+
+            <div class="panel-title">Training-Setup</div>
+            <div class="form-row">
+              <label for="sourceLang">Ausgangssprache</label>
+              <select id="sourceLang">
+                <option value="de" selected>DE</option>
+                <option value="en">EN</option>
+                <option value="it">IT</option>
+                <option value="fr">FR</option>
+                <option value="ru">RU</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="targetLang">Zielsprache</label>
+              <select id="targetLang">
+                <option value="en" selected>EN</option>
+                <option value="de">DE</option>
+                <option value="it">IT</option>
+                <option value="fr">FR</option>
+                <option value="ru">RU</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="difficultyLevel">Schwierigkeitsstufe (1–10)</label>
+              <select id="difficultyLevel">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <div class="panel-title">Eigene Karte hinzufügen</div>
+            <div class="form-row">
+              <label for="newLang">Sprache (lang)</label>
+              <select id="newLang">
+                <option value="de" selected>DE</option>
+                <option value="en">EN</option>
+                <option value="it">IT</option>
+                <option value="fr">FR</option>
+                <option value="ru">RU</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="newFront">Front</label>
+              <textarea id="newFront" rows="2" placeholder="Frage / Wort / Satz"></textarea>
+            </div>
+            <div class="form-row">
+              <label for="newBack">Back</label>
+              <textarea id="newBack" rows="2" placeholder="Antwort / Übersetzung"></textarea>
+            </div>
+            <div class="btn-row">
+              <button id="addCardBtn" class="btn btn-primary" type="button">Speichern</button>
+              <button id="clearFormBtn" class="btn" type="button">Leeren</button>
+            </div>
+            <div id="customInfo" class="hint-text"></div>
+          </aside>
+
+          <section class="karten-panel karten-panel--main">
+            <div class="panel-header">
+              <div>
+                <div class="panel-title">Aktive Karten</div>
+                <p class="hint-text" id="activeInfo"></p>
+              </div>
+              <div class="btn-row">
+                <button id="shuffleBtn" class="btn">Mischen</button>
+                <button id="nextBtn" class="btn btn-primary">Nächste</button>
+              </div>
+            </div>
+
+            <div class="card-view">
+              <div class="card-side">
+                <div class="label">Front</div>
+                <div id="cardFront" class="card-text"></div>
+              </div>
+              <div class="card-side hidden" id="cardBackSide">
+                <div class="label">Back</div>
+                <div id="cardBack" class="card-text"></div>
+              </div>
+            </div>
+
+            <div class="card-audio-controls">
+              <button id="cardAudioPlayBtn" class="btn" type="button">🔊 Vorlesen</button>
+              <button id="cardAudioStopBtn" class="btn" type="button">■ Stop</button>
+              <label for="cardAudioRate">
+                Tempo:
+                <select id="cardAudioRate">
+                  <option value="0.75">Langsam</option>
+                  <option value="1" selected>Normal</option>
+                  <option value="1.25">Schnell</option>
+                </select>
+              </label>
+              <div class="card-audio-slider">
+                <label for="cardAudioRateSlider">Feinregler:</label>
+                <input
+                  type="range"
+                  id="cardAudioRateSlider"
+                  min="0.5"
+                  max="1.5"
+                  step="0.05"
+                  value="1"
+                />
+                <span id="cardAudioRateValue">1.00×</span>
+              </div>
+            </div>
+
+            <div class="btn-row">
+              <button id="showAnswerBtn" class="btn">Lösung anzeigen</button>
+              <button id="knewBtn" class="btn btn-success">Gewusst (Box +1)</button>
+              <button id="notKnewBtn" class="btn btn-danger">Noch nicht (Box 1)</button>
+            </div>
+
+            <section class="karten-export-panel">
+              <button id="kartenExportBtn" class="btn btn-primary" type="button">
+                Karten als Excel/TSV exportieren
+              </button>
+              <p class="karten-export-hint">
+                Exportiert alle Karten (Basis + eigene) als .tsv für Excel/LibreOffice.
+              </p>
+            </section>
+
+            <div class="list-wrapper">
+              <div class="panel-title">Alle Karten (inkl. eigene)</div>
+              <div id="cardList" class="card-list"></div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <div data-partial="footer" data-partial-path="../../../../../core/partials/footer.html"></div>
+  </body>
+</html>

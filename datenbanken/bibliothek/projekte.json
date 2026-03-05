@@ -1,0 +1,13 @@
+[
+  {
+    "id": "maus",
+    "title": "Maus-Projekt",
+    "subtitle": "Geschichte / Bilder / TTS",
+    "path": "pages/bibliothek/projekte/maus/maus_index.html",
+    "tags": [
+      "Geschichte",
+      "Familie"
+    ],
+    "note": "Herzensprojekt – Maus-Geschichte."
+  }
+]

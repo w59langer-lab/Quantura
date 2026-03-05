@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>Italiano – Generatore di frasi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="../shared/lg_tts.css" />
+    <link rel="stylesheet" href="../shared/lang_switch.css" />
+    <link rel="stylesheet" href="../shared/translation_panel.css" />
+    <script src="../../../../../core/js/core_init.js" defer></script>
+    <script src="../shared/lg_tts.js" defer></script>
+    <script src="../shared/lang_switch.js" defer></script>
+    <script src="../shared/lg_translate.js" defer></script>
+
+    <script src="../../../../../datenbanken/it/it_verbs/it_verbs.js" defer></script>
+    <script src="../../../../../datenbanken/it/it_pronouns/it_pronouns.js" defer></script>
+    <script src="../../../../../datenbanken/it/it_adjectives/it_adjectives.js" defer></script>
+    <script src="../../../../../datenbanken/it/it_adverbs/it_adverbs.js" defer></script>
+    <script src="../../../../../datenbanken/it/it_preps/it_preps.js" defer></script>
+
+    <script src="it_script.js" defer></script>
+  </head>
+  <body>
+    <div
+      data-partial="header"
+      data-partial-path="../../../../../core/partials/header.html"
+    ></div>
+
+    <!-- =========================================================
+         DE: Sprachumschalter – Buttons
+         EN: Language switcher – buttons
+         RU: Переключатель языков – кнопки
+         ========================================================= -->
+    <div class="page-wrapper">
+      <div class="lang-switch" data-active-lang="it">
+        <button class="lang-switch__btn" data-lang="de">Deutsch</button>
+        <button class="lang-switch__btn" data-lang="en">English</button>
+        <button class="lang-switch__btn" data-lang="fr">Français</button>
+        <button class="lang-switch__btn" data-lang="it">Italiano</button>
+        <button class="lang-switch__btn" data-lang="ru">Русский</button>
+        <button class="lang-switch__btn" data-lang="es">Español</button>
+      </div>
+    </div>
+
+    <main class="page-wrapper">
+      <div class="card">
+        <h1>Italiano – Generatore di frasi</h1>
+        <p class="hint-text">
+          Scegli categorie e tipo di frase, poi clicca “Genera frase”.
+          Dati da <code>datenbanken/it</code>.
+        </p>
+
+        <section class="language-grid">
+          <div class="language-panel">
+            <div class="language-panel__title">Impostazioni</div>
+            <div class="language-panel__subtitle">
+              Tipo di frase, tempo, categorie.
+            </div>
+
+            <div class="form-row">
+              <label for="itSentenceType">Tipo di frase</label>
+              <select id="itSentenceType">
+                <option value="aussage">Affermazione</option>
+                <option value="frage">Domanda</option>
+                <option value="verneinung">Negazione</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="itTense">Tempo</label>
+              <select id="itTense">
+                <option value="praesens">Presente</option>
+                <option value="perfekt">Passato prossimo</option>
+                <option value="praeteritum">Imperfetto</option>
+                <option value="futur1">Futuro</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="pronounSelect">Pronome</label>
+              <select id="pronounSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="verbSelect">Verbo</label>
+              <select id="verbSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="adjSelect">Aggettivo</label>
+              <select id="adjSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="advSelect">Avverbio</label>
+              <select id="advSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="prepSelect">Preposizione</label>
+              <select id="prepSelect"></select>
+            </div>
+
+            <div class="btn-row">
+              <button id="itGenerateBtn" class="btn btn-primary" type="button">
+                Genera
+              </button>
+              <button id="itClearBtn" class="btn" type="button">Reset</button>
+            </div>
+          </div>
+
+          <div class="language-panel">
+            <div class="language-panel__title">Output</div>
+            <div class="language-panel__subtitle">
+              La frase generata appare qui.
+            </div>
+            <div id="itSentenceOutput" class="sentence-output"></div>
+            <!-- =====================================================
+                 DE: Übersetzung auf Deutsch
+                 EN: Translation into German
+                 RU: Перевод на немецкий
+                 ===================================================== -->
+            <div class="translation-panel">
+              <div class="translation-label">
+                <!-- DE: Deutsch -->Deutsch
+                <!-- EN: German -->
+                <!-- RU: Немецкий -->
+              </div>
+              <div class="translation-box" id="translationDeBox">–</div>
+              <div class="translation-actions">
+                <button type="button" class="translation-btn" id="translationSpeakDeBtn">
+                  <!-- DE: vorlesen / EN: speak / RU: озвучить -->
+                  ▶
+                </button>
+              </div>
+            </div>
+            <p id="itHintLine" class="hint-text">
+              Nessuna frase generata ancora.
+            </p>
+            <!-- =====================================================
+                 DE: TTS-Steuerung
+                 EN: TTS controls
+                 RU: Управление озвучкой
+                 ===================================================== -->
+            <div class="lg-tts-panel">
+              <div class="lg-tts-row">
+                <span class="lg-tts-label">
+                  <!-- DE: Geschwindigkeit / EN: Speed / RU: Скорость -->
+                  Velocità
+                </span>
+                <input
+                  id="ttsRateSlider"
+                  class="lg-tts-slider"
+                  type="range"
+                  min="0.5"
+                  max="1.5"
+                  step="0.1"
+                  value="1.0"
+                />
+              </div>
+
+              <div class="lg-tts-row">
+                <button type="button" class="lg-tts-btn" id="ttsSlowBtn">
+                  <!-- DE: langsam / EN: slow / RU: медленно -->
+                  lento
+                </button>
+                <button type="button" class="lg-tts-btn primary" id="ttsNormalBtn">
+                  <!-- DE: normal / EN: normal / RU: нормально -->
+                  normale
+                </button>
+                <button type="button" class="lg-tts-btn" id="ttsFastBtn">
+                  <!-- DE: schnell / EN: fast / RU: быстро -->
+                  veloce
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsSpeakBtn">
+                  <!-- DE: abspielen / EN: play / RU: произнести -->
+                  ▶
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsStopBtn">
+                  <!-- DE: stoppen / EN: stop / RU: стоп -->
+                  ■
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div
+      data-partial="footer"
+      data-partial-path="../../../../../core/partials/footer.html"
+    ></div>
+  </body>
+</html>

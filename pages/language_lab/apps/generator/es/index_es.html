@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>Español – Generador de oraciones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- =========================================================
+         DE/EN/RU: Gemeinsame Styles + Master-Skript
+         ========================================================= -->
+    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="../shared/lg_tts.css" />
+    <script src="../../../../../core/js/core_init.js" defer></script>
+    <script src="../shared/lg_tts.js" defer></script>
+
+    <!-- =========================================================
+         DE/EN/RU: Spanische Datenbanken
+         ========================================================= -->
+    <script src="../../../../../datenbanken/es/es_pronouns/es_pronouns.js" defer></script>
+    <script src="../../../../../datenbanken/es/es_verbs/es_verbs.js" defer></script>
+    <script src="../../../../../datenbanken/es/es_adjectives/es_adjectives.js" defer></script>
+    <script src="../../../../../datenbanken/es/es_adverbs/es_adverbs.js" defer></script>
+    <script src="../../../../../datenbanken/es/es_preps/es_preps.js" defer></script>
+    <script src="../../../../../datenbanken/es/es_nouns/es_nouns.js" defer></script>
+
+    <!-- =========================================================
+         DE/EN/RU: Generator-Logik
+         ========================================================= -->
+    <script src="es_script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div
+      data-partial="header"
+      data-partial-path="../../../../../core/partials/header.html"
+    ></div>
+
+    <main class="page-wrapper">
+      <div class="card">
+        <h1>Español – Generador de oraciones</h1>
+        <p class="hint-text">
+          Selecciona las categorías y pulsa “Generar”. Datos desde
+          <code>datenbanken/es</code>.
+        </p>
+
+        <section class="language-grid">
+          <!-- ==================== LINKES PANEL: Einstellungen ==================== -->
+          <div class="language-panel">
+            <div class="language-panel__title">Ajustes</div>
+            <div class="language-panel__subtitle">
+              Tipo de oración, tiempo, palabras.
+            </div>
+
+            <div class="form-row">
+              <label for="esSentenceType">Tipo de oración</label>
+              <select id="esSentenceType">
+                <option value="aussage">Enunciado</option>
+                <option value="frage">Pregunta</option>
+                <option value="verneinung">Negación</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="esTense">Tiempo</label>
+              <select id="esTense">
+                <option value="presente">Presente</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="pronounSelect">Sujeto (pronombre)</label>
+              <select id="pronounSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="verbSelect">Verbo</label>
+              <select id="verbSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="esDetSelect">Determinante</label>
+              <select id="esDetSelect">
+                <option value="">— (sin determinante) —</option>
+                <option value="def">Artículo definido</option>
+                <option value="indef">Artículo indefinido</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="nounSelect">Sustantivo</label>
+              <select id="nounSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="adjSelect">Adjetivo</label>
+              <select id="adjSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="advSelect">Adverbio</label>
+              <select id="advSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="prepSelect">Preposición</label>
+              <select id="prepSelect"></select>
+            </div>
+
+            <div class="btn-row">
+              <button id="esGenerateBtn" class="btn btn-primary" type="button">
+                Generar
+              </button>
+              <button id="esClearBtn" class="btn" type="button">Reset</button>
+            </div>
+          </div>
+
+          <!-- ==================== RECHTES PANEL: Ausgabe ==================== -->
+          <div class="language-panel">
+            <div class="language-panel__title">Salida</div>
+            <div class="language-panel__subtitle">
+              Aquí aparece la oración generada.
+            </div>
+            <div id="esSentenceOutput" class="sentence-output"></div>
+            <p id="esHintLine" class="hint-text">
+              No hay oración generada todavía.
+            </p>
+            <div id="esGeneratorMessage" class="hint-text"></div>
+
+            <!-- =====================================================
+                 DE: TTS-Steuerung
+                 EN: TTS controls
+                 RU: Управление озвучкой
+                 ===================================================== -->
+            <div class="lg-tts-panel">
+              <div class="lg-tts-row">
+                <span class="lg-tts-label">
+                  Velocidad
+                </span>
+                <input
+                  id="ttsRateSlider"
+                  class="lg-tts-slider"
+                  type="range"
+                  min="0.5"
+                  max="1.5"
+                  step="0.1"
+                  value="1.0"
+                />
+              </div>
+
+              <div class="lg-tts-row">
+                <button type="button" class="lg-tts-btn" id="ttsSlowBtn">
+                  lento
+                </button>
+                <button type="button" class="lg-tts-btn primary" id="ttsNormalBtn">
+                  normal
+                </button>
+                <button type="button" class="lg-tts-btn" id="ttsFastBtn">
+                  rápido
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsSpeakBtn">
+                  ▶
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsStopBtn">
+                  ■
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div
+      data-partial="footer"
+      data-partial-path="../../../../../core/partials/footer.html"
+    ></div>
+  </body>
+</html>

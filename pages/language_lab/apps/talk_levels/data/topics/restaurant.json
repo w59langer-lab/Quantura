@@ -1,0 +1,372 @@
+{
+  "id": "restaurant",
+  "title": "Restaurant",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "table_for_two",
+      "mnemoHint": "2P",
+      "de": "Haben Sie einen Tisch für zwei?",
+      "en": "Do you have a table for two?",
+      "it": "Avete un tavolo per due?",
+      "fr": "Avez-vous une table pour deux ?",
+      "es": "¿Tienen una mesa para dos?",
+      "ru": "У вас есть столик на двоих?",
+      "tr": "İki kişilik masanız var mı?",
+      "pronIpa": {
+        "tr": "İki kiʃilik masanɯz var mɯ?"
+      },
+      "pronRu": {
+        "tr": "İки кишилик масаныз вар мы?"
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "see_menu",
+      "mnemoHint": "MENU",
+      "de": "Ich möchte die Speisekarte sehen.",
+      "en": "I would like to see the menu.",
+      "it": "Vorrei vedere il menù.",
+      "fr": "Je voudrais voir la carte.",
+      "es": "Quisiera ver el menú.",
+      "ru": "Я хотел бы увидеть меню.",
+      "tr": "Menüyü görmek istiyorum.",
+      "pronIpa": {
+        "tr": "Menyyy gørmek istiyorum."
+      },
+      "pronRu": {
+        "tr": "менюйю гёрмек истийорум."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "recommendation",
+      "mnemoHint": "REC",
+      "de": "Können Sie etwas empfehlen?",
+      "en": "Can you recommend something?",
+      "it": "Può consigliare qualcosa?",
+      "fr": "Pouvez-vous recommander quelque chose ?",
+      "es": "¿Puede recomendar algo?",
+      "ru": "Можете что-то посоветовать?",
+      "tr": "Bir şey önerebilir misiniz?",
+      "pronIpa": {
+        "tr": "Bir ʃey ønerebilir misiniz?"
+      },
+      "pronRu": {
+        "tr": "бир шей ёнеребилир мисиниз?"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "allergy_nuts",
+      "mnemoHint": "NUT",
+      "de": "Ich bin allergisch gegen Nüsse.",
+      "en": "I am allergic to nuts.",
+      "it": "Sono allergico/a alle noci.",
+      "fr": "Je suis allergique aux noix.",
+      "es": "Soy alérgico/a a los frutos secos.",
+      "ru": "У меня аллергия на орехи.",
+      "tr": "Fındık/fıstığa alerjim var.",
+      "pronIpa": {
+        "tr": "Fɯndɯk/fɯstɯa alerʒim var."
+      },
+      "pronRu": {
+        "tr": "фындык/фыстыа алержим вар."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "no_meat",
+      "mnemoHint": "VEG",
+      "de": "Ohne Fleisch, bitte.",
+      "en": "Without meat, please.",
+      "it": "Senza carne, per favore.",
+      "fr": "Sans viande, s'il vous plaît.",
+      "es": "Sin carne, por favor.",
+      "ru": "Без мяса, пожалуйста.",
+      "tr": "Etsiz olsun lütfen.",
+      "pronIpa": {
+        "tr": "Etsiz olsun lytfen."
+      },
+      "pronRu": {
+        "tr": "етсиз олсун лютфен."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "still_water",
+      "mnemoHint": "H2O",
+      "de": "Ich nehme ein Wasser ohne Kohlensäure.",
+      "en": "I'll have still water.",
+      "it": "Prendo un'acqua naturale.",
+      "fr": "Je prends de l'eau plate.",
+      "es": "Tomaré agua sin gas.",
+      "ru": "Я возьму негазированную воду.",
+      "tr": "Sade su alayım.",
+      "pronIpa": {
+        "tr": "Sade su alayɯm."
+      },
+      "pronRu": {
+        "tr": "саде су алайым."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "bill_please",
+      "mnemoHint": "BILL",
+      "de": "Die Rechnung, bitte.",
+      "en": "The bill, please.",
+      "it": "Il conto, per favore.",
+      "fr": "L'addition, s'il vous plaît.",
+      "es": "La cuenta, por favor.",
+      "ru": "Счёт, пожалуйста.",
+      "tr": "Hesap lütfen.",
+      "pronIpa": {
+        "tr": "Hesap lytfen."
+      },
+      "pronRu": {
+        "tr": "хесап лютфен."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "keep_change",
+      "mnemoHint": "TIP",
+      "de": "Stimmt so, danke.",
+      "en": "Keep the change, thanks.",
+      "it": "Tenga il resto, grazie.",
+      "fr": "Gardez la monnaie, merci.",
+      "es": "Quédese con el cambio, gracias.",
+      "ru": "Сдачу оставьте себе, спасибо.",
+      "tr": "Üstü kalsın, teşekkürler.",
+      "pronIpa": {
+        "tr": "ysty kalsɯn, teʃekkyrler."
+      },
+      "pronRu": {
+        "tr": "юстю калсын, тешеккюрлер."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "tastes_good",
+      "mnemoHint": "YUM",
+      "de": "Schmeckt sehr gut!",
+      "en": "It tastes very good!",
+      "it": "È molto buono!",
+      "fr": "C'est très bon !",
+      "es": "¡Sabe muy bien!",
+      "ru": "Очень вкусно!",
+      "tr": "Çok lezzetli!",
+      "pronIpa": {
+        "tr": "t͡ʃok lezzetli!"
+      },
+      "pronRu": {
+        "tr": "чок леззетли!"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "spicy_dish",
+      "mnemoHint": "HOT",
+      "de": "Ist das Gericht scharf?",
+      "en": "Is the dish spicy?",
+      "it": "Il piatto è piccante?",
+      "fr": "Le plat est-il épicé ?",
+      "es": "¿El plato es picante?",
+      "ru": "Блюдо острое?",
+      "tr": "Yemek acı mı?",
+      "pronIpa": {
+        "tr": "Yemek ad͡ʒɯ mɯ?"
+      },
+      "pronRu": {
+        "tr": "йемек аджы мы?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "wrong_order",
+      "mnemoHint": "ERR",
+      "de": "Das ist nicht, was ich bestellt habe.",
+      "en": "This is not what I ordered.",
+      "it": "Non è ciò che ho ordinato.",
+      "fr": "Ce n'est pas ce que j'ai commandé.",
+      "es": "Esto no es lo que pedí.",
+      "ru": "Это не то, что я заказывал.",
+      "tr": "Bu sipariş ettiğim şey değil.",
+      "pronIpa": {
+        "tr": "Bu sipariʃ ettiim ʃey deil."
+      },
+      "pronRu": {
+        "tr": "бу сипариш еттиим шей деил."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "soup_starter",
+      "mnemoHint": "SOUP",
+      "de": "Ich hätte gern eine Suppe als Vorspeise.",
+      "en": "I'd like a soup as a starter.",
+      "it": "Vorrei una zuppa come antipasto.",
+      "fr": "Je voudrais une soupe en entrée.",
+      "es": "Quisiera una sopa de entrada.",
+      "ru": "Я бы хотел суп в качестве закуски.",
+      "tr": "Başlangıç olarak çorba isterim.",
+      "pronIpa": {
+        "tr": "Baʃlangɯt͡ʃ olarak t͡ʃorba isterim."
+      },
+      "pronRu": {
+        "tr": "башлангыч оларак чорба истерим."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "vegetarian_options",
+      "mnemoHint": "VEG?",
+      "de": "Haben Sie vegetarische Optionen?",
+      "en": "Do you have vegetarian options?",
+      "it": "Avete opzioni vegetariane?",
+      "fr": "Avez-vous des options végétariennes ?",
+      "es": "¿Tienen opciones vegetarianas?",
+      "ru": "У вас есть вегетарианские блюда?",
+      "tr": "Vejetaryen seçenekleriniz var mı?",
+      "pronIpa": {
+        "tr": "Veʒetaryen set͡ʃenekleriniz var mɯ?"
+      },
+      "pronRu": {
+        "tr": "вежетарйен сеченеклериниз вар мы?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "change_order",
+      "mnemoHint": "EDIT",
+      "de": "Können wir die Bestellung ändern?",
+      "en": "Can we change the order?",
+      "it": "Possiamo cambiare l'ordinazione?",
+      "fr": "Pouvons-nous modifier la commande ?",
+      "es": "¿Podemos cambiar el pedido?",
+      "ru": "Мы можем изменить заказ?",
+      "tr": "Siparişi değiştirebilir miyiz?",
+      "pronIpa": {
+        "tr": "Sipariʃi deiʃtirebilir miyiz?"
+      },
+      "pronRu": {
+        "tr": "сипариши деиштиребилир мийиз?"
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "tap_water",
+      "mnemoHint": "H2O",
+      "de": "Kann ich Leitungswasser bekommen?",
+      "en": "Can I get tap water?",
+      "it": "Posso avere acqua del rubinetto?",
+      "fr": "Puis-je avoir de l'eau du robinet ?",
+      "es": "¿Puedo tener agua del grifo?",
+      "ru": "Можно мне воду из-под крана?",
+      "tr": "Musluk suyu alabilir miyim?",
+      "pronIpa": {
+        "tr": "Musluk suyu alabilir miyim?"
+      },
+      "pronRu": {
+        "tr": "муслук суйу алабилир мийим?"
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "how_long_wait",
+      "mnemoHint": "TIME",
+      "de": "Wie lange dauert es?",
+      "en": "How long will it take?",
+      "it": "Quanto ci vorrà?",
+      "fr": "Ça prendra combien de temps ?",
+      "es": "¿Cuánto tardará?",
+      "ru": "Сколько это займет?",
+      "tr": "Ne kadar sürer?",
+      "pronIpa": {
+        "tr": "Ne kadar syrer?"
+      },
+      "pronRu": {
+        "tr": "не кадар сюрер?"
+      }
+    },
+    {
+      "level": 8,
+      "mnemoKey": "reserve_table",
+      "mnemoHint": "BOOK",
+      "de": "Ich möchte einen Tisch reservieren.",
+      "en": "I would like to reserve a table.",
+      "it": "Vorrei prenotare un tavolo.",
+      "fr": "Je voudrais réserver une table.",
+      "es": "Quisiera reservar una mesa.",
+      "ru": "Я хотел бы забронировать столик.",
+      "tr": "Masa ayırtmak istiyorum.",
+      "pronIpa": {
+        "tr": "Masa ayɯrtmak istiyorum."
+      },
+      "pronRu": {
+        "tr": "маса айыртмак истийорум."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "coffee_please",
+      "mnemoHint": "COF",
+      "de": "Ein Kaffee, bitte.",
+      "en": "A coffee, please.",
+      "fr": "Un café, s'il vous plaît.",
+      "it": "Un caffè, per favore.",
+      "es": "Un café, por favor.",
+      "ru": "Кофе, пожалуйста.",
+      "tr": "Bir kahve lütfen."
+    },
+    {
+      "level": 0,
+      "mnemoKey": "still_water",
+      "mnemoHint": "H2O",
+      "de": "Ein stilles Wasser, bitte.",
+      "en": "Still water, please.",
+      "fr": "De l'eau plate, s'il vous plaît.",
+      "it": "Acqua naturale, per favore.",
+      "es": "Agua sin gas, por favor.",
+      "ru": "Негазированную воду, пожалуйста.",
+      "tr": "Sade su lütfen."
+    },
+    {
+      "level": 1,
+      "mnemoKey": "seat_free",
+      "mnemoHint": "FREE",
+      "de": "Ist das hier frei?",
+      "en": "Is this seat free?",
+      "fr": "Est-ce libre ici ?",
+      "it": "È libero qui?",
+      "es": "¿Está libre este sitio?",
+      "ru": "Здесь свободно?",
+      "tr": "Burası boş mu?"
+    },
+    {
+      "level": 2,
+      "mnemoKey": "split_bill",
+      "mnemoHint": "SPLIT",
+      "de": "Können wir die Rechnung aufteilen?",
+      "en": "Can we split the bill?",
+      "fr": "Peut-on partager l'addition ?",
+      "it": "Possiamo dividere il conto?",
+      "es": "¿Podemos dividir la cuenta?",
+      "ru": "Можно разделить счёт?",
+      "tr": "Hesabı paylaşabilir miyiz?"
+    },
+    {
+      "level": 3,
+      "mnemoKey": "later_dinner",
+      "mnemoHint": "TIME",
+      "de": "Können wir ein späteres Abendessen vereinbaren?",
+      "en": "Can we arrange a later dinner?",
+      "fr": "Peut-on prévoir un dîner plus tard ?",
+      "it": "Possiamo fissare una cena più tardi?",
+      "es": "¿Podemos acordar una cena más tarde?",
+      "ru": "Можем договориться о более позднем ужине?",
+      "tr": "Daha geç bir akşam yemeği ayarlayabilir miyiz?"
+    }
+  ]
+}

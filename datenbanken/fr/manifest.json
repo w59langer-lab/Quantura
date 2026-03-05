@@ -1,0 +1,62 @@
+{
+  "lang": "fr",
+  "generatedAt": "2025-12-10T19:30:32.832586",
+  "datasets": [
+    {
+      "lang": "fr",
+      "id": "fr_adjectives",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_adjectives/fr_adjectives.js",
+      "constName": "FR_ADJECTIVES"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_adverbs",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_adverbs/fr_adverbs.js",
+      "constName": "FR_ADVERBS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_possessive_pronouns/fr_possessive_pronouns.js",
+      "constName": "FR_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_preps",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_preps/fr_preps.js",
+      "constName": "FR_PREPS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_pronouns",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_pronouns/fr_pronouns.js",
+      "constName": "FR_PRONOUNS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_verbs",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_verbs/fr_verbs.js",
+      "constName": "FR_VERBS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_verbs_aux/fr_verbs_aux.js",
+      "constName": "FR_VERBS_AUX"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_verbs_modals/fr_verbs_modals.js",
+      "constName": "FR_VERBS_MODALS"
+    }
+  ]
+}

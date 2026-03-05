@@ -1,0 +1,62 @@
+{
+  "lang": "it",
+  "generatedAt": "2025-12-10T19:30:32.832586",
+  "datasets": [
+    {
+      "lang": "it",
+      "id": "it_adjectives",
+      "kind": "js",
+      "path": "datenbanken/it/it_adjectives/it_adjectives.js",
+      "constName": "IT_ADJECTIVES"
+    },
+    {
+      "lang": "it",
+      "id": "it_adverbs",
+      "kind": "js",
+      "path": "datenbanken/it/it_adverbs/it_adverbs.js",
+      "constName": "IT_ADVERBS"
+    },
+    {
+      "lang": "it",
+      "id": "it_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/it/it_possessive_pronouns/it_possessive_pronouns.js",
+      "constName": "IT_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "it",
+      "id": "it_preps",
+      "kind": "js",
+      "path": "datenbanken/it/it_preps/it_preps.js",
+      "constName": "IT_PREPS"
+    },
+    {
+      "lang": "it",
+      "id": "it_pronouns",
+      "kind": "js",
+      "path": "datenbanken/it/it_pronouns/it_pronouns.js",
+      "constName": "IT_PRONOUNS"
+    },
+    {
+      "lang": "it",
+      "id": "it_verbs",
+      "kind": "js",
+      "path": "datenbanken/it/it_verbs/it_verbs.js",
+      "constName": "IT_VERBS"
+    },
+    {
+      "lang": "it",
+      "id": "it_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/it/it_verbs_aux/it_verbs_aux.js",
+      "constName": "IT_VERBS_AUX"
+    },
+    {
+      "lang": "it",
+      "id": "it_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/it/it_verbs_modals/it_verbs_modals.js",
+      "constName": "IT_VERBS_MODALS"
+    }
+  ]
+}

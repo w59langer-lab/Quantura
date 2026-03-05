@@ -1,0 +1,78 @@
+:root{
+  --maxw: 980px;
+  --pad: 18px;
+}
+html, body { height: 100%; }
+*{ box-sizing: border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color:#111;
+  background:#fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main, #main, .main, #content, .content, #app, .app, .page, .page-wrapper {
+  flex: 1 0 auto;
+}
+footer, #footer, .footer, .site-footer, [data-partial="footer"] {
+  margin-top: auto;
+  flex-shrink: 0;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+footer a, #footer a, .footer a, .site-footer a, [data-partial="footer"] a {
+  color: #fff;
+  text-decoration: underline;
+}
+footer a:hover, footer a:focus-visible, #footer a:hover, #footer a:focus-visible, .footer a:hover, .footer a:focus-visible, .site-footer a:hover, .site-footer a:focus-visible, [data-partial="footer"] a:hover, [data-partial="footer"] a:focus-visible {
+  color: #fff;
+  opacity: .9;
+}
+header{
+  background:white;
+  border-bottom:1px solid #e6e6e6;
+}
+.container{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: var(--pad);
+}
+h1{ margin: 12px 0 6px; font-size: 2rem; }
+p{ margin: 8px 0; }
+.card{
+  background:white;
+  border:1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 14px 0;
+}
+.nav{
+  display:flex;
+  gap:10px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.nav a{
+  display:inline-block;
+  padding: 8px 12px;
+  border:1px solid #ddd;
+  border-radius: 10px;
+  text-decoration:none;
+  color:#111;
+  background:#fff;
+}
+.nav a:hover{ border-color:#aaa; }
+small{ color:#555; }
+
+/* Portal Back button */
+#btnBack{
+  margin-left: .5rem;
+  padding: .35rem .6rem;
+  border: 1px solid rgba(0,0,0,.25);
+  border-radius: .5rem;
+  background: transparent;
+  cursor: pointer;
+}

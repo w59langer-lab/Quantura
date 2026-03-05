@@ -1,0 +1,276 @@
+{
+  "id": "arzt_apotheke",
+  "title": "Arzt & Apotheke",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "need_doctor",
+      "mnemoHint": "DOC",
+      "de": "Ich brauche einen Arzt.",
+      "en": "I need a doctor.",
+      "it": "Ho bisogno di un medico.",
+      "fr": "J'ai besoin d'un médecin.",
+      "es": "Necesito un médico.",
+      "ru": "Мне нужен врач.",
+      "tr": "Bir doktora ihtiyacım var.",
+      "pronIpa": {
+        "tr": "Bir doktora ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "бир доктора ихтийаджым вар."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "pharmacy_near",
+      "mnemoHint": "RX",
+      "de": "Wo ist die nächste Apotheke?",
+      "en": "Where is the nearest pharmacy?",
+      "it": "Dov'è la farmacia più vicina?",
+      "fr": "Où est la pharmacie la plus proche ?",
+      "es": "¿Dónde está la farmacia más cercana?",
+      "ru": "Где ближайшая аптека?",
+      "tr": "En yakın eczane nerede?",
+      "pronIpa": {
+        "tr": "En yakɯn ed͡ʒzane nerede?"
+      },
+      "pronRu": {
+        "tr": "ен йакын еджзане нереде?"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "pain_here",
+      "mnemoHint": "→",
+      "de": "Ich habe hier Schmerzen.",
+      "en": "I have pain here.",
+      "it": "Ho dolore qui.",
+      "fr": "J'ai mal ici.",
+      "es": "Tengo dolor aquí.",
+      "ru": "У меня здесь болит.",
+      "tr": "Buram ağrıyor.",
+      "pronIpa": {
+        "tr": "Buram arɯyor."
+      },
+      "pronRu": {
+        "tr": "бурам арыйор."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "fever",
+      "mnemoHint": "38°",
+      "de": "Ich habe Fieber.",
+      "en": "I have a fever.",
+      "it": "Ho la febbre.",
+      "fr": "J'ai de la fièvre.",
+      "es": "Tengo fiebre.",
+      "ru": "У меня жар.",
+      "tr": "Ateşim var.",
+      "pronIpa": {
+        "tr": "Ateʃim var."
+      },
+      "pronRu": {
+        "tr": "атешим вар."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "headache",
+      "mnemoHint": "HEAD",
+      "de": "Ich habe starke Kopfschmerzen.",
+      "en": "I have a bad headache.",
+      "it": "Ho un forte mal di testa.",
+      "fr": "J'ai un gros mal de tête.",
+      "es": "Tengo un fuerte dolor de cabeza.",
+      "ru": "У меня сильная головная боль.",
+      "tr": "Şiddetli baş ağrım var.",
+      "pronIpa": {
+        "tr": "ʃiddetli baʃ arɯm var."
+      },
+      "pronRu": {
+        "tr": "шиддетли баш арым вар."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "stomach",
+      "mnemoHint": "BELLY",
+      "de": "Mir ist übel / Ich habe Bauchschmerzen.",
+      "en": "I feel sick / I have stomach pain.",
+      "it": "Mi sento male / Ho mal di pancia.",
+      "fr": "Je me sens mal / J'ai mal au ventre.",
+      "es": "Me siento mal / Tengo dolor de estómago.",
+      "ru": "Мне плохо / У меня болит живот.",
+      "tr": "Midem bulanıyor / Karnım ağrıyor.",
+      "pronIpa": {
+        "tr": "Midem bulanɯyor / Karnɯm arɯyor."
+      },
+      "pronRu": {
+        "tr": "мидем буланыйор / карным арыйор."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "penicillin_allergy",
+      "mnemoHint": "NO RX",
+      "de": "Ich bin allergisch gegen Penicillin.",
+      "en": "I am allergic to penicillin.",
+      "it": "Sono allergico/a alla penicillina.",
+      "fr": "Je suis allergique à la pénicilline.",
+      "es": "Soy alérgico/a a la penicilina.",
+      "ru": "У меня аллергия на пенициллин.",
+      "tr": "Penisiline alerjim var.",
+      "pronIpa": {
+        "tr": "Penisiline alerʒim var."
+      },
+      "pronRu": {
+        "tr": "пенисилине алержим вар."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "appointment",
+      "mnemoHint": "APPT",
+      "de": "Kann ich heute einen Termin bekommen?",
+      "en": "Can I get an appointment today?",
+      "it": "Posso avere un appuntamento oggi?",
+      "fr": "Puis-je avoir un rendez-vous aujourd'hui ?",
+      "es": "¿Puedo conseguir una cita hoy?",
+      "ru": "Могу ли я получить приём сегодня?",
+      "tr": "Bugün randevu alabilir miyim?",
+      "pronIpa": {
+        "tr": "Bugyn randevu alabilir miyim?"
+      },
+      "pronRu": {
+        "tr": "бугюн рандеву алабилир мийим?"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "prescription",
+      "mnemoHint": "RX",
+      "de": "Ich brauche ein Rezept.",
+      "en": "I need a prescription.",
+      "it": "Ho bisogno di una ricetta.",
+      "fr": "J'ai besoin d'une ordonnance.",
+      "es": "Necesito una receta.",
+      "ru": "Мне нужен рецепт.",
+      "tr": "Bir reçeteye ihtiyacım var.",
+      "pronIpa": {
+        "tr": "Bir ret͡ʃeteye ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "бир речетейе ихтийаджым вар."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "painkiller",
+      "mnemoHint": "PILL",
+      "de": "Haben Sie etwas gegen Schmerzen?",
+      "en": "Do you have something for pain?",
+      "it": "Avete qualcosa per il dolore?",
+      "fr": "Avez-vous quelque chose contre la douleur ?",
+      "es": "¿Tiene algo para el dolor?",
+      "ru": "У вас есть что-нибудь от боли?",
+      "tr": "Ağrı için bir şeyiniz var mı?",
+      "pronIpa": {
+        "tr": "Arɯ it͡ʃin bir ʃeyiniz var mɯ?"
+      },
+      "pronRu": {
+        "tr": "ары ичин бир шейиниз вар мы?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "bandage",
+      "mnemoHint": "WRAP",
+      "de": "Ich brauche einen Verband / Pflaster.",
+      "en": "I need a bandage / plaster.",
+      "it": "Ho bisogno di una benda / cerotto.",
+      "fr": "J'ai besoin d'un bandage / pansement.",
+      "es": "Necesito un vendaje / tirita.",
+      "ru": "Мне нужен бинт / пластырь.",
+      "tr": "Bandaja / yara bandına ihtiyacım var.",
+      "pronIpa": {
+        "tr": "Bandaʒa / yara bandɯna ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "бандажа / йара бандына ихтийаджым вар."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "cough_syrup",
+      "mnemoHint": "COUGH",
+      "de": "Haben Sie etwas gegen Husten?",
+      "en": "Do you have something for cough?",
+      "it": "Avete qualcosa per la tosse?",
+      "fr": "Avez-vous quelque chose contre la toux ?",
+      "es": "¿Tiene algo para la tos?",
+      "ru": "У вас есть что-нибудь от кашля?",
+      "tr": "Öksürük için bir şeyiniz var mı?",
+      "pronIpa": {
+        "tr": "øksyryk it͡ʃin bir ʃeyiniz var mɯ?"
+      },
+      "pronRu": {
+        "tr": "ёксюрюк ичин бир шейиниз вар мы?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "covid_test",
+      "mnemoHint": "TEST",
+      "de": "Wo kann ich einen COVID-Test machen?",
+      "en": "Where can I get a COVID test?",
+      "it": "Dove posso fare un test COVID?",
+      "fr": "Où puis-je faire un test COVID ?",
+      "es": "¿Dónde puedo hacerme una prueba de COVID?",
+      "ru": "Где я могу сделать тест на COVID?",
+      "tr": "COVID testini nerede yaptırabilirim?",
+      "pronIpa": {
+        "tr": "d͡ʒOVID testini nerede yaptɯrabilirim?"
+      },
+      "pronRu": {
+        "tr": "джовид тестини нереде йаптырабилирим?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "insurance_card",
+      "mnemoHint": "ID",
+      "de": "Nehmen Sie meine Versicherungskarte?",
+      "en": "Do you accept my insurance card?",
+      "it": "Accettate la mia tessera assicurativa?",
+      "fr": "Acceptez-vous ma carte d'assurance ?",
+      "es": "¿Aceptan mi tarjeta de seguro?",
+      "ru": "Вы принимаете мою страховку?",
+      "tr": "Sigorta kartımı kabul ediyor musunuz?",
+      "pronIpa": {
+        "tr": "Sigorta kartɯmɯ kabul ediyor musunuz?"
+      },
+      "pronRu": {
+        "tr": "сигорта картымы кабул едийор мусунуз?"
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "emergency_number",
+      "mnemoHint": "112",
+      "de": "Ist das ein Notfall? Soll ich 112 anrufen?",
+      "en": "Is this an emergency? Should I call 112?",
+      "it": "È un'emergenza? Devo chiamare il 112?",
+      "fr": "Est-ce une urgence ? Dois-je appeler le 112 ?",
+      "es": "¿Es una emergencia? ¿Debo llamar al 112?",
+      "ru": "Это чрезвычайная ситуация? Позвонить 112?",
+      "tr": "Bu acil durum mu? 112'yi arayayım mı?",
+      "pronIpa": {
+        "tr": "Bu ad͡ʒil durum mu? 112'yi arayayɯm mɯ?"
+      },
+      "pronRu": {
+        "tr": "бу аджил дурум му? 112'йи арайайым мы?"
+      }
+    }
+  ]
+}

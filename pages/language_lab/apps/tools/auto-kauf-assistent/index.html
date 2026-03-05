@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1224">
+  <title>Auto-Kauf-Assistent</title>
+  <link rel="stylesheet" href="/core/assets/style.css">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <script src="/core/loader/loader.js" defer></script>
+  <script src="/core/js/core_init.js" defer></script>
+  <style>
+    :root {
+      --bg: var(--bg-page);
+      --surface: var(--bg-surface);
+      --surface-strong: var(--bg-surface);
+      --card: var(--bg-surface);
+      --border: var(--border-subtle);
+      --muted: var(--text-muted);
+      --text: var(--text-main);
+      --accent: var(--accent);
+      --accent-strong: var(--accent-strong);
+      --danger: #fb7185;
+      --warn: #fbbf24;
+      --ok: #34d399;
+      --shadow: var(--shadow-soft);
+      --radius: 16px;
+    }
+
+    html[data-theme="dark"] {
+      --surface: #0f172a;
+      --surface-strong: #111c33;
+      --card: #0b1224;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.65);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 0 12px 48px;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 10px 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #0ea5e9, #6ef3c5);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      color: #0b1224;
+      box-shadow: var(--shadow);
+    }
+
+    h1 { margin: 0; font-size: 1.7rem; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); margin-top: 4px; font-size: 0.98rem; }
+
+    .actions { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+
+    .pill-btn {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    main { max-width: 1100px; margin: 0 auto; }
+
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 10px 0 16px;
+    }
+
+    .tab-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 16px 14px;
+      border-radius: var(--radius);
+      text-align: left;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .tab-btn.active { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(110, 243, 197, 0.25); }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+
+    .grid-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    input, select, textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 12px 10px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    textarea { min-height: 90px; resize: vertical; }
+
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; background: var(--card); border: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+
+    .section-title { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    .checklist-group { margin-bottom: 12px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); }
+    .group-header { padding: 12px 14px; background: var(--card); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
+    .group-title { margin: 0; }
+
+    .item { padding: 12px 14px; border-top: 1px solid var(--border); }
+    .item:first-of-type { border-top: none; }
+    .item-title { font-weight: 600; margin-bottom: 8px; }
+    .status-row { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+    .status-btn {
+      flex: 1 1 100px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .status-btn.ok.active { border-color: var(--ok); color: var(--ok); box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.25); }
+    .status-btn.warn.active { border-color: var(--warn); color: var(--warn); box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.25); }
+    .status-btn.problem.active { border-color: var(--danger); color: var(--danger); box-shadow: 0 0 0 2px rgba(251, 113, 133, 0.25); }
+
+    .note-input { margin-top: 6px; }
+
+    .photos { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .thumb { width: 72px; height: 72px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); position: relative; }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .thumb button { position: absolute; top: 4px; right: 4px; background: rgba(0,0,0,0.6); border: none; color: #fff; border-radius: 8px; padding: 2px 6px; cursor: pointer; }
+    .photo-hint { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
+
+    .cost-row { display: grid; grid-template-columns: 1.2fr 1fr 60px; gap: 8px; align-items: center; margin-bottom: 8px; }
+    .cost-row input { padding: 10px; }
+    .cost-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+    .cost-pill { background: rgba(255,255,255,0.05); border: 1px solid var(--border); padding: 10px 12px; border-radius: 12px; cursor: pointer; color: var(--text); }
+    .cost-pill:hover { border-color: var(--accent); color: var(--accent); }
+
+    .score { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; align-items: stretch; }
+    .score-card { background: var(--surface-strong); padding: 14px; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
+    .score-value { font-size: 2.6rem; font-weight: 700; margin: 0; }
+    .score-meter { width: 100%; height: 12px; border-radius: 8px; background: rgba(255,255,255,0.08); overflow: hidden; margin-top: 8px; }
+    .score-meter span { display: block; height: 100%; background: linear-gradient(90deg, #fb7185, #fbbf24, #34d399, #6ef3c5); }
+
+    .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 10px; background: var(--card); border: 1px solid var(--border); color: var(--muted); }
+
+    .filters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+
+    .sticky-footer { position: sticky; bottom: 0; padding: 10px 12px; background: linear-gradient(180deg, transparent, rgba(6, 9, 20, 0.95)); backdrop-filter: blur(6px); display: flex; justify-content: flex-end; gap: 8px; }
+
+    .save-indicator { color: var(--muted); font-size: 0.92rem; }
+
+    @media (max-width: 640px) {
+      header { flex-wrap: wrap; }
+      .actions { width: 100%; justify-content: flex-start; }
+      .cost-row { grid-template-columns: 1fr; }
+      .score-value { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+  <header>
+    <div class="logo">AK</div>
+    <div>
+      <h1>Auto-Kauf-Assistent</h1>
+      <div class="subtitle">Offline nutzbar, schnelle Notizen & Kostenkalkulation</div>
+    </div>
+    <div class="actions">
+      <button class="pill-btn" id="btn-export-json">Export JSON</button>
+      <button class="pill-btn" id="btn-export-csv">Export CSV</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="filter">Annonce-Filter</button>
+      <button class="tab-btn" data-tab="checklist">Checkliste vor Ort</button>
+      <button class="tab-btn" data-tab="kosten">Kosten & Score</button>
+    </div>
+
+    <section class="tab-content active" id="tab-filter">
+      <div class="card">
+        <div class="section-title">
+          <h2>Profil der Wunsch-Annonce</h2>
+          <span class="badge">Speichert lokal & offline</span>
+        </div>
+        <div class="filters-grid">
+          <div>
+            <label>Max. Preis (€)</label>
+            <input type="number" data-model="filters.maxPreis" placeholder="z.B. 15000">
+          </div>
+          <div>
+            <label>Min. Baujahr</label>
+            <input type="number" data-model="filters.minBaujahr" placeholder="z.B. 2016">
+          </div>
+          <div>
+            <label>Max. Laufleistung (km)</label>
+            <input type="number" data-model="filters.maxKm" placeholder="z.B. 120000">
+          </div>
+          <div>
+            <label>Kraftstoff</label>
+            <select data-model="filters.kraftstoff">
+              <option value="any" selected>egal</option>
+              <option>Benzin</option>
+              <option>Diesel</option>
+              <option>Hybrid</option>
+              <option>Elektro</option>
+            </select>
+          </div>
+          <div>
+            <label>Getriebe</label>
+            <select data-model="filters.getriebe">
+              <option value="any" selected>egal</option>
+              <option>Manuell</option>
+              <option>Automatik</option>
+            </select>
+          </div>
+          <div>
+            <label>Karosserie</label>
+            <input type="text" data-model="filters.karosserie" placeholder="Kombi, SUV, ...">
+          </div>
+        </div>
+        <div class="grid-two" style="margin-top: 10px;">
+          <div>
+            <label>Must-Haves</label>
+            <textarea data-model="filters.mustHaves" placeholder="z.B. Sitzheizung, Anhängerkupplung, Einparkhilfe..."></textarea>
+          </div>
+          <div>
+            <label>No-Go</label>
+            <textarea data-model="filters.noGos" placeholder="z.B. Unfallwagen, lückenlose Historie fehlt, ..."></textarea>
+          </div>
+        </div>
+        <div style="margin-top: 12px;">
+          <label>Notiz</label>
+          <textarea data-model="filters.notes" placeholder="Handlungsplan, Ansprechpartner, Fragen an Verkäufer..."></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content" id="tab-checklist">
+      <div class="card">
+        <div class="section-title">
+          <h2>Checkliste vor Ort (60 Punkte)</h2>
+          <span class="badge" id="progress"></span>
+          <button class="pill-btn" id="clear-photos">Alle Fotos löschen</button>
+        </div>
+        <div id="checklist"></div>
+      </div>
+    </section>
+
+    <section class="tab-content" id="tab-kosten">
+      <div class="card">
+        <div class="section-title">
+          <h2>Kaufpreis, Sofortkosten & Score</h2>
+          <span class="badge">Rechnet live</span>
+        </div>
+        <div class="grid-two">
+          <div>
+            <label>Kaufpreis (€)</label>
+            <input type="number" data-model="costs.kaufpreis" placeholder="Angebotspreis">
+          </div>
+          <div>
+            <label>Puffer (€)</label>
+            <input type="number" data-model="costs.puffer" placeholder="Reserve für Überraschungen">
+          </div>
+        </div>
+
+        <div style="margin: 12px 0 10px;">
+          <div class="section-title" style="margin:0 0 8px 0;">
+            <h3>Sofortkosten</h3>
+            <div class="cost-actions">
+              <button class="cost-pill" data-template="Scheinwerfer-Aufbereitung" data-cost="120">+ Scheinwerfer</button>
+              <button class="cost-pill" data-template="AHK-Reparatur" data-cost="350">+ AHK</button>
+              <button class="cost-pill" data-template="Reifen-Satz" data-cost="550">+ Reifen</button>
+              <button class="cost-pill" data-template="Bremsen VA/HA" data-cost="450">+ Bremsen</button>
+              <button class="cost-pill" data-template="HU/AU" data-cost="140">+ HU/AU</button>
+              <button class="cost-pill" data-template="Inspektion" data-cost="220">+ Inspektion</button>
+            </div>
+          </div>
+          <div id="cost-list"></div>
+          <button class="pill-btn" id="add-cost">+ Eigene Position</button>
+        </div>
+
+        <div class="score">
+          <div class="score-card">
+            <p class="score-value" id="realpreis">0 €</p>
+            <div class="pill">Realpreis = Kaufpreis + Sofortkosten + Puffer</div>
+          </div>
+          <div class="score-card">
+            <p class="score-value" id="score">Score 100</p>
+            <div class="score-meter"><span id="score-bar" style="width:100%"></span></div>
+            <div class="pill" id="score-info">Alle Punkte OK</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-footer">
+    <div class="save-indicator" id="save-indicator">Auto-Save aktiv</div>
+  </div>
+
+  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+
+  <script>
+    const checklistData = [
+      { group: 'Dokumente', items: [
+        'Zulassungsbescheinigung Teil I (Fahrzeugschein) geprüft',
+        'Zulassungsbescheinigung Teil II (Fahrzeugbrief) vorhanden',
+        'HU/AU Bericht aktuell',
+        'Serviceheft / digitale Historie vollständig',
+        'Rechnungen und Belege für Reparaturen',
+        'Anzahl Schlüssel geprüft',
+        'Unfallfreiheit / Schadensberichte belegt',
+        'COC-Papiere / Eintragungen vorhanden'
+      ]},
+      { group: 'Karosserie', items: [
+        'Spaltmaße rundum gleichmäßig',
+        'Lackdicke / Nachlackierungen geprüft',
+        'Rost an Radläufen / Schwellern',
+        'Rost unter Türen und Kofferraumklappe',
+        'Frontscheibe Steinschlag / Riss',
+        'Unterboden Schutz / Schäden',
+        'Türen & Heckklappe schließen sauber',
+        'Stoßfänger / Schürzen Halter intakt',
+        'Dach / Schiebedach Dichtungen',
+        'Wassereintritt Kofferraum / Innenraum',
+        'Abschlepphaken Gewinde ok',
+        'Tankklappe Mechanik und Dichtung'
+      ]},
+      { group: 'Technik', items: [
+        'Motorlauf kalt/warm ruhig',
+        'Öldeckel sauber / kein Schaum',
+        'Kühlwasserstand und Farbe',
+        'Keine Lecks (Öl/Kühlmittel)',
+        'Motorlager ohne Schlag/Bewegung',
+        'Getriebe schaltet weich (manuell)',
+        'Automatik ruckfrei / Ölwechselnachweis',
+        'Kupplung Schleifpunkt ok',
+        'Elektronik: keine Fehlermeldungen',
+        'Klimaanlage Kühlleistung',
+        'Heizung / Gebläse Stufen',
+        'OBD-Auslese geplant / fehlerfrei'
+      ]},
+      { group: 'Probefahrt', items: [
+        'Geradeauslauf ohne Ziehen',
+        'Lenkung Spiel / Geräusche',
+        'Fahrwerksgeräusche bei Bodenwellen',
+        'Beschleunigung / Leistung plausibel',
+        'Abgase unauffällig',
+        'Bremsentest aus Fahrt',
+        'Kupplung rutscht nicht',
+        'Assistenzsysteme / Tempomat ok',
+        'Geräusche bei Volleinschlag',
+        'Vibrationen bei 100 km/h'
+      ]},
+      { group: 'Reifen/Bremsen', items: [
+        'Reifenprofil vorne (mm)',
+        'Reifenprofil hinten (mm)',
+        'DOT / Alter Reifen',
+        'Gleichmäßiger Abrieb',
+        'Bremsscheiben Riefen / Rand',
+        'Bremsbeläge Reststärke',
+        'Bremsflüssigkeit Datum',
+        'Handbremse Wirkung'
+      ]},
+      { group: 'AHK', items: [
+        'Kupplungskugel Zustand / Rost',
+        'Steckdose Kontakte sauber',
+        'Verriegelung Mechanik leichtgängig',
+        'Abdeckung / Schlüssel vorhanden',
+        'Zulassung / Eintragung geprüft'
+      ]},
+      { group: 'Licht', items: [
+        'Scheinwerfergläser klar / nicht matt',
+        'Abblend- & Fernlicht Funktion',
+        'Tagfahrlicht / Standlicht',
+        'Rückleuchten / Bremslicht',
+        'Nebellicht / Blinker / Warnblinker'
+      ]}
+    ];
+
+    const stateKey = 'autokauf-assistent-state-v1';
+    const clone = (obj) => (typeof structuredClone === 'function' ? structuredClone(obj) : JSON.parse(JSON.stringify(obj)));
+    const defaultState = {
+      filters: { maxPreis: '', minBaujahr: '', maxKm: '', kraftstoff: 'any', getriebe: 'any', karosserie: '', mustHaves: '', noGos: '', notes: '' },
+      checklist: {},
+      costs: { kaufpreis: '', puffer: '', items: [] }
+    };
+    const photoLimits = { maxPerItem: 1, maxTotal: 15, maxDim: 1280, targetBytes: 200 * 1024, qualitySteps: [0.75, 0.7, 0.65, 0.6, 0.55] };
+
+    let state = loadState();
+    ensureChecklistState();
+    renderChecklist();
+    renderCosts();
+    bindFilters();
+    bindTabs();
+    updateProgress();
+    updateScore();
+
+    document.getElementById('btn-export-json').addEventListener('click', exportJSON);
+    document.getElementById('btn-export-csv').addEventListener('click', exportCSV);
+    document.getElementById('add-cost').addEventListener('click', () => addCostItem({ label: 'Position', amount: '' }));
+    document.querySelectorAll('.cost-pill').forEach(btn => {
+      btn.addEventListener('click', () => addCostItem({ label: btn.dataset.template, amount: btn.dataset.cost }));
+    });
+    document.getElementById('clear-photos').addEventListener('click', () => {
+      if (confirm('Alle Fotos löschen? Statuse und Notizen bleiben erhalten.')) {
+        stripPhotos();
+        saveState();
+        renderChecklist();
+      }
+    });
+
+    // Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+    }
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(stateKey);
+        const parsed = raw ? JSON.parse(raw) : {};
+        const filters = { ...defaultState.filters, ...(parsed.filters || {}) };
+        filters.kraftstoff = normalizeFilter('kraftstoff', filters.kraftstoff);
+        filters.getriebe = normalizeFilter('getriebe', filters.getriebe);
+        return {
+          filters,
+          checklist: parsed.checklist || {},
+          costs: { ...defaultState.costs, ...(parsed.costs || {}), items: (parsed.costs?.items || []).map(i => ({ label: i.label || 'Position', amount: i.amount || '' })) }
+        };
+      } catch (e) {
+        console.error('State laden fehlgeschlagen', e);
+        return clone(defaultState);
+      }
+    }
+
+    function normalizeFilter(key, value) {
+      if (key === 'kraftstoff' || key === 'getriebe') {
+        if (value === undefined || value === null || value === '' || value === 'egal') return 'any';
+      }
+      return value ?? '';
+    }
+
+    function getTotalPhotosCount() {
+      return Object.values(state.checklist).reduce((sum, entry) => sum + ((entry?.photos || []).length), 0);
+    }
+
+    function stripPhotos() {
+      Object.keys(state.checklist).forEach(key => {
+        if (state.checklist[key]?.photos?.length) {
+          state.checklist[key].photos = [];
+        }
+      });
+    }
+
+    function saveState() {
+      const indicator = document.getElementById('save-indicator');
+      try {
+        localStorage.setItem(stateKey, JSON.stringify(state));
+        indicator.textContent = 'Gespeichert ' + new Date().toLocaleTimeString();
+      } catch (err) {
+        console.error('Speichern fehlgeschlagen', err);
+        if (err?.name === 'QuotaExceededError') {
+          alert('Speicher voll. Bitte Fotos löschen oder kleinere Fotos verwenden.');
+          stripPhotos();
+          try {
+            localStorage.setItem(stateKey, JSON.stringify(state));
+            indicator.textContent = 'Gespeichert ohne Fotos (Speicher voll)';
+          } catch (err2) {
+            console.error('Speichern ohne Fotos fehlgeschlagen', err2);
+            indicator.textContent = 'Speichern fehlgeschlagen';
+          }
+        } else {
+          indicator.textContent = 'Speichern fehlgeschlagen';
+        }
+      }
+    }
+
+    function ensureChecklistState() {
+      checklistData.forEach(group => group.items.forEach((_, idx) => {
+        const key = `${group.group}-${idx}`;
+        if (!state.checklist[key]) {
+          state.checklist[key] = { status: '', note: '', photos: [] };
+        }
+      }));
+    }
+
+    function bindFilters() {
+      document.querySelectorAll('[data-model^="filters"]').forEach(el => {
+        const path = el.dataset.model.split('.');
+        el.value = normalizeFilter(path[1], state.filters[path[1]]);
+        el.addEventListener('input', () => {
+          state.filters[path[1]] = normalizeFilter(path[1], el.value);
+          saveState();
+        });
+      });
+      document.querySelectorAll('[data-model^="costs"]').forEach(el => {
+        const path = el.dataset.model.split('.');
+        el.value = state.costs[path[1]] ?? '';
+        el.addEventListener('input', () => {
+          state.costs[path[1]] = el.value;
+          saveState();
+          updateScore();
+        });
+      });
+    }
+
+    function bindTabs() {
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      }));
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById('checklist');
+      container.innerHTML = '';
+      checklistData.forEach(group => {
+        const groupEl = document.createElement('div');
+        groupEl.className = 'checklist-group';
+        const header = document.createElement('div');
+        header.className = 'group-header';
+        const title = document.createElement('h3');
+        title.className = 'group-title';
+        title.textContent = group.group;
+        const stats = document.createElement('div');
+        stats.className = 'pill';
+        header.append(title, stats);
+
+        const itemsWrap = document.createElement('div');
+        group.items.forEach((item, idx) => {
+          const key = `${group.group}-${idx}`;
+          const saved = state.checklist[key];
+          const itemEl = document.createElement('div');
+          itemEl.className = 'item';
+
+          const titleEl = document.createElement('div');
+          titleEl.className = 'item-title';
+          titleEl.textContent = item;
+
+          const statusRow = document.createElement('div');
+          statusRow.className = 'status-row';
+          ['ok','warn','problem'].forEach(type => {
+            const btn = document.createElement('button');
+            btn.className = `status-btn ${type} ${saved.status === type ? 'active' : ''}`;
+            btn.textContent = type === 'ok' ? 'OK' : type === 'warn' ? 'Achtung' : 'Problem';
+            btn.addEventListener('click', () => {
+              state.checklist[key].status = type;
+              itemEl.querySelectorAll('.status-btn').forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+              saveState();
+              updateGroupStats(group, stats);
+              updateProgress();
+              updateScore();
+            });
+            statusRow.appendChild(btn);
+          });
+
+          const note = document.createElement('textarea');
+          note.className = 'note-input';
+          note.placeholder = 'Notiz / Maßnahme';
+          note.value = saved.note || '';
+          note.addEventListener('input', () => {
+            state.checklist[key].note = note.value;
+            saveState();
+          });
+
+          const file = document.createElement('input');
+          file.type = 'file';
+          file.accept = 'image/*';
+          file.addEventListener('change', async (e) => {
+            const files = Array.from(e.target.files || []);
+            if ((state.checklist[key].photos || []).length >= photoLimits.maxPerItem) {
+              alert('Maximal 1 Foto pro Punkt. Bitte zuerst löschen.');
+              file.value = '';
+              return;
+            }
+            for (const f of files) {
+              if (getTotalPhotosCount() >= photoLimits.maxTotal) {
+                alert('Maximal 15 Fotos insgesamt erreicht. Lösche Fotos, um Platz zu schaffen.');
+                break;
+              }
+              const compressed = await compressImage(f);
+              if (!compressed) {
+                alert('Foto konnte nicht komprimiert werden (max 200KB). Bitte kleineres Foto wählen.');
+                continue;
+              }
+              state.checklist[key].photos = [{ name: f.name, dataUrl: compressed }];
+            }
+            saveState();
+            renderPhotos();
+            file.value = '';
+          });
+
+          const photos = document.createElement('div');
+          photos.className = 'photos';
+
+          function renderPhotos() {
+            photos.innerHTML = '';
+            (state.checklist[key].photos || []).forEach((photo, idx) => {
+              const wrap = document.createElement('div');
+              wrap.className = 'thumb';
+              const img = document.createElement('img');
+              img.src = photo.dataUrl;
+              img.alt = photo.name || 'Foto';
+              const del = document.createElement('button');
+              del.textContent = '×';
+              del.addEventListener('click', () => {
+                state.checklist[key].photos.splice(idx, 1);
+                saveState();
+                renderPhotos();
+              });
+              wrap.append(img, del);
+              photos.appendChild(wrap);
+            });
+          }
+
+          renderPhotos();
+
+          const hint = document.createElement('div');
+          hint.className = 'photo-hint';
+          hint.textContent = 'Foto wird komprimiert (max 1 pro Punkt, max 15 gesamt).';
+
+          itemEl.append(titleEl, statusRow, note, file, hint, photos);
+          itemsWrap.appendChild(itemEl);
+        });
+
+        groupEl.append(header, itemsWrap);
+        container.appendChild(groupEl);
+        updateGroupStats(group, stats);
+      });
+    }
+
+    function updateGroupStats(group, el) {
+      const total = group.items.length;
+      const done = group.items.filter((_, idx) => state.checklist[`${group.group}-${idx}`]?.status).length;
+      const warnings = group.items.filter((_, idx) => state.checklist[`${group.group}-${idx}`]?.status === 'warn').length;
+      const problems = group.items.filter((_, idx) => state.checklist[`${group.group}-${idx}`]?.status === 'problem').length;
+      el.textContent = `${done}/${total} erledigt · ${warnings} Achtung · ${problems} Problem`;
+    }
+
+    function updateProgress() {
+      let total = 0, done = 0;
+      checklistData.forEach(group => group.items.forEach((_, idx) => {
+        total += 1;
+        if (state.checklist[`${group.group}-${idx}`]?.status) done += 1;
+      }));
+      document.getElementById('progress').textContent = `${done}/${total} Punkte markiert`;
+    }
+
+    function readFileAsDataURL(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function loadImage(dataUrl) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = dataUrl;
+      });
+    }
+
+    function canvasToBlob(canvas, quality) {
+      return new Promise((resolve) => canvas.toBlob((blob) => resolve(blob), 'image/jpeg', quality));
+    }
+
+    async function compressImage(file) {
+      const dataUrl = await readFileAsDataURL(file);
+      const img = await loadImage(dataUrl);
+      const scale = Math.min(1, photoLimits.maxDim / Math.max(img.width, img.height));
+      const targetW = Math.round(img.width * scale);
+      const targetH = Math.round(img.height * scale);
+      const canvas = document.createElement('canvas');
+      canvas.width = targetW;
+      canvas.height = targetH;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, targetW, targetH);
+
+      for (const q of photoLimits.qualitySteps) {
+        const blob = await canvasToBlob(canvas, q);
+        if (!blob) continue;
+        if (blob.size <= photoLimits.targetBytes) {
+          return blobToDataURL(blob);
+        }
+      }
+
+      return null;
+    }
+
+    function blobToDataURL(blob) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+      });
+    }
+
+    function renderCosts() {
+      const list = document.getElementById('cost-list');
+      list.innerHTML = '';
+      state.costs.items.forEach((item, idx) => {
+        const row = document.createElement('div');
+        row.className = 'cost-row';
+        const label = document.createElement('input');
+        label.placeholder = 'Beschreibung';
+        label.value = item.label || '';
+        label.addEventListener('input', () => { item.label = label.value; saveState(); });
+
+        const amount = document.createElement('input');
+        amount.type = 'number';
+        amount.placeholder = '€';
+        amount.value = item.amount || '';
+        amount.addEventListener('input', () => { item.amount = amount.value; saveState(); updateScore(); });
+
+        const del = document.createElement('button');
+        del.className = 'pill-btn';
+        del.textContent = '−';
+        del.title = 'Entfernen';
+        del.addEventListener('click', () => { state.costs.items.splice(idx,1); saveState(); renderCosts(); updateScore(); });
+
+        row.append(label, amount, del);
+        list.appendChild(row);
+      });
+      updateScore();
+    }
+
+    function addCostItem(item) {
+      state.costs.items.push({ label: item.label || 'Position', amount: item.amount || '' });
+      saveState();
+      renderCosts();
+    }
+
+    function exportJSON() {
+      const exportState = clone(state);
+      exportState.filters = {
+        ...exportState.filters,
+        kraftstoff: exportState.filters.kraftstoff === 'any' ? 'egal' : exportState.filters.kraftstoff,
+        getriebe: exportState.filters.getriebe === 'any' ? 'egal' : exportState.filters.getriebe
+      };
+      const blob = new Blob([JSON.stringify(exportState, null, 2)], { type: 'application/json' });
+      download(blob, 'auto-kauf-assistent.json');
+    }
+
+    function exportCSV() {
+      const rows = [];
+      rows.push(['Bereich', 'Name', 'Status', 'Notiz', 'Fotos']);
+      checklistData.forEach(group => group.items.forEach((item, idx) => {
+        const entry = state.checklist[`${group.group}-${idx}`];
+        rows.push(['Checkliste', `${group.group}: ${item}`, entry?.status || '', (entry?.note || '').replace(/\n/g, ' '), (entry?.photos?.length || 0)]);
+      }));
+      rows.push(['Kosten', 'Kaufpreis', '', '', state.costs.kaufpreis || 0]);
+      state.costs.items.forEach(c => rows.push(['Kosten', c.label, '', '', c.amount]));
+      rows.push(['Kosten', 'Puffer', '', '', state.costs.puffer || 0]);
+      rows.push(['Filter', 'Kraftstoff', state.filters.kraftstoff === 'any' ? 'egal' : (state.filters.kraftstoff || ''), '', '']);
+      rows.push(['Filter', 'Getriebe', state.filters.getriebe === 'any' ? 'egal' : (state.filters.getriebe || ''), '', '']);
+      const csv = rows.map(r => r.map(v => '"' + String(v ?? '').replace(/"/g, '""') + '"').join(',')).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv' });
+      download(blob, 'auto-kauf-assistent.csv');
+    }
+
+    function download(blob, filename) {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 500);
+    }
+
+    function updateScore() {
+      const warn = [], problem = [], unset = [];
+      checklistData.forEach(group => group.items.forEach((_, idx) => {
+        const status = state.checklist[`${group.group}-${idx}`]?.status;
+        if (!status) unset.push(1);
+        if (status === 'warn') warn.push(1);
+        if (status === 'problem') problem.push(1);
+      }));
+
+      const kaufpreis = parseFloat(state.costs.kaufpreis) || 0;
+      const puffer = parseFloat(state.costs.puffer) || 0;
+      const sofort = state.costs.items.reduce((sum, c) => sum + (parseFloat(c.amount) || 0), 0);
+      const realpreis = kaufpreis + puffer + sofort;
+
+      const warnPenalty = warn.length * 1.2;
+      const problemPenalty = problem.length * 3.2;
+      const unsetPenalty = unset.length * 0.3;
+      const costRatio = kaufpreis ? Math.min(28, (sofort + puffer) / Math.max(kaufpreis, 1) * 100 * 0.35) : 0;
+      let score = Math.max(0, Math.min(100, 100 - warnPenalty - problemPenalty - unsetPenalty - costRatio));
+
+      document.getElementById('realpreis').textContent = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(realpreis || 0);
+      document.getElementById('score').textContent = 'Score ' + Math.round(score);
+      document.getElementById('score-bar').style.width = score + '%';
+      const info = document.getElementById('score-info');
+      const messages = [];
+      if (problem.length) messages.push(problem.length + ' Problem(e)');
+      if (warn.length) messages.push(warn.length + ' Achtung');
+      if (unset.length) messages.push(unset.length + ' offen');
+      if (!messages.length) messages.push('Alle Punkte OK');
+      info.textContent = messages.join(' · ');
+    }
+  </script>
+</body>
+</html>

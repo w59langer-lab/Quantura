@@ -1,0 +1,53 @@
+<!-- RU: Дата: 19.12.2025 — заглушка TagBook (подключение core) -->
+<!-- DE: Datum: 19.12.2025 — TagBook-Platzhalter (Core-Anbindung) -->
+<!-- EN: Date: 2025-12-19 — TagBook placeholder (core wiring) -->
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TagBook</title>
+
+  <link rel="stylesheet" href="/core/assets/style.css" />
+  <script src="/core/loader/loader.js" defer></script>
+  <script src="/core/js/core_init.js" defer></script>
+  <style>
+    .tagbook-page {
+      padding: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: #eef2ff;
+      color: #1f2a44;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid #d8ddee;
+      transition: transform 120ms ease, box-shadow 120ms ease,
+        border-color 120ms ease;
+    }
+    .back-btn:hover,
+    .back-btn:focus-visible {
+      transform: translateY(-1px);
+      border-color: #c7cfdf;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+
+  <main class="tagbook-page">
+    <h1>TagBook</h1>
+    <p>Platzhalter. Nächster Schritt: echte TagBook-Dateien integrieren.</p>
+    <a class="back-btn" href="/pages/portal/werkstatt/index.html">← Zurück zur Werkstatt</a>
+  </main>
+
+  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+</body>
+</html>

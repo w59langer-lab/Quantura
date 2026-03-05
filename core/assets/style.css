@@ -1,0 +1,599 @@
+/* ============================================================
+   DE: Basis-Layout und Design-Variablen (hell/dunkel)
+   EN: Base layout and design variables (light/dark)
+   RU: Базовый макет и переменные дизайна (светлая/тёмная тема)
+   ============================================================ */
+
+:root {
+  /* DE: Standard ist HELL.
+     EN: Default is light.
+     RU: По умолчанию используется светлая тема. */
+  --bg-page: #f2f4f8;
+  --bg-surface: #ffffff;
+  --border-subtle: #d0d7e2;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --accent: #2563eb;
+  --accent-soft: #dbeafe;
+  --accent-strong: #1d4ed8;
+  --shadow-soft: 0 8px 20px rgba(15, 23, 42, 0.08);
+  --sf-toolbar-bg-light: #e8f0ff;
+  --sf-toolbar-text-light: #111827;
+  --sf-level-pill-bg-light: #ffffff;
+  --sf-level-pill-text-light: #111827;
+}
+
+/* DE: Dunkle Thema (wenn html[data-theme="dark"])
+   EN: Dark theme (when html[data-theme="dark"])
+   RU: Тёмная тема (когда у html стоит data-theme="dark") */
+html[data-theme="dark"] {
+  --bg-page: #020617;
+  --bg-surface: #020617;
+  --border-subtle: #1e293b;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --accent: #60a5fa;
+  --accent-soft: #0f172a;
+  --accent-strong: #93c5fd;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.7);
+  --sf-toolbar-bg-light: #020617;
+  --sf-toolbar-text-light: #e5e7eb;
+  --sf-level-pill-bg-light: rgba(15, 23, 42, 0.9);
+  --sf-level-pill-text-light: #e5e7eb;
+}
+
+/* ============================================================
+   Reset / Grundlayout
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--bg-page);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+main,
+#ll-content,
+[data-ll-content],
+#main,
+.main,
+#content,
+.content,
+#app,
+.app,
+.page-wrapper {
+  flex: 1 0 auto;
+}
+
+/* ============================================================
+   Container / Cards
+   ============================================================ */
+
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 10px 24px;
+}
+
+.card {
+  background: var(--bg-surface);
+  border-radius: 18px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+  padding: 16px 18px;
+}
+
+.welcome {
+  margin: 0 0 0.75rem 0;
+}
+
+.welcome p {
+  margin: 0.25rem 0;
+}
+
+.welcome .motto {
+  opacity: 0.9;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.site-header {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+}
+
+.site-header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.site-header__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+  min-width: 0;
+  overflow: hidden;
+  flex-shrink: 1;
+}
+
+/* DE: Rundes LG-Logo
+   EN: Round LG logo
+   RU: Круглый логотип LG */
+.site-header__logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 40%;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.brand-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.brand-sep {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.brand-text {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text-main);
+}
+
+.brand-line {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+}
+
+.brand-quote {
+  color: var(--text-muted);
+}
+
+@media (max-width: 540px) {
+  .brand-line {
+    max-width: 62vw;
+  }
+  .brand-quote {
+    display: none;
+  }
+}
+
+.site-header__title-main {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.site-header__title-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Navigation */
+.site-header__nav {
+  display: flex;
+  gap: 8px;
+  margin-left: 0;
+  margin-top: 2px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+
+/* DE: Links im Header
+   EN: Links in header
+   RU: Ссылки в шапке */
+.nav-link {
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 999px;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+
+.site-header__actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.audio-system {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.82rem;
+  background: var(--bg-page);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+.audio-system select {
+  font-size: 0.82rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  padding: 4px 6px;
+}
+
+.audio-info {
+  cursor: pointer;
+}
+
+.audio-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+header,
+nav {
+  position: relative;
+  z-index: 9999;
+}
+
+/* ============================================================
+   Buttons / Theme Toggle
+   ============================================================ */
+
+.btn {
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  background: var(--bg-surface);
+  color: var(--text-main);
+}
+
+.btn-ghost {
+  background: transparent;
+}
+
+.theme-icon {
+  display: none;
+  font-size: 1rem;
+}
+
+/* DE: In HELL-Thema Sonne anzeigen
+   EN: Show sun in light theme
+   RU: В светлой теме – солнце */
+html:not([data-theme="dark"]) .theme-icon--light {
+  display: inline;
+}
+html:not([data-theme="dark"]) .theme-icon--dark {
+  display: none;
+}
+
+/* DE: In DUNKEL-Thema Mond anzeigen
+   EN: Show moon in dark theme
+   RU: В тёмной теме – луна */
+html[data-theme="dark"] .theme-icon--light {
+  display: none;
+}
+html[data-theme="dark"] .theme-icon--dark {
+  display: inline;
+}
+
+/* ============================================================
+   Uhr / Datum / KW
+   ============================================================ */
+
+.header-clock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+  margin-top: auto;
+  flex-shrink: 0;
+  border-top: 1px solid var(--border-subtle);
+  padding: 8px 0 16px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+footer,
+#footer,
+.footer,
+[data-partial="footer"] {
+  margin-top: auto;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.ll-footer-inner {
+  line-height: 1.35;
+}
+
+.ll-footer-inner div {
+  margin: 0.15rem 0;
+}
+
+.site-footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer small {
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.site-footer a,
+footer a,
+#footer a,
+.footer a,
+[data-partial="footer"] a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible,
+footer a:hover,
+footer a:focus-visible,
+#footer a:hover,
+#footer a:focus-visible,
+.footer a:hover,
+.footer a:focus-visible,
+[data-partial="footer"] a:hover,
+[data-partial="footer"] a:focus-visible {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.overlay,
+.backdrop {
+  pointer-events: none;
+}
+
+/* ============================================================
+   Language generator layout (generator/*)
+   ============================================================ */
+
+.language-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.1fr);
+  gap: 12px;
+}
+
+.language-panel {
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+}
+
+.language-panel__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.language-panel__subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.form-row label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  min-width: 80px;
+}
+
+.form-row select,
+.form-row input[type="text"] {
+  flex: 1 1 140px;
+  min-width: 0;
+  padding: 3px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  font-size: 0.8rem;
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+.sentence-output {
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px dashed var(--border-subtle);
+  background: var(--bg-page);
+  min-height: 42px;
+  font-size: 0.95rem;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-strong);
+}
+
+.hint-text {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ============================================================
+   Portal cards (index.html, Bibliothek, usw.)
+   ============================================================ */
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.portal-card {
+  border-radius: 18px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-soft);
+  padding: 14px 16px;
+}
+
+.portal-card h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.portal-card p {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.portal-card a {
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.portal-return-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-decoration: underline;
+  color: var(--text-muted);
+}
+
+/* Fun Mathematics – Szenenbilder */
+.funmath-figure {
+  max-width: 480px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.funmath-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.funmath-figure figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Kleine Vorschaubilder in Aufgaben-Kacheln mit sanfter Hover-Vergrößerung */
+.aufgaben-kachel-bild {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.aufgaben-kachel-bild img {
+  display: block;
+  max-width: 220px;
+  height: auto;
+  transition: transform 0.25s ease;
+}
+
+.aufgaben-kachel-bild:hover img {
+  transform: scale(1.08);
+}

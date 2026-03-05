@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lektion 03 — Web (HTML + CSS + JavaScript)</title>
+  <link rel="stylesheet" href="../../../../core/assets/style.css">
+  <script src="../../../../core/js/core_init.js" defer></script>
+  <style>
+    .lesson-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .lesson-nav .button { padding: 8px 12px; border-radius: 6px; text-decoration: none; background: var(--accent-color, #2563eb); color: #fff; }
+    .lesson-nav .button.ghost { background: #eef2ff; color: #1f2937; border: 1px solid #cbd5e1; }
+    .lesson-nav .button.disabled { opacity: 0.5; pointer-events: none; }
+    .focus-target { padding: 8px; border-left: 3px solid transparent; }
+    .focus-target.is-focused { border-color: var(--accent-color, #2563eb); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2); }
+    .playground-grid { display: grid; gap: 10px; margin-top: 10px; }
+    .playground-grid textarea { width: 100%; min-height: 160px; font-family: monospace; }
+    .playground-grid label { font-weight: 600; }
+    @media (min-width: 900px) { .playground-grid { grid-template-columns: repeat(3, 1fr); } }
+    .preview-box iframe { width: 100%; min-height: 260px; border: 1px solid var(--border-color, #d1d5db); }
+  </style>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+  <main class="page-wrapper">
+    <div class="card">
+      <header>
+        <h1>Lektion 03 — Web (HTML + CSS + JavaScript)</h1>
+        <p class="lead">Formular-Feedback: Eingabe prüfen und per Klasse „ok“ oder „error“ markieren.</p>
+      </header>
+
+      <nav class="lesson-nav">
+        <a class="button" href="index.html">Zur Übersicht</a>
+        <a class="button" href="lesson-02.html">Prev</a>
+        <a class="button" href="lesson-04.html">Next</a>
+        <a class="button ghost" href="lesson-03.html?focus=html">HTML</a>
+        <a class="button ghost" href="lesson-03.html?focus=css">CSS</a>
+        <a class="button ghost" href="lesson-03.html?focus=js">JavaScript</a>
+      </nav>
+
+      <section>
+        <h2>Lernziele</h2>
+        <ul>
+          <li>Input-Feld und Meldung im HTML.</li>
+          <li>CSS-Klassen für Erfolg/Fehler definieren.</li>
+          <li>JS prüft Eingabe und setzt passende Klasse.</li>
+        </ul>
+      </section>
+
+      <section class="focus-target" id="html-section">
+        <h3>HTML</h3>
+        <p>Input, Button, Meldung. IDs sind wichtig, damit JS die Elemente findet.</p>
+      </section>
+
+      <section class="focus-target" id="css-section">
+        <h3>CSS</h3>
+        <p>Grün für „ok“, Rot für „error“. Mit Klassen lässt sich das schnell umschalten.</p>
+      </section>
+
+      <section class="focus-target" id="js-section">
+        <h3>JavaScript</h3>
+        <p>Trimmen, prüfen, Klasse hinzufügen/entfernen und Text setzen.</p>
+      </section>
+
+      <section>
+        <h3>Playground</h3>
+        <p>Teste eigenes Feedback-Verhalten, dann „Run“ klicken.</p>
+        <div class="playground-grid">
+          <div>
+            <label for="htmlInput">HTML</label>
+            <textarea id="htmlInput"></textarea>
+          </div>
+          <div>
+            <label for="cssInput">CSS</label>
+            <textarea id="cssInput"></textarea>
+          </div>
+          <div>
+            <label for="jsInput">JavaScript</label>
+            <textarea id="jsInput"></textarea>
+          </div>
+        </div>
+        <div class="button-row" style="margin: 12px 0;">
+          <button id="runBtn" type="button">Run</button>
+        </div>
+        <div class="preview-box">
+          <iframe id="previewFrame" title="Live Preview" sandbox="allow-scripts"></iframe>
+        </div>
+      </section>
+
+      <nav class="lesson-nav">
+        <a class="button" href="index.html">Zur Übersicht</a>
+        <a class="button" href="lesson-02.html">Prev</a>
+        <a class="button" href="lesson-04.html">Next</a>
+        <a class="button ghost" href="lesson-03.html?focus=html">HTML</a>
+        <a class="button ghost" href="lesson-03.html?focus=css">CSS</a>
+        <a class="button ghost" href="lesson-03.html?focus=js">JavaScript</a>
+      </nav>
+    </div>
+  </main>
+
+  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+
+  <script>
+    function applyFocus() {
+      const params = new URLSearchParams(window.location.search);
+      const focus = (params.get("focus") || "").toLowerCase();
+      const map = { html: "html-section", css: "css-section", js: "js-section" };
+      document.querySelectorAll(".focus-target").forEach((el) => el.classList.remove("is-focused"));
+      if (map[focus]) {
+        const target = document.getElementById(map[focus]);
+        if (target) {
+          target.classList.add("is-focused");
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const htmlInput = document.getElementById("htmlInput");
+      const cssInput = document.getElementById("cssInput");
+      const jsInput = document.getElementById("jsInput");
+      const runBtn = document.getElementById("runBtn");
+      const frame = document.getElementById("previewFrame");
+
+      const defaults = {
+        html: `<div class="form-box">
+  <label for="userInput">Gib ein Stichwort ein:</label>
+  <input id="userInput" type="text" placeholder="z. B. Hallo">
+  <button id="checkBtn">Prüfen</button>
+  <p id="feedback">Warte auf Eingabe …</p>
+</div>`,
+        css: `body { font-family: system-ui, sans-serif; background: #f8fafc; color: #0f172a; padding: 16px; }
+.form-box { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; max-width: 420px; }
+input { width: 100%; padding: 8px; margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; }
+button { background: #2563eb; color: white; border: none; border-radius: 8px; padding: 10px 14px; cursor: pointer; }
+#feedback.ok { color: #16a34a; }
+#feedback.error { color: #dc2626; }`,
+        js: `const input = document.getElementById("userInput");
+const btn = document.getElementById("checkBtn");
+const feedback = document.getElementById("feedback");
+
+btn.addEventListener("click", () => {
+  const value = (input.value || "").trim();
+  feedback.classList.remove("ok", "error");
+  if (value.length >= 3) {
+    feedback.textContent = "Alles gut: Eingabe akzeptiert.";
+    feedback.classList.add("ok");
+  } else {
+    feedback.textContent = "Bitte mindestens 3 Zeichen eingeben.";
+    feedback.classList.add("error");
+  }
+});`,
+      };
+
+      htmlInput.value = defaults.html;
+      cssInput.value = defaults.css;
+      jsInput.value = defaults.js;
+
+      const run = () => {
+        const html = htmlInput.value || "";
+        const css = cssInput.value || "";
+        const js = jsInput.value || "";
+        frame.srcdoc = \`<!DOCTYPE html><html><head><style>\${css}</style></head><body>\${html}<script>\${js}<\\/script></body></html>\`;
+      };
+
+      runBtn.addEventListener("click", run);
+      run();
+      applyFocus();
+    });
+  </script>
+</body>
+</html>

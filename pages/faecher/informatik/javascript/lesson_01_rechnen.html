@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 01: Rechnen</title>
+  <link rel="stylesheet" href="../../../../core/assets/style.css">
+  <link rel="stylesheet" href="../common/informatik_style.css">
+  <script src="../../../../core/js/core_init.js" defer></script>
+  <script src="lesson_01_rechnen.js" defer></script>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+  <!-- Rechner Übung / Упражнение калькулятор / Calculator exercise -->
+  <main class="page-wrapper">
+    <div class="card">
+      <header>
+        <h1>JavaScript: Kleine Rechenübung</h1>
+        <p class="lead">Zwei Zahlen eingeben und mit Klick auf einen Operator das Ergebnis sehen.</p>
+      </header>
+
+      <section>
+        <label for="zahl-a">Zahl A</label>
+        <input id="zahl-a" type="number" placeholder="z. B. 5">
+
+        <label for="zahl-b">Zahl B</label>
+        <input id="zahl-b" type="number" placeholder="z. B. 3">
+
+        <div class="button-row">
+          <button data-op="add">+</button>
+          <button data-op="sub">-</button>
+          <button data-op="mul">&times;</button>
+          <button data-op="div">/</button>
+        </div>
+
+        <div class="result" id="ergebnis" aria-live="polite">Ergebnis erscheint hier.</div>
+      </section>
+
+      <section>
+        <a class="link" href="index.html">Zurück zu JavaScript</a>
+        <br>
+        <a class="link" href="lesson_02_html_js.html">Weiter zu Lektion 02</a>
+      </section>
+    </div>
+  </main>
+
+  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+</body>
+</html>

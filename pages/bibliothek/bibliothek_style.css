@@ -1,0 +1,106 @@
+/* Bibliothek nutzt das globale Theme – nur Layout-Anpassungen */
+.bibliothek-page .card > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.bibliothek-page .card > header h1 {
+  margin: 0;
+  letter-spacing: -0.5px;
+  font-size: clamp(28px, 3vw + 10px, 40px);
+}
+
+.bibliothek-page .card > header p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.bibliothek-page .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.bibliothek-page .cards .card {
+  display: block;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.bibliothek-page .cards .card h2 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.bibliothek-page .cards .card small {
+  color: var(--text-muted);
+}
+
+.bibliothek-page .cards .card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+}
+
+.bibliothek-page .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  border: 1px solid var(--accent);
+}
+
+.bibliothek-page .placeholder {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px dashed var(--border-subtle);
+  color: var(--text-muted);
+  background: var(--bg-surface);
+}
+
+.bibliothek-page .nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.bibliothek-page .nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  text-decoration: none;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.bibliothek-page .nav a:hover {
+  background: var(--bg-surface);
+  border-color: var(--accent);
+  color: var(--accent-strong);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 600px) {
+  .bibliothek-page .card > header {
+    align-items: flex-start;
+  }
+}

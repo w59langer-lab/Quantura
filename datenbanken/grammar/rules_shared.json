@@ -1,0 +1,10 @@
+[
+  {
+    "id": "SHARED.PUNCT",
+    "lang": "shared",
+    "type": "punctuation",
+    "priority": 10,
+    "data": {},
+    "examples": []
+  }
+]

@@ -1,0 +1,354 @@
+{
+  "id": "hotel",
+  "title": "Hotel & Reise",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "reservation_name",
+      "mnemoHint": "RES",
+      "de": "Ich habe eine Reservierung auf den Namen Meyer.",
+      "en": "I have a reservation under the name Meyer.",
+      "it": "Ho una prenotazione a nome Meyer.",
+      "fr": "J'ai une réservation au nom de Meyer.",
+      "es": "Tengo una reserva a nombre de Meyer.",
+      "ru": "У меня бронь на фамилию Майер.",
+      "tr": "Meyer adına rezervasyonum var.",
+      "pronIpa": {
+        "tr": "Meyer adɯna rezervasyonum var."
+      },
+      "pronRu": {
+        "tr": "мейер адына резервасйонум вар."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "wifi_room",
+      "mnemoHint": "WIFI",
+      "de": "Gibt es WLAN im Zimmer?",
+      "en": "Is there Wi‑Fi in the room?",
+      "it": "C'è il Wi‑Fi in camera?",
+      "fr": "Y a-t-il du Wi‑Fi dans la chambre ?",
+      "es": "¿Hay Wi‑Fi en la habitación?",
+      "ru": "Есть ли Wi‑Fi в номере?",
+      "tr": "Odada Wi‑Fi var mı?",
+      "pronIpa": {
+        "tr": "Odada Wi‑Fi var mɯ?"
+      },
+      "pronRu": {
+        "tr": "одада Wи‑фи вар мы?"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "room_cold",
+      "mnemoHint": "COLD",
+      "de": "Das Zimmer ist zu kalt.",
+      "en": "The room is too cold.",
+      "it": "La stanza è troppo fredda.",
+      "fr": "La chambre est trop froide.",
+      "es": "La habitación está demasiado fría.",
+      "ru": "Комната слишком холодная.",
+      "tr": "Oda çok soğuk.",
+      "pronIpa": {
+        "tr": "Oda t͡ʃok souk."
+      },
+      "pronRu": {
+        "tr": "ода чок соук."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "order_taxi",
+      "mnemoHint": "TAXI",
+      "de": "Können Sie ein Taxi bestellen?",
+      "en": "Could you order a taxi?",
+      "it": "Può chiamare un taxi?",
+      "fr": "Pouvez-vous appeler un taxi ?",
+      "es": "¿Puede pedir un taxi?",
+      "ru": "Можете вызвать такси?",
+      "tr": "Bir taksi çağırabilir misiniz?",
+      "pronIpa": {
+        "tr": "Bir taksi t͡ʃaɯrabilir misiniz?"
+      },
+      "pronRu": {
+        "tr": "бир такси чаырабилир мисиниз?"
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "stay_three",
+      "mnemoHint": "3N",
+      "de": "Ich bleibe drei Nächte.",
+      "en": "I am staying three nights.",
+      "it": "Rimango tre notti.",
+      "fr": "Je reste trois nuits.",
+      "es": "Me quedo tres noches.",
+      "ru": "Я остаюсь на три ночи.",
+      "tr": "Üç gece kalıyorum.",
+      "pronIpa": {
+        "tr": "yt͡ʃ ged͡ʒe kalɯyorum."
+      },
+      "pronRu": {
+        "tr": "юч гедже калыйорум."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "ticket_nine",
+      "mnemoHint": "9:00",
+      "de": "Ich habe ein Ticket für den Zug um neun.",
+      "en": "I have a ticket for the train at nine.",
+      "it": "Ho un biglietto per il treno alle nove.",
+      "fr": "J'ai un billet pour le train de neuf heures.",
+      "es": "Tengo un billete para el tren a las nueve.",
+      "ru": "У меня билет на поезд в девять.",
+      "tr": "Saat dokuza tren biletim var.",
+      "pronIpa": {
+        "tr": "Saat dokuza tren biletim var."
+      },
+      "pronRu": {
+        "tr": "саат докуза трен билетим вар."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "flight_delay",
+      "mnemoHint": "ETA",
+      "de": "Der Flug hat Verspätung.",
+      "en": "The flight is delayed.",
+      "it": "Il volo è in ritardo.",
+      "fr": "Le vol est retardé.",
+      "es": "El vuelo está retrasado.",
+      "ru": "Рейс задерживается.",
+      "tr": "Uçuş gecikti.",
+      "pronIpa": {
+        "tr": "Ut͡ʃuʃ ged͡ʒikti."
+      },
+      "pronRu": {
+        "tr": "учуш геджикти."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "baggage_claim",
+      "mnemoHint": "BAG",
+      "de": "Wo ist die Gepäckausgabe?",
+      "en": "Where is the baggage claim?",
+      "it": "Dov'è il ritiro bagagli?",
+      "fr": "Où est la récupération des bagages ?",
+      "es": "¿Dónde está la recogida de equipaje?",
+      "ru": "Где выдача багажа?",
+      "tr": "Bagaj teslim yeri nerede?",
+      "pronIpa": {
+        "tr": "Bagaʒ teslim yeri nerede?"
+      },
+      "pronRu": {
+        "tr": "багаж теслим йери нереде?"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "window_seat",
+      "mnemoHint": "SEAT",
+      "de": "Ich möchte einen Fensterplatz.",
+      "en": "I would like a window seat.",
+      "it": "Vorrei un posto al finestrino.",
+      "fr": "Je voudrais une place près de la fenêtre.",
+      "es": "Quisiera un asiento de ventana.",
+      "ru": "Я бы хотел место у окна.",
+      "tr": "Pencere kenarı yer istiyorum.",
+      "pronIpa": {
+        "tr": "Pend͡ʒere kenarɯ yer istiyorum."
+      },
+      "pronRu": {
+        "tr": "пенджере кенары йер истийорум."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "next_train",
+      "mnemoHint": "NEXT",
+      "de": "Wann fährt der nächste Zug nach Paris?",
+      "en": "When does the next train to Paris leave?",
+      "it": "Quando parte il prossimo treno per Parigi?",
+      "fr": "Quand part le prochain train pour Paris ?",
+      "es": "¿Cuándo sale el próximo tren a París?",
+      "ru": "Когда идёт следующий поезд до Парижа?",
+      "tr": "Paris'e giden sonraki tren ne zaman kalkıyor?",
+      "pronIpa": {
+        "tr": "Paris'e giden sonraki tren ne zaman kalkɯyor?"
+      },
+      "pronRu": {
+        "tr": "парис'е гиден сонраки трен не заман калкыйор?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "ac_broken",
+      "mnemoHint": "AC",
+      "de": "Die Klimaanlage funktioniert nicht.",
+      "en": "The air conditioning is not working.",
+      "it": "L'aria condizionata non funziona.",
+      "fr": "La climatisation ne marche pas.",
+      "es": "El aire acondicionado no funciona.",
+      "ru": "Кондиционер не работает.",
+      "tr": "Klima çalışmıyor.",
+      "pronIpa": {
+        "tr": "Klima t͡ʃalɯʃmɯyor."
+      },
+      "pronRu": {
+        "tr": "клима чалышмыйор."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "luggage_lost",
+      "mnemoHint": "BAG?",
+      "de": "Mein Gepäck ist verloren gegangen.",
+      "en": "My luggage is lost.",
+      "it": "Il mio bagaglio è stato smarrito.",
+      "fr": "Mes bagages ont été perdus.",
+      "es": "Mi equipaje se ha perdido.",
+      "ru": "Мой багаж потерялся.",
+      "tr": "Bagajım kayboldu.",
+      "pronIpa": {
+        "tr": "Bagaʒɯm kayboldu."
+      },
+      "pronRu": {
+        "tr": "багажым кайболду."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "wrong_bill",
+      "mnemoHint": "BILL",
+      "de": "Ich habe die falsche Rechnung bekommen.",
+      "en": "I received the wrong bill.",
+      "it": "Ho ricevuto il conto sbagliato.",
+      "fr": "J'ai reçu la mauvaise facture.",
+      "es": "He recibido la factura equivocada.",
+      "ru": "Мне дали неправильный счёт.",
+      "tr": "Yanlış hesap aldım.",
+      "pronIpa": {
+        "tr": "Yanlɯʃ hesap aldɯm."
+      },
+      "pronRu": {
+        "tr": "йанлыш хесап алдым."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "send_someone",
+      "mnemoHint": "HELP",
+      "de": "Bitte schicken Sie jemanden vorbei.",
+      "en": "Please send someone over.",
+      "it": "Per favore mandi qualcuno.",
+      "fr": "Veuillez envoyer quelqu'un.",
+      "es": "Por favor envíe a alguien.",
+      "ru": "Пожалуйста, пришлите кого-нибудь.",
+      "tr": "Lütfen birini gönderin.",
+      "pronIpa": {
+        "tr": "Lytfen birini gønderin."
+      },
+      "pronRu": {
+        "tr": "лютфен бирини гёндерин."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "internet_slow",
+      "mnemoHint": "NET",
+      "de": "Das Internet ist sehr langsam.",
+      "en": "The internet is very slow.",
+      "it": "Internet è molto lento.",
+      "fr": "Internet est très lent.",
+      "es": "Internet es muy lento.",
+      "ru": "Интернет очень медленный.",
+      "tr": "İnternet çok yavaş.",
+      "pronIpa": {
+        "tr": "İnternet t͡ʃok yavaʃ."
+      },
+      "pronRu": {
+        "tr": "İнтернет чок йаваш."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "urgent_help",
+      "mnemoHint": "SOS",
+      "de": "Ich brauche sofort Hilfe.",
+      "en": "I need help immediately.",
+      "it": "Ho bisogno di aiuto subito.",
+      "fr": "J'ai besoin d'aide immédiatement.",
+      "es": "Necesito ayuda de inmediato.",
+      "ru": "Мне нужна помощь немедленно.",
+      "tr": "Hemen yardıma ihtiyacım var.",
+      "pronIpa": {
+        "tr": "Hemen yardɯma ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "хемен йардыма ихтийаджым вар."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "have_reservation",
+      "mnemoHint": "BOOK",
+      "de": "Ich habe eine Reservierung.",
+      "en": "I have a reservation.",
+      "fr": "J'ai une réservation.",
+      "it": "Ho una prenotazione.",
+      "es": "Tengo una reserva.",
+      "ru": "У меня есть бронь.",
+      "tr": "Rezervasyonum var."
+    },
+    {
+      "level": 1,
+      "mnemoKey": "room_one_night",
+      "mnemoHint": "1N",
+      "de": "Ich brauche ein Zimmer für eine Nacht.",
+      "en": "I need a room for one night.",
+      "fr": "J'ai besoin d'une chambre pour une nuit.",
+      "it": "Mi serve una camera per una notte.",
+      "es": "Necesito una habitación por una noche.",
+      "ru": "Мне нужен номер на одну ночь.",
+      "tr": "Bir gecelik oda lazım."
+    },
+    {
+      "level": 1,
+      "mnemoKey": "breakfast_included",
+      "mnemoHint": "FOOD",
+      "de": "Ist das Frühstück inklusive?",
+      "en": "Is breakfast included?",
+      "fr": "Le petit déjeuner est-il compris ?",
+      "it": "La colazione è inclusa?",
+      "es": "¿El desayuno está incluido?",
+      "ru": "Завтрак включён?",
+      "tr": "Kahvaltı dahil mi?"
+    },
+    {
+      "level": 2,
+      "mnemoKey": "late_checkout",
+      "mnemoHint": "LATE",
+      "de": "Kann ich später auschecken?",
+      "en": "Can I check out later?",
+      "fr": "Puis-je partir plus tard ?",
+      "it": "Posso fare il check-out più tardi?",
+      "es": "¿Puedo salir más tarde?",
+      "ru": "Можно выехать попозже?",
+      "tr": "Daha geç çıkış yapabilir miyim?"
+    },
+    {
+      "level": 3,
+      "mnemoKey": "confirm_booking_written",
+      "mnemoHint": "CONF",
+      "de": "Bitte bestätigen Sie meine Buchung schriftlich.",
+      "en": "Please confirm my booking in writing.",
+      "fr": "Merci de confirmer ma réservation par écrit.",
+      "it": "Confermi per iscritto la mia prenotazione, per favore.",
+      "es": "Confirme mi reserva por escrito, por favor.",
+      "ru": "Подтвердите моё бронирование письменно, пожалуйста.",
+      "tr": "Rezervasyonumu yazılı olarak onaylar mısınız?"
+    }
+  ]
+}

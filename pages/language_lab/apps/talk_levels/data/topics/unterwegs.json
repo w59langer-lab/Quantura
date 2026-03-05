@@ -1,0 +1,342 @@
+{
+  "id": "unterwegs",
+  "title": "Unterwegs",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "where_station",
+      "mnemoHint": "S+?",
+      "de": "Wo ist der Bahnhof?",
+      "en": "Where is the train station?",
+      "it": "Dov'è la stazione?",
+      "fr": "Où est la gare ?",
+      "es": "¿Dónde está la estación?",
+      "ru": "Где вокзал?",
+      "tr": "Tren garı nerede?",
+      "pronIpa": {
+        "tr": "Tren garɯ nerede?"
+      },
+      "pronRu": {
+        "tr": "трен гары нереде?"
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "go_straight",
+      "mnemoHint": "→",
+      "de": "Gehen Sie bitte geradeaus.",
+      "en": "Please go straight ahead.",
+      "it": "Vada dritto, per favore.",
+      "fr": "Allez tout droit, s'il vous plaît.",
+      "es": "Vaya todo recto, por favor.",
+      "ru": "Идите, пожалуйста, прямо.",
+      "tr": "Lütfen dümdüz gidin.",
+      "pronIpa": {
+        "tr": "Lytfen dymdyz gidin."
+      },
+      "pronRu": {
+        "tr": "лютфен дюмдюз гидин."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "turn_left",
+      "mnemoHint": "←",
+      "de": "Biegen Sie links ab.",
+      "en": "Turn left.",
+      "it": "Giri a sinistra.",
+      "fr": "Tournez à gauche.",
+      "es": "Gire a la izquierda.",
+      "ru": "Поверните налево.",
+      "tr": "Sola dönün.",
+      "pronIpa": {
+        "tr": "Sola dønyn."
+      },
+      "pronRu": {
+        "tr": "сола дёнюн."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "nearby",
+      "mnemoHint": "NEAR",
+      "de": "Es ist in der Nähe.",
+      "en": "It is nearby.",
+      "it": "È qui vicino.",
+      "fr": "C'est tout près.",
+      "es": "Está cerca.",
+      "ru": "Это рядом.",
+      "tr": "Yakında.",
+      "pronIpa": {
+        "tr": "Yakɯnda."
+      },
+      "pronRu": {
+        "tr": "йакында."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "to_center",
+      "mnemoHint": "CTR",
+      "de": "Wie komme ich zum Zentrum?",
+      "en": "How do I get to the center?",
+      "it": "Come arrivo al centro?",
+      "fr": "Comment aller au centre ?",
+      "es": "¿Cómo llego al centro?",
+      "ru": "Как добраться до центра?",
+      "tr": "Merkeze nasıl giderim?",
+      "pronIpa": {
+        "tr": "Merkeze nasɯl giderim?"
+      },
+      "pronRu": {
+        "tr": "меркезе насыл гидерим?"
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "metro_here",
+      "mnemoHint": "U",
+      "de": "Gibt es eine U-Bahn hier?",
+      "en": "Is there a metro here?",
+      "it": "C'è una metro qui?",
+      "fr": "Y a-t-il un métro ici ?",
+      "es": "¿Hay metro aquí?",
+      "ru": "Здесь есть метро?",
+      "tr": "Burada metro var mı?",
+      "pronIpa": {
+        "tr": "Burada metro var mɯ?"
+      },
+      "pronRu": {
+        "tr": "бурада метро вар мы?"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "street_closed",
+      "mnemoHint": "X",
+      "de": "Die Straße ist gesperrt.",
+      "en": "The street is closed.",
+      "it": "La strada è chiusa.",
+      "fr": "La rue est fermée.",
+      "es": "La calle está cortada.",
+      "ru": "Улица перекрыта.",
+      "tr": "Sokak kapalı.",
+      "pronIpa": {
+        "tr": "Sokak kapalɯ."
+      },
+      "pronRu": {
+        "tr": "сокак капалы."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "bus_number",
+      "mnemoHint": "BUS",
+      "de": "Nehmen Sie den Bus Nummer zehn.",
+      "en": "Take bus number ten.",
+      "it": "Prenda l'autobus numero dieci.",
+      "fr": "Prenez le bus numéro dix.",
+      "es": "Tome el autobús número diez.",
+      "ru": "Возьмите автобус номер десять.",
+      "tr": "On numaralı otobüse binin.",
+      "pronIpa": {
+        "tr": "On numaralɯ otobyse binin."
+      },
+      "pronRu": {
+        "tr": "он нумаралы отобюсе бинин."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "stop_over_there",
+      "mnemoHint": "STOP",
+      "de": "Die Haltestelle ist dort drüben.",
+      "en": "The stop is over there.",
+      "it": "La fermata è laggiù.",
+      "fr": "L'arrêt est là-bas.",
+      "es": "La parada está allí.",
+      "ru": "Остановка вон там.",
+      "tr": "Durak şurada.",
+      "pronIpa": {
+        "tr": "Durak ʃurada."
+      },
+      "pronRu": {
+        "tr": "дурак шурада."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "ticket_ahead",
+      "mnemoHint": "TIX",
+      "de": "Brauche ich ein Ticket vorher?",
+      "en": "Do I need a ticket in advance?",
+      "it": "Serve un biglietto prima?",
+      "fr": "Faut-il un billet à l'avance ?",
+      "es": "¿Necesito un billete por adelantado?",
+      "ru": "Нужно билет заранее?",
+      "tr": "Bileti önceden almam gerekiyor mu?",
+      "pronIpa": {
+        "tr": "Bileti ønd͡ʒeden almam gerekiyor mu?"
+      },
+      "pronRu": {
+        "tr": "билети ёнджеден алмам герекийор му?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "bus_ten_minutes",
+      "mnemoHint": "10m",
+      "de": "Der Bus kommt in zehn Minuten.",
+      "en": "The bus arrives in ten minutes.",
+      "it": "L'autobus arriva tra dieci minuti.",
+      "fr": "Le bus arrive dans dix minutes.",
+      "es": "El autobús llega en diez minutos.",
+      "ru": "Автобус приедет через десять минут.",
+      "tr": "Otobüs on dakika içinde geliyor.",
+      "pronIpa": {
+        "tr": "Otobys on dakika it͡ʃinde geliyor."
+      },
+      "pronRu": {
+        "tr": "отобюс он дакика ичинде гелийор."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "time_now",
+      "mnemoHint": "TIME",
+      "de": "Wie spät ist es jetzt?",
+      "en": "What time is it now?",
+      "it": "Che ore sono adesso?",
+      "fr": "Quelle heure est-il maintenant ?",
+      "es": "¿Qué hora es ahora?",
+      "ru": "Который сейчас час?",
+      "tr": "Saat kaç?",
+      "pronIpa": {
+        "tr": "Saat kat͡ʃ?"
+      },
+      "pronRu": {
+        "tr": "саат кач?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "help_quick",
+      "mnemoHint": "HELP",
+      "de": "Kannst du mir kurz helfen?",
+      "en": "Can you help me quickly?",
+      "it": "Puoi aiutarmi un attimo?",
+      "fr": "Peux-tu m'aider un instant ?",
+      "es": "¿Puedes ayudarme un momento?",
+      "ru": "Ты можешь мне быстро помочь?",
+      "tr": "Çabuk yardım eder misiniz?",
+      "pronIpa": {
+        "tr": "t͡ʃabuk yardɯm eder misiniz?"
+      },
+      "pronRu": {
+        "tr": "чабук йардым едер мисиниз?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "next_train_topic",
+      "mnemoHint": "NEXT",
+      "de": "Wann fährt der nächste Zug nach Paris?",
+      "en": "When does the next train to Paris leave?",
+      "it": "Quando parte il prossimo treno per Parigi?",
+      "fr": "Quand part le prochain train pour Paris ?",
+      "es": "¿Cuándo sale el próximo tren a París?",
+      "ru": "Когда идёт следующий поезд до Парижа?",
+      "tr": "Paris'e giden sonraki tren ne zaman kalkıyor?",
+      "pronIpa": {
+        "tr": "Paris'e giden sonraki tren ne zaman kalkɯyor?"
+      },
+      "pronRu": {
+        "tr": "парис'е гиден сонраки трен не заман калкыйор?"
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "flight_delay_trip",
+      "mnemoHint": "ETA",
+      "de": "Der Flug hat Verspätung.",
+      "en": "The flight is delayed.",
+      "it": "Il volo è in ritardo.",
+      "fr": "Le vol est retardé.",
+      "es": "El vuelo está retrasado.",
+      "ru": "Рейс задерживается.",
+      "tr": "Uçuş gecikti.",
+      "pronIpa": {
+        "tr": "Ut͡ʃuʃ ged͡ʒikti."
+      },
+      "pronRu": {
+        "tr": "учуш геджикти."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "baggage_claim_trip",
+      "mnemoHint": "BAG",
+      "de": "Wo ist die Gepäckausgabe?",
+      "en": "Where is the baggage claim?",
+      "it": "Dov'è il ritiro bagagli?",
+      "fr": "Où est la récupération des bagages ?",
+      "es": "¿Dónde está la recogida de equipaje?",
+      "ru": "Где выдача багажа?",
+      "tr": "Bagaj teslim yeri nerede?",
+      "pronIpa": {
+        "tr": "Bagaʒ teslim yeri nerede?"
+      },
+      "pronRu": {
+        "tr": "багаж теслим йери нереде?"
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "bus_stop_where",
+      "mnemoHint": "BUS",
+      "de": "Wo ist die Bushaltestelle?",
+      "en": "Where is the bus stop?",
+      "fr": "Où est l'arrêt de bus ?",
+      "it": "Dov'è la fermata dell'autobus?",
+      "es": "¿Dónde está la parada de autobús?",
+      "ru": "Где автобусная остановка?",
+      "tr": "Otobüs durağı nerede?"
+    },
+    {
+      "level": 0,
+      "mnemoKey": "city_center_where",
+      "mnemoHint": "CITY",
+      "de": "Wo ist das Stadtzentrum?",
+      "en": "Where is the city center?",
+      "fr": "Où est le centre-ville ?",
+      "it": "Dov'è il centro?",
+      "es": "¿Dónde está el centro?",
+      "ru": "Где центр города?",
+      "tr": "Şehir merkezi nerede?"
+    },
+    {
+      "level": 2,
+      "mnemoKey": "quiet_route",
+      "mnemoHint": "CALM",
+      "de": "Können Sie mir eine ruhige Route empfehlen?",
+      "en": "Can you suggest a quiet route?",
+      "fr": "Pouvez-vous me proposer un itinéraire calme ?",
+      "it": "Può consigliarmi un percorso tranquillo?",
+      "es": "¿Puede sugerirme una ruta tranquila?",
+      "ru": "Можете посоветовать спокойный маршрут?",
+      "tr": "Bana sakin bir rota önerebilir misiniz?"
+    },
+    {
+      "level": 3,
+      "mnemoKey": "no_transfers_route",
+      "mnemoHint": "DIRECT",
+      "de": "Können Sie mir eine Route ohne Umstiege planen?",
+      "en": "Can you plan me a route without transfers?",
+      "fr": "Pouvez-vous me proposer un trajet sans correspondances ?",
+      "it": "Può organizzarmi un percorso senza cambi?",
+      "es": "¿Puede planearme una ruta sin transbordos?",
+      "ru": "Можете проложить маршрут без пересадок?",
+      "tr": "Aktarmasız bir rota planlayabilir misiniz?"
+    }
+  ]
+}

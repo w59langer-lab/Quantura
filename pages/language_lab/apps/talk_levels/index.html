@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sprachführer – Level 0–10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="talk_levels_style.css" />
+    <script src="../../../../core/js/core_init.js" defer></script>
+    <script src="talk_levels_script.js" defer></script>
+  </head>
+  <body>
+    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+    <main class="page-wrapper talk-levels">
+      <div class="card tl-card">
+        <section class="tl-hero">
+          <div class="tl-hero__title">
+            <h1>Sprachführer — Level 0–10</h1>
+            <p class="hint-text">
+              Zentrale Datenquelle für alle Themen und Level. Filtere nach Thema, Level, Suchbegriff
+              oder Sprache für die Sprachausgabe.
+            </p>
+          </div>
+        </section>
+
+        <div class="sf-sticky">
+          <div id="controlsBar">
+            <div class="sticky-panel">
+              <div class="sticky-row row1 lg-toolbar-row lg-toolbar-row-1">
+                <div class="field field-search tl-control lg-toolbar-search">
+                  <label for="tlSearch">Suche (alle Sprachen)</label>
+                  <input id="tlSearch" type="search" placeholder="Suchen nach Text …" />
+                </div>
+                <div class="field field-tts tl-control lg-toolbar-lang">
+                  <label for="tlTtsLang">Sprache für TTS</label>
+                  <select id="tlTtsLang">
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                    <option value="tr">Türkçe</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="sticky-row row2 lg-toolbar-row lg-toolbar-row-2">
+                <div class="field field-theme tl-control lg-toolbar-topic">
+                  <label for="tlTopicSelect">Thema</label>
+                  <select id="tlTopicSelect"></select>
+                </div>
+                <div class="field field-levels tl-control lg-toolbar-level">
+                  <label for="tlLevelButtons">Level</label>
+                  <div id="tlLevelButtons" class="tl-levels" role="group" aria-label="Level auswählen"></div>
+                </div>
+              </div>
+
+              <div class="sticky-row row3 lg-toolbar-row lg-toolbar-row-3">
+                <div class="lg-toolbar-play">
+                  <div class="field field-player tl-control">
+                    <label for="tlPlay">Player</label>
+                    <div class="player-left">
+                      <div class="preset-group">
+                        <button type="button" id="tlPlay">▶ Play</button>
+                        <button type="button" id="tlPlaySlow" data-rate="0.85">Slow</button>
+                        <button type="button" id="tlPlayNormal" data-rate="1">Normal</button>
+                        <button type="button" id="tlPlayFast" data-rate="1.2">Fast</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field field-tempo tl-control">
+                    <label for="tlSpeed">Tempo</label>
+                    <div class="tempo-wrap">
+                      <input
+                        type="range"
+                        id="tlSpeed"
+                        min="0.2"
+                        max="1.2"
+                        step="0.05"
+                        value="1"
+                        aria-label="Tempo"
+                      />
+                      <span id="tlSpeedValue" class="tempo-value">1.00×</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg-toolbar-personas">
+                  <div class="lg-toolbar-persona-label hint-text">Stimme: weiblich (automatisch)</div>
+                  <button id="tlVoiceTest" type="button" class="btn btn-ghost btn-xs">Stimmen testen</button>
+                </div>
+              </div>
+
+              <div class="sticky-active" id="tlPlayer">
+                <span class="tl-player__label" id="tlActiveLabel">Aktiv: –</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sf-scroll">
+          <section class="tl-status">
+            <span id="tlResultCount">0 Einträge</span>
+            <span id="tlStatusText">Bereit</span>
+            <button id="tlStopSpeech" type="button" class="btn btn-ghost btn-xs">■ Stop</button>
+          </section>
+
+          <section class="tl-headings" aria-hidden="true">
+            <span class="tl-headings__mnemo">MNEMO</span>
+            <span class="tl-headings__spacer"></span>
+            <span class="tl-headings__spacer"></span>
+          </section>
+
+          <section id="tlList" class="tl-list" aria-live="polite"></section>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+
+    <dialog id="tlVoiceDialog">
+      <div class="voice-dialog">
+        <header>
+          <h3>Stimmen testen & speichern</h3>
+          <button type="button" id="tlVoiceClose" aria-label="Schließen">×</button>
+        </header>
+        <div class="voice-dialog__controls">
+          <label for="tlVoiceLang">Sprache</label>
+          <select id="tlVoiceLang"></select>
+        </div>
+        <div id="tlVoiceList" class="voice-dialog__list"></div>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lektion 02: HTML &amp; JavaScript – Erste Interaktivität</title>
+  <link rel="stylesheet" href="../../../../core/assets/style.css">
+  <link rel="stylesheet" href="../common/informatik_style.css">
+  <script src="../../../../core/js/core_init.js" defer></script>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+  <main class="page-wrapper">
+    <div class="card">
+      <header>
+        <h1>Lektion 02: HTML &amp; JavaScript – Erste Interaktivität</h1>
+        <p class="lead">HTML-Struktur mit ersten DOM-Zugriffen verbinden und Klicks reagieren lassen.</p>
+      </header>
+
+      <section>
+        <h2>Lernziele</h2>
+        <ul>
+          <li>HTML-Grundgerüst sicher erkennen und aufbauen</li>
+          <li>DOM-Elemente mit <code>querySelector</code> auswählen</li>
+          <li>Ereignisse mit <code>addEventListener</code> verarbeiten</li>
+          <li>Textinhalt dynamisch mit <code>textContent</code> ändern</li>
+          <li>Kleinen Playground nutzen, um HTML &amp; JS direkt auszuprobieren</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Wiederholung: HTML-Grundgerüst</h2>
+        <p>Jede Seite startet mit <code>&lt;!DOCTYPE html&gt;</code> und einem <code>&lt;html lang="de"&gt;</code>-Element. Im <code>&lt;head&gt;</code> stehen Meta-Angaben, Titel und Styles, im <code>&lt;body&gt;</code> alle sichtbaren Inhalte wie Überschriften, Absätze und Buttons.</p>
+        <p>Wichtige Tags: <code>&lt;h1&gt;</code> bis <code>&lt;h6&gt;</code> für Überschriften, <code>&lt;p&gt;</code> für Text, <code>&lt;button&gt;</code> für Klickflächen und <code>&lt;div&gt;</code> für Container.</p>
+      </section>
+
+      <section>
+        <h2>JavaScript Basics</h2>
+        <ul>
+          <li><strong>DOM</strong>: Der Document Object Model bildet die HTML-Struktur als Baum ab, auf den JS zugreift.</li>
+          <li><strong>querySelector</strong>: Wählt ein Element per CSS-Selektor, z. B. <code>document.querySelector("#titel")</code>.</li>
+          <li><strong>addEventListener("click", ...)</strong>: Reagiert auf Ereignisse. Beispiel: <code>button.addEventListener("click", handleClick)</code>.</li>
+          <li><strong>textContent / innerText</strong>: Aktualisiert sichtbaren Text, z. B. <code>ausgabe.textContent = "Hallo!"</code>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Mini-Beispiel</h2>
+        <pre><code>&lt;button id="changeText"&gt;Klicke mich&lt;/button&gt;
+&lt;p id="ziel"&gt;Noch kein Klick.&lt;/p&gt;
+
+&lt;script&gt;
+  const button = document.querySelector("#changeText");
+  const ziel = document.querySelector("#ziel");
+  button.addEventListener("click", () =&gt; {
+    ziel.textContent = "Du hast geklickt!";
+  });
+&lt;/script&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>Mini-Playground</h2>
+        <p>Teste deinen Code direkt hier. Mit Klick auf „Ausführen“ wird dein HTML + JS unten geladen.</p>
+        <label for="codeInput">Code</label>
+        <textarea id="codeInput" rows="12">
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+</head>
+<body>
+  <h3>Interaktiv!</h3>
+  <p id="demo">Noch nichts passiert.</p>
+  <button id="btn">Klick mich</button>
+
+  <script>
+    const btn = document.querySelector("#btn");
+    const text = document.querySelector("#demo");
+    btn.addEventListener("click", () => {
+      text.textContent = "Der Text wurde geändert.";
+    });
+  </script>
+</body>
+</html></textarea>
+        <div class="button-row">
+          <button id="runBtn">Ausführen</button>
+        </div>
+        <iframe id="previewFrame" sandbox="allow-scripts" title="Code Vorschau"></iframe>
+      </section>
+
+      <section>
+        <h2>Übungen</h2>
+        <ol>
+          <li>Baue das Mini-Beispiel nach und ändere den Text auf deinen Namen.</li>
+          <li>Füge im Playground ein zusätzliches <code>&lt;input&gt;</code> hinzu und lasse den Klick-Text den eingegebenen Wert anzeigen.</li>
+          <li>Erstelle zwei Buttons: einer setzt den Text auf „Start“, der andere auf „Fertig“.</li>
+        </ol>
+      </section>
+
+      <section>
+        <a class="link" href="lesson_01_rechnen.html">Zurück zu Lektion 01</a>
+        <a class="link" href="index.html">Zurück zur Kurs-Übersicht</a>
+        <a class="link" href="../index.html">Zurück zur Informatik-Übersicht</a>
+      </section>
+    </div>
+  </main>
+
+  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+
+  <script>
+    const codeInput = document.querySelector("#codeInput");
+    const runBtn = document.querySelector("#runBtn");
+    const previewFrame = document.querySelector("#previewFrame");
+
+    function runCode() {
+      previewFrame.srcdoc = codeInput.value;
+    }
+
+    runBtn.addEventListener("click", runCode);
+    runCode();
+  </script>
+</body>
+</html>

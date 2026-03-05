@@ -1,0 +1,312 @@
+{
+  "id": "bahn_flug",
+  "title": "Bahn & Flug",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "ticket_counter",
+      "mnemoHint": "INFO",
+      "de": "Wo ist der Fahrkarten-/Ticketschalter?",
+      "en": "Where is the ticket counter?",
+      "it": "Dov'è la biglietteria?",
+      "fr": "Où se trouve le guichet des billets ?",
+      "es": "¿Dónde está la taquilla de billetes?",
+      "ru": "Где билетная касса?",
+      "tr": "Bilet gişesi nerede?",
+      "pronIpa": {
+        "tr": "Bilet giʃesi nerede?"
+      },
+      "pronRu": {
+        "tr": "билет гишеси нереде?"
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "one_way",
+      "mnemoHint": "1WAY",
+      "de": "Ein Ticket nach Berlin, einfach, bitte.",
+      "en": "A one-way ticket to Berlin, please.",
+      "it": "Un biglietto di sola andata per Berlino, per favore.",
+      "fr": "Un billet simple pour Berlin, s'il vous plaît.",
+      "es": "Un billete sencillo a Berlín, por favor.",
+      "ru": "Билет в один конец до Берлина, пожалуйста.",
+      "tr": "Berlin'e tek yön bilet lütfen.",
+      "pronIpa": {
+        "tr": "Berlin'e tek yøn bilet lytfen."
+      },
+      "pronRu": {
+        "tr": "берлин'е тек йён билет лютфен."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "return_ticket",
+      "mnemoHint": "RTN",
+      "de": "Ein Hin- und Rückticket für morgen.",
+      "en": "A return ticket for tomorrow.",
+      "it": "Un biglietto andata e ritorno per domani.",
+      "fr": "Un billet aller-retour pour demain.",
+      "es": "Un billete de ida y vuelta para mañana.",
+      "ru": "Билет туда-обратно на завтра.",
+      "tr": "Yarın için gidiş-dönüş bilet lütfen.",
+      "pronIpa": {
+        "tr": "Yarɯn it͡ʃin gidiʃ-dønyʃ bilet lytfen."
+      },
+      "pronRu": {
+        "tr": "йарын ичин гидиш-дёнюш билет лютфен."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "platform",
+      "mnemoHint": "G",
+      "de": "Auf welchem Gleis fährt der Zug?",
+      "en": "Which platform does the train leave from?",
+      "it": "Da quale binario parte il treno?",
+      "fr": "De quel quai part le train ?",
+      "es": "¿De qué andén sale el tren?",
+      "ru": "С какого пути отправляется поезд?",
+      "tr": "Tren hangi perondan kalkıyor?",
+      "pronIpa": {
+        "tr": "Tren hangi perondan kalkɯyor?"
+      },
+      "pronRu": {
+        "tr": "трен ханги перондан калкыйор?"
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "delay_train",
+      "mnemoHint": "+",
+      "de": "Der Zug hat Verspätung.",
+      "en": "The train is delayed.",
+      "it": "Il treno è in ritardo.",
+      "fr": "Le train a du retard.",
+      "es": "El tren tiene retraso.",
+      "ru": "Поезд задерживается.",
+      "tr": "Tren gecikti.",
+      "pronIpa": {
+        "tr": "Tren ged͡ʒikti."
+      },
+      "pronRu": {
+        "tr": "трен геджикти."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "change_platform",
+      "mnemoHint": "MOVE",
+      "de": "Hat sich das Gleis geändert?",
+      "en": "Has the platform changed?",
+      "it": "Il binario è cambiato?",
+      "fr": "Le quai a-t-il changé ?",
+      "es": "¿Ha cambiado el andén?",
+      "ru": "Путь изменился?",
+      "tr": "Peron değişti mi?",
+      "pronIpa": {
+        "tr": "Peron deiʃti mi?"
+      },
+      "pronRu": {
+        "tr": "перон деишти ми?"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "seat_reservation",
+      "mnemoHint": "SEAT",
+      "de": "Brauche ich eine Sitzplatzreservierung?",
+      "en": "Do I need a seat reservation?",
+      "it": "Serve la prenotazione del posto?",
+      "fr": "Faut-il une réservation de siège ?",
+      "es": "¿Necesito reserva de asiento?",
+      "ru": "Нужна ли резервация места?",
+      "tr": "Koltuk rezervasyonu yapmam gerekiyor mu?",
+      "pronIpa": {
+        "tr": "Koltuk rezervasyonu yapmam gerekiyor mu?"
+      },
+      "pronRu": {
+        "tr": "колтук резервасйону йапмам герекийор му?"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "gate",
+      "mnemoHint": "GATE",
+      "de": "Zu welchem Gate geht der Flug?",
+      "en": "Which gate is the flight?",
+      "it": "A quale gate è il volo?",
+      "fr": "À quelle porte est le vol ?",
+      "es": "¿En qué puerta está el vuelo?",
+      "ru": "К какому выходу этот рейс?",
+      "tr": "Uçuş hangi kapıda?",
+      "pronIpa": {
+        "tr": "Ut͡ʃuʃ hangi kapɯda?"
+      },
+      "pronRu": {
+        "tr": "учуш ханги капыда?"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "boarding_time",
+      "mnemoHint": "BOARD",
+      "de": "Wann beginnt das Boarding?",
+      "en": "When does boarding start?",
+      "it": "Quando inizia l'imbarco?",
+      "fr": "Quand commence l'embarquement ?",
+      "es": "¿Cuándo comienza el embarque?",
+      "ru": "Когда начинается посадка?",
+      "tr": "Biniş ne zaman başlıyor?",
+      "pronIpa": {
+        "tr": "Biniʃ ne zaman baʃlɯyor?"
+      },
+      "pronRu": {
+        "tr": "биниш не заман башлыйор?"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "flight_delay",
+      "mnemoHint": "ETA",
+      "de": "Der Flug hat Verspätung.",
+      "en": "The flight is delayed.",
+      "it": "Il volo è in ritardo.",
+      "fr": "Le vol est en retard.",
+      "es": "El vuelo tiene retraso.",
+      "ru": "Рейс задерживается.",
+      "tr": "Uçuş gecikti.",
+      "pronIpa": {
+        "tr": "Ut͡ʃuʃ ged͡ʒikti."
+      },
+      "pronRu": {
+        "tr": "учуш геджикти."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "missed_connection",
+      "mnemoHint": "MISS",
+      "de": "Ich habe den Anschluss verpasst.",
+      "en": "I missed the connection.",
+      "it": "Ho perso la coincidenza.",
+      "fr": "J'ai manqué la correspondance.",
+      "es": "Perdí la conexión.",
+      "ru": "Я пропустил пересадку.",
+      "tr": "Aktarmayı kaçırdım.",
+      "pronIpa": {
+        "tr": "Aktarmayɯ kat͡ʃɯrdɯm."
+      },
+      "pronRu": {
+        "tr": "актармайы качырдым."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "check_in",
+      "mnemoHint": "CHK",
+      "de": "Wo gebe ich das Gepäck auf?",
+      "en": "Where do I check in the luggage?",
+      "it": "Dove posso imbarcare il bagaglio?",
+      "fr": "Où enregistrer les bagages ?",
+      "es": "¿Dónde facturo el equipaje?",
+      "ru": "Где сдать багаж?",
+      "tr": "Bagajı nerede teslim edebilirim?",
+      "pronIpa": {
+        "tr": "Bagaʒɯ nerede teslim edebilirim?"
+      },
+      "pronRu": {
+        "tr": "багажы нереде теслим едебилирим?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "hand_luggage",
+      "mnemoHint": "CAB",
+      "de": "Ist das als Handgepäck erlaubt?",
+      "en": "Is this allowed as hand luggage?",
+      "it": "Questo è consentito come bagaglio a mano?",
+      "fr": "Est-ce autorisé comme bagage cabine ?",
+      "es": "¿Esto está permitido como equipaje de mano?",
+      "ru": "Это можно взять в ручную кладь?",
+      "tr": "Bu el bagajı olarak uygun mu?",
+      "pronIpa": {
+        "tr": "Bu el bagaʒɯ olarak uygun mu?"
+      },
+      "pronRu": {
+        "tr": "бу ел багажы оларак уйгун му?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "rebook",
+      "mnemoHint": "RBK",
+      "de": "Kann ich auf einen früheren Zug/Flug umbuchen?",
+      "en": "Can I rebook to an earlier train/flight?",
+      "it": "Posso cambiare per un treno/volo precedente?",
+      "fr": "Puis-je rebooker sur un train/vol plus tôt ?",
+      "es": "¿Puedo cambiar a un tren/vuelo más temprano?",
+      "ru": "Можно перебронировать на более ранний поезд/рейс?",
+      "tr": "Daha erken tren/uçağa alabilir miyim?",
+      "pronIpa": {
+        "tr": "Daha erken tren/ut͡ʃaa alabilir miyim?"
+      },
+      "pronRu": {
+        "tr": "даха еркен трен/учаа алабилир мийим?"
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "refund_voucher",
+      "mnemoHint": "REF",
+      "de": "Bekomme ich eine Erstattung oder einen Gutschein?",
+      "en": "Do I get a refund or voucher?",
+      "it": "Ricevo un rimborso o un voucher?",
+      "fr": "Ai-je droit à un remboursement ou un bon ?",
+      "es": "¿Recibo un reembolso o un vale?",
+      "ru": "Я получу возврат или ваучер?",
+      "tr": "Para iadesi mi kupon mu alıyorum?",
+      "pronIpa": {
+        "tr": "Para iadesi mi kupon mu alɯyorum?"
+      },
+      "pronRu": {
+        "tr": "пара иадеси ми купон му алыйорум?"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "where_ticket",
+      "mnemoHint": "TIX",
+      "de": "Wo bekomme ich ein Ticket?",
+      "en": "Where can I get a ticket?",
+      "fr": "Où puis-je acheter un billet ?",
+      "it": "Dove posso prendere un biglietto?",
+      "es": "¿Dónde puedo conseguir un billete?",
+      "ru": "Где я могу купить билет?",
+      "tr": "Bileti nereden alabilirim?"
+    },
+    {
+      "level": 1,
+      "mnemoKey": "next_train",
+      "mnemoHint": "TIME",
+      "de": "Wann fährt der nächste Zug?",
+      "en": "When does the next train leave?",
+      "fr": "Quand part le prochain train ?",
+      "it": "Quando parte il prossimo treno?",
+      "es": "¿Cuándo sale el próximo tren?",
+      "ru": "Когда отправляется следующий поезд?",
+      "tr": "Sonraki tren ne zaman kalkıyor?"
+    },
+    {
+      "level": 2,
+      "mnemoKey": "rebook_tomorrow",
+      "mnemoHint": "MOVE",
+      "de": "Können Sie das Ticket auf morgen umbuchen?",
+      "en": "Can you rebook the ticket for tomorrow?",
+      "fr": "Pouvez-vous reprogrammer le billet pour demain ?",
+      "it": "Può spostare il biglietto a domani?",
+      "es": "¿Puede cambiar el billete para mañana?",
+      "ru": "Можете перенести билет на завтра?",
+      "tr": "Bileti yarına erteleyebilir misiniz?"
+    }
+  ]
+}

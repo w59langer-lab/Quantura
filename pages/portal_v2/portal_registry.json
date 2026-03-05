@@ -1,0 +1,122 @@
+{
+  "topics": [
+    {
+      "title": "Mathe · Quadratische Gleichungen (Solver)",
+      "href": "/apps/math/quadratic-solver/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Mathematik",
+      "items": ["math-quadratic-solver"]
+    },
+    {
+      "title": "Empfohlen",
+      "items": ["math-quadratic-solver", "apps-launcher", "store", "auto-kauf", "quadratgleichung"]
+    },
+    {
+      "title": "Sprachen",
+      "items": ["language-apps", "talk-levels", "karten"]
+    },
+    {
+      "title": "Alltagsrechner & Tools",
+      "items": ["math-quadratic-solver", "auto-kauf", "quadratgleichung"]
+    },
+    {
+      "title": "Bibliothek & Ressourcen",
+      "items": ["ressourcen"]
+    }
+  ],
+  "items": [
+    {
+      "id": "math-quadratic-solver",
+      "title": "Mathe · Quadratische Gleichungen (Solver)",
+      "category": "Alltagsrechner & Tools",
+      "description": "Δ, x₁/x₂, Rechenweg + Wurfparabel & Offline-Download.",
+      "href": "/apps/math/quadratic-solver/",
+      "icon": "/core/assets/favicon.ico",
+      "badges": ["offline"],
+      "tags": ["mathe", "quadratisch", "wurfparabel"]
+    },
+    {
+      "id": "language-apps",
+      "title": "Sprachen",
+      "category": "Sprachen",
+      "description": "Alle LanguageLab Apps & Generatoren.",
+      "href": "/pages/language_lab/apps/index.html",
+      "icon": "/core/assets/favicon.ico",
+      "badges": ["pwa"],
+      "tags": ["sprache", "lernen"]
+    },
+    {
+      "id": "apps-launcher",
+      "title": "Apps (Launcher)",
+      "category": "Store / Alle Apps",
+      "description": "Schneller Einstieg in alle Apps.",
+      "href": "/pages/language_lab/apps/index.html",
+      "icon": "/core/assets/favicon.ico",
+      "badges": ["pwa"],
+      "tags": ["apps", "launcher"]
+    },
+    {
+      "id": "store",
+      "title": "Store",
+      "category": "Store / Alle Apps",
+      "description": "Durchsuche alle Apps & Ressourcen.",
+      "href": "/pages/store/index.html",
+      "icon": "/core/assets/favicon.ico",
+      "badges": ["store"],
+      "tags": ["store", "apps"]
+    },
+    {
+      "id": "auto-kauf",
+      "title": "Auto-Kauf-Assistent",
+      "category": "Kaufen & Vergleichen",
+      "description": "Checkliste, Kosten, Score, Export.",
+      "href": "/pages/language_lab/apps/tools/auto-kauf-assistent/index.html",
+      "icon": "/pages/language_lab/apps/tools/auto-kauf-assistent/icons/icon-192.png",
+      "badges": ["offline", "pwa"],
+      "tags": ["auto", "kauf"]
+    },
+    {
+      "id": "quadratgleichung",
+      "title": "Quadratgleichung",
+      "category": "Alltagsrechner & Tools",
+      "description": "Rechner & Training für x² + bx + c = 0.",
+      "href": "/pages/language_lab/apps/mathe/quadratgleichung/index.html",
+      "icon": "/pages/language_lab/apps/mathe/quadratgleichung/icons/icon-192.png",
+      "badges": ["offline", "pwa"],
+      "tags": ["mathe", "training"]
+    },
+    {
+      "id": "talk-levels",
+      "title": "Talk Levels",
+      "category": "Sprachen",
+      "description": "Level, Themen, Filter & TTS.",
+      "href": "/pages/language_lab/apps/talk_levels/index.html",
+      "icon": "/core/assets/favicon.ico",
+      "badges": ["tts"],
+      "tags": ["sprache", "sprechen"]
+    },
+    {
+      "id": "karten",
+      "title": "Karten",
+      "category": "Sprachen",
+      "description": "Sprachführer-Karten und Level.",
+      "href": "/pages/language_lab/apps/karten/index.html",
+      "icon": "/core/assets/favicon.ico",
+      "badges": ["offline"],
+      "tags": ["karten", "sprachführer"]
+    },
+    {
+      "id": "ressourcen",
+      "title": "Bibliothek & Ressourcen",
+      "category": "Bibliothek & Ressourcen",
+      "description": "Externe Ressourcen & Materialien.",
+      "href": "/pages/store/index.html?cat=ressourcen",
+      "icon": "/core/assets/favicon.ico",
+      "badges": ["external"],
+      "tags": ["ressourcen", "links"]
+    }
+  ]
+}

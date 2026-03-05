@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1224">
+  <title>Glossar</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <style>
+    :root {
+      --bg: radial-gradient(circle at 20% 20%, #0f172a 0%, #0b1224 45%, #060914 90%);
+      --surface: rgba(15, 23, 42, 0.92);
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #f8fafc;
+      --muted: #9ca3af;
+      --accent: #67e8f9;
+      --accent-strong: #22d3ee;
+      --warn: #fbbf24;
+      --danger: #fb7185;
+      --radius: 14px;
+      --shadow: 0 16px 40px rgba(0,0,0,0.6);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 0 12px 40px;
+    }
+    header { max-width: 1100px; margin: 0 auto; padding: 18px 10px 12px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .logo { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, #0ea5e9, #67e8f9); color: #0b1224; display: grid; place-items: center; font-weight: 800; box-shadow: var(--shadow); }
+    h1 { margin: 0; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); margin-top: 4px; }
+    main { max-width: 1100px; margin: 0 auto; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px; margin-bottom: 12px; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    input, textarea { width: 100%; padding: 12px 10px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text); }
+    textarea { min-height: 80px; resize: vertical; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 12px; padding: 10px 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: var(--text); font-weight: 700; cursor: pointer; }
+    .btn.primary { border-color: var(--accent); color: var(--accent-strong); }
+    .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.04); color: var(--muted); }
+    .flex { display: flex; gap: 8px; flex-wrap: wrap; }
+    .list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+    .item { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; background: rgba(255,255,255,0.03); display: flex; flex-direction: column; gap: 8px; }
+    .item-header { display: flex; justify-content: space-between; gap: 6px; align-items: center; }
+    .tag { display: inline-flex; padding: 4px 8px; border-radius: 999px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text); margin-right: 4px; font-size: 0.9rem; }
+    .search-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin: 12px 0; }
+    .small { font-size: 0.92rem; color: var(--muted); }
+    .status { font-weight: 700; }
+    .sticky { position: sticky; bottom: 0; background: linear-gradient(180deg, transparent, rgba(6,9,20,0.92)); padding: 10px 12px; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">G</div>
+    <div>
+      <h1>Glossar</h1>
+      <div class="subtitle">Mehrsprachige Begriffe, offline gespeicherte Notizen</div>
+    </div>
+    <div class="pill" id="save-indicator">Auto-Save aktiv</div>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="grid">
+        <div>
+          <label>Term</label>
+          <input type="text" id="term" placeholder="Begriff">
+        </div>
+        <div>
+          <label>Tags (Komma getrennt)</label>
+          <input type="text" id="tags" placeholder="z.B. Grammatik, Technik">
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <label>Erklärung (DE)</label>
+          <textarea id="de"></textarea>
+        </div>
+        <div>
+          <label>Объяснение (RU)</label>
+          <textarea id="ru"></textarea>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <label>Explanation (EN)</label>
+          <textarea id="en"></textarea>
+        </div>
+        <div>
+          <label>Beispiele / Примеры</label>
+          <textarea id="examples" placeholder="Mehrzeilig, ein Beispiel pro Zeile"></textarea>
+        </div>
+      </div>
+      <div>
+        <label>Links</label>
+        <textarea id="links" placeholder="URLs, eine pro Zeile"></textarea>
+      </div>
+      <div class="flex" style="margin-top:10px;">
+        <button class="btn primary" id="save-entry">Speichern / Aktualisieren</button>
+        <button class="btn" id="reset-entry">Felder leeren</button>
+        <button class="btn" id="new-entry">Neu (leere ID)</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="search-row">
+        <input type="search" id="search" placeholder="Suche in allen Feldern" />
+        <select id="sort">
+          <option value="date">Sortierung: Neueste</option>
+          <option value="az">Sortierung: A–Z</option>
+        </select>
+        <input type="text" id="tag-filter" placeholder="Tag-Filter (Komma)" />
+        <div class="flex">
+          <button class="btn" id="export-json">Export JSON</button>
+          <button class="btn" id="import-json">Import JSON</button>
+        </div>
+      </div>
+      <div class="list" id="list"></div>
+      <div class="small" id="status"></div>
+    </section>
+  </main>
+
+  <div class="sticky">
+    <div class="small">Offline & lokal gespeichert</div>
+    <button class="btn" id="clear-all">Alle Einträge löschen</button>
+  </div>
+
+  <script>
+    const stateKey = 'glossar-state-v1';
+    const defaultEntry = { term: '', de: '', ru: '', en: '', tags: '', examples: '', links: '', id: null, created: null, updated: null };
+    let entries = loadState();
+    let activeId = null;
+
+    const refs = {
+      term: document.getElementById('term'),
+      de: document.getElementById('de'),
+      ru: document.getElementById('ru'),
+      en: document.getElementById('en'),
+      tags: document.getElementById('tags'),
+      examples: document.getElementById('examples'),
+      links: document.getElementById('links'),
+      search: document.getElementById('search'),
+      sort: document.getElementById('sort'),
+      tagFilter: document.getElementById('tag-filter'),
+      list: document.getElementById('list'),
+      status: document.getElementById('status'),
+      saveIndicator: document.getElementById('save-indicator')
+    };
+
+    bindEvents();
+    render();
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+    }
+
+    function bindEvents() {
+      document.getElementById('save-entry').addEventListener('click', saveEntry);
+      document.getElementById('reset-entry').addEventListener('click', () => fillForm(defaultEntry));
+      document.getElementById('new-entry').addEventListener('click', () => { activeId = null; fillForm(defaultEntry); });
+      document.getElementById('export-json').addEventListener('click', exportJSON);
+      document.getElementById('import-json').addEventListener('click', importJSON);
+      document.getElementById('clear-all').addEventListener('click', clearAll);
+      refs.search.addEventListener('input', render);
+      refs.sort.addEventListener('change', render);
+      refs.tagFilter.addEventListener('input', render);
+    }
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(stateKey);
+        if (!raw) return [];
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (e) {
+        console.error('State laden fehlgeschlagen', e);
+        return [];
+      }
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(stateKey, JSON.stringify(entries));
+        refs.saveIndicator.textContent = 'Gespeichert ' + new Date().toLocaleTimeString();
+      } catch (e) {
+        console.error('Speicherfehler', e);
+        alert('Speicher voll. Bitte Einträge/Anhänge verkleinern oder exportieren.');
+        refs.saveIndicator.textContent = 'Speicher voll';
+      }
+    }
+
+    function fillForm(entry) {
+      Object.keys(defaultEntry).forEach(key => {
+        if (key in refs) refs[key].value = entry[key] ?? '';
+      });
+    }
+
+    function collectForm() {
+      const obj = {};
+      Object.keys(defaultEntry).forEach(key => {
+        if (key in refs) obj[key] = refs[key].value.trim();
+      });
+      return obj;
+    }
+
+    function saveEntry() {
+      const data = collectForm();
+      if (!data.term) { alert('Term darf nicht leer sein.'); return; }
+      const now = Date.now();
+      if (activeId) {
+        const idx = entries.findIndex(e => e.id === activeId);
+        if (idx >= 0) {
+          entries[idx] = { ...entries[idx], ...data, updated: now };
+        }
+      } else {
+        data.id = crypto.randomUUID();
+        data.created = now;
+        data.updated = now;
+        entries.unshift(data);
+      }
+      activeId = data.id;
+      saveState();
+      render();
+      refs.status.textContent = 'Gespeichert: ' + data.term;
+    }
+
+    function render() {
+      const q = refs.search.value.trim().toLowerCase();
+      const tagFilter = refs.tagFilter.value.split(',').map(t => t.trim().toLowerCase()).filter(Boolean);
+      const sortMode = refs.sort.value;
+      let filtered = entries.filter(e => {
+        const hay = [e.term, e.de, e.ru, e.en, e.tags, e.examples, e.links].join(' ').toLowerCase();
+        const matchQ = !q || hay.includes(q);
+        const tags = (e.tags || '').toLowerCase();
+        const matchTags = !tagFilter.length || tagFilter.every(t => tags.includes(t));
+        return matchQ && matchTags;
+      });
+      if (sortMode === 'az') filtered.sort((a,b) => (a.term||'').localeCompare(b.term||''));
+      else filtered.sort((a,b) => (b.updated || b.created || 0) - (a.updated || a.created || 0));
+
+      refs.list.innerHTML = '';
+      if (!filtered.length) {
+        refs.list.innerHTML = '<div class="small">Keine Einträge gefunden.</div>';
+      }
+      filtered.forEach(entry => {
+        const item = document.createElement('div');
+        item.className = 'item';
+        const header = document.createElement('div');
+        header.className = 'item-header';
+        const title = document.createElement('div');
+        title.innerHTML = `<strong>${escapeHtml(entry.term)}</strong>`;
+        const actions = document.createElement('div');
+        const edit = document.createElement('button');
+        edit.className = 'btn';
+        edit.textContent = 'Bearbeiten';
+        edit.addEventListener('click', () => { activeId = entry.id; fillForm(entry); });
+        const del = document.createElement('button');
+        del.className = 'btn';
+        del.textContent = 'Löschen';
+        del.addEventListener('click', () => deleteEntry(entry.id));
+        actions.append(edit, del);
+        header.append(title, actions);
+
+        const tags = document.createElement('div');
+        tags.innerHTML = (entry.tags || '').split(',').filter(Boolean).map(t => `<span class="tag">${escapeHtml(t.trim())}</span>`).join(' ');
+
+        const body = document.createElement('div');
+        body.innerHTML = `
+          <div><strong>DE:</strong> ${escapeHtml(entry.de || '')}</div>
+          <div><strong>RU:</strong> ${escapeHtml(entry.ru || '')}</div>
+          <div><strong>EN:</strong> ${escapeHtml(entry.en || '')}</div>
+          <div><strong>Beispiele:</strong><br>${formatMultiline(entry.examples)}</div>
+          <div><strong>Links:</strong><br>${formatLinks(entry.links)}</div>
+        `;
+
+        const meta = document.createElement('div');
+        meta.className = 'small';
+        const created = entry.created ? new Date(entry.created).toLocaleString() : '';
+        const updated = entry.updated ? new Date(entry.updated).toLocaleString() : '';
+        meta.textContent = `Erstellt: ${created} · Geändert: ${updated}`;
+
+        item.append(header, tags, body, meta);
+        refs.list.appendChild(item);
+      });
+      refs.status.textContent = `${filtered.length} Einträge angezeigt`;
+    }
+
+    function deleteEntry(id) {
+      if (!confirm('Eintrag löschen?')) return;
+      entries = entries.filter(e => e.id !== id);
+      if (activeId === id) { activeId = null; fillForm(defaultEntry); }
+      saveState();
+      render();
+    }
+
+    function clearAll() {
+      if (!confirm('Alle Einträge löschen?')) return;
+      entries = [];
+      activeId = null;
+      fillForm(defaultEntry);
+      saveState();
+      render();
+    }
+
+    function exportJSON() {
+      const blob = new Blob([JSON.stringify(entries, null, 2)], { type: 'application/json' });
+      download(blob, 'glossar.json');
+    }
+
+    function importJSON() {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'application/json';
+      input.addEventListener('change', async (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        try {
+          const text = await file.text();
+          const data = JSON.parse(text);
+          if (!Array.isArray(data)) throw new Error('Format ungültig');
+          entries = data.map(normalizeEntry);
+          saveState();
+          render();
+        } catch (err) {
+          alert('Import fehlgeschlagen: ' + err.message);
+        }
+      });
+      input.click();
+    }
+
+    function normalizeEntry(e) {
+      const base = { ...defaultEntry, ...e };
+      if (!base.id) base.id = crypto.randomUUID();
+      const now = Date.now();
+      if (!base.created) base.created = now;
+      if (!base.updated) base.updated = now;
+      return base;
+    }
+
+    function formatMultiline(text) {
+      return escapeHtml(text || '').replace(/\n/g, '<br>');
+    }
+
+    function formatLinks(text) {
+      return escapeHtml(text || '').split(/\n+/).filter(Boolean).map(url => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`).join('<br>');
+    }
+
+    function escapeHtml(str) {
+      return String(str || '').replace(/[&<>"]/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s]));
+    }
+
+    function download(blob, filename) {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 500);
+    }
+  </script>
+</body>
+</html>

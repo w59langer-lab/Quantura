@@ -1,0 +1,20 @@
+{
+  "files": [
+    "allgemein.json",
+    "arzt_apotheke.json",
+    "bahn_flug.json",
+    "einkaufen.json",
+    "hotel.json",
+    "notfall.json",
+    "restaurant.json",
+    "telefon_internet.json",
+    "unterkunft_probleme.json",
+    "unterwegs.json",
+    "verkehr_auto.json",
+    "verkehr_auto_from_root_001.json",
+    "survival_plus.json",
+    "survival_more.json"
+  ],
+  "generated": "20251219133321",
+  "bundle": "../topics_bundle.json"
+}

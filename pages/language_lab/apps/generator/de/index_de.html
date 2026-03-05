@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>Deutsch – Satzgenerator</title>
+    <link rel="icon" href="../../../../../core/assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- =========================================================
+         DE: Gemeinsame Styles + Master-Skript
+         EN: Shared styles + master script
+         RU: Общие стили и главный скрипт
+         ========================================================= -->
+    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="../shared/lg_tts.css" />
+    <link rel="stylesheet" href="../shared/lang_switch.css" />
+    <link rel="stylesheet" href="../shared/translation_panel.css" />
+    <script src="../../../../../core/js/core_init.js" defer></script>
+    <script src="../shared/lg_tts.js" defer></script>
+    <script src="../shared/lang_switch.js" defer></script>
+    <script src="../shared/lg_translate.js" defer></script>
+
+    <!-- =========================================================
+         DE: Zentrale Datenbanken für Deutsch
+         EN: Central databases for German
+         RU: Центральные базы данных для немецкого
+         Pfad: ../../../../../datenbanken/de/...
+         Reihenfolge wichtig: erst Daten, dann de_script.js
+         ========================================================= -->
+
+    <!-- DE: Pronomen / EN: Pronouns / RU: Местоимения -->
+    <script src="../../../../../datenbanken/de/de_pronouns/de_pronouns.js" defer></script>
+
+    <!-- DE: Verben / EN: Verbs / RU: Глаголы -->
+    <script src="../../../../../datenbanken/de/de_verbs_main/de_verbs_main.js" defer></script>
+    <script src="../../../../../datenbanken/de/de_verbs_modals/de_verbs_modals.js" defer></script>
+    <script src="../../../../../datenbanken/de/de_verbs_aux/de_verbs_aux.js" defer></script>
+
+    <!-- DE: Adjektive / EN: Adjectives / RU: Прилагательные -->
+    <script src="../../../../../datenbanken/de/de_adjectives/de_adjectives.js" defer></script>
+
+    <!-- DE: Adverbien / EN: Adverbs / RU: Наречия -->
+    <script src="../../../../../datenbanken/de/de_adverbs/de_adverbs.js" defer></script>
+
+    <!-- DE: Präpositionen / EN: Prepositions / RU: Предлоги -->
+    <script src="../../../../../datenbanken/de/de_preps/de_preps.js" defer></script>
+    <!-- DE/EN/RU: Präposition + Ort Muster -->
+    <script src="../../../../../datenbanken/de/de_prep_patterns.js" defer></script>
+
+    <!-- =========================================================
+         DE: Logik des deutschen Generators
+         EN: Logic of the German generator
+         RU: Логика немецкого генератора
+         ========================================================= -->
+    <script src="de_script.js" defer></script>
+  </head>
+  <body>
+    <!-- =========================================================
+         HEADER (als Partial)
+         Pfad von hier: ../../../../../core/partials/header.html
+         ========================================================= -->
+    <div
+      data-partial="header"
+      data-partial-path="../../../../../core/partials/header.html"
+    ></div>
+
+    <!-- =========================================================
+         DE: Sprachumschalter – Buttons
+         EN: Language switcher – buttons
+         RU: Переключатель языков – кнопки
+         ========================================================= -->
+    <div class="page-wrapper">
+      <div class="lang-switch" data-active-lang="de">
+        <button class="lang-switch__btn" data-lang="de">Deutsch</button>
+        <button class="lang-switch__btn" data-lang="en">English</button>
+        <button class="lang-switch__btn" data-lang="fr">Français</button>
+        <button class="lang-switch__btn" data-lang="it">Italiano</button>
+        <button class="lang-switch__btn" data-lang="ru">Русский</button>
+        <button class="lang-switch__btn" data-lang="es">Español</button>
+      </div>
+    </div>
+
+    <main class="page-wrapper">
+      <div class="card">
+        <h1>Deutsch – Satzgenerator</h1>
+        <p class="hint-text">
+          <!-- DE -->
+          Wähle Wortarten und Satztyp, dann klicke auf „Satz erzeugen“. –
+          Version nutzt zentrale Datensätze aus
+          <code>datenbanken/de</code>.
+          <br />
+          <!-- EN -->
+          Choose word types and sentence type, then click “Generate sentence”.
+          This version uses central datasets from <code>datenbanken/de</code>.
+          <br />
+          <!-- RU -->
+          Выбери части речи и тип предложения, затем нажми «Satz erzeugen». Эта
+          версия использует базы из <code>datenbanken/de</code>.
+        </p>
+
+        <section class="language-grid">
+          <!-- ==================== LINKES PANEL: Einstellungen ==================== -->
+          <div class="language-panel">
+            <div class="language-panel__title">Einstellungen / Settings</div>
+            <div class="language-panel__subtitle">
+              Satztyp, Zeitform, Wortarten.
+            </div>
+
+            <!-- Satztyp -->
+            <div class="form-row">
+              <label for="deSentenceType">Satztyp</label>
+              <select id="deSentenceType">
+                <option value="aussage">Aussagesatz</option>
+                <option value="frage">Fragesatz</option>
+                <option value="verneinung">Verneinung</option>
+              </select>
+            </div>
+
+            <!-- Zeitform (im Demo nur Präsens wirklich benutzt) -->
+            <div class="form-row">
+              <label for="deTense">Zeit</label>
+              <select id="deTense">
+                <option value="praesens">Präsens (Gegenwart)</option>
+                <option value="perfekt">Perfekt (Vergangenheit)</option>
+                <option value="praeteritum">Präteritum (einfache Vergangenheit)</option>
+                <option value="futur1">Futur I (Zukunft)</option>
+              </select>
+            </div>
+
+            <!-- Pronomen -->
+            <div class="form-row">
+              <label for="pronomenSelect">Pronomen</label>
+              <select id="pronomenSelect"></select>
+            </div>
+
+            <!-- Verb (Voll- und Modalverben) -->
+            <div class="form-row">
+              <label for="verbSelect">Verb</label>
+              <select id="verbSelect"></select>
+            </div>
+
+            <!-- Hilfsverb -->
+            <div class="form-row">
+              <label for="hilfsverbSelect">Hilfsverb</label>
+              <select id="hilfsverbSelect"></select>
+            </div>
+
+            <!-- Adjektiv -->
+            <div class="form-row">
+              <label for="adjektivSelect">Adjektiv</label>
+              <select id="adjektivSelect"></select>
+            </div>
+
+            <!-- Adverb -->
+            <div class="form-row">
+              <label for="adverbSelect">Adverb</label>
+              <select id="adverbSelect"></select>
+            </div>
+
+            <!-- Präposition -->
+            <div class="form-row">
+              <label for="praepSelect">Präposition</label>
+              <select id="praepSelect"></select>
+            </div>
+
+            <!-- =====================================================
+                 DE: Präposition + Ort
+                 EN: Preposition + place
+                 RU: Предлог + место
+                 ===================================================== -->
+            <div class="generator-section">
+              <h3>Präposition + Ort</h3>
+              <p class="hint-text">
+                Wähle erst eine Präposition, dann eine passende Ortsangabe.
+              </p>
+
+              <div class="form-row">
+                <label for="de_prep_select">Präposition</label>
+                <select id="de_prep_select"></select>
+              </div>
+
+              <div class="form-row">
+                <label for="de_prep_phrase_select">Präpositionalgruppe (Ort)</label>
+                <select id="de_prep_phrase_select"></select>
+              </div>
+
+              <div id="de_prep_info" class="hint-text"></div>
+            </div>
+
+            <div class="btn-row">
+              <button id="deGenerateBtn" class="btn btn-primary" type="button">
+                Satz erzeugen
+              </button>
+              <button id="deClearBtn" class="btn" type="button">
+                Zurücksetzen
+              </button>
+            </div>
+          </div>
+
+          <!-- ==================== RECHTES PANEL: Ausgabe ==================== -->
+          <div class="language-panel">
+            <div class="language-panel__title">Ausgabe / Output</div>
+            <div class="language-panel__subtitle">
+              Hier erscheint der generierte Satz.
+            </div>
+            <div id="deSentenceOutput" class="sentence-output"></div>
+            <!-- =====================================================
+                 DE: Übersetzung auf Deutsch
+                 EN: Translation into German
+                 RU: Перевод на немецкий
+                 ===================================================== -->
+            <div class="translation-panel">
+              <div class="translation-label">
+                <!-- DE: Deutsch -->Deutsch
+                <!-- EN: German -->
+                <!-- RU: Немецкий -->
+              </div>
+              <div class="translation-box" id="translationDeBox">–</div>
+              <div class="translation-actions">
+                <button type="button" class="translation-btn" id="translationSpeakDeBtn">
+                  <!-- DE: vorlesen / EN: speak / RU: озвучить -->
+                  ▶
+                </button>
+              </div>
+            </div>
+            <p id="deHintLine" class="hint-text">
+              <!-- DE -->Hinweis: Noch kein Satz erzeugt. – Im Moment arbeitet
+              der Generator nur im Präsens.<br />
+              <!-- EN -->Note: No sentence generated yet. For now the generator
+              works in present tense only.<br />
+              <!-- RU -->Примечание: предложение ещё не создано. Пока генератор
+              работает только в Präsенсе.
+            </p>
+            <div id="de_generator_message" class="hint-text"></div>
+            <!-- =====================================================
+                 DE: TTS-Steuerung
+                 EN: TTS controls
+                 RU: Управление озвучкой
+                 ===================================================== -->
+            <div class="lg-tts-panel">
+              <div class="lg-tts-row">
+                <span class="lg-tts-label">
+                  <!-- DE: Geschwindigkeit / EN: Speed / RU: Скорость -->
+                  Geschwindigkeit
+                </span>
+                <input
+                  id="ttsRateSlider"
+                  class="lg-tts-slider"
+                  type="range"
+                  min="0.5"
+                  max="1.5"
+                  step="0.1"
+                  value="1.0"
+                />
+              </div>
+
+              <div class="lg-tts-row">
+                <button type="button" class="lg-tts-btn" id="ttsSlowBtn">
+                  <!-- DE: langsam / EN: slow / RU: медленно -->
+                  langsam
+                </button>
+                <button type="button" class="lg-tts-btn primary" id="ttsNormalBtn">
+                  <!-- DE: normal / EN: normal / RU: нормально -->
+                  normal
+                </button>
+                <button type="button" class="lg-tts-btn" id="ttsFastBtn">
+                  <!-- DE: schnell / EN: fast / RU: быстро -->
+                  schnell
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsSpeakBtn">
+                  <!-- DE: abspielen / EN: play / RU: произнести -->
+                  ▶
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsStopBtn">
+                  <!-- DE: stoppen / EN: stop / RU: стоп -->
+                  ■
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER (Partial) -->
+    <div
+      data-partial="footer"
+      data-partial-path="../../../../../core/partials/footer.html"
+    ></div>
+  </body>
+</html>

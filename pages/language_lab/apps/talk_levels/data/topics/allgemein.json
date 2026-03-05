@@ -1,0 +1,342 @@
+{
+  "id": "allgemein",
+  "title": "Allgemein",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "greet_wave",
+      "mnemoHint": "HI",
+      "de": "Hallo!",
+      "en": "Hello!",
+      "it": "Ciao!",
+      "fr": "Salut !",
+      "es": "¡Hola!",
+      "ru": "Привет!",
+      "tr": "Merhaba!",
+      "pronIpa": {
+        "tr": "Merhaba!"
+      },
+      "pronRu": {
+        "tr": "мерхаба!"
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "morning_sun",
+      "mnemoHint": "AM",
+      "de": "Guten Morgen!",
+      "en": "Good morning!",
+      "it": "Buongiorno!",
+      "fr": "Bonjour !",
+      "es": "¡Buenos días!",
+      "ru": "Доброе утро!",
+      "tr": "Günaydın!",
+      "pronIpa": {
+        "tr": "Gynaydɯn!"
+      },
+      "pronRu": {
+        "tr": "гюнайдын!"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "evening_star",
+      "mnemoHint": "PM",
+      "de": "Guten Abend!",
+      "en": "Good evening!",
+      "it": "Buonasera!",
+      "fr": "Bonsoir !",
+      "es": "¡Buenas noches!",
+      "ru": "Добрый вечер!",
+      "tr": "İyi akşamlar!",
+      "pronIpa": {
+        "tr": "İyi akʃamlar!"
+      },
+      "pronRu": {
+        "tr": "İйи акшамлар!"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "how_are_you",
+      "mnemoHint": "HAY",
+      "de": "Wie geht es dir?",
+      "en": "How are you?",
+      "it": "Come stai?",
+      "fr": "Comment ça va ?",
+      "es": "¿Cómo estás?",
+      "ru": "Как дела?",
+      "tr": "Nasılsın?",
+      "pronIpa": {
+        "tr": "Nasɯlsɯn?"
+      },
+      "pronRu": {
+        "tr": "насылсын?"
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "i_am_fine",
+      "mnemoHint": "OK",
+      "de": "Mir geht es gut.",
+      "en": "I am fine.",
+      "it": "Sto bene.",
+      "fr": "Je vais bien.",
+      "es": "Estoy bien.",
+      "ru": "У меня всё хорошо.",
+      "tr": "İyiyim.",
+      "pronIpa": {
+        "tr": "İyiyim."
+      },
+      "pronRu": {
+        "tr": "İйийим."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "thanks_note",
+      "mnemoHint": "THX",
+      "de": "Danke!",
+      "en": "Thank you!",
+      "it": "Grazie!",
+      "fr": "Merci !",
+      "es": "¡Gracias!",
+      "ru": "Спасибо!",
+      "tr": "Teşekkürler!",
+      "pronIpa": {
+        "tr": "Teʃekkyrler!"
+      },
+      "pronRu": {
+        "tr": "тешеккюрлер!"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "please_hand",
+      "mnemoHint": "PLS",
+      "de": "Bitte.",
+      "en": "Please.",
+      "it": "Per favore.",
+      "fr": "S'il vous plaît.",
+      "es": "Por favor.",
+      "ru": "Пожалуйста.",
+      "tr": "Lütfen.",
+      "pronIpa": {
+        "tr": "Lytfen."
+      },
+      "pronRu": {
+        "tr": "лютфен."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "yes_tick",
+      "mnemoHint": "YES",
+      "de": "Ja.",
+      "en": "Yes.",
+      "it": "Sì.",
+      "fr": "Oui.",
+      "es": "Sí.",
+      "ru": "Да.",
+      "tr": "Evet.",
+      "pronIpa": {
+        "tr": "Evet."
+      },
+      "pronRu": {
+        "tr": "евет."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "no_cross",
+      "mnemoHint": "NO",
+      "de": "Nein.",
+      "en": "No.",
+      "it": "No.",
+      "fr": "Non.",
+      "es": "No.",
+      "ru": "Нет.",
+      "tr": "Hayır.",
+      "pronIpa": {
+        "tr": "Hayɯr."
+      },
+      "pronRu": {
+        "tr": "хайыр."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "name_tag",
+      "mnemoHint": "ID",
+      "de": "Ich heiße Anna.",
+      "en": "My name is Anna.",
+      "it": "Mi chiamo Anna.",
+      "fr": "Je m'appelle Anna.",
+      "es": "Me llamo Ana.",
+      "ru": "Меня зовут Анна.",
+      "tr": "Adım Anna.",
+      "pronIpa": {
+        "tr": "Adɯm Anna."
+      },
+      "pronRu": {
+        "tr": "адым анна."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "from_germany",
+      "mnemoHint": "DE",
+      "de": "Ich komme aus Deutschland.",
+      "en": "I am from Germany.",
+      "it": "Vengo dalla Germania.",
+      "fr": "Je viens d'Allemagne.",
+      "es": "Soy de Alemania.",
+      "ru": "Я из Германии.",
+      "tr": "Almanya'dan geliyorum.",
+      "pronIpa": {
+        "tr": "Almanya'dan geliyorum."
+      },
+      "pronRu": {
+        "tr": "алманйа'дан гелийорум."
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "speak_english",
+      "mnemoHint": "EN+",
+      "de": "Ich spreche ein wenig Englisch.",
+      "en": "I speak a little English.",
+      "it": "Parlo un po' di inglese.",
+      "fr": "Je parle un peu anglais.",
+      "es": "Hablo un poco de inglés.",
+      "ru": "Я немного говорю по-английски.",
+      "tr": "Biraz İngilizce konuşuyorum.",
+      "pronIpa": {
+        "tr": "Biraz İngilizd͡ʒe konuʃuyorum."
+      },
+      "pronRu": {
+        "tr": "бираз İнгилиздже конушуйорум."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "learn_italian",
+      "mnemoHint": "IT+",
+      "de": "Ich lerne Italienisch.",
+      "en": "I am learning Italian.",
+      "it": "Sto imparando l'italiano.",
+      "fr": "J'apprends l'italien.",
+      "es": "Estoy aprendiendo italiano.",
+      "ru": "Я учу итальянский.",
+      "tr": "İtalyanca öğreniyorum.",
+      "pronIpa": {
+        "tr": "İtalyand͡ʒa øreniyorum."
+      },
+      "pronRu": {
+        "tr": "İталйанджа ёренийорум."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "work_engineer",
+      "mnemoHint": "JOB",
+      "de": "Ich arbeite als Ingenieur.",
+      "en": "I work as an engineer.",
+      "it": "Lavoro come ingegnere.",
+      "fr": "Je travaille comme ingénieur.",
+      "es": "Trabajo como ingeniero.",
+      "ru": "Я работаю инженером.",
+      "tr": "Mühendis olarak çalışıyorum.",
+      "pronIpa": {
+        "tr": "Myhendis olarak t͡ʃalɯʃɯyorum."
+      },
+      "pronRu": {
+        "tr": "мюхендис оларак чалышыйорум."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "two_siblings",
+      "mnemoHint": "FAM",
+      "de": "Ich habe zwei Geschwister.",
+      "en": "I have two siblings.",
+      "it": "Ho due fratelli.",
+      "fr": "J'ai deux frères et sœurs.",
+      "es": "Tengo dos hermanos.",
+      "ru": "У меня двое братьев и сестер.",
+      "tr": "İki kardeşim var.",
+      "pronIpa": {
+        "tr": "İki kardeʃim var."
+      },
+      "pronRu": {
+        "tr": "İки кардешим вар."
+      }
+    },
+    {
+      "level": 7,
+      "mnemoKey": "uni_student",
+      "mnemoHint": "UNI",
+      "de": "Ich studiere an der Universität.",
+      "en": "I study at the university.",
+      "it": "Studio all'università.",
+      "fr": "J'étudie à l'université.",
+      "es": "Estudio en la universidad.",
+      "ru": "Я учусь в университете.",
+      "tr": "Üniversitede okuyorum.",
+      "pronIpa": {
+        "tr": "yniversitede okuyorum."
+      },
+      "pronRu": {
+        "tr": "юниверситеде окуйорум."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "good_day",
+      "mnemoHint": "DAY",
+      "de": "Guten Tag!",
+      "en": "Good afternoon!",
+      "fr": "Bonjour !",
+      "it": "Buon giorno!",
+      "es": "¡Buenas tardes!",
+      "ru": "Добрый день!",
+      "tr": "İyi günler!"
+    },
+    {
+      "level": 0,
+      "mnemoKey": "bye_short",
+      "mnemoHint": "BYE",
+      "de": "Tschüss!",
+      "en": "Bye!",
+      "fr": "Salut !",
+      "it": "Ciao!",
+      "es": "¡Chao!",
+      "ru": "Пока!",
+      "tr": "Hoşça kal!"
+    },
+    {
+      "level": 0,
+      "mnemoKey": "see_you_soon",
+      "mnemoHint": "SOON",
+      "de": "Bis gleich!",
+      "en": "See you in a bit!",
+      "fr": "À tout de suite !",
+      "it": "A tra poco!",
+      "es": "¡Hasta ahora!",
+      "ru": "До скорого!",
+      "tr": "Az sonra görüşürüz!"
+    },
+    {
+      "level": 0,
+      "mnemoKey": "i_have_question",
+      "mnemoHint": "ASK",
+      "de": "Ich habe eine Frage.",
+      "en": "I have a question.",
+      "fr": "J'ai une question.",
+      "it": "Ho una domanda.",
+      "es": "Tengo una pregunta.",
+      "ru": "У меня есть вопрос.",
+      "tr": "Bir sorum var."
+    }
+  ]
+}

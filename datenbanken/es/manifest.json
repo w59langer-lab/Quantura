@@ -1,0 +1,62 @@
+{
+  "lang": "es",
+  "generatedAt": "2025-12-10T19:30:32.832586",
+  "datasets": [
+    {
+      "lang": "es",
+      "id": "es_adjectives",
+      "kind": "js",
+      "path": "datenbanken/es/es_adjectives/es_adjectives.js",
+      "constName": "ES_ADJECTIVES"
+    },
+    {
+      "lang": "es",
+      "id": "es_adverbs",
+      "kind": "js",
+      "path": "datenbanken/es/es_adverbs/es_adverbs.js",
+      "constName": "ES_ADVERBS"
+    },
+    {
+      "lang": "es",
+      "id": "es_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/es/es_possessive_pronouns/es_possessive_pronouns.js",
+      "constName": "ES_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "es",
+      "id": "es_preps",
+      "kind": "js",
+      "path": "datenbanken/es/es_preps/es_preps.js",
+      "constName": "ES_PREPS"
+    },
+    {
+      "lang": "es",
+      "id": "es_pronouns",
+      "kind": "js",
+      "path": "datenbanken/es/es_pronouns/es_pronouns.js",
+      "constName": "ES_PRONOUNS"
+    },
+    {
+      "lang": "es",
+      "id": "es_verbs",
+      "kind": "js",
+      "path": "datenbanken/es/es_verbs/es_verbs.js",
+      "constName": "ES_VERBS"
+    },
+    {
+      "lang": "es",
+      "id": "es_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/es/es_verbs_aux/es_verbs_aux.js",
+      "constName": "ES_VERBS_AUX"
+    },
+    {
+      "lang": "es",
+      "id": "es_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/es/es_verbs_modals/es_verbs_modals.js",
+      "constName": "ES_VERBS_MODALS"
+    }
+  ]
+}

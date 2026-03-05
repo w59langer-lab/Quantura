@@ -1,0 +1,144 @@
+/* Mathe-Layout-Ergänzungen (nutzt Variablen aus master_style.css) */
+
+.mathe-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 10px 24px;
+}
+
+.mathe-hero {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+
+.mathe-hero h1 {
+  margin: 0 0 6px;
+}
+
+.mathe-hero p {
+  margin: 0 0 10px;
+  color: var(--text-muted);
+}
+
+.mathe-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mathe-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mathe-btn:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+}
+
+.mathe-breadcrumb {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
+
+.mathe-breadcrumb a {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+.mathe-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.mathe-section {
+  margin-top: 16px;
+}
+
+.mathe-section h2 {
+  margin: 0 0 8px;
+}
+
+.mathe-grid {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 720px) {
+  .mathe-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+.mathe-card {
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 14px;
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  color: var(--text-main);
+  display: block;
+  transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+}
+
+.mathe-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+}
+
+.mathe-card h3 {
+  margin: 0 0 6px;
+}
+
+.mathe-card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.mathe-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.mathe-tab {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+.mathe-tab.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.mathe-tabpanel {
+  display: none;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--bg-surface);
+}
+
+.mathe-tabpanel.is-active {
+  display: block;
+}

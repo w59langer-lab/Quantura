@@ -1,0 +1,47 @@
+<header class="site-header">
+  <meta charset="utf-8">
+  <div class="site-header__inner">
+    <div class="site-header__left">
+      <a class="site-header__brand" href="/pages/portal_v2/index.html" data-nav="/pages/portal_v2/index.html">
+        <span class="brand-badge">LL</span>
+        <span class="brand-sep">·</span>
+        <span class="brand-text">
+          <span class="brand-line">Quantura – Maß &amp; Klarheit <span class="brand-quote">„Alles wird klar, wenn es messbar wird.“</span></span>
+        </span>
+      </a>
+
+      <nav class="site-header__nav">
+        <a href="/pages/portal_v2/index.html" class="nav-link" data-nav="/pages/portal_v2/index.html">Portal</a>
+        <a href="/pages/language_lab/index.html" class="nav-link">LanguageLab</a>
+        <a href="/pages/faecher/index.html" class="nav-link">Fächer</a>
+        <a href="/pages/bibliothek/index.html" class="nav-link">Bibliothek</a>
+        <a href="/pages/projekte/index.html" class="nav-link">Projekte</a>
+        <a href="https://<YOUR_DOMAIN>/portfolio/" class="nav-link" target="_blank" rel="noopener">Portfolio</a>
+        <a href="/pages/store/index.html" class="nav-link">Store</a>
+      </nav>
+    </div>
+
+    <div class="site-header__actions">
+      <div class="audio-system" title="Audio-System">
+        <label for="ttsProfileSelect">Audio-System:</label>
+        <select id="ttsProfileSelect">
+          <option value="auto">Auto (empfohlen)</option>
+          <option value="ios">iPhone / iPad (iOS)</option>
+          <option value="android">Android (Samsung/Tablet/TV)</option>
+          <option value="desktop">PC/Laptop (Windows/macOS/Linux)</option>
+        </select>
+        <span id="ttsProfileInfo" class="audio-info" tabindex="0" role="button" aria-label="Audio-System Info">ⓘ</span>
+        <div id="ttsProfileNote" class="audio-note"></div>
+      </div>
+      <button id="themeToggle" class="btn btn-ghost" type="button">
+        <span class="theme-icon theme-icon--light">🌞</span>
+        <span class="theme-icon theme-icon--dark">🌙</span>
+      </button>
+      <div class="header-clock">
+        <div id="headerDate"></div>
+        <div id="headerTime"></div>
+        <div id="headerKW"></div>
+      </div>
+    </div>
+  </div>
+</header>

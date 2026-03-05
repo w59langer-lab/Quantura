@@ -1,0 +1,228 @@
+<!-- RU: Дата: 19.12.2025 — создана стартовая страница LanguageLab Apps (карточки) -->
+<!-- DE: Datum: 19.12.2025 — Startseite „LanguageLab Apps“ (Karten) erstellt -->
+<!-- EN: Date: 2025-12-19 — “LanguageLab Apps” landing page (cards) created -->
+<!doctype html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LanguageLab – Apps</title>
+
+    <link rel="stylesheet" href="/core/assets/style.css" />
+    <script src="/core/loader/loader.js" defer></script>
+    <script src="/core/js/core_init.js" defer></script>
+    <style>
+      .apps-intro {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+      .filter-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+      }
+      .filter-row input[type="search"] {
+        flex: 1 1 220px;
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 1px solid var(--border-subtle, #d0d7e2);
+        font-size: 1rem;
+      }
+      .chip {
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border-subtle, #d0d7e2);
+        background: var(--bg-page, #f2f4f8);
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .chip.active {
+        border-color: var(--accent, #2563eb);
+        color: var(--accent-strong, #1d4ed8);
+        background: var(--accent-soft, #dbeafe);
+      }
+      .portal-grid {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      }
+      .portal-card a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-weight: 600;
+      }
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .category-title {
+        margin-top: 1.25rem;
+      }
+      .app-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent-soft, #dbeafe);
+        color: var(--accent-strong, #1d4ed8);
+        font-weight: 700;
+        margin-right: 8px;
+        overflow: hidden;
+      }
+      .app-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .empty-state {
+        padding: 1rem;
+        color: var(--text-muted, #6b7280);
+      }
+    </style>
+  </head>
+  <body>
+    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+
+    <main class="page-wrapper">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h1>LanguageLab – Apps</h1>
+            <p class="hint-text apps-intro">
+              Einstieg in alle LanguageLab-Apps. Suche oder filtere nach Kategorie.
+            </p>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <input type="search" id="search" placeholder="Suchen nach Titel oder Beschreibung" aria-label="Apps durchsuchen" />
+          <button class="chip active" data-category="all">Alle</button>
+          <button class="chip" data-category="language">Language</button>
+          <button class="chip" data-category="mathe">Mathematik</button>
+          <button class="chip" data-category="tools">Tools</button>
+        </div>
+
+        <div id="apps-container"></div>
+      </div>
+    </main>
+
+    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+
+    <script>
+      const appsContainer = document.getElementById('apps-container');
+      const searchInput = document.getElementById('search');
+      const chips = Array.from(document.querySelectorAll('.chip'));
+      const cacheKey = 'apps-launcher-cache-v1';
+      let apps = [];
+      let category = 'all';
+
+      init();
+
+      function init() {
+        bindFilters();
+        loadApps();
+      }
+
+      function bindFilters() {
+        searchInput.addEventListener('input', render);
+        chips.forEach(chip => {
+          chip.addEventListener('click', () => {
+            chips.forEach(c => c.classList.remove('active'));
+            chip.classList.add('active');
+            category = chip.dataset.category;
+            render();
+          });
+        });
+      }
+
+      async function loadApps() {
+        const cached = localStorage.getItem(cacheKey);
+        if (cached) {
+          try {
+            apps = JSON.parse(cached);
+            render();
+          } catch (_) {}
+        }
+        try {
+          const res = await fetch('./apps.json', { cache: 'no-store' });
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          apps = await res.json();
+          localStorage.setItem(cacheKey, JSON.stringify(apps));
+          render();
+        } catch (err) {
+          console.error('Apps laden fehlgeschlagen', err);
+          if (!apps.length) {
+            appsContainer.innerHTML = '<div class=\"empty-state\">Apps konnten nicht geladen werden (offline?).</div>';
+          }
+        }
+      }
+
+      function render() {
+        const query = searchInput.value.trim().toLowerCase();
+        const filtered = apps.filter(app => {
+          const matchCategory = category === 'all' || app.category === category;
+          const text = (app.title + ' ' + app.description).toLowerCase();
+          const matchSearch = !query || text.includes(query);
+          return matchCategory && matchSearch;
+        });
+
+        const groups = [
+          { key: 'language', title: 'Language' },
+          { key: 'mathe', title: 'Mathematik' },
+          { key: 'tools', title: 'Tools' }
+        ];
+
+        appsContainer.innerHTML = '';
+        let shown = 0;
+
+        groups.forEach(group => {
+          const items = filtered.filter(app => app.category === group.key);
+          if (!items.length) return;
+          const h = document.createElement('h2');
+          h.className = 'category-title';
+          h.textContent = group.title;
+          const grid = document.createElement('section');
+          grid.className = 'portal-grid';
+
+          items.forEach(app => {
+            const card = document.createElement('article');
+            card.className = 'portal-card';
+            const title = document.createElement('h3');
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'app-icon';
+            if (app.icon) {
+              const img = document.createElement('img');
+              img.src = app.icon;
+              img.alt = '';
+              iconSpan.appendChild(img);
+            } else {
+              iconSpan.textContent = (app.title || 'A').slice(0, 1).toUpperCase();
+            }
+            title.append(iconSpan, document.createTextNode(app.title));
+
+            const desc = document.createElement('p');
+            desc.textContent = app.description || '';
+
+            const link = document.createElement('a');
+            link.href = app.href;
+            link.textContent = '→ öffnen';
+            link.setAttribute('aria-label', app.title);
+
+            card.append(title, desc, link);
+            grid.appendChild(card);
+            shown += 1;
+          });
+
+          appsContainer.append(h, grid);
+        });
+
+        if (!shown) {
+          appsContainer.innerHTML = '<div class=\"empty-state\">Keine Apps für diesen Filter gefunden.</div>';
+        }
+      }
+    </script>
+  </body>
+</html>

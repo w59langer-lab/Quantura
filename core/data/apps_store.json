@@ -1,0 +1,82 @@
+[
+  {
+    "id": "auto-kauf-assistent",
+    "title": "Auto-Kauf-Assistent",
+    "category": "auto",
+    "description": "PWA mit Checkliste, Kostenkalkulation und Export.",
+    "tags": ["auto", "pwa", "kauf"],
+    "href": "/pages/language_lab/apps/tools/auto-kauf-assistent/",
+    "icon": "/pages/language_lab/apps/tools/auto-kauf-assistent/icons/icon-192.png",
+    "offline": true,
+    "status": "stable",
+    "version": "1.0.0",
+    "updated": "2026-02-05"
+  },
+  {
+    "id": "quadratic-solver",
+    "title": "Mathe · Quadratische Gleichungen (Solver)",
+    "category": "mathe",
+    "description": "Δ, x₁/x₂, Rechenweg + Wurfparabel, inkl. Offline-Download.",
+    "tags": ["mathe", "solver", "wurfparabel"],
+    "href": "/apps/math/quadratic-solver/",
+    "icon": "/core/assets/favicon.ico",
+    "offline": true,
+    "status": "beta",
+    "version": "0.9.0",
+    "updated": "2026-02-09"
+  },
+  {
+    "id": "talk-levels",
+    "title": "Talk Levels",
+    "category": "language",
+    "description": "Themen & Level mit Filtern und TTS.",
+    "tags": ["sprache", "lernen", "tts"],
+    "href": "/pages/language_lab/apps/talk_levels/",
+    "icon": "/core/assets/favicon.ico",
+    "offline": false,
+    "status": "stable",
+    "version": "1.2.0",
+    "updated": "2025-12-20"
+  },
+  {
+    "id": "analyse-zaz",
+    "title": "Analyse ZAZ",
+    "category": "language",
+    "description": "DB-Sätze laden und eigene Sätze analysieren.",
+    "tags": ["analyse", "sprachdaten"],
+    "href": "/pages/language_lab/apps/analyse_zaz/",
+    "icon": "/core/assets/favicon.ico",
+    "offline": false,
+    "status": "beta",
+    "version": "0.9.0",
+    "updated": "2025-12-19"
+  },
+  {
+    "id": "karten",
+    "title": "Karten",
+    "category": "language",
+    "description": "Sprachführer-Karten und Level-Übersicht.",
+    "tags": ["karten", "sprachführer"],
+    "href": "/pages/language_lab/apps/karten/",
+    "icon": "/core/assets/favicon.ico",
+    "offline": true,
+    "status": "stable",
+    "version": "1.1.0",
+    "updated": "2025-12-18"
+  },
+  {
+    "id": "walter-fendt",
+    "title": "Walter Fendt – Interaktive Mathe/Physik-Apps (HTML5)",
+    "category": "ressourcen",
+    "description": "Externe Sammlung interaktiver Demos (Mathe/Physik/Astronomie).",
+    "tags": ["mathematik", "physik", "interactive", "html5"],
+    "href": "https://www.walter-fendt.de/",
+    "icon": "/core/assets/favicon.ico",
+    "offline": false,
+    "status": "external",
+    "version": "1.0.0",
+    "updated": "2026-02-05",
+    "note": "Sehr gute interaktive Demonstrationen (Mathe/Physik/Astronomie). Als Inspiration/Unterrichtslink.",
+    "lang": ["de", "en"]
+  }
+]

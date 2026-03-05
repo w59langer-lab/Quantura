@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Google",
+    "type": "website",
+    "url": "https://www.google.de",
+    "tags": [],
+    "note": "Schnelle Websuche"
+  },
+  {
+    "title": "Google Übersetzer",
+    "type": "website",
+    "url": "https://translate.google.com",
+    "tags": [],
+    "note": "DE ↔ EN/IT/FR/ES"
+  },
+  {
+    "title": "DeepL Übersetzer",
+    "type": "website",
+    "url": "https://www.deepl.com/translator",
+    "tags": [],
+    "note": "Präzise Übersetzungen"
+  },
+  {
+    "title": "Wikipedia (DE)",
+    "type": "website",
+    "url": "https://de.wikipedia.org",
+    "tags": [],
+    "note": "Nachschlagewerk"
+  },
+  {
+    "title": "Duden",
+    "type": "website",
+    "url": "https://www.duden.de",
+    "tags": [],
+    "note": "Rechtschreibung & Bedeutung"
+  },
+  {
+    "title": "PONS",
+    "type": "website",
+    "url": "https://de.pons.com",
+    "tags": [],
+    "note": "Wörterbuch DE ↔ EN/FR/IT/ES"
+  },
+  {
+    "title": "dict.cc",
+    "type": "website",
+    "url": "https://www.dict.cc",
+    "tags": [],
+    "note": "Schnelle Übersetzungen"
+  },
+  {
+    "title": "DerDieDas – Artikeltrainer",
+    "type": "website",
+    "url": "https://der-artikel.de/",
+    "tags": [],
+    "note": "Artikeltrainer – Hilft, den richtigen Artikel (der/die/das) und oft auch den Plural für deutsche Nomen zu finden."
+  },
+  {
+    "title": "Pavel Viktor – Physiklehrer",
+    "type": "video",
+    "url": "https://www.youtube.com/@pvictor54",
+    "tags": [],
+    "note": "Physiklehrer – YouTube-Kanal mit Physikunterricht"
+  },
+  {
+    "title": "Poslezavtra / После_Завтра – Nikolai Dubinin",
+    "type": "video",
+    "url": "https://www.youtube.com/@posle_zavtra",
+    "tags": ["YouTube", "Video", "Kanal", "Ressourcen"],
+    "note": "YouTube-Kanal mit vielen Videos (Analysen zu Ländern, Wirtschaft und globalen Entwicklungen)."
+  },
+  {
+    "title": "Beispielvideo: Russland – Poslezavtra / После_Завтра",
+    "type": "video",
+    "url": "https://youtu.be/vhgI4NsxpkU",
+    "tags": ["YouTube", "Video", "Beispiel"],
+    "note": "Beispielvideo aus dem Kanal Poslezavtra / После_Завтра."
+  }
+]

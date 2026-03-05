@@ -1,0 +1,62 @@
+{
+  "lang": "ru",
+  "generatedAt": "2025-12-10T19:30:32.832586",
+  "datasets": [
+    {
+      "lang": "ru",
+      "id": "ru_adjectives",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_adjectives/ru_adjectives.js",
+      "constName": "RU_ADJECTIVES"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_adverbs",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_adverbs/ru_adverbs.js",
+      "constName": "RU_ADVERBS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_possessive_pronouns/ru_possessive_pronouns.js",
+      "constName": "RU_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_preps",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_preps/ru_preps.js",
+      "constName": "RU_PREPS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_pronouns",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_pronouns/ru_pronouns.js",
+      "constName": "RU_PRONOUNS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_verbs",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_verbs/ru_verbs.js",
+      "constName": "RU_VERBS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_verbs_aux/ru_verbs_aux.js",
+      "constName": "RU_VERBS_AUX"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_verbs_modals/ru_verbs_modals.js",
+      "constName": "RU_VERBS_MODALS"
+    }
+  ]
+}

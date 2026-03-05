@@ -1,0 +1,7 @@
+[
+  {"id": 1, "text": "Rechne: 6 · 7 = ?", "answer": "42", "points": 2, "solution": "6 mal 7 ergibt 42."},
+  {"id": 2, "text": "Rechne: 9 · 8 = ?", "answer": "72", "points": 2, "solution": "9 mal 8 ergibt 72."},
+  {"id": 3, "text": "Sachaufgabe: In einer Kiste sind 7 Reihen mit je 5 Äpfeln. Wie viele Äpfel sind es insgesamt?", "answer": "35", "points": 3, "solution": "7 Reihen × 5 Äpfel = 35."},
+  {"id": 4, "text": "Rechne: 11 · 4 = ?", "answer": "44", "points": 3, "solution": "11 mal 4 ergibt 44."},
+  {"id": 5, "text": "Kombiniert: (3 · 9) + (4 · 6) = ?", "answer": "51", "points": 4, "solution": "3·9 = 27, 4·6 = 24, zusammen 51."}
+]

@@ -1,0 +1,38 @@
+{
+  "id": "verkehr_auto",
+  "title": "Verkehr & Auto",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "car_broken",
+      "mnemoHint": "STOP",
+      "de": "Mein Auto ist kaputt.",
+      "en": "My car is broken down.",
+      "fr": "Ma voiture est en panne.",
+      "it": "La mia macchina è rotta.",
+      "es": "Mi coche está averiado.",
+      "ru": "Моя машина сломалась.",
+      "tr": "Arabam bozuk.",
+      "pronIpa": {
+        "tr": "Arabam bozuk."
+      },
+      "pronRu": {
+        "tr": "арабам бозук."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "need_tow",
+      "mnemoHint": "TOW",
+      "de": "Ich brauche einen Abschleppdienst.",
+      "en": "I need a tow truck.",
+      "tr": "Çekiciye ihtiyacım var.",
+      "pronIpa": {
+        "tr": "t͡ʃekid͡ʒiye ihtiyad͡ʒɯm var."
+      },
+      "pronRu": {
+        "tr": "чекиджийе ихтийаджым вар."
+      }
+    }
+  ]
+}

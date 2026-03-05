@@ -1,0 +1,9 @@
+[
+  {"level":0,"title":"Level 0 – Grundlagen","description":"Zahlen, Grundrechenarten, einfache Textaufgaben","recommended_minutes":3,"time_mode":"bonus"},
+  {"level":1,"title":"Level 1 – Addieren bis 20","description":"Einfaches Kopfrechnen mit kleinen Summen","recommended_minutes":4,"time_mode":"bonus"},
+  {"level":2,"title":"Level 2 – Subtraktion bis 20","description":"Kleine Textaufgaben zur Subtraktion","recommended_minutes":4,"time_mode":"bonus"},
+  {"level":3,"title":"Level 3 – Multiplikation bis 100","description":"Einmaleins festigen und anwenden","recommended_minutes":5,"time_mode":"bonus"},
+  {"level":4,"title":"Level 4 – Division ohne Rest","description":"Einfache Divisionen mit ganzzahligem Ergebnis","recommended_minutes":6,"time_mode":"blitz"},
+  {"level":5,"title":"Level 5 – Zwei-Schritt-Aufgaben","description":"Plus und Minus in einer Aufgabe kombinieren","recommended_minutes":7,"time_mode":"blitz"},
+  {"level":6,"title":"Level 6 – Gemischte Aufgaben","description":"Multiplikation und Division gemischt lösen","recommended_minutes":8,"time_mode":"blitz"}
+]

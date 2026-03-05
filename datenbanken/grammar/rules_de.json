@@ -1,0 +1,138 @@
+[
+  {
+    "id": "DE.PREP.AUS_DAT",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition aus → Dativ",
+    "data": { "prep": "aus", "case": "Dativ", "question": "Woher?", "why": "„aus“ verlangt Dativ." },
+    "examples": ["Ich komme aus Deutschland."]
+  },
+  {
+    "id": "DE.PREP.VON_DAT",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition von → Dativ",
+    "data": { "prep": "von", "case": "Dativ", "question": "Woher?/Von wem?", "why": "„von“ verlangt Dativ." },
+    "examples": ["Ich komme vom Arzt."]
+  },
+  {
+    "id": "DE.PREP.MIT_DAT",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition mit → Dativ",
+    "data": { "prep": "mit", "case": "Dativ", "question": "Womit?/Mit wem?", "why": "„mit“ verlangt Dativ." },
+    "examples": []
+  },
+  {
+    "id": "DE.PREP.ZU_DAT",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition zu → Dativ",
+    "data": { "prep": "zu", "case": "Dativ", "question": "Wohin?", "why": "„zu“ verlangt Dativ." },
+    "examples": []
+  },
+  {
+    "id": "DE.PREP.NACH_DAT",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition nach → Dativ",
+    "data": { "prep": "nach", "case": "Dativ", "question": "Wohin?", "why": "„nach“ verlangt Dativ." },
+    "examples": []
+  },
+  {
+    "id": "DE.PREP.BEI_DAT",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition bei → Dativ",
+    "data": { "prep": "bei", "case": "Dativ", "question": "Wo?/Bei wem?", "why": "„bei“ verlangt Dativ." },
+    "examples": []
+  },
+  {
+    "id": "DE.PREP.FUER_AKK",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition für → Akkusativ",
+    "data": { "prep": "für", "case": "Akkusativ", "question": "Wofür?/Für wen/was?", "why": "„für“ verlangt Akkusativ." },
+    "examples": []
+  },
+  {
+    "id": "DE.PREP.OHNE_AKK",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition ohne → Akkusativ",
+    "data": { "prep": "ohne", "case": "Akkusativ", "question": "Ohne wen/was?", "why": "„ohne“ verlangt Akkusativ." },
+    "examples": []
+  },
+  {
+    "id": "DE.PREP.GEGEN_AKK",
+    "lang": "de",
+    "type": "prep_case",
+    "priority": 100,
+    "title_de": "Präposition gegen → Akkusativ",
+    "data": { "prep": "gegen", "case": "Akkusativ", "question": "Gegen wen/was?", "why": "„gegen“ verlangt Akkusativ." },
+    "examples": []
+  },
+  {
+    "id": "DE.WECHSEL.WO_WOHIN",
+    "lang": "de",
+    "type": "wechselprep_wo_wohin",
+    "priority": 90,
+    "title_de": "Wechselpräpositionen Wo/Wohin",
+    "data": {
+      "preps": ["in", "auf", "an", "unter", "über", "vor", "hinter", "zwischen", "neben"],
+      "woCase": "Dativ",
+      "wohinCase": "Akkusativ",
+      "questionWo": "Wo?",
+      "questionWohin": "Wohin?",
+      "motionVerbs": ["gehen", "fahren", "laufen", "kommen", "reisen", "fliegen", "rennen", "bringen", "stellen", "legen", "setzen"],
+      "staticVerbs": ["sein", "bleiben", "wohnen", "liegen", "stehen", "sitzen"]
+    },
+    "examples": ["Ich bin in Deutschland.", "Ich fahre in die Stadt."]
+  },
+  {
+    "id": "DE.FORMAL_SUBJECT_ES",
+    "lang": "de",
+    "type": "formal_subject_es",
+    "priority": 80,
+    "title_de": "Formales Subjekt „es“",
+    "data": { "patterns": ["geht es", "wie geht es"] },
+    "examples": ["Mir geht es gut.", "Wie geht es dir?"]
+  },
+  {
+    "id": "DE.COPULA_PRED",
+    "lang": "de",
+    "type": "copula_predicative",
+    "priority": 70,
+    "title_de": "Kopula → Prädikativ",
+    "data": { "verbs": ["sein", "werden", "bleiben", "heißen"] },
+    "examples": []
+  },
+  {
+    "id": "DE.VERB_AUX_PERFEKT",
+    "lang": "de",
+    "type": "verb_aux_perfekt",
+    "priority": 60,
+    "title_de": "Hilfsverb bei zusammengesetzten Zeiten",
+    "data": {},
+    "examples": []
+  },
+  {
+    "id": "DE.LANGUAGE_NOUNS",
+    "lang": "de",
+    "type": "language_nouns",
+    "priority": 50,
+    "title_de": "Sprachennamen als Neutrum",
+    "data": {
+      "nouns": ["deutsch", "englisch", "italienisch", "französisch", "franzoesisch", "spanisch", "türkisch", "tuerkisch", "russisch", "polnisch", "ukrainisch", "niederländisch", "niederlaendisch", "arabisch", "chinesisch", "japanisch", "koreanisch", "portugiesisch", "griechisch"]
+    },
+    "examples": ["Ich spreche Englisch.", "Wir sprechen auf Deutsch."]
+  }
+]

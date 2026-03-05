@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="forest" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fde9c9"/>
+      <stop offset="60%" stop-color="#f6d39b"/>
+      <stop offset="100%" stop-color="#e9c27f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#forest)"/>
+  <ellipse cx="760" cy="780" rx="620" ry="180" fill="#e2c184" opacity="0.9"/>
+  <ellipse cx="760" cy="820" rx="480" ry="140" fill="#d3b06e" opacity="0.9"/>
+  <ellipse cx="420" cy="720" rx="220" ry="90" fill="#c99b58" opacity="0.8"/>
+  <circle cx="260" cy="220" r="26" fill="#fff" opacity="0.28"/>
+  <circle cx="1120" cy="200" r="22" fill="#fff" opacity="0.25"/>
+  <g transform="translate(1020 380) scale(0.8)">
+    <ellipse cx="150" cy="230" rx="140" ry="120" fill="#d9772c" stroke="#8b4513" stroke-width="10"/>
+    <path d="M210 120 q120 40 120 150 q0 90-70 130" fill="#e08a3c" stroke="#8b4513" stroke-width="8"/>
+    <circle cx="120" cy="180" r="18" fill="#1f2937"/>
+    <path d="M110 230 q40 28 80 0" stroke="#1f2937" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <circle cx="90" cy="140" r="24" fill="#e6a163" stroke="#8b4513" stroke-width="6"/>
+  </g>
+</svg>

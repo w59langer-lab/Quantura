@@ -1,0 +1,34 @@
+{
+  "lang": "shared",
+  "generatedAt": "2025-12-10T19:30:32.832586",
+  "datasets": [
+    {
+      "lang": "shared",
+      "id": "lex_de_sprachen",
+      "kind": "json",
+      "path": "datenbanken/grammar/lex_de_sprachen.json",
+      "constName": null
+    },
+    {
+      "lang": "shared",
+      "id": "manifest",
+      "kind": "json",
+      "path": "datenbanken/grammar/manifest.json",
+      "constName": null
+    },
+    {
+      "lang": "shared",
+      "id": "rules_de",
+      "kind": "json",
+      "path": "datenbanken/grammar/rules_de.json",
+      "constName": null
+    },
+    {
+      "lang": "shared",
+      "id": "rules_shared",
+      "kind": "json",
+      "path": "datenbanken/grammar/rules_shared.json",
+      "constName": null
+    }
+  ]
+}

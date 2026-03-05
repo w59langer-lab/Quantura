@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quadratische Gleichungen – Solver (Offline)</title>
+    <style>
+      :root {
+        --bg-page: #f2f4f8;
+        --bg-surface: #ffffff;
+        --border-subtle: #d0d7e2;
+        --text-main: #111827;
+        --text-muted: #6b7280;
+        --accent: #2563eb;
+        --accent-soft: #dbeafe;
+        --accent-strong: #1d4ed8;
+        --shadow-soft: 0 8px 20px rgba(15, 23, 42, 0.08);
+      }
+
+      :root {
+        --qs-bg: var(--bg-page);
+        --qs-surface: var(--bg-surface);
+        --qs-card: var(--bg-surface);
+        --qs-border: var(--border-subtle);
+        --qs-text: var(--text-main);
+        --qs-muted: var(--text-muted);
+        --qs-accent: var(--accent);
+        --qs-accent-strong: var(--accent-strong);
+        --qs-radius: 16px;
+        --qs-shadow: var(--shadow-soft);
+        --qs-danger: #fb7185;
+        --qs-warn: #fbbf24;
+        --qs-success: #34d399;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        background: var(--qs-bg);
+        color: var(--qs-text);
+        min-height: 100vh;
+      }
+
+      .qs-page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 16px 12px 48px;
+      }
+
+      .card {
+        background: var(--qs-card);
+        border: 1px solid var(--qs-border);
+        border-radius: var(--qs-radius);
+        padding: 16px;
+        box-shadow: var(--qs-shadow);
+        margin-bottom: 12px;
+      }
+
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .hero h1 {
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+
+      .hero .subtitle { color: var(--qs-muted); margin-top: 4px; }
+
+      .tags { display: flex; gap: 8px; flex-wrap: wrap; }
+      .tag {
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--qs-border);
+        color: var(--qs-muted);
+        background: var(--qs-surface);
+        font-size: 0.9rem;
+      }
+
+      .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+      }
+
+      label { display: block; font-weight: 600; margin-bottom: 6px; }
+
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 10px;
+        border-radius: 12px;
+        border: 1px solid var(--qs-border);
+        background: var(--qs-surface);
+        color: var(--qs-text);
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 12px;
+        padding: 12px 14px;
+        border: 1px solid var(--qs-border);
+        background: var(--qs-surface);
+        color: var(--qs-text);
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn.primary { border-color: var(--qs-accent); color: var(--qs-accent-strong); }
+      .btn.ghost { background: transparent; }
+
+      .solver-actions {
+        align-items: center;
+      }
+
+      .msg {
+        margin: 6px 0;
+        color: var(--qs-muted);
+      }
+
+      .msg.error {
+        color: var(--qs-danger);
+        font-weight: 700;
+      }
+
+      #resultCalc.card,
+      #resultSolution.card {
+        margin-top: 10px;
+      }
+
+      .result {
+        font-size: 1.05rem;
+        line-height: 1.5;
+      }
+
+      .muted { color: var(--qs-muted); }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--qs-border);
+        color: var(--qs-muted);
+        background: var(--qs-surface);
+      }
+
+      .steps {
+        margin-top: 10px;
+        border-top: 1px dashed var(--qs-border);
+        padding-top: 10px;
+      }
+
+      .status-warn { color: var(--qs-warn); font-weight: 700; }
+      .status-danger { color: var(--qs-danger); font-weight: 700; }
+      .status-ok { color: var(--qs-success); font-weight: 700; }
+
+      .note-box {
+        margin-top: 8px;
+        padding: 10px 12px;
+        border-radius: 12px;
+        border: 1px dashed var(--qs-border);
+        color: var(--qs-muted);
+      }
+
+      .didaktik-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .didaktik-card {
+        background: var(--qs-surface);
+        border: 1px solid var(--qs-border);
+        border-radius: 12px;
+        padding: 12px;
+      }
+
+      .didaktik-list {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+
+      .didaktik-list li {
+        margin: 6px 0;
+      }
+
+      .didaktik-block {
+        margin-top: 10px;
+        padding-top: 8px;
+        border-top: 1px dashed var(--qs-border);
+      }
+
+      .didaktik-sub {
+        color: var(--qs-muted);
+        font-size: 0.95rem;
+        margin-top: 4px;
+      }
+
+      .didaktik-dynamic {
+        margin-top: 12px;
+        display: grid;
+        gap: 6px;
+      }
+
+      .didaktik-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 10px;
+        align-items: baseline;
+      }
+
+      .didaktik-row .label {
+        font-weight: 700;
+      }
+
+      .formula {
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        background: var(--qs-surface);
+        border: 1px solid var(--qs-border);
+        border-radius: 6px;
+        padding: 2px 6px;
+        display: inline-block;
+      }
+
+      .hint-ru {
+        font-size: 0.9em;
+        opacity: 0.85;
+        color: var(--qs-muted);
+        margin-left: 4px;
+      }
+
+      .solution-actions {
+        margin-top: 12px;
+      }
+
+      .solution-box {
+        margin-top: 12px;
+        padding: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.02);
+      }
+
+      .solution-box code {
+        padding: 0 4px;
+      }
+
+      .formula-box {
+        margin-top: 12px;
+        padding: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.02);
+      }
+
+      .formula-box h4 {
+        margin: 0 0 8px 0;
+      }
+
+      .stack { display: grid; gap: 10px; }
+
+      @media (max-width: 640px) {
+        .hero { align-items: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="qs-page">
+      <section class="card hero">
+        <div>
+          <h1>Quadratische Gleichungen (Solver)</h1>
+          <div class="subtitle">Mathe-First: exakte Lösungen, Schritte &amp; Praxisfall Wurfparabel.</div>
+          <div class="tags">
+            <span class="tag">Δ = b² − 4ac</span>
+            <span class="tag">reell &amp; komplex</span>
+            <span class="tag">Faktorisierung (ganzzahlig)</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="solver">
+        <h2>Quadratische Gleichung</h2>
+        <p class="muted">Gib die Koeffizienten a, b, c für ax² + bx + c = 0 ein. a darf nicht 0 sein.</p>
+        <div class="grid">
+          <div><label for="aInput">a</label><input type="number" id="aInput" step="any" placeholder="z.B. 1"></div>
+          <div><label for="bInput">b</label><input type="number" id="bInput" step="any" placeholder="z.B. -3"></div>
+          <div><label for="cInput">c</label><input type="number" id="cInput" step="any" placeholder="z.B. 2"></div>
+        </div>
+        <div class="actions solver-actions" style="margin:12px 0 6px;">
+          <button id="btnSolve" class="btn primary" type="button">Lösen <span class="hint-ru">/ Решить</span></button>
+          <button id="btnReset" class="btn" type="button">Zurücksetzen</button>
+        </div>
+
+        <div id="solverMsg" class="msg" role="status" aria-live="polite"></div>
+
+        <section id="resultCalc" class="card" hidden>
+          <h3>Berechnung</h3>
+          <div id="calcOut"></div>
+        </section>
+
+        <section id="resultSolution" class="card" hidden>
+          <h3>Lösung</h3>
+          <div id="solOut"></div>
+        </section>
+      </section>
+
+      <section id="didaktik" class="card">
+        <h2>Praxis &amp; Theorie</h2>
+        <div class="didaktik-grid">
+          <article class="didaktik-card">
+            <h3>Praxisaufgabe: Ausschnitt in einer Sperrholzplatte (Rahmenbreite x)</h3>
+            <p>In einer Werkstatt soll aus einer Sperrholzplatte ein rechteckiger Ausschnitt („Fenster“) ausgesägt werden. Damit die Platte stabil bleibt, soll rundherum ein gleich breiter Rahmen stehen bleiben.</p>
+            <p>Die Fläche des ausgesägten Fensters soll <strong>4000 cm²</strong> betragen.</p>
+            <p class="hint-ru">(Hinweis: Rahmenbreite x auf allen Seiten)</p>
+
+            <strong>Gegeben:</strong>
+            <ul class="didaktik-list">
+              <li>Außenmaße der Platte: 100 cm × 70 cm</li>
+              <li>Rahmenbreite: x cm (auf allen vier Seiten gleich)</li>
+              <li>Fläche des Ausschnitts: 4000 cm²</li>
+            </ul>
+
+            <strong>Gesucht:</strong>
+            <ul class="didaktik-list">
+              <li>Rahmenbreite x in cm</li>
+            </ul>
+
+            <strong>Skizzenhinweis:</strong>
+            <p>Zeichne ein Rechteck 100×70 cm und markiere den Rahmen x an allen Seiten.</p>
+            <p class="hint-ru">(Hinweis: Innenmaße als Ausdruck in x)</p>
+
+            <strong>Arbeitsauftrag:</strong>
+            <ol class="didaktik-list">
+              <li>Bestimme die Innenmaße des Ausschnitts in Abhängigkeit von x.</li>
+              <li>Stelle eine Gleichung für die Fläche des Ausschnitts auf und forme sie zu einer quadratischen Gleichung um.</li>
+              <li>Löse die Gleichung und entscheide, welche Lösung in der Praxis sinnvoll ist (Begründung).</li>
+            </ol>
+            <p class="hint-ru">(Hinweis: Quadratische Gleichung aufstellen)</p>
+            <p class="hint-ru">(Hinweis: Sinnprüfung der Lösungen)</p>
+
+            <div class="formula-box">
+              <h4>Aus der Aufgabe zur quadratischen Gleichung</h4>
+              <ul>
+                <li>Innenmaße: <code>(100 − 2x)</code> und <code>(70 − 2x)</code></li>
+                <li>Fläche: <code>(100 − 2x)(70 − 2x) = 4000</code></li>
+                <li>Umformen: <code>4x² − 340x + 3000 = 0</code> ⇒ <code>2x² − 170x + 1500 = 0</code></li>
+                <li>Normalform: <code>ax² + bx + c = 0</code> mit <code>a=2</code>, <code>b=−170</code>, <code>c=1500</code></li>
+              </ul>
+            </div>
+
+            <p class="formula">Plausibilität: x darf nicht größer sein als 35 cm (weil 70 cm die kleinere Seite ist).</p>
+
+            <div class="solution-actions">
+              <button id="btnPracticeSolution" class="secondary">
+                Lösung anzeigen <span class="hint-ru">/ anzeigen</span>
+              </button>
+            </div>
+
+            <section id="practiceSolution" class="solution-box" hidden>
+              <h4>Musterlösung</h4>
+
+              <p><strong>Innenmaße:</strong> (100 − 2x) und (70 − 2x)</p>
+              <p><strong>Flächen-Gleichung:</strong> <code>(100−2x)(70−2x)=4000</code></p>
+
+              <p><strong>Umformen:</strong></p>
+              <ul>
+                <li><code>(100−2x)(70−2x)=7000−340x+4x²</code></li>
+                <li><code>4x²−340x+7000=4000</code></li>
+                <li><code>4x²−340x+3000=0</code> → <code>2x²−170x+1500=0</code></li>
+              </ul>
+
+              <p><strong>Diskriminante:</strong> <code>D=b²−4ac=(−170)²−4·2·1500=16900</code>, <code>√D=130</code></p>
+
+              <p><strong>Lösungen:</strong></p>
+              <ul>
+                <li><code>x₁=(170−130)/4=10</code></li>
+                <li><code>x₂=(170+130)/4=75</code></li>
+              </ul>
+
+              <p><strong>Sinnprüfung:</strong> x muss kleiner als 35 cm sein (kleinere Seite 70 cm). Daher ist <strong>x=75</strong> unmöglich.</p>
+              <p><strong>Ergebnis:</strong> <strong>x = 10 cm</strong></p>
+
+              <p class="hint-ru">(Hinweis: Ergebnis x = 10 cm; die Lösung 75 cm ist wegen der Plattengröße unmöglich.)</p>
+            </section>
+          </article>
+
+          <article class="didaktik-card">
+            <h3>Merkkasten: Quadratische Funktion &amp; Parabel</h3>
+            <div class="didaktik-block">
+              <div><span class="formula">f(x)=ax²+bx+c</span> (a≠0)</div>
+              <div class="didaktik-sub">a: quadratischer Term</div>
+              <div class="didaktik-sub">b: linearer Term</div>
+              <div class="didaktik-sub">c: konstante</div>
+            </div>
+
+            <div class="didaktik-block">
+              <div><span class="formula">D=b²−4ac</span></div>
+              <div class="didaktik-sub">D&gt;0 zwei Nullstellen; D=0 eine Doppelnullstelle; D&lt;0 keine reellen</div>
+            </div>
+
+            <div class="didaktik-block">
+              <div>Öffnung: <span class="formula">a&gt;0</span> nach oben; <span class="formula">a&lt;0</span> nach unten</div>
+              <div>Streckung/Stauchung: <span class="formula">|a|&gt;1</span> gestreckt, <span class="formula">0&lt;|a|&lt;1</span> gestaucht</div>
+            </div>
+
+            <div class="didaktik-block">
+              <div>Scheitelpunktform: <span class="formula">f(x)=a(x−d)²+e</span></div>
+              <div>Scheitel <span class="formula">S(d|e)</span>, <span class="formula">d=−b/(2a)</span>, <span class="formula">e=−D/(4a)</span> (oder <span class="formula">e=f(d)</span>)</div>
+              <div>Verschiebung: <span class="formula">(x−d)</span> rechts um d; <span class="formula">(x+d)</span> links um d</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="didaktik-dynamic" id="didaktikDynamic">
+          <div class="didaktik-row"><span class="label">a – quadratisch:</span> <span id="didA">—</span></div>
+          <div class="didaktik-row"><span class="label">b – linear:</span> <span id="didB">—</span></div>
+          <div class="didaktik-row"><span class="label">c – konstant:</span> <span id="didC">—</span></div>
+          <div class="didaktik-row"><span class="label">Diskriminante D:</span> <span id="didD">—</span> <span id="didNature" class="pill"></span></div>
+          <div class="didaktik-row"><span class="label">Öffnung:</span> <span id="didOpen">—</span></div>
+          <div class="didaktik-row"><span class="label">Streckung:</span> <span id="didStretch">—</span></div>
+          <div class="didaktik-row"><span class="label">Scheitelpunkt:</span> <span id="didVertex">—</span></div>
+          <div class="note-box" id="didNote" style="display:none;"></div>
+        </div>
+      </section>
+
+      <section class="card" id="praxis">
+        <h2>Praxis: Wurfparabel</h2>
+        <p class="muted">h(t) = -4.9 · t² + v₀ · t + h₀. Wir berechnen die Boden-Zeitpunkte mit demselben Solver.</p>
+        <div class="grid">
+          <div><label for="v0">v₀ (m/s)</label><input type="number" id="v0" step="any" placeholder="z.B. 12" value="12"></div>
+          <div><label for="h0">h₀ (m)</label><input type="number" id="h0" step="any" placeholder="z.B. 1.5" value="1.5"></div>
+        </div>
+        <div class="actions" style="margin:12px 0 6px;">
+          <button class="btn primary" type="button" id="praxis-btn">Nullstellen (Boden) berechnen</button>
+        </div>
+        <div class="result" id="praxis-result"></div>
+        <div class="steps">
+          <div class="muted">Rechenweg</div>
+          <div id="praxis-steps"></div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      console.log("RUNNING OFFLINE quadratic-solver", location.href);
+
+      const aInput = document.getElementById('aInput');
+      const bInput = document.getElementById('bInput');
+      const cInput = document.getElementById('cInput');
+      const btnSolve = document.getElementById('btnSolve');
+      const btnReset = document.getElementById('btnReset');
+      const solverMsg = document.getElementById('solverMsg');
+      const resultCalc = document.getElementById('resultCalc');
+      const resultSolution = document.getElementById('resultSolution');
+      const calcOut = document.getElementById('calcOut');
+      const solOut = document.getElementById('solOut');
+
+      const didA = document.getElementById('didA');
+      const didB = document.getElementById('didB');
+      const didC = document.getElementById('didC');
+      const didD = document.getElementById('didD');
+      const didNature = document.getElementById('didNature');
+      const didOpen = document.getElementById('didOpen');
+      const didStretch = document.getElementById('didStretch');
+      const didVertex = document.getElementById('didVertex');
+      const didNote = document.getElementById('didNote');
+
+      const v0Input = document.getElementById('v0');
+      const h0Input = document.getElementById('h0');
+      const praxisBtn = document.getElementById('praxis-btn');
+      const praxisResult = document.getElementById('praxis-result');
+      const praxisSteps = document.getElementById('praxis-steps');
+
+      wireEvents();
+      const btnPracticeSolution = document.getElementById('btnPracticeSolution');
+      const practiceSolution = document.getElementById('practiceSolution');
+
+      btnPracticeSolution?.addEventListener('click', () => {
+        if (!practiceSolution) return;
+        const show = practiceSolution.hidden;
+        practiceSolution.hidden = !show;
+        btnPracticeSolution.innerHTML = show
+          ? 'Lösung verbergen <span class="hint-ru">/ verbergen</span>'
+          : 'Lösung anzeigen <span class="hint-ru">/ anzeigen</span>';
+        if (show) practiceSolution.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      function wireEvents() {
+        if (!btnSolve || !aInput || !bInput || !cInput || !solverMsg) {
+          console.error('OFFLINE: missing element', {
+            btnSolve,
+            aInput,
+            bInput,
+            cInput,
+            solverMsg
+          });
+          if (solverMsg) {
+            solverMsg.textContent = 'UI-Element fehlt (Offline-Version veraltet).';
+            solverMsg.className = 'msg error';
+          }
+          return;
+        }
+        btnSolve.type = 'button';
+        btnSolve.addEventListener('click', (e) => {
+          e.preventDefault();
+          handleSolveClick();
+        });
+        btnReset?.addEventListener('click', handleResetClick);
+        praxisBtn?.addEventListener('click', handlePraxis);
+      }
+
+      function handleSolveClick() {
+        const a = parseNumberDE(aInput?.value);
+        const b = parseNumberDE(bInput?.value);
+        const c = parseNumberDE(cInput?.value);
+
+        if (!isFinite(a) || !isFinite(b) || !isFinite(c)) {
+          showMsg('Bitte a, b, c als Zahlen eingeben (Komma erlaubt).', true);
+          hideResults();
+          resetDidaktik();
+          return;
+        }
+
+        showMsg('');
+        const result = solveEquation(a, b, c);
+        renderCalc(a, b, c, result);
+        renderSolution(result);
+        resultCalc.hidden = false;
+        resultSolution.hidden = false;
+
+        if (result.type === 'linear' || result.type === 'none' || result.type === 'infinite') {
+          renderDidaktikLinear(a, b, c);
+        } else {
+          renderDidaktikQuadratic(a, b, c, result.D);
+        }
+      }
+
+      function handleResetClick() {
+        if (aInput) aInput.value = '';
+        if (bInput) bInput.value = '';
+        if (cInput) cInput.value = '';
+        showMsg('');
+        hideResults();
+        resetDidaktik();
+      }
+
+      function hideResults() {
+        if (resultCalc) resultCalc.hidden = true;
+        if (resultSolution) resultSolution.hidden = true;
+        if (calcOut) calcOut.innerHTML = '';
+        if (solOut) solOut.innerHTML = '';
+      }
+
+      function showMsg(text, isError = false) {
+        if (!solverMsg) return;
+        solverMsg.textContent = text;
+        solverMsg.className = isError ? 'msg error' : 'msg';
+      }
+
+      function parseNumberDE(str) {
+        if (str === undefined || str === null) return NaN;
+        const cleaned = String(str).trim().replace(/\s+/g, '').replace(',', '.');
+        return cleaned === '' ? NaN : parseFloat(cleaned);
+      }
+
+      function solveEquation(a, b, c) {
+        const eps = 1e-12;
+        if (Math.abs(a) < eps) {
+          if (Math.abs(b) < eps) {
+            if (Math.abs(c) < eps) return { type: 'infinite' };
+            return { type: 'none' };
+          }
+          const x = -c / b;
+          return { type: 'linear', x };
+        }
+
+        const D = b * b - 4 * a * c;
+        if (D < -eps) return { type: 'complex', D };
+        if (Math.abs(D) <= eps) {
+          const x = -b / (2 * a);
+          return { type: 'double', D: 0, x };
+        }
+        const sqrtD = Math.sqrt(D);
+        const x1 = (-b - sqrtD) / (2 * a);
+        const x2 = (-b + sqrtD) / (2 * a);
+        return { type: 'two', D, sqrtD, x1, x2 };
+      }
+
+      function renderCalc(a, b, c, result) {
+        if (!calcOut) return;
+        const lines = [];
+        lines.push(`<div>Gegeben: <code>a=${fmtNum(a)}</code>, <code>b=${fmtNum(b)}</code>, <code>c=${fmtNum(c)}</code></div>`);
+
+        if (result.type === 'linear' || result.type === 'none' || result.type === 'infinite') {
+          lines.push(`<div>Keine Parabel: lineare Gleichung <code>${fmtNum(b)}x + ${fmtNum(c)} = 0</code></div>`);
+          calcOut.innerHTML = lines.join('');
+          return;
+        }
+
+        const D = result.D;
+        lines.push(`<div><code>D = b² − 4ac = ${fmtNum(D)}</code></div>`);
+        if (D >= 0) {
+          lines.push(`<div><code>√D = ${fmtNum(Math.sqrt(D))}</code></div>`);
+          lines.push(`<div><code>x = (-b ± √D) / (2a)</code></div>`);
+          if (result.type === 'double') {
+            lines.push(`<div><code>x = ${fmtNum(result.x)}</code></div>`);
+          } else if (result.type === 'two') {
+            lines.push(`<div><code>x₁ = ${fmtNum(result.x1)}</code>, <code>x₂ = ${fmtNum(result.x2)}</code></div>`);
+          }
+        } else {
+          lines.push(`<div><code>x = (-b ± √D) / (2a)</code> (keine reellen)</div>`);
+        }
+        calcOut.innerHTML = lines.join('');
+      }
+
+      function renderSolution(result) {
+        if (!solOut) return;
+        let html = '';
+        if (result.type === 'two') {
+          html = `Zwei reelle Lösungen: x₁ = ${fmtNum(result.x1)}, x₂ = ${fmtNum(result.x2)}.`;
+        } else if (result.type === 'double') {
+          html = `Eine reelle Lösung (Doppelnullstelle): x = ${fmtNum(result.x)}.`;
+        } else if (result.type === 'complex') {
+          html = 'Keine reellen Lösungen.';
+        } else if (result.type === 'linear') {
+          html = `Lineare Lösung: x = ${fmtNum(result.x)}.`;
+        } else if (result.type === 'none') {
+          html = 'Keine Lösung.';
+        } else if (result.type === 'infinite') {
+          html = 'Unendlich viele Lösungen.';
+        }
+        solOut.textContent = html;
+      }
+
+      function renderDidaktikLinear(a, b, c) {
+        if (didA) didA.textContent = fmtNum(a);
+        if (didB) didB.textContent = fmtNum(b);
+        if (didC) didC.textContent = fmtNum(c);
+        if (didD) didD.textContent = '—';
+        if (didNature) {
+          didNature.textContent = '';
+          didNature.className = 'pill';
+        }
+        if (didOpen) didOpen.textContent = '—';
+        if (didStretch) didStretch.textContent = '—';
+        if (didVertex) didVertex.textContent = '—';
+        if (didNote) {
+          didNote.style.display = 'block';
+          didNote.textContent = 'Keine Parabel (linear).';
+        }
+      }
+
+      function renderDidaktikQuadratic(a, b, c, D) {
+        if (didA) didA.textContent = `${fmtNum(a)} – quadratisch`;
+        if (didB) didB.textContent = `${fmtNum(b)} – linear`;
+        if (didC) didC.textContent = `${fmtNum(c)} – konstant`;
+        if (didD) didD.textContent = fmtNum(D);
+
+        if (didNature) {
+          didNature.className = 'pill';
+          if (D > 0) {
+            didNature.textContent = 'D > 0 → zwei Nullstellen';
+            didNature.classList.add('status-ok');
+          } else if (D === 0) {
+            didNature.textContent = 'D = 0 → eine Doppelnullstelle';
+            didNature.classList.add('status-warn');
+          } else {
+            didNature.textContent = 'D < 0 → keine reellen';
+            didNature.classList.add('status-danger');
+          }
+        }
+
+        if (didOpen) didOpen.textContent = a > 0 ? 'nach oben (a > 0)' : 'nach unten (a < 0)';
+
+        if (didStretch) {
+          const absA = Math.abs(a);
+          if (absA > 1) didStretch.textContent = '|a| > 1 → gestreckt (schmaler/steiler)';
+          else if (absA > 0 && absA < 1) didStretch.textContent = '0 < |a| < 1 → gestaucht (breiter/flacher)';
+          else didStretch.textContent = '|a| = 1 → normale Breite';
+        }
+
+        const d = -b / (2 * a);
+        const e = a * d * d + b * d + c;
+        if (didVertex) didVertex.textContent = `S(${fmtNum(d)}|${fmtNum(e)})`;
+        if (didNote) {
+          didNote.style.display = 'none';
+          didNote.textContent = '';
+        }
+      }
+
+      function resetDidaktik() {
+        if (didA) didA.textContent = '—';
+        if (didB) didB.textContent = '—';
+        if (didC) didC.textContent = '—';
+        if (didD) didD.textContent = '—';
+        if (didNature) {
+          didNature.textContent = '';
+          didNature.className = 'pill';
+        }
+        if (didOpen) didOpen.textContent = '—';
+        if (didStretch) didStretch.textContent = '—';
+        if (didVertex) didVertex.textContent = '—';
+        if (didNote) {
+          didNote.style.display = 'none';
+          didNote.textContent = '';
+        }
+      }
+
+      function fmtNum(value) {
+        if (!isFinite(value)) return '—';
+        const rounded = Math.round(value * 10000) / 10000;
+        const str = rounded.toString();
+        return str.replace(/\.0+$/, '').replace(/(\.\d*?)0+$/, '$1');
+      }
+
+      function handlePraxis() {
+        const v0 = parseNumberDE(v0Input?.value || '0');
+        const h0 = parseNumberDE(h0Input?.value || '0');
+        const a = -4.9;
+        const b = v0;
+        const c = h0;
+        const res = solveEquation(a, b, c);
+        renderPraxis(res, a, b, c);
+      }
+
+      function renderPraxis(res, a, b, c) {
+        if (!praxisResult || !praxisSteps) return;
+        const D = res.D ?? (b * b - 4 * a * c);
+        let html = `<div><strong>Diskriminante:</strong> Δ = b² − 4ac = ${fmtNum(D)}</div>`;
+        if (res.type === 'complex') {
+          html += `<div class="status-danger">Keine reellen Lösungen.</div>`;
+        } else if (res.type === 'double') {
+          html += `<div class="status-warn">Doppelte Lösung: t = ${fmtNum(res.x)}</div>`;
+        } else if (res.type === 'two') {
+          html += `<div class="status-ok">Reelle Lösungen: t₁ = ${fmtNum(res.x1)}, t₂ = ${fmtNum(res.x2)}</div>`;
+        }
+        praxisResult.innerHTML = html;
+
+        const steps = [];
+        steps.push(`Δ = b² − 4ac = (${fmtNum(b)})² − 4 · ${fmtNum(a)} · ${fmtNum(c)} = ${fmtNum(D)}`);
+        if (D >= 0) {
+          const sqrtD = Math.sqrt(D);
+          steps.push(`√Δ = ${fmtNum(sqrtD)}`);
+          steps.push(`t = (−b ± √Δ) / (2a)`);
+          if (res.type === 'two') {
+            steps.push(`t₁ = (${fmtNum(-b)} − ${fmtNum(sqrtD)}) / ${fmtNum(2 * a)} = ${fmtNum(res.x1)}`);
+            steps.push(`t₂ = (${fmtNum(-b)} + ${fmtNum(sqrtD)}) / ${fmtNum(2 * a)} = ${fmtNum(res.x2)}`);
+          } else if (res.type === 'double') {
+            steps.push(`t = ${fmtNum(res.x)}`);
+          }
+        }
+        praxisSteps.innerHTML = steps.map(s => `<div>• ${s}</div>`).join('');
+
+        if (res.type === 'complex') {
+          praxisResult.innerHTML += '<div class="note-box">Die Höhe fällt nicht auf den Boden (keine reellen Schnittpunkte).</div>';
+          return;
+        }
+        const roots = res.type === 'two' ? [res.x1, res.x2] : res.type === 'double' ? [res.x] : [];
+        const positive = roots.filter(x => typeof x === 'number' && x >= -1e-6).map(x => Math.max(0, x));
+        if (!positive.length) {
+          praxisResult.innerHTML += '<div class="note-box">Keine positive Flugzeit gefunden (Objekt startet bereits unter Boden oder Parameter unplausibel).</div>';
+        } else {
+          praxisResult.innerHTML += `<div class="note-box">Sinnvolle Zeiten (t ≥ 0): ${positive.map(fmtNum).join(' s, ')} s</div>`;
+        }
+      }
+
+      console.assert(solveEquation(1, -3, 2).type === 'two', 'Test 1 type');
+      console.assert(
+        Math.abs(solveEquation(1, -3, 2).x1 - 1) < 1e-9 ||
+          Math.abs(solveEquation(1, -3, 2).x2 - 1) < 1e-9,
+        'Test 1 roots'
+      );
+      console.assert(solveEquation(2, -170, 1500).D === 16900, 'Test 2 D');
+      console.assert(solveEquation(1, 2, 1).type === 'double', 'Test 3 type');
+      console.assert(Math.abs(solveEquation(1, 2, 1).x + 1) < 1e-9, 'Test 3 root');
+      console.assert(solveEquation(0, 5, 10).type === 'linear', 'Test 4 linear');
+      console.assert(Math.abs(solveEquation(0, 5, 10).x + 2) < 1e-9, 'Test 4 root');
+    </script>
+  </body>
+</html>

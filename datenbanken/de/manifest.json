@@ -1,0 +1,83 @@
+{
+  "lang": "de",
+  "generatedAt": "2025-12-10T19:30:32.832586",
+  "datasets": [
+    {
+      "lang": "de",
+      "id": "de_adjectives",
+      "kind": "js",
+      "path": "datenbanken/de/de_adjectives/de_adjectives.js",
+      "constName": "DE_ADJECTIVES"
+    },
+    {
+      "lang": "de",
+      "id": "de_adverbs",
+      "kind": "js",
+      "path": "datenbanken/de/de_adverbs/de_adverbs.js",
+      "constName": "DE_ADVERBS"
+    },
+    {
+      "lang": "de",
+      "id": "de_nouns",
+      "kind": "js",
+      "path": "datenbanken/de/de_nouns/de_nouns.js",
+      "constName": "DE_NOUNS"
+    },
+    {
+      "lang": "de",
+      "id": "de_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/de/de_possessive_pronouns/de_possessive_pronouns.js",
+      "constName": "DE_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "de",
+      "id": "de_prep_patterns",
+      "kind": "js",
+      "path": "datenbanken/de/de_prep_patterns.js",
+      "constName": "DE_PREP_PATTERNS"
+    },
+    {
+      "lang": "de",
+      "id": "de_preps",
+      "kind": "js",
+      "path": "datenbanken/de/de_preps/de_preps.js",
+      "constName": "DE_PREPS"
+    },
+    {
+      "lang": "de",
+      "id": "de_pronouns",
+      "kind": "js",
+      "path": "datenbanken/de/de_pronouns/de_pronouns.js",
+      "constName": "DE_PRONOUNS"
+    },
+    {
+      "lang": "de",
+      "id": "de_pronouns_personal",
+      "kind": "js",
+      "path": "datenbanken/de/pronouns/de_pronouns_personal.js",
+      "constName": "DE_PRONOUNS_PERSONAL"
+    },
+    {
+      "lang": "de",
+      "id": "de_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/de/de_verbs_aux/de_verbs_aux.js",
+      "constName": "DE_VERBS_AUX"
+    },
+    {
+      "lang": "de",
+      "id": "de_verbs_main",
+      "kind": "js",
+      "path": "datenbanken/de/de_verbs_main/de_verbs_main.js",
+      "constName": "DE_VERBS_MAIN"
+    },
+    {
+      "lang": "de",
+      "id": "de_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/de/de_verbs_modals/de_verbs_modals.js",
+      "constName": "DE_VERBS_MODALS"
+    }
+  ]
+}

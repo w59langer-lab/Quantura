@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mathematik · Grundschule (Klasse 1–4)</title>
+  <link rel="stylesheet" href="core/assets/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    :root { --gs-accent:#0b6efd; --gs-bg:#f8fafc; }
+    body { background: var(--gs-bg); }
+    .gs-shell { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+    .gs-card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:1.25rem 1.5rem; box-shadow:0 10px 30px rgba(0,0,0,0.05); }
+    .gs-grid { display:grid; grid-template-columns: 1fr; gap:1rem; }
+    .gs-header h1 { margin:0 0 .4rem; }
+    .gs-controls { display:flex; flex-wrap:wrap; gap:.75rem; align-items:center; margin-top:.5rem; }
+    .gs-controls label { font-weight:600; }
+    .gs-select, .gs-input { padding:.55rem .75rem; border:1px solid #d1d5db; border-radius:10px; font-size:1rem; }
+    .gs-list { margin:0; padding:0; list-style:none; display:grid; gap:.75rem; }
+    .gs-domain { border:1px solid #e5e7eb; border-radius:12px; padding:1rem 1.2rem; background:#fff; }
+    .gs-domain h3 { margin:0 0 .4rem; font-size:1.05rem; color:#0f172a; }
+    .gs-unit { margin:.35rem 0 .1rem; font-weight:600; color:#111827; }
+    .gs-topic { position:relative; margin:.2rem 0; padding:.65rem .75rem; border-radius:10px; border:1px solid #e5e7eb; cursor:pointer; transition:all .15s ease; background:#f9fafb; text-align:left; }
+    .gs-topic:hover, .gs-topic:focus { border-color:var(--gs-accent); box-shadow:0 6px 18px rgba(11,110,253,0.12); outline:none; background:#fff; }
+    .gs-topic small { display:block; color:#6b7280; }
+    .gs-progress { position:absolute; top:8px; right:10px; background:#0ea5e9; color:#fff; font-size:.78rem; padding:2px 8px; border-radius:12px; font-weight:700; }
+    .gs-progress.done { background:#16a34a; }
+    .gs-empty { padding:.75rem 1rem; color:#6b7280; }
+    .gs-detail { border:1px dashed #cbd5e1; border-radius:12px; padding:1rem 1.2rem; background:#f8fafc; margin-top:.75rem; }
+    .pill { display:inline-flex; align-items:center; gap:.35rem; background:#eef2ff; color:#312e81; padding:.35rem .65rem; border-radius:999px; font-size:.9rem; }
+    .panel-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.55);display:flex;align-items:center;justify-content:center;z-index:2200;padding:12px;}
+    .panel{background:#fff;max-width:960px;width:100%;border-radius:14px;box-shadow:0 22px 50px rgba(0,0,0,0.25);padding:16px;max-height:90vh;overflow:auto;}
+    .panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+    .panel-close{border:none;background:#e5e7eb;border-radius:10px;padding:6px 10px;cursor:pointer;font-weight:700;}
+    .task-box{border:1px solid #e5e7eb;border-radius:12px;padding:12px;margin:12px 0;background:#f8fafc;}
+    .task-prompt{font-weight:700;margin-bottom:6px;}
+    .en-text{color:#374151;font-size:0.95rem;}
+    .choices{display:grid;gap:8px;margin:10px 0;}
+    .choices button{padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;background:#fff;cursor:pointer;text-align:left;}
+    .choices button.selected{border-color:#0ea5e9;box-shadow:0 0 0 2px rgba(14,165,233,0.25);}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;}
+    .controls button{padding:10px 14px;border:1px solid #d1d5db;border-radius:10px;background:#0b6efd;color:#fff;cursor:pointer;}
+    .controls button.secondary{background:#e5e7eb;color:#111827;}
+    .feedback-ok{color:#15803d;font-weight:700;margin-top:8px;}
+    .feedback-warn{color:#b91c1c;font-weight:700;margin-top:8px;}
+    .audio-btn{margin-left:6px;cursor:pointer;}
+    .voice-row{display:flex;align-items:center;gap:8px;margin:6px 0;}
+    @media (max-width: 720px){
+      .gs-shell { padding:1rem; }
+      .gs-controls { flex-direction:column; align-items:flex-start; }
+      .gs-select, .gs-input { width:100%; }
+      .panel{max-height:88vh;}
+    }
+  </style>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+  <main class="gs-shell" id="app">
+    <section class="gs-card gs-header">
+      <p class="pill">Mathematik · Grundschule</p>
+      <h1>Mathematik · Grundschule (Klasse 1–4)</h1>
+      <p>Stoffsammlung als Lernfahrplan. Wähle eine Klasse, filtere Themen und öffne Details. Aufgaben folgen.</p>
+      <div class="gs-controls" aria-label="Filter">
+        <label for="gradeSelect">Klasse:</label>
+        <select id="gradeSelect" class="gs-select" aria-label="Klasse wählen"></select>
+        <label for="topicSearch">Suche:</label>
+        <input id="topicSearch" class="gs-input" type="search" placeholder="Thema suchen …" autocomplete="off" />
+      </div>
+    </section>
+
+    <section class="gs-grid" aria-live="polite" aria-busy="true" id="tocWrap">
+      <div class="gs-card">Lade Inhalte …</div>
+    </section>
+
+    <section class="gs-card gs-detail" id="detail" hidden>
+      <h2 id="detailTitle">Thema</h2>
+      <p id="detailMeta"></p>
+      <p id="detailInfo" class="pill"></p>
+      <p>Aufgaben folgen.</p>
+    </section>
+  </main>
+  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+
+  <script>
+    const DATA_URL = './assets/data/mathe_grundschule_toc.json';
+    const tocWrap = document.getElementById('tocWrap');
+    const gradeSelect = document.getElementById('gradeSelect');
+    const topicSearch = document.getElementById('topicSearch');
+    const detail = document.getElementById('detail');
+    const detailTitle = document.getElementById('detailTitle');
+    const detailMeta = document.getElementById('detailMeta');
+    const detailInfo = document.getElementById('detailInfo');
+
+    const TASKS_URL = './assets/data/mathe_grundschule_tasks.json';
+    const PROGRESS_KEY = 'll_gs_progress_v1';
+    let toc = null;
+    let tasksCache = null;
+
+    async function init(){
+      try{
+        const res = await fetch(DATA_URL, { cache:'no-store' });
+        if(!res.ok) throw new Error('HTTP '+res.status);
+        toc = await res.json();
+        renderGradeOptions();
+        renderList();
+        tocWrap.setAttribute('aria-busy','false');
+      }catch(err){
+        console.error(err);
+        tocWrap.innerHTML = '<div class="gs-card">Inhalte konnten nicht geladen werden.</div>';
+        tocWrap.setAttribute('aria-busy','false');
+      }
+    }
+
+    function renderGradeOptions(){
+      if(!toc || !Array.isArray(toc.grades)) return;
+      gradeSelect.innerHTML = '';
+      toc.grades.forEach((g, idx)=>{
+        const opt=document.createElement('option');
+        opt.value=g.id;
+        opt.textContent=g.title_de || g.id || 'Klasse';
+        if(idx===0) opt.selected=true;
+        gradeSelect.appendChild(opt);
+      });
+    }
+
+    function renderList(){
+      if(!toc || !Array.isArray(toc.grades)) return;
+      const selectedId = gradeSelect.value || toc.grades[0]?.id;
+      const query = (topicSearch.value||'').trim().toLowerCase();
+      const grade = toc.grades.find(g=>g.id===selectedId) || toc.grades[0];
+      const domainMap = new Map((toc.domains||[]).map(d=>[d.id,d]));
+
+      tocWrap.innerHTML = '';
+
+      const matches = [];
+      grade.units.forEach(unit=>{
+        const domain = domainMap.get(unit.domain) || {};
+        const visibleTopics = (unit.topics||[]).filter(t=>
+          !query || (t.title_de||'').toLowerCase().includes(query)
+        );
+        if(!visibleTopics.length) return;
+
+        const card=document.createElement('article');
+        card.className='gs-domain';
+        const domainTitle = domain.title_de || unit.domain || 'Bereich';
+        card.innerHTML = `<h3>${domainTitle}</h3><div class="gs-unit">${unit.title_de||''}</div>`;
+
+        const list=document.createElement('div');
+        visibleTopics.forEach(topic=>{
+          const btn=document.createElement('button');
+          btn.type='button';
+          btn.className='gs-topic';
+          btn.dataset.topicId = topic.id;
+          btn.dataset.domain = domainTitle;
+          btn.dataset.unit = unit.title_de || '';
+          btn.dataset.grade = grade.title_de || '';
+          btn.textContent = topic.title_de;
+          const badge=document.createElement('span');
+          badge.className='gs-progress';
+          badge.textContent=progressLabel(topic.id);
+          if(isTopicDone(topic.id)) badge.classList.add('done');
+          btn.appendChild(badge);
+          const hint=document.createElement('small');
+          hint.textContent = `${grade.title_de || ''} · ${domainTitle}`.trim();
+          btn.appendChild(hint);
+          btn.addEventListener('click', ()=>showDetail(topic, grade, domainTitle, unit));
+          list.appendChild(btn);
+          matches.push(topic);
+        });
+        card.appendChild(list);
+        tocWrap.appendChild(card);
+      });
+
+      if(!matches.length){
+        const empty=document.createElement('div');
+        empty.className='gs-card gs-empty';
+        empty.textContent='Keine Themen gefunden.';
+        tocWrap.appendChild(empty);
+      }
+    }
+
+    function showDetail(topic, grade, domainTitle, unit){
+      detail.hidden=false;
+      detailTitle.textContent = topic.title_de;
+      detailMeta.textContent = `${grade.title_de || grade.id} · ${domainTitle}${unit?.title_de? ' · '+unit.title_de : ''}`;
+      detailInfo.textContent = `Thema-ID: ${topic.id}`;
+      detail.scrollIntoView({ behavior:'smooth', block:'nearest' });
+      openExercises(topic);
+    }
+
+    gradeSelect.addEventListener('change', renderList);
+    topicSearch.addEventListener('input', renderList);
+
+    // Progress helpers
+    function loadProgress(){
+      try{return JSON.parse(localStorage.getItem(PROGRESS_KEY)||'{}');}catch{return {};}
+    }
+    function saveProgress(p){ localStorage.setItem(PROGRESS_KEY, JSON.stringify(p)); }
+    function isTopicDone(id){
+      const p=loadProgress()[id];
+      return p && p.done && p.done.length>= (tasksCache?.topics?.[id]?.length || 0) && (tasksCache?.topics?.[id]?.length || 0)>0;
+    }
+    function progressLabel(id){
+      const total = tasksCache?.topics?.[id]?.length || 0;
+      const done = loadProgress()?.[id]?.done?.length || 0;
+      if(total===0) return '–';
+      if(done>=total) return '✓';
+      return `${done}/${total}`;
+    }
+
+    async function ensureTasks(){
+      if(tasksCache) return tasksCache;
+      const res = await fetch(TASKS_URL, { cache:'no-store' });
+      if(!res.ok) throw new Error('Tasks load failed');
+      tasksCache = await res.json();
+      renderList(); // update badges with totals
+      return tasksCache;
+    }
+
+    function audioAvailable(){ return typeof speechSynthesis !== 'undefined' && typeof SpeechSynthesisUtterance !== 'undefined'; }
+    function speakEn(text, voice){
+      if(!audioAvailable()) return;
+      const u=new SpeechSynthesisUtterance(text);
+      u.lang='en-US';
+      if(voice) u.voice=voice;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(u);
+    }
+
+    function makeAudioBtn(text, voice){
+      const btn=document.createElement('button');
+      btn.type='button';
+      btn.className='audio-btn';
+      btn.title = audioAvailable()? 'Play English audio' : 'Audio nicht verfügbar';
+      btn.textContent='🔊';
+      if(!audioAvailable()) btn.style.display='none';
+      btn.addEventListener('click', (e)=>{ e.stopPropagation(); speakEn(text, voice); });
+      return btn;
+    }
+
+    function renderChoices(t, voice, state){
+      const wrap=document.createElement('div');
+      wrap.className='choices';
+      (t.choices_de||[]).forEach((de, idx)=>{
+        const en=t.choices_en?.[idx] || '';
+        const btn=document.createElement('button');
+        btn.type='button';
+        const rowDe=document.createElement('div'); rowDe.textContent=de;
+        const rowEn=document.createElement('div'); rowEn.className='en-text'; rowEn.textContent=en;
+        const aud=makeAudioBtn(en, voice); rowEn.appendChild(aud);
+        btn.append(rowDe,rowEn);
+        btn.addEventListener('click', ()=>{
+          wrap.querySelectorAll('button').forEach(b=>b.classList.remove('selected'));
+          btn.classList.add('selected');
+          state.selected = t.answerIsIndex ? String(idx) : (t.answer || '').trim();
+          state.selectedText = de;
+        });
+        wrap.appendChild(btn);
+      });
+      return wrap;
+    }
+
+    function renderTaskCard(t, voice, topicId){
+      const state={ selected:null };
+      const card=document.createElement('div');
+      card.className='task-box';
+      const prompt=document.createElement('div');
+      prompt.className='task-prompt';
+      prompt.innerHTML = `DE: ${t.prompt_de}<br><span class="en-text">EN: ${t.prompt_en}</span>`;
+      const audioBtn = makeAudioBtn(t.prompt_en, voice);
+      prompt.appendChild(audioBtn);
+      card.appendChild(prompt);
+
+      let inputEl=null;
+      if(t.type==='mcq'){
+        card.appendChild(renderChoices(t, voice, state));
+      } else {
+        inputEl=document.createElement('input');
+        inputEl.type='text';
+        inputEl.placeholder='Antwort / Answer';
+        inputEl.className='gs-input';
+        card.appendChild(inputEl);
+      }
+
+      const fb=document.createElement('div');
+      const controls=document.createElement('div');
+      controls.className='controls';
+      const btnCheck=document.createElement('button');
+      btnCheck.textContent='Prüfen / Check';
+      const btnHint=document.createElement('button');
+      btnHint.textContent='Tipp / Hint';
+      btnHint.className='secondary';
+      const btnExplain=document.createElement('button');
+      btnExplain.textContent='Lösung erklären / Explain';
+      btnExplain.className='secondary';
+      const btnNext=document.createElement('button');
+      btnNext.textContent='Nächste / Next';
+
+      const applyFeedback=(ok, msgDe, msgEn)=>{
+        fb.className = ok ? 'feedback-ok' : 'feedback-warn';
+        fb.innerHTML = `DE: ${msgDe}<br>EN: ${msgEn}`;
+      };
+
+      btnCheck.addEventListener('click', ()=>{
+        const answer = t.answer || '';
+        const user = t.type==='mcq' ? (state.selected ?? '') : (inputEl?.value||'').trim();
+        const ok = user && user.toString().trim().toLowerCase() === answer.toString().trim().toLowerCase();
+        if(ok){
+          markDone(topicId, t.id);
+          applyFeedback(true, 'Richtig!', 'Correct!');
+          fb.scrollIntoView({behavior:'smooth', block:'nearest'});
+        } else {
+          applyFeedback(false, 'Noch nicht richtig. Versuch es erneut.', 'Not correct yet. Try again.');
+        }
+      });
+      btnHint.addEventListener('click', ()=>{
+        applyFeedback(false, t.hint_de, t.hint_en);
+        fb.appendChild(makeAudioBtn(t.hint_en, voice));
+      });
+      btnExplain.addEventListener('click', ()=>{
+        applyFeedback(true, t.explain_de, t.explain_en);
+        fb.appendChild(makeAudioBtn(t.explain_en, voice));
+      });
+      btnNext.addEventListener('click', ()=>{
+        card.dispatchEvent(new CustomEvent('next-task', { bubbles:true }));
+      });
+
+      controls.append(btnCheck, btnHint, btnExplain, btnNext);
+      card.appendChild(controls);
+      card.appendChild(fb);
+      return card;
+    }
+
+    function markDone(topicId, taskId){
+      const p=loadProgress();
+      p[topicId] ||= { done:[], last:null };
+      if(!p[topicId].done.includes(taskId)) p[topicId].done.push(taskId);
+      p[topicId].last = taskId;
+      saveProgress(p);
+      renderList(); // update badges
+    }
+
+    async function openExercises(topic){
+      const overlay=document.createElement('div');
+      overlay.className='panel-overlay';
+      overlay.addEventListener('click',(e)=>{ if(e.target===overlay) overlay.remove(); });
+      const panel=document.createElement('div');
+      panel.className='panel';
+      const head=document.createElement('div');
+      head.className='panel-head';
+      head.innerHTML = `<div><strong>Übungen / Exercises</strong> · ${topic.title_de}</div>`;
+      const btnClose=document.createElement('button');
+      btnClose.className='panel-close';
+      btnClose.textContent='×';
+      btnClose.addEventListener('click', ()=>overlay.remove());
+      head.appendChild(btnClose);
+      panel.appendChild(head);
+
+      const body=document.createElement('div');
+      body.id='task-body';
+      body.textContent='Lade Aufgaben…';
+      panel.appendChild(body);
+      overlay.appendChild(panel);
+      document.body.appendChild(overlay);
+
+      try{
+        const data = await ensureTasks();
+        const arr = data.topics?.[topic.id] || [];
+        if(!arr.length){
+          body.innerHTML = '<p>Noch keine Aufgaben / No exercises yet.</p>';
+          return;
+        }
+        let voice=null;
+        if(audioAvailable()){
+          const allVoices = speechSynthesis.getVoices().filter(v=>v.lang.startsWith('en'));
+          if(allVoices.length){
+            voice = allVoices.find(v=>/US|GB|en/i.test(v.lang)) || allVoices[0];
+            const row=document.createElement('div');
+            row.className='voice-row';
+            const sel=document.createElement('select');
+            sel.className='gs-select';
+            allVoices.forEach(v=>{
+              const opt=document.createElement('option');
+              opt.value=v.name; opt.textContent=`${v.name} (${v.lang})`;
+              if(v.name===voice.name) opt.selected=true;
+              sel.appendChild(opt);
+            });
+            sel.addEventListener('change', ()=>{ voice = allVoices.find(v=>v.name===sel.value) || voice; });
+            row.innerHTML='<strong>EN Voice:</strong> ';
+            row.appendChild(sel);
+            panel.insertBefore(row, body);
+          }
+        }
+
+        let idx=0;
+        const renderCurrent=()=>{
+          body.innerHTML='';
+          const t=arr[idx];
+          const card=renderTaskCard(t, voice, topic.id);
+          card.addEventListener('next-task', ()=>{
+            idx = (idx+1) % arr.length;
+            renderCurrent();
+          });
+          body.appendChild(card);
+        };
+        renderCurrent();
+      }catch(err){
+        console.error(err);
+        body.innerHTML='<p>Aufgaben konnten nicht geladen werden.</p>';
+      }
+    }
+
+    init();
+  </script>
+  <script src="/core/js/core_init.js" defer></script>
+</body>
+</html>

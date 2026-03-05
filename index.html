@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quantura – Portal</title>
+    <link rel="stylesheet" href="core/assets/style.css" />
+    <link rel="stylesheet" href="pages/portal_v2/portal.css" />
+    <script src="/core/js/core_init.js" defer></script>
+    <script src="/pages/portal_v2/portal.js" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+    <main id="ll-content" data-ll-content class="page-wrapper">
+      <section class="ll-welcome" aria-label="Willkommen">
+        <h1>Herzlich willkommen auf Quantura.</h1>
+        <p>Hier kannst du lernen, üben und Themen entdecken – und passende Apps &amp; Tools sofort öffnen. Materialien (z. B. EPUB) kannst du ansehen und herunterladen, falls vorhanden.</p>
+        <p><strong>Apps öffnen</strong>: Werkzeuge starten · <strong>Themen entdecken</strong>: Lernpfade · <strong>Schnellstart</strong>: direkt loslegen</p>
+        <p><strong>Quantura</strong> = Quant + (h)ora (Zeit) — Maß &amp; Klarheit.<br>„Alles wird klar, wenn es messbar wird.“</p>
+      </section>
+
+      <section class="card portal-topics">
+        <div class="topic-controls">
+          <label class="ll-label" for="topicSelect">Wähle ein Thema:</label>
+          <input type="search" id="topicSearch" placeholder="Thema suchen …" autocomplete="off" />
+          <div class="topic-filters" style="display:inline-flex; gap:.35rem; margin-left:.5rem;">
+  <button type="button" class="topicFilter" data-type="all">Alle</button>
+  <button type="button" class="topicFilter" data-type="page">Pages</button>
+  <button type="button" class="topicFilter" data-type="app">Apps</button>
+  <button type="button" class="topicFilter" data-type="tool">Tools</button>
+</div>
+<button id="btnBack" type="button" onclick="history.back()">← Zurück</button>
+<select id="topicSelect">
+            <option value="">Thema wählen …</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="portal-home" data-portal-home></section>
+    </main>
+    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+    <script src="assets/js/portal_registry_loader.js"></script>
+</body>
+</html>

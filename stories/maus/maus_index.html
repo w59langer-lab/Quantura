@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mausefalle – eine Geschichte in 5 Sprachen</title>
+
+    <link rel="stylesheet" href="../../core/assets/style.css" />
+    <link rel="stylesheet" href="maus_style.css" />
+
+    <script src="../../core/js/core_init.js" defer></script>
+  </head>
+
+  <body>
+    <div data-partial="header" data-partial-path="../../core/partials/header.html"></div>
+
+    <main class="page-wrapper story-page" tabindex="-1">
+      <section class="story maus-story" id="multi-story">
+        <div class="story-header-row">
+          <h1>Mausefalle – eine Geschichte in 5 Sprachen</h1>
+          <p class="hint-text">
+            Mehrsprachige Story mit TTS-Steuerung (Sprache, Stimme, Geschwindigkeit).
+          </p>
+        </div>
+
+        <!-- Für ES einfach einen zusätzlichen Tab + Artikel mit data-lang="es" anlegen. -->
+        <div class="story-lang-switch">
+          <button class="lang-tab active" data-lang="de">DE</button>
+          <button class="lang-tab" data-lang="en">EN</button>
+          <button class="lang-tab" data-lang="ru">RU</button>
+          <button class="lang-tab" data-lang="fr">FR</button>
+          <button class="lang-tab" data-lang="it">IT</button>
+        </div>
+
+        <div class="story-controls">
+          <button id="btn-play">▶ Anhören</button>
+          <button id="btn-pause">⏸ Pause</button>
+          <button id="btn-resume">▶ Fortsetzen</button>
+          <button id="btn-stop">⏹ Stop</button>
+
+          <label class="rate-label">
+            Geschwindigkeit:
+            <input
+              id="speed-range"
+              type="range"
+              min="0.5"
+              max="1.5"
+              step="0.1"
+              value="1"
+            />
+          </label>
+
+          <label class="voice-label">
+            Stimme:
+            <select id="voice-select"></select>
+          </label>
+        </div>
+
+        <div id="story-text">
+          <!-- DE -->
+          <article class="story-text" data-lang="de">
+            <h2>Die Geschichte einer kleinen Maus</h2>
+            <p>Eines Tages bemerkte eine kleine Maus, dass der Bauer eine Mausefalle aufgestellt hatte. Erschrocken rannte sie los, um die anderen Tiere auf dem Bauernhof zu warnen.</p>
+            <p>Sie erzählte der Henne, dem Schaf und der Kuh von der Gefahr. Aber alle antworteten gleichgültig: „Das ist dein Problem, das geht uns nichts an!“</p>
+            <p>Später geriet eine Schlange in die Mausefalle und biss die Bäuerin. Um die verletzte Frau zu heilen, kochte der Bauer Hühnerbrühe, dann schlachtete er das Schaf und schließlich die Kuh.</p>
+            <p>Die kleine Maus beobachtete alles aus ihrem Loch und dachte darüber nach, wie schnell sich Dinge ändern, die angeblich „niemanden etwas angehen“.</p>
+            <p class="story-moral"><strong>Moral:</strong> Gleichgültigkeit schützt niemanden.</p>
+          </article>
+
+          <!-- EN -->
+          <article class="story-text" data-lang="en" hidden>
+            <h2>The Story of a Little Mouse</h2>
+            <p>One day, a little mouse noticed that the farmer had set a mousetrap. Frightened, she ran off to warn the other animals on the farm.</p>
+            <p>She told the hen, the sheep, and the cow about the danger. But they all replied indifferently: “That’s your problem, it has nothing to do with us!”</p>
+            <p>Later, a snake got caught in the trap and bit the farmer’s wife. To help the injured woman heal, the farmer cooked chicken broth, then slaughtered the sheep and finally the cow.</p>
+            <p>The little mouse watched everything from her hole and reflected on how quickly things can change—especially things that supposedly “concern no one”.</p>
+            <p class="story-moral"><strong>Moral:</strong> Indifference protects no one.</p>
+            <details class="translation">
+              <summary>Übersetzung auf Deutsch anzeigen</summary>
+              <div class="translation-content">Eines Tages bemerkte eine kleine Maus, dass der Bauer eine Mausefalle aufgestellt hatte...</div>
+            </details>
+          </article>
+
+          <!-- RU -->
+          <article class="story-text" data-lang="ru" hidden>
+            <h2>История одной маленькой мышки</h2>
+            <p>Однажды маленькая мышка заметила, что фермер поставил мышеловку. Испугавшись, она побежала предупредить других животных фермы.</p>
+            <p>Она рассказала об опасности курице, овце и корове, но все равнодушно ответили: «Это твоя проблема, нас это не касается!»</p>
+            <p>Позже в мышеловку попала змея und укусила фермершу. Чтобы вылечить женщину, фермер сварил куриный бульон, затем заколол овцу и, наконец, корову.</p>
+            <p>Мышка наблюдала aus своей норы und думала о том, как быстро меняются вещи — особенно те, которые будто бы «никого не касаются».</p>
+            <p class="story-moral"><strong>Мораль:</strong> Равнодушие никого не защищает.</p>
+            <details class="translation">
+              <summary>Übersetzung auf Deutsch anzeigen</summary>
+              <div class="translation-content">Eines Tages bemerkte eine kleine Maus, dass der Bauer eine Mausefalle aufgestellt hatte...</div>
+            </details>
+          </article>
+
+          <!-- FR -->
+          <article class="story-text" data-lang="fr" hidden>
+            <h2>L’histoire d’une petite souris</h2>
+            <p>Un jour, une petite souris remarqua que le fermier avait installé une tapette à souris. Effrayée, elle courut avertir les autres animaux.</p>
+            <p>Elle parla du danger à la poule, au mouton und à la vache. Mais tous antworteten indifféremment: « C’est ton problème, cela ne nous concerne pas ! »</p>
+            <p>Plus tard, ein serpent se prit dans le piège und mordit la fermière. Pour soigner la femme blessée, le fermier prépara ein bouillon de poulet, puis tua le mouton und enfin la vache.</p>
+            <p>La petite souris observa tout und réfléchit à la rapidité avec laquelle les choses peuvent changer — surtout celles qui “ne regardent personne”.</p>
+            <p class="story-moral"><strong>Morale:</strong> L’indifférence ne protège personne.</p>
+            <details class="translation">
+              <summary>Übersetzung auf Deutsch anzeigen</summary>
+              <div class="translation-content">Eines Tages bemerkte une kleine Maus, dass der Bauer eine Mausefalle aufgestellt hatte...</div>
+            </details>
+          </article>
+
+          <!-- IT -->
+          <article class="story-text" data-lang="it" hidden>
+            <h2>La storia di un piccolo topolino</h2>
+            <p>Un giorno un piccolo topolino vide che il contadino aveva posato una trappola per topi. Spaventato, corse ad avvertire gli altri animali.</p>
+            <p>Parlò del pericolo alla gallina, alla pecora und alla mucca. Ma tutti risposero: «È un tuo problema, non ci riguarda!»</p>
+            <p>Più tardi ein serpente rimase intrappolato und morse la moglie del contadino. Per curarla, il contadino preparò del brodo, poi macellò la pecora und la mucca.</p>
+            <p>Il topolino osservò tutto dal suo buco und rifletté su quanto rapidamente possano cambiare le cose — soprattutto quelle che “non riguardano nessuno”.</p>
+            <p class="story-moral"><strong>Morale:</strong> L’indifferenza non protegge nessuno.</p>
+            <details class="translation">
+              <summary>Übersetzung auf Deutsch anzeigen</summary>
+              <div class="translation-content">Eines Tages bemerkte eine kleine Maus, dass der Bauer eine Mausefalle aufgestellt hatte...</div>
+            </details>
+          </article>
+        </div>
+
+        <div class="maus-image-grid">
+          <figure class="maus-image-item">
+            <img src="img/01_maus_falle.png?v=1" alt="Maus warnt Tiere vor Falle" />
+          </figure>
+          <figure class="maus-image-item">
+            <img src="img/02_tiere_ignorieren.png?v=1" alt="Tiere ignorieren Maus" />
+          </figure>
+          <figure class="maus-image-item">
+            <img src="img/03_schlange_biss.png?v=1" alt="Schlange in Falle, Biss" />
+          </figure>
+          <figure class="maus-image-item">
+            <img src="img/04_maus_loch.png?v=1" alt="Maus im Loch" />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <div data-partial="footer" data-partial-path="../../core/partials/footer.html"></div>
+    <script src="js/maus_tts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!-- RU: Дата: 21.02.2026 — Проект 02 «Копилка / Банка очков», демо таймера, жизней и очков -->
+<!-- DE: Datum: 21.02.2026 — Projekt 02 „Spardose / Punkteglas“, Demo für Timer, Leben und Punkte -->
+<!-- EN: Date: 2026-02-21 — Project 02 “Piggy Bank / Points Jar”, demo for timer, lives, and scoring -->
+<!doctype html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt 02 — Spardose / Punkteglas</title>
+    <link rel="stylesheet" href="/core/assets/style.css" />
+    <link rel="stylesheet" href="/pages/faecher/informatik/web_projects/p02_spardose/style.css" />
+    <script src="/core/loader/loader.js" defer></script>
+    <script src="/core/js/core_init.js" defer></script>
+    <script src="/pages/faecher/informatik/web_projects/p02_spardose/app.js" defer></script>
+  </head>
+  <body>
+    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+
+    <main class="p02-page">
+      <div class="top-actions">
+        <a class="btn-back" href="/pages/faecher/informatik/web_projects/">← Zurück zu Web Projects</a>
+      </div>
+
+      <h1>Projekt 02 — Spardose / Punkteglas</h1>
+      <p class="lead">Demo: Timer, Leben, Punkteglas und Fortschrittstabelle.</p>
+
+      <section class="p02-layout">
+        <div class="left-panel">
+          <div class="button-row">
+            <button id="btnStart" type="button" class="btn btn-primary">Start ⏱</button>
+            <button id="btnStop" type="button" class="btn btn-ghost">Stop ⏸</button>
+            <button id="btnCorrect" type="button" class="btn btn-success">Richtig ✅</button>
+            <button id="btnWrong" type="button" class="btn btn-warn">Falsch ❌</button>
+            <button id="btnAuto" type="button" class="btn btn-secondary">Auto-Demo ▶</button>
+            <button id="btnReset" type="button" class="btn btn-ghost">Reset ↺</button>
+          </div>
+
+          <div class="table-wrap">
+            <table class="progress-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Status</th>
+                  <th>+Punkte</th>
+                  <th>Σ</th>
+                </tr>
+              </thead>
+              <tbody id="progressBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="right-panel">
+          <div class="stat-card">
+            <div class="label">Timer</div>
+            <div id="timerText" class="timer-text">05:00</div>
+            <div class="subline">Limit = Aufgaben × 60 Sek.</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="label">Leben</div>
+            <div id="livesText" class="lives-text">❤️❤️❤️</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="label">Punkteglas</div>
+            <div class="jar">
+              <div id="jarFill" class="jar-fill"></div>
+            </div>
+            <div class="score-line">
+              <span>Score:</span>
+              <strong id="scoreText" class="score-value">0</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LanguageLab – Karten</title>
+
+    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="cards.css" />
+    <script src="../../../../core/loader/loader.js" defer></script>
+    <script src="../../../../core/js/core_init.js" defer></script>
+    <script src="cards.js" defer></script>
+  </head>
+  <body>
+    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+    <main class="page-wrapper cards-page">
+      <div class="card">
+        <header class="cards-header">
+          <div>
+            <p class="hint-text">Eigene Karten: Wörter und Sätze, die du manuell anlegst.</p>
+            <h1>Karten</h1>
+          </div>
+          <div class="cards-toolbar">
+            <button id="exportBtn" type="button" class="btn btn-primary">Export JSON</button>
+            <label class="btn btn-ghost cards-import-btn">
+              Import JSON
+              <input id="importInput" type="file" accept="application/json" />
+            </label>
+            <button id="clearAllBtn" type="button" class="btn btn-ghost btn-danger">
+              Alles löschen
+            </button>
+          </div>
+        </header>
+
+        <section class="cards-form">
+          <div class="cards-form__header">
+            <h2>Karte hinzufügen</h2>
+            <p class="hint-text">Mindestens Front und Back. Neue Karten erscheinen oben.</p>
+          </div>
+          <form id="cardForm" class="cards-form-grid">
+            <label class="field">
+              <span>Typ</span>
+              <select id="cardType" name="type">
+                <option value="word" selected>word</option>
+                <option value="sentence">sentence</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Front-Sprache</span>
+              <select id="langFront" name="lang_front">
+                <option value="en" selected>en</option>
+                <option value="de">de</option>
+                <option value="ru">ru</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Back language</span>
+              <select id="langBack" name="lang_back">
+                <option value="de" selected>de</option>
+                <option value="ru">ru</option>
+                <option value="en">en</option>
+              </select>
+            </label>
+
+            <label class="field field-wide">
+              <span>Front Text</span>
+              <textarea id="frontText" name="front" rows="2" placeholder="Wort oder Satz auf der Front"></textarea>
+            </label>
+
+            <label class="field field-wide">
+              <span>Transkription (Front)</span>
+              <input
+                id="pron_front"
+                name="pron_front"
+                type="text"
+                placeholder="z. B. [hɛˈləʊ] oder lautliche Notiz"
+              />
+            </label>
+
+            <label class="field field-wide">
+              <span>Back Text</span>
+              <textarea id="backText" name="back" rows="2" placeholder="Übersetzung oder Antwort"></textarea>
+            </label>
+
+            <label class="field field-wide">
+              <span>Notiz (optional)</span>
+              <textarea id="noteText" name="note" rows="2" placeholder="Kontext, Hinweis, Beispiel"></textarea>
+            </label>
+
+            <div class="cards-form-actions">
+              <button type="submit" class="btn btn-primary">Hinzufügen</button>
+              <span class="hint-text" id="formStatus"></span>
+            </div>
+          </form>
+        </section>
+
+        <section class="cards-list-wrap">
+          <div class="cards-list-header">
+            <h2>Kartenliste</h2>
+            <span class="hint-text" id="cardsCount">0 Karten</span>
+          </div>
+          <div id="cardsList" class="cards-list" aria-live="polite"></div>
+        </section>
+      </div>
+    </main>
+
+    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+  </body>
+</html>

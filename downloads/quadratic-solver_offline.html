@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quadratische Gleichungen – Offline-Solver</title>
+  <style>
+    :root {
+      --bg: radial-gradient(circle at 15% 20%, #0f172a 0%, #0b1224 45%, #060914 90%);
+      --card: rgba(16, 24, 40, 0.92);
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #f8fafc;
+      --muted: #9ca3af;
+      --accent: #67e8f9;
+      --accent-strong: #22d3ee;
+      --radius: 14px;
+      --shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+      --danger: #fb7185;
+      --warn: #fbbf24;
+      --success: #34d399;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); min-height:100vh; padding:16px 12px 40px; }
+    .page { max-width: 1080px; margin: 0 auto; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 12px; box-shadow: var(--shadow); }
+    h1 { margin: 0 0 4px 0; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); margin-bottom: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+    label { display:block; font-weight: 700; margin-bottom: 6px; }
+    input[type=number] { width:100%; padding:12px 10px; border-radius: 12px; border:1px solid var(--border); background: rgba(255,255,255,0.05); color: var(--text); }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 14px; border-radius:12px; border:1px solid var(--border); background: rgba(255,255,255,0.08); color: var(--text); font-weight:700; cursor:pointer; text-decoration:none; }
+    .btn.primary { border-color: var(--accent); color: var(--accent-strong); }
+    .result { font-size:1.05rem; line-height:1.5; }
+    .muted { color: var(--muted); }
+    .pill { display:inline-flex; gap:6px; align-items:center; padding:6px 10px; border-radius:999px; border:1px solid var(--border); color: var(--muted); background: rgba(255,255,255,0.05); }
+    .status-ok { color: var(--success); font-weight:700; }
+    .status-warn { color: var(--warn); font-weight:700; }
+    .status-danger { color: var(--danger); font-weight:700; }
+    .note { margin-top:8px; padding:10px 12px; border:1px dashed var(--border); border-radius:12px; color: var(--muted); }
+    .steps { margin-top:10px; border-top:1px dashed var(--border); padding-top:10px; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <h1>Quadratische Gleichungen (Offline)</h1>
+      <div class="subtitle">Berechne Δ, x₁/x₂, Rechenweg und Wurfparabel – ohne externe Dateien.</div>
+      <div class="pill">Δ-Formel: b² − 4ac</div>
+    </div>
+
+    <div class="card" id="solver">
+      <h2>Quadratische Gleichung</h2>
+      <p class="muted">Gib a, b, c für ax² + bx + c = 0 ein (a ≠ 0).</p>
+      <div class="grid">
+        <div><label for="a">a</label><input type="number" id="a" step="any" placeholder="1"></div>
+        <div><label for="b">b</label><input type="number" id="b" step="any" placeholder="-3"></div>
+        <div><label for="c">c</label><input type="number" id="c" step="any" placeholder="2"></div>
+      </div>
+      <div style="margin:12px 0 6px; display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="btn primary" id="solve-btn">Berechnen</button>
+        <span class="pill" id="disc-badge">Δ noch nicht berechnet</span>
+      </div>
+      <div class="result" id="result"></div>
+      <div class="note" id="factor">Faktorisierung (ganzzahlig) nicht möglich</div>
+      <div class="steps">
+        <div class="muted">Rechenweg</div>
+        <div id="steps"></div>
+      </div>
+    </div>
+
+    <div class="card" id="praxis">
+      <h2>Praxis: Wurfparabel</h2>
+      <p class="muted">h(t) = -4.9·t² + v₀·t + h₀ → Bodenzeiten via Solver.</p>
+      <div class="grid">
+        <div><label for="v0">v₀ (m/s)</label><input type="number" id="v0" step="any" value="12"></div>
+        <div><label for="h0">h₀ (m)</label><input type="number" id="h0" step="any" value="1.5"></div>
+      </div>
+      <div style="margin:12px 0 6px;">
+        <button class="btn primary" id="praxis-btn">Nullstellen (Boden) berechnen</button>
+      </div>
+      <div class="result" id="praxis-result"></div>
+      <div class="steps">
+        <div class="muted">Rechenweg</div>
+        <div id="praxis-steps"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const aInput = document.getElementById('a');
+    const bInput = document.getElementById('b');
+    const cInput = document.getElementById('c');
+    const solveBtn = document.getElementById('solve-btn');
+    const resultEl = document.getElementById('result');
+    const stepsEl = document.getElementById('steps');
+    const discBadge = document.getElementById('disc-badge');
+    const factorEl = document.getElementById('factor');
+
+    const v0Input = document.getElementById('v0');
+    const h0Input = document.getElementById('h0');
+    const praxisBtn = document.getElementById('praxis-btn');
+    const praxisResult = document.getElementById('praxis-result');
+    const praxisSteps = document.getElementById('praxis-steps');
+
+    solveBtn.addEventListener('click', () => {
+      const a = parseFloat(aInput.value), b = parseFloat(bInput.value), c = parseFloat(cInput.value);
+      if (!isValid(a,b,c)) {
+        resultEl.innerHTML = '<span class="status-warn">Bitte gültige Werte eingeben (a ≠ 0).</span>';
+        stepsEl.innerHTML = '';
+        discBadge.textContent = 'Δ noch nicht berechnet';
+        return;
+      }
+      const sol = solveQuadratic(a,b,c);
+      renderSolution(sol,{a,b,c},resultEl,stepsEl,discBadge);
+      const factors = factorize(a,b,c);
+      factorEl.textContent = factors ? \`Faktorisierung: (x ${fmtSign(factors.p)})(x ${fmtSign(factors.q)}) = 0\` : 'Faktorisierung (ganzzahlig) nicht möglich';
+    });
+
+    praxisBtn.addEventListener('click', () => {
+      const a = -4.9;
+      const b = parseFloat(v0Input.value || '0');
+      const c = parseFloat(h0Input.value || '0');
+      const sol = solveQuadratic(a,b,c);
+      renderSolution(sol,{a,b,c},praxisResult,praxisSteps);
+      if (sol.nature === 'complex') {
+        praxisResult.innerHTML += '<div class="note">Keine reellen Flugzeiten.</div>';
+        return;
+      }
+      const positive = (sol.roots || []).filter(x => typeof x === 'number' && x >= -1e-6).map(x => Math.max(0,x));
+      if (!positive.length) praxisResult.innerHTML += '<div class="note">Keine positive Zeit gefunden.</div>';
+      else praxisResult.innerHTML += '<div class="note">t (≥0): ' + positive.map(fmt).join(' s, ') + ' s</div>';
+    });
+
+    function solveQuadratic(a,b,c){
+      const D = b*b - 4*a*c;
+      if (D < 0) {
+        const real = -b/(2*a);
+        const imag = Math.sqrt(-D)/(2*Math.abs(a));
+        return { discriminant:D, nature:'complex', roots:[\`\${fmt(real)} + \${fmt(imag)} i\`, \`\${fmt(real)} - \${fmt(imag)} i\`], real, imag };
+      }
+      const sqrtD = Math.sqrt(D);
+      if (D === 0) return { discriminant:D, nature:'double', roots:[(-b)/(2*a)] };
+      return { discriminant:D, nature:'two', roots:[(-b+sqrtD)/(2*a), (-b-sqrtD)/(2*a)] };
+    }
+
+    function renderSolution(sol, coeffs, targetResult, targetSteps, badge){
+      const {a,b,c} = coeffs;
+      const D = sol.discriminant;
+      if (badge){
+        badge.textContent = \`Δ = \${fmt(D)}\`;
+        badge.className = 'pill';
+        if (D>0) badge.classList.add('status-ok'); else if (D===0) badge.classList.add('status-warn'); else badge.classList.add('status-danger');
+      }
+      const roots = sol.roots || [];
+      let html = \`<div><strong>Diskriminante:</strong> Δ = \${fmt(D)}</div>\`;
+      if (sol.nature === 'complex') html += \`<div class="status-danger">Komplexe Lösungen: \${roots.join(' , ')}</div>\`;
+      else if (sol.nature === 'double') html += \`<div class="status-warn">Doppelte Lösung: x = \${fmt(roots[0])}</div>\`;
+      else html += \`<div class="status-ok">Reelle Lösungen: x₁ = \${fmt(roots[0])}, x₂ = \${fmt(roots[1])}</div>\`;
+      targetResult.innerHTML = html;
+
+      const steps = [];
+      steps.push(\`Δ = b² − 4ac = (\${fmt(b)})² − 4·\${fmt(a)}·\${fmt(c)} = \${fmt(D)}\`);
+      if (sol.nature === 'complex') {
+        steps.push(\`x = (−b ± i·√|Δ|) / (2a)\`);
+        steps.push('x₁,₂ = ' + roots.join(' ; '));
+      } else {
+        const sqrtD = Math.sqrt(Math.max(0,D));
+        steps.push(\`√Δ = \${fmt(sqrtD)}\`);
+        steps.push('x = (−b ± √Δ) / (2a)');
+        steps.push(\`x₁ = (\${fmt(-b)} + \${fmt(sqrtD)}) / \${fmt(2*a)} = \${fmt(roots[0])}\`);
+        if (sol.nature !== 'double') steps.push(\`x₂ = (\${fmt(-b)} − \${fmt(sqrtD)}) / \${fmt(2*a)} = \${fmt(roots[1])}\`);
+      }
+      targetSteps.innerHTML = steps.map(s => '<div>• ' + s + '</div>').join('');
+    }
+
+    function factorize(a,b,c){
+      if (Math.abs(a-1) > 1e-9) return null;
+      if (!Number.isInteger(b) || !Number.isInteger(c)) return null;
+      for (let p=-50; p<=50; p++){
+        const q = b-p;
+        if (p*q === c) return {p,q};
+      }
+      return null;
+    }
+
+    function fmt(value){
+      if (value === undefined || value === null) return '—';
+      if (typeof value === 'string') return value;
+      if (Number.isInteger(value)) return value.toString();
+      return (Math.round(value*10000)/10000).toString();
+    }
+    function fmtSign(num){ if (num===0) return ''; return num>0 ? \`+ \${Math.abs(num)}\` : \`- \${Math.abs(num)}\`; }
+    function isValid(a,b,c){ return ![a,b,c].some(v => Number.isNaN(v)) && a !== 0; }
+  </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+{
+  "schema": "ll-mathe-gs-toc-v1",
+  "title_de": "Mathematik · Grundschule (Klasse 1–4)",
+  "title_ru": "Математика · Начальная школа (1–4 класс)",
+  "domains": [
+    { "id": "zo",  "title_de": "Zahlen und Operationen", "title_ru": "Числа и действия" },
+    { "id": "rf",  "title_de": "Raum und Form", "title_ru": "Пространство и формы" },
+    { "id": "gm",  "title_de": "Größen und Messen", "title_ru": "Величины и измерения" },
+    { "id": "dhw", "title_de": "Daten, Häufigkeiten und Wahrscheinlichkeiten", "title_ru": "Данные, частоты и вероятности" }
+  ],
+  "grades": [
+    {
+      "id": "gs1",
+      "title_de": "Klasse 1",
+      "title_ru": "1 класс",
+      "units": [
+        {
+          "domain": "zo",
+          "title_de": "Zahlen & Rechnen",
+          "topics": [
+            { "id": "gs1-zo-01", "title_de": "Anzahlen erfassen & Zahlen bis 10" },
+            { "id": "gs1-zo-02", "title_de": "Zahlen bis 20: lesen, schreiben, ordnen" },
+            { "id": "gs1-zo-03", "title_de": "Zerlegen und Ergänzen bis 10" },
+            { "id": "gs1-zo-04", "title_de": "Addieren bis 10 (mit Bildern/Material)" },
+            { "id": "gs1-zo-05", "title_de": "Subtrahieren bis 10 (mit Bildern/Material)" },
+            { "id": "gs1-zo-06", "title_de": "Addieren und Subtrahieren bis 20" },
+            { "id": "gs1-zo-07", "title_de": "Zehnerübergang bis 20 (einfach)" },
+            { "id": "gs1-zo-08", "title_de": "Zahlenfolgen: Vorgänger/Nachfolger, Muster" },
+            { "id": "gs1-zo-09", "title_de": "Sachaufgaben (1 Schritt): Rechengeschichten" }
+          ]
+        },
+        {
+          "domain": "rf",
+          "title_de": "Formen & Orientierung",
+          "topics": [
+            { "id": "gs1-rf-01", "title_de": "Lagebeziehungen: rechts/links, oben/unten" },
+            { "id": "gs1-rf-02", "title_de": "Grundformen erkennen und sortieren" },
+            { "id": "gs1-rf-03", "title_de": "Muster fortsetzen (Ketten, Felder, Reihen)" },
+            { "id": "gs1-rf-04", "title_de": "Symmetrie entdecken (falten/spiegeln)" },
+            { "id": "gs1-rf-05", "title_de": "Körper: Würfel/Quader im Alltag" },
+            { "id": "gs1-rf-06", "title_de": "Zeichnen auf Kästchenpapier (einfach)" }
+          ]
+        },
+        {
+          "domain": "gm",
+          "title_de": "Messen im Alltag",
+          "topics": [
+            { "id": "gs1-gm-01", "title_de": "Vergleichen: länger/kürzer, mehr/weniger" },
+            { "id": "gs1-gm-02", "title_de": "Längen messen und schätzen (cm)" },
+            { "id": "gs1-gm-03", "title_de": "Zeit: Tagesablauf, volle Stunde" },
+            { "id": "gs1-gm-04", "title_de": "Geld: Münzen/Scheine, Beträge legen" },
+            { "id": "gs1-gm-05", "title_de": "Gewicht/Volumen: wiegen, füllen (Basis)" },
+            { "id": "gs1-gm-06", "title_de": "Sachaufgaben mit Größen (sehr einfach)" }
+          ]
+        },
+        {
+          "domain": "dhw",
+          "title_de": "Daten & Zufall",
+          "topics": [
+            { "id": "gs1-dhw-01", "title_de": "Daten sammeln (Strichliste)" },
+            { "id": "gs1-dhw-02", "title_de": "Tabellen lesen und ausfüllen" },
+            { "id": "gs1-dhw-03", "title_de": "Bilddiagramm / einfache Säulen" },
+            { "id": "gs1-dhw-04", "title_de": "Häufigkeiten vergleichen (am meisten/wenigsten)" },
+            { "id": "gs1-dhw-05", "title_de": "Zufall: sicher – möglich – unmöglich" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "gs2",
+      "title_de": "Klasse 2",
+      "title_ru": "2 класс",
+      "units": [
+        {
+          "domain": "zo",
+          "title_de": "Zahlen & Rechnen",
+          "topics": [
+            { "id": "gs2-zo-01", "title_de": "Zahlenraum bis 100: Zehner/Einser (Stellenwert)" },
+            { "id": "gs2-zo-02", "title_de": "Addieren/Subtrahieren bis 100 ohne Übergang" },
+            { "id": "gs2-zo-03", "title_de": "Addieren/Subtrahieren bis 100 mit Übergang" },
+            { "id": "gs2-zo-04", "title_de": "Kopfrechen-Strategien (z.B. Nachbaraufgaben)" },
+            { "id": "gs2-zo-05", "title_de": "Verdoppeln und Halbieren" },
+            { "id": "gs2-zo-06", "title_de": "Einmaleins-Einstieg (2/5/10-Reihe)" },
+            { "id": "gs2-zo-07", "title_de": "Teilen als Aufteilen/Verteilen (Basis)" },
+            { "id": "gs2-zo-08", "title_de": "Schätzen & Überschlag (bis 100)" },
+            { "id": "gs2-zo-09", "title_de": "Sachaufgaben (1–2 Schritte) + Antwortsatz" }
+          ]
+        },
+        {
+          "domain": "rf",
+          "title_de": "Formen & Zeichnen",
+          "topics": [
+            { "id": "gs2-rf-01", "title_de": "Ebene Figuren: Ecken, Kanten, Eigenschaften" },
+            { "id": "gs2-rf-02", "title_de": "Symmetrie: Spiegelachsen finden" },
+            { "id": "gs2-rf-03", "title_de": "Strecken zeichnen und vergleichen (Lineal)" },
+            { "id": "gs2-rf-04", "title_de": "Umfang als Rand (zählen/messen)" },
+            { "id": "gs2-rf-05", "title_de": "Würfelgebäude: Ansichten (sehr einfach)" },
+            { "id": "gs2-rf-06", "title_de": "Raster/Koordinaten-Idee (Zeile/Spalte)" }
+          ]
+        },
+        {
+          "domain": "gm",
+          "title_de": "Größen",
+          "topics": [
+            { "id": "gs2-gm-01", "title_de": "Uhrzeit: halbe/viertel Stunde, Minuten (Start)" },
+            { "id": "gs2-gm-02", "title_de": "Geld: Euro/Cent, bezahlen & Wechselgeld (einfach)" },
+            { "id": "gs2-gm-03", "title_de": "Längen: cm/m (einfach umrechnen)" },
+            { "id": "gs2-gm-04", "title_de": "Gewicht: g/kg (vergleichen, messen)" },
+            { "id": "gs2-gm-05", "title_de": "Volumen: l/ml (Becher, Flaschen)" },
+            { "id": "gs2-gm-06", "title_de": "Sachaufgaben mit Größen (1–2 Schritte)" }
+          ]
+        },
+        {
+          "domain": "dhw",
+          "title_de": "Daten & Zufall",
+          "topics": [
+            { "id": "gs2-dhw-01", "title_de": "Strichliste → Tabelle" },
+            { "id": "gs2-dhw-02", "title_de": "Säulendiagramm erstellen und lesen" },
+            { "id": "gs2-dhw-03", "title_de": "Fragen an Daten: vergleichen, entscheiden" },
+            { "id": "gs2-dhw-04", "title_de": "Systematisch zählen (einfache Kombinatorik)" },
+            { "id": "gs2-dhw-05", "title_de": "Wahrscheinlichkeit: eher/unwahrscheinlich (Basis)" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "gs3",
+      "title_de": "Klasse 3",
+      "title_ru": "3 класс",
+      "units": [
+        {
+          "domain": "zo",
+          "title_de": "Zahlen & Rechnen",
+          "topics": [
+            { "id": "gs3-zo-01", "title_de": "Zahlenraum bis 1000: H/Z/E, ordnen, runden (Start)" },
+            { "id": "gs3-zo-02", "title_de": "Addieren/Subtrahieren bis 1000 (halbschriftlich)" },
+            { "id": "gs3-zo-03", "title_de": "Schriftliche Addition und Subtraktion (Aufbau)" },
+            { "id": "gs3-zo-04", "title_de": "Einmaleins festigen: Strategien (Tausch/Verteilen)" },
+            { "id": "gs3-zo-05", "title_de": "Division: Umkehraufgaben, Rest im Alltag" },
+            { "id": "gs3-zo-06", "title_de": "Rechengesetze anwenden (einfach)" },
+            { "id": "gs3-zo-07", "title_de": "Schätzen & Überschlag (bis 1000)" },
+            { "id": "gs3-zo-08", "title_de": "Brüche als Teil eines Ganzen (1/2, 1/3, 1/4)" },
+            { "id": "gs3-zo-09", "title_de": "Sachaufgaben: Tabellen, Skizzen, 2 Schritte" }
+          ]
+        },
+        {
+          "domain": "rf",
+          "title_de": "Geometrie",
+          "topics": [
+            { "id": "gs3-rf-01", "title_de": "Umfang messen und berechnen" },
+            { "id": "gs3-rf-02", "title_de": "Flächeninhalt auf Kästchen (zählen)" },
+            { "id": "gs3-rf-03", "title_de": "Dreiecke und Vierecke: Eigenschaften" },
+            { "id": "gs3-rf-04", "title_de": "Körper: Würfel/Quader, Netze (einfach)" },
+            { "id": "gs3-rf-05", "title_de": "Symmetrie: spiegeln & Muster beschreiben" },
+            { "id": "gs3-rf-06", "title_de": "Zeichnen: Rechtecke/Dreiecke im Raster" }
+          ]
+        },
+        {
+          "domain": "gm",
+          "title_de": "Größen",
+          "topics": [
+            { "id": "gs3-gm-01", "title_de": "Längen umrechnen: mm–cm–m–km" },
+            { "id": "gs3-gm-02", "title_de": "Gewicht umrechnen: g–kg" },
+            { "id": "gs3-gm-03", "title_de": "Zeit: min–h, Kalender, Zeitspannen" },
+            { "id": "gs3-gm-04", "title_de": "Geld: Preise, Mengen, einfache Einkaufsaufgaben" },
+            { "id": "gs3-gm-05", "title_de": "Volumen: l/ml (messen, vergleichen)" },
+            { "id": "gs3-gm-06", "title_de": "Sachaufgaben mit Größen (2 Schritte)" }
+          ]
+        },
+        {
+          "domain": "dhw",
+          "title_de": "Daten & Wahrscheinlichkeit",
+          "topics": [
+            { "id": "gs3-dhw-01", "title_de": "Daten erheben: Umfrage planen, Ergebnisse sichern" },
+            { "id": "gs3-dhw-02", "title_de": "Diagramme vergleichen (Säulen/Bild)" },
+            { "id": "gs3-dhw-03", "title_de": "Systematisches Zählen (Kombinatorik)" },
+            { "id": "gs3-dhw-04", "title_de": "Zufallsexperimente: Münze/Würfel (Begriffe)" },
+            { "id": "gs3-dhw-05", "title_de": "Wahrscheinlichkeit grob schätzen (einfach)" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "gs4",
+      "title_de": "Klasse 4",
+      "title_ru": "4 класс",
+      "units": [
+        {
+          "domain": "zo",
+          "title_de": "Zahlen & Rechnen",
+          "topics": [
+            { "id": "gs4-zo-01", "title_de": "Zahlenraum bis 1.000.000: Stellenwert, runden" },
+            { "id": "gs4-zo-02", "title_de": "Schriftliche Addition und Subtraktion (sicher)" },
+            { "id": "gs4-zo-03", "title_de": "Schriftliche Multiplikation (mehrstellig)" },
+            { "id": "gs4-zo-04", "title_de": "Division durch einstellige Divisoren (mit Rest)" },
+            { "id": "gs4-zo-05", "title_de": "Brüche: vergleichen, darstellen, einfache Aufgaben" },
+            { "id": "gs4-zo-06", "title_de": "Dezimalzahlen über Geld & Messen (Zehntel/Hundertstel)" },
+            { "id": "gs4-zo-07", "title_de": "Rechengesetze & Kettenaufgaben (übersichtlich)" },
+            { "id": "gs4-zo-08", "title_de": "Sachaufgaben: 2–3 Schritte, Modellieren (Skizze/Tabelle)" }
+          ]
+        },
+        {
+          "domain": "rf",
+          "title_de": "Geometrie",
+          "topics": [
+            { "id": "gs4-rf-01", "title_de": "Winkel: recht/spitz/stumpf, messen & zeichnen" },
+            { "id": "gs4-rf-02", "title_de": "Flächeninhalt Rechteck/Quadrat (Formelidee)" },
+            { "id": "gs4-rf-03", "title_de": "Umfang & Fläche in Sachaufgaben" },
+            { "id": "gs4-rf-04", "title_de": "Körper: Netze, Würfel/Quader (vertiefen)" },
+            { "id": "gs4-rf-05", "title_de": "Koordinaten (1. Quadrant, Raster)" },
+            { "id": "gs4-rf-06", "title_de": "Symmetrie & einfache Drehungen" }
+          ]
+        },
+        {
+          "domain": "gm",
+          "title_de": "Größen",
+          "topics": [
+            { "id": "gs4-gm-01", "title_de": "Umrechnen: Länge, Masse, Zeit, Volumen" },
+            { "id": "gs4-gm-02", "title_de": "Maßstab (einfach: Pläne, Kartenideen)" },
+            { "id": "gs4-gm-03", "title_de": "Temperatur (°C) und Diagramme im Alltag" },
+            { "id": "gs4-gm-04", "title_de": "Zeitspannen & Uhrzeit (min-genau, Aufgaben)" },
+            { "id": "gs4-gm-05", "title_de": "Geld: Preisvergleiche, „pro Stück“ (einfach)" },
+            { "id": "gs4-gm-06", "title_de": "Gemischte Sachaufgaben mit Größen (2–3 Schritte)" }
+          ]
+        },
+        {
+          "domain": "dhw",
+          "title_de": "Daten & Wahrscheinlichkeit",
+          "topics": [
+            { "id": "gs4-dhw-01", "title_de": "Tabellen & Diagramme (Säulen/Linien) sicher lesen" },
+            { "id": "gs4-dhw-02", "title_de": "Daten bewerten: passende Darstellung wählen" },
+            { "id": "gs4-dhw-03", "title_de": "Relative Häufigkeit (Idee) bei Experimenten" },
+            { "id": "gs4-dhw-04", "title_de": "Wahrscheinlichkeit: einfache Ereignisse vergleichen" },
+            { "id": "gs4-dhw-05", "title_de": "Kombinatorik: systematische Listen (einfach)" }
+          ]
+        }
+      ]
+    }
+  ]
+}

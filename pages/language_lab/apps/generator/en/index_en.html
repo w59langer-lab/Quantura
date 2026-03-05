@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>English – Sentence Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="../shared/lg_tts.css" />
+    <link rel="stylesheet" href="../shared/lang_switch.css" />
+    <link rel="stylesheet" href="../shared/translation_panel.css" />
+    <script src="../../../../../core/js/core_init.js" defer></script>
+    <script src="../shared/lg_tts.js" defer></script>
+    <script src="../shared/lang_switch.js" defer></script>
+    <script src="../shared/lg_translate.js" defer></script>
+
+    <!-- Central databases for EN -->
+    <script src="../../../../../datenbanken/en/en_verbs/en_verbs.js" defer></script>
+    <script src="../../../../../datenbanken/en/en_pronouns/en_pronouns.js" defer></script>
+    <script src="../../../../../datenbanken/en/en_adjectives/en_adjectives.js" defer></script>
+    <script src="../../../../../datenbanken/en/en_adverbs/en_adverbs.js" defer></script>
+    <script src="../../../../../datenbanken/en/en_preps/en_preps.js" defer></script>
+
+    <script src="en_script.js" defer></script>
+  </head>
+  <body>
+    <div
+      data-partial="header"
+      data-partial-path="../../../../../core/partials/header.html"
+    ></div>
+
+    <!-- =========================================================
+         DE: Sprachumschalter – Buttons
+         EN: Language switcher – buttons
+         RU: Переключатель языков – кнопки
+         ========================================================= -->
+    <div class="page-wrapper">
+      <div class="lang-switch" data-active-lang="en">
+        <button class="lang-switch__btn" data-lang="de">Deutsch</button>
+        <button class="lang-switch__btn" data-lang="en">English</button>
+        <button class="lang-switch__btn" data-lang="fr">Français</button>
+        <button class="lang-switch__btn" data-lang="it">Italiano</button>
+        <button class="lang-switch__btn" data-lang="ru">Русский</button>
+        <button class="lang-switch__btn" data-lang="es">Español</button>
+      </div>
+    </div>
+
+    <main class="page-wrapper">
+      <div class="card">
+        <h1>English – Sentence Generator</h1>
+        <p class="hint-text">
+          Choose word types and sentence type, then click “Generate sentence”.
+          This version uses central datasets from <code>datenbanken/en</code>.
+        </p>
+
+        <section class="language-grid">
+          <div class="language-panel">
+            <div class="language-panel__title">Settings</div>
+            <div class="language-panel__subtitle">
+              Sentence type, tense, word classes.
+            </div>
+
+            <div class="form-row">
+              <label for="enSentenceType">Sentence type</label>
+              <select id="enSentenceType">
+                <option value="aussage">Statement</option>
+                <option value="frage">Question</option>
+                <option value="verneinung">Negation</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="enTense">Tense</label>
+              <select id="enTense">
+                <option value="praesens">Present</option>
+                <option value="perfekt">Present perfect</option>
+                <option value="praeteritum">Simple past</option>
+                <option value="futur1">Future I</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="pronounSelect">Pronoun</label>
+              <select id="pronounSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="verbSelect">Verb</label>
+              <select id="verbSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="adjSelect">Adjective</label>
+              <select id="adjSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="advSelect">Adverb</label>
+              <select id="advSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="prepSelect">Preposition</label>
+              <select id="prepSelect"></select>
+            </div>
+
+            <div class="btn-row">
+              <button id="enGenerateBtn" class="btn btn-primary" type="button">
+                Generate sentence
+              </button>
+              <button id="enClearBtn" class="btn" type="button">
+                Reset
+              </button>
+            </div>
+          </div>
+
+          <div class="language-panel">
+            <div class="language-panel__title">Output</div>
+            <div class="language-panel__subtitle">
+              The generated sentence appears here.
+            </div>
+            <div id="enSentenceOutput" class="sentence-output"></div>
+            <!-- =====================================================
+                 DE: Übersetzung auf Deutsch
+                 EN: Translation into German
+                 RU: Перевод на немецкий
+                 ===================================================== -->
+            <div class="translation-panel">
+              <div class="translation-label">
+                <!-- DE: Deutsch -->Deutsch
+                <!-- EN: German -->
+                <!-- RU: Немецкий -->
+              </div>
+              <div class="translation-box" id="translationDeBox">–</div>
+              <div class="translation-actions">
+                <button type="button" class="translation-btn" id="translationSpeakDeBtn">
+                  <!-- DE: vorlesen / EN: speak / RU: озвучить -->
+                  ▶
+                </button>
+              </div>
+            </div>
+            <p id="enHintLine" class="hint-text">
+              Note: No sentence generated yet.
+            </p>
+            <!-- =====================================================
+                 DE: TTS-Steuerung
+                 EN: TTS controls
+                 RU: Управление озвучкой
+                 ===================================================== -->
+            <div class="lg-tts-panel">
+              <div class="lg-tts-row">
+                <span class="lg-tts-label">
+                  <!-- DE: Geschwindigkeit / EN: Speed / RU: Скорость -->
+                  Speed
+                </span>
+                <input
+                  id="ttsRateSlider"
+                  class="lg-tts-slider"
+                  type="range"
+                  min="0.5"
+                  max="1.5"
+                  step="0.1"
+                  value="1.0"
+                />
+              </div>
+
+              <div class="lg-tts-row">
+                <button type="button" class="lg-tts-btn" id="ttsSlowBtn">
+                  <!-- DE: langsam / EN: slow / RU: медленно -->
+                  slow
+                </button>
+                <button type="button" class="lg-tts-btn primary" id="ttsNormalBtn">
+                  <!-- DE: normal / EN: normal / RU: нормально -->
+                  normal
+                </button>
+                <button type="button" class="lg-tts-btn" id="ttsFastBtn">
+                  <!-- DE: schnell / EN: fast / RU: быстро -->
+                  fast
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsSpeakBtn">
+                  <!-- DE: abspielen / EN: play / RU: произнести -->
+                  ▶
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsStopBtn">
+                  <!-- DE: stoppen / EN: stop / RU: стоп -->
+                  ■
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div
+      data-partial="footer"
+      data-partial-path="../../../../../core/partials/footer.html"
+    ></div>
+  </body>
+</html>

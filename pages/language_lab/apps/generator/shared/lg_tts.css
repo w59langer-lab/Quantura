@@ -1,0 +1,80 @@
+/* =========================================================
+   DE: LG TTS Panel Styles
+   EN: LG TTS panel styles
+   RU: Стили панели LG TTS
+   ========================================================= */
+
+.lg-tts-panel {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.lg-tts-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.lg-tts-row:first-child {
+  margin-top: 0;
+}
+
+.lg-tts-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  min-width: 120px;
+}
+
+.lg-tts-slider {
+  flex: 1 1 160px;
+  min-width: 140px;
+  accent-color: var(--accent);
+  background: var(--bg-page);
+  border-radius: 999px;
+  height: 6px;
+}
+
+.lg-tts-btn {
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-page);
+  color: var(--text-main);
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border 0.15s ease, color 0.15s ease;
+}
+
+.lg-tts-btn.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.lg-tts-btn.ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: transparent;
+}
+
+.lg-tts-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.lg-tts-btn.primary:hover {
+  background: var(--accent-strong);
+  color: #ffffff;
+}
+
+.lg-tts-btn.ghost:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+  color: var(--accent-strong);
+}

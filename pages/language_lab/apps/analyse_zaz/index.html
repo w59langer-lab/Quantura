@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>ZAZ – Analyse aus Sprachführer-DB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="../../../../core/js/core_init.js" defer></script>
+    <script src="../../../../datenbanken/de/de_pronouns/de_pronouns.js" defer></script>
+    <script src="../../../../datenbanken/de/de_verbs_main/de_verbs_main.js" defer></script>
+    <script src="../../../../datenbanken/de/de_verbs_aux/de_verbs_aux.js" defer></script>
+    <script src="../../../../datenbanken/de/de_verbs_modals/de_verbs_modals.js" defer></script>
+    <script src="../../../../datenbanken/de/de_adverbs/de_adverbs.js" defer></script>
+    <script src="../../../../datenbanken/de/de_preps/de_preps.js" defer></script>
+    <script src="analyzer_de_core.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+    <main class="page-wrapper">
+      <div class="card">
+        <h1>ZAZ / Satzanalyse – aus Sprachführer-DB</h1>
+        <p class="hint-text">
+          Lädt alle Sprachführer-Dateien aus dem Level-Portal, filtert Kurzphrasen und nutzt die bestehende ZAZ-Analyse.
+        </p>
+
+        <div class="sf-own">
+          <div class="sf-own__title">Eigenen Satz analysieren (optional)</div>
+          <div class="sf-own__row">
+            <input
+              id="sfOwnInput"
+              type="text"
+              placeholder="z.B. Ich bin müde…"
+              autocomplete="off"
+            />
+          </div>
+          <div class="sf-own__actions">
+            <button id="sfOwnAnalyze" type="button" class="btn">Analysieren</button>
+            <button id="sfOwnReset" type="button" class="btn btn-ghost">Zurücksetzen</button>
+          </div>
+        </div>
+
+        <div class="sf-toolbar">
+          <div>
+            <label for="sfFileFilter">Thema / Datei</label>
+            <select id="sfFileFilter"></select>
+          </div>
+          <div>
+            <label for="sfSearch">Suche</label>
+            <input id="sfSearch" type="search" placeholder="Suchen …" />
+          </div>
+          <div class="sf-inline">
+            <input type="checkbox" id="sfMinWords" checked />
+            <label for="sfMinWords">&ge; 2 Wörter</label>
+          </div>
+          <div>
+            <label for="sfLang">Satzsprache</label>
+            <select id="sfLang">
+              <option value="de">DE</option>
+              <option value="en">EN</option>
+              <option value="it">IT</option>
+              <option value="fr">FR</option>
+              <option value="es">ES</option>
+              <option value="ru">RU</option>
+              <option value="tr">TR</option>
+            </select>
+          </div>
+          <div class="sf-buttons">
+            <button id="sfAnalyzeAll" type="button" class="btn">Alles analysieren</button>
+            <button id="sfExportJson" type="button" class="btn btn-ghost">Export JSON</button>
+          </div>
+        </div>
+        <div class="sf-status" id="sfStatus">
+          Lade Daten …
+          <button id="sfStop" type="button" class="btn btn-ghost btn-xs">■ Stop</button>
+        </div>
+
+        <div class="sf-split">
+          <section class="sf-panel sf-left">
+            <h3>Sätze</h3>
+            <div id="sfList" class="sf-list">
+              <p class="sf-empty">Lade …</p>
+            </div>
+          </section>
+
+          <div class="sf-split-handle" title="Panelgröße anpassen"></div>
+
+          <section class="sf-panel sf-detail sf-right">
+            <h3>Analyse</h3>
+            <div class="sf-detail__meta" id="sfDetailMeta"></div>
+            <div class="sf-summary" id="sfSummary"></div>
+            <div class="sf-auxinfo" id="sfAuxInfo"></div>
+            <pre id="sfDetail"></pre>
+
+            <div class="sf-word-details">
+              <h4>Wörter</h4>
+              <div id="sfWordChips" class="sf-chip-row"></div>
+              <div id="sfWordCard" class="sf-word-card"></div>
+            </div>
+
+            <div class="sf-glossar">
+              <details>
+                <summary>ⓘ Glossar</summary>
+                <ul>
+                  <li><strong>Wort (Token):</strong> einzelnes Wort oder Zeichen.</li>
+                  <li><strong>Wortart:</strong> grammatische Kategorie (Verb, Nomen, Artikel …).</li>
+                  <li><strong>Grundform/Lemma:</strong> Basisform eines Wortes.</li>
+                  <li><strong>Merkmale:</strong> Flexion wie Person, Numerus, Kasus, Tempus.</li>
+                  <li><strong>Satzfunktion:</strong> Rolle im Satz (Subjekt, Objekt, Prädikat …).</li>
+                  <li><strong>Prädikat:</strong> finites Verb oder Verbgruppe.</li>
+                  <li><strong>Objekt:</strong> Ergänzung (Akkusativ/Dativ/Genitiv).</li>
+                  <li><strong>Prädikativ:</strong> Gleichsetzungs-/Benennungs-Teil nach Kopula (sein/werden/bleiben/heißen).</li>
+                  <li><strong>Adverbiale:</strong> Umstandsangabe (Zeit/Ort/Grund/Art/Grad).</li>
+                  <li><strong>Satzart:</strong> Aussage, Frage, Imperativ oder Ellipse.</li>
+                  <li><strong>Hauptsatz:</strong> selbstständiger Satzteil.</li>
+                  <li><strong>Ellipse:</strong> unvollständiger Satz ohne finites Verb.</li>
+                </ul>
+              </details>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+  </body>
+</html>

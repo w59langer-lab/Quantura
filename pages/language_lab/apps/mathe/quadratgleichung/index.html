@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1224">
+  <title>Quadratgleichung – Rechner & Training</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <style>
+    :root {
+      --bg: radial-gradient(circle at 20% 20%, #0f172a 0%, #0b1224 45%, #060914 90%);
+      --surface: rgba(15, 23, 42, 0.92);
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #f8fafc;
+      --muted: #9ca3af;
+      --accent: #67e8f9;
+      --accent-strong: #22d3ee;
+      --warn: #fbbf24;
+      --danger: #fb7185;
+      --ok: #34d399;
+      --radius: 14px;
+      --shadow: 0 14px 40px rgba(0,0,0,0.5);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 0 12px 40px;
+    }
+    header { max-width: 1100px; margin: 0 auto; padding: 18px 8px 10px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .logo { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, #0ea5e9, #67e8f9); color: #0b1224; display: grid; place-items: center; font-weight: 800; box-shadow: var(--shadow); }
+    h1 { margin: 0; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); margin-top: 4px; }
+    main { max-width: 1100px; margin: 0 auto; }
+    .tabs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin: 12px 0; }
+    .tab-btn { padding: 14px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); color: var(--text); font-weight: 700; cursor: pointer; box-shadow: var(--shadow); text-align: left; }
+    .tab-btn.active { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(103, 232, 249, 0.25); }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px; margin-bottom: 12px; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    input[type="number"], input[type="text"] { width: 100%; padding: 12px 10px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 12px; padding: 12px 14px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: var(--text); font-weight: 700; cursor: pointer; }
+    .btn.primary { border-color: var(--accent); color: var(--accent-strong); }
+    .badge { display: inline-flex; gap: 6px; align-items: center; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); background: rgba(255,255,255,0.03); }
+    .result { font-size: 1.05rem; line-height: 1.5; }
+    .muted { color: var(--muted); }
+    .status-ok { color: var(--ok); font-weight: 700; }
+    .status-warn { color: var(--warn); font-weight: 700; }
+    .status-danger { color: var(--danger); font-weight: 700; }
+    .training-row { border: 1px solid var(--border); border-radius: 12px; padding: 10px; background: rgba(255,255,255,0.02); }
+    .row-head { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+    .row-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-top: 8px; }
+    .small { font-size: 0.9rem; }
+    .sticky { position: sticky; bottom: 0; background: linear-gradient(180deg, transparent, rgba(6, 9, 20, 0.9)); padding: 10px 12px; display: flex; justify-content: flex-end; }
+    @media (max-width: 640px) { .tabs { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">x²</div>
+    <div>
+      <h1>Quadratgleichung</h1>
+      <div class="subtitle">Rechner & Training · offline nutzbar</div>
+    </div>
+    <div class="badge" id="save-state">Auto-Save aktiv</div>
+  </header>
+
+  <main>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="rechner">Rechner</button>
+      <button class="tab-btn" data-tab="training">Training (10 Aufgaben)</button>
+    </div>
+
+    <section class="card tab" id="tab-rechner">
+      <div class="grid">
+        <div>
+          <label for="a">a</label>
+          <input type="number" id="a" step="any" placeholder="z.B. 1">
+        </div>
+        <div>
+          <label for="b">b</label>
+          <input type="number" id="b" step="any" placeholder="z.B. -3">
+        </div>
+        <div>
+          <label for="c">c</label>
+          <input type="number" id="c" step="any" placeholder="z.B. 2">
+        </div>
+      </div>
+      <div style="margin:12px 0; display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="btn primary" id="calc">Berechnen</button>
+        <button class="btn" id="show-steps">Schritte anzeigen</button>
+        <div class="badge" id="disc-badge">Δ noch nicht berechnet</div>
+      </div>
+      <div class="result" id="result"></div>
+      <div class="card" style="margin-top:10px;" id="steps" hidden>
+        <div class="muted small">Rechnungsschritte</div>
+        <div id="steps-content"></div>
+      </div>
+    </section>
+
+    <section class="card tab" id="tab-training" style="display:none;">
+      <div class="row-head">
+        <div>
+          <h2 style="margin:0;">Training</h2>
+          <div class="muted small">10 Aufgaben, sofortiges Feedback</div>
+        </div>
+        <div class="badge" id="training-score">0/0 korrekt</div>
+      </div>
+      <div style="margin:10px 0; display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn primary" id="regen">Neue 10 Aufgaben</button>
+        <button class="btn" id="reset-training">Antworten löschen</button>
+      </div>
+      <div id="training-list"></div>
+    </section>
+  </main>
+
+  <div class="sticky">
+    <div class="muted small">Offline & lokal gespeichert</div>
+  </div>
+
+  <script>
+    const stateKey = 'quadratgleichung-state-v1';
+    const defaultState = { a: '', b: '', c: '', result: '', steps: '', disc: null, training: [] };
+    const tabs = document.querySelectorAll('.tab-btn');
+    const tabViews = { rechner: document.getElementById('tab-rechner'), training: document.getElementById('tab-training') };
+    const inputs = { a: document.getElementById('a'), b: document.getElementById('b'), c: document.getElementById('c') };
+    const resultEl = document.getElementById('result');
+    const stepsEl = document.getElementById('steps');
+    const stepsContent = document.getElementById('steps-content');
+    const discBadge = document.getElementById('disc-badge');
+    const trainingList = document.getElementById('training-list');
+    const trainingScore = document.getElementById('training-score');
+
+    let state = loadState();
+    ensureTrainingState();
+    hydrateUI();
+    bindEvents();
+    renderTraining();
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+    }
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(stateKey);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          return { ...defaultState, ...parsed };
+        }
+      } catch (e) { console.error('State load', e); }
+      return { ...defaultState, training: generateTasks() };
+    }
+
+    function ensureTrainingState() {
+      if (!Array.isArray(state.training) || !state.training.length) {
+        state.training = generateTasks();
+        saveState();
+      }
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(stateKey, JSON.stringify(state));
+        document.getElementById('save-state').textContent = 'Gespeichert ' + new Date().toLocaleTimeString();
+      } catch (e) {
+        console.error('Save failed', e);
+        document.getElementById('save-state').textContent = 'Speichern fehlgeschlagen';
+      }
+    }
+
+    function bindEvents() {
+      tabs.forEach(btn => btn.addEventListener('click', () => switchTab(btn.dataset.tab)));
+      document.getElementById('calc').addEventListener('click', calculate);
+      document.getElementById('show-steps').addEventListener('click', () => stepsEl.hidden = !stepsEl.hidden);
+      Object.entries(inputs).forEach(([key, el]) => {
+        el.value = state[key] ?? '';
+        el.addEventListener('input', () => { state[key] = el.value; saveState(); });
+      });
+      document.getElementById('regen').addEventListener('click', () => { state.training = generateTasks(); saveState(); renderTraining(); });
+      document.getElementById('reset-training').addEventListener('click', () => { state.training.forEach(t => { t.user = ['', '']; t.correct = null; }); saveState(); renderTraining(); });
+    }
+
+    function switchTab(name) {
+      tabs.forEach(t => t.classList.remove('active'));
+      document.querySelector(`.tab-btn[data-tab="${name}"]`).classList.add('active');
+      Object.entries(tabViews).forEach(([key, el]) => el.style.display = key === name ? 'block' : 'none');
+    }
+
+    function calculate() {
+      const a = parseFloat(inputs.a.value);
+      const b = parseFloat(inputs.b.value);
+      const c = parseFloat(inputs.c.value);
+      if (isNaN(a) || isNaN(b) || isNaN(c) || a === 0) {
+        resultEl.innerHTML = '<span class="status-warn">Bitte gültige Werte eingeben (a ≠ 0).</span>';
+        return;
+      }
+      const disc = b*b - 4*a*c;
+      const hasReal = disc >= 0;
+      let rootsText = '';
+      if (disc === 0) {
+        const x = (-b) / (2*a);
+        rootsText = `Doppelwurzel: x = ${formatNum(x)}`;
+      } else if (disc > 0) {
+        const sqrtD = Math.sqrt(disc);
+        const x1 = (-b + sqrtD) / (2*a);
+        const x2 = (-b - sqrtD) / (2*a);
+        rootsText = `Zwei reelle Lösungen: x₁ = ${formatNum(x1)}, x₂ = ${formatNum(x2)}`;
+      } else {
+        const sqrtD = Math.sqrt(-disc);
+        const real = (-b) / (2*a);
+        const imag = sqrtD / (2*a);
+        rootsText = `Komplex: x = ${formatNum(real)} ± ${formatNum(imag)} i`;
+      }
+      discBadge.textContent = `Δ = ${formatNum(disc)}`;
+      resultEl.innerHTML = `${rootsText}<br><span class="muted">a=${a}, b=${b}, c=${c}</span>`;
+      stepsContent.innerHTML = buildSteps(a, b, c, disc);
+      stepsEl.hidden = false;
+      state = { ...state, a: String(a), b: String(b), c: String(c), disc, result: rootsText, steps: stepsContent.innerHTML };
+      saveState();
+    }
+
+    function buildSteps(a, b, c, disc) {
+      const step1 = `Δ = b² - 4ac = ${formatNum(b)}² - 4·${formatNum(a)}·${formatNum(c)}`;
+      const step2 = `Δ = ${formatNum(disc)}`;
+      let step3 = '';
+      if (disc >= 0) {
+        const sqrtD = Math.sqrt(disc);
+        step3 = `x = (-b ± √Δ) / (2a) = (${formatNum(-b)} ± ${formatNum(sqrtD)}) / ${formatNum(2*a)}`;
+      } else {
+        const sqrtD = Math.sqrt(-disc);
+        step3 = `Δ < 0 → komplex, √Δ = ${formatNum(sqrtD)}·i, x = (-b ± √Δ) / (2a)`;
+      }
+      return `${step1}<br>${step2}<br>${step3}`;
+    }
+
+    function hydrateUI() {
+      if (state.a) inputs.a.value = state.a;
+      if (state.b) inputs.b.value = state.b;
+      if (state.c) inputs.c.value = state.c;
+      if (state.result) resultEl.innerHTML = state.result;
+      if (state.steps) { stepsContent.innerHTML = state.steps; stepsEl.hidden = false; }
+      if (state.disc !== null && state.disc !== undefined) discBadge.textContent = `Δ = ${formatNum(state.disc)}`;
+    }
+
+    function generateTasks() {
+      const tasks = [];
+      for (let i = 0; i < 10; i++) {
+        const r1 = randInt(-4, 4, 0);
+        const r2 = randInt(-4, 4, 0);
+        const a = Math.random() < 0.4 ? 1 : randInt(1, 3, 0);
+        const b = -a * (r1 + r2);
+        const c = a * r1 * r2;
+        tasks.push({ a, b, c, solutions: [r1, r2].sort((x,y)=>x-y), user: ['', ''], correct: null });
+      }
+      return tasks;
+    }
+
+    function randInt(min, max, excludeZero) {
+      let n;
+      do { n = Math.floor(Math.random() * (max - min + 1)) + min; } while (excludeZero && n === 0);
+      return n;
+    }
+
+    function renderTraining() {
+      trainingList.innerHTML = '';
+      state.training.forEach((task, idx) => {
+        const row = document.createElement('div');
+        row.className = 'training-row';
+        const eq = `${task.a}x² ${fmtSign(task.b)} ${Math.abs(task.b)}x ${fmtSign(task.c)} ${Math.abs(task.c)} = 0`;
+        const head = document.createElement('div');
+        head.className = 'row-head';
+        const title = document.createElement('div');
+        title.innerHTML = `<strong>Aufgabe ${idx+1}</strong>: ${eq}`;
+        const status = document.createElement('div');
+        status.className = 'small';
+        setStatus(status, task);
+        head.append(title, status);
+
+        const inputsWrap = document.createElement('div');
+        inputsWrap.className = 'row-inputs';
+        ['x1','x2'].forEach((label, pos) => {
+          const input = document.createElement('input');
+          input.type = 'number';
+          input.step = 'any';
+          input.placeholder = label;
+          input.value = task.user[pos] ?? '';
+          input.addEventListener('input', () => {
+            task.user[pos] = input.value;
+            checkTask(task, status);
+            saveState();
+            updateScore();
+          });
+          inputsWrap.appendChild(input);
+        });
+
+        row.append(head, inputsWrap);
+        trainingList.appendChild(row);
+      });
+      updateScore();
+    }
+
+    function setStatus(el, task) {
+      if (task.correct === true) {
+        el.innerHTML = '<span class="status-ok">✔ korrekt</span>';
+      } else if (task.correct === false) {
+        el.innerHTML = '<span class="status-danger">✖ falsch</span>';
+      } else {
+        el.innerHTML = '<span class="muted">offen</span>';
+      }
+    }
+
+    function checkTask(task, statusEl) {
+      const u1 = parseFloat(task.user[0]);
+      const u2 = parseFloat(task.user[1]);
+      if (isNaN(u1) || isNaN(u2)) { task.correct = null; setStatus(statusEl, task); return; }
+      const answers = [u1, u2].sort((a,b)=>a-b);
+      const target = task.solutions;
+      const correct = Math.abs(answers[0]-target[0]) < 1e-6 && Math.abs(answers[1]-target[1]) < 1e-6;
+      task.correct = correct;
+      setStatus(statusEl, task);
+    }
+
+    function updateScore() {
+      const total = state.training.length;
+      const correct = state.training.filter(t => t.correct === true).length;
+      trainingScore.textContent = `${correct}/${total} korrekt`;
+    }
+
+    function fmtSign(n) { return n >= 0 ? '+ ' : '- '; }
+    function formatNum(n) { return Number.isFinite(n) ? Number(n).toFixed(4).replace(/\.0+$/, '').replace(/\.([0-9]*?)0+$/, '.$1').replace(/\.$/, '') : n; }
+  </script>
+</body>
+</html>

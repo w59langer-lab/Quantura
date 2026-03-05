@@ -1,0 +1,43 @@
+/* =========================================================
+   DE: Sprachumschalter – Styles
+   EN: Language switcher – styles
+   RU: Переключатель языков – стили
+   ========================================================= */
+
+.lang-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 20px;
+}
+
+.lang-switch__btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: linear-gradient(135deg, #1b1b1f, #141418);
+  color: #f5f5f7;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.lang-switch__btn:hover {
+  border-color: #4da3ff;
+  box-shadow: 0 0 0 2px rgba(77, 163, 255, 0.25);
+}
+
+.lang-switch__btn:active {
+  transform: translateY(1px);
+}
+
+.lang-switch__btn.is-active {
+  border-color: #6be4b7;
+  box-shadow: 0 0 0 2px rgba(107, 228, 183, 0.25);
+}
+
+.lang-switch__btn:focus-visible {
+  outline: 2px solid #4da3ff;
+  outline-offset: 2px;
+}

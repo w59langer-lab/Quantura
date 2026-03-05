@@ -1,0 +1,258 @@
+{
+  "id": "telefon_internet",
+  "title": "Telefon & Internet",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "buy_sim",
+      "mnemoHint": "SIM",
+      "de": "Ich möchte eine SIM-Karte kaufen.",
+      "en": "I would like to buy a SIM card.",
+      "it": "Vorrei comprare una scheda SIM.",
+      "fr": "Je voudrais acheter une carte SIM.",
+      "es": "Quisiera comprar una tarjeta SIM.",
+      "ru": "Я хочу купить SIM-карту.",
+      "tr": "Bir SIM kart almak istiyorum.",
+      "pronIpa": {
+        "tr": "Bir SIM kart almak istiyorum."
+      },
+      "pronRu": {
+        "tr": "бир сим карт алмак истийорум."
+      }
+    },
+    {
+      "level": 0,
+      "mnemoKey": "data_plan",
+      "mnemoHint": "DATA",
+      "de": "Ich brauche einen Datentarif mit 5 GB.",
+      "en": "I need a data plan with 5 GB.",
+      "it": "Ho bisogno di un piano dati da 5 GB.",
+      "fr": "Il me faut un forfait data de 5 Go.",
+      "es": "Necesito un plan de datos de 5 GB.",
+      "ru": "Мне нужен тариф с 5 ГБ интернета.",
+      "tr": "5 GB'lık veri paketi istiyorum.",
+      "pronIpa": {
+        "tr": "5 GB'lɯk veri paketi istiyorum."
+      },
+      "pronRu": {
+        "tr": "5 гб'лык вери пакети истийорум."
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "top_up",
+      "mnemoHint": "TOP",
+      "de": "Wie kann ich Guthaben aufladen?",
+      "en": "How can I top up credit?",
+      "it": "Come posso ricaricare il credito?",
+      "fr": "Comment recharger du crédit ?",
+      "es": "¿Cómo recargo saldo?",
+      "ru": "Как пополнить баланс?",
+      "tr": "Bakiyeyi nasıl yükleyebilirim?",
+      "pronIpa": {
+        "tr": "Bakiyeyi nasɯl yykleyebilirim?"
+      },
+      "pronRu": {
+        "tr": "бакийейи насыл йюклейебилирим?"
+      }
+    },
+    {
+      "level": 1,
+      "mnemoKey": "wifi_password",
+      "mnemoHint": "PWD",
+      "de": "Wie lautet das WLAN-Passwort?",
+      "en": "What is the Wi‑Fi password?",
+      "it": "Qual è la password del Wi‑Fi?",
+      "fr": "Quel est le mot de passe Wi‑Fi ?",
+      "es": "¿Cuál es la contraseña del Wi‑Fi?",
+      "ru": "Какой пароль от Wi‑Fi?",
+      "tr": "Wi‑Fi şifresi nedir?",
+      "pronIpa": {
+        "tr": "Wi‑Fi ʃifresi nedir?"
+      },
+      "pronRu": {
+        "tr": "Wи‑фи шифреси недир?"
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "wifi_down",
+      "mnemoHint": "X",
+      "de": "Das WLAN funktioniert nicht.",
+      "en": "The Wi‑Fi is not working.",
+      "it": "Il Wi‑Fi non funziona.",
+      "fr": "Le Wi‑Fi ne fonctionne pas.",
+      "es": "El Wi‑Fi no funciona.",
+      "ru": "Wi‑Fi не работает.",
+      "tr": "Wi‑Fi çalışmıyor.",
+      "pronIpa": {
+        "tr": "Wi‑Fi t͡ʃalɯʃmɯyor."
+      },
+      "pronRu": {
+        "tr": "Wи‑фи чалышмыйор."
+      }
+    },
+    {
+      "level": 2,
+      "mnemoKey": "restart_router",
+      "mnemoHint": "RST",
+      "de": "Können Sie den Router neu starten?",
+      "en": "Can you restart the router?",
+      "it": "Può riavviare il router?",
+      "fr": "Pouvez-vous redémarrer le routeur ?",
+      "es": "¿Puede reiniciar el router?",
+      "ru": "Можете перезапустить роутер?",
+      "tr": "Yönlendiriciyi yeniden başlatabilir misiniz?",
+      "pronIpa": {
+        "tr": "Yønlendirid͡ʒiyi yeniden baʃlatabilir misiniz?"
+      },
+      "pronRu": {
+        "tr": "йёнлендириджийи йениден башлатабилир мисиниз?"
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "no_signal",
+      "mnemoHint": "0%",
+      "de": "Ich habe kein Netz.",
+      "en": "I have no signal.",
+      "it": "Non ho campo.",
+      "fr": "Je n'ai pas de réseau.",
+      "es": "No tengo cobertura.",
+      "ru": "У меня нет сети.",
+      "tr": "Çekmiyor.",
+      "pronIpa": {
+        "tr": "t͡ʃekmiyor."
+      },
+      "pronRu": {
+        "tr": "чекмийор."
+      }
+    },
+    {
+      "level": 3,
+      "mnemoKey": "data_not_working",
+      "mnemoHint": "4G?",
+      "de": "Mobile Daten funktionieren nicht.",
+      "en": "Mobile data is not working.",
+      "it": "I dati mobili non funzionano.",
+      "fr": "Les données mobiles ne fonctionnent pas.",
+      "es": "Los datos móviles no funcionan.",
+      "ru": "Мобильный интернет не работает.",
+      "tr": "Mobil veri çalışmıyor.",
+      "pronIpa": {
+        "tr": "Mobil veri t͡ʃalɯʃmɯyor."
+      },
+      "pronRu": {
+        "tr": "мобил вери чалышмыйор."
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "call_international",
+      "mnemoHint": "+",
+      "de": "Wie rufe ich international an?",
+      "en": "How do I make an international call?",
+      "it": "Come faccio una chiamata internazionale?",
+      "fr": "Comment passer un appel international ?",
+      "es": "¿Cómo hago una llamada internacional?",
+      "ru": "Как сделать международный звонок?",
+      "tr": "Uluslararası aramayı nasıl yaparım?",
+      "pronIpa": {
+        "tr": "Uluslararasɯ aramayɯ nasɯl yaparɯm?"
+      },
+      "pronRu": {
+        "tr": "улусларарасы арамайы насыл йапарым?"
+      }
+    },
+    {
+      "level": 4,
+      "mnemoKey": "hotspot",
+      "mnemoHint": "HOT",
+      "de": "Kann ich einen Hotspot teilen?",
+      "en": "Can I share a hotspot?",
+      "it": "Posso condividere un hotspot?",
+      "fr": "Puis-je partager un hotspot ?",
+      "es": "¿Puedo compartir un hotspot?",
+      "ru": "Могу ли я поделиться точкой доступа?",
+      "tr": "Hotspot paylaşabilir miyim?",
+      "pronIpa": {
+        "tr": "Hotspot paylaʃabilir miyim?"
+      },
+      "pronRu": {
+        "tr": "хотспот пайлашабилир мийим?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "esim",
+      "mnemoHint": "ESIM",
+      "de": "Unterstützen Sie eSIM?",
+      "en": "Do you support eSIM?",
+      "it": "Supportate eSIM?",
+      "fr": "Proposez-vous l'eSIM ?",
+      "es": "¿Ofrecen eSIM?",
+      "ru": "Поддерживается ли eSIM?",
+      "tr": "eSIM destekliyor musunuz?",
+      "pronIpa": {
+        "tr": "eSIM destekliyor musunuz?"
+      },
+      "pronRu": {
+        "tr": "есим дестеклийор мусунуз?"
+      }
+    },
+    {
+      "level": 5,
+      "mnemoKey": "support_contact",
+      "mnemoHint": "HELP",
+      "de": "Haben Sie eine Support-Hotline?",
+      "en": "Do you have a support hotline?",
+      "it": "Avete un numero di assistenza?",
+      "fr": "Avez-vous une hotline d'assistance ?",
+      "es": "¿Tienen una línea de soporte?",
+      "ru": "Есть ли у вас линия поддержки?",
+      "tr": "Destek hattınız var mı?",
+      "pronIpa": {
+        "tr": "Destek hattɯnɯz var mɯ?"
+      },
+      "pronRu": {
+        "tr": "дестек хаттыныз вар мы?"
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "slow_internet",
+      "mnemoHint": "SLOW",
+      "de": "Das Internet ist sehr langsam.",
+      "en": "The internet is very slow.",
+      "it": "Internet è molto lento.",
+      "fr": "Internet est très lent.",
+      "es": "Internet es muy lento.",
+      "ru": "Интернет очень медленный.",
+      "tr": "İnternet çok yavaş.",
+      "pronIpa": {
+        "tr": "İnternet t͡ʃok yavaʃ."
+      },
+      "pronRu": {
+        "tr": "İнтернет чок йаваш."
+      }
+    },
+    {
+      "level": 6,
+      "mnemoKey": "voicemail",
+      "mnemoHint": "VM",
+      "de": "Wie richte ich die Mailbox ein?",
+      "en": "How do I set up voicemail?",
+      "it": "Come imposto la segreteria telefonica?",
+      "fr": "Comment configurer la messagerie vocale ?",
+      "es": "¿Cómo configuro el buzón de voz?",
+      "ru": "Как настроить голосовую почту?",
+      "tr": "Sesli mesajı nasıl ayarlarım?",
+      "pronIpa": {
+        "tr": "Sesli mesaʒɯ nasɯl ayarlarɯm?"
+      },
+      "pronRu": {
+        "tr": "сесли месажы насыл айарларым?"
+      }
+    }
+  ]
+}

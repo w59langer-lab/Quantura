@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+  EN: English Cards Trainer – EN/DE (+optional RU) with 7 Leitner boxes.
+  DE: English Cards Trainer – EN/DE (+optional RU) mit 7 Leitner-Fächern.
+  RU: Тренажёр карточек EN/DE (+необязательный RU) с 7 коробками Лейтнера.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>English Cards Trainer – EN / DE</title>
+
+    <!-- Styles for this page (same folder card_en) -->
+    <link rel="stylesheet" href="style_card_en.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         Top bar / Kopfbereich / Шапка
+         ===================================================== -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <h1>English Cards Trainer</h1>
+        <p class="subtitle">
+          EN ⇄ DE – Flashcards with audio and 7 Leitner boxes<br />
+          EN ⇄ DE – Lernkarten mit Audio und 7 Leitner-Fächern<br />
+          EN ⇄ DE – Карточки с озвучкой и 7 коробками Лейтнера
+        </p>
+      </div>
+
+      <div class="topbar-right">
+        <!-- Theme toggle -->
+        <button id="themeToggleBtn" class="btn-secondary small">
+          🌞 Light / 🌙 Dark
+        </button>
+
+        <!-- Back to main menu (root index.html) -->
+        <a href="../index.html" class="btn-mainmenu">
+          ← Back to Main Menu / Zurück zum Hauptmenü
+        </a>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         Main layout / Hauptlayout / Основной макет
+         ===================================================== -->
+    <main class="page">
+      <!-- LEFT: list + trainer -->
+      <section class="cards-panel">
+        <div class="panel-header">
+          <h2>Your cards / Deine Karten / Твои карточки</h2>
+          <span id="cardCount" class="badge">0</span>
+        </div>
+
+        <div class="mode-row">
+          <button id="openTrainerBtn" class="btn-trainer">
+            Start trainer (Leitner 1–7)
+          </button>
+
+          <span class="mode-label"> Mode / Modus / Режим: </span>
+          <label class="mode-option">
+            <input
+              type="radio"
+              name="flashMode"
+              value="en-de"
+              id="modeEnDe"
+              checked
+            />
+            EN → DE
+          </label>
+          <label class="mode-option">
+            <input type="radio" name="flashMode" value="de-en" id="modeDeEn" />
+            DE → EN
+          </label>
+        </div>
+
+        <!-- Search -->
+        <div class="search-row">
+          <label for="searchInput">Search / Suche / Поиск</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Text in EN / DE / RU eingeben..."
+          />
+        </div>
+
+        <!-- List of cards (overview of DB) -->
+        <div id="cardList" class="card-list"></div>
+      </section>
+
+      <!-- RIGHT: form + export -->
+      <aside class="form-panel">
+        <h2>New card / Neue Karte / Новая карточка</h2>
+
+        <p class="hint">
+          EN: New cards start in Box 1. Trainer moves active cards between boxes
+          1–7 (Leitner). If you know a card in Box 7, it disappears from
+          training but remains in the archive and Excel export.<br />
+          DE: Neue Karten beginnen in Fach 1. Der Trainer verschiebt aktive
+          Karten zwischen den Fächern 1–7 (Leitner). Wenn du eine Karte in Fach
+          7 kannst, verschwindet sie aus dem Training, bleibt aber im Archiv und
+          im Excel-Export.<br />
+          RU: Новые карточки начинают в коробке 1. Тренажёр двигает активные
+          карточки между коробками 1–7 (Лейтнер). Если ты знаешь карточку в
+          коробке 7, она исчезает из тренажёра, но остаётся в архиве и в
+          Excel-экспорте.
+        </p>
+
+        <form id="cardForm">
+          <label for="enInput"> English (EN) – Englisch – Английский </label>
+          <textarea
+            id="enInput"
+            rows="2"
+            placeholder="I am learning English."
+          ></textarea>
+
+          <label for="deInput"> German (DE) – Deutsch – Немецкий </label>
+          <textarea
+            id="deInput"
+            rows="2"
+            placeholder="Ich lerne Englisch."
+          ></textarea>
+
+          <label for="ruInput">
+            Russian (RU) – Russisch – Русский (optional / optional /
+            необязательно)
+          </label>
+          <textarea
+            id="ruInput"
+            rows="2"
+            placeholder="(You can leave this empty / Kann leer bleiben / Можно оставить пустым)"
+          ></textarea>
+
+          <button class="btn-primary" type="submit">
+            Save card / Karte speichern / Сохранить карточку
+          </button>
+
+          <button class="btn-danger" type="button" id="clearAllBtn">
+            Delete all cards / Alle Karten löschen / Удалить все карточки
+          </button>
+        </form>
+
+        <!-- Export / Import -->
+        <section class="export-panel">
+          <h3>
+            Backup / Export / Import<br />
+            Резервная копия / Экспорт / Импорт
+          </h3>
+
+          <p class="hint">
+            EN: Export archive as JSON or TSV (for Excel). Copy text into a file
+            or directly into Excel.<br />
+            DE: Exportiere das Archiv als JSON oder TSV (für Excel). Kopiere den
+            Text in eine Datei oder direkt nach Excel.<br />
+            RU: Экспорт архива в JSON или TSV (для Excel). Скопируй текст в файл
+            или прямо в Excel.
+          </p>
+
+          <textarea
+            id="exportArea"
+            rows="7"
+            placeholder="Here appears JSON or TSV for export / Hier erscheint JSON oder TSV für den Export / Здесь будет JSON или TSV для экспорта..."
+          ></textarea>
+
+          <div class="export-buttons">
+            <button type="button" id="exportJsonBtn" class="btn-secondary">
+              Export JSON
+            </button>
+            <button type="button" id="exportTsvBtn" class="btn-secondary">
+              Export TSV (Excel)
+            </button>
+            <button type="button" id="importBtn" class="btn-secondary">
+              Import JSON
+            </button>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <!-- =====================================================
+         Trainer overlay (small window)
+         ===================================================== -->
+    <div id="trainerOverlay" class="trainer-overlay hidden">
+      <div class="trainer-card">
+        <h2>
+          Trainer – 7 Leitner Boxes<br />
+          Тренажёр – 7 коробок Лейтнера
+        </h2>
+
+        <p id="trainerInfo" class="trainer-info"></p>
+
+        <div class="trainer-label">Front:</div>
+        <div id="trainerFrontText" class="trainer-text"></div>
+        <div id="trainerFrontAudio" class="trainer-audio"></div>
+
+        <button id="trainerToggleAnswerBtn" class="btn-toggle-answer">
+          Show answer / Antwort anzeigen / Показать ответ
+        </button>
+
+        <div id="trainerBackArea" class="trainer-back hidden">
+          <div class="trainer-label">Back / Answer:</div>
+          <div id="trainerBackText" class="trainer-text"></div>
+          <div id="trainerBackAudio" class="trainer-audio"></div>
+          <div id="trainerRuArea" class="trainer-ru"></div>
+        </div>
+
+        <!-- Navigation inside queue -->
+        <div class="trainer-nav">
+          <button id="trainerPrevBtn" class="btn-secondary">
+            ◀ Previous / Zurück / Назад
+          </button>
+          <button id="trainerNextBtn" class="btn-secondary">
+            Next / Weiter / Далее ▶
+          </button>
+          <button id="trainerSkipBtn" class="btn-secondary">
+            Skip / Überspringen / Пропустить
+          </button>
+        </div>
+
+        <!-- Know / don't know -->
+        <div class="trainer-controls">
+          <button id="trainerIKnewBtn" class="btn-primary">
+            I knew it → higher box<br />
+            Ich wusste es → höheres Fach<br />
+            Я знал → в более высокую коробку
+          </button>
+
+          <button id="trainerIDidntKnowBtn" class="btn-danger">
+            I didn't know → same box<br />
+            Ich wusste es nicht → gleiches Fach<br />
+            Не знал → остаётся в этой коробке
+          </button>
+        </div>
+
+        <button id="trainerCloseBtn" class="btn-secondary trainer-close">
+          Close trainer / Trainer schließen / Закрыть тренажёр
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript logic -->
+    <script src="script_card_en.js"></script>
+  </body>
+</html>

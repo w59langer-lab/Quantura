@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mathematik Level-System</title>
+  <link rel="stylesheet" href="core/styles.css">
+  <script src="core/scripts.js" defer></script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <div id="welcome"></div>
+    <h2>Level-Karte</h2>
+    <div class="levels"></div>
+  </main>
+  <div id="footer-placeholder"></div>
+</body>
+</html>

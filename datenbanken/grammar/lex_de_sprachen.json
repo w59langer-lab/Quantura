@@ -1,0 +1,41 @@
+{
+  "languages": [
+    { "form": "Deutsch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Englisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Italienisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Französisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Spanisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Türkisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Russisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Polnisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Ukrainisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Niederländisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Arabisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Chinesisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Japanisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Koreanisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Portugiesisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" },
+    { "form": "Griechisch", "pos": "Nomen", "genus": "Neutrum", "artikel": "das", "notes": "Sprachname" }
+  ],
+  "normalize": {
+    "deutsch": "Deutsch",
+    "englisch": "Englisch",
+    "italienisch": "Italienisch",
+    "französisch": "Französisch",
+    "franzoesisch": "Französisch",
+    "spanisch": "Spanisch",
+    "türkisch": "Türkisch",
+    "tuerkisch": "Türkisch",
+    "russisch": "Russisch",
+    "polnisch": "Polnisch",
+    "ukrainisch": "Ukrainisch",
+    "niederländisch": "Niederländisch",
+    "niederlaendisch": "Niederländisch",
+    "arabisch": "Arabisch",
+    "chinesisch": "Chinesisch",
+    "japanisch": "Japanisch",
+    "koreanisch": "Koreanisch",
+    "portugiesisch": "Portugiesisch",
+    "griechisch": "Griechisch"
+  }
+}

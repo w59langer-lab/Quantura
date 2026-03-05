@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>Русский – Генератор предложений</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+    <link rel="stylesheet" href="../shared/lg_tts.css" />
+    <link rel="stylesheet" href="../shared/lang_switch.css" />
+    <link rel="stylesheet" href="../shared/translation_panel.css" />
+    <script src="../../../../../core/js/core_init.js" defer></script>
+    <script src="../shared/lg_tts.js" defer></script>
+    <script src="../shared/lang_switch.js" defer></script>
+    <script src="../shared/lg_translate.js" defer></script>
+
+    <script src="../../../../../datenbanken/ru/ru_verbs/ru_verbs.js" defer></script>
+    <script src="../../../../../datenbanken/ru/ru_pronouns/ru_pronouns.js" defer></script>
+    <script src="../../../../../datenbanken/ru/ru_adjectives/ru_adjectives.js" defer></script>
+    <script src="../../../../../datenbanken/ru/ru_adverbs/ru_adverbs.js" defer></script>
+    <script src="../../../../../datenbanken/ru/ru_preps/ru_preps.js" defer></script>
+
+    <script src="ru_script.js" defer></script>
+  </head>
+  <body>
+    <div
+      data-partial="header"
+      data-partial-path="../../../../../core/partials/header.html"
+    ></div>
+
+    <!-- =========================================================
+         DE: Sprachumschalter – Buttons
+         EN: Language switcher – buttons
+         RU: Переключатель языков – кнопки
+         ========================================================= -->
+    <div class="page-wrapper">
+      <div class="lang-switch" data-active-lang="ru">
+        <button class="lang-switch__btn" data-lang="de">Deutsch</button>
+        <button class="lang-switch__btn" data-lang="en">English</button>
+        <button class="lang-switch__btn" data-lang="fr">Français</button>
+        <button class="lang-switch__btn" data-lang="it">Italiano</button>
+        <button class="lang-switch__btn" data-lang="ru">Русский</button>
+        <button class="lang-switch__btn" data-lang="es">Español</button>
+      </div>
+    </div>
+
+    <main class="page-wrapper">
+      <div class="card">
+        <h1>Русский – Генератор предложений</h1>
+        <p class="hint-text">
+          Выбери части речи и тип предложения, затем нажми «Сгенерировать».
+          Базы берутся из <code>datenbanken/ru</code>.
+        </p>
+
+        <section class="language-grid">
+          <div class="language-panel">
+            <div class="language-panel__title">Настройки</div>
+            <div class="language-panel__subtitle">
+              Тип предложения, время, части речи.
+            </div>
+
+            <div class="form-row">
+              <label for="ruSentenceType">Тип предложения</label>
+              <select id="ruSentenceType">
+                <option value="aussage">Утверждение</option>
+                <option value="frage">Вопрос</option>
+                <option value="verneinung">Отрицание</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="ruTense">Время</label>
+              <select id="ruTense">
+                <option value="praesens">Настоящее</option>
+                <option value="perfekt">Совершённое (Перфект)</option>
+                <option value="praeteritum">Прошедшее</option>
+                <option value="futur1">Будущее</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="pronounSelect">Местоимение</label>
+              <select id="pronounSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="verbSelect">Глагол</label>
+              <select id="verbSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="adjSelect">Прилагательное</label>
+              <select id="adjSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="advSelect">Наречие</label>
+              <select id="advSelect"></select>
+            </div>
+
+            <div class="form-row">
+              <label for="prepSelect">Предлог</label>
+              <select id="prepSelect"></select>
+            </div>
+
+            <div class="btn-row">
+              <button id="ruGenerateBtn" class="btn btn-primary" type="button">
+                Сгенерировать
+              </button>
+              <button id="ruClearBtn" class="btn" type="button">Сброс</button>
+            </div>
+          </div>
+
+          <div class="language-panel">
+            <div class="language-panel__title">Результат</div>
+            <div class="language-panel__subtitle">
+              Здесь появится предложение.
+            </div>
+            <div id="ruSentenceOutput" class="sentence-output"></div>
+            <!-- =====================================================
+                 DE: Übersetzung auf Deutsch
+                 EN: Translation into German
+                 RU: Перевод на немецкий
+                 ===================================================== -->
+            <div class="translation-panel">
+              <div class="translation-label">
+                <!-- DE: Deutsch -->Deutsch
+                <!-- EN: German -->
+                <!-- RU: Немецкий -->
+              </div>
+              <div class="translation-box" id="translationDeBox">–</div>
+              <div class="translation-actions">
+                <button type="button" class="translation-btn" id="translationSpeakDeBtn">
+                  <!-- DE: vorlesen / EN: speak / RU: озвучить -->
+                  ▶
+                </button>
+              </div>
+            </div>
+            <p id="ruHintLine" class="hint-text">
+              Предложение пока не создано.
+            </p>
+            <!-- =====================================================
+                 DE: TTS-Steuerung
+                 EN: TTS controls
+                 RU: Управление озвучкой
+                 ===================================================== -->
+            <div class="lg-tts-panel">
+              <div class="lg-tts-row">
+                <span class="lg-tts-label">
+                  <!-- DE: Geschwindigkeit / EN: Speed / RU: Скорость -->
+                  Скорость
+                </span>
+                <input
+                  id="ttsRateSlider"
+                  class="lg-tts-slider"
+                  type="range"
+                  min="0.5"
+                  max="1.5"
+                  step="0.1"
+                  value="1.0"
+                />
+              </div>
+
+              <div class="lg-tts-row">
+                <button type="button" class="lg-tts-btn" id="ttsSlowBtn">
+                  <!-- DE: langsam / EN: slow / RU: медленно -->
+                  медленно
+                </button>
+                <button type="button" class="lg-tts-btn primary" id="ttsNormalBtn">
+                  <!-- DE: normal / EN: normal / RU: нормально -->
+                  нормально
+                </button>
+                <button type="button" class="lg-tts-btn" id="ttsFastBtn">
+                  <!-- DE: schnell / EN: fast / RU: быстро -->
+                  быстро
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsSpeakBtn">
+                  <!-- DE: abspielen / EN: play / RU: произнести -->
+                  ▶
+                </button>
+                <button type="button" class="lg-tts-btn ghost" id="ttsStopBtn">
+                  <!-- DE: stoppen / EN: stop / RU: стоп -->
+                  ■
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div
+      data-partial="footer"
+      data-partial-path="../../../../../core/partials/footer.html"
+    ></div>
+  </body>
+</html>

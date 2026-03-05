@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 01 — Hello Web (HTML + CSS + JavaScript)</title>
+  <link rel="stylesheet" href="../../../../core/assets/style.css">
+  <link rel="stylesheet" href="../common/informatik_style.css">
+  <script src="../../../../core/js/core_init.js" defer></script>
+  <style>
+    .stack { display: grid; gap: 12px; }
+    .playground-grid { display: grid; gap: 12px; }
+    .playground-grid label { font-weight: 600; }
+    .playground-grid textarea { width: 100%; min-height: 170px; font-family: monospace; }
+    @media (min-width: 900px) { .playground-grid { grid-template-columns: repeat(3, 1fr); } }
+    .preview-frame { width: 100%; min-height: 280px; border: 1px solid var(--border-color, #374151); border-radius: 8px; }
+    .nav-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+  <main class="page-wrapper">
+    <div class="card">
+      <header>
+        <h1>Lesson 01 — Hello Web</h1>
+        <p class="lead">HTML-Struktur, ein bisschen Styling und ein Klick-Event, das Text verändert.</p>
+      </header>
+
+      <section class="stack">
+        <h2>HTML + CSS + JavaScript — zusammen</h2>
+        <p>Wir bauen eine kleine Seite mit Überschrift, Absatz und Button. CSS kümmert sich um Abstände und Farben, JavaScript reagiert auf den Klick.</p>
+        <ul>
+          <li>HTML: Grundgerüst mit IDs für Button und Absatz.</li>
+          <li>CSS: Schrift, Abstände und Button-Style.</li>
+          <li>JS: <code>addEventListener("click", ...)</code> ändert den Absatztext.</li>
+        </ul>
+      </section>
+
+      <section class="stack">
+        <h2>Playground</h2>
+        <p>Bearbeite HTML, CSS oder JS und klicke auf „Run / Vorschau“, um das Ergebnis zu sehen.</p>
+        <div class="playground-grid">
+          <div>
+            <label for="htmlInput">HTML</label>
+            <textarea id="htmlInput"></textarea>
+          </div>
+          <div>
+            <label for="cssInput">CSS</label>
+            <textarea id="cssInput"></textarea>
+          </div>
+          <div>
+            <label for="jsInput">JavaScript</label>
+            <textarea id="jsInput"></textarea>
+          </div>
+        </div>
+        <div class="button-row">
+          <button id="runBtn" type="button">Run / Vorschau</button>
+        </div>
+        <iframe id="previewFrame" class="preview-frame" sandbox="allow-scripts" title="Live Preview"></iframe>
+      </section>
+
+      <section class="nav-row">
+        <a class="button ghost" href="index.html">Back to course overview</a>
+        <span class="button disabled">Prev</span>
+        <a class="button" href="lesson-02.html">Next</a>
+      </section>
+    </div>
+  </main>
+
+  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+
+  <script>
+    const htmlInput = document.getElementById("htmlInput");
+    const cssInput = document.getElementById("cssInput");
+    const jsInput = document.getElementById("jsInput");
+    const runBtn = document.getElementById("runBtn");
+    const previewFrame = document.getElementById("previewFrame");
+
+    const defaults = {
+      html: `<main>
+  <h2>Hello Web!</h2>
+  <p id="message">Bereit für deinen ersten Klick.</p>
+  <button id="changeBtn">Sag Hallo</button>
+</main>`,
+      css: `body { font-family: system-ui, sans-serif; padding: 18px; background: #0b1220; color: #e5e7eb; }
+main { max-width: 520px; margin: 0 auto; background: #111827; padding: 18px; border: 1px solid #1f2937; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+h2 { margin-top: 0; }
+p { margin: 12px 0; font-size: 1.05rem; }
+button { background: #2563eb; color: white; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer; }
+button:hover { background: #1d4ed8; }`,
+      js: `const button = document.getElementById("changeBtn");
+const message = document.getElementById("message");
+button.addEventListener("click", () => {
+  message.textContent = "Du hast geklickt – HTML, CSS und JS arbeiten zusammen!";
+});`,
+    };
+
+    function runPreview() {
+      const html = htmlInput.value || "";
+      const css = cssInput.value || "";
+      const js = jsInput.value || "";
+      previewFrame.srcdoc = \`<!DOCTYPE html><html><head><style>\${css}</style></head><body>\${html}<script>\${js}<\\/script></body></html>\`;
+    }
+
+    runBtn.addEventListener("click", runPreview);
+    htmlInput.value = defaults.html;
+    cssInput.value = defaults.css;
+    jsInput.value = defaults.js;
+    runPreview();
+  </script>
+</body>
+</html>

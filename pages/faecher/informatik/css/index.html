@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS – Einstieg</title>
+  <link rel="stylesheet" href="../../../../core/assets/style.css">
+  <link rel="stylesheet" href="../common/informatik_style.css">
+  <script src="../../../../core/js/core_init.js" defer></script>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+
+  <main class="page-wrapper">
+    <div class="card">
+      <header>
+        <h1>CSS</h1>
+        <p class="lead">Grundideen: Selektoren, Farben, Hintergründe und Abstände.</p>
+      </header>
+      <section>
+        <h2>Wichtige Bausteine</h2>
+        <p><strong>Selektoren</strong> wählen Elemente aus. Mit <code>color</code> und <code>background</code> steuerst du Farben. <code>margin</code> schafft Außenabstand, <code>padding</code> Innenabstand.</p>
+      </section>
+      <section>
+        <h2>Mini-Beispiel: Hintergrundfarbe + Bild</h2>
+        <pre>body {
+  background-color: #f0f4ff;
+  background-image: url('beispielbild.jpg'); /* Nur als Beispiel */
+  color: #1b2a3a;
+}
+
+h1 {
+  margin-bottom: 12px;
+  padding: 8px;
+}</pre>
+        <p>Das Bild ist nur angedeutet – du kannst später ein echtes Asset einfügen.</p>
+      </section>
+      <section>
+        <a class="link" href="../index.html">Zurück zur Übersicht</a>
+      </section>
+    </div>
+  </main>
+
+  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+</body>
+</html>

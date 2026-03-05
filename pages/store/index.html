@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Store – Apps & Tools</title>
+  <link rel="stylesheet" href="/core/assets/style.css" />
+  <link rel="stylesheet" href="/pages/store/store.css" />
+  <script src="/core/loader/loader.js" defer></script>
+  <script src="/core/js/core_init.js" defer></script>
+  <script src="/pages/store/store.js" defer></script>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+  <main>
+    <div class="store-header">
+      <div>
+        <h1>Store</h1>
+        <div class="subtitle">Apps & Tools</div>
+      </div>
+    </div>
+
+    <section class="card">
+      <div class="controls">
+        <div>
+          <label for="search">Suche</label>
+          <input type="search" id="search" placeholder="Titel, Tags, Beschreibung" />
+        </div>
+      <div>
+        <label for="category">Kategorie</label>
+        <select id="category">
+          <option value="all">Alle Kategorien</option>
+        </select>
+      </div>
+        <div>
+          <label for="status">Status</label>
+          <select id="status">
+            <option value="all">Alle</option>
+            <option value="alpha">Alpha</option>
+            <option value="beta">Beta</option>
+            <option value="stable">Stable</option>
+          </select>
+        </div>
+        <div>
+          <label for="sort">Sortierung</label>
+          <select id="sort">
+            <option value="updated">Neueste</option>
+            <option value="az">A–Z</option>
+          </select>
+        </div>
+        <div class="toggle-row" style="margin-top:22px;">
+          <input type="checkbox" id="offline" />
+          <label for="offline" style="margin:0;">Nur Offline-fähige</label>
+        </div>
+        <div class="toggle-row" style="margin-top:22px;">
+          <button class="btn" type="button" id="filter-ressourcen">Ressourcen anzeigen</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div id="app-grid" class="grid"></div>
+    </section>
+  </main>
+  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+</body>
+</html>

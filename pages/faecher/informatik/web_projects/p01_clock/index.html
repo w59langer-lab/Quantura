@@ -1,0 +1,358 @@
+<!-- RU: Дата: 19.12.2025 — Projekt 01 „Uhr“ создан по шаблону -->
+<!-- DE: Datum: 19.12.2025 — Projekt 01 „Uhr“ nach Template erstellt -->
+<!-- EN: Date: 2025-12-19 — Project 01 “Clock” created from template -->
+<!doctype html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt 01 — Uhr</title>
+    <link rel="stylesheet" href="/core/assets/style.css" />
+    <script src="/core/loader/loader.js" defer></script>
+    <script src="/core/js/core_init.js" defer></script>
+    <style>
+      .project-page {
+        padding: 24px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .top-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid #d8ddee;
+        background: #eef2ff;
+        color: #1f2a44;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 120ms ease, box-shadow 120ms ease,
+          border-color 120ms ease;
+      }
+      .btn:hover,
+      .btn:focus-visible {
+        transform: translateY(-1px);
+        border-color: #c7cfdf;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+        outline: none;
+      }
+      .tab-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 16px 0;
+      }
+      .tab-btn {
+        padding: 8px 12px;
+        border-radius: 10px;
+        border: 1px solid #d8ddee;
+        background: #f5f7ff;
+        cursor: pointer;
+        font-weight: 700;
+        transition: background 120ms ease, border-color 120ms ease;
+      }
+      .tab-btn.active {
+        background: #e0e7ff;
+        border-color: #c7cfdf;
+      }
+      .section {
+        display: none;
+        border: 1px solid #e0e4ec;
+        border-radius: 12px;
+        padding: 16px;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      }
+      .section.active {
+        display: block;
+      }
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 12px;
+      }
+      .card {
+        border: 1px solid #e0e4ec;
+        border-radius: 12px;
+        padding: 14px;
+        background: #f9fafe;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      }
+      pre {
+        background: #0f172a;
+        color: #e2e8f0;
+        padding: 12px;
+        border-radius: 10px;
+        overflow-x: auto;
+        font-size: 14px;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+      }
+      .sandbox {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 14px;
+        align-items: start;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .field label {
+        font-weight: 700;
+        font-size: 14px;
+      }
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #d9deea;
+        background: #f9fafe;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+      }
+      iframe {
+        width: 100%;
+        min-height: 380px;
+        border: 1px solid #e0e4ec;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+      }
+      .media-placeholder {
+        padding: 12px;
+        border: 1px dashed #c7cfdf;
+        border-radius: 10px;
+        background: #f9fafe;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+
+    <main class="project-page">
+      <div class="top-actions">
+        <a class="btn" href="/pages/faecher/informatik/web_projects/">← Zurück zu Web Projects</a>
+      </div>
+
+      <h1>Projekt 01 — Uhr</h1>
+      <p>Digitale Uhr (HTML/CSS/JS)</p>
+
+      <div class="tab-bar" role="tablist">
+        <button class="tab-btn active" data-target="demo" role="tab">Demo</button>
+        <button class="tab-btn" data-target="aufbau" role="tab">Aufbau</button>
+        <button class="tab-btn" data-target="erklaerung" role="tab">Erklärung</button>
+        <button class="tab-btn" data-target="code" role="tab">Code</button>
+        <button class="tab-btn" data-target="experiment" role="tab">Experiment</button>
+        <button class="tab-btn" data-target="medien" role="tab">Medien</button>
+      </div>
+
+      <section class="section active" id="demo">
+        <h2>Demo</h2>
+        <p>Einfache digitale Uhr. Läuft automatisch.</p>
+        <div id="demoClock" class="card">
+          <div id="demoTime" style="font-size:48px;letter-spacing:2px;"></div>
+          <div id="demoDate" style="font-size:16px;color:#40485a;"></div>
+        </div>
+      </section>
+
+      <section class="section" id="aufbau">
+        <h2>Aufbau</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>HTML</h3>
+            <p>Struktur mit Containern für Zeit und Datum.</p>
+          </div>
+          <div class="card">
+            <h3>CSS</h3>
+            <p>Layout, Hintergrund, Typo und kleine visuelle Effekte.</p>
+          </div>
+          <div class="card">
+            <h3>JS</h3>
+            <p>Berechnet Zeit/Datum, aktualisiert jede Sekunde.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="erklaerung">
+        <h2>Erklärung</h2>
+        <p>
+          1) HTML enthält zwei Elemente: Zeit und Datum.<br />
+          2) CSS sorgt für Lesbarkeit und einfache Karte.<br />
+          3) JS liest aktuelle Zeit, formatiert sie und schreibt sie in das DOM.
+        </p>
+        <!-- RU: Дата/версия: 19.12.2025 — простая цифровая модель -->
+        <!-- DE: Datum/Version: 19.12.2025 — einfache digitale Variante -->
+        <!-- EN: Date/version: 2025-12-19 — simple digital variant -->
+      </section>
+
+      <section class="section" id="code">
+        <h2>Code</h2>
+        <h3>HTML</h3>
+        <pre><code>&lt;div class="clock"&gt;
+  &lt;div class="clock__time" id="time"&gt;&lt;/div&gt;
+  &lt;div class="clock__date" id="date"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h3>CSS</h3>
+        <pre><code>:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+.clock {
+  display: grid;
+  gap: 10px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  max-width: 360px;
+  margin: 40px auto;
+  text-align: center;
+}
+.clock__time {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+.clock__date {
+  font-size: 16px;
+  color: #cbd5f5;
+}</code></pre>
+
+        <h3>JS</h3>
+        <pre><code>// RU: Обновляем часы каждую секунду
+// DE: Uhr jede Sekunde aktualisieren
+// EN: Update clock every second
+function tick() {
+  const now = new Date();
+  const time = now.toLocaleTimeString("de-DE", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  const date = now.toLocaleDateString("de-DE", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  document.getElementById("time").textContent = time;
+  document.getElementById("date").textContent = date;
+}
+
+// RU: Старт сразу и повторяем каждую секунду
+// DE: Direkt starten und jede Sekunde wiederholen
+// EN: Start immediately and repeat every second
+tick();
+setInterval(tick, 1000);</code></pre>
+      </section>
+
+      <section class="section" id="experiment">
+        <h2>Experiment (Sandbox)</h2>
+        <div class="sandbox">
+          <div class="field">
+            <label for="htmlInput">HTML</label>
+            <textarea id="htmlInput"><div class="clock">
+  <div class="clock__time" id="time"></div>
+  <div class="clock__date" id="date"></div>
+</div></textarea>
+          </div>
+          <div class="field">
+            <label for="cssInput">CSS</label>
+            <textarea id="cssInput">:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+.clock {
+  display: grid;
+  gap: 10px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  max-width: 360px;
+  margin: 40px auto;
+  text-align: center;
+}
+.clock__time {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+.clock__date {
+  font-size: 16px;
+  color: #cbd5f5;
+}</textarea>
+          </div>
+          <div class="field">
+            <label for="jsInput">JS</label>
+            <textarea id="jsInput">// RU: Обновляем часы каждую секунду
+// DE: Uhr jede Sekunde aktualisieren
+// EN: Update clock every second
+function tick() {
+  const now = new Date();
+  const time = now.toLocaleTimeString("de-DE", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  const date = now.toLocaleDateString("de-DE", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  document.getElementById("time").textContent = time;
+  document.getElementById("date").textContent = date;
+}
+
+// RU: Старт сразу и повторяем каждую секунду
+// DE: Direkt starten und jede Sekunde wiederholen
+// EN: Start immediately and repeat every second
+tick();
+setInterval(tick, 1000);</textarea>
+          </div>
+          <div class="field">
+            <label for="previewFrame"><strong>Preview</strong></label>
+            <iframe id="previewFrame" title="Preview"></iframe>
+          </div>
+          <div class="actions">
+            <button class="btn" id="runBtn" type="button">Ausführen / Run</button>
+          </div>
+        </div>
+        <!-- RU: Пояснение: srcdoc загружает собранный HTML напрямую в iframe -->
+        <!-- DE: Erklärung: srcdoc lädt das zusammengebaute HTML direkt ins iframe -->
+        <!-- EN: Note: srcdoc injects the assembled HTML straight into the iframe -->
+      </section>
+
+      <section class="section" id="medien">
+        <h2>Medien</h2>
+        <div class="media-placeholder">Hier kommen später Bild/Video/Schaltplan.</div>
+      </section>
+    </main>
+
+    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+
+    <script src="/pages/faecher/informatik/web_projects/p01_clock/p01_clock.js" defer></script>
+  </body>
+</html>

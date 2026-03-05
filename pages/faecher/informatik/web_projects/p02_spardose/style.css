@@ -1,0 +1,226 @@
+/* RU: Дата: 21.02.2026 — Стили для P02 «Копилка / Банка очков» */
+/* DE: Datum: 21.02.2026 — Styles für P02 „Spardose / Punkteglas“ */
+/* EN: Date: 2026-02-21 — Styles for P02 “Piggy Bank / Points Jar” */
+
+.p02-page {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-actions {
+  margin-bottom: 12px;
+}
+
+.btn-back {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #d8ddee;
+  border-radius: 10px;
+  padding: 9px 12px;
+  background: #eef2ff;
+  color: #1f2a44;
+  font-weight: 700;
+}
+
+.lead {
+  margin-top: 0;
+  color: #3e4a63;
+}
+
+.p02-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.left-panel,
+.right-panel {
+  border: 1px solid #e2e7f1;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(17, 35, 70, 0.07);
+}
+
+.left-panel {
+  padding: 14px;
+}
+
+.right-panel {
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+  position: sticky;
+  top: 88px;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.btn {
+  border: 1px solid #ced7e8;
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(9, 27, 57, 0.12);
+}
+
+.btn-primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #dbeafe;
+  color: #0f2f6b;
+}
+
+.btn-ghost {
+  background: #f3f6fb;
+  color: #334155;
+}
+
+.btn-success {
+  background: #dcfce7;
+  border-color: #b5ebc7;
+  color: #14532d;
+}
+
+.btn-warn {
+  background: #fee2e2;
+  border-color: #f5b8b8;
+  color: #7f1d1d;
+}
+
+.stat-card {
+  border: 1px solid #e2e7f1;
+  border-radius: 12px;
+  background: #f9fbff;
+  padding: 12px;
+}
+
+.label {
+  font-size: 13px;
+  color: #4a5977;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.timer-text {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #1e293b;
+}
+
+.subline {
+  color: #5f6f8f;
+  font-size: 13px;
+}
+
+.lives-text {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.jar {
+  width: 100%;
+  height: 200px;
+  border: 3px solid #9cb5d8;
+  border-radius: 24px 24px 18px 18px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(180deg, #f4f8ff 0%, #e8efff 100%);
+}
+
+.jar-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  background: linear-gradient(180deg, #34d399 0%, #16a34a 100%);
+  transition: height 320ms ease;
+}
+
+.score-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.score-value {
+  transition: transform 180ms ease, color 180ms ease;
+}
+
+.score-value.pop {
+  transform: scale(1.2);
+  color: #0f7a35;
+}
+
+.jar.pop {
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
+}
+
+.table-wrap {
+  max-height: 420px;
+  overflow: auto;
+  border: 1px solid #e2e7f1;
+  border-radius: 10px;
+}
+
+.progress-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.progress-table th,
+.progress-table td {
+  border-bottom: 1px solid #e9eef7;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.progress-table th {
+  position: sticky;
+  top: 0;
+  background: #f2f6ff;
+  z-index: 1;
+}
+
+.delta-plus {
+  color: #166534;
+  font-weight: 700;
+}
+
+.delta-minus {
+  color: #991b1b;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .p02-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .right-panel {
+    position: static;
+  }
+
+  .jar {
+    height: 170px;
+  }
+}

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quadratische Gleichungen – Solver</title>
+  <link rel="stylesheet" href="/core/assets/style.css">
+  <link rel="stylesheet" href="/apps/math/quadratic-solver/app.css">
+  <script src="/core/loader/loader.js" defer></script>
+  <script src="/core/js/core_init.js" defer></script>
+  <script src="/apps/math/quadratic-solver/app.js" defer></script>
+</head>
+<body>
+  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+  <main class="qs-page">
+    <section class="card hero">
+      <div>
+        <h1>Quadratische Gleichungen (Solver)</h1>
+        <div class="subtitle">Mathe-First: exakte Lösungen, Schritte &amp; Praxisfall Wurfparabel.</div>
+        <div class="tags">
+          <span class="tag">Δ = b² − 4ac</span>
+          <span class="tag">reell &amp; komplex</span>
+          <span class="tag">Faktorisierung (ganzzahlig)</span>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="#solver">Direkt zum Solver</a>
+        <a class="btn ghost" download href="/downloads/quadratic-solver_offline.html">Offline herunterladen</a>
+      </div>
+    </section>
+
+    <section class="card" id="solver">
+      <h2>Quadratische Gleichung</h2>
+      <p class="muted">Gib die Koeffizienten a, b, c für ax² + bx + c = 0 ein. a darf nicht 0 sein.</p>
+      <div class="grid">
+        <div><label for="a">a</label><input type="number" id="a" step="any" placeholder="z.B. 1"></div>
+        <div><label for="b">b</label><input type="number" id="b" step="any" placeholder="z.B. -3"></div>
+        <div><label for="c">c</label><input type="number" id="c" step="any" placeholder="z.B. 2"></div>
+      </div>
+      <div class="actions solver-actions" style="margin:12px 0 6px;">
+        <button id="btnSolve" class="btn primary" type="button">Lösen <span class="hint-ru">/ Решить</span></button>
+        <button id="btnReset" class="btn" type="button">Zurücksetzen</button>
+      </div>
+
+      <div id="solverMsg" class="msg" role="status" aria-live="polite"></div>
+
+      <section id="resultCalc" class="card" hidden>
+        <h3>Berechnung</h3>
+        <div id="calcOut"></div>
+      </section>
+
+      <section id="resultSolution" class="card" hidden>
+        <h3>Lösung</h3>
+        <div id="solOut"></div>
+      </section>
+    </section>
+
+    <section id="didaktik" class="card">
+      <h2>Praxis &amp; Theorie</h2>
+      <div class="didaktik-grid">
+        <article class="didaktik-card">
+          <h3>Praxisaufgabe: Ausschnitt in einer Sperrholzplatte (Rahmenbreite x)</h3>
+          <p>In einer Werkstatt soll aus einer Sperrholzplatte ein rechteckiger Ausschnitt („Fenster“) ausgesägt werden. Damit die Platte stabil bleibt, soll rundherum ein gleich breiter Rahmen stehen bleiben.</p>
+          <p>Die Fläche des ausgesägten Fensters soll <strong>4000 cm²</strong> betragen.</p>
+          <p class="hint-ru">(Hinweis: Rahmenbreite x auf allen Seiten)</p>
+
+          <strong>Gegeben:</strong>
+          <ul class="didaktik-list">
+            <li>Außenmaße der Platte: 100 cm × 70 cm</li>
+            <li>Rahmenbreite: x cm (auf allen vier Seiten gleich)</li>
+            <li>Fläche des Ausschnitts: 4000 cm²</li>
+          </ul>
+
+          <strong>Gesucht:</strong>
+          <ul class="didaktik-list">
+            <li>Rahmenbreite x in cm</li>
+          </ul>
+
+          <strong>Skizzenhinweis:</strong>
+          <p>Zeichne ein Rechteck 100×70 cm und markiere den Rahmen x an allen Seiten.</p>
+          <p class="hint-ru">(Hinweis: Innenmaße als Ausdruck in x)</p>
+
+          <strong>Arbeitsauftrag:</strong>
+          <ol class="didaktik-list">
+            <li>Bestimme die Innenmaße des Ausschnitts in Abhängigkeit von x.</li>
+            <li>Stelle eine Gleichung für die Fläche des Ausschnitts auf und forme sie zu einer quadratischen Gleichung um.</li>
+            <li>Löse die Gleichung und entscheide, welche Lösung in der Praxis sinnvoll ist (Begründung).</li>
+          </ol>
+          <p class="hint-ru">(Hinweis: Quadratische Gleichung aufstellen)</p>
+          <p class="hint-ru">(Hinweis: Sinnprüfung der Lösungen)</p>
+
+          <div class="formula-box">
+            <h4>Aus der Aufgabe zur quadratischen Gleichung</h4>
+            <ul>
+              <li>Innenmaße: <code>(100 − 2x)</code> und <code>(70 − 2x)</code></li>
+              <li>Fläche: <code>(100 − 2x)(70 − 2x) = 4000</code></li>
+              <li>Umformen: <code>4x² − 340x + 3000 = 0</code>  ⇒  <code>2x² − 170x + 1500 = 0</code></li>
+              <li>Normalform: <code>ax² + bx + c = 0</code> mit <code>a=2</code>, <code>b=−170</code>, <code>c=1500</code></li>
+            </ul>
+          </div>
+
+          <p class="formula">Plausibilität: x darf nicht größer sein als 35 cm (weil 70 cm die kleinere Seite ist).</p>
+
+          <div class="solution-actions">
+            <button id="btnPracticeSolution" class="secondary">
+              Lösung anzeigen <span class="hint-ru">/ anzeigen</span>
+            </button>
+          </div>
+
+          <section id="practiceSolution" class="solution-box" hidden>
+            <h4>Musterlösung</h4>
+
+            <p><strong>Innenmaße:</strong> (100 − 2x) und (70 − 2x)</p>
+            <p><strong>Flächen-Gleichung:</strong> <code>(100−2x)(70−2x)=4000</code></p>
+
+            <p><strong>Umformen:</strong></p>
+            <ul>
+              <li><code>(100−2x)(70−2x)=7000−340x+4x²</code></li>
+              <li><code>4x²−340x+7000=4000</code></li>
+              <li><code>4x²−340x+3000=0</code> → <code>2x²−170x+1500=0</code></li>
+            </ul>
+
+            <p><strong>Diskriminante:</strong> <code>D=b²−4ac=(−170)²−4·2·1500=16900</code>, <code>√D=130</code></p>
+
+            <p><strong>Lösungen:</strong></p>
+            <ul>
+              <li><code>x₁=(170−130)/4=10</code></li>
+              <li><code>x₂=(170+130)/4=75</code></li>
+            </ul>
+
+            <p><strong>Sinnprüfung:</strong> x muss kleiner als 35 cm sein (kleinere Seite 70 cm). Daher ist <strong>x=75</strong> unmöglich.</p>
+            <p><strong>Ergebnis:</strong> <strong>x = 10 cm</strong></p>
+
+            <p class="hint-ru">(Hinweis: Ergebnis x = 10 cm; die Lösung 75 cm ist wegen der Plattengröße unmöglich.)</p>
+          </section>
+        </article>
+
+        <article class="didaktik-card">
+          <h3>Merkkasten: Quadratische Funktion &amp; Parabel</h3>
+          <div class="didaktik-block">
+            <div><span class="formula">f(x)=ax&sup2;+bx+c</span> (a&ne;0)</div>
+            <div class="didaktik-sub">a: quadratischer Term <span class="hint-ru">(&#1082;&#1074;&#1072;&#1076;&#1088;&#1072;&#1090;&#1085;&#1099;&#1081; &#1082;&#1086;&#1101;&#1092;&#1092;&#1080;&#1094;&#1080;&#1077;&#1085;&#1090;)</span></div>
+            <div class="didaktik-sub">b: linearer Term <span class="hint-ru">(&#1083;&#1080;&#1085;&#1077;&#1081;&#1085;&#1099;&#1081;)</span></div>
+            <div class="didaktik-sub">c: konstante <span class="hint-ru">(&#1089;&#1074;&#1086;&#1073;&#1086;&#1076;&#1085;&#1099;&#1081; &#1095;&#1083;&#1077;&#1085;)</span></div>
+          </div>
+
+          <div class="didaktik-block">
+            <div><span class="formula">D=b&sup2;&minus;4ac</span></div>
+            <div class="didaktik-sub">D&gt;0 zwei Nullstellen; D=0 eine Doppelnullstelle; D&lt;0 keine reellen</div>
+          </div>
+
+          <div class="didaktik-block">
+            <div>&Ouml;ffnung: <span class="formula">a&gt;0</span> nach oben; <span class="formula">a&lt;0</span> nach unten</div>
+            <div>Streckung/Stauchung: <span class="formula">|a|&gt;1</span> gestreckt, <span class="formula">0&lt;|a|&lt;1</span> gestaucht</div>
+          </div>
+
+          <div class="didaktik-block">
+            <div>Scheitelpunktform: <span class="formula">f(x)=a(x&minus;d)&sup2;+e</span></div>
+            <div>Scheitel <span class="formula">S(d|e)</span>, <span class="formula">d=&minus;b/(2a)</span>, <span class="formula">e=&minus;D/(4a)</span> (oder <span class="formula">e=f(d)</span>)</div>
+            <div>Verschiebung: <span class="formula">(x&minus;d)</span> rechts um d; <span class="formula">(x+d)</span> links um d <span class="hint-ru">(&#1079;&#1085;&#1072;&#1082; &#1074; &#1089;&#1082;&#1086;&#1073;&#1082;&#1077; &#8222;&#1085;&#1072;&#1086;&#1073;&#1086;&#1088;&#1086;&#1090;&#8220;)</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div id="didaktikHint" class="muted">
+        Noch nicht berechnet. <span class="hint-ru">/ Ещё не рассчитано</span>
+      </div>
+
+      <section id="didaktikPanel" class="card" hidden>
+        <h3>Didaktik (nach Berechnung)</h3>
+        <div class="didaktik-dynamic" id="didaktikDynamic">
+          <div class="didaktik-row"><span class="label">a &ndash; quadratisch:</span> <span id="didA">&mdash;</span></div>
+          <div class="didaktik-row"><span class="label">b &ndash; linear:</span> <span id="didB">&mdash;</span></div>
+          <div class="didaktik-row"><span class="label">c &ndash; konstant:</span> <span id="didC">&mdash;</span></div>
+          <div class="didaktik-row"><span class="label">Diskriminante D:</span> <span id="didD">&mdash;</span> <span id="didNature" class="pill"></span></div>
+          <div class="didaktik-row"><span class="label">&Ouml;ffnung:</span> <span id="didOpen">&mdash;</span></div>
+          <div class="didaktik-row"><span class="label">Streckung:</span> <span id="didStretch">&mdash;</span></div>
+          <div class="didaktik-row"><span class="label">Scheitelpunkt:</span> <span id="didVertex">&mdash;</span></div>
+          <div class="note-box" id="didNote" style="display:none;"></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="card" id="praxis">
+      <h2>Praxis: Wurfparabel</h2>
+      <p class="muted">h(t) = -4.9 · t² + v₀ · t + h₀. Wir berechnen die Boden-Zeitpunkte mit demselben Solver.</p>
+      <div class="grid">
+        <div><label for="v0">v₀ (m/s)</label><input type="number" id="v0" step="any" placeholder="z.B. 12" value="12"></div>
+        <div><label for="h0">h₀ (m)</label><input type="number" id="h0" step="any" placeholder="z.B. 1.5" value="1.5"></div>
+      </div>
+      <div class="actions" style="margin:12px 0 6px;">
+        <button class="btn primary" type="button" id="praxis-btn">Nullstellen (Boden) berechnen</button>
+      </div>
+      <div class="result" id="praxis-result"></div>
+      <div class="steps">
+        <div class="muted">Rechenweg</div>
+        <div id="praxis-steps"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* =========================================================
+   DE: Übersetzungs-Panel – Styles
+   EN: Translation panel – styles
+   RU: Панель перевода – стили
+   ========================================================= */
+
+.translation-panel {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #2c2c30;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #16161a, #1b1b20);
+}
+
+.translation-label {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #cfd3dc;
+  letter-spacing: 0.2px;
+}
+
+.translation-box {
+  min-height: 40px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #0f0f12;
+  border: 1px solid #2c2c30;
+  color: #f5f5f7;
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.translation-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.translation-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #2c2c30;
+  background: #1f1f24;
+  color: #f5f5f7;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.translation-btn:hover {
+  border-color: #4da3ff;
+  box-shadow: 0 0 0 2px rgba(77, 163, 255, 0.25);
+}
+
+.translation-btn:focus-visible {
+  outline: 2px solid #4da3ff;
+  outline-offset: 2px;
+}

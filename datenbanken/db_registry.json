@@ -1,0 +1,391 @@
+{
+  "generatedAt": "2025-12-10T19:30:32.832586",
+  "root": "datenbanken",
+  "entries": [
+    {
+      "lang": "de",
+      "id": "de_adjectives",
+      "kind": "js",
+      "path": "datenbanken/de/de_adjectives/de_adjectives.js",
+      "constName": "DE_ADJECTIVES"
+    },
+    {
+      "lang": "de",
+      "id": "de_adverbs",
+      "kind": "js",
+      "path": "datenbanken/de/de_adverbs/de_adverbs.js",
+      "constName": "DE_ADVERBS"
+    },
+    {
+      "lang": "de",
+      "id": "de_nouns",
+      "kind": "js",
+      "path": "datenbanken/de/de_nouns/de_nouns.js",
+      "constName": "DE_NOUNS"
+    },
+    {
+      "lang": "de",
+      "id": "de_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/de/de_possessive_pronouns/de_possessive_pronouns.js",
+      "constName": "DE_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "de",
+      "id": "de_prep_patterns",
+      "kind": "js",
+      "path": "datenbanken/de/de_prep_patterns.js",
+      "constName": "DE_PREP_PATTERNS"
+    },
+    {
+      "lang": "de",
+      "id": "de_preps",
+      "kind": "js",
+      "path": "datenbanken/de/de_preps/de_preps.js",
+      "constName": "DE_PREPS"
+    },
+    {
+      "lang": "de",
+      "id": "de_pronouns",
+      "kind": "js",
+      "path": "datenbanken/de/de_pronouns/de_pronouns.js",
+      "constName": "DE_PRONOUNS"
+    },
+    {
+      "lang": "de",
+      "id": "de_pronouns_personal",
+      "kind": "js",
+      "path": "datenbanken/de/pronouns/de_pronouns_personal.js",
+      "constName": "DE_PRONOUNS_PERSONAL"
+    },
+    {
+      "lang": "de",
+      "id": "de_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/de/de_verbs_aux/de_verbs_aux.js",
+      "constName": "DE_VERBS_AUX"
+    },
+    {
+      "lang": "de",
+      "id": "de_verbs_main",
+      "kind": "js",
+      "path": "datenbanken/de/de_verbs_main/de_verbs_main.js",
+      "constName": "DE_VERBS_MAIN"
+    },
+    {
+      "lang": "de",
+      "id": "de_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/de/de_verbs_modals/de_verbs_modals.js",
+      "constName": "DE_VERBS_MODALS"
+    },
+    {
+      "lang": "en",
+      "id": "en_adjectives",
+      "kind": "js",
+      "path": "datenbanken/en/en_adjectives/en_adjectives.js",
+      "constName": "EN_ADJECTIVES"
+    },
+    {
+      "lang": "en",
+      "id": "en_adverbs",
+      "kind": "js",
+      "path": "datenbanken/en/en_adverbs/en_adverbs.js",
+      "constName": "EN_ADVERBS"
+    },
+    {
+      "lang": "en",
+      "id": "en_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/en/en_possessive_pronouns/en_possessive_pronouns.js",
+      "constName": "EN_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "en",
+      "id": "en_preps",
+      "kind": "js",
+      "path": "datenbanken/en/en_preps/en_preps.js",
+      "constName": "EN_PREPS"
+    },
+    {
+      "lang": "en",
+      "id": "en_pronouns",
+      "kind": "js",
+      "path": "datenbanken/en/en_pronouns/en_pronouns.js",
+      "constName": "EN_PRONOUNS"
+    },
+    {
+      "lang": "en",
+      "id": "en_verbs",
+      "kind": "js",
+      "path": "datenbanken/en/en_verbs/en_verbs.js",
+      "constName": "EN_VERBS"
+    },
+    {
+      "lang": "en",
+      "id": "en_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/en/en_verbs_aux/en_verbs_aux.js",
+      "constName": "EN_VERBS_AUX"
+    },
+    {
+      "lang": "en",
+      "id": "en_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/en/en_verbs_modals/en_verbs_modals.js",
+      "constName": "EN_VERBS_MODALS"
+    },
+    {
+      "lang": "es",
+      "id": "es_adjectives",
+      "kind": "js",
+      "path": "datenbanken/es/es_adjectives/es_adjectives.js",
+      "constName": "ES_ADJECTIVES"
+    },
+    {
+      "lang": "es",
+      "id": "es_adverbs",
+      "kind": "js",
+      "path": "datenbanken/es/es_adverbs/es_adverbs.js",
+      "constName": "ES_ADVERBS"
+    },
+    {
+      "lang": "es",
+      "id": "es_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/es/es_possessive_pronouns/es_possessive_pronouns.js",
+      "constName": "ES_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "es",
+      "id": "es_preps",
+      "kind": "js",
+      "path": "datenbanken/es/es_preps/es_preps.js",
+      "constName": "ES_PREPS"
+    },
+    {
+      "lang": "es",
+      "id": "es_pronouns",
+      "kind": "js",
+      "path": "datenbanken/es/es_pronouns/es_pronouns.js",
+      "constName": "ES_PRONOUNS"
+    },
+    {
+      "lang": "es",
+      "id": "es_verbs",
+      "kind": "js",
+      "path": "datenbanken/es/es_verbs/es_verbs.js",
+      "constName": "ES_VERBS"
+    },
+    {
+      "lang": "es",
+      "id": "es_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/es/es_verbs_aux/es_verbs_aux.js",
+      "constName": "ES_VERBS_AUX"
+    },
+    {
+      "lang": "es",
+      "id": "es_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/es/es_verbs_modals/es_verbs_modals.js",
+      "constName": "ES_VERBS_MODALS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_adjectives",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_adjectives/fr_adjectives.js",
+      "constName": "FR_ADJECTIVES"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_adverbs",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_adverbs/fr_adverbs.js",
+      "constName": "FR_ADVERBS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_possessive_pronouns/fr_possessive_pronouns.js",
+      "constName": "FR_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_preps",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_preps/fr_preps.js",
+      "constName": "FR_PREPS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_pronouns",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_pronouns/fr_pronouns.js",
+      "constName": "FR_PRONOUNS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_verbs",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_verbs/fr_verbs.js",
+      "constName": "FR_VERBS"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_verbs_aux/fr_verbs_aux.js",
+      "constName": "FR_VERBS_AUX"
+    },
+    {
+      "lang": "fr",
+      "id": "fr_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/fr/fr_verbs_modals/fr_verbs_modals.js",
+      "constName": "FR_VERBS_MODALS"
+    },
+    {
+      "lang": "it",
+      "id": "it_adjectives",
+      "kind": "js",
+      "path": "datenbanken/it/it_adjectives/it_adjectives.js",
+      "constName": "IT_ADJECTIVES"
+    },
+    {
+      "lang": "it",
+      "id": "it_adverbs",
+      "kind": "js",
+      "path": "datenbanken/it/it_adverbs/it_adverbs.js",
+      "constName": "IT_ADVERBS"
+    },
+    {
+      "lang": "it",
+      "id": "it_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/it/it_possessive_pronouns/it_possessive_pronouns.js",
+      "constName": "IT_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "it",
+      "id": "it_preps",
+      "kind": "js",
+      "path": "datenbanken/it/it_preps/it_preps.js",
+      "constName": "IT_PREPS"
+    },
+    {
+      "lang": "it",
+      "id": "it_pronouns",
+      "kind": "js",
+      "path": "datenbanken/it/it_pronouns/it_pronouns.js",
+      "constName": "IT_PRONOUNS"
+    },
+    {
+      "lang": "it",
+      "id": "it_verbs",
+      "kind": "js",
+      "path": "datenbanken/it/it_verbs/it_verbs.js",
+      "constName": "IT_VERBS"
+    },
+    {
+      "lang": "it",
+      "id": "it_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/it/it_verbs_aux/it_verbs_aux.js",
+      "constName": "IT_VERBS_AUX"
+    },
+    {
+      "lang": "it",
+      "id": "it_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/it/it_verbs_modals/it_verbs_modals.js",
+      "constName": "IT_VERBS_MODALS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_adjectives",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_adjectives/ru_adjectives.js",
+      "constName": "RU_ADJECTIVES"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_adverbs",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_adverbs/ru_adverbs.js",
+      "constName": "RU_ADVERBS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_possessive_pronouns",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_possessive_pronouns/ru_possessive_pronouns.js",
+      "constName": "RU_POSSESSIVE_PRONOUNS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_preps",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_preps/ru_preps.js",
+      "constName": "RU_PREPS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_pronouns",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_pronouns/ru_pronouns.js",
+      "constName": "RU_PRONOUNS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_verbs",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_verbs/ru_verbs.js",
+      "constName": "RU_VERBS"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_verbs_aux",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_verbs_aux/ru_verbs_aux.js",
+      "constName": "RU_VERBS_AUX"
+    },
+    {
+      "lang": "ru",
+      "id": "ru_verbs_modals",
+      "kind": "js",
+      "path": "datenbanken/ru/ru_verbs_modals/ru_verbs_modals.js",
+      "constName": "RU_VERBS_MODALS"
+    },
+    {
+      "lang": "shared",
+      "id": "lex_de_sprachen",
+      "kind": "json",
+      "path": "datenbanken/grammar/lex_de_sprachen.json",
+      "constName": null
+    },
+    {
+      "lang": "shared",
+      "id": "manifest",
+      "kind": "json",
+      "path": "datenbanken/grammar/manifest.json",
+      "constName": null
+    },
+    {
+      "lang": "shared",
+      "id": "rules_de",
+      "kind": "json",
+      "path": "datenbanken/grammar/rules_de.json",
+      "constName": null
+    },
+    {
+      "lang": "shared",
+      "id": "rules_shared",
+      "kind": "json",
+      "path": "datenbanken/grammar/rules_shared.json",
+      "constName": null
+    }
+  ]
+}

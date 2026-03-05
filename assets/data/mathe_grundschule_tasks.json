@@ -1,0 +1,47 @@
+{
+  "schema": "ll-mathe-gs-tasks-v1",
+  "created": "2026-02-19",
+  "meta_comment": {
+    "ru": "дата: 2026-02-19 задачи для GS1",
+    "de": "Datum: 2026-02-19 Aufgaben für GS1",
+    "en": "Date: 2026-02-19 tasks for GS1"
+  },
+  "topics": {
+    "gs1-zo-01": [
+      {"id":"gs1-zo-01-001","type":"input","prompt_de":"Wie viele Punkte siehst du? (5)","prompt_en":"How many dots do you see? (5)","answer":"5","hint_de":"Zähle langsam alle Punkte.","hint_en":"Count all dots slowly.","explain_de":"Es sind fünf Punkte.","explain_en":"There are five dots."},
+      {"id":"gs1-zo-01-002","type":"mcq","prompt_de":"Welche Zahl ist größer?","prompt_en":"Which number is bigger?","choices_de":["3","7"],"choices_en":["3","7"],"answer":"7","hint_de":"Vergleiche 3 und 7.","hint_en":"Compare 3 and 7.","explain_de":"7 ist größer als 3.","explain_en":"7 is larger than 3."},
+      {"id":"gs1-zo-01-003","type":"mcq","prompt_de":"Welche Menge zeigt 4 Äpfel?","prompt_en":"Which set shows 4 apples?","choices_de":["🍎🍎","🍎🍎🍎🍎","🍎"],"choices_en":["2 apples","4 apples","1 apple"],"answer":"🍎🍎🍎🍎","hint_de":"Suche vier Symbole.","hint_en":"Look for four symbols.","explain_de":"Vier Äpfel sind korrekt.","explain_en":"The set with four apples is correct."},
+      {"id":"gs1-zo-01-004","type":"input","prompt_de":"Schreibe die Zahl für drei Teddys (3).","prompt_en":"Write the number for three teddies (3).","answer":"3","hint_de":"Zähle die Teddys.","hint_en":"Count the teddies.","explain_de":"Drei Teddys → Zahl 3.","explain_en":"Three teddies means number 3."},
+      {"id":"gs1-zo-01-005","type":"mcq","prompt_de":"Welche Zahl fehlt? 1,2,__,4","prompt_en":"Which number is missing? 1,2,__,4","choices_de":["3","5","0"],"choices_en":["3","5","0"],"answer":"3","hint_de":"Zähle weiter.","hint_en":"Keep counting.","explain_de":"Nach 2 kommt 3.","explain_en":"After 2 comes 3."},
+      {"id":"gs1-zo-01-006","type":"input","prompt_de":"Wie viele Finger zeigen? (2 Hände mit 1 Finger hoch)","prompt_en":"How many fingers are up? (two hands, one finger up)","answer":"2","hint_de":"Jede Hand hat einen Finger oben.","hint_en":"Each hand has one finger up.","explain_de":"1+1=2 Finger.","explain_en":"1+1 equals 2 fingers."},
+      {"id":"gs1-zo-01-007","type":"mcq","prompt_de":"Welche Karte zeigt 0 Punkte?","prompt_en":"Which card shows 0 dots?","choices_de":["⚫⚫","(leer)","⚫"],"choices_en":["two dots","empty","one dot"],"answer":"(leer)","hint_de":"Suche die leere Karte.","hint_en":"Find the empty card.","explain_de":"Leer steht für Null.","explain_en":"Empty means zero."},
+      {"id":"gs1-zo-01-008","type":"input","prompt_de":"Zähle laut bis 6 und schreibe die letzte Zahl.","prompt_en":"Count to 6 and write the last number.","answer":"6","hint_de":"1,2,3,4,5,6","hint_en":"1,2,3,4,5,6","explain_de":"Die letzte Zahl ist 6.","explain_en":"The last number is 6."},
+      {"id":"gs1-zo-01-009","type":"mcq","prompt_de":"Welche Zahl passt zu fünf Sternen?","prompt_en":"Which number matches five stars?","choices_de":["4","5","6"],"choices_en":["4","5","6"],"answer":"5","hint_de":"Zähle die Sterne.","hint_en":"Count the stars.","explain_de":"Es sind fünf Sterne.","explain_en":"There are five stars."},
+      {"id":"gs1-zo-01-010","type":"input","prompt_de":"Wie viele sind 2 + 1?","prompt_en":"How many are 2 + 1?","answer":"3","hint_de":"Zähle 2 und einen dazu.","hint_en":"Count two and add one.","explain_de":"2 plus 1 ergibt 3.","explain_en":"2 plus 1 equals 3."}
+    ],
+    "gs1-zo-02": [
+      {"id":"gs1-zo-02-001","type":"input","prompt_de":"Schreibe die Zahl: zehn.","prompt_en":"Write the number: ten.","answer":"10","hint_de":"Zehn hat zwei Ziffern.","hint_en":"Ten has two digits.","explain_de":"Zahl 10.","explain_en":"Number 10."},
+      {"id":"gs1-zo-02-002","type":"mcq","prompt_de":"Welche Zahl kommt nach 14?","prompt_en":"Which number comes after 14?","choices_de":["13","15","16"],"choices_en":["13","15","16"],"answer":"15","hint_de":"Zähle weiter: 13,14,...","hint_en":"Count on: 13,14,...","explain_de":"Nach 14 folgt 15.","explain_en":"15 follows 14."},
+      {"id":"gs1-zo-02-003","type":"mcq","prompt_de":"Welche Zahl ist kleiner? 18 oder 12","prompt_en":"Which number is smaller? 18 or 12","choices_de":["18","12"],"choices_en":["18","12"],"answer":"12","hint_de":"Schau auf die Zehnerstelle.","hint_en":"Check the tens place.","explain_de":"12 < 18.","explain_en":"12 is less than 18."},
+      {"id":"gs1-zo-02-004","type":"input","prompt_de":"Was ist die Vorgängerzahl von 9?","prompt_en":"What is the predecessor of 9?","answer":"8","hint_de":"Eine Zahl davor.","hint_en":"One number before it.","explain_de":"8 kommt vor 9.","explain_en":"8 comes before 9."},
+      {"id":"gs1-zo-02-005","type":"mcq","prompt_de":"Ordne aufsteigend: 6, 2, 5","prompt_en":"Sort ascending: 6, 2, 5","choices_de":["6,5,2","2,5,6","2,6,5"],"choices_en":["6,5,2","2,5,6","2,6,5"],"answer":"2,5,6","hint_de":"Beginne mit der kleinsten Zahl.","hint_en":"Start with the smallest number.","explain_de":"2 < 5 < 6.","explain_en":"2 < 5 < 6."},
+      {"id":"gs1-zo-02-006","type":"input","prompt_de":"Welche Zahl hat ein Dutzend?","prompt_en":"Which number is a dozen?","answer":"12","hint_de":"Denke an 12 Eier.","hint_en":"Think of 12 eggs.","explain_de":"Ein Dutzend = 12.","explain_en":"A dozen equals 12."},
+      {"id":"gs1-zo-02-007","type":"mcq","prompt_de":"Welche Zahl fehlt? 17, 18, __, 20","prompt_en":"Which number is missing? 17, 18, __, 20","choices_de":["19","16","21"],"choices_en":["19","16","21"],"answer":"19","hint_de":"Zähle weiter nach 18.","hint_en":"Count on after 18.","explain_de":"19 liegt zwischen 18 und 20.","explain_en":"19 is between 18 and 20."},
+      {"id":"gs1-zo-02-008","type":"input","prompt_de":"Schreibe die Zahl für elf.","prompt_en":"Write the number for eleven.","answer":"11","hint_de":"Elf ist nach zehn.","hint_en":"Eleven comes after ten.","explain_de":"Elf → 11.","explain_en":"Eleven is 11."},
+      {"id":"gs1-zo-02-009","type":"mcq","prompt_de":"Welche Zahl ist größer? 20 oder 15","prompt_en":"Which number is greater? 20 or 15","choices_de":["15","20"],"choices_en":["15","20"],"answer":"20","hint_de":"Vergleiche Zehner.","hint_en":"Compare tens.","explain_de":"20 > 15.","explain_en":"20 is greater than 15."},
+      {"id":"gs1-zo-02-010","type":"input","prompt_de":"Welche Zahl kommt vor 20?","prompt_en":"Which number comes before 20?","answer":"19","hint_de":"Eine Zahl kleiner.","hint_en":"One less.","explain_de":"19 steht vor 20.","explain_en":"19 is before 20."}
+    ],
+    "gs1-zo-03": [
+      {"id":"gs1-zo-03-001","type":"mcq","prompt_de":"Welche Zerlegung passt zu 7?","prompt_en":"Which split fits 7?","choices_de":["3+3","4+3","2+2"],"choices_en":["3+3","4+3","2+2"],"answer":"4+3","hint_de":"Vier und drei zusammen.","hint_en":"Four and three together.","explain_de":"4+3 ergibt 7.","explain_en":"4+3 makes 7."},
+      {"id":"gs1-zo-03-002","type":"input","prompt_de":"Ergänze auf 10: 6 + __","prompt_en":"Complete to 10: 6 + __","answer":"4","hint_de":"6 plus 4 wird 10.","hint_en":"6 plus 4 makes 10.","explain_de":"6+4=10.","explain_en":"6+4=10."},
+      {"id":"gs1-zo-03-003","type":"mcq","prompt_de":"Welche Zahl fehlt? 5 = 2 + __","prompt_en":"Which number is missing? 5 = 2 + __","choices_de":["2","3","4"],"choices_en":["2","3","4"],"answer":"3","hint_de":"2 plus? ergibt 5.","hint_en":"2 plus what equals 5?","explain_de":"2+3=5.","explain_en":"2+3=5."},
+      {"id":"gs1-zo-03-004","type":"input","prompt_de":"Zerlege 9 in zwei Teile (z.B. 4+5).","prompt_en":"Split 9 into two parts (e.g., 4+5).","answer":"4+5","hint_de":"4 und 5 sind möglich, auch 3+6.","hint_en":"4 and 5 works; 3 and 6 also works.","explain_de":"Eine korrekte Zerlegung ist 4+5.","explain_en":"One correct split is 4+5."},
+      {"id":"gs1-zo-03-005","type":"mcq","prompt_de":"Welche Ergänzung macht 8 voll? 5 + __","prompt_en":"Which add-on makes 8? 5 + __","choices_de":["2","3","4"],"choices_en":["2","3","4"],"answer":"3","hint_de":"5+3=8.","hint_en":"5+3=8.","explain_de":"5 plus 3 ist 8.","explain_en":"5 plus 3 is 8."},
+      {"id":"gs1-zo-03-006","type":"input","prompt_de":"Ergänze auf 6: 1 + __","prompt_en":"Make 6: 1 + __","answer":"5","hint_de":"1 plus 5.","hint_en":"1 plus 5.","explain_de":"1+5=6.","explain_en":"1+5=6."},
+      {"id":"gs1-zo-03-007","type":"mcq","prompt_de":"Welche Zerlegung gehört zu 10?","prompt_en":"Which split belongs to 10?","choices_de":["7+2","6+4","3+3"],"choices_en":["7+2","6+4","3+3"],"answer":"6+4","hint_de":"6 und 4 sind zusammen 10.","hint_en":"6 and 4 together are 10.","explain_de":"6+4=10.","explain_en":"6+4=10."},
+      {"id":"gs1-zo-03-008","type":"input","prompt_de":"Fülle: 0 + __ = 8","prompt_en":"Fill: 0 + __ = 8","answer":"8","hint_de":"Null ändert nichts.","hint_en":"Zero changes nothing.","explain_de":"0+8=8.","explain_en":"0+8=8."},
+      {"id":"gs1-zo-03-009","type":"mcq","prompt_de":"Welche Ergänzung macht 5? 4 + __","prompt_en":"Which add-on makes 5? 4 + __","choices_de":["1","2","0"],"choices_en":["1","2","0"],"answer":"1","hint_de":"4 plus 1.","hint_en":"4 plus 1.","explain_de":"4+1=5.","explain_en":"4+1=5."},
+      {"id":"gs1-zo-03-010","type":"input","prompt_de":"Zerlege 10 in gleiche Teile.","prompt_en":"Split 10 into equal parts.","answer":"5+5","hint_de":"Zwei gleiche Zahlen.","hint_en":"Two equal numbers.","explain_de":"5+5 teilt 10 gleich.","explain_en":"5+5 splits 10 equally."}
+    ]
+  }
+}
