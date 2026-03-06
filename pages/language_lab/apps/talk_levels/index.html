@@ -2,21 +2,22 @@
 <html lang="de" data-theme="light">
   <head>
     <meta charset="utf-8" />
-    <title>Sprachführer – Level 0–10</title>
+    <title>Talk Levels (Level 0–10)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../../../../core/assets/style.css" />
     <link rel="stylesheet" href="talk_levels_style.css" />
     <script src="../../../../core/js/core_init.js" defer></script>
     <script src="talk_levels_script.js" defer></script>
   </head>
-  <body>
+  <body data-app="sprachfuehrer">
+    <div id="sfHeaderActions"></div>
     <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
 
     <main class="page-wrapper talk-levels">
       <div class="card tl-card">
         <section class="tl-hero">
           <div class="tl-hero__title">
-            <h1>Sprachführer — Level 0–10</h1>
+            <h1>Talk Levels (Level 0–10)</h1>
             <p class="hint-text">
               Zentrale Datenquelle für alle Themen und Level. Filtere nach Thema, Level, Suchbegriff
               oder Sprache für die Sprachausgabe.
@@ -132,5 +133,6 @@
         <div id="tlVoiceList" class="voice-dialog__list"></div>
       </div>
     </dialog>
+    <script src="/core/js/sprachfuehrer_bg.js" defer></script>
   </body>
 </html>

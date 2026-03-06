@@ -15,6 +15,11 @@ const setTxt = (id, txt, titleTxt) => {
   el.textContent = txt;
   if (titleTxt) el.title = titleTxt;
 };
+const setBtnLabels = (id, de, en) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.innerHTML = `<span class="lbl lbl-de">${de}</span><span class="lbl lbl-en">${en}</span>`;
+};
 
 const els = {
   modeDaily: $("tabModeDaily"),
@@ -64,9 +69,9 @@ const els = {
   boxes: $("btnBoxes"),
   reset: $("btnReset"),
   install: $("btnInstall"),
-  bgBtn: $("btnBg"),
-  bgBtnFloat: $("btnBgFloat"),
   bgThumb: $("bgPreviewThumb"),
+  bgSelect: $("bgSelect"),
+  bgToggle: $("bgToggle"),
   dailyTemplates: $("dailyTemplates"),
   dailySpeak: $("btnDailySpeak"),
   dailyDone: $("btnDailyDone"),
@@ -156,13 +161,17 @@ const els = {
   wordCorrect: $("btnWordCorrect"),
   wordSavePhrase: $("btnWordSavePhrase"),
   wordAdd: $("btnWordAdd"),
+  navBack: $("btnNavBack"),
+  navHome: $("btnNavHome"),
+  bgPreviewExit: $("bgPreviewExit"),
 };
 
 // Basis-Labels DE/EN (robust: nur setzen, wenn Element existiert)
-setTxt("btnInstall", "App installieren / Install app");
-setTxt("btnDebug", "Debug / Debug");
-setTxt("btnBg", "Hintergrund / Background", "Hintergrund / Background");
-setTxt("btnReset", "Zurücksetzen / Reset", "Neu laden / Reload");
+setBtnLabels("btnInstall", "App installieren", "Install app");
+setBtnLabels("btnDebug", "Debug", "Debug");
+setBtnLabels("btnReset", "Zurücksetzen", "Reset");
+setBtnLabels("btnNavBack", "Zurück", "Back");
+setBtnLabels("btnNavHome", "Portal", "Portal");
 setTxt("tabModeDaily", "Daily 10 / Täglich 10");
 setTxt("tabModeLevel", "Level / Stufe");
 setTxt("tabModeReview", "Review / Wiederholen");
@@ -170,8 +179,6 @@ setTxt("btnStart", "Start / Start");
 setTxt("btnBoxes", "Boxen / Boxes");
 setTxt("btnBoxFocusReset", "Fokus zurücksetzen / Reset focus");
 setTxt("btnGlossary", "Wörterbuch / Glossary");
-setTxt("btnBgFloat", "BG / BG", "Hintergrund / Background");
-setTxt("btnBgReset", "BG zurück / Reset BG");
 setTxt("btnReviewStart", "Review starten / Start review");
 setTxt("btnCloseBoxes", "Schließen / Close");
 setTxt("btnFlip", "Zeigen / Show");
@@ -226,6 +233,7 @@ const DE_NORM_BACKUP_PREFIX = "SB_BACKUP_DECK_";
 const GLOSSARY_KEY = "sprachbox_glossary_v1"; // popup dictionary / glossary
 const GLOSSARY_MIN_KEY = "sprachbox_glossary_min_v1"; // mini lexicon (small)
 const PHRASE_MAP_KEY = "sprachbox_phrase_map_v1"; // small phrase-first overrides
+const BG_LS_ID = "sb_bg_id";
 
 const BOX_COUNT = 8;
 
@@ -251,6 +259,13 @@ const DATA_URLS = [
 ];
 const EXTRA_DATA_URLS = [
   "./data/sentences_a1.json",
+];
+
+const BG_OPTIONS = [
+  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
 ];
 
 const DAILY_TEMPLATES = [
@@ -434,12 +449,36 @@ function setBackgroundFocusMode(on) {
   document.body.classList.toggle("mode-bg", next);
   if (els.bgThumb) els.bgThumb.classList.toggle("show", next);
   if (els.bgThumb) els.bgThumb.setAttribute("aria-hidden", next ? "false" : "true");
-  setTxt("btnBg", next ? "Zurück / Back" : "Hintergrund / Background");
-  setTxt("btnBgFloat", next ? "Zurück / Back" : "BG / BG", next ? "Zurück / Back" : "Hintergrund / Background");
   if (next) hideWordPopup();
 }
 function toggleBackgroundFocusMode() {
   setBackgroundFocusMode(state.ui.uiMode !== "background");
+}
+
+function getBgChoice(id) {
+  return BG_OPTIONS.find((x) => x.id === id) || BG_OPTIONS[0];
+}
+
+function applyBgChoice(id) {
+  const choice = getBgChoice(id);
+  if (!choice) return;
+  const url = choice.url;
+  document.documentElement.style.setProperty("--sb-bg", `url("${url}")`);
+  localStorage.setItem(BG_LS_ID, choice.id);
+  if (els.bgSelect) els.bgSelect.value = choice.id;
+}
+
+function updateBgToggleLabel(previewOn) {
+  if (!els.bgToggle) return;
+  if (previewOn) setBtnLabels("bgToggle", "UI einblenden", "Show UI");
+  else setBtnLabels("bgToggle", "Hintergrund anzeigen", "Show background");
+}
+
+function loadBgPrefs() {
+  const savedId = localStorage.getItem(BG_LS_ID) || BG_OPTIONS[0].id;
+  applyBgChoice(savedId);
+  document.body.classList.remove("is-bg-preview", "is-bg-hidden");
+  updateBgToggleLabel(false);
 }
 function normalizeBoxFocusList(input) {
   const arr = Array.isArray(input) ? input : (input == null ? [] : [input]);
@@ -3632,6 +3671,7 @@ async function registerSW() {
 // ---------- init ----------
 async function init() {
   loadSettings();
+  loadBgPrefs();
   loadBoxFocus();
   loadDeckTextOverrides();
   parseHashSettings();
@@ -3802,8 +3842,21 @@ async function init() {
   on(els.dailyDone, "click", markDailyDone);
 
   // background thumb
-  on(els.bgBtn, "click", toggleBackgroundFocusMode);
-  on(els.bgBtnFloat, "click", toggleBackgroundFocusMode);
+  on(els.bgSelect, "change", (e) => applyBgChoice(e.target.value));
+  on(els.bgToggle, "click", () => {
+    const preview = !document.body.classList.contains("is-bg-preview");
+    document.body.classList.toggle("is-bg-preview", preview);
+    updateBgToggleLabel(preview);
+  });
+  on(els.bgPreviewExit, "click", () => {
+    document.body.classList.remove("is-bg-preview");
+    updateBgToggleLabel(false);
+  });
+
+  on(els.navBack, "click", () => {
+    if (window.history.length > 1) window.history.back();
+    else window.location.href = "../../index.html";
+  });
 
   // modal controls
   on(els.close, "click", closeModal);

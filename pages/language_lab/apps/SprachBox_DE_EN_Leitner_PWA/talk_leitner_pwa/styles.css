@@ -14,6 +14,11 @@
   --r2: 26px;
   --pad: 16px;
   --max: 980px;
+  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+  --sb-bg-opacity: 0.72;
+  --sb-bg-size: contain;
+  --sb-bg-position: center center;
+  --sb-bg-repeat: no-repeat;
   font-synthesis-weight: none;
 }
 
@@ -36,11 +41,30 @@ body::before{
   position:fixed;
   inset:0;
   pointer-events:none;
-  background-image: url("./assets/bg-de-en.webp");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.72;
+  background-image: var(--sb-bg);
+  background-size: var(--sb-bg-size);
+  background-position: var(--sb-bg-position);
+  background-repeat: var(--sb-bg-repeat);
+  opacity: var(--sb-bg-opacity);
   filter: brightness(1.10) contrast(1.10) saturate(1.08);
+}
+body.is-bg-hidden::before{
+  opacity: 0.12;
+  filter: blur(2px) saturate(.45) brightness(0.7);
+}
+body.is-bg-hidden .bgPreviewThumb{
+  opacity: 0.18;
+  filter: blur(1.2px) saturate(.4);
+}
+
+/* Vollbild-Preview: UI ausblenden, nur Hintergrund zeigen */
+body.is-bg-preview{
+  overflow:hidden;
+}
+body.is-bg-preview .topbar,
+body.is-bg-preview .wrap,
+body.is-bg-preview #studyOverlay{
+  display:none !important;
 }
 
 .topbar{
@@ -70,6 +94,94 @@ body::before{
 .titles .h2{ font-size:12px; color:var(--muted); margin-top:2px; }
 
 .top-actions{ display:flex; gap:10px; align-items:center; }
+.bgControls{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.bgControls .btn{
+  min-height: 46px;
+}
+.bgSelectWrap.btn{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid var(--stroke);
+  background: rgba(8,14,28,.35);
+  color:var(--text);
+  font-weight:800;
+  cursor:pointer;
+  min-height:46px;
+}
+.bgSelectWrap .label{
+  pointer-events:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  line-height:1.05;
+}
+.bgSelectWrap select{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  cursor:pointer;
+}
+#bgToggle.btn{
+  white-space:nowrap;
+}
+.btn .lbl{
+  display:block;
+  text-align:center;
+  line-height:1.05;
+}
+.btn .lbl-de{
+  font-weight:800;
+}
+.btn .lbl-en{
+  font-weight:600;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.bgPreviewExit{
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 200;
+  min-height: 42px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  display:none;
+}
+body.is-bg-preview .bgPreviewExit{
+  display:inline-flex;
+}
+body.is-bg-preview .bgPreviewExit .lbl-de{
+  font-weight:800;
+}
+body.is-bg-preview .bgPreviewExit .lbl-en{
+  font-size: 11px;
+}
+
+.bottom-nav{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 150;
+  display:flex;
+  gap:10px;
+}
+.bottom-nav .btn{
+  min-height:44px;
+}
+body.is-bg-preview .bottom-nav{
+  display:none !important;
+}
 
 .wrap{
   max-width:var(--max);
@@ -423,23 +535,19 @@ input[type="range"]{
   width: 260px;
   height: 146px;
   border-radius: 16px;
-  background-image: url("./assets/bg-de-en.webp");
-  background-size: cover;
-  background-position: center;
+  background-image: var(--sb-bg);
+  background-size: var(--sb-bg-size);
+  background-position: var(--sb-bg-position);
+  background-repeat: var(--sb-bg-repeat);
   border: 1px solid rgba(255,255,255,.25);
   box-shadow: 0 16px 50px rgba(0,0,0,.55);
   opacity: 0.95;
   display: none;
 }
 .bgPreviewThumb.show{ display:block; }
-
-.bgFloat{
-  position: fixed;
-  top: 14px;
-  right: 14px;
-  z-index: 130;
-  padding: 10px 12px;
-  border-radius: 16px;
+body.is-bg-hidden .bgPreviewThumb{
+  opacity: 0.18;
+  filter: blur(1.2px) saturate(.4);
 }
 
 body.mode-bg{
@@ -461,12 +569,6 @@ body.mode-bg .brand{
 }
 body.mode-bg .top-actions > *{
   display: none;
-}
-body.mode-bg .top-actions #btnBg{
-  display: inline-flex;
-}
-body.mode-bg #btnBgFloat{
-  display: none !important;
 }
 body.mode-bg .bgPreviewThumb{
   display: block;
@@ -913,6 +1015,3 @@ body.mode-bg .bgPreviewThumb{
   display: none !important;
   pointer-events: none !important;
 }
-
-
-

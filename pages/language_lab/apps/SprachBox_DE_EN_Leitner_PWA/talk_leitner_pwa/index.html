@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <button id="btnBgFloat" class="btn ghost bgFloat" title="Hintergrund / Background">BG</button>
   <header class="topbar">
     <div class="brand">
       <div class="logo">SB</div>
@@ -23,10 +22,32 @@
     </div>
 
     <div class="top-actions">
-      <button id="btnInstall" class="btn ghost" hidden>App installieren</button>
-      <button id="btnDebug" class="btn ghost" title="Debug-Status ein/aus">Debug</button>
-      <button id="btnBg" class="btn ghost" title="Hintergrund-Vorschau">BG</button>
-      <button id="btnReset" class="btn ghost" title="Fortschritt löschen">Reset</button>
+      <button id="btnInstall" class="btn ghost" hidden>
+        <span class="lbl lbl-de">App installieren</span>
+        <span class="lbl lbl-en">Install app</span>
+      </button>
+      <button id="btnReset" class="btn ghost" title="Fortschritt löschen">
+        <span class="lbl lbl-de">Zurücksetzen</span>
+        <span class="lbl lbl-en">Reset</span>
+      </button>
+      <div id="bgControls" class="bgControls">
+        <label class="btn ghost bgSelectWrap" for="bgSelect">
+          <span class="label">
+            <span class="lbl lbl-de">Hintergrund wählen</span>
+            <span class="lbl lbl-en">Choose background</span>
+          </span>
+          <select id="bgSelect">
+            <option value="bg01">BG 01</option>
+            <option value="bg02">BG 02</option>
+            <option value="bg03">BG 03</option>
+            <option value="bg04">BG 04</option>
+          </select>
+        </label>
+        <button id="bgToggle" class="btn ghost" type="button">
+          <span class="lbl lbl-de">Hintergrund ausblenden</span>
+          <span class="lbl lbl-en">Hide background</span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -443,9 +464,22 @@
   </div>
 
   <div id="bgPreviewThumb" class="bgPreviewThumb" aria-hidden="true"></div>
+  <button id="bgPreviewExit" class="btn ghost bgPreviewExit" type="button">
+    <span class="lbl lbl-de">Zurück zur App</span>
+    <span class="lbl lbl-en">Back to app</span>
+  </button>
+
+  <div class="bottom-nav">
+    <button id="btnNavBack" class="btn ghost" type="button">
+      <span class="lbl lbl-de">Zurück</span>
+      <span class="lbl lbl-en">Back</span>
+    </button>
+    <a id="btnNavHome" class="btn" href="/pages/portal_v2/index.html">
+      <span class="lbl lbl-de">Portal</span>
+      <span class="lbl lbl-en">Portal</span>
+    </a>
+  </div>
 
   <script src="./app.js" type="module"></script>
 </body>
 </html>
-
-

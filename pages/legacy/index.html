@@ -2,14 +2,15 @@
 <html lang="de" data-theme="light">
   <head>
     <meta charset="utf-8" />
-    <title>Sprachführer – Landing</title>
+    <title>Sprachführer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="core/assets/style.css" />
     <script src="core/js/core_init.js" defer></script>
   </head>
-  <body>
+  <body data-app="sprachfuehrer">
     <div data-partial="header" data-partial-path="core/core/partials/header.html"></div>
+    <div id="sfHeaderActions"></div>
 
     <main class="page-wrapper">
       <div class="card">
@@ -50,5 +51,6 @@
     </main>
 
     <div data-partial="footer" data-partial-path="core/core/partials/footer.html"></div>
+    <script src="/core/js/sprachfuehrer_bg.js" defer></script>
   </body>
 </html>
