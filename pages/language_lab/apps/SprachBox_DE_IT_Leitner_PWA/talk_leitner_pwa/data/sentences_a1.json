@@ -1,0 +1,2230 @@
+﻿{
+    "items":  [
+                  {
+                      "id":  "a1extra-0001",
+                      "de":  "Hallo!",
+                      "en":  "Hello!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0002",
+                      "de":  "Guten Morgen!",
+                      "en":  "Good morning!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0003",
+                      "de":  "Guten Tag!",
+                      "en":  "Good afternoon!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0004",
+                      "de":  "Guten Abend!",
+                      "en":  "Good evening!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0005",
+                      "de":  "Gute Nacht!",
+                      "en":  "Good night!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0006",
+                      "de":  "Wie geht es dir?",
+                      "en":  "How are you?",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0007",
+                      "de":  "Mir geht es gut.",
+                      "en":  "I am fine.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0008",
+                      "de":  "Und dir?",
+                      "en":  "And you?",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0009",
+                      "de":  "Danke, gut.",
+                      "en":  "Thanks, good.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0010",
+                      "de":  "Bis spaeter!",
+                      "en":  "See you later!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0011",
+                      "de":  "Bis morgen!",
+                      "en":  "See you tomorrow!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0012",
+                      "de":  "Auf Wiedersehen!",
+                      "en":  "Goodbye!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0013",
+                      "de":  "Bitte.",
+                      "en":  "Please.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0014",
+                      "de":  "Danke schoen.",
+                      "en":  "Thank you very much.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0015",
+                      "de":  "Kein Problem.",
+                      "en":  "No problem.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0016",
+                      "de":  "Entschuldigung.",
+                      "en":  "Excuse me.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0017",
+                      "de":  "Es tut mir leid.",
+                      "en":  "I am sorry.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0018",
+                      "de":  "Wie heisst du?",
+                      "en":  "What is your name?",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0019",
+                      "de":  "Ich heisse Anna.",
+                      "en":  "My name is Anna.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0020",
+                      "de":  "Ich komme aus Deutschland.",
+                      "en":  "I come from Germany.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0021",
+                      "de":  "Ich wohne in Berlin.",
+                      "en":  "I live in Berlin.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0022",
+                      "de":  "Ich lerne Englisch.",
+                      "en":  "I learn English.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0023",
+                      "de":  "Sprichst du Deutsch?",
+                      "en":  "Do you speak German?",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0024",
+                      "de":  "Ja, ein bisschen.",
+                      "en":  "Yes, a little.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0025",
+                      "de":  "Nein, noch nicht.",
+                      "en":  "No, not yet.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0026",
+                      "de":  "Kannst du das wiederholen?",
+                      "en":  "Can you repeat that?",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0027",
+                      "de":  "Bitte sprich langsam.",
+                      "en":  "Please speak slowly.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0028",
+                      "de":  "Ich verstehe das.",
+                      "en":  "I understand that.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0029",
+                      "de":  "Ich verstehe das nicht.",
+                      "en":  "I do not understand that.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0030",
+                      "de":  "Was bedeutet das?",
+                      "en":  "What does that mean?",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0031",
+                      "de":  "Wie schreibt man das?",
+                      "en":  "How do you spell that?",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0032",
+                      "de":  "Einen schoenen Tag noch!",
+                      "en":  "Have a nice day!",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0033",
+                      "de":  "Meine Familie ist klein.",
+                      "en":  "My family is small.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0034",
+                      "de":  "Meine Familie ist gross.",
+                      "en":  "My family is big.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0035",
+                      "de":  "Ich habe eine Schwester.",
+                      "en":  "I have a sister.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0036",
+                      "de":  "Ich habe einen Bruder.",
+                      "en":  "I have a brother.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0037",
+                      "de":  "Meine Mutter arbeitet heute.",
+                      "en":  "My mother works today.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0038",
+                      "de":  "Mein Vater ist zu Hause.",
+                      "en":  "My father is at home.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0039",
+                      "de":  "Meine Eltern sind nett.",
+                      "en":  "My parents are nice.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0040",
+                      "de":  "Meine Oma kocht gern.",
+                      "en":  "My grandma likes cooking.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0041",
+                      "de":  "Mein Opa liest die Zeitung.",
+                      "en":  "My grandpa reads the newspaper.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0042",
+                      "de":  "Mein Kind schlaeft jetzt.",
+                      "en":  "My child is sleeping now.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0043",
+                      "de":  "Wir essen zusammen.",
+                      "en":  "We eat together.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0044",
+                      "de":  "Wir trinken Tee zusammen.",
+                      "en":  "We drink tea together.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0045",
+                      "de":  "Meine Familie wohnt hier.",
+                      "en":  "My family lives here.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0046",
+                      "de":  "Meine Tante besucht uns.",
+                      "en":  "My aunt visits us.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0047",
+                      "de":  "Mein Onkel faehrt morgen.",
+                      "en":  "My uncle drives tomorrow.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0048",
+                      "de":  "Mein Cousin spielt Fussball.",
+                      "en":  "My cousin plays soccer.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0049",
+                      "de":  "Meine Cousine lernt Deutsch.",
+                      "en":  "My cousin learns German.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0050",
+                      "de":  "Meine Schwester lacht oft.",
+                      "en":  "My sister laughs often.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0051",
+                      "de":  "Mein Bruder ist muede.",
+                      "en":  "My brother is tired.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0052",
+                      "de":  "Meine Mutter trinkt Kaffee.",
+                      "en":  "My mother drinks coffee.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0053",
+                      "de":  "Mein Vater trinkt Wasser.",
+                      "en":  "My father drinks water.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0054",
+                      "de":  "Wir sehen einen Film.",
+                      "en":  "We watch a movie.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0055",
+                      "de":  "Wir sprechen am Abend.",
+                      "en":  "We talk in the evening.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0056",
+                      "de":  "Ich telefoniere mit meiner Mutter.",
+                      "en":  "I call my mother.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0057",
+                      "de":  "Ich schreibe meinem Vater.",
+                      "en":  "I write to my father.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0058",
+                      "de":  "Heute ist ein Familientag.",
+                      "en":  "Today is a family day.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0059",
+                      "de":  "Meine Eltern kommen spaeter.",
+                      "en":  "My parents come later.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0060",
+                      "de":  "Mein Bruder ist in der Schule.",
+                      "en":  "My brother is at school.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0061",
+                      "de":  "Meine Schwester ist im Garten.",
+                      "en":  "My sister is in the garden.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0062",
+                      "de":  "Wir sind heute zusammen.",
+                      "en":  "We are together today.",
+                      "stufe":  "A1",
+                      "topic":  "familie"
+                  },
+                  {
+                      "id":  "a1extra-0063",
+                      "de":  "Ich trinke Wasser.",
+                      "en":  "I drink water.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0064",
+                      "de":  "Moechtest du Wasser?",
+                      "en":  "Do you want water?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0065",
+                      "de":  "Ich trinke Tee.",
+                      "en":  "I drink tea.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0066",
+                      "de":  "Moechtest du Tee?",
+                      "en":  "Do you want tea?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0067",
+                      "de":  "Ich trinke Kaffee.",
+                      "en":  "I drink coffee.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0068",
+                      "de":  "Moechtest du Kaffee?",
+                      "en":  "Do you want coffee?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0069",
+                      "de":  "Ich trinke Milch.",
+                      "en":  "I drink milk.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0070",
+                      "de":  "Moechtest du Milch?",
+                      "en":  "Do you want milk?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0071",
+                      "de":  "Ich trinke Saft.",
+                      "en":  "I drink juice.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0072",
+                      "de":  "Moechtest du Saft?",
+                      "en":  "Do you want juice?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0073",
+                      "de":  "Ich trinke Apfelsaft.",
+                      "en":  "I drink apple juice.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0074",
+                      "de":  "Moechtest du Apfelsaft?",
+                      "en":  "Do you want apple juice?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0075",
+                      "de":  "Ich trinke Orangensaft.",
+                      "en":  "I drink orange juice.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0076",
+                      "de":  "Moechtest du Orangensaft?",
+                      "en":  "Do you want orange juice?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0077",
+                      "de":  "Ich trinke Limo.",
+                      "en":  "I drink lemonade.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0078",
+                      "de":  "Moechtest du Limo?",
+                      "en":  "Do you want lemonade?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0079",
+                      "de":  "Ich trinke Mineralwasser.",
+                      "en":  "I drink mineral water.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0080",
+                      "de":  "Moechtest du Mineralwasser?",
+                      "en":  "Do you want mineral water?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0081",
+                      "de":  "Ich trinke heissen Tee.",
+                      "en":  "I drink hot tea.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0082",
+                      "de":  "Moechtest du heissen Tee?",
+                      "en":  "Do you want hot tea?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0083",
+                      "de":  "Ich trinke kaltes Wasser.",
+                      "en":  "I drink cold water.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0084",
+                      "de":  "Moechtest du kaltes Wasser?",
+                      "en":  "Do you want cold water?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0085",
+                      "de":  "Ich trinke einen Kaffee.",
+                      "en":  "I drink a coffee.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0086",
+                      "de":  "Moechtest du einen Kaffee?",
+                      "en":  "Do you want a coffee?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0087",
+                      "de":  "Ich esse Brot.",
+                      "en":  "I eat bread.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0088",
+                      "de":  "Ich esse Kaese.",
+                      "en":  "I eat cheese.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0089",
+                      "de":  "Ich esse Reis.",
+                      "en":  "I eat rice.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0090",
+                      "de":  "Ich esse Nudeln.",
+                      "en":  "I eat pasta.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0091",
+                      "de":  "Ich esse Suppe.",
+                      "en":  "I eat soup.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0092",
+                      "de":  "Ich esse Salat.",
+                      "en":  "I eat salad.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0093",
+                      "de":  "Ich esse einen Apfel.",
+                      "en":  "I eat an apple.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0094",
+                      "de":  "Ich esse eine Banane.",
+                      "en":  "I eat a banana.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0095",
+                      "de":  "Ich esse ein Ei.",
+                      "en":  "I eat an egg.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0096",
+                      "de":  "Ich esse Pizza.",
+                      "en":  "I eat pizza.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0097",
+                      "de":  "Ich esse Fisch.",
+                      "en":  "I eat fish.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0098",
+                      "de":  "Ich esse Gemuese.",
+                      "en":  "I eat vegetables.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0099",
+                      "de":  "Ich esse Obst.",
+                      "en":  "I eat fruit.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0100",
+                      "de":  "Ich esse Joghurt.",
+                      "en":  "I eat yogurt.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0101",
+                      "de":  "Das Essen ist lecker.",
+                      "en":  "The food is tasty.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0102",
+                      "de":  "Die Suppe ist heiss.",
+                      "en":  "The soup is hot.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0103",
+                      "de":  "Das Wasser ist kalt.",
+                      "en":  "The water is cold.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0104",
+                      "de":  "Ich bin hungrig.",
+                      "en":  "I am hungry.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0105",
+                      "de":  "Ich bin durstig.",
+                      "en":  "I am thirsty.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0106",
+                      "de":  "Wir fruehstuecken jetzt.",
+                      "en":  "We have breakfast now.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0107",
+                      "de":  "Wir essen zu Mittag.",
+                      "en":  "We have lunch.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0108",
+                      "de":  "Wir essen heute Abend zu Hause.",
+                      "en":  "We eat at home this evening.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0109",
+                      "de":  "Kann ich die Speisekarte sehen?",
+                      "en":  "Can I see the menu?",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0110",
+                      "de":  "Ich moechte bezahlen.",
+                      "en":  "I would like to pay.",
+                      "stufe":  "A1",
+                      "topic":  "essen"
+                  },
+                  {
+                      "id":  "a1extra-0111",
+                      "de":  "Es ist sechs Uhr.",
+                      "en":  "It is sechs o\u0027clock.",
+                      "stufe":  "A1",
+                      "topic":  "zeit"
+                  },
+                  {
+                      "id":  "a1extra-0112",
+                      "de":  "Es ist sieben Uhr.",
+                      "en":  "It is sieben o\u0027clock.",
+                      "stufe":  "A1",
+                      "topic":  "zeit"
+                  },
+                  {
+                      "id":  "a1extra-0113",
+                      "de":  "Es ist acht Uhr.",
+                      "en":  "It is acht o\u0027clock.",
+                      "stufe":  "A1",
+                      "topic":  "zeit"
+                  },
+                  {
+                      "id":  "a1extra-0114",
+                      "de":  "Es ist neun Uhr.",
+                      "en":  "It is neun o\u0027clock.",
+                      "stufe":  "A1",
+                      "topic":  "zeit"
+                  },
+                  {
+                      "id":  "a1extra-0115",
+                      "de":  "Es ist zehn Uhr.",
+                      "en":  "It is zehn o\u0027clock.",
+                      "stufe":  "A1",
+                      "topic":  "zeit"
+                  },
+                  {
+                      "id":  "a1extra-0116",
+                      "de":  "Es ist elf Uhr.",
+                      "en":  "It is elf o\u0027clock.",
+                      "stufe":  "A1",
+                      "topic":  "zeit"
+                  },
+                  {
+                      "id":  "a1extra-0117",
+                      "de":  "Es ist zwoelf Uhr.",
+                      "en":  "It is zwoelf o\u0027clock.",
+                      "stufe":  "A1",
+                      "topic":  "zeit"
+                  },
+                  {
+                      "id":  "a1extra-0118",
+                      "de":  "Ich kaufe Brot.",
+                      "en":  "I buy bread.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0119",
+                      "de":  "Ich kaufe Milch.",
+                      "en":  "I buy milk.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0120",
+                      "de":  "Ich kaufe Kaffee.",
+                      "en":  "I buy coffee.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0121",
+                      "de":  "Ich kaufe Tee.",
+                      "en":  "I buy tea.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0122",
+                      "de":  "Ich kaufe Reis.",
+                      "en":  "I buy rice.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0123",
+                      "de":  "Ich kaufe Zucker.",
+                      "en":  "I buy sugar.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0124",
+                      "de":  "Ich kaufe Salz.",
+                      "en":  "I buy salt.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0125",
+                      "de":  "Ich kaufe Butter.",
+                      "en":  "I buy butter.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0126",
+                      "de":  "Ich kaufe Kaese.",
+                      "en":  "I buy cheese.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0127",
+                      "de":  "Ich kaufe Tomaten.",
+                      "en":  "I buy tomatoes.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0128",
+                      "de":  "Ich kaufe Kartoffeln.",
+                      "en":  "I buy potatoes.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0129",
+                      "de":  "Ich kaufe Aepfel.",
+                      "en":  "I buy apples.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0130",
+                      "de":  "Ich kaufe Bananen.",
+                      "en":  "I buy bananas.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0131",
+                      "de":  "Ich kaufe Wasser.",
+                      "en":  "I buy water.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0132",
+                      "de":  "Wo ist der Supermarkt?",
+                      "en":  "Where is the supermarket?",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0133",
+                      "de":  "Der Supermarkt ist dort.",
+                      "en":  "The supermarket is there.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0134",
+                      "de":  "Ich brauche einen Einkaufswagen.",
+                      "en":  "I need a shopping cart.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0135",
+                      "de":  "Wie viel kostet das?",
+                      "en":  "How much does that cost?",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0136",
+                      "de":  "Das ist zu teuer.",
+                      "en":  "That is too expensive.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0137",
+                      "de":  "Haben Sie Kleingeld?",
+                      "en":  "Do you have change?",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0138",
+                      "de":  "Ich bezahle mit Karte.",
+                      "en":  "I pay by card.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0139",
+                      "de":  "Ich bezahle bar.",
+                      "en":  "I pay cash.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0140",
+                      "de":  "Kann ich eine Tuete haben?",
+                      "en":  "Can I have a bag?",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0141",
+                      "de":  "Danke, das ist alles.",
+                      "en":  "Thanks, that is all.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0142",
+                      "de":  "Ich suche frisches Brot.",
+                      "en":  "I am looking for fresh bread.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0143",
+                      "de":  "Wo sind die Getraenke?",
+                      "en":  "Where are the drinks?",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0144",
+                      "de":  "Die Kasse ist vorne.",
+                      "en":  "The checkout is in front.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0145",
+                      "de":  "Es gibt ein Angebot heute.",
+                      "en":  "There is a special offer today.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0146",
+                      "de":  "Ich nehme zwei Aepfel.",
+                      "en":  "I take two apples.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0147",
+                      "de":  "Ich nehme ein Brot und Milch.",
+                      "en":  "I take a bread and milk.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0148",
+                      "de":  "Der Laden ist offen.",
+                      "en":  "The shop is open.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0149",
+                      "de":  "Der Laden ist geschlossen.",
+                      "en":  "The shop is closed.",
+                      "stufe":  "A1",
+                      "topic":  "einkaufen"
+                  },
+                  {
+                      "id":  "a1extra-0150",
+                      "de":  "Wo ist der Bahnhof?",
+                      "en":  "Where is the train station?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0151",
+                      "de":  "Der Bahnhof ist hier.",
+                      "en":  "The train station is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0152",
+                      "de":  "Wo ist die Schule?",
+                      "en":  "Where is the school?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0153",
+                      "de":  "Die Schule ist hier.",
+                      "en":  "The school is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0154",
+                      "de":  "Wo ist das Krankenhaus?",
+                      "en":  "Where is the hospital?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0155",
+                      "de":  "Das Krankenhaus ist hier.",
+                      "en":  "The hospital is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0156",
+                      "de":  "Wo ist die Apotheke?",
+                      "en":  "Where is the pharmacy?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0157",
+                      "de":  "Die Apotheke ist hier.",
+                      "en":  "The pharmacy is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0158",
+                      "de":  "Wo ist das Hotel?",
+                      "en":  "Where is the hotel?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0159",
+                      "de":  "Das Hotel ist hier.",
+                      "en":  "The hotel is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0160",
+                      "de":  "Wo ist die Bank?",
+                      "en":  "Where is the bank?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0161",
+                      "de":  "Die Bank ist hier.",
+                      "en":  "The bank is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0162",
+                      "de":  "Wo ist das Museum?",
+                      "en":  "Where is the museum?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0163",
+                      "de":  "Das Museum ist hier.",
+                      "en":  "The museum is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0164",
+                      "de":  "Wo ist der Park?",
+                      "en":  "Where is the park?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0165",
+                      "de":  "Der Park ist hier.",
+                      "en":  "The park is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0166",
+                      "de":  "Wo ist das Restaurant?",
+                      "en":  "Where is the restaurant?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0167",
+                      "de":  "Das Restaurant ist hier.",
+                      "en":  "The restaurant is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0168",
+                      "de":  "Wo ist die Post?",
+                      "en":  "Where is the post office?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0169",
+                      "de":  "Die Post ist hier.",
+                      "en":  "The post office is here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0170",
+                      "de":  "Gehen Sie geradeaus.",
+                      "en":  "Go straight ahead.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0171",
+                      "de":  "Dann links.",
+                      "en":  "Then left.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0172",
+                      "de":  "Dann rechts.",
+                      "en":  "Then right.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0173",
+                      "de":  "Es ist neben dem Park.",
+                      "en":  "It is next to the park.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0174",
+                      "de":  "Es ist gegenueber der Bank.",
+                      "en":  "It is opposite the bank.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0175",
+                      "de":  "Es ist nicht weit.",
+                      "en":  "It is not far.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0176",
+                      "de":  "Es ist sehr nah.",
+                      "en":  "It is very near.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0177",
+                      "de":  "Ich habe mich verlaufen.",
+                      "en":  "I am lost.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0178",
+                      "de":  "Kannst du mir helfen?",
+                      "en":  "Can you help me?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0179",
+                      "de":  "Ich suche die U-Bahn.",
+                      "en":  "I am looking for the subway.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0180",
+                      "de":  "Welche Linie brauche ich?",
+                      "en":  "Which line do I need?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0181",
+                      "de":  "Der Bus kommt gleich.",
+                      "en":  "The bus comes soon.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0182",
+                      "de":  "Ich steige hier aus.",
+                      "en":  "I get off here.",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0183",
+                      "de":  "Wo ist die Haltestelle?",
+                      "en":  "Where is the stop?",
+                      "stufe":  "A1",
+                      "topic":  "weg"
+                  },
+                  {
+                      "id":  "a1extra-0184",
+                      "de":  "Heute ist es sonnig.",
+                      "en":  "Today it is sunny.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0185",
+                      "de":  "Heute ist es windig.",
+                      "en":  "Today it is windy.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0186",
+                      "de":  "Heute ist es kalt.",
+                      "en":  "Today it is cold.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0187",
+                      "de":  "Heute ist es warm.",
+                      "en":  "Today it is warm.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0188",
+                      "de":  "Heute ist es heiss.",
+                      "en":  "Today it is hot.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0189",
+                      "de":  "Heute ist es trocken.",
+                      "en":  "Today it is dry.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0190",
+                      "de":  "Es regnet.",
+                      "en":  "It is raining.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0191",
+                      "de":  "Es schneit.",
+                      "en":  "It is snowing.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0192",
+                      "de":  "Die Sonne scheint.",
+                      "en":  "The sun is shining.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0193",
+                      "de":  "Es ist wolkig.",
+                      "en":  "It is cloudy.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0194",
+                      "de":  "Der Himmel ist blau.",
+                      "en":  "The sky is blue.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0195",
+                      "de":  "Ich brauche eine Jacke.",
+                      "en":  "I need a jacket.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0196",
+                      "de":  "Nimm einen Regenschirm mit.",
+                      "en":  "Take an umbrella with you.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0197",
+                      "de":  "Heute ist schoenes Wetter.",
+                      "en":  "The weather is nice today.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0198",
+                      "de":  "Morgen wird es kalt.",
+                      "en":  "Tomorrow it will be cold.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0199",
+                      "de":  "Am Abend ist es kuehl.",
+                      "en":  "In the evening it is cool.",
+                      "stufe":  "A1",
+                      "topic":  "wetter"
+                  },
+                  {
+                      "id":  "a1extra-0200",
+                      "de":  "Ich bin gluecklich.",
+                      "en":  "I am happy.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0201",
+                      "de":  "Ich bin traurig.",
+                      "en":  "I am sad.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0202",
+                      "de":  "Ich bin muede.",
+                      "en":  "I am tired.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0203",
+                      "de":  "Ich bin krank.",
+                      "en":  "I am sick.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0204",
+                      "de":  "Ich bin nervoes.",
+                      "en":  "I am nervous.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0205",
+                      "de":  "Ich bin ruhig.",
+                      "en":  "I am calm.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0206",
+                      "de":  "Ich bin fit.",
+                      "en":  "I am fit.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0207",
+                      "de":  "Ich bin fertig.",
+                      "en":  "I am done.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0208",
+                      "de":  "Ich habe Angst.",
+                      "en":  "I am afraid.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0209",
+                      "de":  "Ich freue mich.",
+                      "en":  "I am happy.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0210",
+                      "de":  "Ich bin okay.",
+                      "en":  "I am okay.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0211",
+                      "de":  "Mir geht es besser.",
+                      "en":  "I feel better.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0212",
+                      "de":  "Heute bin ich sehr muede.",
+                      "en":  "Today I am very tired.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0213",
+                      "de":  "Ich brauche eine Pause.",
+                      "en":  "I need a break.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0214",
+                      "de":  "Ich bin bereit.",
+                      "en":  "I am ready.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0215",
+                      "de":  "Keine Sorge.",
+                      "en":  "Do not worry.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0216",
+                      "de":  "Alles ist gut.",
+                      "en":  "Everything is fine.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0217",
+                      "de":  "Das macht Spass.",
+                      "en":  "That is fun.",
+                      "stufe":  "A1",
+                      "topic":  "gefuehle"
+                  },
+                  {
+                      "id":  "a1extra-0218",
+                      "de":  "Ich bin in die Kueche.",
+                      "en":  "I am in the kitchen.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0219",
+                      "de":  "Ich bin in das Bad.",
+                      "en":  "I am in the bathroom.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0220",
+                      "de":  "Ich bin in das Wohnzimmer.",
+                      "en":  "I am in the living room.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0221",
+                      "de":  "Ich bin in das Schlafzimmer.",
+                      "en":  "I am in the bedroom.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0222",
+                      "de":  "Ich bin in den Balkon.",
+                      "en":  "I am in the balcony.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0223",
+                      "de":  "Ich bin in den Garten.",
+                      "en":  "I am in the garden.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0224",
+                      "de":  "Die Tuer ist offen.",
+                      "en":  "The door is open.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0225",
+                      "de":  "Die Tuer ist zu.",
+                      "en":  "The door is closed.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0226",
+                      "de":  "Das Fenster ist offen.",
+                      "en":  "The window is open.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0227",
+                      "de":  "Das Licht ist an.",
+                      "en":  "The light is on.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0228",
+                      "de":  "Das Licht ist aus.",
+                      "en":  "The light is off.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0229",
+                      "de":  "Ich putze das Zimmer.",
+                      "en":  "I clean the room.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0230",
+                      "de":  "Ich mache das Bett.",
+                      "en":  "I make the bed.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0231",
+                      "de":  "Ich koche das Abendessen.",
+                      "en":  "I cook dinner.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0232",
+                      "de":  "Ich wasche das Geschirr.",
+                      "en":  "I wash the dishes.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0233",
+                      "de":  "Ich raeume auf.",
+                      "en":  "I tidy up.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0234",
+                      "de":  "Wir sitzen im Wohnzimmer.",
+                      "en":  "We sit in the living room.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0235",
+                      "de":  "Das Haus ist ruhig.",
+                      "en":  "The house is quiet.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0236",
+                      "de":  "Ich suche meinen Schluessel.",
+                      "en":  "I am looking for my key.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0237",
+                      "de":  "Mein Handy ist auf dem Tisch.",
+                      "en":  "My phone is on the table.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0238",
+                      "de":  "Die Tasche ist unter dem Tisch.",
+                      "en":  "The bag is under the table.",
+                      "stufe":  "A1",
+                      "topic":  "zuhause"
+                  },
+                  {
+                      "id":  "a1extra-0239",
+                      "de":  "Ich arbeite heute von zu Hause.",
+                      "en":  "I work from home today.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0240",
+                      "de":  "Ich habe eine E-Mail.",
+                      "en":  "I have an email.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0241",
+                      "de":  "Ich lese die Nachricht.",
+                      "en":  "I read the message.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0242",
+                      "de":  "Ich schreibe eine kurze Antwort.",
+                      "en":  "I write a short answer.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0243",
+                      "de":  "Mein Computer ist langsam.",
+                      "en":  "My computer is slow.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0244",
+                      "de":  "Das Internet ist langsam.",
+                      "en":  "The internet is slow.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0245",
+                      "de":  "Das Internet funktioniert.",
+                      "en":  "The internet works.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0246",
+                      "de":  "Mein Handy klingelt.",
+                      "en":  "My phone is ringing.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0247",
+                      "de":  "Ich lade den Akku.",
+                      "en":  "I charge the battery.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0248",
+                      "de":  "Ich brauche Hilfe am Computer.",
+                      "en":  "I need help with the computer.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0249",
+                      "de":  "Kannst du das Fenster schliessen?",
+                      "en":  "Can you close the window?",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0250",
+                      "de":  "Bitte oeffne die Datei.",
+                      "en":  "Please open the file.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0251",
+                      "de":  "Ich speichere die Datei.",
+                      "en":  "I save the file.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0252",
+                      "de":  "Ich drucke die Seite.",
+                      "en":  "I print the page.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0253",
+                      "de":  "Die Aufgabe ist fertig.",
+                      "en":  "The task is finished.",
+                      "stufe":  "A1",
+                      "topic":  "arbeit"
+                  },
+                  {
+                      "id":  "a1extra-0254",
+                      "de":  "Ich lernen heute zu Hause.",
+                      "en":  "I learn today at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0255",
+                      "de":  "Ich lernen heute in der Schule.",
+                      "en":  "I learn today at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0256",
+                      "de":  "Ich lernen heute im Park.",
+                      "en":  "I learn today in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0257",
+                      "de":  "Ich lernen heute im Buero.",
+                      "en":  "I learn today in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0258",
+                      "de":  "Ich lernen jetzt zu Hause.",
+                      "en":  "I learn now at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0259",
+                      "de":  "Ich lernen jetzt in der Schule.",
+                      "en":  "I learn now at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0260",
+                      "de":  "Ich lernen jetzt im Park.",
+                      "en":  "I learn now in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0261",
+                      "de":  "Ich lernen jetzt im Buero.",
+                      "en":  "I learn now in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0262",
+                      "de":  "Ich lernen morgen zu Hause.",
+                      "en":  "I learn tomorrow at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0263",
+                      "de":  "Ich lernen morgen in der Schule.",
+                      "en":  "I learn tomorrow at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0264",
+                      "de":  "Ich lernen morgen im Park.",
+                      "en":  "I learn tomorrow in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0265",
+                      "de":  "Ich lernen morgen im Buero.",
+                      "en":  "I learn tomorrow in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0266",
+                      "de":  "Ich lernen am Abend zu Hause.",
+                      "en":  "I learn in the evening at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0267",
+                      "de":  "Ich lernen am Abend in der Schule.",
+                      "en":  "I learn in the evening at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0268",
+                      "de":  "Ich lernen am Abend im Park.",
+                      "en":  "I learn in the evening in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0269",
+                      "de":  "Ich lernen am Abend im Buero.",
+                      "en":  "I learn in the evening in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0270",
+                      "de":  "Ich lesen heute zu Hause.",
+                      "en":  "I read today at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0271",
+                      "de":  "Ich lesen heute in der Schule.",
+                      "en":  "I read today at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0272",
+                      "de":  "Ich lesen heute im Park.",
+                      "en":  "I read today in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0273",
+                      "de":  "Ich lesen heute im Buero.",
+                      "en":  "I read today in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0274",
+                      "de":  "Ich lesen jetzt zu Hause.",
+                      "en":  "I read now at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0275",
+                      "de":  "Ich lesen jetzt in der Schule.",
+                      "en":  "I read now at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0276",
+                      "de":  "Ich lesen jetzt im Park.",
+                      "en":  "I read now in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0277",
+                      "de":  "Ich lesen jetzt im Buero.",
+                      "en":  "I read now in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0278",
+                      "de":  "Ich lesen morgen zu Hause.",
+                      "en":  "I read tomorrow at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0279",
+                      "de":  "Ich lesen morgen in der Schule.",
+                      "en":  "I read tomorrow at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0280",
+                      "de":  "Ich lesen morgen im Park.",
+                      "en":  "I read tomorrow in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0281",
+                      "de":  "Ich lesen morgen im Buero.",
+                      "en":  "I read tomorrow in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0282",
+                      "de":  "Ich lesen am Abend zu Hause.",
+                      "en":  "I read in the evening at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0283",
+                      "de":  "Ich lesen am Abend in der Schule.",
+                      "en":  "I read in the evening at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0284",
+                      "de":  "Ich lesen am Abend im Park.",
+                      "en":  "I read in the evening in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0285",
+                      "de":  "Ich lesen am Abend im Buero.",
+                      "en":  "I read in the evening in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0286",
+                      "de":  "Ich schreiben heute zu Hause.",
+                      "en":  "I write today at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0287",
+                      "de":  "Ich schreiben heute in der Schule.",
+                      "en":  "I write today at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0288",
+                      "de":  "Ich schreiben heute im Park.",
+                      "en":  "I write today in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0289",
+                      "de":  "Ich schreiben heute im Buero.",
+                      "en":  "I write today in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0290",
+                      "de":  "Ich schreiben jetzt zu Hause.",
+                      "en":  "I write now at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0291",
+                      "de":  "Ich schreiben jetzt in der Schule.",
+                      "en":  "I write now at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0292",
+                      "de":  "Ich schreiben jetzt im Park.",
+                      "en":  "I write now in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0293",
+                      "de":  "Ich schreiben jetzt im Buero.",
+                      "en":  "I write now in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0294",
+                      "de":  "Ich schreiben morgen zu Hause.",
+                      "en":  "I write tomorrow at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0295",
+                      "de":  "Ich schreiben morgen in der Schule.",
+                      "en":  "I write tomorrow at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0296",
+                      "de":  "Ich schreiben morgen im Park.",
+                      "en":  "I write tomorrow in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0297",
+                      "de":  "Ich schreiben morgen im Buero.",
+                      "en":  "I write tomorrow in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0298",
+                      "de":  "Ich schreiben am Abend zu Hause.",
+                      "en":  "I write in the evening at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0299",
+                      "de":  "Ich schreiben am Abend in der Schule.",
+                      "en":  "I write in the evening at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0300",
+                      "de":  "Ich schreiben am Abend im Park.",
+                      "en":  "I write in the evening in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0301",
+                      "de":  "Ich schreiben am Abend im Buero.",
+                      "en":  "I write in the evening in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0302",
+                      "de":  "Ich arbeiten heute zu Hause.",
+                      "en":  "I work today at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0303",
+                      "de":  "Ich arbeiten heute in der Schule.",
+                      "en":  "I work today at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0304",
+                      "de":  "Ich arbeiten heute im Park.",
+                      "en":  "I work today in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0305",
+                      "de":  "Ich arbeiten heute im Buero.",
+                      "en":  "I work today in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0306",
+                      "de":  "Ich arbeiten jetzt zu Hause.",
+                      "en":  "I work now at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0307",
+                      "de":  "Ich arbeiten jetzt in der Schule.",
+                      "en":  "I work now at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0308",
+                      "de":  "Ich arbeiten jetzt im Park.",
+                      "en":  "I work now in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0309",
+                      "de":  "Ich arbeiten jetzt im Buero.",
+                      "en":  "I work now in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0310",
+                      "de":  "Ich arbeiten morgen zu Hause.",
+                      "en":  "I work tomorrow at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0311",
+                      "de":  "Ich arbeiten morgen in der Schule.",
+                      "en":  "I work tomorrow at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0312",
+                      "de":  "Ich arbeiten morgen im Park.",
+                      "en":  "I work tomorrow in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0313",
+                      "de":  "Ich arbeiten morgen im Buero.",
+                      "en":  "I work tomorrow in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0314",
+                      "de":  "Ich arbeiten am Abend zu Hause.",
+                      "en":  "I work in the evening at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0315",
+                      "de":  "Ich arbeiten am Abend in der Schule.",
+                      "en":  "I work in the evening at school.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0316",
+                      "de":  "Ich arbeiten am Abend im Park.",
+                      "en":  "I work in the evening in the park.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0317",
+                      "de":  "Ich arbeiten am Abend im Buero.",
+                      "en":  "I work in the evening in the office.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  },
+                  {
+                      "id":  "a1extra-0318",
+                      "de":  "Ich spielen heute zu Hause.",
+                      "en":  "I play today at home.",
+                      "stufe":  "A1",
+                      "topic":  "alltag"
+                  }
+              ]
+}

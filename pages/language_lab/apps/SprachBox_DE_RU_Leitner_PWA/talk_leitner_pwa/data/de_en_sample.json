@@ -1,0 +1,32 @@
+[
+  {
+    "topic": "Basics",
+    "level": "1",
+    "de": "Guten Morgen!",
+    "en": "Good morning!"
+  },
+  {
+    "topic": "Basics",
+    "level": "1",
+    "de": "Wie geht es dir?",
+    "en": "How are you?"
+  },
+  {
+    "topic": "Restaurant",
+    "level": "2",
+    "de": "Die Speisekarte, bitte.",
+    "en": "The menu, please."
+  },
+  {
+    "topic": "Travel",
+    "level": "2",
+    "de": "Wo ist der Bahnhof?",
+    "en": "Where is the train station?"
+  },
+  {
+    "topic": "Hotel",
+    "level": "3",
+    "de": "Ich habe reserviert.",
+    "en": "I have a reservation."
+  }
+]
