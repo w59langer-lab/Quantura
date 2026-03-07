@@ -234,6 +234,10 @@ const GLOSSARY_KEY = "sprachbox_glossary_v1"; // popup dictionary / glossary
 const GLOSSARY_MIN_KEY = "sprachbox_glossary_min_v1"; // mini lexicon (small)
 const PHRASE_MAP_KEY = "sprachbox_phrase_map_v1"; // small phrase-first overrides
 const BG_LS_ID = "sb_bg_id";
+const SOURCE_LANG = "DE";
+const TARGET_LANG = "ES";
+const SHARED_PAIR_LABEL = `${SOURCE_LANG}->${TARGET_LANG}`;
+const TARGET_TTS_LANG = "es-ES";
 
 const BOX_COUNT = 8;
 
@@ -3260,9 +3264,9 @@ function grade(known) {
   // Reveal answer first if hidden
   const revealedNow = flipToAnswer();
 
-  // Speak EN after grading (best for confirmation)
+  // Speak back side after grading (best for confirmation)
   if ((revealedNow || isAnswerVisible()) && state.settings.tts !== "off") {
-    speak(it.en, "en-US");
+    speakBack(it);
   }
 
   const newBox = known ? clamp(currentBox + 1, 1, BOX_COUNT) : 1;
@@ -3294,7 +3298,7 @@ function gradeForgotten() {
 
   const revealedNow = flipToAnswer();
   if ((revealedNow || isAnswerVisible()) && state.settings.tts !== "off") {
-    speak(it.en, "en-US");
+    speakBack(it);
   }
 
   const newBox = clamp(currentBox - 1, 1, BOX_COUNT);
@@ -3326,9 +3330,7 @@ function onFlip() {
   if (!it) return;
 
   if (flipped) {
-    if (state.settings.tts === "en" || state.settings.tts === "both") {
-      speak(it.en, "en-US");
-    }
+    if (state.settings.tts === "en" || state.settings.tts === "both") speakBack(it);
   } else {
     if (state.settings.tts === "de" || state.settings.tts === "both") {
       speak(it.de, "de-DE");
@@ -3435,6 +3437,12 @@ function speak(text, lang) {
   speechSynthesis.speak(u);
 }
 
+function speakBack(it) {
+  if (!it) return;
+  const txt = it.en || "";
+  speak(txt, TARGET_TTS_LANG);
+}
+
 // ---------- data loading ----------
 async function fetchJson(url, timeoutMs = FETCH_TIMEOUT_MS) {
   const ctrl = new AbortController();
@@ -3503,7 +3511,54 @@ async function loadOptionalDecks(urls) {
   return { merged, used };
 }
 
+async function tryLoadSharedDeck() {
+  if (!window.SprachfuehrerSharedAdapter?.loadPairDeck) return null;
+  try {
+    const { cards } = await window.SprachfuehrerSharedAdapter.loadPairDeck(SOURCE_LANG, TARGET_LANG);
+    const normalized = (cards || []).map(normalizeItem).filter(isUsableCard);
+    if (!normalized.length) return null;
+    state.ui.loaderStatus = "shared";
+    state.ui.loaderTried = [`shared ✓ ${SHARED_PAIR_LABEL} (${normalized.length})`];
+    const first3 = normalized.slice(0, 3).map((it) => ({
+      id: it.id,
+      de: it.de,
+      en: it.en,
+      topic: it.topic,
+      level: it.level,
+    }));
+    console.log(
+      `[SprachBox] source=shared pair=${SHARED_PAIR_LABEL} cards=${normalized.length} tts=${TARGET_TTS_LANG}`,
+      first3,
+    );
+    return {
+      normalized,
+      used: `shared:${SHARED_PAIR_LABEL}`,
+      warning: "",
+      tried: state.ui.loaderTried,
+    };
+  } catch (e) {
+    console.error(`[SprachBox] shared load failed pair=${SHARED_PAIR_LABEL}`, e);
+    return null;
+  }
+}
+
 async function loadDeck() {
+  const shared = await tryLoadSharedDeck();
+  if (shared) return shared;
+
+  state.ui.loaderStatus = "error";
+  state.ui.loaderTried = state.ui.loaderTried?.length
+    ? state.ui.loaderTried
+    : ["shared ✗"];
+  const warning = "Gemeinsame Datenbasis konnte nicht geladen werden. Bitte neu laden.";
+  console.error(`[SprachBox] source=shared FAILED pair=${SHARED_PAIR_LABEL}`);
+  return {
+    normalized: [],
+    used: "shared:failed",
+    warning,
+    tried: state.ui.loaderTried,
+  };
+
   let data = null;
   let used = null;
   const tried = [];
@@ -3999,7 +4054,7 @@ async function init() {
     const it = state.all.find((x) => x.id === id);
     if (!it) return;
     const flipped = els.card && els.card.classList.contains("isFlipped");
-    if (flipped) speak(it.en, "en-US");
+    if (flipped) speak(it.en, "es-ES");
     else speak(it.de, "de-DE");
   });
 

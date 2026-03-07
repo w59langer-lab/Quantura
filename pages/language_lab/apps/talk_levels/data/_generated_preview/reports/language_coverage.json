@@ -1,0 +1,38 @@
+{
+  "en": {
+    "total": 1157,
+    "filled": 1157,
+    "missing": 0,
+    "percent": 100
+  },
+  "es": {
+    "total": 1157,
+    "filled": 241,
+    "missing": 916,
+    "percent": 20.8
+  },
+  "fr": {
+    "total": 1157,
+    "filled": 241,
+    "missing": 916,
+    "percent": 20.8
+  },
+  "it": {
+    "total": 1157,
+    "filled": 241,
+    "missing": 916,
+    "percent": 20.8
+  },
+  "ru": {
+    "total": 1157,
+    "filled": 241,
+    "missing": 916,
+    "percent": 20.8
+  },
+  "tr": {
+    "total": 1157,
+    "filled": 242,
+    "missing": 915,
+    "percent": 20.9
+  }
+}

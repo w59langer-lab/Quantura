@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="talk_levels_style.css" />
     <script src="../../../../core/js/core_init.js" defer></script>
     <script src="talk_levels_script.js" defer></script>
+    <style>
+      /* Page-specific hard override to eliminate wallpapers/opacity on Talk Levels only */
+      html,
+      body {
+        background-color: #f5f7fb !important;
+        background-image: none !important;
+      }
+      main.page-wrapper.talk-levels {
+        background: #f5f7fb !important;
+      }
+      .talk-levels .card,
+      .talk-levels .tl-card {
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+      }
+      .talk-levels .sf-sticky,
+      .talk-levels #controlsBar,
+      .talk-levels .sticky-panel,
+      .talk-levels .sticky-row,
+      .talk-levels .lg-toolbar-row {
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+      }
+      .talk-levels .tl-status,
+      .talk-levels .tl-headings,
+      .talk-levels .tl-list,
+      .talk-levels .tl-list .tl-item {
+        background: #ffffff !important;
+      }
+    </style>
   </head>
   <body data-app="sprachfuehrer">
     <div id="sfHeaderActions"></div>
@@ -133,6 +164,30 @@
         <div id="tlVoiceList" class="voice-dialog__list"></div>
       </div>
     </dialog>
-    <script src="/core/js/sprachfuehrer_bg.js" defer></script>
+    <script>
+      // Page-local guard: disable Sprachführer-Wallpaper on Talk Levels
+      (function () {
+        const LS_BG_ON = "sf_bg_on";
+        const LS_BG_ID = "sf_bg_id";
+        function clearBg() {
+          ["html", "body", "main.page-wrapper.talk-levels"].forEach((sel) => {
+            const el = document.querySelector(sel);
+            if (el) {
+              el.classList.remove("sf-bg-on");
+              el.style.backgroundImage = "none";
+            }
+          });
+        }
+        // Disable persisted wallpaper for this page
+        try {
+          localStorage.setItem(LS_BG_ON, "0");
+        } catch (_) {}
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", clearBg);
+        } else {
+          clearBg();
+        }
+      })();
+    </script>
   </body>
 </html>

@@ -1,0 +1,2171 @@
+[
+  {
+    "id": "tl_2c2afaf911",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "greet_wave",
+    "mnemoHint": "HI",
+    "de": "Hallo!",
+    "fr": "Salut !"
+  },
+  {
+    "id": "tl_191b9e89a3",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "morning_sun",
+    "mnemoHint": "AM",
+    "de": "Guten Morgen!",
+    "fr": "Bonjour !"
+  },
+  {
+    "id": "tl_60cc5768b6",
+    "level": 1,
+    "topic": "Allgemein",
+    "mnemoKey": "evening_star",
+    "mnemoHint": "PM",
+    "de": "Guten Abend!",
+    "fr": "Bonsoir !"
+  },
+  {
+    "id": "tl_85004d838e",
+    "level": 1,
+    "topic": "Allgemein",
+    "mnemoKey": "how_are_you",
+    "mnemoHint": "HAY",
+    "de": "Wie geht es dir?",
+    "fr": "Comment ça va ?"
+  },
+  {
+    "id": "tl_e737712729",
+    "level": 2,
+    "topic": "Allgemein",
+    "mnemoKey": "i_am_fine",
+    "mnemoHint": "OK",
+    "de": "Mir geht es gut.",
+    "fr": "Je vais bien."
+  },
+  {
+    "id": "tl_27e6ae77d4",
+    "level": 2,
+    "topic": "Allgemein",
+    "mnemoKey": "thanks_note",
+    "mnemoHint": "THX",
+    "de": "Danke!",
+    "fr": "Merci !"
+  },
+  {
+    "id": "tl_e9707d381a",
+    "level": 3,
+    "topic": "Allgemein",
+    "mnemoKey": "please_hand",
+    "mnemoHint": "PLS",
+    "de": "Bitte.",
+    "fr": "S'il vous plaît."
+  },
+  {
+    "id": "tl_e1e08c96f5",
+    "level": 3,
+    "topic": "Allgemein",
+    "mnemoKey": "yes_tick",
+    "mnemoHint": "YES",
+    "de": "Ja.",
+    "fr": "Oui."
+  },
+  {
+    "id": "tl_88731453b1",
+    "level": 4,
+    "topic": "Allgemein",
+    "mnemoKey": "no_cross",
+    "mnemoHint": "NO",
+    "de": "Nein.",
+    "fr": "Non."
+  },
+  {
+    "id": "tl_486798e578",
+    "level": 4,
+    "topic": "Allgemein",
+    "mnemoKey": "name_tag",
+    "mnemoHint": "ID",
+    "de": "Ich heiße Anna.",
+    "fr": "Je m'appelle Anna."
+  },
+  {
+    "id": "tl_dfdb5c7e1c",
+    "level": 5,
+    "topic": "Allgemein",
+    "mnemoKey": "from_germany",
+    "mnemoHint": "DE",
+    "de": "Ich komme aus Deutschland.",
+    "fr": "Je viens d'Allemagne."
+  },
+  {
+    "id": "tl_ac6d108737",
+    "level": 5,
+    "topic": "Allgemein",
+    "mnemoKey": "speak_english",
+    "mnemoHint": "EN+",
+    "de": "Ich spreche ein wenig Englisch.",
+    "fr": "Je parle un peu anglais."
+  },
+  {
+    "id": "tl_27b2694ad6",
+    "level": 6,
+    "topic": "Allgemein",
+    "mnemoKey": "learn_italian",
+    "mnemoHint": "IT+",
+    "de": "Ich lerne Italienisch.",
+    "fr": "J'apprends l'italien."
+  },
+  {
+    "id": "tl_18c8264407",
+    "level": 6,
+    "topic": "Allgemein",
+    "mnemoKey": "work_engineer",
+    "mnemoHint": "JOB",
+    "de": "Ich arbeite als Ingenieur.",
+    "fr": "Je travaille comme ingénieur."
+  },
+  {
+    "id": "tl_1daf3ef600",
+    "level": 7,
+    "topic": "Allgemein",
+    "mnemoKey": "two_siblings",
+    "mnemoHint": "FAM",
+    "de": "Ich habe zwei Geschwister.",
+    "fr": "J'ai deux frères et sœurs."
+  },
+  {
+    "id": "tl_824d0068da",
+    "level": 7,
+    "topic": "Allgemein",
+    "mnemoKey": "uni_student",
+    "mnemoHint": "UNI",
+    "de": "Ich studiere an der Universität.",
+    "fr": "J'étudie à l'université."
+  },
+  {
+    "id": "tl_335d4d8e0e",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "good_day",
+    "mnemoHint": "DAY",
+    "de": "Guten Tag!",
+    "fr": "Bonjour !"
+  },
+  {
+    "id": "tl_30fa9fc10e",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "bye_short",
+    "mnemoHint": "BYE",
+    "de": "Tschüss!",
+    "fr": "Salut !"
+  },
+  {
+    "id": "tl_e655dfde7d",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "see_you_soon",
+    "mnemoHint": "SOON",
+    "de": "Bis gleich!",
+    "fr": "À tout de suite !"
+  },
+  {
+    "id": "tl_3079650174",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "i_have_question",
+    "mnemoHint": "ASK",
+    "de": "Ich habe eine Frage.",
+    "fr": "J'ai une question."
+  },
+  {
+    "id": "tl_99a94eca91",
+    "level": 0,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "need_doctor",
+    "mnemoHint": "DOC",
+    "de": "Ich brauche einen Arzt.",
+    "fr": "J'ai besoin d'un médecin."
+  },
+  {
+    "id": "tl_8a1ee29f71",
+    "level": 0,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "pharmacy_near",
+    "mnemoHint": "RX",
+    "de": "Wo ist die nächste Apotheke?",
+    "fr": "Où est la pharmacie la plus proche ?"
+  },
+  {
+    "id": "tl_9961116e82",
+    "level": 1,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "pain_here",
+    "mnemoHint": "→",
+    "de": "Ich habe hier Schmerzen.",
+    "fr": "J'ai mal ici."
+  },
+  {
+    "id": "tl_d037047d10",
+    "level": 1,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "fever",
+    "mnemoHint": "38°",
+    "de": "Ich habe Fieber.",
+    "fr": "J'ai de la fièvre."
+  },
+  {
+    "id": "tl_7d3de9e9fb",
+    "level": 2,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "headache",
+    "mnemoHint": "HEAD",
+    "de": "Ich habe starke Kopfschmerzen.",
+    "fr": "J'ai un gros mal de tête."
+  },
+  {
+    "id": "tl_56fdf0c651",
+    "level": 2,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "stomach",
+    "mnemoHint": "BELLY",
+    "de": "Mir ist übel / Ich habe Bauchschmerzen.",
+    "fr": "Je me sens mal / J'ai mal au ventre."
+  },
+  {
+    "id": "tl_7a72778d1b",
+    "level": 3,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "penicillin_allergy",
+    "mnemoHint": "NO RX",
+    "de": "Ich bin allergisch gegen Penicillin.",
+    "fr": "Je suis allergique à la pénicilline."
+  },
+  {
+    "id": "tl_51285df88c",
+    "level": 3,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "appointment",
+    "mnemoHint": "APPT",
+    "de": "Kann ich heute einen Termin bekommen?",
+    "fr": "Puis-je avoir un rendez-vous aujourd'hui ?"
+  },
+  {
+    "id": "tl_92ca886c77",
+    "level": 4,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "prescription",
+    "mnemoHint": "RX",
+    "de": "Ich brauche ein Rezept.",
+    "fr": "J'ai besoin d'une ordonnance."
+  },
+  {
+    "id": "tl_f6c3332c69",
+    "level": 4,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "painkiller",
+    "mnemoHint": "PILL",
+    "de": "Haben Sie etwas gegen Schmerzen?",
+    "fr": "Avez-vous quelque chose contre la douleur ?"
+  },
+  {
+    "id": "tl_5e7fe5e59f",
+    "level": 5,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "bandage",
+    "mnemoHint": "WRAP",
+    "de": "Ich brauche einen Verband / Pflaster.",
+    "fr": "J'ai besoin d'un bandage / pansement."
+  },
+  {
+    "id": "tl_94ca64256a",
+    "level": 5,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "cough_syrup",
+    "mnemoHint": "COUGH",
+    "de": "Haben Sie etwas gegen Husten?",
+    "fr": "Avez-vous quelque chose contre la toux ?"
+  },
+  {
+    "id": "tl_dfdf5838ac",
+    "level": 6,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "covid_test",
+    "mnemoHint": "TEST",
+    "de": "Wo kann ich einen COVID-Test machen?",
+    "fr": "Où puis-je faire un test COVID ?"
+  },
+  {
+    "id": "tl_91d20749f8",
+    "level": 6,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "insurance_card",
+    "mnemoHint": "ID",
+    "de": "Nehmen Sie meine Versicherungskarte?",
+    "fr": "Acceptez-vous ma carte d'assurance ?"
+  },
+  {
+    "id": "tl_c160a974ff",
+    "level": 7,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "emergency_number",
+    "mnemoHint": "112",
+    "de": "Ist das ein Notfall? Soll ich 112 anrufen?",
+    "fr": "Est-ce une urgence ? Dois-je appeler le 112 ?"
+  },
+  {
+    "id": "tl_37a19eeed5",
+    "level": 0,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "ticket_counter",
+    "mnemoHint": "INFO",
+    "de": "Wo ist der Fahrkarten-/Ticketschalter?",
+    "fr": "Où se trouve le guichet des billets ?"
+  },
+  {
+    "id": "tl_c8c64d4f15",
+    "level": 0,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "one_way",
+    "mnemoHint": "1WAY",
+    "de": "Ein Ticket nach Berlin, einfach, bitte.",
+    "fr": "Un billet simple pour Berlin, s'il vous plaît."
+  },
+  {
+    "id": "tl_9f975f711e",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "return_ticket",
+    "mnemoHint": "RTN",
+    "de": "Ein Hin- und Rückticket für morgen.",
+    "fr": "Un billet aller-retour pour demain."
+  },
+  {
+    "id": "tl_08e748823f",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "platform",
+    "mnemoHint": "G",
+    "de": "Auf welchem Gleis fährt der Zug?",
+    "fr": "De quel quai part le train ?"
+  },
+  {
+    "id": "tl_698b92539a",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "delay_train",
+    "mnemoHint": "+",
+    "de": "Der Zug hat Verspätung.",
+    "fr": "Le train a du retard."
+  },
+  {
+    "id": "tl_7c52e81f0c",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "change_platform",
+    "mnemoHint": "MOVE",
+    "de": "Hat sich das Gleis geändert?",
+    "fr": "Le quai a-t-il changé ?"
+  },
+  {
+    "id": "tl_593cae3bf2",
+    "level": 3,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "seat_reservation",
+    "mnemoHint": "SEAT",
+    "de": "Brauche ich eine Sitzplatzreservierung?",
+    "fr": "Faut-il une réservation de siège ?"
+  },
+  {
+    "id": "tl_9f7332fc6c",
+    "level": 3,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "gate",
+    "mnemoHint": "GATE",
+    "de": "Zu welchem Gate geht der Flug?",
+    "fr": "À quelle porte est le vol ?"
+  },
+  {
+    "id": "tl_9003b43dd8",
+    "level": 4,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "boarding_time",
+    "mnemoHint": "BOARD",
+    "de": "Wann beginnt das Boarding?",
+    "fr": "Quand commence l'embarquement ?"
+  },
+  {
+    "id": "tl_d6d2198b9d",
+    "level": 4,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "flight_delay",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "fr": "Le vol est en retard."
+  },
+  {
+    "id": "tl_8f10408aef",
+    "level": 5,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "missed_connection",
+    "mnemoHint": "MISS",
+    "de": "Ich habe den Anschluss verpasst.",
+    "fr": "J'ai manqué la correspondance."
+  },
+  {
+    "id": "tl_d5957275a8",
+    "level": 5,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "check_in",
+    "mnemoHint": "CHK",
+    "de": "Wo gebe ich das Gepäck auf?",
+    "fr": "Où enregistrer les bagages ?"
+  },
+  {
+    "id": "tl_13c5bfce3f",
+    "level": 6,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "hand_luggage",
+    "mnemoHint": "CAB",
+    "de": "Ist das als Handgepäck erlaubt?",
+    "fr": "Est-ce autorisé comme bagage cabine ?"
+  },
+  {
+    "id": "tl_b2bad283a3",
+    "level": 6,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "rebook",
+    "mnemoHint": "RBK",
+    "de": "Kann ich auf einen früheren Zug/Flug umbuchen?",
+    "fr": "Puis-je rebooker sur un train/vol plus tôt ?"
+  },
+  {
+    "id": "tl_6ac36e5d30",
+    "level": 7,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "refund_voucher",
+    "mnemoHint": "REF",
+    "de": "Bekomme ich eine Erstattung oder einen Gutschein?",
+    "fr": "Ai-je droit à un remboursement ou un bon ?"
+  },
+  {
+    "id": "tl_eb86bf612b",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "where_ticket",
+    "mnemoHint": "TIX",
+    "de": "Wo bekomme ich ein Ticket?",
+    "fr": "Où puis-je acheter un billet ?"
+  },
+  {
+    "id": "tl_9237dd5bef",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "next_train",
+    "mnemoHint": "TIME",
+    "de": "Wann fährt der nächste Zug?",
+    "fr": "Quand part le prochain train ?"
+  },
+  {
+    "id": "tl_556acc7465",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "rebook_tomorrow",
+    "mnemoHint": "MOVE",
+    "de": "Können Sie das Ticket auf morgen umbuchen?",
+    "fr": "Pouvez-vous reprogrammer le billet pour demain ?"
+  },
+  {
+    "id": "tl_c9a936d9fc",
+    "level": 0,
+    "topic": "Einkaufen",
+    "mnemoKey": "price_check",
+    "mnemoHint": "€",
+    "de": "Wie viel kostet das?",
+    "fr": "Combien ça coûte ?"
+  },
+  {
+    "id": "tl_77c27ed3c5",
+    "level": 0,
+    "topic": "Einkaufen",
+    "mnemoKey": "other_size",
+    "mnemoHint": "SIZE",
+    "de": "Haben Sie das in einer anderen Größe?",
+    "fr": "L'avez-vous dans une autre taille ?"
+  },
+  {
+    "id": "tl_5599a19596",
+    "level": 1,
+    "topic": "Einkaufen",
+    "mnemoKey": "pay_cash",
+    "mnemoHint": "CASH",
+    "de": "Ich zahle bar.",
+    "fr": "Je paie en espèces."
+  },
+  {
+    "id": "tl_61761c1290",
+    "level": 1,
+    "topic": "Einkaufen",
+    "mnemoKey": "pay_card",
+    "mnemoHint": "CARD",
+    "de": "Kann ich mit Karte zahlen?",
+    "fr": "Puis-je payer par carte ?"
+  },
+  {
+    "id": "tl_8e583fae6c",
+    "level": 2,
+    "topic": "Einkaufen",
+    "mnemoKey": "need_shopping",
+    "mnemoHint": "LIST",
+    "de": "Ich muss noch einkaufen gehen.",
+    "fr": "Je dois encore faire des courses."
+  },
+  {
+    "id": "tl_08401e59ec",
+    "level": 2,
+    "topic": "Einkaufen",
+    "mnemoKey": "receipt",
+    "mnemoHint": "REC",
+    "de": "Kann ich eine Quittung bekommen?",
+    "fr": "Puis-je avoir un reçu ?"
+  },
+  {
+    "id": "tl_547115f12b",
+    "level": 3,
+    "topic": "Einkaufen",
+    "mnemoKey": "try_on",
+    "mnemoHint": "FIT",
+    "de": "Kann ich das anprobieren?",
+    "fr": "Puis-je l'essayer ?"
+  },
+  {
+    "id": "tl_02822e7a75",
+    "level": 3,
+    "topic": "Einkaufen",
+    "mnemoKey": "color_choice",
+    "mnemoHint": "COL",
+    "de": "Haben Sie das in Blau?",
+    "fr": "L'avez-vous en bleu ?"
+  },
+  {
+    "id": "tl_3792038b5c",
+    "level": 4,
+    "topic": "Einkaufen",
+    "mnemoKey": "discount",
+    "mnemoHint": "%",
+    "de": "Gibt es einen Rabatt?",
+    "fr": "Y a-t-il une réduction ?"
+  },
+  {
+    "id": "tl_e3edda21ca",
+    "level": 4,
+    "topic": "Einkaufen",
+    "mnemoKey": "bag_needed",
+    "mnemoHint": "BAG",
+    "de": "Brauchen Sie eine Tüte?",
+    "fr": "Avez-vous besoin d'un sac ?"
+  },
+  {
+    "id": "tl_9d44d5f60d",
+    "level": 5,
+    "topic": "Einkaufen",
+    "mnemoKey": "return_item",
+    "mnemoHint": "RET",
+    "de": "Kann ich das zurückgeben?",
+    "fr": "Puis-je le retourner ?"
+  },
+  {
+    "id": "tl_2167beb838",
+    "level": 5,
+    "topic": "Einkaufen",
+    "mnemoKey": "open_hours",
+    "mnemoHint": "TIME",
+    "de": "Bis wann sind Sie geöffnet?",
+    "fr": "Jusqu'à quelle heure êtes-vous ouverts ?"
+  },
+  {
+    "id": "tl_05da42ec48",
+    "level": 6,
+    "topic": "Einkaufen",
+    "mnemoKey": "gift_search",
+    "mnemoHint": "GIFT",
+    "de": "Ich suche ein Geschenk.",
+    "fr": "Je cherche un cadeau."
+  },
+  {
+    "id": "tl_ae908a5ecc",
+    "level": 6,
+    "topic": "Einkaufen",
+    "mnemoKey": "fresh_fruit",
+    "mnemoHint": "FRUT",
+    "de": "Haben Sie frisches Obst?",
+    "fr": "Avez-vous des fruits frais ?"
+  },
+  {
+    "id": "tl_101b096714",
+    "level": 7,
+    "topic": "Einkaufen",
+    "mnemoKey": "half_kilo",
+    "mnemoHint": "0.5K",
+    "de": "Bitte ein halbes Kilo davon.",
+    "fr": "Un demi-kilo de cela, s'il vous plaît."
+  },
+  {
+    "id": "tl_8a71ae298d",
+    "level": 7,
+    "topic": "Einkaufen",
+    "mnemoKey": "price_per_kilo",
+    "mnemoHint": "€/KG",
+    "de": "Wie viel kostet es pro Kilo?",
+    "fr": "Combien ça coûte au kilo ?"
+  },
+  {
+    "id": "tl_9d5193134b",
+    "level": 8,
+    "topic": "Einkaufen",
+    "mnemoKey": "where_checkout",
+    "mnemoHint": "PAY",
+    "de": "Wo ist die Kasse?",
+    "fr": "Où est la caisse ?"
+  },
+  {
+    "id": "tl_e359d2a3b0",
+    "level": 0,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "reservation_name",
+    "mnemoHint": "RES",
+    "de": "Ich habe eine Reservierung auf den Namen Meyer.",
+    "fr": "J'ai une réservation au nom de Meyer."
+  },
+  {
+    "id": "tl_a39c17b0bf",
+    "level": 0,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "wifi_room",
+    "mnemoHint": "WIFI",
+    "de": "Gibt es WLAN im Zimmer?",
+    "fr": "Y a-t-il du Wi‑Fi dans la chambre ?"
+  },
+  {
+    "id": "tl_fbb587a3c6",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "room_cold",
+    "mnemoHint": "COLD",
+    "de": "Das Zimmer ist zu kalt.",
+    "fr": "La chambre est trop froide."
+  },
+  {
+    "id": "tl_4676ff325f",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "order_taxi",
+    "mnemoHint": "TAXI",
+    "de": "Können Sie ein Taxi bestellen?",
+    "fr": "Pouvez-vous appeler un taxi ?"
+  },
+  {
+    "id": "tl_66687f5a44",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "stay_three",
+    "mnemoHint": "3N",
+    "de": "Ich bleibe drei Nächte.",
+    "fr": "Je reste trois nuits."
+  },
+  {
+    "id": "tl_532b354ca0",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "ticket_nine",
+    "mnemoHint": "9:00",
+    "de": "Ich habe ein Ticket für den Zug um neun.",
+    "fr": "J'ai un billet pour le train de neuf heures."
+  },
+  {
+    "id": "tl_0aa97f1ae7",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "flight_delay",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "fr": "Le vol est retardé."
+  },
+  {
+    "id": "tl_e6458d4c01",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "baggage_claim",
+    "mnemoHint": "BAG",
+    "de": "Wo ist die Gepäckausgabe?",
+    "fr": "Où est la récupération des bagages ?"
+  },
+  {
+    "id": "tl_70459c4388",
+    "level": 4,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "window_seat",
+    "mnemoHint": "SEAT",
+    "de": "Ich möchte einen Fensterplatz.",
+    "fr": "Je voudrais une place près de la fenêtre."
+  },
+  {
+    "id": "tl_5dda44617d",
+    "level": 4,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "next_train",
+    "mnemoHint": "NEXT",
+    "de": "Wann fährt der nächste Zug nach Paris?",
+    "fr": "Quand part le prochain train pour Paris ?"
+  },
+  {
+    "id": "tl_3f2f4de481",
+    "level": 5,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "ac_broken",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "fr": "La climatisation ne marche pas."
+  },
+  {
+    "id": "tl_3c05c19d5e",
+    "level": 5,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "luggage_lost",
+    "mnemoHint": "BAG?",
+    "de": "Mein Gepäck ist verloren gegangen.",
+    "fr": "Mes bagages ont été perdus."
+  },
+  {
+    "id": "tl_8547e29b3c",
+    "level": 6,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "wrong_bill",
+    "mnemoHint": "BILL",
+    "de": "Ich habe die falsche Rechnung bekommen.",
+    "fr": "J'ai reçu la mauvaise facture."
+  },
+  {
+    "id": "tl_f02dc05c24",
+    "level": 6,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "send_someone",
+    "mnemoHint": "HELP",
+    "de": "Bitte schicken Sie jemanden vorbei.",
+    "fr": "Veuillez envoyer quelqu'un."
+  },
+  {
+    "id": "tl_d51dfbfea8",
+    "level": 7,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "internet_slow",
+    "mnemoHint": "NET",
+    "de": "Das Internet ist sehr langsam.",
+    "fr": "Internet est très lent."
+  },
+  {
+    "id": "tl_a9fad983e0",
+    "level": 7,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "urgent_help",
+    "mnemoHint": "SOS",
+    "de": "Ich brauche sofort Hilfe.",
+    "fr": "J'ai besoin d'aide immédiatement."
+  },
+  {
+    "id": "tl_d6e7e6e4ad",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "have_reservation",
+    "mnemoHint": "BOOK",
+    "de": "Ich habe eine Reservierung.",
+    "fr": "J'ai une réservation."
+  },
+  {
+    "id": "tl_a592b1fdce",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "room_one_night",
+    "mnemoHint": "1N",
+    "de": "Ich brauche ein Zimmer für eine Nacht.",
+    "fr": "J'ai besoin d'une chambre pour une nuit."
+  },
+  {
+    "id": "tl_7ad23cf637",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "breakfast_included",
+    "mnemoHint": "FOOD",
+    "de": "Ist das Frühstück inklusive?",
+    "fr": "Le petit déjeuner est-il compris ?"
+  },
+  {
+    "id": "tl_9b743ea9e3",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "late_checkout",
+    "mnemoHint": "LATE",
+    "de": "Kann ich später auschecken?",
+    "fr": "Puis-je partir plus tard ?"
+  },
+  {
+    "id": "tl_a474308102",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "confirm_booking_written",
+    "mnemoHint": "CONF",
+    "de": "Bitte bestätigen Sie meine Buchung schriftlich.",
+    "fr": "Merci de confirmer ma réservation par écrit."
+  },
+  {
+    "id": "tl_7fb2d6d4ee",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "headache",
+    "mnemoHint": "MED",
+    "de": "Ich habe Kopfschmerzen.",
+    "fr": "J'ai mal à la tête."
+  },
+  {
+    "id": "tl_2779db9cde",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "dizzy",
+    "mnemoHint": "DIZ",
+    "de": "Mir ist schwindelig.",
+    "fr": "J'ai la tête qui tourne."
+  },
+  {
+    "id": "tl_b499f89479",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "fever_meds",
+    "mnemoHint": "TEMP",
+    "de": "Haben Sie etwas gegen Fieber?",
+    "fr": "Avez-vous quelque chose contre la fièvre ?"
+  },
+  {
+    "id": "tl_07333442b0",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "need_doctor",
+    "mnemoHint": "DR",
+    "de": "Ich brauche einen Arzt.",
+    "fr": "J'ai besoin d'un médecin."
+  },
+  {
+    "id": "tl_e8a0ddfe27",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "hurt_self",
+    "mnemoHint": "CUT",
+    "de": "Ich habe mich verletzt.",
+    "fr": "Je me suis blessé(e)."
+  },
+  {
+    "id": "tl_736bd663ac",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "nearest_pharmacy",
+    "mnemoHint": "RX",
+    "de": "Wo ist die nächste Apotheke?",
+    "fr": "Où est la pharmacie la plus proche ?"
+  },
+  {
+    "id": "tl_d7fa6978b1",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "penicillin_allergy",
+    "mnemoHint": "PEN",
+    "de": "Ich habe eine Allergie gegen Penicillin.",
+    "fr": "Je suis allergique à la pénicilline."
+  },
+  {
+    "id": "tl_2c521161b0",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "painkillers",
+    "mnemoHint": "MED",
+    "de": "Ich brauche Schmerzmittel.",
+    "fr": "J'ai besoin d'analgésiques."
+  },
+  {
+    "id": "tl_f2aba35d39",
+    "level": 4,
+    "topic": "Notfall",
+    "mnemoKey": "fever_since_yesterday",
+    "mnemoHint": "24h",
+    "de": "Ich habe Fieber seit gestern.",
+    "fr": "J'ai de la fièvre depuis hier."
+  },
+  {
+    "id": "tl_641298d324",
+    "level": 4,
+    "topic": "Notfall",
+    "mnemoKey": "appointment",
+    "mnemoHint": "APT",
+    "de": "Kann ich einen Termin bekommen?",
+    "fr": "Puis-je obtenir un rendez-vous ?"
+  },
+  {
+    "id": "tl_0365352253",
+    "level": 5,
+    "topic": "Notfall",
+    "mnemoKey": "luggage_lost_sos",
+    "mnemoHint": "BAG",
+    "de": "Mein Gepäck ist verloren gegangen.",
+    "fr": "Mes bagages ont été perdus."
+  },
+  {
+    "id": "tl_6a519033e8",
+    "level": 5,
+    "topic": "Notfall",
+    "mnemoKey": "ac_not_working",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "fr": "La climatisation ne marche pas."
+  },
+  {
+    "id": "tl_429bad0982",
+    "level": 6,
+    "topic": "Notfall",
+    "mnemoKey": "send_someone_now",
+    "mnemoHint": "CALL",
+    "de": "Bitte schicken Sie jemanden vorbei.",
+    "fr": "Veuillez envoyer quelqu'un."
+  },
+  {
+    "id": "tl_53ad6b49a5",
+    "level": 6,
+    "topic": "Notfall",
+    "mnemoKey": "keys_lost",
+    "mnemoHint": "KEY",
+    "de": "Ich habe meine Schlüssel verloren.",
+    "fr": "J'ai perdu mes clés."
+  },
+  {
+    "id": "tl_ca793349a2",
+    "level": 7,
+    "topic": "Notfall",
+    "mnemoKey": "internet_slow_sos",
+    "mnemoHint": "NET",
+    "de": "Das Internet ist sehr langsam.",
+    "fr": "Internet est très lent."
+  },
+  {
+    "id": "tl_2395436db6",
+    "level": 7,
+    "topic": "Notfall",
+    "mnemoKey": "need_help_now",
+    "mnemoHint": "SOS",
+    "de": "Ich brauche sofort Hilfe.",
+    "fr": "J'ai besoin d'aide immédiatement."
+  },
+  {
+    "id": "tl_6165ea7303",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "help_short",
+    "mnemoHint": "SOS",
+    "de": "Hilfe!",
+    "fr": "Au secours !"
+  },
+  {
+    "id": "tl_61f181e3f7",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "can_you_help",
+    "mnemoHint": "ASK",
+    "de": "Können Sie mir helfen?",
+    "fr": "Pouvez-vous m'aider ?"
+  },
+  {
+    "id": "tl_6aeb436a2e",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "call_ambulance",
+    "mnemoHint": "AMB",
+    "de": "Bitte rufen Sie einen Krankenwagen.",
+    "fr": "Appelez une ambulance, s'il vous plaît."
+  },
+  {
+    "id": "tl_d7eeb15ae0",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "where_exit",
+    "mnemoHint": "EXIT",
+    "de": "Wo ist der Notausgang?",
+    "fr": "Où est la sortie de secours ?"
+  },
+  {
+    "id": "tl_cd50660ebd",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "hospital_address",
+    "mnemoHint": "ADDR",
+    "de": "Ich brauche die Adresse des nächsten Krankenhauses.",
+    "fr": "J'ai besoin de l'adresse de l'hôpital le plus proche."
+  },
+  {
+    "id": "tl_75ad92e6eb",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "review_emergency_plan",
+    "mnemoHint": "PLAN",
+    "de": "Können wir einen Notfallplan durchgehen?",
+    "fr": "Peut-on passer en revue un plan d'urgence ?"
+  },
+  {
+    "id": "tl_1b6a7a68d0",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "table_for_two",
+    "mnemoHint": "2P",
+    "de": "Haben Sie einen Tisch für zwei?",
+    "fr": "Avez-vous une table pour deux ?"
+  },
+  {
+    "id": "tl_b6521245ba",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "see_menu",
+    "mnemoHint": "MENU",
+    "de": "Ich möchte die Speisekarte sehen.",
+    "fr": "Je voudrais voir la carte."
+  },
+  {
+    "id": "tl_df43950331",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "recommendation",
+    "mnemoHint": "REC",
+    "de": "Können Sie etwas empfehlen?",
+    "fr": "Pouvez-vous recommander quelque chose ?"
+  },
+  {
+    "id": "tl_d2f3990d6e",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "allergy_nuts",
+    "mnemoHint": "NUT",
+    "de": "Ich bin allergisch gegen Nüsse.",
+    "fr": "Je suis allergique aux noix."
+  },
+  {
+    "id": "tl_db66e28fc2",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "no_meat",
+    "mnemoHint": "VEG",
+    "de": "Ohne Fleisch, bitte.",
+    "fr": "Sans viande, s'il vous plaît."
+  },
+  {
+    "id": "tl_3d3f500eb7",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "still_water",
+    "mnemoHint": "H2O",
+    "de": "Ich nehme ein Wasser ohne Kohlensäure.",
+    "fr": "Je prends de l'eau plate."
+  },
+  {
+    "id": "tl_85bfeb20b9",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "bill_please",
+    "mnemoHint": "BILL",
+    "de": "Die Rechnung, bitte.",
+    "fr": "L'addition, s'il vous plaît."
+  },
+  {
+    "id": "tl_513f019ba2",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "keep_change",
+    "mnemoHint": "TIP",
+    "de": "Stimmt so, danke.",
+    "fr": "Gardez la monnaie, merci."
+  },
+  {
+    "id": "tl_4828716286",
+    "level": 4,
+    "topic": "Restaurant",
+    "mnemoKey": "tastes_good",
+    "mnemoHint": "YUM",
+    "de": "Schmeckt sehr gut!",
+    "fr": "C'est très bon !"
+  },
+  {
+    "id": "tl_1ff54ca036",
+    "level": 4,
+    "topic": "Restaurant",
+    "mnemoKey": "spicy_dish",
+    "mnemoHint": "HOT",
+    "de": "Ist das Gericht scharf?",
+    "fr": "Le plat est-il épicé ?"
+  },
+  {
+    "id": "tl_7c02644f23",
+    "level": 5,
+    "topic": "Restaurant",
+    "mnemoKey": "wrong_order",
+    "mnemoHint": "ERR",
+    "de": "Das ist nicht, was ich bestellt habe.",
+    "fr": "Ce n'est pas ce que j'ai commandé."
+  },
+  {
+    "id": "tl_770ebe5363",
+    "level": 5,
+    "topic": "Restaurant",
+    "mnemoKey": "soup_starter",
+    "mnemoHint": "SOUP",
+    "de": "Ich hätte gern eine Suppe als Vorspeise.",
+    "fr": "Je voudrais une soupe en entrée."
+  },
+  {
+    "id": "tl_b8effcab57",
+    "level": 6,
+    "topic": "Restaurant",
+    "mnemoKey": "vegetarian_options",
+    "mnemoHint": "VEG?",
+    "de": "Haben Sie vegetarische Optionen?",
+    "fr": "Avez-vous des options végétariennes ?"
+  },
+  {
+    "id": "tl_d538e8bf09",
+    "level": 6,
+    "topic": "Restaurant",
+    "mnemoKey": "change_order",
+    "mnemoHint": "EDIT",
+    "de": "Können wir die Bestellung ändern?",
+    "fr": "Pouvons-nous modifier la commande ?"
+  },
+  {
+    "id": "tl_44f930f50d",
+    "level": 7,
+    "topic": "Restaurant",
+    "mnemoKey": "tap_water",
+    "mnemoHint": "H2O",
+    "de": "Kann ich Leitungswasser bekommen?",
+    "fr": "Puis-je avoir de l'eau du robinet ?"
+  },
+  {
+    "id": "tl_939a2f238f",
+    "level": 7,
+    "topic": "Restaurant",
+    "mnemoKey": "how_long_wait",
+    "mnemoHint": "TIME",
+    "de": "Wie lange dauert es?",
+    "fr": "Ça prendra combien de temps ?"
+  },
+  {
+    "id": "tl_4b60d03507",
+    "level": 8,
+    "topic": "Restaurant",
+    "mnemoKey": "reserve_table",
+    "mnemoHint": "BOOK",
+    "de": "Ich möchte einen Tisch reservieren.",
+    "fr": "Je voudrais réserver une table."
+  },
+  {
+    "id": "tl_0c3c4fb0bf",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "coffee_please",
+    "mnemoHint": "COF",
+    "de": "Ein Kaffee, bitte.",
+    "fr": "Un café, s'il vous plaît."
+  },
+  {
+    "id": "tl_9f0e56beef",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "still_water",
+    "mnemoHint": "H2O",
+    "de": "Ein stilles Wasser, bitte.",
+    "fr": "De l'eau plate, s'il vous plaît."
+  },
+  {
+    "id": "tl_8ffa57252c",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "seat_free",
+    "mnemoHint": "FREE",
+    "de": "Ist das hier frei?",
+    "fr": "Est-ce libre ici ?"
+  },
+  {
+    "id": "tl_2086607ddb",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "split_bill",
+    "mnemoHint": "SPLIT",
+    "de": "Können wir die Rechnung aufteilen?",
+    "fr": "Peut-on partager l'addition ?"
+  },
+  {
+    "id": "tl_dc319f978b",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "later_dinner",
+    "mnemoHint": "TIME",
+    "de": "Können wir ein späteres Abendessen vereinbaren?",
+    "fr": "Peut-on prévoir un dîner plus tard ?"
+  },
+  {
+    "id": "tl_e5bb4c1902",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_000",
+    "mnemoHint": "L0",
+    "de": "Hi, ich bin neu hier.",
+    "fr": "Salut, je suis nouveau ici."
+  },
+  {
+    "id": "tl_8a8dac8c7c",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_001",
+    "mnemoHint": "L0",
+    "de": "Schön, dich zu sehen.",
+    "fr": "Content de te voir."
+  },
+  {
+    "id": "tl_e6f8e6270b",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_002",
+    "mnemoHint": "L0",
+    "de": "Freut mich, Sie kennenzulernen.",
+    "fr": "Ravi de faire votre connaissance."
+  },
+  {
+    "id": "tl_82bf2450c9",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_003",
+    "mnemoHint": "L0",
+    "de": "Alles okay?",
+    "fr": "Tout va bien ?"
+  },
+  {
+    "id": "tl_f40acd3096",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_004",
+    "mnemoHint": "L0",
+    "de": "Alles bestens, danke.",
+    "fr": "Tout va bien, merci."
+  },
+  {
+    "id": "tl_4bf3a48597",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_005",
+    "mnemoHint": "L0",
+    "de": "Nur ein Moment, bitte.",
+    "fr": "Un instant, s'il vous plaît."
+  },
+  {
+    "id": "tl_7102c94875",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_006",
+    "mnemoHint": "L0",
+    "de": "Bitte noch einmal.",
+    "fr": "Encore une fois, s'il vous plaît."
+  },
+  {
+    "id": "tl_570179c728",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_007",
+    "mnemoHint": "L0",
+    "de": "Können Sie das bitte langsamer sagen?",
+    "fr": "Pouvez-vous parler plus lentement ?"
+  },
+  {
+    "id": "tl_71234f90c9",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_008",
+    "mnemoHint": "L0",
+    "de": "Können Sie das wiederholen?",
+    "fr": "Pouvez-vous répéter ?"
+  },
+  {
+    "id": "tl_b9fdba8374",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_009",
+    "mnemoHint": "L0",
+    "de": "Ich verstehe nicht.",
+    "fr": "Je ne comprends pas."
+  },
+  {
+    "id": "tl_3bb3bf07e6",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_010",
+    "mnemoHint": "L0",
+    "de": "Ich verstehe nur ein bisschen.",
+    "fr": "Je comprends seulement un peu."
+  },
+  {
+    "id": "tl_b7e13fb937",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_011",
+    "mnemoHint": "L0",
+    "de": "Sprechen Sie Englisch?",
+    "fr": "Parlez-vous anglais ?"
+  },
+  {
+    "id": "tl_1db390fb6a",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_012",
+    "mnemoHint": "L0",
+    "de": "Sprechen Sie Deutsch?",
+    "fr": "Parlez-vous allemand ?"
+  },
+  {
+    "id": "tl_a38f2967a2",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_013",
+    "mnemoHint": "L0",
+    "de": "Mein Name ist Alex.",
+    "fr": "Je m'appelle Alex."
+  },
+  {
+    "id": "tl_ea670d8c45",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_014",
+    "mnemoHint": "L0",
+    "de": "Ich bin hier im Urlaub.",
+    "fr": "Je suis ici en vacances."
+  },
+  {
+    "id": "tl_0d8986049b",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_015",
+    "mnemoHint": "L0",
+    "de": "Ich bin geschäftlich hier.",
+    "fr": "Je suis ici pour le travail."
+  },
+  {
+    "id": "tl_1e086caf47",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_016",
+    "mnemoHint": "L0",
+    "de": "Ich komme aus Spanien.",
+    "fr": "Je viens d'Espagne."
+  },
+  {
+    "id": "tl_6e7b4eef7f",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_017",
+    "mnemoHint": "L0",
+    "de": "Ich lerne Deutsch.",
+    "fr": "J'apprends l'allemand."
+  },
+  {
+    "id": "tl_58487c5d41",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_018",
+    "mnemoHint": "L0",
+    "de": "Ich bin Student.",
+    "fr": "Je suis étudiant."
+  },
+  {
+    "id": "tl_610da58a47",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_019",
+    "mnemoHint": "L0",
+    "de": "Ich reise allein.",
+    "fr": "Je voyage seul."
+  },
+  {
+    "id": "tl_e90459029e",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_020",
+    "mnemoHint": "L0",
+    "de": "Ich habe mich verlaufen.",
+    "fr": "Je me suis perdu."
+  },
+  {
+    "id": "tl_ccdf697edc",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_021",
+    "mnemoHint": "L0",
+    "de": "Wo ist die Toilette?",
+    "fr": "Où sont les toilettes ?"
+  },
+  {
+    "id": "tl_3f568cec26",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_022",
+    "mnemoHint": "L0",
+    "de": "Wo ist der Ausgang?",
+    "fr": "Où est la sortie ?"
+  },
+  {
+    "id": "tl_ce64088a3b",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_023",
+    "mnemoHint": "L0",
+    "de": "Wo ist der Bahnhof?",
+    "fr": "Où est la gare ?"
+  },
+  {
+    "id": "tl_c26d062b8a",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_024",
+    "mnemoHint": "L0",
+    "de": "Geradeaus, bitte.",
+    "fr": "Tout droit, s'il vous plaît."
+  },
+  {
+    "id": "tl_545e9f6278",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_025",
+    "mnemoHint": "L0",
+    "de": "Nach links, bitte.",
+    "fr": "À gauche, s'il vous plaît."
+  },
+  {
+    "id": "tl_37bc45747b",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_026",
+    "mnemoHint": "L0",
+    "de": "Nach rechts, bitte.",
+    "fr": "À droite, s'il vous plaît."
+  },
+  {
+    "id": "tl_c728dff85d",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_027",
+    "mnemoHint": "L0",
+    "de": "Hier entlang, bitte.",
+    "fr": "Par ici, s'il vous plaît."
+  },
+  {
+    "id": "tl_c5f58f65d9",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_028",
+    "mnemoHint": "L0",
+    "de": "Bis später!",
+    "fr": "À plus tard !"
+  },
+  {
+    "id": "tl_fe6634d52d",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_029",
+    "mnemoHint": "L0",
+    "de": "Bis bald!",
+    "fr": "À bientôt !"
+  },
+  {
+    "id": "tl_eeb64431e8",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_030",
+    "mnemoHint": "L0",
+    "de": "Ich habe Hunger.",
+    "fr": "J'ai faim."
+  },
+  {
+    "id": "tl_57d2aed5c8",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_031",
+    "mnemoHint": "L0",
+    "de": "Ich habe Durst.",
+    "fr": "J'ai soif."
+  },
+  {
+    "id": "tl_5a4818b1fd",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_032",
+    "mnemoHint": "L0",
+    "de": "Wasser, bitte.",
+    "fr": "De l'eau, s'il vous plaît."
+  },
+  {
+    "id": "tl_77c1a5eb9f",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_033",
+    "mnemoHint": "L0",
+    "de": "Die Rechnung, bitte.",
+    "fr": "L'addition, s'il vous plaît."
+  },
+  {
+    "id": "tl_6739d7666d",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_034",
+    "mnemoHint": "L0",
+    "de": "Entschuldigung, ich suche den Bus.",
+    "fr": "Excusez-moi, je cherche le bus."
+  },
+  {
+    "id": "tl_955e903256",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_035",
+    "mnemoHint": "L0",
+    "de": "Hilfe, bitte.",
+    "fr": "À l'aide, s'il vous plaît."
+  },
+  {
+    "id": "tl_a7b4ecfd1d",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_036",
+    "mnemoHint": "L0",
+    "de": "Rufen Sie bitte die Polizei.",
+    "fr": "Appelez la police, s'il vous plaît."
+  },
+  {
+    "id": "tl_483ce25873",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_037",
+    "mnemoHint": "L0",
+    "de": "Rufen Sie bitte einen Arzt.",
+    "fr": "Appelez un médecin, s'il vous plaît."
+  },
+  {
+    "id": "tl_72decd7b19",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_038",
+    "mnemoHint": "L0",
+    "de": "Mir ist kalt.",
+    "fr": "J'ai froid."
+  },
+  {
+    "id": "tl_a5201bedca",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_039",
+    "mnemoHint": "L0",
+    "de": "Mir ist warm.",
+    "fr": "J'ai chaud."
+  },
+  {
+    "id": "tl_f2e59be1de",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_040",
+    "mnemoHint": "L0",
+    "de": "Mir ist schlecht.",
+    "fr": "Je me sens mal."
+  },
+  {
+    "id": "tl_16df030e85",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_041",
+    "mnemoHint": "L0",
+    "de": "Ich bin gleich zurück.",
+    "fr": "Je reviens tout de suite."
+  },
+  {
+    "id": "tl_d3d1a373a7",
+    "level": 0,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "buy_sim",
+    "mnemoHint": "SIM",
+    "de": "Ich möchte eine SIM-Karte kaufen.",
+    "fr": "Je voudrais acheter une carte SIM."
+  },
+  {
+    "id": "tl_7c563835bc",
+    "level": 0,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "data_plan",
+    "mnemoHint": "DATA",
+    "de": "Ich brauche einen Datentarif mit 5 GB.",
+    "fr": "Il me faut un forfait data de 5 Go."
+  },
+  {
+    "id": "tl_f42596149f",
+    "level": 1,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "top_up",
+    "mnemoHint": "TOP",
+    "de": "Wie kann ich Guthaben aufladen?",
+    "fr": "Comment recharger du crédit ?"
+  },
+  {
+    "id": "tl_3e846e35a9",
+    "level": 1,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "wifi_password",
+    "mnemoHint": "PWD",
+    "de": "Wie lautet das WLAN-Passwort?",
+    "fr": "Quel est le mot de passe Wi‑Fi ?"
+  },
+  {
+    "id": "tl_0a9a9cff72",
+    "level": 2,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "wifi_down",
+    "mnemoHint": "X",
+    "de": "Das WLAN funktioniert nicht.",
+    "fr": "Le Wi‑Fi ne fonctionne pas."
+  },
+  {
+    "id": "tl_0a9202d004",
+    "level": 2,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "restart_router",
+    "mnemoHint": "RST",
+    "de": "Können Sie den Router neu starten?",
+    "fr": "Pouvez-vous redémarrer le routeur ?"
+  },
+  {
+    "id": "tl_fee983cfc3",
+    "level": 3,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "no_signal",
+    "mnemoHint": "0%",
+    "de": "Ich habe kein Netz.",
+    "fr": "Je n'ai pas de réseau."
+  },
+  {
+    "id": "tl_abccd35d33",
+    "level": 3,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "data_not_working",
+    "mnemoHint": "4G?",
+    "de": "Mobile Daten funktionieren nicht.",
+    "fr": "Les données mobiles ne fonctionnent pas."
+  },
+  {
+    "id": "tl_17a6bb3890",
+    "level": 4,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "call_international",
+    "mnemoHint": "+",
+    "de": "Wie rufe ich international an?",
+    "fr": "Comment passer un appel international ?"
+  },
+  {
+    "id": "tl_1554a535de",
+    "level": 4,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "hotspot",
+    "mnemoHint": "HOT",
+    "de": "Kann ich einen Hotspot teilen?",
+    "fr": "Puis-je partager un hotspot ?"
+  },
+  {
+    "id": "tl_33ac87d770",
+    "level": 5,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "esim",
+    "mnemoHint": "ESIM",
+    "de": "Unterstützen Sie eSIM?",
+    "fr": "Proposez-vous l'eSIM ?"
+  },
+  {
+    "id": "tl_6399eed1de",
+    "level": 5,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "support_contact",
+    "mnemoHint": "HELP",
+    "de": "Haben Sie eine Support-Hotline?",
+    "fr": "Avez-vous une hotline d'assistance ?"
+  },
+  {
+    "id": "tl_9f5c6bb70e",
+    "level": 6,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "slow_internet",
+    "mnemoHint": "SLOW",
+    "de": "Das Internet ist sehr langsam.",
+    "fr": "Internet est très lent."
+  },
+  {
+    "id": "tl_d3f0baa66e",
+    "level": 6,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "voicemail",
+    "mnemoHint": "VM",
+    "de": "Wie richte ich die Mailbox ein?",
+    "fr": "Comment configurer la messagerie vocale ?"
+  },
+  {
+    "id": "tl_2161d54cb3",
+    "level": 0,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "room_dirty",
+    "mnemoHint": "CLEAN",
+    "de": "Das Zimmer ist nicht sauber.",
+    "fr": "La chambre n'est pas propre."
+  },
+  {
+    "id": "tl_265c4f1c55",
+    "level": 0,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "no_hot_water",
+    "mnemoHint": "H2O",
+    "de": "Es gibt kein warmes Wasser.",
+    "fr": "Il n'y a pas d'eau chaude."
+  },
+  {
+    "id": "tl_63b79c4427",
+    "level": 1,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "ac_broken_room",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "fr": "La climatisation ne marche pas."
+  },
+  {
+    "id": "tl_cfacd657cb",
+    "level": 1,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "heater",
+    "mnemoHint": "HEAT",
+    "de": "Die Heizung funktioniert nicht.",
+    "fr": "Le chauffage ne fonctionne pas."
+  },
+  {
+    "id": "tl_59d67b44b4",
+    "level": 2,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "too_noisy",
+    "mnemoHint": "NOISE",
+    "de": "Es ist zu laut im Zimmer.",
+    "fr": "Il y a trop de bruit dans la chambre."
+  },
+  {
+    "id": "tl_b3d56419b6",
+    "level": 2,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "need_pillow",
+    "mnemoHint": "PILLOW",
+    "de": "Ich brauche ein zusätzliches Kissen.",
+    "fr": "J'ai besoin d'un oreiller supplémentaire."
+  },
+  {
+    "id": "tl_f8c2dbd934",
+    "level": 3,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "change_room",
+    "mnemoHint": "MOVE",
+    "de": "Kann ich das Zimmer wechseln?",
+    "fr": "Puis-je changer de chambre ?"
+  },
+  {
+    "id": "tl_7478f49195",
+    "level": 3,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "key_not_working",
+    "mnemoHint": "KEY",
+    "de": "Die Schlüsselkarte funktioniert nicht.",
+    "fr": "La carte-clé ne fonctionne pas."
+  },
+  {
+    "id": "tl_2cf8da7671",
+    "level": 4,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "water_leak",
+    "mnemoHint": "LEAK",
+    "de": "Es gibt ein Leck im Bad.",
+    "fr": "Il y a une fuite dans la salle de bain."
+  },
+  {
+    "id": "tl_b8efcc27b1",
+    "level": 4,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "window_not_close",
+    "mnemoHint": "LOCK",
+    "de": "Das Fenster lässt sich nicht schließen.",
+    "fr": "La fenêtre ne se ferme pas."
+  },
+  {
+    "id": "tl_2dfed6adfa",
+    "level": 5,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "refund_night",
+    "mnemoHint": "REF",
+    "de": "Ich möchte die letzte Nacht erstattet bekommen.",
+    "fr": "Je voudrais être remboursé pour la dernière nuit."
+  },
+  {
+    "id": "tl_eee1fcc780",
+    "level": 5,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "insects",
+    "mnemoHint": "BUG",
+    "de": "Es sind Insekten im Zimmer.",
+    "fr": "Il y a des insectes dans la chambre."
+  },
+  {
+    "id": "tl_a3b62bb94e",
+    "level": 6,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "safe_locked",
+    "mnemoHint": "SAFE",
+    "de": "Der Safe ist blockiert.",
+    "fr": "Le coffre-fort est bloqué."
+  },
+  {
+    "id": "tl_4dde96744d",
+    "level": 6,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "more_towels",
+    "mnemoHint": "TOWEL",
+    "de": "Kann ich mehr Handtücher bekommen?",
+    "fr": "Puis-je avoir plus de serviettes ?"
+  },
+  {
+    "id": "tl_ff4c0fa8de",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "where_station",
+    "mnemoHint": "S+?",
+    "de": "Wo ist der Bahnhof?",
+    "fr": "Où est la gare ?"
+  },
+  {
+    "id": "tl_165f0408a5",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "go_straight",
+    "mnemoHint": "→",
+    "de": "Gehen Sie bitte geradeaus.",
+    "fr": "Allez tout droit, s'il vous plaît."
+  },
+  {
+    "id": "tl_de218d9e11",
+    "level": 1,
+    "topic": "Unterwegs",
+    "mnemoKey": "turn_left",
+    "mnemoHint": "←",
+    "de": "Biegen Sie links ab.",
+    "fr": "Tournez à gauche."
+  },
+  {
+    "id": "tl_d792efb4b7",
+    "level": 1,
+    "topic": "Unterwegs",
+    "mnemoKey": "nearby",
+    "mnemoHint": "NEAR",
+    "de": "Es ist in der Nähe.",
+    "fr": "C'est tout près."
+  },
+  {
+    "id": "tl_f0a09d6848",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "to_center",
+    "mnemoHint": "CTR",
+    "de": "Wie komme ich zum Zentrum?",
+    "fr": "Comment aller au centre ?"
+  },
+  {
+    "id": "tl_4e8154b954",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "metro_here",
+    "mnemoHint": "U",
+    "de": "Gibt es eine U-Bahn hier?",
+    "fr": "Y a-t-il un métro ici ?"
+  },
+  {
+    "id": "tl_d132b64934",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "street_closed",
+    "mnemoHint": "X",
+    "de": "Die Straße ist gesperrt.",
+    "fr": "La rue est fermée."
+  },
+  {
+    "id": "tl_61e3037cb6",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_number",
+    "mnemoHint": "BUS",
+    "de": "Nehmen Sie den Bus Nummer zehn.",
+    "fr": "Prenez le bus numéro dix."
+  },
+  {
+    "id": "tl_91a83f58c4",
+    "level": 4,
+    "topic": "Unterwegs",
+    "mnemoKey": "stop_over_there",
+    "mnemoHint": "STOP",
+    "de": "Die Haltestelle ist dort drüben.",
+    "fr": "L'arrêt est là-bas."
+  },
+  {
+    "id": "tl_0d7cba0e9b",
+    "level": 4,
+    "topic": "Unterwegs",
+    "mnemoKey": "ticket_ahead",
+    "mnemoHint": "TIX",
+    "de": "Brauche ich ein Ticket vorher?",
+    "fr": "Faut-il un billet à l'avance ?"
+  },
+  {
+    "id": "tl_70e848e8a4",
+    "level": 5,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_ten_minutes",
+    "mnemoHint": "10m",
+    "de": "Der Bus kommt in zehn Minuten.",
+    "fr": "Le bus arrive dans dix minutes."
+  },
+  {
+    "id": "tl_368cc50152",
+    "level": 5,
+    "topic": "Unterwegs",
+    "mnemoKey": "time_now",
+    "mnemoHint": "TIME",
+    "de": "Wie spät ist es jetzt?",
+    "fr": "Quelle heure est-il maintenant ?"
+  },
+  {
+    "id": "tl_b235e41fef",
+    "level": 6,
+    "topic": "Unterwegs",
+    "mnemoKey": "help_quick",
+    "mnemoHint": "HELP",
+    "de": "Kannst du mir kurz helfen?",
+    "fr": "Peux-tu m'aider un instant ?"
+  },
+  {
+    "id": "tl_adc11eb853",
+    "level": 6,
+    "topic": "Unterwegs",
+    "mnemoKey": "next_train_topic",
+    "mnemoHint": "NEXT",
+    "de": "Wann fährt der nächste Zug nach Paris?",
+    "fr": "Quand part le prochain train pour Paris ?"
+  },
+  {
+    "id": "tl_3ad99321bc",
+    "level": 7,
+    "topic": "Unterwegs",
+    "mnemoKey": "flight_delay_trip",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "fr": "Le vol est retardé."
+  },
+  {
+    "id": "tl_5d45948fa1",
+    "level": 7,
+    "topic": "Unterwegs",
+    "mnemoKey": "baggage_claim_trip",
+    "mnemoHint": "BAG",
+    "de": "Wo ist die Gepäckausgabe?",
+    "fr": "Où est la récupération des bagages ?"
+  },
+  {
+    "id": "tl_dc403d0b1c",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_stop_where",
+    "mnemoHint": "BUS",
+    "de": "Wo ist die Bushaltestelle?",
+    "fr": "Où est l'arrêt de bus ?"
+  },
+  {
+    "id": "tl_7927a525f5",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "city_center_where",
+    "mnemoHint": "CITY",
+    "de": "Wo ist das Stadtzentrum?",
+    "fr": "Où est le centre-ville ?"
+  },
+  {
+    "id": "tl_b76eacdff2",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "quiet_route",
+    "mnemoHint": "CALM",
+    "de": "Können Sie mir eine ruhige Route empfehlen?",
+    "fr": "Pouvez-vous me proposer un itinéraire calme ?"
+  },
+  {
+    "id": "tl_b9e5cde02f",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "no_transfers_route",
+    "mnemoHint": "DIRECT",
+    "de": "Können Sie mir eine Route ohne Umstiege planen?",
+    "fr": "Pouvez-vous me proposer un trajet sans correspondances ?"
+  },
+  {
+    "id": "tl_420bb4b682",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "car_broken",
+    "mnemoHint": "STOP",
+    "de": "Mein Auto ist liegengeblieben.",
+    "fr": "Ma voiture est en panne."
+  },
+  {
+    "id": "tl_1634212b67",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_tow",
+    "mnemoHint": "TOW",
+    "de": "Ich brauche einen Abschleppdienst.",
+    "fr": "J'ai besoin d'une dépanneuse."
+  },
+  {
+    "id": "tl_ee5ad006f7",
+    "level": 1,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "flat_tire",
+    "mnemoHint": "TIRE",
+    "de": "Ich habe einen platten Reifen.",
+    "fr": "J'ai un pneu crevé."
+  },
+  {
+    "id": "tl_e1c1e6f1dd",
+    "level": 1,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "no_fuel",
+    "mnemoHint": "0%",
+    "de": "Ich habe keinen Kraftstoff mehr.",
+    "fr": "Je n'ai plus de carburant."
+  },
+  {
+    "id": "tl_c2d965c6ff",
+    "level": 2,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_gas",
+    "mnemoHint": "FUEL",
+    "de": "Wo ist die nächste Tankstelle?",
+    "fr": "Où est la station-service la plus proche ?"
+  },
+  {
+    "id": "tl_c30fffe1a8",
+    "level": 2,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "battery_dead",
+    "mnemoHint": "BAT",
+    "de": "Die Batterie ist leer.",
+    "fr": "La batterie est à plat."
+  },
+  {
+    "id": "tl_831c888868",
+    "level": 3,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "accident_police",
+    "mnemoHint": "911",
+    "de": "Es gab einen Unfall, bitte rufen Sie die Polizei.",
+    "fr": "Il y a eu un accident, appelez la police s'il vous plaît."
+  },
+  {
+    "id": "tl_7032849637",
+    "level": 3,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "insurance_papers",
+    "mnemoHint": "DOC",
+    "de": "Hier sind meine Versicherungsunterlagen.",
+    "fr": "Voici mes papiers d'assurance."
+  },
+  {
+    "id": "tl_29612ebdec",
+    "level": 4,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_mechanic",
+    "mnemoHint": "FIX",
+    "de": "Können Sie einen Mechaniker schicken?",
+    "fr": "Pouvez-vous envoyer un mécanicien ?"
+  },
+  {
+    "id": "tl_d7bd6cb714",
+    "level": 4,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "rental_car",
+    "mnemoHint": "RENT",
+    "de": "Kann ich ein Ersatzfahrzeug mieten?",
+    "fr": "Puis-je louer un véhicule de remplacement ?"
+  },
+  {
+    "id": "tl_ba92afaad7",
+    "level": 5,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "show_license",
+    "mnemoHint": "ID",
+    "de": "Hier ist mein Führerschein.",
+    "fr": "Voici mon permis de conduire."
+  },
+  {
+    "id": "tl_9639b39719",
+    "level": 5,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "hazard_lights",
+    "mnemoHint": "⚠",
+    "de": "Schalten Sie die Warnblinkanlage ein.",
+    "fr": "Allumez les feux de détresse."
+  },
+  {
+    "id": "tl_dda4b34874",
+    "level": 6,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "wait_time",
+    "mnemoHint": "ETA",
+    "de": "Wie lange dauert es, bis Hilfe kommt?",
+    "fr": "Combien de temps avant que l'aide arrive ?"
+  },
+  {
+    "id": "tl_247a9630e4",
+    "level": 6,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "traffic_jam",
+    "mnemoHint": "JAM",
+    "de": "Es gibt einen Stau vor uns.",
+    "fr": "Il y a un embouteillage devant."
+  },
+  {
+    "id": "tl_f2d1ce6d31",
+    "level": 7,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "road_closed",
+    "mnemoHint": "X",
+    "de": "Die Straße ist gesperrt, gibt es eine Umleitung?",
+    "fr": "La route est fermée, y a-t-il une déviation ?"
+  },
+  {
+    "id": "tl_1e451abf0b",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "car_broken",
+    "mnemoHint": "STOP",
+    "de": "Mein Auto ist kaputt.",
+    "fr": "Ma voiture est en panne."
+  }
+]

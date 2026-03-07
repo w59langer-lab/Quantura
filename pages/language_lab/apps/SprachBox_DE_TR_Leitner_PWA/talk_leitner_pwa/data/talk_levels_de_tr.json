@@ -1,0 +1,1940 @@
+{
+  "items": [
+    {
+      "id": "tl_d339c7d571",
+      "topic": "Allgemein",
+      "level": "0",
+      "de": "Hallo!",
+      "en": "Merhaba!",
+      "mnemo": "HI"
+    },
+    {
+      "id": "tl_f62d832bf9",
+      "topic": "Allgemein",
+      "level": "0",
+      "de": "Guten Morgen!",
+      "en": "Günaydın!",
+      "mnemo": "AM"
+    },
+    {
+      "id": "tl_20de2d1ed7",
+      "topic": "Allgemein",
+      "level": "1",
+      "de": "Guten Abend!",
+      "en": "İyi akşamlar!",
+      "mnemo": "PM"
+    },
+    {
+      "id": "tl_499c5d60cf",
+      "topic": "Allgemein",
+      "level": "1",
+      "de": "Wie geht es dir?",
+      "en": "Nasılsın?",
+      "mnemo": "HAY"
+    },
+    {
+      "id": "tl_849ecf1205",
+      "topic": "Allgemein",
+      "level": "2",
+      "de": "Mir geht es gut.",
+      "en": "İyiyim.",
+      "mnemo": "OK"
+    },
+    {
+      "id": "tl_7dc9bcf018",
+      "topic": "Allgemein",
+      "level": "2",
+      "de": "Danke!",
+      "en": "Teşekkürler!",
+      "mnemo": "THX"
+    },
+    {
+      "id": "tl_1af158fb04",
+      "topic": "Allgemein",
+      "level": "3",
+      "de": "Bitte.",
+      "en": "Lütfen.",
+      "mnemo": "PLS"
+    },
+    {
+      "id": "tl_1f8ca8e84b",
+      "topic": "Allgemein",
+      "level": "3",
+      "de": "Ja.",
+      "en": "Evet.",
+      "mnemo": "YES"
+    },
+    {
+      "id": "tl_1900fc1d41",
+      "topic": "Allgemein",
+      "level": "4",
+      "de": "Nein.",
+      "en": "Hayır.",
+      "mnemo": "NO"
+    },
+    {
+      "id": "tl_42c01b5bee",
+      "topic": "Allgemein",
+      "level": "4",
+      "de": "Ich heiße Anna.",
+      "en": "Adım Anna.",
+      "mnemo": "ID"
+    },
+    {
+      "id": "tl_6e7159e19e",
+      "topic": "Allgemein",
+      "level": "5",
+      "de": "Ich komme aus Deutschland.",
+      "en": "Almanya'dan geliyorum.",
+      "mnemo": "DE"
+    },
+    {
+      "id": "tl_dc22f9611b",
+      "topic": "Allgemein",
+      "level": "5",
+      "de": "Ich spreche ein wenig Englisch.",
+      "en": "Biraz İngilizce konuşuyorum.",
+      "mnemo": "EN+"
+    },
+    {
+      "id": "tl_d85c834778",
+      "topic": "Allgemein",
+      "level": "6",
+      "de": "Ich lerne Italienisch.",
+      "en": "İtalyanca öğreniyorum.",
+      "mnemo": "IT+"
+    },
+    {
+      "id": "tl_12b6cbd10f",
+      "topic": "Allgemein",
+      "level": "6",
+      "de": "Ich arbeite als Ingenieur.",
+      "en": "Mühendis olarak çalışıyorum.",
+      "mnemo": "JOB"
+    },
+    {
+      "id": "tl_67feab58af",
+      "topic": "Allgemein",
+      "level": "7",
+      "de": "Ich habe zwei Geschwister.",
+      "en": "İki kardeşim var.",
+      "mnemo": "FAM"
+    },
+    {
+      "id": "tl_039c152956",
+      "topic": "Allgemein",
+      "level": "7",
+      "de": "Ich studiere an der Universität.",
+      "en": "Üniversitede okuyorum.",
+      "mnemo": "UNI"
+    },
+    {
+      "id": "tl_54ea9cb26c",
+      "topic": "Allgemein",
+      "level": "0",
+      "de": "Guten Tag!",
+      "en": "İyi günler!",
+      "mnemo": "DAY"
+    },
+    {
+      "id": "tl_fa1ead7503",
+      "topic": "Allgemein",
+      "level": "0",
+      "de": "Tschüss!",
+      "en": "Hoşça kal!",
+      "mnemo": "BYE"
+    },
+    {
+      "id": "tl_9c8b645ac0",
+      "topic": "Allgemein",
+      "level": "0",
+      "de": "Bis gleich!",
+      "en": "Az sonra görüşürüz!",
+      "mnemo": "SOON"
+    },
+    {
+      "id": "tl_b9ac45282e",
+      "topic": "Allgemein",
+      "level": "0",
+      "de": "Ich habe eine Frage.",
+      "en": "Bir sorum var.",
+      "mnemo": "ASK"
+    },
+    {
+      "id": "tl_f8b910949a",
+      "topic": "Arzt & Apotheke",
+      "level": "0",
+      "de": "Ich brauche einen Arzt.",
+      "en": "Bir doktora ihtiyacım var.",
+      "mnemo": "DOC"
+    },
+    {
+      "id": "tl_1f3d105a45",
+      "topic": "Arzt & Apotheke",
+      "level": "0",
+      "de": "Wo ist die nächste Apotheke?",
+      "en": "En yakın eczane nerede?",
+      "mnemo": "RX"
+    },
+    {
+      "id": "tl_d1bf1020f0",
+      "topic": "Arzt & Apotheke",
+      "level": "1",
+      "de": "Ich habe hier Schmerzen.",
+      "en": "Buram ağrıyor.",
+      "mnemo": "→"
+    },
+    {
+      "id": "tl_7198b30ba5",
+      "topic": "Arzt & Apotheke",
+      "level": "1",
+      "de": "Ich habe Fieber.",
+      "en": "Ateşim var.",
+      "mnemo": "38°"
+    },
+    {
+      "id": "tl_b54ac8939b",
+      "topic": "Arzt & Apotheke",
+      "level": "2",
+      "de": "Ich habe starke Kopfschmerzen.",
+      "en": "Şiddetli baş ağrım var.",
+      "mnemo": "HEAD"
+    },
+    {
+      "id": "tl_bb880ddfd0",
+      "topic": "Arzt & Apotheke",
+      "level": "2",
+      "de": "Mir ist übel / Ich habe Bauchschmerzen.",
+      "en": "Midem bulanıyor / Karnım ağrıyor.",
+      "mnemo": "BELLY"
+    },
+    {
+      "id": "tl_561e346ceb",
+      "topic": "Arzt & Apotheke",
+      "level": "3",
+      "de": "Ich bin allergisch gegen Penicillin.",
+      "en": "Penisiline alerjim var.",
+      "mnemo": "NO RX"
+    },
+    {
+      "id": "tl_a517868a57",
+      "topic": "Arzt & Apotheke",
+      "level": "3",
+      "de": "Kann ich heute einen Termin bekommen?",
+      "en": "Bugün randevu alabilir miyim?",
+      "mnemo": "APPT"
+    },
+    {
+      "id": "tl_c708c8db3a",
+      "topic": "Arzt & Apotheke",
+      "level": "4",
+      "de": "Ich brauche ein Rezept.",
+      "en": "Bir reçeteye ihtiyacım var.",
+      "mnemo": "RX"
+    },
+    {
+      "id": "tl_0823b444a8",
+      "topic": "Arzt & Apotheke",
+      "level": "4",
+      "de": "Haben Sie etwas gegen Schmerzen?",
+      "en": "Ağrı için bir şeyiniz var mı?",
+      "mnemo": "PILL"
+    },
+    {
+      "id": "tl_65ea666ec9",
+      "topic": "Arzt & Apotheke",
+      "level": "5",
+      "de": "Ich brauche einen Verband / Pflaster.",
+      "en": "Bandaja / yara bandına ihtiyacım var.",
+      "mnemo": "WRAP"
+    },
+    {
+      "id": "tl_0c669baf44",
+      "topic": "Arzt & Apotheke",
+      "level": "5",
+      "de": "Haben Sie etwas gegen Husten?",
+      "en": "Öksürük için bir şeyiniz var mı?",
+      "mnemo": "COUGH"
+    },
+    {
+      "id": "tl_9a73b64a69",
+      "topic": "Arzt & Apotheke",
+      "level": "6",
+      "de": "Wo kann ich einen COVID-Test machen?",
+      "en": "COVID testini nerede yaptırabilirim?",
+      "mnemo": "TEST"
+    },
+    {
+      "id": "tl_609f0a92fe",
+      "topic": "Arzt & Apotheke",
+      "level": "6",
+      "de": "Nehmen Sie meine Versicherungskarte?",
+      "en": "Sigorta kartımı kabul ediyor musunuz?",
+      "mnemo": "ID"
+    },
+    {
+      "id": "tl_ccf037b8be",
+      "topic": "Arzt & Apotheke",
+      "level": "7",
+      "de": "Ist das ein Notfall? Soll ich 112 anrufen?",
+      "en": "Bu acil durum mu? 112'yi arayayım mı?",
+      "mnemo": "112"
+    },
+    {
+      "id": "tl_806d53d35d",
+      "topic": "Bahn & Flug",
+      "level": "0",
+      "de": "Wo ist der Fahrkarten-/Ticketschalter?",
+      "en": "Bilet gişesi nerede?",
+      "mnemo": "INFO"
+    },
+    {
+      "id": "tl_2db69a2722",
+      "topic": "Bahn & Flug",
+      "level": "0",
+      "de": "Ein Ticket nach Berlin, einfach, bitte.",
+      "en": "Berlin'e tek yön bilet lütfen.",
+      "mnemo": "1WAY"
+    },
+    {
+      "id": "tl_dd696dc15c",
+      "topic": "Bahn & Flug",
+      "level": "1",
+      "de": "Ein Hin- und Rückticket für morgen.",
+      "en": "Yarın için gidiş-dönüş bilet lütfen.",
+      "mnemo": "RTN"
+    },
+    {
+      "id": "tl_26f5564d2b",
+      "topic": "Bahn & Flug",
+      "level": "1",
+      "de": "Auf welchem Gleis fährt der Zug?",
+      "en": "Tren hangi perondan kalkıyor?",
+      "mnemo": "G"
+    },
+    {
+      "id": "tl_dcd9beda11",
+      "topic": "Bahn & Flug",
+      "level": "2",
+      "de": "Der Zug hat Verspätung.",
+      "en": "Tren gecikti.",
+      "mnemo": "+"
+    },
+    {
+      "id": "tl_44cf0d722a",
+      "topic": "Bahn & Flug",
+      "level": "2",
+      "de": "Hat sich das Gleis geändert?",
+      "en": "Peron değişti mi?",
+      "mnemo": "MOVE"
+    },
+    {
+      "id": "tl_0687e48721",
+      "topic": "Bahn & Flug",
+      "level": "3",
+      "de": "Brauche ich eine Sitzplatzreservierung?",
+      "en": "Koltuk rezervasyonu yapmam gerekiyor mu?",
+      "mnemo": "SEAT"
+    },
+    {
+      "id": "tl_62cec7fee6",
+      "topic": "Bahn & Flug",
+      "level": "3",
+      "de": "Zu welchem Gate geht der Flug?",
+      "en": "Uçuş hangi kapıda?",
+      "mnemo": "GATE"
+    },
+    {
+      "id": "tl_23474fd9c8",
+      "topic": "Bahn & Flug",
+      "level": "4",
+      "de": "Wann beginnt das Boarding?",
+      "en": "Biniş ne zaman başlıyor?",
+      "mnemo": "BOARD"
+    },
+    {
+      "id": "tl_b16c161991",
+      "topic": "Bahn & Flug",
+      "level": "4",
+      "de": "Der Flug hat Verspätung.",
+      "en": "Uçuş gecikti.",
+      "mnemo": "ETA"
+    },
+    {
+      "id": "tl_4d20fe9c39",
+      "topic": "Bahn & Flug",
+      "level": "5",
+      "de": "Ich habe den Anschluss verpasst.",
+      "en": "Aktarmayı kaçırdım.",
+      "mnemo": "MISS"
+    },
+    {
+      "id": "tl_05dc1302f9",
+      "topic": "Bahn & Flug",
+      "level": "5",
+      "de": "Wo gebe ich das Gepäck auf?",
+      "en": "Bagajı nerede teslim edebilirim?",
+      "mnemo": "CHK"
+    },
+    {
+      "id": "tl_973a53505d",
+      "topic": "Bahn & Flug",
+      "level": "6",
+      "de": "Ist das als Handgepäck erlaubt?",
+      "en": "Bu el bagajı olarak uygun mu?",
+      "mnemo": "CAB"
+    },
+    {
+      "id": "tl_46afc723fe",
+      "topic": "Bahn & Flug",
+      "level": "6",
+      "de": "Kann ich auf einen früheren Zug/Flug umbuchen?",
+      "en": "Daha erken tren/uçağa alabilir miyim?",
+      "mnemo": "RBK"
+    },
+    {
+      "id": "tl_6553512686",
+      "topic": "Bahn & Flug",
+      "level": "7",
+      "de": "Bekomme ich eine Erstattung oder einen Gutschein?",
+      "en": "Para iadesi mi kupon mu alıyorum?",
+      "mnemo": "REF"
+    },
+    {
+      "id": "tl_7260ad5335",
+      "topic": "Bahn & Flug",
+      "level": "1",
+      "de": "Wo bekomme ich ein Ticket?",
+      "en": "Bileti nereden alabilirim?",
+      "mnemo": "TIX"
+    },
+    {
+      "id": "tl_b5b43b8589",
+      "topic": "Bahn & Flug",
+      "level": "1",
+      "de": "Wann fährt der nächste Zug?",
+      "en": "Sonraki tren ne zaman kalkıyor?",
+      "mnemo": "TIME"
+    },
+    {
+      "id": "tl_a5e61526a7",
+      "topic": "Bahn & Flug",
+      "level": "2",
+      "de": "Können Sie das Ticket auf morgen umbuchen?",
+      "en": "Bileti yarına erteleyebilir misiniz?",
+      "mnemo": "MOVE"
+    },
+    {
+      "id": "tl_1b061bbb98",
+      "topic": "Einkaufen",
+      "level": "0",
+      "de": "Wie viel kostet das?",
+      "en": "Bu ne kadar?",
+      "mnemo": "€"
+    },
+    {
+      "id": "tl_460de8f853",
+      "topic": "Einkaufen",
+      "level": "0",
+      "de": "Haben Sie das in einer anderen Größe?",
+      "en": "Bunun başka bedeni var mı?",
+      "mnemo": "SIZE"
+    },
+    {
+      "id": "tl_9574af3ed3",
+      "topic": "Einkaufen",
+      "level": "1",
+      "de": "Ich zahle bar.",
+      "en": "Nakit ödüyorum.",
+      "mnemo": "CASH"
+    },
+    {
+      "id": "tl_a09009cba7",
+      "topic": "Einkaufen",
+      "level": "1",
+      "de": "Kann ich mit Karte zahlen?",
+      "en": "Kartla ödeyebilir miyim?",
+      "mnemo": "CARD"
+    },
+    {
+      "id": "tl_2206a9eed5",
+      "topic": "Einkaufen",
+      "level": "2",
+      "de": "Ich muss noch einkaufen gehen.",
+      "en": "Hâlâ alışverişe gitmem gerekiyor.",
+      "mnemo": "LIST"
+    },
+    {
+      "id": "tl_599cd6a79a",
+      "topic": "Einkaufen",
+      "level": "2",
+      "de": "Kann ich eine Quittung bekommen?",
+      "en": "Fiş alabilir miyim?",
+      "mnemo": "REC"
+    },
+    {
+      "id": "tl_2b6cb69d47",
+      "topic": "Einkaufen",
+      "level": "3",
+      "de": "Kann ich das anprobieren?",
+      "en": "Bunu deneyebilir miyim?",
+      "mnemo": "FIT"
+    },
+    {
+      "id": "tl_fe14ebadce",
+      "topic": "Einkaufen",
+      "level": "3",
+      "de": "Haben Sie das in Blau?",
+      "en": "Bunun mavisi var mı?",
+      "mnemo": "COL"
+    },
+    {
+      "id": "tl_8ccb06dfe3",
+      "topic": "Einkaufen",
+      "level": "4",
+      "de": "Gibt es einen Rabatt?",
+      "en": "İndirim var mı?",
+      "mnemo": "%"
+    },
+    {
+      "id": "tl_8a160b8014",
+      "topic": "Einkaufen",
+      "level": "4",
+      "de": "Brauchen Sie eine Tüte?",
+      "en": "Poşet ister misiniz?",
+      "mnemo": "BAG"
+    },
+    {
+      "id": "tl_a5e99bcbd8",
+      "topic": "Einkaufen",
+      "level": "5",
+      "de": "Kann ich das zurückgeben?",
+      "en": "Bunu iade edebilir miyim?",
+      "mnemo": "RET"
+    },
+    {
+      "id": "tl_65c38303e5",
+      "topic": "Einkaufen",
+      "level": "5",
+      "de": "Bis wann sind Sie geöffnet?",
+      "en": "Kaça kadar açıksınız?",
+      "mnemo": "TIME"
+    },
+    {
+      "id": "tl_cd20b83437",
+      "topic": "Einkaufen",
+      "level": "6",
+      "de": "Ich suche ein Geschenk.",
+      "en": "Bir hediye arıyorum.",
+      "mnemo": "GIFT"
+    },
+    {
+      "id": "tl_282474760a",
+      "topic": "Einkaufen",
+      "level": "6",
+      "de": "Haben Sie frisches Obst?",
+      "en": "Taze meyveniz var mı?",
+      "mnemo": "FRUT"
+    },
+    {
+      "id": "tl_47a6607373",
+      "topic": "Einkaufen",
+      "level": "7",
+      "de": "Bitte ein halbes Kilo davon.",
+      "en": "Şundan yarım kilo lütfen.",
+      "mnemo": "0.5K"
+    },
+    {
+      "id": "tl_612f553fe0",
+      "topic": "Einkaufen",
+      "level": "7",
+      "de": "Wie viel kostet es pro Kilo?",
+      "en": "Kilosu ne kadar?",
+      "mnemo": "€/KG"
+    },
+    {
+      "id": "tl_1e23b0e7ec",
+      "topic": "Einkaufen",
+      "level": "8",
+      "de": "Wo ist die Kasse?",
+      "en": "Kasa nerede?",
+      "mnemo": "PAY"
+    },
+    {
+      "id": "tl_a46d52d948",
+      "topic": "Hotel & Reise",
+      "level": "0",
+      "de": "Ich habe eine Reservierung auf den Namen Meyer.",
+      "en": "Meyer adına rezervasyonum var.",
+      "mnemo": "RES"
+    },
+    {
+      "id": "tl_77301ceabf",
+      "topic": "Hotel & Reise",
+      "level": "0",
+      "de": "Gibt es WLAN im Zimmer?",
+      "en": "Odada Wi‑Fi var mı?",
+      "mnemo": "WIFI"
+    },
+    {
+      "id": "tl_567d948624",
+      "topic": "Hotel & Reise",
+      "level": "1",
+      "de": "Das Zimmer ist zu kalt.",
+      "en": "Oda çok soğuk.",
+      "mnemo": "COLD"
+    },
+    {
+      "id": "tl_23cfaa9d8d",
+      "topic": "Hotel & Reise",
+      "level": "1",
+      "de": "Können Sie ein Taxi bestellen?",
+      "en": "Bir taksi çağırabilir misiniz?",
+      "mnemo": "TAXI"
+    },
+    {
+      "id": "tl_a1c467c6ae",
+      "topic": "Hotel & Reise",
+      "level": "2",
+      "de": "Ich bleibe drei Nächte.",
+      "en": "Üç gece kalıyorum.",
+      "mnemo": "3N"
+    },
+    {
+      "id": "tl_3a115de344",
+      "topic": "Hotel & Reise",
+      "level": "2",
+      "de": "Ich habe ein Ticket für den Zug um neun.",
+      "en": "Saat dokuza tren biletim var.",
+      "mnemo": "9:00"
+    },
+    {
+      "id": "tl_73410e323c",
+      "topic": "Hotel & Reise",
+      "level": "3",
+      "de": "Der Flug hat Verspätung.",
+      "en": "Uçuş gecikti.",
+      "mnemo": "ETA"
+    },
+    {
+      "id": "tl_e0d17f5833",
+      "topic": "Hotel & Reise",
+      "level": "3",
+      "de": "Wo ist die Gepäckausgabe?",
+      "en": "Bagaj teslim yeri nerede?",
+      "mnemo": "BAG"
+    },
+    {
+      "id": "tl_0842673125",
+      "topic": "Hotel & Reise",
+      "level": "4",
+      "de": "Ich möchte einen Fensterplatz.",
+      "en": "Pencere kenarı yer istiyorum.",
+      "mnemo": "SEAT"
+    },
+    {
+      "id": "tl_97f6ca57dc",
+      "topic": "Hotel & Reise",
+      "level": "4",
+      "de": "Wann fährt der nächste Zug nach Paris?",
+      "en": "Paris'e giden sonraki tren ne zaman kalkıyor?",
+      "mnemo": "NEXT"
+    },
+    {
+      "id": "tl_ae0f7c9d4b",
+      "topic": "Hotel & Reise",
+      "level": "5",
+      "de": "Die Klimaanlage funktioniert nicht.",
+      "en": "Klima çalışmıyor.",
+      "mnemo": "AC"
+    },
+    {
+      "id": "tl_bf5caef1cf",
+      "topic": "Hotel & Reise",
+      "level": "5",
+      "de": "Mein Gepäck ist verloren gegangen.",
+      "en": "Bagajım kayboldu.",
+      "mnemo": "BAG?"
+    },
+    {
+      "id": "tl_927c9c5907",
+      "topic": "Hotel & Reise",
+      "level": "6",
+      "de": "Ich habe die falsche Rechnung bekommen.",
+      "en": "Yanlış hesap aldım.",
+      "mnemo": "BILL"
+    },
+    {
+      "id": "tl_9cea1576d9",
+      "topic": "Hotel & Reise",
+      "level": "6",
+      "de": "Bitte schicken Sie jemanden vorbei.",
+      "en": "Lütfen birini gönderin.",
+      "mnemo": "HELP"
+    },
+    {
+      "id": "tl_7cb5edf75b",
+      "topic": "Hotel & Reise",
+      "level": "7",
+      "de": "Das Internet ist sehr langsam.",
+      "en": "İnternet çok yavaş.",
+      "mnemo": "NET"
+    },
+    {
+      "id": "tl_84f80e785d",
+      "topic": "Hotel & Reise",
+      "level": "7",
+      "de": "Ich brauche sofort Hilfe.",
+      "en": "Hemen yardıma ihtiyacım var.",
+      "mnemo": "SOS"
+    },
+    {
+      "id": "tl_0ae6330c72",
+      "topic": "Hotel & Reise",
+      "level": "1",
+      "de": "Ich habe eine Reservierung.",
+      "en": "Rezervasyonum var.",
+      "mnemo": "BOOK"
+    },
+    {
+      "id": "tl_459d2eaa16",
+      "topic": "Hotel & Reise",
+      "level": "1",
+      "de": "Ich brauche ein Zimmer für eine Nacht.",
+      "en": "Bir gecelik oda lazım.",
+      "mnemo": "1N"
+    },
+    {
+      "id": "tl_0d54e11e2f",
+      "topic": "Hotel & Reise",
+      "level": "1",
+      "de": "Ist das Frühstück inklusive?",
+      "en": "Kahvaltı dahil mi?",
+      "mnemo": "FOOD"
+    },
+    {
+      "id": "tl_8ce7897af3",
+      "topic": "Hotel & Reise",
+      "level": "2",
+      "de": "Kann ich später auschecken?",
+      "en": "Daha geç çıkış yapabilir miyim?",
+      "mnemo": "LATE"
+    },
+    {
+      "id": "tl_1beda69516",
+      "topic": "Hotel & Reise",
+      "level": "3",
+      "de": "Bitte bestätigen Sie meine Buchung schriftlich.",
+      "en": "Rezervasyonumu yazılı olarak onaylar mısınız?",
+      "mnemo": "CONF"
+    },
+    {
+      "id": "tl_be83ffdc6f",
+      "topic": "Notfall",
+      "level": "0",
+      "de": "Ich habe Kopfschmerzen.",
+      "en": "Başım ağrıyor.",
+      "mnemo": "MED"
+    },
+    {
+      "id": "tl_b5c30f7a9c",
+      "topic": "Notfall",
+      "level": "0",
+      "de": "Mir ist schwindelig.",
+      "en": "Başım dönüyor.",
+      "mnemo": "DIZ"
+    },
+    {
+      "id": "tl_40f8c1190c",
+      "topic": "Notfall",
+      "level": "1",
+      "de": "Haben Sie etwas gegen Fieber?",
+      "en": "Ateş için bir şeyiniz var mı?",
+      "mnemo": "TEMP"
+    },
+    {
+      "id": "tl_261ae2855c",
+      "topic": "Notfall",
+      "level": "1",
+      "de": "Ich brauche einen Arzt.",
+      "en": "Bir doktora ihtiyacım var.",
+      "mnemo": "DR"
+    },
+    {
+      "id": "tl_d0db8a7498",
+      "topic": "Notfall",
+      "level": "2",
+      "de": "Ich habe mich verletzt.",
+      "en": "Kendimi yaraladım.",
+      "mnemo": "CUT"
+    },
+    {
+      "id": "tl_1c2a51ae34",
+      "topic": "Notfall",
+      "level": "2",
+      "de": "Wo ist die nächste Apotheke?",
+      "en": "En yakın eczane nerede?",
+      "mnemo": "RX"
+    },
+    {
+      "id": "tl_034b7f268a",
+      "topic": "Notfall",
+      "level": "3",
+      "de": "Ich habe eine Allergie gegen Penicillin.",
+      "en": "Penisiline alerjim var.",
+      "mnemo": "PEN"
+    },
+    {
+      "id": "tl_4a3cafcbe4",
+      "topic": "Notfall",
+      "level": "3",
+      "de": "Ich brauche Schmerzmittel.",
+      "en": "Ağrı kesiciye ihtiyacım var.",
+      "mnemo": "MED"
+    },
+    {
+      "id": "tl_f80bc12cd3",
+      "topic": "Notfall",
+      "level": "4",
+      "de": "Ich habe Fieber seit gestern.",
+      "en": "Dünden beri ateşim var.",
+      "mnemo": "24h"
+    },
+    {
+      "id": "tl_8c0875abfc",
+      "topic": "Notfall",
+      "level": "4",
+      "de": "Kann ich einen Termin bekommen?",
+      "en": "Randevu alabilir miyim?",
+      "mnemo": "APT"
+    },
+    {
+      "id": "tl_1c948f59b9",
+      "topic": "Notfall",
+      "level": "5",
+      "de": "Mein Gepäck ist verloren gegangen.",
+      "en": "Bagajım kayboldu.",
+      "mnemo": "BAG"
+    },
+    {
+      "id": "tl_c8004258a6",
+      "topic": "Notfall",
+      "level": "5",
+      "de": "Die Klimaanlage funktioniert nicht.",
+      "en": "Klima çalışmıyor.",
+      "mnemo": "AC"
+    },
+    {
+      "id": "tl_c7f530d1a8",
+      "topic": "Notfall",
+      "level": "6",
+      "de": "Bitte schicken Sie jemanden vorbei.",
+      "en": "Lütfen birini gönderin.",
+      "mnemo": "CALL"
+    },
+    {
+      "id": "tl_8f3b607471",
+      "topic": "Notfall",
+      "level": "6",
+      "de": "Ich habe meine Schlüssel verloren.",
+      "en": "Anahtarlarımı kaybettim.",
+      "mnemo": "KEY"
+    },
+    {
+      "id": "tl_d457642096",
+      "topic": "Notfall",
+      "level": "7",
+      "de": "Das Internet ist sehr langsam.",
+      "en": "İnternet çok yavaş.",
+      "mnemo": "NET"
+    },
+    {
+      "id": "tl_83bb96050c",
+      "topic": "Notfall",
+      "level": "7",
+      "de": "Ich brauche sofort Hilfe.",
+      "en": "Hemen yardıma ihtiyacım var.",
+      "mnemo": "SOS"
+    },
+    {
+      "id": "tl_7d2eeba1ed",
+      "topic": "Notfall",
+      "level": "0",
+      "de": "Hilfe!",
+      "en": "Yardım!",
+      "mnemo": "SOS"
+    },
+    {
+      "id": "tl_413bb1ce34",
+      "topic": "Notfall",
+      "level": "1",
+      "de": "Können Sie mir helfen?",
+      "en": "Bana yardım eder misiniz?",
+      "mnemo": "ASK"
+    },
+    {
+      "id": "tl_a95831018b",
+      "topic": "Notfall",
+      "level": "1",
+      "de": "Bitte rufen Sie einen Krankenwagen.",
+      "en": "Lütfen bir ambulans çağırın.",
+      "mnemo": "AMB"
+    },
+    {
+      "id": "tl_27f58c0254",
+      "topic": "Notfall",
+      "level": "1",
+      "de": "Wo ist der Notausgang?",
+      "en": "Acil çıkış nerede?",
+      "mnemo": "EXIT"
+    },
+    {
+      "id": "tl_f95350c714",
+      "topic": "Notfall",
+      "level": "2",
+      "de": "Ich brauche die Adresse des nächsten Krankenhauses.",
+      "en": "En yakın hastanenin adresine ihtiyacım var.",
+      "mnemo": "ADDR"
+    },
+    {
+      "id": "tl_ce0decc56d",
+      "topic": "Notfall",
+      "level": "3",
+      "de": "Können wir einen Notfallplan durchgehen?",
+      "en": "Bir acil durum planını gözden geçirebilir miyiz?",
+      "mnemo": "PLAN"
+    },
+    {
+      "id": "tl_a9da418459",
+      "topic": "Restaurant",
+      "level": "0",
+      "de": "Haben Sie einen Tisch für zwei?",
+      "en": "İki kişilik masanız var mı?",
+      "mnemo": "2P"
+    },
+    {
+      "id": "tl_22626e60b6",
+      "topic": "Restaurant",
+      "level": "0",
+      "de": "Ich möchte die Speisekarte sehen.",
+      "en": "Menüyü görmek istiyorum.",
+      "mnemo": "MENU"
+    },
+    {
+      "id": "tl_7b22673fd2",
+      "topic": "Restaurant",
+      "level": "1",
+      "de": "Können Sie etwas empfehlen?",
+      "en": "Bir şey önerebilir misiniz?",
+      "mnemo": "REC"
+    },
+    {
+      "id": "tl_1139852f8e",
+      "topic": "Restaurant",
+      "level": "1",
+      "de": "Ich bin allergisch gegen Nüsse.",
+      "en": "Fındık/fıstığa alerjim var.",
+      "mnemo": "NUT"
+    },
+    {
+      "id": "tl_3b795a2138",
+      "topic": "Restaurant",
+      "level": "2",
+      "de": "Ohne Fleisch, bitte.",
+      "en": "Etsiz olsun lütfen.",
+      "mnemo": "VEG"
+    },
+    {
+      "id": "tl_2ec37c36b3",
+      "topic": "Restaurant",
+      "level": "2",
+      "de": "Ich nehme ein Wasser ohne Kohlensäure.",
+      "en": "Sade su alayım.",
+      "mnemo": "H2O"
+    },
+    {
+      "id": "tl_733ee230fb",
+      "topic": "Restaurant",
+      "level": "3",
+      "de": "Die Rechnung, bitte.",
+      "en": "Hesap lütfen.",
+      "mnemo": "BILL"
+    },
+    {
+      "id": "tl_a49edfda3b",
+      "topic": "Restaurant",
+      "level": "3",
+      "de": "Stimmt so, danke.",
+      "en": "Üstü kalsın, teşekkürler.",
+      "mnemo": "TIP"
+    },
+    {
+      "id": "tl_8703bf4c4e",
+      "topic": "Restaurant",
+      "level": "4",
+      "de": "Schmeckt sehr gut!",
+      "en": "Çok lezzetli!",
+      "mnemo": "YUM"
+    },
+    {
+      "id": "tl_3957faf0af",
+      "topic": "Restaurant",
+      "level": "4",
+      "de": "Ist das Gericht scharf?",
+      "en": "Yemek acı mı?",
+      "mnemo": "HOT"
+    },
+    {
+      "id": "tl_2c7fa75f95",
+      "topic": "Restaurant",
+      "level": "5",
+      "de": "Das ist nicht, was ich bestellt habe.",
+      "en": "Bu sipariş ettiğim şey değil.",
+      "mnemo": "ERR"
+    },
+    {
+      "id": "tl_087617490f",
+      "topic": "Restaurant",
+      "level": "5",
+      "de": "Ich hätte gern eine Suppe als Vorspeise.",
+      "en": "Başlangıç olarak çorba isterim.",
+      "mnemo": "SOUP"
+    },
+    {
+      "id": "tl_c601b7b45d",
+      "topic": "Restaurant",
+      "level": "6",
+      "de": "Haben Sie vegetarische Optionen?",
+      "en": "Vejetaryen seçenekleriniz var mı?",
+      "mnemo": "VEG?"
+    },
+    {
+      "id": "tl_ea2d696996",
+      "topic": "Restaurant",
+      "level": "6",
+      "de": "Können wir die Bestellung ändern?",
+      "en": "Siparişi değiştirebilir miyiz?",
+      "mnemo": "EDIT"
+    },
+    {
+      "id": "tl_9057dfd9da",
+      "topic": "Restaurant",
+      "level": "7",
+      "de": "Kann ich Leitungswasser bekommen?",
+      "en": "Musluk suyu alabilir miyim?",
+      "mnemo": "H2O"
+    },
+    {
+      "id": "tl_ac716bcb9e",
+      "topic": "Restaurant",
+      "level": "7",
+      "de": "Wie lange dauert es?",
+      "en": "Ne kadar sürer?",
+      "mnemo": "TIME"
+    },
+    {
+      "id": "tl_edb28c0d46",
+      "topic": "Restaurant",
+      "level": "8",
+      "de": "Ich möchte einen Tisch reservieren.",
+      "en": "Masa ayırtmak istiyorum.",
+      "mnemo": "BOOK"
+    },
+    {
+      "id": "tl_a426b34046",
+      "topic": "Restaurant",
+      "level": "0",
+      "de": "Ein Kaffee, bitte.",
+      "en": "Bir kahve lütfen.",
+      "mnemo": "COF"
+    },
+    {
+      "id": "tl_6894f09f92",
+      "topic": "Restaurant",
+      "level": "0",
+      "de": "Ein stilles Wasser, bitte.",
+      "en": "Sade su lütfen.",
+      "mnemo": "H2O"
+    },
+    {
+      "id": "tl_14d4ee878e",
+      "topic": "Restaurant",
+      "level": "1",
+      "de": "Ist das hier frei?",
+      "en": "Burası boş mu?",
+      "mnemo": "FREE"
+    },
+    {
+      "id": "tl_00954f776d",
+      "topic": "Restaurant",
+      "level": "2",
+      "de": "Können wir die Rechnung aufteilen?",
+      "en": "Hesabı paylaşabilir miyiz?",
+      "mnemo": "SPLIT"
+    },
+    {
+      "id": "tl_095407bb64",
+      "topic": "Restaurant",
+      "level": "3",
+      "de": "Können wir ein späteres Abendessen vereinbaren?",
+      "en": "Daha geç bir akşam yemeği ayarlayabilir miyiz?",
+      "mnemo": "TIME"
+    },
+    {
+      "id": "tl_1576683842",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Hi, ich bin neu hier.",
+      "en": "Merhaba, burada yeniyim.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_a490105de9",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Schön, dich zu sehen.",
+      "en": "Seni görmek güzel.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_bf0545cb3d",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Freut mich, Sie kennenzulernen.",
+      "en": "Tanıştığımıza memnun oldum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_5c539369e6",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Alles okay?",
+      "en": "Her şey yolunda mı?",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_decef9f29a",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Alles bestens, danke.",
+      "en": "Her şey harika, teşekkürler.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_e5f2339766",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Nur ein Moment, bitte.",
+      "en": "Bir an lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_63bdd9676c",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Bitte noch einmal.",
+      "en": "Tekrar lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_8ee7937732",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Können Sie das bitte langsamer sagen?",
+      "en": "Daha yavaş söyleyebilir misiniz?",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_b7f15c1b7a",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Können Sie das wiederholen?",
+      "en": "Tekrar edebilir misiniz?",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_f1a20a1063",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich verstehe nicht.",
+      "en": "Anlamıyorum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_65c79583dc",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich verstehe nur ein bisschen.",
+      "en": "Sadece biraz anlıyorum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_2250e8d6d7",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Sprechen Sie Englisch?",
+      "en": "İngilizce konuşuyor musunuz?",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_7a7430cfb7",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Sprechen Sie Deutsch?",
+      "en": "Almanca konuşuyor musunuz?",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_7f7f3b7328",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Mein Name ist Alex.",
+      "en": "Benim adım Alex.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_4b92351d60",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich bin hier im Urlaub.",
+      "en": "Burada tatildeyim.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_209d490a64",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich bin geschäftlich hier.",
+      "en": "İş için buradayım.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_fb67ac2f38",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich komme aus Spanien.",
+      "en": "İspanya'dan geliyorum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_ef0d2c6502",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich lerne Deutsch.",
+      "en": "Almanca öğreniyorum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_ee1da02396",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich bin Student.",
+      "en": "Öğrenciyim.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_ab2b2cf1e0",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich reise allein.",
+      "en": "Yalnız seyahat ediyorum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_3252de0cd8",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich habe mich verlaufen.",
+      "en": "Kayboldum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_3fff6a3bae",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Wo ist die Toilette?",
+      "en": "Tuvalet nerede?",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_f5caa3402b",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Wo ist der Ausgang?",
+      "en": "Çıkış nerede?",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_d88d509ad5",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Wo ist der Bahnhof?",
+      "en": "Tren garı nerede?",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_280bbbd8c1",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Geradeaus, bitte.",
+      "en": "Dümdüz, lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_9733bad493",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Nach links, bitte.",
+      "en": "Sola, lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_25e60bc882",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Nach rechts, bitte.",
+      "en": "Sağa, lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_6b1551dc86",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Hier entlang, bitte.",
+      "en": "Bu taraftan, lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_f30fc1cebd",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Bis später!",
+      "en": "Sonra görüşürüz!",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_e56a85cb07",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Bis bald!",
+      "en": "Yakında görüşürüz!",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_f03d4ce790",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich habe Hunger.",
+      "en": "Acıktım.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_e9fb09aed7",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich habe Durst.",
+      "en": "Susadım.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_08879aec15",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Wasser, bitte.",
+      "en": "Su lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_a2526b69fd",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Die Rechnung, bitte.",
+      "en": "Hesap lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_bc2ffcc164",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Entschuldigung, ich suche den Bus.",
+      "en": "Affedersiniz, otobüsü arıyorum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_37a53444c0",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Hilfe, bitte.",
+      "en": "Yardım lütfen.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_1e7ff74714",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Rufen Sie bitte die Polizei.",
+      "en": "Lütfen polisi arayın.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_eef248f893",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Rufen Sie bitte einen Arzt.",
+      "en": "Lütfen bir doktor çağırın.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_0be4dd7873",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Mir ist kalt.",
+      "en": "Üşüyorum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_f2df4f82b8",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Mir ist warm.",
+      "en": "Sıcakladım.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_4c549b4176",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Mir ist schlecht.",
+      "en": "Kendimi kötü hissediyorum.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_a86b211b64",
+      "topic": "Survival Plus",
+      "level": "0",
+      "de": "Ich bin gleich zurück.",
+      "en": "Hemen dönerim.",
+      "mnemo": "L0"
+    },
+    {
+      "id": "tl_0cd5a559af",
+      "topic": "Telefon & Internet",
+      "level": "0",
+      "de": "Ich möchte eine SIM-Karte kaufen.",
+      "en": "Bir SIM kart almak istiyorum.",
+      "mnemo": "SIM"
+    },
+    {
+      "id": "tl_37eda868c3",
+      "topic": "Telefon & Internet",
+      "level": "0",
+      "de": "Ich brauche einen Datentarif mit 5 GB.",
+      "en": "5 GB'lık veri paketi istiyorum.",
+      "mnemo": "DATA"
+    },
+    {
+      "id": "tl_dc47f48c7a",
+      "topic": "Telefon & Internet",
+      "level": "1",
+      "de": "Wie kann ich Guthaben aufladen?",
+      "en": "Bakiyeyi nasıl yükleyebilirim?",
+      "mnemo": "TOP"
+    },
+    {
+      "id": "tl_a6beacaf0e",
+      "topic": "Telefon & Internet",
+      "level": "1",
+      "de": "Wie lautet das WLAN-Passwort?",
+      "en": "Wi‑Fi şifresi nedir?",
+      "mnemo": "PWD"
+    },
+    {
+      "id": "tl_011b219dac",
+      "topic": "Telefon & Internet",
+      "level": "2",
+      "de": "Das WLAN funktioniert nicht.",
+      "en": "Wi‑Fi çalışmıyor.",
+      "mnemo": "X"
+    },
+    {
+      "id": "tl_23eac0ff4a",
+      "topic": "Telefon & Internet",
+      "level": "2",
+      "de": "Können Sie den Router neu starten?",
+      "en": "Yönlendiriciyi yeniden başlatabilir misiniz?",
+      "mnemo": "RST"
+    },
+    {
+      "id": "tl_b72f251b15",
+      "topic": "Telefon & Internet",
+      "level": "3",
+      "de": "Ich habe kein Netz.",
+      "en": "Çekmiyor.",
+      "mnemo": "0%"
+    },
+    {
+      "id": "tl_63e3cd69f5",
+      "topic": "Telefon & Internet",
+      "level": "3",
+      "de": "Mobile Daten funktionieren nicht.",
+      "en": "Mobil veri çalışmıyor.",
+      "mnemo": "4G?"
+    },
+    {
+      "id": "tl_14e72564c7",
+      "topic": "Telefon & Internet",
+      "level": "4",
+      "de": "Wie rufe ich international an?",
+      "en": "Uluslararası aramayı nasıl yaparım?",
+      "mnemo": "+"
+    },
+    {
+      "id": "tl_0c9abecb68",
+      "topic": "Telefon & Internet",
+      "level": "4",
+      "de": "Kann ich einen Hotspot teilen?",
+      "en": "Hotspot paylaşabilir miyim?",
+      "mnemo": "HOT"
+    },
+    {
+      "id": "tl_309511c15a",
+      "topic": "Telefon & Internet",
+      "level": "5",
+      "de": "Unterstützen Sie eSIM?",
+      "en": "eSIM destekliyor musunuz?",
+      "mnemo": "ESIM"
+    },
+    {
+      "id": "tl_a231c8c6d0",
+      "topic": "Telefon & Internet",
+      "level": "5",
+      "de": "Haben Sie eine Support-Hotline?",
+      "en": "Destek hattınız var mı?",
+      "mnemo": "HELP"
+    },
+    {
+      "id": "tl_3598c1dd64",
+      "topic": "Telefon & Internet",
+      "level": "6",
+      "de": "Das Internet ist sehr langsam.",
+      "en": "İnternet çok yavaş.",
+      "mnemo": "SLOW"
+    },
+    {
+      "id": "tl_2528e6efe5",
+      "topic": "Telefon & Internet",
+      "level": "6",
+      "de": "Wie richte ich die Mailbox ein?",
+      "en": "Sesli mesajı nasıl ayarlarım?",
+      "mnemo": "VM"
+    },
+    {
+      "id": "tl_2ac545b3ba",
+      "topic": "Unterkunft: Probleme",
+      "level": "0",
+      "de": "Das Zimmer ist nicht sauber.",
+      "en": "Oda temiz değil.",
+      "mnemo": "CLEAN"
+    },
+    {
+      "id": "tl_997e94c7a4",
+      "topic": "Unterkunft: Probleme",
+      "level": "0",
+      "de": "Es gibt kein warmes Wasser.",
+      "en": "Sıcak su yok.",
+      "mnemo": "H2O"
+    },
+    {
+      "id": "tl_976d378ba7",
+      "topic": "Unterkunft: Probleme",
+      "level": "1",
+      "de": "Die Klimaanlage funktioniert nicht.",
+      "en": "Klima çalışmıyor.",
+      "mnemo": "AC"
+    },
+    {
+      "id": "tl_d1e4dee47c",
+      "topic": "Unterkunft: Probleme",
+      "level": "1",
+      "de": "Die Heizung funktioniert nicht.",
+      "en": "Isıtıcı çalışmıyor.",
+      "mnemo": "HEAT"
+    },
+    {
+      "id": "tl_d8d871368a",
+      "topic": "Unterkunft: Probleme",
+      "level": "2",
+      "de": "Es ist zu laut im Zimmer.",
+      "en": "Oda çok gürültülü.",
+      "mnemo": "NOISE"
+    },
+    {
+      "id": "tl_31beaed1f9",
+      "topic": "Unterkunft: Probleme",
+      "level": "2",
+      "de": "Ich brauche ein zusätzliches Kissen.",
+      "en": "Ekstra bir yastığa ihtiyacım var.",
+      "mnemo": "PILLOW"
+    },
+    {
+      "id": "tl_045c107022",
+      "topic": "Unterkunft: Probleme",
+      "level": "3",
+      "de": "Kann ich das Zimmer wechseln?",
+      "en": "Odayı değiştirebilir miyim?",
+      "mnemo": "MOVE"
+    },
+    {
+      "id": "tl_b94ae2ad24",
+      "topic": "Unterkunft: Probleme",
+      "level": "3",
+      "de": "Die Schlüsselkarte funktioniert nicht.",
+      "en": "Oda kartı çalışmıyor.",
+      "mnemo": "KEY"
+    },
+    {
+      "id": "tl_26e6c85a16",
+      "topic": "Unterkunft: Probleme",
+      "level": "4",
+      "de": "Es gibt ein Leck im Bad.",
+      "en": "Banyoda sızıntı var.",
+      "mnemo": "LEAK"
+    },
+    {
+      "id": "tl_09da7bf1df",
+      "topic": "Unterkunft: Probleme",
+      "level": "4",
+      "de": "Das Fenster lässt sich nicht schließen.",
+      "en": "Pencere kapanmıyor.",
+      "mnemo": "LOCK"
+    },
+    {
+      "id": "tl_f6ef17cd0f",
+      "topic": "Unterkunft: Probleme",
+      "level": "5",
+      "de": "Ich möchte die letzte Nacht erstattet bekommen.",
+      "en": "Son gece için para iadesi istiyorum.",
+      "mnemo": "REF"
+    },
+    {
+      "id": "tl_5e6b5d3108",
+      "topic": "Unterkunft: Probleme",
+      "level": "5",
+      "de": "Es sind Insekten im Zimmer.",
+      "en": "Odada böcekler var.",
+      "mnemo": "BUG"
+    },
+    {
+      "id": "tl_a23a4a3191",
+      "topic": "Unterkunft: Probleme",
+      "level": "6",
+      "de": "Der Safe ist blockiert.",
+      "en": "Kasa kilitli/sıkışmış.",
+      "mnemo": "SAFE"
+    },
+    {
+      "id": "tl_8bcb3c8d8c",
+      "topic": "Unterkunft: Probleme",
+      "level": "6",
+      "de": "Kann ich mehr Handtücher bekommen?",
+      "en": "Daha fazla havlu alabilir miyim?",
+      "mnemo": "TOWEL"
+    },
+    {
+      "id": "tl_95446f015d",
+      "topic": "Unterwegs",
+      "level": "0",
+      "de": "Wo ist der Bahnhof?",
+      "en": "Tren garı nerede?",
+      "mnemo": "S+?"
+    },
+    {
+      "id": "tl_a11e5ed8d2",
+      "topic": "Unterwegs",
+      "level": "0",
+      "de": "Gehen Sie bitte geradeaus.",
+      "en": "Lütfen dümdüz gidin.",
+      "mnemo": "→"
+    },
+    {
+      "id": "tl_4d0e84efbd",
+      "topic": "Unterwegs",
+      "level": "1",
+      "de": "Biegen Sie links ab.",
+      "en": "Sola dönün.",
+      "mnemo": "←"
+    },
+    {
+      "id": "tl_9a206a995f",
+      "topic": "Unterwegs",
+      "level": "1",
+      "de": "Es ist in der Nähe.",
+      "en": "Yakında.",
+      "mnemo": "NEAR"
+    },
+    {
+      "id": "tl_75e7d7083e",
+      "topic": "Unterwegs",
+      "level": "2",
+      "de": "Wie komme ich zum Zentrum?",
+      "en": "Merkeze nasıl giderim?",
+      "mnemo": "CTR"
+    },
+    {
+      "id": "tl_6dadc710bc",
+      "topic": "Unterwegs",
+      "level": "2",
+      "de": "Gibt es eine U-Bahn hier?",
+      "en": "Burada metro var mı?",
+      "mnemo": "U"
+    },
+    {
+      "id": "tl_5eb4afb036",
+      "topic": "Unterwegs",
+      "level": "3",
+      "de": "Die Straße ist gesperrt.",
+      "en": "Sokak kapalı.",
+      "mnemo": "X"
+    },
+    {
+      "id": "tl_a5a9ad3c3e",
+      "topic": "Unterwegs",
+      "level": "3",
+      "de": "Nehmen Sie den Bus Nummer zehn.",
+      "en": "On numaralı otobüse binin.",
+      "mnemo": "BUS"
+    },
+    {
+      "id": "tl_8ec5b8dba7",
+      "topic": "Unterwegs",
+      "level": "4",
+      "de": "Die Haltestelle ist dort drüben.",
+      "en": "Durak şurada.",
+      "mnemo": "STOP"
+    },
+    {
+      "id": "tl_37a85ed799",
+      "topic": "Unterwegs",
+      "level": "4",
+      "de": "Brauche ich ein Ticket vorher?",
+      "en": "Bileti önceden almam gerekiyor mu?",
+      "mnemo": "TIX"
+    },
+    {
+      "id": "tl_a4dabf276f",
+      "topic": "Unterwegs",
+      "level": "5",
+      "de": "Der Bus kommt in zehn Minuten.",
+      "en": "Otobüs on dakika içinde geliyor.",
+      "mnemo": "10m"
+    },
+    {
+      "id": "tl_baf92df536",
+      "topic": "Unterwegs",
+      "level": "5",
+      "de": "Wie spät ist es jetzt?",
+      "en": "Saat kaç?",
+      "mnemo": "TIME"
+    },
+    {
+      "id": "tl_04f1e6f21b",
+      "topic": "Unterwegs",
+      "level": "6",
+      "de": "Kannst du mir kurz helfen?",
+      "en": "Çabuk yardım eder misiniz?",
+      "mnemo": "HELP"
+    },
+    {
+      "id": "tl_4b1c925f07",
+      "topic": "Unterwegs",
+      "level": "6",
+      "de": "Wann fährt der nächste Zug nach Paris?",
+      "en": "Paris'e giden sonraki tren ne zaman kalkıyor?",
+      "mnemo": "NEXT"
+    },
+    {
+      "id": "tl_7e9158155b",
+      "topic": "Unterwegs",
+      "level": "7",
+      "de": "Der Flug hat Verspätung.",
+      "en": "Uçuş gecikti.",
+      "mnemo": "ETA"
+    },
+    {
+      "id": "tl_8e8d0ef1c0",
+      "topic": "Unterwegs",
+      "level": "7",
+      "de": "Wo ist die Gepäckausgabe?",
+      "en": "Bagaj teslim yeri nerede?",
+      "mnemo": "BAG"
+    },
+    {
+      "id": "tl_906e9f59ad",
+      "topic": "Unterwegs",
+      "level": "0",
+      "de": "Wo ist die Bushaltestelle?",
+      "en": "Otobüs durağı nerede?",
+      "mnemo": "BUS"
+    },
+    {
+      "id": "tl_2b45410a7c",
+      "topic": "Unterwegs",
+      "level": "0",
+      "de": "Wo ist das Stadtzentrum?",
+      "en": "Şehir merkezi nerede?",
+      "mnemo": "CITY"
+    },
+    {
+      "id": "tl_7c2b29d45c",
+      "topic": "Unterwegs",
+      "level": "2",
+      "de": "Können Sie mir eine ruhige Route empfehlen?",
+      "en": "Bana sakin bir rota önerebilir misiniz?",
+      "mnemo": "CALM"
+    },
+    {
+      "id": "tl_6014214e3a",
+      "topic": "Unterwegs",
+      "level": "3",
+      "de": "Können Sie mir eine Route ohne Umstiege planen?",
+      "en": "Aktarmasız bir rota planlayabilir misiniz?",
+      "mnemo": "DIRECT"
+    },
+    {
+      "id": "tl_a59b38ec40",
+      "topic": "Verkehr & Auto",
+      "level": "0",
+      "de": "Mein Auto ist liegengeblieben.",
+      "en": "Arabam bozuldu.",
+      "mnemo": "STOP"
+    },
+    {
+      "id": "tl_2ffa730c25",
+      "topic": "Verkehr & Auto",
+      "level": "0",
+      "de": "Ich brauche einen Abschleppdienst.",
+      "en": "Çekiciye ihtiyacım var.",
+      "mnemo": "TOW"
+    },
+    {
+      "id": "tl_1538dd6562",
+      "topic": "Verkehr & Auto",
+      "level": "1",
+      "de": "Ich habe einen platten Reifen.",
+      "en": "Lastiğim patladı.",
+      "mnemo": "TIRE"
+    },
+    {
+      "id": "tl_0caa316170",
+      "topic": "Verkehr & Auto",
+      "level": "1",
+      "de": "Ich habe keinen Kraftstoff mehr.",
+      "en": "Yakıtım bitti.",
+      "mnemo": "0%"
+    },
+    {
+      "id": "tl_5f20c0fde9",
+      "topic": "Verkehr & Auto",
+      "level": "2",
+      "de": "Wo ist die nächste Tankstelle?",
+      "en": "En yakın benzin istasyonu nerede?",
+      "mnemo": "FUEL"
+    },
+    {
+      "id": "tl_817ababa71",
+      "topic": "Verkehr & Auto",
+      "level": "2",
+      "de": "Die Batterie ist leer.",
+      "en": "Akü bitti.",
+      "mnemo": "BAT"
+    },
+    {
+      "id": "tl_256c705bdd",
+      "topic": "Verkehr & Auto",
+      "level": "3",
+      "de": "Es gab einen Unfall, bitte rufen Sie die Polizei.",
+      "en": "Kaza oldu, lütfen polisi çağırın.",
+      "mnemo": "911"
+    },
+    {
+      "id": "tl_9adfec49d9",
+      "topic": "Verkehr & Auto",
+      "level": "3",
+      "de": "Hier sind meine Versicherungsunterlagen.",
+      "en": "İşte sigorta evraklarım.",
+      "mnemo": "DOC"
+    },
+    {
+      "id": "tl_f772414782",
+      "topic": "Verkehr & Auto",
+      "level": "4",
+      "de": "Können Sie einen Mechaniker schicken?",
+      "en": "Bir tamirci gönderebilir misiniz?",
+      "mnemo": "FIX"
+    },
+    {
+      "id": "tl_3e09c9888e",
+      "topic": "Verkehr & Auto",
+      "level": "4",
+      "de": "Kann ich ein Ersatzfahrzeug mieten?",
+      "en": "Yedek araç kiralayabilir miyim?",
+      "mnemo": "RENT"
+    },
+    {
+      "id": "tl_887534ed26",
+      "topic": "Verkehr & Auto",
+      "level": "5",
+      "de": "Hier ist mein Führerschein.",
+      "en": "İşte ehliyetim.",
+      "mnemo": "ID"
+    },
+    {
+      "id": "tl_ba929a42d6",
+      "topic": "Verkehr & Auto",
+      "level": "5",
+      "de": "Schalten Sie die Warnblinkanlage ein.",
+      "en": "Dörtlüleri açın.",
+      "mnemo": "⚠"
+    },
+    {
+      "id": "tl_9a96a84dff",
+      "topic": "Verkehr & Auto",
+      "level": "6",
+      "de": "Wie lange dauert es, bis Hilfe kommt?",
+      "en": "Yardım gelene kadar ne kadar sürer?",
+      "mnemo": "ETA"
+    },
+    {
+      "id": "tl_3bdfb57ad5",
+      "topic": "Verkehr & Auto",
+      "level": "6",
+      "de": "Es gibt einen Stau vor uns.",
+      "en": "İleride trafik sıkışıklığı var.",
+      "mnemo": "JAM"
+    },
+    {
+      "id": "tl_c396721155",
+      "topic": "Verkehr & Auto",
+      "level": "7",
+      "de": "Die Straße ist gesperrt, gibt es eine Umleitung?",
+      "en": "Yol kapalı, alternatif var mı?",
+      "mnemo": "X"
+    },
+    {
+      "id": "tl_a623ba9916",
+      "topic": "Verkehr & Auto",
+      "level": "0",
+      "de": "Mein Auto ist kaputt.",
+      "en": "Arabam bozuk.",
+      "mnemo": "STOP"
+    },
+    {
+      "id": "tl_41bf2b7e22",
+      "topic": "Verkehr & Auto",
+      "level": "1",
+      "de": "Ich brauche einen Abschleppdienst.",
+      "en": "Çekiciye ihtiyacım var.",
+      "mnemo": "TOW"
+    }
+  ]
+}

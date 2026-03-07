@@ -1,0 +1,2171 @@
+[
+  {
+    "id": "tl_1d460d796f",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "greet_wave",
+    "mnemoHint": "HI",
+    "de": "Hallo!",
+    "ru": "Привет!"
+  },
+  {
+    "id": "tl_80444b6785",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "morning_sun",
+    "mnemoHint": "AM",
+    "de": "Guten Morgen!",
+    "ru": "Доброе утро!"
+  },
+  {
+    "id": "tl_1007ef25f2",
+    "level": 1,
+    "topic": "Allgemein",
+    "mnemoKey": "evening_star",
+    "mnemoHint": "PM",
+    "de": "Guten Abend!",
+    "ru": "Добрый вечер!"
+  },
+  {
+    "id": "tl_9aa064e1cf",
+    "level": 1,
+    "topic": "Allgemein",
+    "mnemoKey": "how_are_you",
+    "mnemoHint": "HAY",
+    "de": "Wie geht es dir?",
+    "ru": "Как дела?"
+  },
+  {
+    "id": "tl_abc8cfe7f6",
+    "level": 2,
+    "topic": "Allgemein",
+    "mnemoKey": "i_am_fine",
+    "mnemoHint": "OK",
+    "de": "Mir geht es gut.",
+    "ru": "У меня всё хорошо."
+  },
+  {
+    "id": "tl_746481cb41",
+    "level": 2,
+    "topic": "Allgemein",
+    "mnemoKey": "thanks_note",
+    "mnemoHint": "THX",
+    "de": "Danke!",
+    "ru": "Спасибо!"
+  },
+  {
+    "id": "tl_ac8acbebbf",
+    "level": 3,
+    "topic": "Allgemein",
+    "mnemoKey": "please_hand",
+    "mnemoHint": "PLS",
+    "de": "Bitte.",
+    "ru": "Пожалуйста."
+  },
+  {
+    "id": "tl_7d2a216037",
+    "level": 3,
+    "topic": "Allgemein",
+    "mnemoKey": "yes_tick",
+    "mnemoHint": "YES",
+    "de": "Ja.",
+    "ru": "Да."
+  },
+  {
+    "id": "tl_5e3073c06d",
+    "level": 4,
+    "topic": "Allgemein",
+    "mnemoKey": "no_cross",
+    "mnemoHint": "NO",
+    "de": "Nein.",
+    "ru": "Нет."
+  },
+  {
+    "id": "tl_94d113c801",
+    "level": 4,
+    "topic": "Allgemein",
+    "mnemoKey": "name_tag",
+    "mnemoHint": "ID",
+    "de": "Ich heiße Anna.",
+    "ru": "Меня зовут Анна."
+  },
+  {
+    "id": "tl_372bf8f0fa",
+    "level": 5,
+    "topic": "Allgemein",
+    "mnemoKey": "from_germany",
+    "mnemoHint": "DE",
+    "de": "Ich komme aus Deutschland.",
+    "ru": "Я из Германии."
+  },
+  {
+    "id": "tl_1e29f0a3df",
+    "level": 5,
+    "topic": "Allgemein",
+    "mnemoKey": "speak_english",
+    "mnemoHint": "EN+",
+    "de": "Ich spreche ein wenig Englisch.",
+    "ru": "Я немного говорю по-английски."
+  },
+  {
+    "id": "tl_c1a0534bf0",
+    "level": 6,
+    "topic": "Allgemein",
+    "mnemoKey": "learn_italian",
+    "mnemoHint": "IT+",
+    "de": "Ich lerne Italienisch.",
+    "ru": "Я учу итальянский."
+  },
+  {
+    "id": "tl_260b1be67f",
+    "level": 6,
+    "topic": "Allgemein",
+    "mnemoKey": "work_engineer",
+    "mnemoHint": "JOB",
+    "de": "Ich arbeite als Ingenieur.",
+    "ru": "Я работаю инженером."
+  },
+  {
+    "id": "tl_bc32b8c877",
+    "level": 7,
+    "topic": "Allgemein",
+    "mnemoKey": "two_siblings",
+    "mnemoHint": "FAM",
+    "de": "Ich habe zwei Geschwister.",
+    "ru": "У меня двое братьев и сестер."
+  },
+  {
+    "id": "tl_a29d09996f",
+    "level": 7,
+    "topic": "Allgemein",
+    "mnemoKey": "uni_student",
+    "mnemoHint": "UNI",
+    "de": "Ich studiere an der Universität.",
+    "ru": "Я учусь в университете."
+  },
+  {
+    "id": "tl_3ea223e9b0",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "good_day",
+    "mnemoHint": "DAY",
+    "de": "Guten Tag!",
+    "ru": "Добрый день!"
+  },
+  {
+    "id": "tl_4319d8c859",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "bye_short",
+    "mnemoHint": "BYE",
+    "de": "Tschüss!",
+    "ru": "Пока!"
+  },
+  {
+    "id": "tl_520ffea6c4",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "see_you_soon",
+    "mnemoHint": "SOON",
+    "de": "Bis gleich!",
+    "ru": "До скорого!"
+  },
+  {
+    "id": "tl_bf994cacec",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "i_have_question",
+    "mnemoHint": "ASK",
+    "de": "Ich habe eine Frage.",
+    "ru": "У меня есть вопрос."
+  },
+  {
+    "id": "tl_a590d4f91c",
+    "level": 0,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "need_doctor",
+    "mnemoHint": "DOC",
+    "de": "Ich brauche einen Arzt.",
+    "ru": "Мне нужен врач."
+  },
+  {
+    "id": "tl_63fa246136",
+    "level": 0,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "pharmacy_near",
+    "mnemoHint": "RX",
+    "de": "Wo ist die nächste Apotheke?",
+    "ru": "Где ближайшая аптека?"
+  },
+  {
+    "id": "tl_23dbfb9938",
+    "level": 1,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "pain_here",
+    "mnemoHint": "→",
+    "de": "Ich habe hier Schmerzen.",
+    "ru": "У меня здесь болит."
+  },
+  {
+    "id": "tl_133eebb6c5",
+    "level": 1,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "fever",
+    "mnemoHint": "38°",
+    "de": "Ich habe Fieber.",
+    "ru": "У меня жар."
+  },
+  {
+    "id": "tl_89221051dc",
+    "level": 2,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "headache",
+    "mnemoHint": "HEAD",
+    "de": "Ich habe starke Kopfschmerzen.",
+    "ru": "У меня сильная головная боль."
+  },
+  {
+    "id": "tl_89ba17dd62",
+    "level": 2,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "stomach",
+    "mnemoHint": "BELLY",
+    "de": "Mir ist übel / Ich habe Bauchschmerzen.",
+    "ru": "Мне плохо / У меня болит живот."
+  },
+  {
+    "id": "tl_9fab2aca43",
+    "level": 3,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "penicillin_allergy",
+    "mnemoHint": "NO RX",
+    "de": "Ich bin allergisch gegen Penicillin.",
+    "ru": "У меня аллергия на пенициллин."
+  },
+  {
+    "id": "tl_57dbb62865",
+    "level": 3,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "appointment",
+    "mnemoHint": "APPT",
+    "de": "Kann ich heute einen Termin bekommen?",
+    "ru": "Могу ли я получить приём сегодня?"
+  },
+  {
+    "id": "tl_74dd98f731",
+    "level": 4,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "prescription",
+    "mnemoHint": "RX",
+    "de": "Ich brauche ein Rezept.",
+    "ru": "Мне нужен рецепт."
+  },
+  {
+    "id": "tl_fa556b9c73",
+    "level": 4,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "painkiller",
+    "mnemoHint": "PILL",
+    "de": "Haben Sie etwas gegen Schmerzen?",
+    "ru": "У вас есть что-нибудь от боли?"
+  },
+  {
+    "id": "tl_89b0a491bf",
+    "level": 5,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "bandage",
+    "mnemoHint": "WRAP",
+    "de": "Ich brauche einen Verband / Pflaster.",
+    "ru": "Мне нужен бинт / пластырь."
+  },
+  {
+    "id": "tl_3b2de4ecdd",
+    "level": 5,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "cough_syrup",
+    "mnemoHint": "COUGH",
+    "de": "Haben Sie etwas gegen Husten?",
+    "ru": "У вас есть что-нибудь от кашля?"
+  },
+  {
+    "id": "tl_c64469884e",
+    "level": 6,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "covid_test",
+    "mnemoHint": "TEST",
+    "de": "Wo kann ich einen COVID-Test machen?",
+    "ru": "Где я могу сделать тест на COVID?"
+  },
+  {
+    "id": "tl_95619ece24",
+    "level": 6,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "insurance_card",
+    "mnemoHint": "ID",
+    "de": "Nehmen Sie meine Versicherungskarte?",
+    "ru": "Вы принимаете мою страховку?"
+  },
+  {
+    "id": "tl_2baccd6844",
+    "level": 7,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "emergency_number",
+    "mnemoHint": "112",
+    "de": "Ist das ein Notfall? Soll ich 112 anrufen?",
+    "ru": "Это чрезвычайная ситуация? Позвонить 112?"
+  },
+  {
+    "id": "tl_2e423dc2be",
+    "level": 0,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "ticket_counter",
+    "mnemoHint": "INFO",
+    "de": "Wo ist der Fahrkarten-/Ticketschalter?",
+    "ru": "Где билетная касса?"
+  },
+  {
+    "id": "tl_40825d5c77",
+    "level": 0,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "one_way",
+    "mnemoHint": "1WAY",
+    "de": "Ein Ticket nach Berlin, einfach, bitte.",
+    "ru": "Билет в один конец до Берлина, пожалуйста."
+  },
+  {
+    "id": "tl_f586de7b73",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "return_ticket",
+    "mnemoHint": "RTN",
+    "de": "Ein Hin- und Rückticket für morgen.",
+    "ru": "Билет туда-обратно на завтра."
+  },
+  {
+    "id": "tl_32af080d36",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "platform",
+    "mnemoHint": "G",
+    "de": "Auf welchem Gleis fährt der Zug?",
+    "ru": "С какого пути отправляется поезд?"
+  },
+  {
+    "id": "tl_03963ad7f3",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "delay_train",
+    "mnemoHint": "+",
+    "de": "Der Zug hat Verspätung.",
+    "ru": "Поезд задерживается."
+  },
+  {
+    "id": "tl_4ca5a131f9",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "change_platform",
+    "mnemoHint": "MOVE",
+    "de": "Hat sich das Gleis geändert?",
+    "ru": "Путь изменился?"
+  },
+  {
+    "id": "tl_7a8d598384",
+    "level": 3,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "seat_reservation",
+    "mnemoHint": "SEAT",
+    "de": "Brauche ich eine Sitzplatzreservierung?",
+    "ru": "Нужна ли резервация места?"
+  },
+  {
+    "id": "tl_d11e65b357",
+    "level": 3,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "gate",
+    "mnemoHint": "GATE",
+    "de": "Zu welchem Gate geht der Flug?",
+    "ru": "К какому выходу этот рейс?"
+  },
+  {
+    "id": "tl_12d4d85dbe",
+    "level": 4,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "boarding_time",
+    "mnemoHint": "BOARD",
+    "de": "Wann beginnt das Boarding?",
+    "ru": "Когда начинается посадка?"
+  },
+  {
+    "id": "tl_6b2ee0cd64",
+    "level": 4,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "flight_delay",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "ru": "Рейс задерживается."
+  },
+  {
+    "id": "tl_04b4c9f552",
+    "level": 5,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "missed_connection",
+    "mnemoHint": "MISS",
+    "de": "Ich habe den Anschluss verpasst.",
+    "ru": "Я пропустил пересадку."
+  },
+  {
+    "id": "tl_5510ee5244",
+    "level": 5,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "check_in",
+    "mnemoHint": "CHK",
+    "de": "Wo gebe ich das Gepäck auf?",
+    "ru": "Где сдать багаж?"
+  },
+  {
+    "id": "tl_ce0c3377d8",
+    "level": 6,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "hand_luggage",
+    "mnemoHint": "CAB",
+    "de": "Ist das als Handgepäck erlaubt?",
+    "ru": "Это можно взять в ручную кладь?"
+  },
+  {
+    "id": "tl_b73b4c0622",
+    "level": 6,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "rebook",
+    "mnemoHint": "RBK",
+    "de": "Kann ich auf einen früheren Zug/Flug umbuchen?",
+    "ru": "Можно перебронировать на более ранний поезд/рейс?"
+  },
+  {
+    "id": "tl_aa77b7617e",
+    "level": 7,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "refund_voucher",
+    "mnemoHint": "REF",
+    "de": "Bekomme ich eine Erstattung oder einen Gutschein?",
+    "ru": "Я получу возврат или ваучер?"
+  },
+  {
+    "id": "tl_e686ae506b",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "where_ticket",
+    "mnemoHint": "TIX",
+    "de": "Wo bekomme ich ein Ticket?",
+    "ru": "Где я могу купить билет?"
+  },
+  {
+    "id": "tl_b33c9ba79b",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "next_train",
+    "mnemoHint": "TIME",
+    "de": "Wann fährt der nächste Zug?",
+    "ru": "Когда отправляется следующий поезд?"
+  },
+  {
+    "id": "tl_f6e83ceb4f",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "rebook_tomorrow",
+    "mnemoHint": "MOVE",
+    "de": "Können Sie das Ticket auf morgen umbuchen?",
+    "ru": "Можете перенести билет на завтра?"
+  },
+  {
+    "id": "tl_737be803bd",
+    "level": 0,
+    "topic": "Einkaufen",
+    "mnemoKey": "price_check",
+    "mnemoHint": "€",
+    "de": "Wie viel kostet das?",
+    "ru": "Сколько это стоит?"
+  },
+  {
+    "id": "tl_c9353e48db",
+    "level": 0,
+    "topic": "Einkaufen",
+    "mnemoKey": "other_size",
+    "mnemoHint": "SIZE",
+    "de": "Haben Sie das in einer anderen Größe?",
+    "ru": "У вас есть это другого размера?"
+  },
+  {
+    "id": "tl_2b95d6cfcc",
+    "level": 1,
+    "topic": "Einkaufen",
+    "mnemoKey": "pay_cash",
+    "mnemoHint": "CASH",
+    "de": "Ich zahle bar.",
+    "ru": "Я плачу наличными."
+  },
+  {
+    "id": "tl_63a0c1cae4",
+    "level": 1,
+    "topic": "Einkaufen",
+    "mnemoKey": "pay_card",
+    "mnemoHint": "CARD",
+    "de": "Kann ich mit Karte zahlen?",
+    "ru": "Можно оплатить картой?"
+  },
+  {
+    "id": "tl_73ec642f31",
+    "level": 2,
+    "topic": "Einkaufen",
+    "mnemoKey": "need_shopping",
+    "mnemoHint": "LIST",
+    "de": "Ich muss noch einkaufen gehen.",
+    "ru": "Мне ещё нужно сходить за покупками."
+  },
+  {
+    "id": "tl_54515e8d2e",
+    "level": 2,
+    "topic": "Einkaufen",
+    "mnemoKey": "receipt",
+    "mnemoHint": "REC",
+    "de": "Kann ich eine Quittung bekommen?",
+    "ru": "Можно получить чек?"
+  },
+  {
+    "id": "tl_34d84e7bf5",
+    "level": 3,
+    "topic": "Einkaufen",
+    "mnemoKey": "try_on",
+    "mnemoHint": "FIT",
+    "de": "Kann ich das anprobieren?",
+    "ru": "Могу я это примерить?"
+  },
+  {
+    "id": "tl_c87466ea91",
+    "level": 3,
+    "topic": "Einkaufen",
+    "mnemoKey": "color_choice",
+    "mnemoHint": "COL",
+    "de": "Haben Sie das in Blau?",
+    "ru": "У вас есть это в синем цвете?"
+  },
+  {
+    "id": "tl_0f3aa7c1c1",
+    "level": 4,
+    "topic": "Einkaufen",
+    "mnemoKey": "discount",
+    "mnemoHint": "%",
+    "de": "Gibt es einen Rabatt?",
+    "ru": "Есть скидка?"
+  },
+  {
+    "id": "tl_f42038363f",
+    "level": 4,
+    "topic": "Einkaufen",
+    "mnemoKey": "bag_needed",
+    "mnemoHint": "BAG",
+    "de": "Brauchen Sie eine Tüte?",
+    "ru": "Вам нужен пакет?"
+  },
+  {
+    "id": "tl_b73adb2230",
+    "level": 5,
+    "topic": "Einkaufen",
+    "mnemoKey": "return_item",
+    "mnemoHint": "RET",
+    "de": "Kann ich das zurückgeben?",
+    "ru": "Могу я это вернуть?"
+  },
+  {
+    "id": "tl_2c901bd77b",
+    "level": 5,
+    "topic": "Einkaufen",
+    "mnemoKey": "open_hours",
+    "mnemoHint": "TIME",
+    "de": "Bis wann sind Sie geöffnet?",
+    "ru": "До скольки вы открыты?"
+  },
+  {
+    "id": "tl_ec9f697e53",
+    "level": 6,
+    "topic": "Einkaufen",
+    "mnemoKey": "gift_search",
+    "mnemoHint": "GIFT",
+    "de": "Ich suche ein Geschenk.",
+    "ru": "Я ищу подарок."
+  },
+  {
+    "id": "tl_6f9a8616ab",
+    "level": 6,
+    "topic": "Einkaufen",
+    "mnemoKey": "fresh_fruit",
+    "mnemoHint": "FRUT",
+    "de": "Haben Sie frisches Obst?",
+    "ru": "У вас есть свежие фрукты?"
+  },
+  {
+    "id": "tl_1a4683a068",
+    "level": 7,
+    "topic": "Einkaufen",
+    "mnemoKey": "half_kilo",
+    "mnemoHint": "0.5K",
+    "de": "Bitte ein halbes Kilo davon.",
+    "ru": "Полкило этого, пожалуйста."
+  },
+  {
+    "id": "tl_e77057f2f8",
+    "level": 7,
+    "topic": "Einkaufen",
+    "mnemoKey": "price_per_kilo",
+    "mnemoHint": "€/KG",
+    "de": "Wie viel kostet es pro Kilo?",
+    "ru": "Сколько стоит за килограмм?"
+  },
+  {
+    "id": "tl_dc827afca5",
+    "level": 8,
+    "topic": "Einkaufen",
+    "mnemoKey": "where_checkout",
+    "mnemoHint": "PAY",
+    "de": "Wo ist die Kasse?",
+    "ru": "Где касса?"
+  },
+  {
+    "id": "tl_37b244a217",
+    "level": 0,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "reservation_name",
+    "mnemoHint": "RES",
+    "de": "Ich habe eine Reservierung auf den Namen Meyer.",
+    "ru": "У меня бронь на фамилию Майер."
+  },
+  {
+    "id": "tl_8894a096ab",
+    "level": 0,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "wifi_room",
+    "mnemoHint": "WIFI",
+    "de": "Gibt es WLAN im Zimmer?",
+    "ru": "Есть ли Wi‑Fi в номере?"
+  },
+  {
+    "id": "tl_3e53eb32e8",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "room_cold",
+    "mnemoHint": "COLD",
+    "de": "Das Zimmer ist zu kalt.",
+    "ru": "Комната слишком холодная."
+  },
+  {
+    "id": "tl_5713c73d5b",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "order_taxi",
+    "mnemoHint": "TAXI",
+    "de": "Können Sie ein Taxi bestellen?",
+    "ru": "Можете вызвать такси?"
+  },
+  {
+    "id": "tl_b476dd32c9",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "stay_three",
+    "mnemoHint": "3N",
+    "de": "Ich bleibe drei Nächte.",
+    "ru": "Я остаюсь на три ночи."
+  },
+  {
+    "id": "tl_2cf115fbfa",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "ticket_nine",
+    "mnemoHint": "9:00",
+    "de": "Ich habe ein Ticket für den Zug um neun.",
+    "ru": "У меня билет на поезд в девять."
+  },
+  {
+    "id": "tl_ba628882dc",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "flight_delay",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "ru": "Рейс задерживается."
+  },
+  {
+    "id": "tl_a8a9856216",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "baggage_claim",
+    "mnemoHint": "BAG",
+    "de": "Wo ist die Gepäckausgabe?",
+    "ru": "Где выдача багажа?"
+  },
+  {
+    "id": "tl_38e630ef8a",
+    "level": 4,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "window_seat",
+    "mnemoHint": "SEAT",
+    "de": "Ich möchte einen Fensterplatz.",
+    "ru": "Я бы хотел место у окна."
+  },
+  {
+    "id": "tl_bf11d26eb4",
+    "level": 4,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "next_train",
+    "mnemoHint": "NEXT",
+    "de": "Wann fährt der nächste Zug nach Paris?",
+    "ru": "Когда идёт следующий поезд до Парижа?"
+  },
+  {
+    "id": "tl_96feda193f",
+    "level": 5,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "ac_broken",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "ru": "Кондиционер не работает."
+  },
+  {
+    "id": "tl_1f8e69ea6e",
+    "level": 5,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "luggage_lost",
+    "mnemoHint": "BAG?",
+    "de": "Mein Gepäck ist verloren gegangen.",
+    "ru": "Мой багаж потерялся."
+  },
+  {
+    "id": "tl_cd74272546",
+    "level": 6,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "wrong_bill",
+    "mnemoHint": "BILL",
+    "de": "Ich habe die falsche Rechnung bekommen.",
+    "ru": "Мне дали неправильный счёт."
+  },
+  {
+    "id": "tl_0d1c837469",
+    "level": 6,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "send_someone",
+    "mnemoHint": "HELP",
+    "de": "Bitte schicken Sie jemanden vorbei.",
+    "ru": "Пожалуйста, пришлите кого-нибудь."
+  },
+  {
+    "id": "tl_6fc8467c6b",
+    "level": 7,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "internet_slow",
+    "mnemoHint": "NET",
+    "de": "Das Internet ist sehr langsam.",
+    "ru": "Интернет очень медленный."
+  },
+  {
+    "id": "tl_bb9aac93cc",
+    "level": 7,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "urgent_help",
+    "mnemoHint": "SOS",
+    "de": "Ich brauche sofort Hilfe.",
+    "ru": "Мне нужна помощь немедленно."
+  },
+  {
+    "id": "tl_8a9dd42e9e",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "have_reservation",
+    "mnemoHint": "BOOK",
+    "de": "Ich habe eine Reservierung.",
+    "ru": "У меня есть бронь."
+  },
+  {
+    "id": "tl_35605496f9",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "room_one_night",
+    "mnemoHint": "1N",
+    "de": "Ich brauche ein Zimmer für eine Nacht.",
+    "ru": "Мне нужен номер на одну ночь."
+  },
+  {
+    "id": "tl_374d0485bb",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "breakfast_included",
+    "mnemoHint": "FOOD",
+    "de": "Ist das Frühstück inklusive?",
+    "ru": "Завтрак включён?"
+  },
+  {
+    "id": "tl_88cfa8f9b2",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "late_checkout",
+    "mnemoHint": "LATE",
+    "de": "Kann ich später auschecken?",
+    "ru": "Можно выехать попозже?"
+  },
+  {
+    "id": "tl_640c108ac8",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "confirm_booking_written",
+    "mnemoHint": "CONF",
+    "de": "Bitte bestätigen Sie meine Buchung schriftlich.",
+    "ru": "Подтвердите моё бронирование письменно, пожалуйста."
+  },
+  {
+    "id": "tl_5977e1f35f",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "headache",
+    "mnemoHint": "MED",
+    "de": "Ich habe Kopfschmerzen.",
+    "ru": "У меня болит голова."
+  },
+  {
+    "id": "tl_0c9cc9f5fb",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "dizzy",
+    "mnemoHint": "DIZ",
+    "de": "Mir ist schwindelig.",
+    "ru": "У меня кружится голова."
+  },
+  {
+    "id": "tl_6f38302934",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "fever_meds",
+    "mnemoHint": "TEMP",
+    "de": "Haben Sie etwas gegen Fieber?",
+    "ru": "У вас есть что-то от температуры?"
+  },
+  {
+    "id": "tl_12ecd4ac46",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "need_doctor",
+    "mnemoHint": "DR",
+    "de": "Ich brauche einen Arzt.",
+    "ru": "Мне нужен врач."
+  },
+  {
+    "id": "tl_1675a0a18c",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "hurt_self",
+    "mnemoHint": "CUT",
+    "de": "Ich habe mich verletzt.",
+    "ru": "Я поранился."
+  },
+  {
+    "id": "tl_8fbfa733ac",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "nearest_pharmacy",
+    "mnemoHint": "RX",
+    "de": "Wo ist die nächste Apotheke?",
+    "ru": "Где ближайшая аптека?"
+  },
+  {
+    "id": "tl_3c60e2a044",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "penicillin_allergy",
+    "mnemoHint": "PEN",
+    "de": "Ich habe eine Allergie gegen Penicillin.",
+    "ru": "У меня аллергия на пенициллин."
+  },
+  {
+    "id": "tl_b40da8d23f",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "painkillers",
+    "mnemoHint": "MED",
+    "de": "Ich brauche Schmerzmittel.",
+    "ru": "Мне нужны обезболивающие."
+  },
+  {
+    "id": "tl_806cdb9327",
+    "level": 4,
+    "topic": "Notfall",
+    "mnemoKey": "fever_since_yesterday",
+    "mnemoHint": "24h",
+    "de": "Ich habe Fieber seit gestern.",
+    "ru": "У меня температура со вчера."
+  },
+  {
+    "id": "tl_21992d6d88",
+    "level": 4,
+    "topic": "Notfall",
+    "mnemoKey": "appointment",
+    "mnemoHint": "APT",
+    "de": "Kann ich einen Termin bekommen?",
+    "ru": "Могу записаться на приём?"
+  },
+  {
+    "id": "tl_dbd22201b2",
+    "level": 5,
+    "topic": "Notfall",
+    "mnemoKey": "luggage_lost_sos",
+    "mnemoHint": "BAG",
+    "de": "Mein Gepäck ist verloren gegangen.",
+    "ru": "Мой багаж потерялся."
+  },
+  {
+    "id": "tl_a0b93da268",
+    "level": 5,
+    "topic": "Notfall",
+    "mnemoKey": "ac_not_working",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "ru": "Кондиционер не работает."
+  },
+  {
+    "id": "tl_e1df1c3c31",
+    "level": 6,
+    "topic": "Notfall",
+    "mnemoKey": "send_someone_now",
+    "mnemoHint": "CALL",
+    "de": "Bitte schicken Sie jemanden vorbei.",
+    "ru": "Пожалуйста, пришлите кого-нибудь."
+  },
+  {
+    "id": "tl_4c2aa2cebc",
+    "level": 6,
+    "topic": "Notfall",
+    "mnemoKey": "keys_lost",
+    "mnemoHint": "KEY",
+    "de": "Ich habe meine Schlüssel verloren.",
+    "ru": "Я потерял ключи."
+  },
+  {
+    "id": "tl_86911b5edb",
+    "level": 7,
+    "topic": "Notfall",
+    "mnemoKey": "internet_slow_sos",
+    "mnemoHint": "NET",
+    "de": "Das Internet ist sehr langsam.",
+    "ru": "Интернет очень медленный."
+  },
+  {
+    "id": "tl_f9edb835a7",
+    "level": 7,
+    "topic": "Notfall",
+    "mnemoKey": "need_help_now",
+    "mnemoHint": "SOS",
+    "de": "Ich brauche sofort Hilfe.",
+    "ru": "Мне нужна помощь немедленно."
+  },
+  {
+    "id": "tl_458044902b",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "help_short",
+    "mnemoHint": "SOS",
+    "de": "Hilfe!",
+    "ru": "Помогите!"
+  },
+  {
+    "id": "tl_67f8ca2577",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "can_you_help",
+    "mnemoHint": "ASK",
+    "de": "Können Sie mir helfen?",
+    "ru": "Вы можете мне помочь?"
+  },
+  {
+    "id": "tl_031f55eeaa",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "call_ambulance",
+    "mnemoHint": "AMB",
+    "de": "Bitte rufen Sie einen Krankenwagen.",
+    "ru": "Пожалуйста, вызовите скорую."
+  },
+  {
+    "id": "tl_ad8973c9da",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "where_exit",
+    "mnemoHint": "EXIT",
+    "de": "Wo ist der Notausgang?",
+    "ru": "Где аварийный выход?"
+  },
+  {
+    "id": "tl_a9af11995e",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "hospital_address",
+    "mnemoHint": "ADDR",
+    "de": "Ich brauche die Adresse des nächsten Krankenhauses.",
+    "ru": "Мне нужен адрес ближайшей больницы."
+  },
+  {
+    "id": "tl_f024dac34d",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "review_emergency_plan",
+    "mnemoHint": "PLAN",
+    "de": "Können wir einen Notfallplan durchgehen?",
+    "ru": "Давайте обсудим план на случай ЧС?"
+  },
+  {
+    "id": "tl_c04fa86500",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "table_for_two",
+    "mnemoHint": "2P",
+    "de": "Haben Sie einen Tisch für zwei?",
+    "ru": "У вас есть столик на двоих?"
+  },
+  {
+    "id": "tl_4f8c30a8f9",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "see_menu",
+    "mnemoHint": "MENU",
+    "de": "Ich möchte die Speisekarte sehen.",
+    "ru": "Я хотел бы увидеть меню."
+  },
+  {
+    "id": "tl_c73bc2cfdf",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "recommendation",
+    "mnemoHint": "REC",
+    "de": "Können Sie etwas empfehlen?",
+    "ru": "Можете что-то посоветовать?"
+  },
+  {
+    "id": "tl_2c8720a01b",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "allergy_nuts",
+    "mnemoHint": "NUT",
+    "de": "Ich bin allergisch gegen Nüsse.",
+    "ru": "У меня аллергия на орехи."
+  },
+  {
+    "id": "tl_0c5489260f",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "no_meat",
+    "mnemoHint": "VEG",
+    "de": "Ohne Fleisch, bitte.",
+    "ru": "Без мяса, пожалуйста."
+  },
+  {
+    "id": "tl_41b81cd6a7",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "still_water",
+    "mnemoHint": "H2O",
+    "de": "Ich nehme ein Wasser ohne Kohlensäure.",
+    "ru": "Я возьму негазированную воду."
+  },
+  {
+    "id": "tl_52eaed958f",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "bill_please",
+    "mnemoHint": "BILL",
+    "de": "Die Rechnung, bitte.",
+    "ru": "Счёт, пожалуйста."
+  },
+  {
+    "id": "tl_3c10dd237b",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "keep_change",
+    "mnemoHint": "TIP",
+    "de": "Stimmt so, danke.",
+    "ru": "Сдачу оставьте себе, спасибо."
+  },
+  {
+    "id": "tl_0c28df1fe5",
+    "level": 4,
+    "topic": "Restaurant",
+    "mnemoKey": "tastes_good",
+    "mnemoHint": "YUM",
+    "de": "Schmeckt sehr gut!",
+    "ru": "Очень вкусно!"
+  },
+  {
+    "id": "tl_d4c7be4b51",
+    "level": 4,
+    "topic": "Restaurant",
+    "mnemoKey": "spicy_dish",
+    "mnemoHint": "HOT",
+    "de": "Ist das Gericht scharf?",
+    "ru": "Блюдо острое?"
+  },
+  {
+    "id": "tl_298c78bcd7",
+    "level": 5,
+    "topic": "Restaurant",
+    "mnemoKey": "wrong_order",
+    "mnemoHint": "ERR",
+    "de": "Das ist nicht, was ich bestellt habe.",
+    "ru": "Это не то, что я заказывал."
+  },
+  {
+    "id": "tl_6713040a28",
+    "level": 5,
+    "topic": "Restaurant",
+    "mnemoKey": "soup_starter",
+    "mnemoHint": "SOUP",
+    "de": "Ich hätte gern eine Suppe als Vorspeise.",
+    "ru": "Я бы хотел суп в качестве закуски."
+  },
+  {
+    "id": "tl_4b273a695e",
+    "level": 6,
+    "topic": "Restaurant",
+    "mnemoKey": "vegetarian_options",
+    "mnemoHint": "VEG?",
+    "de": "Haben Sie vegetarische Optionen?",
+    "ru": "У вас есть вегетарианские блюда?"
+  },
+  {
+    "id": "tl_eb0ce3eec5",
+    "level": 6,
+    "topic": "Restaurant",
+    "mnemoKey": "change_order",
+    "mnemoHint": "EDIT",
+    "de": "Können wir die Bestellung ändern?",
+    "ru": "Мы можем изменить заказ?"
+  },
+  {
+    "id": "tl_2bab675198",
+    "level": 7,
+    "topic": "Restaurant",
+    "mnemoKey": "tap_water",
+    "mnemoHint": "H2O",
+    "de": "Kann ich Leitungswasser bekommen?",
+    "ru": "Можно мне воду из-под крана?"
+  },
+  {
+    "id": "tl_7d3acd7a1a",
+    "level": 7,
+    "topic": "Restaurant",
+    "mnemoKey": "how_long_wait",
+    "mnemoHint": "TIME",
+    "de": "Wie lange dauert es?",
+    "ru": "Сколько это займет?"
+  },
+  {
+    "id": "tl_0c3a912b41",
+    "level": 8,
+    "topic": "Restaurant",
+    "mnemoKey": "reserve_table",
+    "mnemoHint": "BOOK",
+    "de": "Ich möchte einen Tisch reservieren.",
+    "ru": "Я хотел бы забронировать столик."
+  },
+  {
+    "id": "tl_f2c0743094",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "coffee_please",
+    "mnemoHint": "COF",
+    "de": "Ein Kaffee, bitte.",
+    "ru": "Кофе, пожалуйста."
+  },
+  {
+    "id": "tl_5d3a81cf07",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "still_water",
+    "mnemoHint": "H2O",
+    "de": "Ein stilles Wasser, bitte.",
+    "ru": "Негазированную воду, пожалуйста."
+  },
+  {
+    "id": "tl_f4dac41266",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "seat_free",
+    "mnemoHint": "FREE",
+    "de": "Ist das hier frei?",
+    "ru": "Здесь свободно?"
+  },
+  {
+    "id": "tl_014057d9c7",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "split_bill",
+    "mnemoHint": "SPLIT",
+    "de": "Können wir die Rechnung aufteilen?",
+    "ru": "Можно разделить счёт?"
+  },
+  {
+    "id": "tl_465b32138e",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "later_dinner",
+    "mnemoHint": "TIME",
+    "de": "Können wir ein späteres Abendessen vereinbaren?",
+    "ru": "Можем договориться о более позднем ужине?"
+  },
+  {
+    "id": "tl_73ce47ec0a",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_000",
+    "mnemoHint": "L0",
+    "de": "Hi, ich bin neu hier.",
+    "ru": "Привет, я здесь впервые."
+  },
+  {
+    "id": "tl_23f9d3311e",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_001",
+    "mnemoHint": "L0",
+    "de": "Schön, dich zu sehen.",
+    "ru": "Рад тебя видеть."
+  },
+  {
+    "id": "tl_daef507ae5",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_002",
+    "mnemoHint": "L0",
+    "de": "Freut mich, Sie kennenzulernen.",
+    "ru": "Рад познакомиться."
+  },
+  {
+    "id": "tl_e23081c0ee",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_003",
+    "mnemoHint": "L0",
+    "de": "Alles okay?",
+    "ru": "Все в порядке?"
+  },
+  {
+    "id": "tl_2443d50043",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_004",
+    "mnemoHint": "L0",
+    "de": "Alles bestens, danke.",
+    "ru": "Всё отлично, спасибо."
+  },
+  {
+    "id": "tl_e5d93abc3f",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_005",
+    "mnemoHint": "L0",
+    "de": "Nur ein Moment, bitte.",
+    "ru": "Минутку, пожалуйста."
+  },
+  {
+    "id": "tl_5673f48da9",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_006",
+    "mnemoHint": "L0",
+    "de": "Bitte noch einmal.",
+    "ru": "Еще раз, пожалуйста."
+  },
+  {
+    "id": "tl_3b182b1c24",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_007",
+    "mnemoHint": "L0",
+    "de": "Können Sie das bitte langsamer sagen?",
+    "ru": "Скажите, пожалуйста, медленнее."
+  },
+  {
+    "id": "tl_d3079152e2",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_008",
+    "mnemoHint": "L0",
+    "de": "Können Sie das wiederholen?",
+    "ru": "Можете повторить?"
+  },
+  {
+    "id": "tl_2181df8735",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_009",
+    "mnemoHint": "L0",
+    "de": "Ich verstehe nicht.",
+    "ru": "Я не понимаю."
+  },
+  {
+    "id": "tl_0ef165754b",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_010",
+    "mnemoHint": "L0",
+    "de": "Ich verstehe nur ein bisschen.",
+    "ru": "Я понимаю только немного."
+  },
+  {
+    "id": "tl_d4a6dacddc",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_011",
+    "mnemoHint": "L0",
+    "de": "Sprechen Sie Englisch?",
+    "ru": "Вы говорите по-английски?"
+  },
+  {
+    "id": "tl_550a46efee",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_012",
+    "mnemoHint": "L0",
+    "de": "Sprechen Sie Deutsch?",
+    "ru": "Вы говорите по-немецки?"
+  },
+  {
+    "id": "tl_ce7c06cd48",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_013",
+    "mnemoHint": "L0",
+    "de": "Mein Name ist Alex.",
+    "ru": "Меня зовут Алекс."
+  },
+  {
+    "id": "tl_797e877c9d",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_014",
+    "mnemoHint": "L0",
+    "de": "Ich bin hier im Urlaub.",
+    "ru": "Я здесь в отпуске."
+  },
+  {
+    "id": "tl_40c658ad16",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_015",
+    "mnemoHint": "L0",
+    "de": "Ich bin geschäftlich hier.",
+    "ru": "Я здесь по работе."
+  },
+  {
+    "id": "tl_09d7c236ac",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_016",
+    "mnemoHint": "L0",
+    "de": "Ich komme aus Spanien.",
+    "ru": "Я из Испании."
+  },
+  {
+    "id": "tl_374348511a",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_017",
+    "mnemoHint": "L0",
+    "de": "Ich lerne Deutsch.",
+    "ru": "Я учу немецкий."
+  },
+  {
+    "id": "tl_969be0ff0b",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_018",
+    "mnemoHint": "L0",
+    "de": "Ich bin Student.",
+    "ru": "Я студент."
+  },
+  {
+    "id": "tl_57d6eb3c4b",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_019",
+    "mnemoHint": "L0",
+    "de": "Ich reise allein.",
+    "ru": "Я путешествую один."
+  },
+  {
+    "id": "tl_a87d6184c4",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_020",
+    "mnemoHint": "L0",
+    "de": "Ich habe mich verlaufen.",
+    "ru": "Я заблудился."
+  },
+  {
+    "id": "tl_3d5cfc186f",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_021",
+    "mnemoHint": "L0",
+    "de": "Wo ist die Toilette?",
+    "ru": "Где туалет?"
+  },
+  {
+    "id": "tl_6d0ce3bd57",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_022",
+    "mnemoHint": "L0",
+    "de": "Wo ist der Ausgang?",
+    "ru": "Где выход?"
+  },
+  {
+    "id": "tl_7ec73437cc",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_023",
+    "mnemoHint": "L0",
+    "de": "Wo ist der Bahnhof?",
+    "ru": "Где вокзал?"
+  },
+  {
+    "id": "tl_510c7dfba8",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_024",
+    "mnemoHint": "L0",
+    "de": "Geradeaus, bitte.",
+    "ru": "Прямо, пожалуйста."
+  },
+  {
+    "id": "tl_f9b81ddf66",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_025",
+    "mnemoHint": "L0",
+    "de": "Nach links, bitte.",
+    "ru": "Налево, пожалуйста."
+  },
+  {
+    "id": "tl_1b367b6cb9",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_026",
+    "mnemoHint": "L0",
+    "de": "Nach rechts, bitte.",
+    "ru": "Направо, пожалуйста."
+  },
+  {
+    "id": "tl_20fffadcf6",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_027",
+    "mnemoHint": "L0",
+    "de": "Hier entlang, bitte.",
+    "ru": "Сюда, пожалуйста."
+  },
+  {
+    "id": "tl_5a62f72a00",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_028",
+    "mnemoHint": "L0",
+    "de": "Bis später!",
+    "ru": "До позже!"
+  },
+  {
+    "id": "tl_d3fb7cec54",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_029",
+    "mnemoHint": "L0",
+    "de": "Bis bald!",
+    "ru": "До скорого!"
+  },
+  {
+    "id": "tl_164710e388",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_030",
+    "mnemoHint": "L0",
+    "de": "Ich habe Hunger.",
+    "ru": "Я голоден."
+  },
+  {
+    "id": "tl_c88ea30882",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_031",
+    "mnemoHint": "L0",
+    "de": "Ich habe Durst.",
+    "ru": "Я хочу пить."
+  },
+  {
+    "id": "tl_a9d7b7d563",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_032",
+    "mnemoHint": "L0",
+    "de": "Wasser, bitte.",
+    "ru": "Воды, пожалуйста."
+  },
+  {
+    "id": "tl_0ea0761e22",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_033",
+    "mnemoHint": "L0",
+    "de": "Die Rechnung, bitte.",
+    "ru": "Счёт, пожалуйста."
+  },
+  {
+    "id": "tl_7896bc1b59",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_034",
+    "mnemoHint": "L0",
+    "de": "Entschuldigung, ich suche den Bus.",
+    "ru": "Извините, я ищу автобус."
+  },
+  {
+    "id": "tl_d2c2eb0a68",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_035",
+    "mnemoHint": "L0",
+    "de": "Hilfe, bitte.",
+    "ru": "Помогите, пожалуйста."
+  },
+  {
+    "id": "tl_9694648f04",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_036",
+    "mnemoHint": "L0",
+    "de": "Rufen Sie bitte die Polizei.",
+    "ru": "Позвоните в полицию, пожалуйста."
+  },
+  {
+    "id": "tl_a9f3e1adad",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_037",
+    "mnemoHint": "L0",
+    "de": "Rufen Sie bitte einen Arzt.",
+    "ru": "Позовите врача, пожалуйста."
+  },
+  {
+    "id": "tl_c8394725f6",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_038",
+    "mnemoHint": "L0",
+    "de": "Mir ist kalt.",
+    "ru": "Мне холодно."
+  },
+  {
+    "id": "tl_c323389ec0",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_039",
+    "mnemoHint": "L0",
+    "de": "Mir ist warm.",
+    "ru": "Мне жарко."
+  },
+  {
+    "id": "tl_a4918dd4ad",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_040",
+    "mnemoHint": "L0",
+    "de": "Mir ist schlecht.",
+    "ru": "Мне плохо."
+  },
+  {
+    "id": "tl_a1fb04d6bc",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_041",
+    "mnemoHint": "L0",
+    "de": "Ich bin gleich zurück.",
+    "ru": "Я скоро вернусь."
+  },
+  {
+    "id": "tl_6043222a5f",
+    "level": 0,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "buy_sim",
+    "mnemoHint": "SIM",
+    "de": "Ich möchte eine SIM-Karte kaufen.",
+    "ru": "Я хочу купить SIM-карту."
+  },
+  {
+    "id": "tl_0140b54f70",
+    "level": 0,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "data_plan",
+    "mnemoHint": "DATA",
+    "de": "Ich brauche einen Datentarif mit 5 GB.",
+    "ru": "Мне нужен тариф с 5 ГБ интернета."
+  },
+  {
+    "id": "tl_3e1cbb186d",
+    "level": 1,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "top_up",
+    "mnemoHint": "TOP",
+    "de": "Wie kann ich Guthaben aufladen?",
+    "ru": "Как пополнить баланс?"
+  },
+  {
+    "id": "tl_734acb9711",
+    "level": 1,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "wifi_password",
+    "mnemoHint": "PWD",
+    "de": "Wie lautet das WLAN-Passwort?",
+    "ru": "Какой пароль от Wi‑Fi?"
+  },
+  {
+    "id": "tl_e3664a6a9f",
+    "level": 2,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "wifi_down",
+    "mnemoHint": "X",
+    "de": "Das WLAN funktioniert nicht.",
+    "ru": "Wi‑Fi не работает."
+  },
+  {
+    "id": "tl_6819163c68",
+    "level": 2,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "restart_router",
+    "mnemoHint": "RST",
+    "de": "Können Sie den Router neu starten?",
+    "ru": "Можете перезапустить роутер?"
+  },
+  {
+    "id": "tl_e82d3bc2b9",
+    "level": 3,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "no_signal",
+    "mnemoHint": "0%",
+    "de": "Ich habe kein Netz.",
+    "ru": "У меня нет сети."
+  },
+  {
+    "id": "tl_7f193dcb4f",
+    "level": 3,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "data_not_working",
+    "mnemoHint": "4G?",
+    "de": "Mobile Daten funktionieren nicht.",
+    "ru": "Мобильный интернет не работает."
+  },
+  {
+    "id": "tl_f2a6aa838a",
+    "level": 4,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "call_international",
+    "mnemoHint": "+",
+    "de": "Wie rufe ich international an?",
+    "ru": "Как сделать международный звонок?"
+  },
+  {
+    "id": "tl_a0aab893e2",
+    "level": 4,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "hotspot",
+    "mnemoHint": "HOT",
+    "de": "Kann ich einen Hotspot teilen?",
+    "ru": "Могу ли я поделиться точкой доступа?"
+  },
+  {
+    "id": "tl_34b546d01f",
+    "level": 5,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "esim",
+    "mnemoHint": "ESIM",
+    "de": "Unterstützen Sie eSIM?",
+    "ru": "Поддерживается ли eSIM?"
+  },
+  {
+    "id": "tl_0001b9fbb0",
+    "level": 5,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "support_contact",
+    "mnemoHint": "HELP",
+    "de": "Haben Sie eine Support-Hotline?",
+    "ru": "Есть ли у вас линия поддержки?"
+  },
+  {
+    "id": "tl_ac43f6ba09",
+    "level": 6,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "slow_internet",
+    "mnemoHint": "SLOW",
+    "de": "Das Internet ist sehr langsam.",
+    "ru": "Интернет очень медленный."
+  },
+  {
+    "id": "tl_f32253a69d",
+    "level": 6,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "voicemail",
+    "mnemoHint": "VM",
+    "de": "Wie richte ich die Mailbox ein?",
+    "ru": "Как настроить голосовую почту?"
+  },
+  {
+    "id": "tl_d7057b91e3",
+    "level": 0,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "room_dirty",
+    "mnemoHint": "CLEAN",
+    "de": "Das Zimmer ist nicht sauber.",
+    "ru": "Комната не убрана."
+  },
+  {
+    "id": "tl_e2409b7423",
+    "level": 0,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "no_hot_water",
+    "mnemoHint": "H2O",
+    "de": "Es gibt kein warmes Wasser.",
+    "ru": "Нет горячей воды."
+  },
+  {
+    "id": "tl_75e8fe330b",
+    "level": 1,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "ac_broken_room",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "ru": "Кондиционер не работает."
+  },
+  {
+    "id": "tl_75b36ec504",
+    "level": 1,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "heater",
+    "mnemoHint": "HEAT",
+    "de": "Die Heizung funktioniert nicht.",
+    "ru": "Отопление не работает."
+  },
+  {
+    "id": "tl_02a96baaa6",
+    "level": 2,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "too_noisy",
+    "mnemoHint": "NOISE",
+    "de": "Es ist zu laut im Zimmer.",
+    "ru": "В комнате слишком шумно."
+  },
+  {
+    "id": "tl_0a5bf4176d",
+    "level": 2,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "need_pillow",
+    "mnemoHint": "PILLOW",
+    "de": "Ich brauche ein zusätzliches Kissen.",
+    "ru": "Мне нужна дополнительная подушка."
+  },
+  {
+    "id": "tl_20e37631da",
+    "level": 3,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "change_room",
+    "mnemoHint": "MOVE",
+    "de": "Kann ich das Zimmer wechseln?",
+    "ru": "Можно поменять комнату?"
+  },
+  {
+    "id": "tl_84e9de8717",
+    "level": 3,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "key_not_working",
+    "mnemoHint": "KEY",
+    "de": "Die Schlüsselkarte funktioniert nicht.",
+    "ru": "Ключ-карта не работает."
+  },
+  {
+    "id": "tl_372e335b5b",
+    "level": 4,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "water_leak",
+    "mnemoHint": "LEAK",
+    "de": "Es gibt ein Leck im Bad.",
+    "ru": "В ванной течёт."
+  },
+  {
+    "id": "tl_9af7664ed6",
+    "level": 4,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "window_not_close",
+    "mnemoHint": "LOCK",
+    "de": "Das Fenster lässt sich nicht schließen.",
+    "ru": "Окно не закрывается."
+  },
+  {
+    "id": "tl_16f19495e1",
+    "level": 5,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "refund_night",
+    "mnemoHint": "REF",
+    "de": "Ich möchte die letzte Nacht erstattet bekommen.",
+    "ru": "Я хочу возврат за прошлую ночь."
+  },
+  {
+    "id": "tl_625b958d86",
+    "level": 5,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "insects",
+    "mnemoHint": "BUG",
+    "de": "Es sind Insekten im Zimmer.",
+    "ru": "В комнате есть насекомые."
+  },
+  {
+    "id": "tl_fd0f09b6aa",
+    "level": 6,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "safe_locked",
+    "mnemoHint": "SAFE",
+    "de": "Der Safe ist blockiert.",
+    "ru": "Сейф заблокирован."
+  },
+  {
+    "id": "tl_9ceb0102e6",
+    "level": 6,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "more_towels",
+    "mnemoHint": "TOWEL",
+    "de": "Kann ich mehr Handtücher bekommen?",
+    "ru": "Можно получить больше полотенец?"
+  },
+  {
+    "id": "tl_8d82d50e91",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "where_station",
+    "mnemoHint": "S+?",
+    "de": "Wo ist der Bahnhof?",
+    "ru": "Где вокзал?"
+  },
+  {
+    "id": "tl_6fa8e28664",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "go_straight",
+    "mnemoHint": "→",
+    "de": "Gehen Sie bitte geradeaus.",
+    "ru": "Идите, пожалуйста, прямо."
+  },
+  {
+    "id": "tl_826141ed2c",
+    "level": 1,
+    "topic": "Unterwegs",
+    "mnemoKey": "turn_left",
+    "mnemoHint": "←",
+    "de": "Biegen Sie links ab.",
+    "ru": "Поверните налево."
+  },
+  {
+    "id": "tl_c66238e255",
+    "level": 1,
+    "topic": "Unterwegs",
+    "mnemoKey": "nearby",
+    "mnemoHint": "NEAR",
+    "de": "Es ist in der Nähe.",
+    "ru": "Это рядом."
+  },
+  {
+    "id": "tl_5c59046999",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "to_center",
+    "mnemoHint": "CTR",
+    "de": "Wie komme ich zum Zentrum?",
+    "ru": "Как добраться до центра?"
+  },
+  {
+    "id": "tl_4d6b740461",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "metro_here",
+    "mnemoHint": "U",
+    "de": "Gibt es eine U-Bahn hier?",
+    "ru": "Здесь есть метро?"
+  },
+  {
+    "id": "tl_0ca5813923",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "street_closed",
+    "mnemoHint": "X",
+    "de": "Die Straße ist gesperrt.",
+    "ru": "Улица перекрыта."
+  },
+  {
+    "id": "tl_73a90454af",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_number",
+    "mnemoHint": "BUS",
+    "de": "Nehmen Sie den Bus Nummer zehn.",
+    "ru": "Возьмите автобус номер десять."
+  },
+  {
+    "id": "tl_f061f10032",
+    "level": 4,
+    "topic": "Unterwegs",
+    "mnemoKey": "stop_over_there",
+    "mnemoHint": "STOP",
+    "de": "Die Haltestelle ist dort drüben.",
+    "ru": "Остановка вон там."
+  },
+  {
+    "id": "tl_c7a820ffca",
+    "level": 4,
+    "topic": "Unterwegs",
+    "mnemoKey": "ticket_ahead",
+    "mnemoHint": "TIX",
+    "de": "Brauche ich ein Ticket vorher?",
+    "ru": "Нужно билет заранее?"
+  },
+  {
+    "id": "tl_04c0de1900",
+    "level": 5,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_ten_minutes",
+    "mnemoHint": "10m",
+    "de": "Der Bus kommt in zehn Minuten.",
+    "ru": "Автобус приедет через десять минут."
+  },
+  {
+    "id": "tl_92ea96a585",
+    "level": 5,
+    "topic": "Unterwegs",
+    "mnemoKey": "time_now",
+    "mnemoHint": "TIME",
+    "de": "Wie spät ist es jetzt?",
+    "ru": "Который сейчас час?"
+  },
+  {
+    "id": "tl_23f594113e",
+    "level": 6,
+    "topic": "Unterwegs",
+    "mnemoKey": "help_quick",
+    "mnemoHint": "HELP",
+    "de": "Kannst du mir kurz helfen?",
+    "ru": "Ты можешь мне быстро помочь?"
+  },
+  {
+    "id": "tl_3ab2a72be4",
+    "level": 6,
+    "topic": "Unterwegs",
+    "mnemoKey": "next_train_topic",
+    "mnemoHint": "NEXT",
+    "de": "Wann fährt der nächste Zug nach Paris?",
+    "ru": "Когда идёт следующий поезд до Парижа?"
+  },
+  {
+    "id": "tl_5ed17d30c6",
+    "level": 7,
+    "topic": "Unterwegs",
+    "mnemoKey": "flight_delay_trip",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "ru": "Рейс задерживается."
+  },
+  {
+    "id": "tl_ca0351c2b4",
+    "level": 7,
+    "topic": "Unterwegs",
+    "mnemoKey": "baggage_claim_trip",
+    "mnemoHint": "BAG",
+    "de": "Wo ist die Gepäckausgabe?",
+    "ru": "Где выдача багажа?"
+  },
+  {
+    "id": "tl_8552b1a283",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_stop_where",
+    "mnemoHint": "BUS",
+    "de": "Wo ist die Bushaltestelle?",
+    "ru": "Где автобусная остановка?"
+  },
+  {
+    "id": "tl_0e24dbc7bd",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "city_center_where",
+    "mnemoHint": "CITY",
+    "de": "Wo ist das Stadtzentrum?",
+    "ru": "Где центр города?"
+  },
+  {
+    "id": "tl_a24a164042",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "quiet_route",
+    "mnemoHint": "CALM",
+    "de": "Können Sie mir eine ruhige Route empfehlen?",
+    "ru": "Можете посоветовать спокойный маршрут?"
+  },
+  {
+    "id": "tl_2832a86cb0",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "no_transfers_route",
+    "mnemoHint": "DIRECT",
+    "de": "Können Sie mir eine Route ohne Umstiege planen?",
+    "ru": "Можете проложить маршрут без пересадок?"
+  },
+  {
+    "id": "tl_4bfc1221a4",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "car_broken",
+    "mnemoHint": "STOP",
+    "de": "Mein Auto ist liegengeblieben.",
+    "ru": "Моя машина сломалась."
+  },
+  {
+    "id": "tl_b4f1ad9e83",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_tow",
+    "mnemoHint": "TOW",
+    "de": "Ich brauche einen Abschleppdienst.",
+    "ru": "Мне нужен эвакуатор."
+  },
+  {
+    "id": "tl_0586237f6e",
+    "level": 1,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "flat_tire",
+    "mnemoHint": "TIRE",
+    "de": "Ich habe einen platten Reifen.",
+    "ru": "У меня проколото колесо."
+  },
+  {
+    "id": "tl_e39fdc2535",
+    "level": 1,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "no_fuel",
+    "mnemoHint": "0%",
+    "de": "Ich habe keinen Kraftstoff mehr.",
+    "ru": "У меня закончился бензин."
+  },
+  {
+    "id": "tl_bfe65ca60d",
+    "level": 2,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_gas",
+    "mnemoHint": "FUEL",
+    "de": "Wo ist die nächste Tankstelle?",
+    "ru": "Где ближайшая заправка?"
+  },
+  {
+    "id": "tl_5dfc3c5934",
+    "level": 2,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "battery_dead",
+    "mnemoHint": "BAT",
+    "de": "Die Batterie ist leer.",
+    "ru": "Аккумулятор сел."
+  },
+  {
+    "id": "tl_fc96232617",
+    "level": 3,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "accident_police",
+    "mnemoHint": "911",
+    "de": "Es gab einen Unfall, bitte rufen Sie die Polizei.",
+    "ru": "Произошла авария, пожалуйста вызовите полицию."
+  },
+  {
+    "id": "tl_f41b479e30",
+    "level": 3,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "insurance_papers",
+    "mnemoHint": "DOC",
+    "de": "Hier sind meine Versicherungsunterlagen.",
+    "ru": "Вот мои страховые документы."
+  },
+  {
+    "id": "tl_d34880c94c",
+    "level": 4,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_mechanic",
+    "mnemoHint": "FIX",
+    "de": "Können Sie einen Mechaniker schicken?",
+    "ru": "Можете прислать механика?"
+  },
+  {
+    "id": "tl_ec13157d5e",
+    "level": 4,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "rental_car",
+    "mnemoHint": "RENT",
+    "de": "Kann ich ein Ersatzfahrzeug mieten?",
+    "ru": "Могу ли я взять машину напрокат взамен?"
+  },
+  {
+    "id": "tl_c29446052d",
+    "level": 5,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "show_license",
+    "mnemoHint": "ID",
+    "de": "Hier ist mein Führerschein.",
+    "ru": "Вот мои права."
+  },
+  {
+    "id": "tl_d9ba3544f4",
+    "level": 5,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "hazard_lights",
+    "mnemoHint": "⚠",
+    "de": "Schalten Sie die Warnblinkanlage ein.",
+    "ru": "Включите аварийку."
+  },
+  {
+    "id": "tl_8de404541b",
+    "level": 6,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "wait_time",
+    "mnemoHint": "ETA",
+    "de": "Wie lange dauert es, bis Hilfe kommt?",
+    "ru": "Сколько времени ждать помощи?"
+  },
+  {
+    "id": "tl_d77743a01a",
+    "level": 6,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "traffic_jam",
+    "mnemoHint": "JAM",
+    "de": "Es gibt einen Stau vor uns.",
+    "ru": "Впереди пробка."
+  },
+  {
+    "id": "tl_b4322691fe",
+    "level": 7,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "road_closed",
+    "mnemoHint": "X",
+    "de": "Die Straße ist gesperrt, gibt es eine Umleitung?",
+    "ru": "Дорога перекрыта, есть объезд?"
+  },
+  {
+    "id": "tl_69d3c72053",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "car_broken",
+    "mnemoHint": "STOP",
+    "de": "Mein Auto ist kaputt.",
+    "ru": "Моя машина сломалась."
+  }
+]

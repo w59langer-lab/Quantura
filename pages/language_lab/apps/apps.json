@@ -16,14 +16,6 @@
     "icon": "/core/assets/favicon.ico"
   },
   {
-    "id": "karten",
-    "title": "Karten",
-    "category": "language",
-    "description": "Sprachführer-Karten und Level-Übersicht.",
-    "href": "/pages/language_lab/apps/karten/",
-    "icon": "/core/assets/favicon.ico"
-  },
-  {
     "id": "analyse_zaz",
     "title": "Analyse ZAZ",
     "category": "language",

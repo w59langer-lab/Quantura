@@ -1,0 +1,604 @@
+[
+  {
+    "id": "allgemein",
+    "title": "Allgemein",
+    "total": 20,
+    "languages": {
+      "en": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "arzt_apotheke",
+    "title": "Arzt & Apotheke",
+    "total": 15,
+    "languages": {
+      "en": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "bahn_flug",
+    "title": "Bahn & Flug",
+    "total": 18,
+    "languages": {
+      "en": {
+        "total": 18,
+        "filled": 18,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 18,
+        "filled": 18,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 18,
+        "filled": 18,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 18,
+        "filled": 18,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 18,
+        "filled": 18,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 18,
+        "filled": 18,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "einkaufen",
+    "title": "Einkaufen",
+    "total": 17,
+    "languages": {
+      "en": {
+        "total": 17,
+        "filled": 17,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 17,
+        "filled": 17,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 17,
+        "filled": 17,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 17,
+        "filled": 17,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 17,
+        "filled": 17,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 17,
+        "filled": 17,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "hotel",
+    "title": "Hotel & Reise",
+    "total": 21,
+    "languages": {
+      "en": {
+        "total": 21,
+        "filled": 21,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 21,
+        "filled": 21,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 21,
+        "filled": 21,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 21,
+        "filled": 21,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 21,
+        "filled": 21,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 21,
+        "filled": 21,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "notfall",
+    "title": "Notfall",
+    "total": 22,
+    "languages": {
+      "en": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "restaurant",
+    "title": "Restaurant",
+    "total": 22,
+    "languages": {
+      "en": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 22,
+        "filled": 22,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "survival_more",
+    "title": "Survival More",
+    "total": 610,
+    "languages": {
+      "en": {
+        "total": 610,
+        "filled": 610,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 610,
+        "filled": 0,
+        "missing": 610,
+        "percent": 0
+      },
+      "fr": {
+        "total": 610,
+        "filled": 0,
+        "missing": 610,
+        "percent": 0
+      },
+      "it": {
+        "total": 610,
+        "filled": 0,
+        "missing": 610,
+        "percent": 0
+      },
+      "ru": {
+        "total": 610,
+        "filled": 0,
+        "missing": 610,
+        "percent": 0
+      },
+      "tr": {
+        "total": 610,
+        "filled": 0,
+        "missing": 610,
+        "percent": 0
+      }
+    }
+  },
+  {
+    "id": "survival_plus",
+    "title": "Survival Plus",
+    "total": 347,
+    "languages": {
+      "en": {
+        "total": 347,
+        "filled": 347,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 347,
+        "filled": 42,
+        "missing": 305,
+        "percent": 12.1
+      },
+      "fr": {
+        "total": 347,
+        "filled": 42,
+        "missing": 305,
+        "percent": 12.1
+      },
+      "it": {
+        "total": 347,
+        "filled": 42,
+        "missing": 305,
+        "percent": 12.1
+      },
+      "ru": {
+        "total": 347,
+        "filled": 42,
+        "missing": 305,
+        "percent": 12.1
+      },
+      "tr": {
+        "total": 347,
+        "filled": 42,
+        "missing": 305,
+        "percent": 12.1
+      }
+    }
+  },
+  {
+    "id": "telefon_internet",
+    "title": "Telefon & Internet",
+    "total": 14,
+    "languages": {
+      "en": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "unterkunft_probleme",
+    "title": "Unterkunft: Probleme",
+    "total": 14,
+    "languages": {
+      "en": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 14,
+        "filled": 14,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "unterwegs",
+    "title": "Unterwegs",
+    "total": 20,
+    "languages": {
+      "en": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 20,
+        "filled": 20,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "verkehr_auto",
+    "title": "Verkehr & Auto",
+    "total": 15,
+    "languages": {
+      "en": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "fr": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "it": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "ru": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      },
+      "tr": {
+        "total": 15,
+        "filled": 15,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  },
+  {
+    "id": "verkehr_auto",
+    "title": "Verkehr & Auto",
+    "total": 2,
+    "languages": {
+      "en": {
+        "total": 2,
+        "filled": 2,
+        "missing": 0,
+        "percent": 100
+      },
+      "es": {
+        "total": 2,
+        "filled": 1,
+        "missing": 1,
+        "percent": 50
+      },
+      "fr": {
+        "total": 2,
+        "filled": 1,
+        "missing": 1,
+        "percent": 50
+      },
+      "it": {
+        "total": 2,
+        "filled": 1,
+        "missing": 1,
+        "percent": 50
+      },
+      "ru": {
+        "total": 2,
+        "filled": 1,
+        "missing": 1,
+        "percent": 50
+      },
+      "tr": {
+        "total": 2,
+        "filled": 2,
+        "missing": 0,
+        "percent": 100
+      }
+    }
+  }
+]

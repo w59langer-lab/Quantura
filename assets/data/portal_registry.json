@@ -43,12 +43,6 @@
       "type": "app"
     },
     {
-      "title": "Karten",
-      "url": "pages/language_lab/apps/karten/index.html",
-      "group": "Apps",
-      "type": "app"
-    },
-    {
       "title": "Bibliothek & Ressourcen",
       "url": "pages/bibliothek/index.html",
       "group": "Bibliothek",

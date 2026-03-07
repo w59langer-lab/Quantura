@@ -63,7 +63,8 @@
       it: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><rect width="1" height="2" fill="#008c45"/><rect width="1" height="2" x="1" fill="#ffffff"/><rect width="1" height="2" x="2" fill="#cd212a"/></svg>`,
       es: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><rect width="3" height="2" fill="#aa151b"/><rect width="3" height="1.2" y="0.4" fill="#f1bf00"/></svg>`,
       fr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><rect width="1" height="2" fill="#0055a4"/><rect width="1" height="2" x="1" fill="#ffffff"/><rect width="1" height="2" x="2" fill="#ef4135"/></svg>`,
-      ru: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><rect width="3" height="2" fill="#d52b1e"/><rect width="3" height="1.333" y="0.667" fill="#0039a6"/><rect width="3" height="0.667" fill="#ffffff"/></svg>`
+      ru: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><rect width="3" height="2" fill="#d52b1e"/><rect width="3" height="1.333" y="0.667" fill="#0039a6"/><rect width="3" height="0.667" fill="#ffffff"/></svg>`,
+      tr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><rect width="3" height="2" fill="#e30a17"/><circle cx="1.1" cy="1" r="0.5" fill="#fff"/><circle cx="1.25" cy="1" r="0.38" fill="#e30a17"/><path d="M1.6 1l0.6 0.2-0.6 0.2 0.35 0.5-0.55-0.3-0.55 0.3 0.35-0.5-0.6-0.2 0.6-0.2-0.35-0.5 0.55 0.3 0.55-0.3z" fill="#fff"/></svg>`
     };
     const items = [
       { id: "de-en", title: "Deutsch ⇄ English", sub: "German ⇄ English", flagCodes: ["de","gb"], href: "/pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
@@ -71,6 +72,7 @@
       { id: "de-es", title: "Deutsch ⇄ Español", sub: "Alemán ⇄ Español", flagCodes: ["de","es"], href: "/pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
       { id: "de-fr", title: "Deutsch ⇄ Français", sub: "Allemand ⇄ Français", flagCodes: ["de","fr"], href: "/pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
       { id: "de-ru", title: "Deutsch ⇄ Русский", sub: "Немецкий ⇄ Русский", flagCodes: ["de","ru"], href: "/pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
+      { id: "de-tr", title: "Deutsch ⇄ Türkisch", sub: "Almanca ⇄ Türkçe", flagCodes: ["de","tr"], href: "/pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
     ];
     const grid = document.getElementById("sfGrid");
     items.filter(x => x.enabled).forEach(item => {

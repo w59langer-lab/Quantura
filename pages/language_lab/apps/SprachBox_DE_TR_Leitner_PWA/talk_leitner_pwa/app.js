@@ -234,10 +234,10 @@ const GLOSSARY_KEY = "sprachbox_glossary_v1"; // popup dictionary / glossary
 const GLOSSARY_MIN_KEY = "sprachbox_glossary_min_v1"; // mini lexicon (small)
 const PHRASE_MAP_KEY = "sprachbox_phrase_map_v1"; // small phrase-first overrides
 const BG_LS_ID = "sb_bg_id";
-const TARGET_TTS_LANG = "en-US";
 const SOURCE_LANG = "DE";
-const TARGET_LANG = "EN";
+const TARGET_LANG = "TR";
 const SHARED_PAIR_LABEL = `${SOURCE_LANG}->${TARGET_LANG}`;
+const TARGET_TTS_LANG = "tr-TR";
 
 const BOX_COUNT = 8;
 
@@ -253,17 +253,15 @@ const FETCH_TIMEOUT_MS = 4500;
 
 // Try these paths first (adjust if you like)
 const DATA_URLS = [
-  "./data/talk_levels_de_en.json",
-  "./data/de_en_sample.json",
+  "./data/talk_levels_de_tr.json",
+  "../../talk_levels/data/_generated_preview/leitner/de-tr.json",
   "./data/talk_levels.json",
   "../talk_levels/data.json",
   "../talk_levels/talk_levels.json",
   "../talk_levels/assets/data/talk_levels.json",
   "../../data/talk_levels.json",
 ];
-const EXTRA_DATA_URLS = [
-  "./data/sentences_a1.json",
-];
+const EXTRA_DATA_URLS = [];
 
 const BG_OPTIONS = [
   { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
@@ -273,11 +271,11 @@ const BG_OPTIONS = [
 ];
 
 const DAILY_TEMPLATES = [
-  { de: "Guten Morgen! Ich lerne heute zehn Minuten Deutsch.", en: "Good morning! I am learning German for ten minutes today." },
-  { de: "Ich lese den Satz laut und deutlich.", en: "I read the sentence aloud and clearly." },
-  { de: "Heute wiederhole ich nur ein paar wichtige Karten.", en: "Today I review only a few important cards." },
-  { de: "Ich verstehe nicht alles, aber ich mache weiter.", en: "I do not understand everything, but I keep going." },
-  { de: "Am Ende drücke ich auf Fertig.", en: "At the end I press Done." },
+  { de: "Guten Morgen! Ich lerne heute zehn Minuten Deutsch.", en: "Günaydın! Bugün on dakika Almanca çalışıyorum." },
+  { de: "Ich lese den Satz laut und deutlich.", en: "Cümleyi yüksek sesle ve net okuyorum." },
+  { de: "Heute wiederhole ich nur ein paar wichtige Karten.", en: "Bugün sadece birkaç önemli kartı tekrar ediyorum." },
+  { de: "Ich verstehe nicht alles, aber ich mache weiter.", en: "Her şeyi anlamıyorum ama devam ediyorum." },
+  { de: "Am Ende drücke ich auf Fertig.", en: "Sonunda Bitir'e basıyorum." },
 ];
 
 function buildDummyDeck() {
@@ -1199,6 +1197,11 @@ function normalizeItem(raw, idx) {
     pick(raw, [
       "en",
       "EN",
+      "tr",
+      "TR",
+      "turkish",
+      "turkisch",
+      "türkisch",
       "eng",
       "English",
       "english",
@@ -1673,7 +1676,7 @@ function editGlossaryEntryByKey(key) {
 }
 
 function displayLangLabel(lang) {
-  return lang === "de" ? "DE" : lang === "en" ? "EN" : "?";
+  return lang === "de" ? "DE" : lang === "en" ? "TR" : "?";
 }
 
 function normalizePhraseText(text) {
@@ -2775,9 +2778,9 @@ function glossaryPracticeSpeak() {
   const entry = p.queue[p.idx];
   if (!entry) return;
   if (p.reveal) {
-    speak(entry.translation, entry.detectedLang === "de" ? "en-US" : "de-DE");
+    speak(entry.translation, entry.detectedLang === "de" ? "tr-TR" : "de-DE");
   } else {
-    speak(glossaryDisplayTerm(entry), entry.detectedLang === "de" ? "de-DE" : "en-US");
+    speak(glossaryDisplayTerm(entry), entry.detectedLang === "de" ? "de-DE" : "tr-TR");
   }
 }
 
@@ -3586,9 +3589,9 @@ async function loadDeck() {
     const fallback = buildDummyDeck();
     const withOverrides = applyDeckTextOverrides(fallback);
     state.ui.loaderStatus = "dummy";
-  return {
-    normalized: withOverrides,
-    used: "Dummy-Deck (Notfall)",
+    return {
+      normalized: withOverrides,
+      used: "Dummy-Deck (Notfall)",
       warning:
         "Kein externes Deck geladen. Notfall-Dummy-Deck (10 Karten) aktiv.",
       tried,
@@ -3930,7 +3933,7 @@ async function init() {
     if (!els.wordPopup || els.wordPopup.hidden) return;
     const word = String(els.wordPopup.dataset.word || "").trim();
     if (!word) return;
-    const lang = els.wordPopup.dataset.lang === "en" ? "en-US" : "de-DE";
+    const lang = els.wordPopup.dataset.lang === "en" ? "tr-TR" : "de-DE";
     speak(word, lang);
   });
   on(els.wordCorrect, "click", correctCurrentPopupTranslation);
@@ -4036,7 +4039,7 @@ async function init() {
       return;
     }
     if (action === "speak") {
-      speak(glossaryDisplayTerm(entry), entry.detectedLang === "de" ? "de-DE" : "en-US");
+      speak(glossaryDisplayTerm(entry), entry.detectedLang === "de" ? "de-DE" : "tr-TR");
     }
   });
 
@@ -4054,7 +4057,7 @@ async function init() {
     const it = state.all.find((x) => x.id === id);
     if (!it) return;
     const flipped = els.card && els.card.classList.contains("isFlipped");
-    if (flipped) speak(it.en, "en-US");
+    if (flipped) speak(it.en, "tr-TR");
     else speak(it.de, "de-DE");
   });
 

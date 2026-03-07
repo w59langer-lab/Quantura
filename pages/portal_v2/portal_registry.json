@@ -16,7 +16,7 @@
     },
     {
       "title": "Sprachen",
-      "items": ["language-apps", "talk-levels", "karten"]
+      "items": ["language-apps", "talk-levels"]
     },
     {
       "title": "Alltagsrechner & Tools",
@@ -97,16 +97,6 @@
       "icon": "/core/assets/favicon.ico",
       "badges": ["tts"],
       "tags": ["sprache", "sprechen"]
-    },
-    {
-      "id": "karten",
-      "title": "Karten",
-      "category": "Sprachen",
-      "description": "Sprachführer-Karten und Level.",
-      "href": "/pages/language_lab/apps/karten/index.html",
-      "icon": "/core/assets/favicon.ico",
-      "badges": ["offline"],
-      "tags": ["karten", "sprachführer"]
     },
     {
       "id": "ressourcen",

@@ -1,0 +1,2171 @@
+[
+  {
+    "id": "tl_e05d53d6c5",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "greet_wave",
+    "mnemoHint": "HI",
+    "de": "Hallo!",
+    "es": "¡Hola!"
+  },
+  {
+    "id": "tl_158c6f1dfa",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "morning_sun",
+    "mnemoHint": "AM",
+    "de": "Guten Morgen!",
+    "es": "¡Buenos días!"
+  },
+  {
+    "id": "tl_db48e8450b",
+    "level": 1,
+    "topic": "Allgemein",
+    "mnemoKey": "evening_star",
+    "mnemoHint": "PM",
+    "de": "Guten Abend!",
+    "es": "¡Buenas noches!"
+  },
+  {
+    "id": "tl_71dc677c8b",
+    "level": 1,
+    "topic": "Allgemein",
+    "mnemoKey": "how_are_you",
+    "mnemoHint": "HAY",
+    "de": "Wie geht es dir?",
+    "es": "¿Cómo estás?"
+  },
+  {
+    "id": "tl_35281d51ac",
+    "level": 2,
+    "topic": "Allgemein",
+    "mnemoKey": "i_am_fine",
+    "mnemoHint": "OK",
+    "de": "Mir geht es gut.",
+    "es": "Estoy bien."
+  },
+  {
+    "id": "tl_76db1284c9",
+    "level": 2,
+    "topic": "Allgemein",
+    "mnemoKey": "thanks_note",
+    "mnemoHint": "THX",
+    "de": "Danke!",
+    "es": "¡Gracias!"
+  },
+  {
+    "id": "tl_1156a0ead4",
+    "level": 3,
+    "topic": "Allgemein",
+    "mnemoKey": "please_hand",
+    "mnemoHint": "PLS",
+    "de": "Bitte.",
+    "es": "Por favor."
+  },
+  {
+    "id": "tl_121b1e3c8f",
+    "level": 3,
+    "topic": "Allgemein",
+    "mnemoKey": "yes_tick",
+    "mnemoHint": "YES",
+    "de": "Ja.",
+    "es": "Sí."
+  },
+  {
+    "id": "tl_16f086e925",
+    "level": 4,
+    "topic": "Allgemein",
+    "mnemoKey": "no_cross",
+    "mnemoHint": "NO",
+    "de": "Nein.",
+    "es": "No."
+  },
+  {
+    "id": "tl_2f4408e2ef",
+    "level": 4,
+    "topic": "Allgemein",
+    "mnemoKey": "name_tag",
+    "mnemoHint": "ID",
+    "de": "Ich heiße Anna.",
+    "es": "Me llamo Ana."
+  },
+  {
+    "id": "tl_7727d5af9d",
+    "level": 5,
+    "topic": "Allgemein",
+    "mnemoKey": "from_germany",
+    "mnemoHint": "DE",
+    "de": "Ich komme aus Deutschland.",
+    "es": "Soy de Alemania."
+  },
+  {
+    "id": "tl_9a50e08d8f",
+    "level": 5,
+    "topic": "Allgemein",
+    "mnemoKey": "speak_english",
+    "mnemoHint": "EN+",
+    "de": "Ich spreche ein wenig Englisch.",
+    "es": "Hablo un poco de inglés."
+  },
+  {
+    "id": "tl_41be1a95c2",
+    "level": 6,
+    "topic": "Allgemein",
+    "mnemoKey": "learn_italian",
+    "mnemoHint": "IT+",
+    "de": "Ich lerne Italienisch.",
+    "es": "Estoy aprendiendo italiano."
+  },
+  {
+    "id": "tl_c1c6a4078a",
+    "level": 6,
+    "topic": "Allgemein",
+    "mnemoKey": "work_engineer",
+    "mnemoHint": "JOB",
+    "de": "Ich arbeite als Ingenieur.",
+    "es": "Trabajo como ingeniero."
+  },
+  {
+    "id": "tl_4f397cf61b",
+    "level": 7,
+    "topic": "Allgemein",
+    "mnemoKey": "two_siblings",
+    "mnemoHint": "FAM",
+    "de": "Ich habe zwei Geschwister.",
+    "es": "Tengo dos hermanos."
+  },
+  {
+    "id": "tl_b56f766a01",
+    "level": 7,
+    "topic": "Allgemein",
+    "mnemoKey": "uni_student",
+    "mnemoHint": "UNI",
+    "de": "Ich studiere an der Universität.",
+    "es": "Estudio en la universidad."
+  },
+  {
+    "id": "tl_aa98284ec6",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "good_day",
+    "mnemoHint": "DAY",
+    "de": "Guten Tag!",
+    "es": "¡Buenas tardes!"
+  },
+  {
+    "id": "tl_851506550f",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "bye_short",
+    "mnemoHint": "BYE",
+    "de": "Tschüss!",
+    "es": "¡Chao!"
+  },
+  {
+    "id": "tl_04f6ecfa9c",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "see_you_soon",
+    "mnemoHint": "SOON",
+    "de": "Bis gleich!",
+    "es": "¡Hasta ahora!"
+  },
+  {
+    "id": "tl_0b2a5e48db",
+    "level": 0,
+    "topic": "Allgemein",
+    "mnemoKey": "i_have_question",
+    "mnemoHint": "ASK",
+    "de": "Ich habe eine Frage.",
+    "es": "Tengo una pregunta."
+  },
+  {
+    "id": "tl_d9ee1d90b3",
+    "level": 0,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "need_doctor",
+    "mnemoHint": "DOC",
+    "de": "Ich brauche einen Arzt.",
+    "es": "Necesito un médico."
+  },
+  {
+    "id": "tl_02f94ff1fd",
+    "level": 0,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "pharmacy_near",
+    "mnemoHint": "RX",
+    "de": "Wo ist die nächste Apotheke?",
+    "es": "¿Dónde está la farmacia más cercana?"
+  },
+  {
+    "id": "tl_a858dc9200",
+    "level": 1,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "pain_here",
+    "mnemoHint": "→",
+    "de": "Ich habe hier Schmerzen.",
+    "es": "Tengo dolor aquí."
+  },
+  {
+    "id": "tl_4821ac5996",
+    "level": 1,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "fever",
+    "mnemoHint": "38°",
+    "de": "Ich habe Fieber.",
+    "es": "Tengo fiebre."
+  },
+  {
+    "id": "tl_8f94b7c697",
+    "level": 2,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "headache",
+    "mnemoHint": "HEAD",
+    "de": "Ich habe starke Kopfschmerzen.",
+    "es": "Tengo un fuerte dolor de cabeza."
+  },
+  {
+    "id": "tl_1f46bc8bbb",
+    "level": 2,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "stomach",
+    "mnemoHint": "BELLY",
+    "de": "Mir ist übel / Ich habe Bauchschmerzen.",
+    "es": "Me siento mal / Tengo dolor de estómago."
+  },
+  {
+    "id": "tl_0dd976308d",
+    "level": 3,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "penicillin_allergy",
+    "mnemoHint": "NO RX",
+    "de": "Ich bin allergisch gegen Penicillin.",
+    "es": "Soy alérgico/a a la penicilina."
+  },
+  {
+    "id": "tl_d83a4aa918",
+    "level": 3,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "appointment",
+    "mnemoHint": "APPT",
+    "de": "Kann ich heute einen Termin bekommen?",
+    "es": "¿Puedo conseguir una cita hoy?"
+  },
+  {
+    "id": "tl_dd52fbaef6",
+    "level": 4,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "prescription",
+    "mnemoHint": "RX",
+    "de": "Ich brauche ein Rezept.",
+    "es": "Necesito una receta."
+  },
+  {
+    "id": "tl_c2b16af3eb",
+    "level": 4,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "painkiller",
+    "mnemoHint": "PILL",
+    "de": "Haben Sie etwas gegen Schmerzen?",
+    "es": "¿Tiene algo para el dolor?"
+  },
+  {
+    "id": "tl_fa5a7871c0",
+    "level": 5,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "bandage",
+    "mnemoHint": "WRAP",
+    "de": "Ich brauche einen Verband / Pflaster.",
+    "es": "Necesito un vendaje / tirita."
+  },
+  {
+    "id": "tl_713cfc866c",
+    "level": 5,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "cough_syrup",
+    "mnemoHint": "COUGH",
+    "de": "Haben Sie etwas gegen Husten?",
+    "es": "¿Tiene algo para la tos?"
+  },
+  {
+    "id": "tl_b747556a46",
+    "level": 6,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "covid_test",
+    "mnemoHint": "TEST",
+    "de": "Wo kann ich einen COVID-Test machen?",
+    "es": "¿Dónde puedo hacerme una prueba de COVID?"
+  },
+  {
+    "id": "tl_8de2e43d84",
+    "level": 6,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "insurance_card",
+    "mnemoHint": "ID",
+    "de": "Nehmen Sie meine Versicherungskarte?",
+    "es": "¿Aceptan mi tarjeta de seguro?"
+  },
+  {
+    "id": "tl_adeeeec15f",
+    "level": 7,
+    "topic": "Arzt & Apotheke",
+    "mnemoKey": "emergency_number",
+    "mnemoHint": "112",
+    "de": "Ist das ein Notfall? Soll ich 112 anrufen?",
+    "es": "¿Es una emergencia? ¿Debo llamar al 112?"
+  },
+  {
+    "id": "tl_1e54a2e996",
+    "level": 0,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "ticket_counter",
+    "mnemoHint": "INFO",
+    "de": "Wo ist der Fahrkarten-/Ticketschalter?",
+    "es": "¿Dónde está la taquilla de billetes?"
+  },
+  {
+    "id": "tl_40a641b13e",
+    "level": 0,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "one_way",
+    "mnemoHint": "1WAY",
+    "de": "Ein Ticket nach Berlin, einfach, bitte.",
+    "es": "Un billete sencillo a Berlín, por favor."
+  },
+  {
+    "id": "tl_1c0ecf198f",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "return_ticket",
+    "mnemoHint": "RTN",
+    "de": "Ein Hin- und Rückticket für morgen.",
+    "es": "Un billete de ida y vuelta para mañana."
+  },
+  {
+    "id": "tl_e590295026",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "platform",
+    "mnemoHint": "G",
+    "de": "Auf welchem Gleis fährt der Zug?",
+    "es": "¿De qué andén sale el tren?"
+  },
+  {
+    "id": "tl_7edfa73d29",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "delay_train",
+    "mnemoHint": "+",
+    "de": "Der Zug hat Verspätung.",
+    "es": "El tren tiene retraso."
+  },
+  {
+    "id": "tl_93cd3d3ca5",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "change_platform",
+    "mnemoHint": "MOVE",
+    "de": "Hat sich das Gleis geändert?",
+    "es": "¿Ha cambiado el andén?"
+  },
+  {
+    "id": "tl_49a87a5811",
+    "level": 3,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "seat_reservation",
+    "mnemoHint": "SEAT",
+    "de": "Brauche ich eine Sitzplatzreservierung?",
+    "es": "¿Necesito reserva de asiento?"
+  },
+  {
+    "id": "tl_f7b168835f",
+    "level": 3,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "gate",
+    "mnemoHint": "GATE",
+    "de": "Zu welchem Gate geht der Flug?",
+    "es": "¿En qué puerta está el vuelo?"
+  },
+  {
+    "id": "tl_a23adf0516",
+    "level": 4,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "boarding_time",
+    "mnemoHint": "BOARD",
+    "de": "Wann beginnt das Boarding?",
+    "es": "¿Cuándo comienza el embarque?"
+  },
+  {
+    "id": "tl_96c74a85c2",
+    "level": 4,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "flight_delay",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "es": "El vuelo tiene retraso."
+  },
+  {
+    "id": "tl_a008c494bd",
+    "level": 5,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "missed_connection",
+    "mnemoHint": "MISS",
+    "de": "Ich habe den Anschluss verpasst.",
+    "es": "Perdí la conexión."
+  },
+  {
+    "id": "tl_d69129eb9a",
+    "level": 5,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "check_in",
+    "mnemoHint": "CHK",
+    "de": "Wo gebe ich das Gepäck auf?",
+    "es": "¿Dónde facturo el equipaje?"
+  },
+  {
+    "id": "tl_6e4d8e0ab9",
+    "level": 6,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "hand_luggage",
+    "mnemoHint": "CAB",
+    "de": "Ist das als Handgepäck erlaubt?",
+    "es": "¿Esto está permitido como equipaje de mano?"
+  },
+  {
+    "id": "tl_443b638e16",
+    "level": 6,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "rebook",
+    "mnemoHint": "RBK",
+    "de": "Kann ich auf einen früheren Zug/Flug umbuchen?",
+    "es": "¿Puedo cambiar a un tren/vuelo más temprano?"
+  },
+  {
+    "id": "tl_6ef3f9bcc2",
+    "level": 7,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "refund_voucher",
+    "mnemoHint": "REF",
+    "de": "Bekomme ich eine Erstattung oder einen Gutschein?",
+    "es": "¿Recibo un reembolso o un vale?"
+  },
+  {
+    "id": "tl_6ceb08d365",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "where_ticket",
+    "mnemoHint": "TIX",
+    "de": "Wo bekomme ich ein Ticket?",
+    "es": "¿Dónde puedo conseguir un billete?"
+  },
+  {
+    "id": "tl_7036dc1c07",
+    "level": 1,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "next_train",
+    "mnemoHint": "TIME",
+    "de": "Wann fährt der nächste Zug?",
+    "es": "¿Cuándo sale el próximo tren?"
+  },
+  {
+    "id": "tl_ec29ea535f",
+    "level": 2,
+    "topic": "Bahn & Flug",
+    "mnemoKey": "rebook_tomorrow",
+    "mnemoHint": "MOVE",
+    "de": "Können Sie das Ticket auf morgen umbuchen?",
+    "es": "¿Puede cambiar el billete para mañana?"
+  },
+  {
+    "id": "tl_cd91c27b49",
+    "level": 0,
+    "topic": "Einkaufen",
+    "mnemoKey": "price_check",
+    "mnemoHint": "€",
+    "de": "Wie viel kostet das?",
+    "es": "¿Cuánto cuesta esto?"
+  },
+  {
+    "id": "tl_3afa1da3bf",
+    "level": 0,
+    "topic": "Einkaufen",
+    "mnemoKey": "other_size",
+    "mnemoHint": "SIZE",
+    "de": "Haben Sie das in einer anderen Größe?",
+    "es": "¿Lo tiene en otra talla?"
+  },
+  {
+    "id": "tl_414911b45b",
+    "level": 1,
+    "topic": "Einkaufen",
+    "mnemoKey": "pay_cash",
+    "mnemoHint": "CASH",
+    "de": "Ich zahle bar.",
+    "es": "Pago en efectivo."
+  },
+  {
+    "id": "tl_fc39c4bdc8",
+    "level": 1,
+    "topic": "Einkaufen",
+    "mnemoKey": "pay_card",
+    "mnemoHint": "CARD",
+    "de": "Kann ich mit Karte zahlen?",
+    "es": "¿Puedo pagar con tarjeta?"
+  },
+  {
+    "id": "tl_956c37694e",
+    "level": 2,
+    "topic": "Einkaufen",
+    "mnemoKey": "need_shopping",
+    "mnemoHint": "LIST",
+    "de": "Ich muss noch einkaufen gehen.",
+    "es": "Aún tengo que ir de compras."
+  },
+  {
+    "id": "tl_1fe024d0e4",
+    "level": 2,
+    "topic": "Einkaufen",
+    "mnemoKey": "receipt",
+    "mnemoHint": "REC",
+    "de": "Kann ich eine Quittung bekommen?",
+    "es": "¿Puedo obtener un recibo?"
+  },
+  {
+    "id": "tl_e5ec369fec",
+    "level": 3,
+    "topic": "Einkaufen",
+    "mnemoKey": "try_on",
+    "mnemoHint": "FIT",
+    "de": "Kann ich das anprobieren?",
+    "es": "¿Puedo probármelo?"
+  },
+  {
+    "id": "tl_42571dbfbd",
+    "level": 3,
+    "topic": "Einkaufen",
+    "mnemoKey": "color_choice",
+    "mnemoHint": "COL",
+    "de": "Haben Sie das in Blau?",
+    "es": "¿Lo tiene en azul?"
+  },
+  {
+    "id": "tl_f6e5b690e7",
+    "level": 4,
+    "topic": "Einkaufen",
+    "mnemoKey": "discount",
+    "mnemoHint": "%",
+    "de": "Gibt es einen Rabatt?",
+    "es": "¿Hay un descuento?"
+  },
+  {
+    "id": "tl_65eadff075",
+    "level": 4,
+    "topic": "Einkaufen",
+    "mnemoKey": "bag_needed",
+    "mnemoHint": "BAG",
+    "de": "Brauchen Sie eine Tüte?",
+    "es": "¿Necesita una bolsa?"
+  },
+  {
+    "id": "tl_cbf2fee582",
+    "level": 5,
+    "topic": "Einkaufen",
+    "mnemoKey": "return_item",
+    "mnemoHint": "RET",
+    "de": "Kann ich das zurückgeben?",
+    "es": "¿Puedo devolver esto?"
+  },
+  {
+    "id": "tl_12f2b42ce0",
+    "level": 5,
+    "topic": "Einkaufen",
+    "mnemoKey": "open_hours",
+    "mnemoHint": "TIME",
+    "de": "Bis wann sind Sie geöffnet?",
+    "es": "¿Hasta qué hora están abiertos?"
+  },
+  {
+    "id": "tl_e2dfc728ad",
+    "level": 6,
+    "topic": "Einkaufen",
+    "mnemoKey": "gift_search",
+    "mnemoHint": "GIFT",
+    "de": "Ich suche ein Geschenk.",
+    "es": "Busco un regalo."
+  },
+  {
+    "id": "tl_6e06d951be",
+    "level": 6,
+    "topic": "Einkaufen",
+    "mnemoKey": "fresh_fruit",
+    "mnemoHint": "FRUT",
+    "de": "Haben Sie frisches Obst?",
+    "es": "¿Tiene fruta fresca?"
+  },
+  {
+    "id": "tl_a1cfc28a8e",
+    "level": 7,
+    "topic": "Einkaufen",
+    "mnemoKey": "half_kilo",
+    "mnemoHint": "0.5K",
+    "de": "Bitte ein halbes Kilo davon.",
+    "es": "Medio kilo de eso, por favor."
+  },
+  {
+    "id": "tl_201e2b3bbe",
+    "level": 7,
+    "topic": "Einkaufen",
+    "mnemoKey": "price_per_kilo",
+    "mnemoHint": "€/KG",
+    "de": "Wie viel kostet es pro Kilo?",
+    "es": "¿Cuánto cuesta por kilo?"
+  },
+  {
+    "id": "tl_2ee8a8999a",
+    "level": 8,
+    "topic": "Einkaufen",
+    "mnemoKey": "where_checkout",
+    "mnemoHint": "PAY",
+    "de": "Wo ist die Kasse?",
+    "es": "¿Dónde está la caja?"
+  },
+  {
+    "id": "tl_d9a3100ccf",
+    "level": 0,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "reservation_name",
+    "mnemoHint": "RES",
+    "de": "Ich habe eine Reservierung auf den Namen Meyer.",
+    "es": "Tengo una reserva a nombre de Meyer."
+  },
+  {
+    "id": "tl_7feb138e3c",
+    "level": 0,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "wifi_room",
+    "mnemoHint": "WIFI",
+    "de": "Gibt es WLAN im Zimmer?",
+    "es": "¿Hay Wi‑Fi en la habitación?"
+  },
+  {
+    "id": "tl_dfa09a6d77",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "room_cold",
+    "mnemoHint": "COLD",
+    "de": "Das Zimmer ist zu kalt.",
+    "es": "La habitación está demasiado fría."
+  },
+  {
+    "id": "tl_36b4c9e8b9",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "order_taxi",
+    "mnemoHint": "TAXI",
+    "de": "Können Sie ein Taxi bestellen?",
+    "es": "¿Puede pedir un taxi?"
+  },
+  {
+    "id": "tl_b57e5449d1",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "stay_three",
+    "mnemoHint": "3N",
+    "de": "Ich bleibe drei Nächte.",
+    "es": "Me quedo tres noches."
+  },
+  {
+    "id": "tl_26ecce982e",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "ticket_nine",
+    "mnemoHint": "9:00",
+    "de": "Ich habe ein Ticket für den Zug um neun.",
+    "es": "Tengo un billete para el tren a las nueve."
+  },
+  {
+    "id": "tl_394dfe64d9",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "flight_delay",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "es": "El vuelo está retrasado."
+  },
+  {
+    "id": "tl_329b48e784",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "baggage_claim",
+    "mnemoHint": "BAG",
+    "de": "Wo ist die Gepäckausgabe?",
+    "es": "¿Dónde está la recogida de equipaje?"
+  },
+  {
+    "id": "tl_955df344c1",
+    "level": 4,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "window_seat",
+    "mnemoHint": "SEAT",
+    "de": "Ich möchte einen Fensterplatz.",
+    "es": "Quisiera un asiento de ventana."
+  },
+  {
+    "id": "tl_11684c5865",
+    "level": 4,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "next_train",
+    "mnemoHint": "NEXT",
+    "de": "Wann fährt der nächste Zug nach Paris?",
+    "es": "¿Cuándo sale el próximo tren a París?"
+  },
+  {
+    "id": "tl_a30ffd67f1",
+    "level": 5,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "ac_broken",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "es": "El aire acondicionado no funciona."
+  },
+  {
+    "id": "tl_14492da937",
+    "level": 5,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "luggage_lost",
+    "mnemoHint": "BAG?",
+    "de": "Mein Gepäck ist verloren gegangen.",
+    "es": "Mi equipaje se ha perdido."
+  },
+  {
+    "id": "tl_f0dc769e79",
+    "level": 6,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "wrong_bill",
+    "mnemoHint": "BILL",
+    "de": "Ich habe die falsche Rechnung bekommen.",
+    "es": "He recibido la factura equivocada."
+  },
+  {
+    "id": "tl_4a2d26553b",
+    "level": 6,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "send_someone",
+    "mnemoHint": "HELP",
+    "de": "Bitte schicken Sie jemanden vorbei.",
+    "es": "Por favor envíe a alguien."
+  },
+  {
+    "id": "tl_c41ae9b5ce",
+    "level": 7,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "internet_slow",
+    "mnemoHint": "NET",
+    "de": "Das Internet ist sehr langsam.",
+    "es": "Internet es muy lento."
+  },
+  {
+    "id": "tl_090e594d28",
+    "level": 7,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "urgent_help",
+    "mnemoHint": "SOS",
+    "de": "Ich brauche sofort Hilfe.",
+    "es": "Necesito ayuda de inmediato."
+  },
+  {
+    "id": "tl_6c51998716",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "have_reservation",
+    "mnemoHint": "BOOK",
+    "de": "Ich habe eine Reservierung.",
+    "es": "Tengo una reserva."
+  },
+  {
+    "id": "tl_ffe9ab46ef",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "room_one_night",
+    "mnemoHint": "1N",
+    "de": "Ich brauche ein Zimmer für eine Nacht.",
+    "es": "Necesito una habitación por una noche."
+  },
+  {
+    "id": "tl_4054c6e6e7",
+    "level": 1,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "breakfast_included",
+    "mnemoHint": "FOOD",
+    "de": "Ist das Frühstück inklusive?",
+    "es": "¿El desayuno está incluido?"
+  },
+  {
+    "id": "tl_df21c037b2",
+    "level": 2,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "late_checkout",
+    "mnemoHint": "LATE",
+    "de": "Kann ich später auschecken?",
+    "es": "¿Puedo salir más tarde?"
+  },
+  {
+    "id": "tl_5a9d864044",
+    "level": 3,
+    "topic": "Hotel & Reise",
+    "mnemoKey": "confirm_booking_written",
+    "mnemoHint": "CONF",
+    "de": "Bitte bestätigen Sie meine Buchung schriftlich.",
+    "es": "Confirme mi reserva por escrito, por favor."
+  },
+  {
+    "id": "tl_e1f8d25f6b",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "headache",
+    "mnemoHint": "MED",
+    "de": "Ich habe Kopfschmerzen.",
+    "es": "Tengo dolor de cabeza."
+  },
+  {
+    "id": "tl_404e418eed",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "dizzy",
+    "mnemoHint": "DIZ",
+    "de": "Mir ist schwindelig.",
+    "es": "Me siento mareado/a."
+  },
+  {
+    "id": "tl_5c8e2bcb5a",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "fever_meds",
+    "mnemoHint": "TEMP",
+    "de": "Haben Sie etwas gegen Fieber?",
+    "es": "¿Tiene algo para la fiebre?"
+  },
+  {
+    "id": "tl_5c408f8fd1",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "need_doctor",
+    "mnemoHint": "DR",
+    "de": "Ich brauche einen Arzt.",
+    "es": "Necesito un médico."
+  },
+  {
+    "id": "tl_94c9f5c69c",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "hurt_self",
+    "mnemoHint": "CUT",
+    "de": "Ich habe mich verletzt.",
+    "es": "Me he herido."
+  },
+  {
+    "id": "tl_78dce8f483",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "nearest_pharmacy",
+    "mnemoHint": "RX",
+    "de": "Wo ist die nächste Apotheke?",
+    "es": "¿Dónde está la farmacia más cercana?"
+  },
+  {
+    "id": "tl_a15090a3aa",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "penicillin_allergy",
+    "mnemoHint": "PEN",
+    "de": "Ich habe eine Allergie gegen Penicillin.",
+    "es": "Soy alérgico/a a la penicilina."
+  },
+  {
+    "id": "tl_a3f333b4b9",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "painkillers",
+    "mnemoHint": "MED",
+    "de": "Ich brauche Schmerzmittel.",
+    "es": "Necesito analgésicos."
+  },
+  {
+    "id": "tl_5b470af44b",
+    "level": 4,
+    "topic": "Notfall",
+    "mnemoKey": "fever_since_yesterday",
+    "mnemoHint": "24h",
+    "de": "Ich habe Fieber seit gestern.",
+    "es": "Tengo fiebre desde ayer."
+  },
+  {
+    "id": "tl_eed40be93c",
+    "level": 4,
+    "topic": "Notfall",
+    "mnemoKey": "appointment",
+    "mnemoHint": "APT",
+    "de": "Kann ich einen Termin bekommen?",
+    "es": "¿Puedo conseguir una cita?"
+  },
+  {
+    "id": "tl_0c5e46fc88",
+    "level": 5,
+    "topic": "Notfall",
+    "mnemoKey": "luggage_lost_sos",
+    "mnemoHint": "BAG",
+    "de": "Mein Gepäck ist verloren gegangen.",
+    "es": "Mi equipaje se ha perdido."
+  },
+  {
+    "id": "tl_31ed19ad15",
+    "level": 5,
+    "topic": "Notfall",
+    "mnemoKey": "ac_not_working",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "es": "El aire acondicionado no funciona."
+  },
+  {
+    "id": "tl_fbeffa6cf8",
+    "level": 6,
+    "topic": "Notfall",
+    "mnemoKey": "send_someone_now",
+    "mnemoHint": "CALL",
+    "de": "Bitte schicken Sie jemanden vorbei.",
+    "es": "Por favor envíe a alguien."
+  },
+  {
+    "id": "tl_0a5aaa9721",
+    "level": 6,
+    "topic": "Notfall",
+    "mnemoKey": "keys_lost",
+    "mnemoHint": "KEY",
+    "de": "Ich habe meine Schlüssel verloren.",
+    "es": "Perdí mis llaves."
+  },
+  {
+    "id": "tl_532ef91230",
+    "level": 7,
+    "topic": "Notfall",
+    "mnemoKey": "internet_slow_sos",
+    "mnemoHint": "NET",
+    "de": "Das Internet ist sehr langsam.",
+    "es": "Internet es muy lento."
+  },
+  {
+    "id": "tl_e0ea2301ef",
+    "level": 7,
+    "topic": "Notfall",
+    "mnemoKey": "need_help_now",
+    "mnemoHint": "SOS",
+    "de": "Ich brauche sofort Hilfe.",
+    "es": "Necesito ayuda de inmediato."
+  },
+  {
+    "id": "tl_9a313061b3",
+    "level": 0,
+    "topic": "Notfall",
+    "mnemoKey": "help_short",
+    "mnemoHint": "SOS",
+    "de": "Hilfe!",
+    "es": "¡Ayuda!"
+  },
+  {
+    "id": "tl_4d0c450d4c",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "can_you_help",
+    "mnemoHint": "ASK",
+    "de": "Können Sie mir helfen?",
+    "es": "¿Puede ayudarme?"
+  },
+  {
+    "id": "tl_b65bcd1bae",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "call_ambulance",
+    "mnemoHint": "AMB",
+    "de": "Bitte rufen Sie einen Krankenwagen.",
+    "es": "Llame a una ambulancia, por favor."
+  },
+  {
+    "id": "tl_2428082fca",
+    "level": 1,
+    "topic": "Notfall",
+    "mnemoKey": "where_exit",
+    "mnemoHint": "EXIT",
+    "de": "Wo ist der Notausgang?",
+    "es": "¿Dónde está la salida de emergencia?"
+  },
+  {
+    "id": "tl_8aed640d1b",
+    "level": 2,
+    "topic": "Notfall",
+    "mnemoKey": "hospital_address",
+    "mnemoHint": "ADDR",
+    "de": "Ich brauche die Adresse des nächsten Krankenhauses.",
+    "es": "Necesito la dirección del hospital más cercano."
+  },
+  {
+    "id": "tl_a0c2ad7c53",
+    "level": 3,
+    "topic": "Notfall",
+    "mnemoKey": "review_emergency_plan",
+    "mnemoHint": "PLAN",
+    "de": "Können wir einen Notfallplan durchgehen?",
+    "es": "¿Podemos revisar un plan de emergencia?"
+  },
+  {
+    "id": "tl_e8799cedba",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "table_for_two",
+    "mnemoHint": "2P",
+    "de": "Haben Sie einen Tisch für zwei?",
+    "es": "¿Tienen una mesa para dos?"
+  },
+  {
+    "id": "tl_f39df31289",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "see_menu",
+    "mnemoHint": "MENU",
+    "de": "Ich möchte die Speisekarte sehen.",
+    "es": "Quisiera ver el menú."
+  },
+  {
+    "id": "tl_37cab4a2ba",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "recommendation",
+    "mnemoHint": "REC",
+    "de": "Können Sie etwas empfehlen?",
+    "es": "¿Puede recomendar algo?"
+  },
+  {
+    "id": "tl_cf56d28af8",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "allergy_nuts",
+    "mnemoHint": "NUT",
+    "de": "Ich bin allergisch gegen Nüsse.",
+    "es": "Soy alérgico/a a los frutos secos."
+  },
+  {
+    "id": "tl_1c0c1f75e6",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "no_meat",
+    "mnemoHint": "VEG",
+    "de": "Ohne Fleisch, bitte.",
+    "es": "Sin carne, por favor."
+  },
+  {
+    "id": "tl_bbd80412ab",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "still_water",
+    "mnemoHint": "H2O",
+    "de": "Ich nehme ein Wasser ohne Kohlensäure.",
+    "es": "Tomaré agua sin gas."
+  },
+  {
+    "id": "tl_ff237dba55",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "bill_please",
+    "mnemoHint": "BILL",
+    "de": "Die Rechnung, bitte.",
+    "es": "La cuenta, por favor."
+  },
+  {
+    "id": "tl_b3b73ac23b",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "keep_change",
+    "mnemoHint": "TIP",
+    "de": "Stimmt so, danke.",
+    "es": "Quédese con el cambio, gracias."
+  },
+  {
+    "id": "tl_03e0877c8e",
+    "level": 4,
+    "topic": "Restaurant",
+    "mnemoKey": "tastes_good",
+    "mnemoHint": "YUM",
+    "de": "Schmeckt sehr gut!",
+    "es": "¡Sabe muy bien!"
+  },
+  {
+    "id": "tl_a09d29edb5",
+    "level": 4,
+    "topic": "Restaurant",
+    "mnemoKey": "spicy_dish",
+    "mnemoHint": "HOT",
+    "de": "Ist das Gericht scharf?",
+    "es": "¿El plato es picante?"
+  },
+  {
+    "id": "tl_99a955e1ff",
+    "level": 5,
+    "topic": "Restaurant",
+    "mnemoKey": "wrong_order",
+    "mnemoHint": "ERR",
+    "de": "Das ist nicht, was ich bestellt habe.",
+    "es": "Esto no es lo que pedí."
+  },
+  {
+    "id": "tl_d601d1fbff",
+    "level": 5,
+    "topic": "Restaurant",
+    "mnemoKey": "soup_starter",
+    "mnemoHint": "SOUP",
+    "de": "Ich hätte gern eine Suppe als Vorspeise.",
+    "es": "Quisiera una sopa de entrada."
+  },
+  {
+    "id": "tl_42eb2bdc61",
+    "level": 6,
+    "topic": "Restaurant",
+    "mnemoKey": "vegetarian_options",
+    "mnemoHint": "VEG?",
+    "de": "Haben Sie vegetarische Optionen?",
+    "es": "¿Tienen opciones vegetarianas?"
+  },
+  {
+    "id": "tl_64f4a98fab",
+    "level": 6,
+    "topic": "Restaurant",
+    "mnemoKey": "change_order",
+    "mnemoHint": "EDIT",
+    "de": "Können wir die Bestellung ändern?",
+    "es": "¿Podemos cambiar el pedido?"
+  },
+  {
+    "id": "tl_40c858fe5d",
+    "level": 7,
+    "topic": "Restaurant",
+    "mnemoKey": "tap_water",
+    "mnemoHint": "H2O",
+    "de": "Kann ich Leitungswasser bekommen?",
+    "es": "¿Puedo tener agua del grifo?"
+  },
+  {
+    "id": "tl_e1583fa02d",
+    "level": 7,
+    "topic": "Restaurant",
+    "mnemoKey": "how_long_wait",
+    "mnemoHint": "TIME",
+    "de": "Wie lange dauert es?",
+    "es": "¿Cuánto tardará?"
+  },
+  {
+    "id": "tl_e650e13fd6",
+    "level": 8,
+    "topic": "Restaurant",
+    "mnemoKey": "reserve_table",
+    "mnemoHint": "BOOK",
+    "de": "Ich möchte einen Tisch reservieren.",
+    "es": "Quisiera reservar una mesa."
+  },
+  {
+    "id": "tl_6c4537f78b",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "coffee_please",
+    "mnemoHint": "COF",
+    "de": "Ein Kaffee, bitte.",
+    "es": "Un café, por favor."
+  },
+  {
+    "id": "tl_2176b07bf7",
+    "level": 0,
+    "topic": "Restaurant",
+    "mnemoKey": "still_water",
+    "mnemoHint": "H2O",
+    "de": "Ein stilles Wasser, bitte.",
+    "es": "Agua sin gas, por favor."
+  },
+  {
+    "id": "tl_6a828e0789",
+    "level": 1,
+    "topic": "Restaurant",
+    "mnemoKey": "seat_free",
+    "mnemoHint": "FREE",
+    "de": "Ist das hier frei?",
+    "es": "¿Está libre este sitio?"
+  },
+  {
+    "id": "tl_aa625ecf1f",
+    "level": 2,
+    "topic": "Restaurant",
+    "mnemoKey": "split_bill",
+    "mnemoHint": "SPLIT",
+    "de": "Können wir die Rechnung aufteilen?",
+    "es": "¿Podemos dividir la cuenta?"
+  },
+  {
+    "id": "tl_1eaea64eb7",
+    "level": 3,
+    "topic": "Restaurant",
+    "mnemoKey": "later_dinner",
+    "mnemoHint": "TIME",
+    "de": "Können wir ein späteres Abendessen vereinbaren?",
+    "es": "¿Podemos acordar una cena más tarde?"
+  },
+  {
+    "id": "tl_5ed6962cd9",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_000",
+    "mnemoHint": "L0",
+    "de": "Hi, ich bin neu hier.",
+    "es": "Hola, soy nuevo aquí."
+  },
+  {
+    "id": "tl_c47537f6b0",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_001",
+    "mnemoHint": "L0",
+    "de": "Schön, dich zu sehen.",
+    "es": "Qué bueno verte."
+  },
+  {
+    "id": "tl_f91f3c0121",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_002",
+    "mnemoHint": "L0",
+    "de": "Freut mich, Sie kennenzulernen.",
+    "es": "Encantado de conocerle."
+  },
+  {
+    "id": "tl_2259ca9dd3",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_003",
+    "mnemoHint": "L0",
+    "de": "Alles okay?",
+    "es": "¿Todo bien?"
+  },
+  {
+    "id": "tl_1f921ac58a",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_004",
+    "mnemoHint": "L0",
+    "de": "Alles bestens, danke.",
+    "es": "Todo bien, gracias."
+  },
+  {
+    "id": "tl_7735c77fb2",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_005",
+    "mnemoHint": "L0",
+    "de": "Nur ein Moment, bitte.",
+    "es": "Un momento, por favor."
+  },
+  {
+    "id": "tl_888f4a5eb5",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_006",
+    "mnemoHint": "L0",
+    "de": "Bitte noch einmal.",
+    "es": "Otra vez, por favor."
+  },
+  {
+    "id": "tl_2a9b286e3f",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_007",
+    "mnemoHint": "L0",
+    "de": "Können Sie das bitte langsamer sagen?",
+    "es": "¿Puede hablar más despacio?"
+  },
+  {
+    "id": "tl_59847880fb",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_008",
+    "mnemoHint": "L0",
+    "de": "Können Sie das wiederholen?",
+    "es": "¿Puede repetirlo?"
+  },
+  {
+    "id": "tl_cfb3d3488e",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_009",
+    "mnemoHint": "L0",
+    "de": "Ich verstehe nicht.",
+    "es": "No entiendo."
+  },
+  {
+    "id": "tl_1ecfb83252",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_010",
+    "mnemoHint": "L0",
+    "de": "Ich verstehe nur ein bisschen.",
+    "es": "Entiendo solo un poco."
+  },
+  {
+    "id": "tl_435a71efb0",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_011",
+    "mnemoHint": "L0",
+    "de": "Sprechen Sie Englisch?",
+    "es": "¿Habla inglés?"
+  },
+  {
+    "id": "tl_b3eb7b8a48",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_012",
+    "mnemoHint": "L0",
+    "de": "Sprechen Sie Deutsch?",
+    "es": "¿Habla alemán?"
+  },
+  {
+    "id": "tl_3cce6d618c",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_013",
+    "mnemoHint": "L0",
+    "de": "Mein Name ist Alex.",
+    "es": "Me llamo Alex."
+  },
+  {
+    "id": "tl_a8871d321d",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_014",
+    "mnemoHint": "L0",
+    "de": "Ich bin hier im Urlaub.",
+    "es": "Estoy aquí de vacaciones."
+  },
+  {
+    "id": "tl_be11e5f889",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_015",
+    "mnemoHint": "L0",
+    "de": "Ich bin geschäftlich hier.",
+    "es": "Estoy aquí por trabajo."
+  },
+  {
+    "id": "tl_dff8f25380",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_016",
+    "mnemoHint": "L0",
+    "de": "Ich komme aus Spanien.",
+    "es": "Soy de España."
+  },
+  {
+    "id": "tl_7a062c5654",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_017",
+    "mnemoHint": "L0",
+    "de": "Ich lerne Deutsch.",
+    "es": "Estoy aprendiendo alemán."
+  },
+  {
+    "id": "tl_71d0bd7d82",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_018",
+    "mnemoHint": "L0",
+    "de": "Ich bin Student.",
+    "es": "Soy estudiante."
+  },
+  {
+    "id": "tl_9cd358a717",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_019",
+    "mnemoHint": "L0",
+    "de": "Ich reise allein.",
+    "es": "Viajo solo."
+  },
+  {
+    "id": "tl_db139880bf",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_020",
+    "mnemoHint": "L0",
+    "de": "Ich habe mich verlaufen.",
+    "es": "Me he perdido."
+  },
+  {
+    "id": "tl_7f2c9bac0f",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_021",
+    "mnemoHint": "L0",
+    "de": "Wo ist die Toilette?",
+    "es": "¿Dónde está el baño?"
+  },
+  {
+    "id": "tl_bfa3841fba",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_022",
+    "mnemoHint": "L0",
+    "de": "Wo ist der Ausgang?",
+    "es": "¿Dónde está la salida?"
+  },
+  {
+    "id": "tl_4907008cd5",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_023",
+    "mnemoHint": "L0",
+    "de": "Wo ist der Bahnhof?",
+    "es": "¿Dónde está la estación?"
+  },
+  {
+    "id": "tl_f3e1085937",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_024",
+    "mnemoHint": "L0",
+    "de": "Geradeaus, bitte.",
+    "es": "Todo recto, por favor."
+  },
+  {
+    "id": "tl_71a3b70860",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_025",
+    "mnemoHint": "L0",
+    "de": "Nach links, bitte.",
+    "es": "A la izquierda, por favor."
+  },
+  {
+    "id": "tl_6278d8bcb7",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_026",
+    "mnemoHint": "L0",
+    "de": "Nach rechts, bitte.",
+    "es": "A la derecha, por favor."
+  },
+  {
+    "id": "tl_1635337f97",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_027",
+    "mnemoHint": "L0",
+    "de": "Hier entlang, bitte.",
+    "es": "Por aquí, por favor."
+  },
+  {
+    "id": "tl_23cd41363c",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_028",
+    "mnemoHint": "L0",
+    "de": "Bis später!",
+    "es": "¡Hasta luego!"
+  },
+  {
+    "id": "tl_5fe94f7c6c",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_029",
+    "mnemoHint": "L0",
+    "de": "Bis bald!",
+    "es": "¡Hasta pronto!"
+  },
+  {
+    "id": "tl_59465636b5",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_030",
+    "mnemoHint": "L0",
+    "de": "Ich habe Hunger.",
+    "es": "Tengo hambre."
+  },
+  {
+    "id": "tl_e82e5ddfae",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_031",
+    "mnemoHint": "L0",
+    "de": "Ich habe Durst.",
+    "es": "Tengo sed."
+  },
+  {
+    "id": "tl_6a45a15308",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_032",
+    "mnemoHint": "L0",
+    "de": "Wasser, bitte.",
+    "es": "Agua, por favor."
+  },
+  {
+    "id": "tl_ee850f2edd",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_033",
+    "mnemoHint": "L0",
+    "de": "Die Rechnung, bitte.",
+    "es": "La cuenta, por favor."
+  },
+  {
+    "id": "tl_873229f641",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_034",
+    "mnemoHint": "L0",
+    "de": "Entschuldigung, ich suche den Bus.",
+    "es": "Perdone, busco el autobús."
+  },
+  {
+    "id": "tl_b030c35594",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_035",
+    "mnemoHint": "L0",
+    "de": "Hilfe, bitte.",
+    "es": "¡Ayuda, por favor!"
+  },
+  {
+    "id": "tl_8060524ef2",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_036",
+    "mnemoHint": "L0",
+    "de": "Rufen Sie bitte die Polizei.",
+    "es": "Llame a la policía, por favor."
+  },
+  {
+    "id": "tl_55c7a6cae0",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_037",
+    "mnemoHint": "L0",
+    "de": "Rufen Sie bitte einen Arzt.",
+    "es": "Llame a un médico, por favor."
+  },
+  {
+    "id": "tl_f9522f862e",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_038",
+    "mnemoHint": "L0",
+    "de": "Mir ist kalt.",
+    "es": "Tengo frío."
+  },
+  {
+    "id": "tl_78d95775f1",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_039",
+    "mnemoHint": "L0",
+    "de": "Mir ist warm.",
+    "es": "Tengo calor."
+  },
+  {
+    "id": "tl_15a64b3793",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_040",
+    "mnemoHint": "L0",
+    "de": "Mir ist schlecht.",
+    "es": "Me siento mal."
+  },
+  {
+    "id": "tl_30011f246a",
+    "level": 0,
+    "topic": "Survival Plus",
+    "mnemoKey": "l0_basic_041",
+    "mnemoHint": "L0",
+    "de": "Ich bin gleich zurück.",
+    "es": "Vuelvo enseguida."
+  },
+  {
+    "id": "tl_b8320aea04",
+    "level": 0,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "buy_sim",
+    "mnemoHint": "SIM",
+    "de": "Ich möchte eine SIM-Karte kaufen.",
+    "es": "Quisiera comprar una tarjeta SIM."
+  },
+  {
+    "id": "tl_aa27f1759a",
+    "level": 0,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "data_plan",
+    "mnemoHint": "DATA",
+    "de": "Ich brauche einen Datentarif mit 5 GB.",
+    "es": "Necesito un plan de datos de 5 GB."
+  },
+  {
+    "id": "tl_c6a69d9bc3",
+    "level": 1,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "top_up",
+    "mnemoHint": "TOP",
+    "de": "Wie kann ich Guthaben aufladen?",
+    "es": "¿Cómo recargo saldo?"
+  },
+  {
+    "id": "tl_996e08a7c9",
+    "level": 1,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "wifi_password",
+    "mnemoHint": "PWD",
+    "de": "Wie lautet das WLAN-Passwort?",
+    "es": "¿Cuál es la contraseña del Wi‑Fi?"
+  },
+  {
+    "id": "tl_dd73d2684f",
+    "level": 2,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "wifi_down",
+    "mnemoHint": "X",
+    "de": "Das WLAN funktioniert nicht.",
+    "es": "El Wi‑Fi no funciona."
+  },
+  {
+    "id": "tl_d905510903",
+    "level": 2,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "restart_router",
+    "mnemoHint": "RST",
+    "de": "Können Sie den Router neu starten?",
+    "es": "¿Puede reiniciar el router?"
+  },
+  {
+    "id": "tl_1833fc7c6c",
+    "level": 3,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "no_signal",
+    "mnemoHint": "0%",
+    "de": "Ich habe kein Netz.",
+    "es": "No tengo cobertura."
+  },
+  {
+    "id": "tl_a5e2db1a21",
+    "level": 3,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "data_not_working",
+    "mnemoHint": "4G?",
+    "de": "Mobile Daten funktionieren nicht.",
+    "es": "Los datos móviles no funcionan."
+  },
+  {
+    "id": "tl_46ed109d4d",
+    "level": 4,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "call_international",
+    "mnemoHint": "+",
+    "de": "Wie rufe ich international an?",
+    "es": "¿Cómo hago una llamada internacional?"
+  },
+  {
+    "id": "tl_7217f605e4",
+    "level": 4,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "hotspot",
+    "mnemoHint": "HOT",
+    "de": "Kann ich einen Hotspot teilen?",
+    "es": "¿Puedo compartir un hotspot?"
+  },
+  {
+    "id": "tl_9a4f8c5a05",
+    "level": 5,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "esim",
+    "mnemoHint": "ESIM",
+    "de": "Unterstützen Sie eSIM?",
+    "es": "¿Ofrecen eSIM?"
+  },
+  {
+    "id": "tl_db815dfc26",
+    "level": 5,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "support_contact",
+    "mnemoHint": "HELP",
+    "de": "Haben Sie eine Support-Hotline?",
+    "es": "¿Tienen una línea de soporte?"
+  },
+  {
+    "id": "tl_aaa7eb07fa",
+    "level": 6,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "slow_internet",
+    "mnemoHint": "SLOW",
+    "de": "Das Internet ist sehr langsam.",
+    "es": "Internet es muy lento."
+  },
+  {
+    "id": "tl_66fa0804fa",
+    "level": 6,
+    "topic": "Telefon & Internet",
+    "mnemoKey": "voicemail",
+    "mnemoHint": "VM",
+    "de": "Wie richte ich die Mailbox ein?",
+    "es": "¿Cómo configuro el buzón de voz?"
+  },
+  {
+    "id": "tl_c64830c9a7",
+    "level": 0,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "room_dirty",
+    "mnemoHint": "CLEAN",
+    "de": "Das Zimmer ist nicht sauber.",
+    "es": "La habitación no está limpia."
+  },
+  {
+    "id": "tl_0f5328deea",
+    "level": 0,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "no_hot_water",
+    "mnemoHint": "H2O",
+    "de": "Es gibt kein warmes Wasser.",
+    "es": "No hay agua caliente."
+  },
+  {
+    "id": "tl_a9b9953d6c",
+    "level": 1,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "ac_broken_room",
+    "mnemoHint": "AC",
+    "de": "Die Klimaanlage funktioniert nicht.",
+    "es": "El aire acondicionado no funciona."
+  },
+  {
+    "id": "tl_bb103bfabc",
+    "level": 1,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "heater",
+    "mnemoHint": "HEAT",
+    "de": "Die Heizung funktioniert nicht.",
+    "es": "La calefacción no funciona."
+  },
+  {
+    "id": "tl_1a25da2c22",
+    "level": 2,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "too_noisy",
+    "mnemoHint": "NOISE",
+    "de": "Es ist zu laut im Zimmer.",
+    "es": "Hay demasiado ruido en la habitación."
+  },
+  {
+    "id": "tl_f567f5c758",
+    "level": 2,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "need_pillow",
+    "mnemoHint": "PILLOW",
+    "de": "Ich brauche ein zusätzliches Kissen.",
+    "es": "Necesito una almohada extra."
+  },
+  {
+    "id": "tl_8e2d731d7a",
+    "level": 3,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "change_room",
+    "mnemoHint": "MOVE",
+    "de": "Kann ich das Zimmer wechseln?",
+    "es": "¿Puedo cambiar de habitación?"
+  },
+  {
+    "id": "tl_f748d9bc38",
+    "level": 3,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "key_not_working",
+    "mnemoHint": "KEY",
+    "de": "Die Schlüsselkarte funktioniert nicht.",
+    "es": "La tarjeta llave no funciona."
+  },
+  {
+    "id": "tl_ce668527ed",
+    "level": 4,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "water_leak",
+    "mnemoHint": "LEAK",
+    "de": "Es gibt ein Leck im Bad.",
+    "es": "Hay una fuga en el baño."
+  },
+  {
+    "id": "tl_b96900f1fe",
+    "level": 4,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "window_not_close",
+    "mnemoHint": "LOCK",
+    "de": "Das Fenster lässt sich nicht schließen.",
+    "es": "La ventana no se cierra."
+  },
+  {
+    "id": "tl_3cc3e6d7c6",
+    "level": 5,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "refund_night",
+    "mnemoHint": "REF",
+    "de": "Ich möchte die letzte Nacht erstattet bekommen.",
+    "es": "Quiero un reembolso por la última noche."
+  },
+  {
+    "id": "tl_4f22d1f0fd",
+    "level": 5,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "insects",
+    "mnemoHint": "BUG",
+    "de": "Es sind Insekten im Zimmer.",
+    "es": "Hay insectos en la habitación."
+  },
+  {
+    "id": "tl_153913f96d",
+    "level": 6,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "safe_locked",
+    "mnemoHint": "SAFE",
+    "de": "Der Safe ist blockiert.",
+    "es": "La caja fuerte está bloqueada."
+  },
+  {
+    "id": "tl_4721608906",
+    "level": 6,
+    "topic": "Unterkunft: Probleme",
+    "mnemoKey": "more_towels",
+    "mnemoHint": "TOWEL",
+    "de": "Kann ich mehr Handtücher bekommen?",
+    "es": "¿Puedo recibir más toallas?"
+  },
+  {
+    "id": "tl_f2d5ec77bb",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "where_station",
+    "mnemoHint": "S+?",
+    "de": "Wo ist der Bahnhof?",
+    "es": "¿Dónde está la estación?"
+  },
+  {
+    "id": "tl_a149157ef3",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "go_straight",
+    "mnemoHint": "→",
+    "de": "Gehen Sie bitte geradeaus.",
+    "es": "Vaya todo recto, por favor."
+  },
+  {
+    "id": "tl_3cbe58d2db",
+    "level": 1,
+    "topic": "Unterwegs",
+    "mnemoKey": "turn_left",
+    "mnemoHint": "←",
+    "de": "Biegen Sie links ab.",
+    "es": "Gire a la izquierda."
+  },
+  {
+    "id": "tl_04acd83ae9",
+    "level": 1,
+    "topic": "Unterwegs",
+    "mnemoKey": "nearby",
+    "mnemoHint": "NEAR",
+    "de": "Es ist in der Nähe.",
+    "es": "Está cerca."
+  },
+  {
+    "id": "tl_cd175a43d5",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "to_center",
+    "mnemoHint": "CTR",
+    "de": "Wie komme ich zum Zentrum?",
+    "es": "¿Cómo llego al centro?"
+  },
+  {
+    "id": "tl_b5f10d3607",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "metro_here",
+    "mnemoHint": "U",
+    "de": "Gibt es eine U-Bahn hier?",
+    "es": "¿Hay metro aquí?"
+  },
+  {
+    "id": "tl_aef4796331",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "street_closed",
+    "mnemoHint": "X",
+    "de": "Die Straße ist gesperrt.",
+    "es": "La calle está cortada."
+  },
+  {
+    "id": "tl_68a98240da",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_number",
+    "mnemoHint": "BUS",
+    "de": "Nehmen Sie den Bus Nummer zehn.",
+    "es": "Tome el autobús número diez."
+  },
+  {
+    "id": "tl_8ed1da85c3",
+    "level": 4,
+    "topic": "Unterwegs",
+    "mnemoKey": "stop_over_there",
+    "mnemoHint": "STOP",
+    "de": "Die Haltestelle ist dort drüben.",
+    "es": "La parada está allí."
+  },
+  {
+    "id": "tl_9ff5f68cb5",
+    "level": 4,
+    "topic": "Unterwegs",
+    "mnemoKey": "ticket_ahead",
+    "mnemoHint": "TIX",
+    "de": "Brauche ich ein Ticket vorher?",
+    "es": "¿Necesito un billete por adelantado?"
+  },
+  {
+    "id": "tl_d200f31cdf",
+    "level": 5,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_ten_minutes",
+    "mnemoHint": "10m",
+    "de": "Der Bus kommt in zehn Minuten.",
+    "es": "El autobús llega en diez minutos."
+  },
+  {
+    "id": "tl_a0563c5e62",
+    "level": 5,
+    "topic": "Unterwegs",
+    "mnemoKey": "time_now",
+    "mnemoHint": "TIME",
+    "de": "Wie spät ist es jetzt?",
+    "es": "¿Qué hora es ahora?"
+  },
+  {
+    "id": "tl_97db2f5243",
+    "level": 6,
+    "topic": "Unterwegs",
+    "mnemoKey": "help_quick",
+    "mnemoHint": "HELP",
+    "de": "Kannst du mir kurz helfen?",
+    "es": "¿Puedes ayudarme un momento?"
+  },
+  {
+    "id": "tl_f15013379e",
+    "level": 6,
+    "topic": "Unterwegs",
+    "mnemoKey": "next_train_topic",
+    "mnemoHint": "NEXT",
+    "de": "Wann fährt der nächste Zug nach Paris?",
+    "es": "¿Cuándo sale el próximo tren a París?"
+  },
+  {
+    "id": "tl_1856072ba0",
+    "level": 7,
+    "topic": "Unterwegs",
+    "mnemoKey": "flight_delay_trip",
+    "mnemoHint": "ETA",
+    "de": "Der Flug hat Verspätung.",
+    "es": "El vuelo está retrasado."
+  },
+  {
+    "id": "tl_9079ff9c79",
+    "level": 7,
+    "topic": "Unterwegs",
+    "mnemoKey": "baggage_claim_trip",
+    "mnemoHint": "BAG",
+    "de": "Wo ist die Gepäckausgabe?",
+    "es": "¿Dónde está la recogida de equipaje?"
+  },
+  {
+    "id": "tl_f9a50812ec",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "bus_stop_where",
+    "mnemoHint": "BUS",
+    "de": "Wo ist die Bushaltestelle?",
+    "es": "¿Dónde está la parada de autobús?"
+  },
+  {
+    "id": "tl_b788d2feee",
+    "level": 0,
+    "topic": "Unterwegs",
+    "mnemoKey": "city_center_where",
+    "mnemoHint": "CITY",
+    "de": "Wo ist das Stadtzentrum?",
+    "es": "¿Dónde está el centro?"
+  },
+  {
+    "id": "tl_24f7d883d8",
+    "level": 2,
+    "topic": "Unterwegs",
+    "mnemoKey": "quiet_route",
+    "mnemoHint": "CALM",
+    "de": "Können Sie mir eine ruhige Route empfehlen?",
+    "es": "¿Puede sugerirme una ruta tranquila?"
+  },
+  {
+    "id": "tl_9ccb33b391",
+    "level": 3,
+    "topic": "Unterwegs",
+    "mnemoKey": "no_transfers_route",
+    "mnemoHint": "DIRECT",
+    "de": "Können Sie mir eine Route ohne Umstiege planen?",
+    "es": "¿Puede planearme una ruta sin transbordos?"
+  },
+  {
+    "id": "tl_58cbef62f2",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "car_broken",
+    "mnemoHint": "STOP",
+    "de": "Mein Auto ist liegengeblieben.",
+    "es": "Mi coche se averió."
+  },
+  {
+    "id": "tl_3531aa2d40",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_tow",
+    "mnemoHint": "TOW",
+    "de": "Ich brauche einen Abschleppdienst.",
+    "es": "Necesito una grúa."
+  },
+  {
+    "id": "tl_ddbe917a22",
+    "level": 1,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "flat_tire",
+    "mnemoHint": "TIRE",
+    "de": "Ich habe einen platten Reifen.",
+    "es": "Tengo un neumático pinchado."
+  },
+  {
+    "id": "tl_4c236e5894",
+    "level": 1,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "no_fuel",
+    "mnemoHint": "0%",
+    "de": "Ich habe keinen Kraftstoff mehr.",
+    "es": "Me quedé sin combustible."
+  },
+  {
+    "id": "tl_81b7bc9ff6",
+    "level": 2,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_gas",
+    "mnemoHint": "FUEL",
+    "de": "Wo ist die nächste Tankstelle?",
+    "es": "¿Dónde está la gasolinera más cercana?"
+  },
+  {
+    "id": "tl_bf711e9909",
+    "level": 2,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "battery_dead",
+    "mnemoHint": "BAT",
+    "de": "Die Batterie ist leer.",
+    "es": "La batería está descargada."
+  },
+  {
+    "id": "tl_63991d2557",
+    "level": 3,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "accident_police",
+    "mnemoHint": "911",
+    "de": "Es gab einen Unfall, bitte rufen Sie die Polizei.",
+    "es": "Hubo un accidente, por favor llame a la policía."
+  },
+  {
+    "id": "tl_5cee1c15ca",
+    "level": 3,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "insurance_papers",
+    "mnemoHint": "DOC",
+    "de": "Hier sind meine Versicherungsunterlagen.",
+    "es": "Aquí están mis papeles del seguro."
+  },
+  {
+    "id": "tl_b448d65670",
+    "level": 4,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "need_mechanic",
+    "mnemoHint": "FIX",
+    "de": "Können Sie einen Mechaniker schicken?",
+    "es": "¿Puede enviar a un mecánico?"
+  },
+  {
+    "id": "tl_efcabbeb94",
+    "level": 4,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "rental_car",
+    "mnemoHint": "RENT",
+    "de": "Kann ich ein Ersatzfahrzeug mieten?",
+    "es": "¿Puedo alquilar un coche de sustitución?"
+  },
+  {
+    "id": "tl_44b116e77d",
+    "level": 5,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "show_license",
+    "mnemoHint": "ID",
+    "de": "Hier ist mein Führerschein.",
+    "es": "Aquí está mi carnet de conducir."
+  },
+  {
+    "id": "tl_3e2123eff4",
+    "level": 5,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "hazard_lights",
+    "mnemoHint": "⚠",
+    "de": "Schalten Sie die Warnblinkanlage ein.",
+    "es": "Encienda las luces de emergencia."
+  },
+  {
+    "id": "tl_829a5ac0e9",
+    "level": 6,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "wait_time",
+    "mnemoHint": "ETA",
+    "de": "Wie lange dauert es, bis Hilfe kommt?",
+    "es": "¿Cuánto tardará en llegar la ayuda?"
+  },
+  {
+    "id": "tl_ba37ddd372",
+    "level": 6,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "traffic_jam",
+    "mnemoHint": "JAM",
+    "de": "Es gibt einen Stau vor uns.",
+    "es": "Hay un atasco delante."
+  },
+  {
+    "id": "tl_8d602a97ed",
+    "level": 7,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "road_closed",
+    "mnemoHint": "X",
+    "de": "Die Straße ist gesperrt, gibt es eine Umleitung?",
+    "es": "La carretera está cerrada, ¿hay un desvío?"
+  },
+  {
+    "id": "tl_530c440723",
+    "level": 0,
+    "topic": "Verkehr & Auto",
+    "mnemoKey": "car_broken",
+    "mnemoHint": "STOP",
+    "de": "Mein Auto ist kaputt.",
+    "es": "Mi coche está averiado."
+  }
+]
