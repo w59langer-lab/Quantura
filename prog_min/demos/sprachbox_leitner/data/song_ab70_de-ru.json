@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "type": "song",
+    "id": "song_ab70_de_ru",
+    "title": "Ab 70 blühe ich auf",
+    "artist": "TiGi Melody",
+    "from": "de",
+    "to": "ru"
+  },
+  "cards": [
+    {
+      "front": "Mit 20 wollte ich hoch hinaus, mit 30 baute ich ein Haus",
+      "back": "В 20 я хотела взлететь высоко, в 30 построила дом"
+    },
+    {
+      "front": "Mit 40 war ich voll im Trott, mit 50 dachte ich, war das flott",
+      "back": "В 40 я была в рутине, в 50 подумала: как быстро всё прошло"
+    },
+    {
+      "front": "Mit 60 kam ein neuer Schwung, doch heute fühle ich mich erst jung",
+      "back": "В 60 пришёл новый подъём, но по-настоящему молодой я чувствую себя только сейчас"
+    },
+    {
+      "front": "Denn was ich jetzt im Spiegel seh, sagt mir, ich sag dem Alter Juch he",
+      "back": "Потому что то, что я вижу сейчас в зеркале, говорит мне: возрасту — ура!"
+    },
+    {
+      "front": "Ab 70 blühe ich richtig auf, nehm jeden Umweg gern in Kauf",
+      "back": "После 70 я действительно расцветаю и с радостью принимаю любые обходные пути"
+    },
+    {
+      "front": "Ich tanze barfuß durch den Regen und folge meinem eigenen Segen",
+      "back": "Я танцую босиком под дождём и следую своему собственному благословению (своему пути)"
+    },
+    {
+      "front": "Ab 70 wird das Herz ganz weit, ich leb in bunter Leichtigkeit",
+      "back": "После 70 сердце становится широко открытым, я живу ярко и легко"
+    },
+    {
+      "front": "Die Welt ist schön und ich bin's auch, mit Faltencharme und Lebenshauch",
+      "back": "Мир прекрасен — и я тоже: с очарованием морщинок и дыханием жизни"
+    },
+    {
+      "front": "Ich lern noch Sprachen, spiel Klavier und manchmal tanzt ein Glas mit mir",
+      "back": "Я всё ещё учу языки, играю на пианино, и иногда бокал будто танцует со мной"
+    },
+    {
+      "front": "Ich träum nicht mehr von irgendwann, denn heute fängt mein Morgen an",
+      "back": "Я больше не мечтаю о «когда-нибудь», ведь моё завтра начинается сегодня"
+    },
+    {
+      "front": "Ich brauch kein Tempo, keinen Plan, denn ich komm überall gut an",
+      "back": "Мне не нужен темп и план — я и так везде прихожу хорошо"
+    },
+    {
+      "front": "Und wer mich fragt, wie machst du das, dem sag ich lächelnd, einfach Spaß",
+      "back": "А кто спрашивает, как мне это удаётся — я улыбаюсь и говорю: просто удовольствие"
+    }
+  ]
+}

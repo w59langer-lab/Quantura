@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Videos · Prog_Min</title>
+  <link rel="stylesheet" href="../assets/css/portfolio.css">
+  <style>
+    body{background:var(--bg);color:var(--text);}
+    .wrapper{max-width:1100px;margin:0 auto;padding:28px 20px 40px;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
+    video{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.08);background:#0f172a;}
+    .pill.tiny{font-size:0.8rem;padding:4px 8px;}
+  </style>
+</head>
+<body>
+  <header class="wrapper">
+    <div class="hero-card" style="padding:20px;">
+      <p class="pill">Videos</p>
+      <h1>Unterricht & Experimente</h1>
+      <p>Lokale MP4-Videos aus <code>media/videos/</code>. Läuft offline im Browser.</p>
+      <a class="btn" href="../index.html">Zurück zur Portfolio-Startseite</a>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section aria-label="Physik und Technik" class="cards">
+      <article class="card">
+        <div class="pill tiny">MP4</div>
+        <h3>Multivibrator</h3>
+        <p>Elektronik-Demo: astabiler Multivibrator / Rechteckgenerator.</p>
+        <video controls preload="metadata" poster="../assets/img/thumbs/video_placeholder.svg">
+          <source src="../media/videos/multivibrator.mp4" type="video/mp4">
+          Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+        <div class="actions">
+          <a class="btn" href="../media/videos/multivibrator.mp4" download>Download</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="pill tiny">MP4</div>
+        <h3>Selbstgebauter Elektroklingel</h3>
+        <p>Physik-Experiment: selbstgebaute elektrische Klingel.</p>
+        <video controls preload="metadata" poster="../assets/img/thumbs/video_placeholder.svg">
+          <source src="../media/videos/selbsgebauter_elektroklingel.mp4" type="video/mp4">
+          Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+        <div class="actions">
+          <a class="btn" href="../media/videos/selbsgebauter_elektroklingel.mp4" download>Download</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="pill tiny">MP4</div>
+        <h3>Kätzchen Yoda – Roboter (Arduino)</h3>
+        <p>Kurzclip mit Yoda/Arduino-Setup.</p>
+        <video controls preload="metadata" poster="../assets/img/thumbs/video_placeholder.svg">
+          <source src="../media/videos/yoda_roboter.mp4" type="video/mp4">
+          Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+        <div class="actions">
+          <a class="btn" href="../media/videos/yoda_roboter.mp4" download>Download</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="footer">
+    <p>Alle Dateien sind statisch (keine Builds). Poster können bei Bedarf später per <code>ffmpeg -ss 2 -i ... -vframes 1</code> erzeugt werden.</p>
+  </div>
+  <script src="../assets/js/header-widgets.js" defer></script>
+</body>
+</html>

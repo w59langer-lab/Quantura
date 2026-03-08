@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" fill="none">
+  <rect width="320" height="200" rx="18" fill="#111827"/>
+  <circle cx="160" cy="110" r="70" fill="#1f2937" stroke="#f59e0b" stroke-width="8"/>
+  <path d="M160 50v24m-26-40h52" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160 110l34-34" stroke="#e5e7eb" stroke-width="10" stroke-linecap="round"/>
+  <text x="32" y="176" fill="#f59e0b" font-family="Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700">Timer / Bonus</text>
+</svg>

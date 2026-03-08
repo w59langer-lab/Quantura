@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mathematik Level-System</title>
+  <link rel="stylesheet" href="core/styles.css">
+  <script src="core/scripts.js" defer></script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <div id="welcome"></div>
+    <h2 id="levels">Levels (Aufgaben)</h2>
+    <div class="level-toolbar" aria-label="Level Auswahl">
+      <label class="level-jump-label" for="level-jump-select">Level wählen</label>
+      <div class="level-jump-controls">
+        <select id="level-jump-select" aria-label="Level wählen"></select>
+      </div>
+    </div>
+
+    <section id="levelDetail" class="level level-detail" aria-live="polite">
+      <h3 id="levelDetailTitle">Level auswählen</h3>
+      <p id="levelDetailDesc">Bitte ein Level aus dem Dropdown auswählen.</p>
+      <button id="levelStartBtn" type="button" class="btn-primary">Starten</button>
+    </section>
+
+    <details id="allLevelsDetails">
+      <summary>Alle Level anzeigen (für Lehrer)</summary>
+      <div class="levels"></div>
+    </details>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../../assets/js/header-widgets.js" defer></script>
+</body>
+</html>

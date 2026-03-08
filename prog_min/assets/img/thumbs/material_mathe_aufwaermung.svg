@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" fill="none">
+  <rect width="320" height="200" rx="18" fill="#0b1224"/>
+  <path d="M40 140c40-80 80-80 120 0s80 80 120 0" stroke="#a855f7" stroke-width="7" fill="none"/>
+  <circle cx="110" cy="86" r="14" fill="#22d3ee"/>
+  <circle cx="210" cy="92" r="10" fill="#fbbf24"/>
+  <text x="32" y="36" fill="#e0f2fe" font-family="Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="700">Mathe ohne Langeweile</text>
+</svg>

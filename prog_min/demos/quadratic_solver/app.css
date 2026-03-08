@@ -1,0 +1,264 @@
+:root {
+  --qs-bg: var(--bg-page);
+  --qs-surface: var(--bg-surface);
+  --qs-card: var(--bg-surface);
+  --qs-border: var(--border-subtle);
+  --qs-text: var(--text-main);
+  --qs-muted: var(--text-muted);
+  --qs-accent: var(--accent);
+  --qs-accent-strong: var(--accent-strong);
+  --qs-radius: 16px;
+  --qs-shadow: var(--shadow-soft);
+  --qs-danger: #fb7185;
+  --qs-warn: #fbbf24;
+  --qs-success: #34d399;
+}
+
+html[data-theme="dark"] {
+  --qs-card: #0f172a;
+  --qs-surface: #0b1224;
+  --qs-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--qs-bg);
+  color: var(--qs-text);
+  min-height: 100vh;
+}
+
+.qs-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 12px 48px;
+}
+
+.card {
+  background: var(--qs-card);
+  border: 1px solid var(--qs-border);
+  border-radius: var(--qs-radius);
+  padding: 16px;
+  box-shadow: var(--qs-shadow);
+  margin-bottom: 12px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero h1 {
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.hero .subtitle { color: var(--qs-muted); margin-top: 4px; }
+
+.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--qs-border);
+  color: var(--qs-muted);
+  background: var(--qs-surface);
+  font-size: 0.9rem;
+}
+
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+label { display: block; font-weight: 600; margin-bottom: 6px; }
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--qs-border);
+  background: var(--qs-surface);
+  color: var(--qs-text);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--qs-border);
+  background: var(--qs-surface);
+  color: var(--qs-text);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn.primary { border-color: var(--qs-accent); color: var(--qs-accent-strong); }
+.btn.ghost { background: transparent; }
+
+.solver-actions {
+  align-items: center;
+}
+
+.msg {
+  margin: 6px 0;
+  color: var(--qs-muted);
+}
+
+.msg.error {
+  color: var(--qs-danger);
+  font-weight: 700;
+}
+
+#resultCalc.card,
+#resultSolution.card {
+  margin-top: 10px;
+}
+
+.result {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.muted { color: var(--qs-muted); }
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--qs-border);
+  color: var(--qs-muted);
+  background: var(--qs-surface);
+}
+
+.steps {
+  margin-top: 10px;
+  border-top: 1px dashed var(--qs-border);
+  padding-top: 10px;
+}
+
+.status-warn { color: var(--qs-warn); font-weight: 700; }
+.status-danger { color: var(--qs-danger); font-weight: 700; }
+.status-ok { color: var(--qs-success); font-weight: 700; }
+
+.note-box {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px dashed var(--qs-border);
+  color: var(--qs-muted);
+}
+
+.didaktik-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.didaktik-card {
+  background: var(--qs-surface);
+  border: 1px solid var(--qs-border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.didaktik-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.didaktik-list li {
+  margin: 6px 0;
+}
+
+.didaktik-block {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--qs-border);
+}
+
+.didaktik-sub {
+  color: var(--qs-muted);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.didaktik-dynamic {
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.didaktik-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: baseline;
+}
+
+.didaktik-row .label {
+  font-weight: 700;
+}
+
+.formula {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--qs-surface);
+  border: 1px solid var(--qs-border);
+  border-radius: 6px;
+  padding: 2px 6px;
+  display: inline-block;
+}
+
+.hint-ru {
+  font-size: 0.9em;
+  opacity: 0.85;
+  color: var(--qs-muted);
+  margin-left: 4px;
+}
+
+.solution-actions {
+  margin-top: 12px;
+}
+
+.solution-box {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.solution-box code {
+  padding: 0 4px;
+}
+
+.formula-box {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.formula-box h4 {
+  margin: 0 0 8px 0;
+}
+
+.stack { display: grid; gap: 10px; }
+
+@media (max-width: 640px) {
+  .hero { align-items: flex-start; }
+}

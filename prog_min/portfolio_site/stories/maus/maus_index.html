@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mausefalle – eine Geschichte in 5 Sprachen</title>
+
+    <link rel="stylesheet" href="../../core/assets/style.css" />
+    <link rel="stylesheet" href="maus_style.css" />
+
+    <script src="../../core/js/core_init.js" defer></script>
+  </head>
+
+  <body>
+    <div data-partial="header" data-partial-path="../../core/partials/header.html"></div>
+
+    <main class="page-wrapper story-page" tabindex="-1">
+      <section class="story maus-story" id="multi-story">
+        <div class="story-header-row">
+          <h1>Mausefalle – eine Geschichte in 5 Sprachen</h1>
+          <p class="hint-text">
+            Mehrsprachige Story mit TTS-Steuerung (Sprache, Stimme, Geschwindigkeit).
+          </p>
+        </div>
+
+        <!-- Für ES einfach einen zusätzlichen Tab + Artikel mit data-lang="es" anlegen. -->
+        <div class="maus-layout">
+          <aside class="maus-side">
+            <div class="maus-gallery">
+              <figure class="maus-image-item">
+                <img src="img/01_maus_falle.png?v=1" alt="Maus warnt Tiere vor Falle" />
+              </figure>
+              <figure class="maus-image-item">
+                <img src="img/02_tiere_ignorieren.png?v=1" alt="Tiere ignorieren Maus" />
+              </figure>
+              <figure class="maus-image-item">
+                <img src="img/03_schlange_biss.png?v=1" alt="Schlange in Falle, Biss" />
+              </figure>
+              <figure class="maus-image-item">
+                <img src="img/04_maus_loch.png?v=1" alt="Maus im Loch" />
+              </figure>
+            </div>
+          </aside>
+
+          <main class="maus-main">
+            <div class="story-lang-switch">
+              <button class="story-lang-tab lang-tab active" data-lang="de">DE</button>
+              <button class="story-lang-tab lang-tab" data-lang="en">EN</button>
+              <button class="story-lang-tab lang-tab" data-lang="ru">RU</button>
+              <button class="story-lang-tab lang-tab" data-lang="fr">FR</button>
+              <button class="story-lang-tab lang-tab" data-lang="it">IT</button>
+            </div>
+
+            <div class="story-controls">
+              <button id="storySpeakBtn">▶ Anhören</button>
+              <button id="storyPauseBtn">⏸ Pause</button>
+              <button id="storyResumeBtn">▶ Fortsetzen</button>
+              <button id="storyStopBtn">⏹ Stop</button>
+
+              <div class="story-speed">
+                <button type="button" class="speed-btn" data-rate="0.8">Langsam</button>
+                <button type="button" class="speed-btn active" data-rate="1.0">Normal</button>
+                <button type="button" class="speed-btn" data-rate="1.2">Schnell</button>
+              </div>
+
+              <label class="rate-label">
+                Geschwindigkeit:
+                <input
+                  id="storyRate"
+                  type="range"
+                  min="0.5"
+                  max="1.5"
+                  step="0.1"
+                  value="1"
+                />
+              </label>
+
+              <label class="voice-label">
+                Stimme:
+                <select id="voiceSelect"></select>
+              </label>
+            </div>
+
+            <div id="mouse-story" class="story-section story-bg--scene">
+              <article class="story-text" data-lang="de">
+                <h2>Die Geschichte einer kleinen Maus (Portfolio-Version)</h2>
+                <p>Eines Nachts bemerkte eine kleine Maus, dass der Bauer im Stall eine Mausefalle aufgestellt hatte. Sie roch den Käse und sah den gespannten Bügel – die Gefahr war nicht „irgendwo“, sondern ganz nah.</p>
+                <p>Sie rannte los, um die Tiere zu warnen.</p>
+                <p><strong>Zuerst das Huhn:</strong><br>„Im Stall steht eine Mausefalle!“<br>Das Huhn antwortete gleichgültig: „Das ist dein Problem. Das geht mich nichts an.“</p>
+                <p><strong>Dann das Schaf:</strong><br>„Da ist eine Falle – es kann etwas passieren!“<br>Das Schaf sagte ruhig: „Ich gehe nicht an Käse. Das betrifft mich nicht.“</p>
+                <p><strong>Schließlich die Kuh:</strong><br>„Auf dem Hof ist Gefahr – wir müssen etwas tun!“<br>Die Kuh meinte sicher: „Damit habe ich nichts zu tun.“</p>
+                <p>In der Nacht kroch eine Schlange in den Stall. Der Käse lockte sie an, die Falle schnappte zu, und die Schlange zischte vor Schmerz. Die Bäuerin kam mit einer Lampe – und wurde im Schreck gebissen.</p>
+                <p>Dann kamen die drei Stufen, mit denen niemand gerechnet hatte:</p>
+                <ol>
+                  <li><strong>Huhn:</strong> Um die Bäuerin zu stärken, kochte der Bauer Hühnerbrühe – dafür schlachtete er das Huhn.</li>
+                  <li><strong>Schaf:</strong> Am nächsten Tag kamen Nachbarn und Verwandte zu Besuch – alle mussten versorgt werden. Der Bauer schlachtete das Schaf.</li>
+                  <li><strong>Kuh:</strong> Doch das Gift war stärker: Die Bäuerin starb. Zur Beerdigung und den Trauergästen brauchte es Essen – der Bauer schlachtete die Kuh.</li>
+                </ol>
+                <p><strong>Moral:</strong> Gleichgültigkeit schützt niemanden.</p>
+              </article>
+              <article class="story-text" data-lang="en" hidden>
+                <h2>The Story of a Little Mouse (Portfolio Version)</h2>
+                <p>One night a little mouse noticed that the farmer had set a mousetrap in the barn. She smelled the cheese and saw the tensioned bar — the danger was not “somewhere out there” but right nearby.</p>
+                <p>She ran to warn the other animals on the farm.</p>
+                <p><strong>First, the chicken:</strong><br>“There’s a mousetrap in the barn!”<br>The chicken replied indifferently: “That’s your problem. It doesn’t concern me.”</p>
+                <p><strong>Then, the sheep:</strong><br>“It’s a trap — something could happen!”<br>The sheep said calmly: “I don’t go for cheese. That’s not about me.”</p>
+                <p><strong>Finally, the cow:</strong><br>“There’s danger on the farm — we must do something!”<br>The cow answered confidently: “It has nothing to do with me.”</p>
+                <p>At night a snake crawled into the barn. The cheese lured it in; the trap snapped shut and the snake hissed in pain. The farmer’s wife came with a lamp — and, startled, was bitten.</p>
+                <p>Then came the three steps nobody expected:</p>
+                <ol>
+                  <li><strong>Chicken:</strong> To strengthen the wife, the farmer cooked chicken broth — and slaughtered the chicken.</li>
+                  <li><strong>Sheep:</strong> The next day neighbors and relatives came to visit — everyone had to be fed. The farmer slaughtered the sheep.</li>
+                  <li><strong>Cow:</strong> But the venom was stronger: the wife died. For the funeral and mourners, food was needed — the farmer slaughtered the cow.</li>
+                </ol>
+                <p><strong>Moral:</strong> Indifference protects no one.</p>
+              </article>
+              <article class="story-text" data-lang="ru" hidden>
+                <h2>История одной маленькой мышки (версия для портфолио)</h2>
+                <p>Однажды Bauer поставил в сарае мышеловку. Маленькая мышка узнала об этом просто: ночью она шла к мешкам с зерном, почувствовала запах сыра — и увидела на полу новую деревянную дощечку с натянутой пружиной. Мышке стало холодно: ловушка была не «где-то», а рядом.</p>
+                <p>Она побежала предупредить других животных фермы.</p>
+                <p><strong>Сначала — курицу:</strong><br>— В сарае мышеловка! Это опасно!<br>Курица только фыркнула:<br>— Это твоя проблема, мышка. Меня это не касается.</p>
+                <p><strong>Потом — овцу:</strong><br>— Там ловушка. Беда может случиться!<br>Овца спокойно ответила:<br>— Я к сыру не подхожу. Это не про меня.</p>
+                <p><strong>Наконец — корову:</strong><br>— На ферме опасность! Надо что-то делать!<br>Корова уверенно сказала:<br>— Я тут ни при чём. Это твои дела.</p>
+                <p>Ночью в сарай заползла змея. Её привлёк запах сыра — она потянулась к приманке, и мышеловка хлопнула, зажав её. От боли змея стала метаться и шипеть. На шум прибежала жена Bauera — наклонилась ближе, и змея в панике укусила её.</p>
+                <p>А дальше случилось самое важное — три ступени, которые никто не ожидал:</p>
+                <ol>
+                  <li><strong>Курица:</strong> Женщине стало плохо, её нужно было согреть и поддержать. Bauer решил, что лучший способ — сварить куриный бульон. Он зарезал курицу.</li>
+                  <li><strong>Овца:</strong> На следующий день пришли соседи и родственники — проведать больную. Дом наполнился людьми, всех нужно было накормить. Bauer зарезал овцу.</li>
+                  <li><strong>Корова:</strong> Но яд оказался сильнее: жена Bauера умерла. Пришли люди — проститься, помочь, поддержать. Нужно было накормить всех на похоронах и поминках. Bauer зарезал корову.</li>
+                </ol>
+                <p><strong>Мораль:</strong> равнодушие никого не защищает.</p>
+              </article>
+              <article class="story-text" data-lang="fr" hidden>
+                <h2>L’histoire d’une petite souris (version portfolio)</h2>
+                <p>Une nuit, une petite souris remarqua que le fermier avait installé un piège à souris dans la grange. Elle sentit l’odeur du fromage et vit le ressort tendu — le danger n’était pas “quelque part”, il était tout près.</p>
+                <p>Elle courut prévenir les autres animaux de la ferme.</p>
+                <p><strong>D’abord la poule :</strong><br>« Il y a un piège à souris dans la grange ! »<br>La poule répondit avec indifférence : « C’est ton problème. Ça ne me concerne pas. »</p>
+                <p><strong>Puis le mouton :</strong><br>« C’est un piège — il peut arriver quelque chose ! »<br>Le mouton dit calmement : « Je ne touche pas au fromage. Ce n’est pas mon affaire. »</p>
+                <p><strong>Enfin la vache :</strong><br>« Il y a un danger à la ferme — il faut agir ! »<br>La vache répondit, sûre d’elle : « Ça ne me regarde pas. »</p>
+                <p>La nuit, un serpent se glissa dans la grange. Attiré par le fromage, il s’approcha ; le piège se referma et le serpent siffla de douleur. La fermière arriva avec une lampe — et, prise de peur, elle fut mordue.</p>
+                <p>Alors vinrent trois étapes auxquelles personne ne s’attendait :</p>
+                <ol>
+                  <li><strong>Poule :</strong> Pour réconforter la fermière, le fermier fit un bouillon — et il tua la poule.</li>
+                  <li><strong>Mouton :</strong> Le lendemain, voisins et proches vinrent rendre visite — il fallait nourrir tout le monde. Le fermier tua le mouton.</li>
+                  <li><strong>Vache :</strong> Mais le venin fut plus fort : la fermière mourut. Pour l’enterrement et les visiteurs, il fallait à manger — le fermier tua la vache.</li>
+                </ol>
+                <p><strong>Morale :</strong> l’indifférence ne protège personne.</p>
+              </article>
+              <article class="story-text" data-lang="it" hidden>
+                <h2>La storia di un piccolo topo (versione portfolio)</h2>
+                <p>Una notte un piccolo topo notò che il contadino aveva messo una trappola per topi nel fienile. Sentì l’odore del formaggio e vide la molla tesa — il pericolo non era “lontano”, era lì vicino.</p>
+                <p>Corse ad avvertire gli altri animali della fattoria.</p>
+                <p><strong>Prima la gallina:</strong><br>« Nel fienile c’è una trappola per topi! »<br>La gallina rispose indifferente: « È un problema tuo. Non mi riguarda. »</p>
+                <p><strong>Poi la pecora:</strong><br>« È una trappola — potrebbe succedere qualcosa! »<br>La pecora disse calma: « Io non vado dietro al formaggio. Non è affar mio. »</p>
+                <p><strong>Infine la mucca:</strong><br>« C’è un pericolo nella fattoria — dobbiamo fare qualcosa! »<br>La mucca rispose sicura: « Non c’entro nulla. »</p>
+                <p>Di notte un serpente strisciò nel fienile. Il formaggio lo attirò; la trappola scattò e il serpente sibilò dal dolore. La moglie del contadino arrivò con una lampada — e, spaventata, fu morsa.</p>
+                <p>E poi arrivarono tre passaggi che nessuno si aspettava:</p>
+                <ol>
+                  <li><strong>Gallina:</strong> Per aiutare la donna, il contadino preparò un brodo — e macellò la gallina.</li>
+                  <li><strong>Pecora:</strong> Il giorno dopo arrivarono vicini e parenti a far visita — bisognava sfamare tutti. Il contadino macellò la pecora.</li>
+                  <li><strong>Mucca:</strong> Ma il veleno fu più forte: la donna morì. Per il funerale e i presenti serviva cibo — il contadino macellò la mucca.</li>
+                </ol>
+                <p><strong>Morale:</strong> l’indifferenza non protegge nessuno.</p>
+              </article>
+            </div>
+          </main>
+        </div>
+      </section>
+    </main>
+
+    <div data-partial="footer" data-partial-path="../../core/partials/footer.html"></div>
+    <!-- Externe JS aus, damit Inline-Logik nicht überschrieben wird -->
+    <!-- <script src="js/maus_tts.js"></script> -->
+    <!-- <script defer src="story_mousefalle.js?v=20260224"></script> -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs     = Array.from(document.querySelectorAll('.story-lang-tab[data-lang]'));
+      const panes    = Array.from(document.querySelectorAll('.story-text[data-lang]'));
+      const speakBtn  = document.getElementById('storySpeakBtn');
+      const pauseBtn  = document.getElementById('storyPauseBtn');
+      const resumeBtn = document.getElementById('storyResumeBtn');
+      const stopBtn   = document.getElementById('storyStopBtn');
+      const voiceSel  = document.getElementById('voiceSelect'); // optional
+      const rateEl    = document.getElementById('storyRate');   // optional
+
+      if (speakBtn) speakBtn.disabled = false;
+      if (pauseBtn) pauseBtn.disabled = false;
+      if (resumeBtn) resumeBtn.disabled = false;
+      if (stopBtn) stopBtn.disabled = false;
+
+      const LANG_MAP = { de:'de-DE', en:'en-GB', ru:'ru-RU', fr:'fr-FR', it:'it-IT' };
+      let currentLangCode = 'de';
+      let currentRate = 1.0;
+
+      function show(lang){
+        currentLangCode = lang;
+        panes.forEach(p => p.hidden = (p.dataset.lang !== lang));
+        tabs.forEach(t => t.classList.toggle('active', t.dataset.lang === lang));
+        fillVoices();
+      }
+      if (tabs.length){
+        tabs.forEach(t => t.addEventListener('click', (e) => { e.preventDefault(); show(t.dataset.lang); }));
+      }
+      if (panes.length) show(currentLangCode);
+
+      const speedBtns = Array.from(document.querySelectorAll('.speed-btn[data-rate]'));
+      function setRate(r){
+        currentRate = Number(r) || 1.0;
+        speedBtns.forEach(b => b.classList.toggle('active', Number(b.dataset.rate) === currentRate));
+        if (rateEl) rateEl.value = String(currentRate);
+      }
+      if (speedBtns.length){
+        speedBtns.forEach(b => b.addEventListener('click', () => setRate(b.dataset.rate)));
+        setRate(1.0);
+      } else if (rateEl){
+        rateEl.addEventListener('input', () => setRate(rateEl.value));
+        setRate(rateEl.value);
+      }
+
+      function visiblePane(){
+        return document.querySelector('.story-text[data-lang]:not([hidden])');
+      }
+      function currentLang(){
+        return (visiblePane()?.dataset.lang || currentLangCode || 'de').toLowerCase();
+      }
+      function currentText(){
+        return visiblePane()?.innerText?.trim() || '';
+      }
+
+      function voicesForLang(lang){
+        const want = (LANG_MAP[lang] || lang).slice(0,2).toLowerCase();
+        const all = speechSynthesis.getVoices();
+        const filtered = all.filter(v => (v.lang||'').toLowerCase().startsWith(want));
+        return filtered.length ? filtered : all;
+      }
+
+      function fillVoices(){
+        if (!voiceSel) return;
+        const list = voicesForLang(currentLang());
+        if (!list.length) return;
+        voiceSel.innerHTML = list.map(v => `<option value="${v.name}">${v.name} (${v.lang})</option>`).join('');
+        voiceSel.value = list[0].name;
+      }
+
+      if ('speechSynthesis' in window && voiceSel){
+        fillVoices();
+        speechSynthesis.onvoiceschanged = fillVoices;
+      }
+
+      function speak(){
+        if (!('speechSynthesis' in window)) { alert('TTS nicht verfügbar'); return; }
+        const text = currentText();
+        if (!text) { alert('Kein Text sichtbar'); return; }
+        speechSynthesis.cancel();
+        const lang = currentLang();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = LANG_MAP[lang] || 'de-DE';
+        u.rate = currentRate;
+
+        const list = voicesForLang(lang);
+        if (voiceSel){
+          const chosen = list.find(v => v.name === voiceSel.value);
+          if (chosen) u.voice = chosen;
+          else if (list[0]) u.voice = list[0];
+        } else if (list[0]) {
+          u.voice = list[0];
+        }
+        speechSynthesis.speak(u);
+      }
+
+      if (speakBtn)  speakBtn.addEventListener('click', speak);
+      if (pauseBtn)  pauseBtn.addEventListener('click', () => speechSynthesis.pause());
+      if (resumeBtn) resumeBtn.addEventListener('click', () => speechSynthesis.resume());
+      if (stopBtn)   stopBtn.addEventListener('click', () => speechSynthesis.cancel());
+    });
+    </script>
+    <script src="../../../assets/js/header-widgets.js" defer></script>
+</body>
+</html>
