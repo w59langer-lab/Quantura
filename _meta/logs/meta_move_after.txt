@@ -1,0 +1,56 @@
+AFTER STATUS
+_meta/_REPO_STATUS | PRESENT | size=400K	_meta/_REPO_STATUS | mtime=2026-03-08 17:15:28.722304600 +0100
+_meta/_REPO_COMPARE | PRESENT | size=334K	_meta/_REPO_COMPARE | mtime=2026-03-08 16:34:36.479007400 +0100
+_meta/_POST_CLEANUP_CHECK | PRESENT | size=169K	_meta/_POST_CLEANUP_CHECK | mtime=2026-03-08 17:20:26.895250500 +0100
+_meta/_MIGRATION_PLAN | MISSING
+_meta/_STRUCTURE_REVIEW | PRESENT | size=35K	_meta/_STRUCTURE_REVIEW | mtime=2026-03-08 17:25:50.586444400 +0100
+
+WORKING ZONES
+assets | OK
+core | OK
+pages | OK
+demos | OK
+datenbanken | OK
+pages/language_lab | OK
+.git | OK
+
+GIT STATUS
+## main...origin/main
+ M .gitignore
+ M assets/data/portal_registry.json
+ M core/assets/style.css
+ M core/js/core_init.js
+ M core/partials/header.html
+ M demos/prog_min_portfolio/.vscode/settings.json
+ M demos/prog_min_portfolio/assets/css/portfolio.css
+ M demos/prog_min_portfolio/assets/js/header-widgets.js
+ M demos/prog_min_portfolio/index.html
+ M index.html
+ M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/shared_data/sprachfuehrer_phrase_adapter.js
+ M pages/language_lab/shared_data/sprachfuehrer_phrases.json
+ M pages/legacy/index.html
+ D pages/portal_v2/icons/icon-192.png
+ D pages/portal_v2/icons/icon-512.png
+ D pages/portal_v2/index.html
+ D pages/portal_v2/portal.css
+ D pages/portal_v2/portal.js
+ D pages/portal_v2/portal_registry.json
+ M stories/maus/maus_index.html
+ M stories/maus/maus_style.css
+ M stories/maus/story_mousefalle.js
+?? _meta/
+?? assets/portal/
+?? pages/_archive/
+?? stories/maus/portfolio.css

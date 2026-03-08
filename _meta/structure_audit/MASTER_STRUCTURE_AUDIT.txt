@@ -1,0 +1,12 @@
+PROJECT ROOT: /media/mx-ahs/ARCHIV/quantura
+MAIN ACTIVE MODULES: assets/, core/, pages/ (portal + language_lab), datenbanken/, demos/
+ACTIVE LANGUAGE LAB ENTRY: /media/mx-ahs/ARCHIV/quantura/pages/language_lab/index.html
+ROLE OF assets: shared static css/js/images for portal/apps
+ROLE OF core: common partials (header/footer) and core JS (init, tts), shared backgrounds
+ROLE OF pages: main site/apps including portal, language_lab, tools, legacy
+ROLE OF demos: portfolio/demo showcases; some reusable assets (stories/maus, timers, math demos)
+ROLE OF datenbanken: language/data repositories consumed by language_lab/generator
+WHAT IS CLUTTER: numerous *_bak/_backup/_archive folders in demos and pages; archived portal_v2 under pages/_archive; _incoming media duplicates; service logs already in _meta
+WHAT CAN BE REORGANIZED LATER: consolidate portal assets, dedupe stories/assets between pages and demos, move remaining legacy backups under _meta/_archive
+WHAT MUST NOT BE TOUCHED YET: language_lab apps, datenbanken datasets, core partials/scripts, active portal index.html
+SAFEST NEXT STEP: map and prune backup/archive duplicates (starting with demos/prog_min_portfolio/_incoming/_archive_duplicates and *_bak folders) after verifying no live references

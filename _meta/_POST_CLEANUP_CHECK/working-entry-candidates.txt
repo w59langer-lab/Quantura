@@ -1,0 +1,16 @@
+CANDIDATE ENTRY PAGES:
+pages/language_lab/apps/analyse_zaz/index.html
+pages/language_lab/apps/cards/index.html
+pages/language_lab/apps/index.html
+pages/language_lab/apps/karten/index.html
+pages/language_lab/apps/talk_levels/index.html
+pages/language_lab/index.html
+pages/language_lab/sprachfuehrer_auswahl/index.html
+
+SPrachBox PWA index files:
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html

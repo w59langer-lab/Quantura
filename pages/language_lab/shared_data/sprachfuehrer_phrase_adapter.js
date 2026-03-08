@@ -1,12 +1,14 @@
 (function(){
   const SHARED_URL = "/pages/language_lab/shared_data/sprachfuehrer_phrases.json";
-  const cache = { data: null, promise: null };
+  const cache = { data: null, promise: null, lastFetch: null };
 
   async function loadSharedData() {
     if (cache.data) return cache.data;
     if (!cache.promise) {
+      cache.lastFetch = { url: SHARED_URL, status: "pending" };
       cache.promise = fetch(SHARED_URL, { cache: "no-store" })
         .then((res) => {
+          cache.lastFetch = { url: res.url || SHARED_URL, status: res.status };
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
           return res.json();
         })
@@ -16,6 +18,11 @@
         })
         .catch((err) => {
           cache.promise = null;
+          cache.lastFetch = {
+            url: SHARED_URL,
+            status: "error",
+            error: err?.message || String(err),
+          };
           throw err;
         });
     }
@@ -56,11 +63,13 @@
         mnemo: rec.mnemoHint || rec.mnemoKey || "",
       });
     }
-    return { cards };
+    return { cards, url: cache.lastFetch?.url || SHARED_URL, status: cache.lastFetch?.status };
   }
 
   window.SprachfuehrerSharedAdapter = {
     loadSharedData,
     loadPairDeck,
+    getLastFetch: () => cache.lastFetch,
+    getSharedUrl: () => SHARED_URL,
   };
 })();

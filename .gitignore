@@ -21,3 +21,5 @@ assets/data/*.bak
 
 # accidental
 main
+_BACKUPS/
+_REPORTS/

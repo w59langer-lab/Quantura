@@ -1,0 +1,429 @@
+ENTRY FILES:
+pages/language_lab/apps/analyse_zaz/index.html
+pages/language_lab/apps/cards/index.html
+pages/language_lab/apps/index.html
+pages/language_lab/apps/karten/index.html
+pages/language_lab/apps/talk_levels/index.html
+pages/language_lab/index.html
+pages/language_lab/sprachfuehrer_auswahl/index.html
+
+LOCAL ASSETS (img/js/css/json within language_lab):
+pages/language_lab/apps/analyse_zaz/analyzer_de_core.js
+pages/language_lab/apps/analyse_zaz/app.js
+pages/language_lab/apps/analyse_zaz/style.css
+pages/language_lab/apps/apps.json
+pages/language_lab/apps/cards/cards.css
+pages/language_lab/apps/cards/cards.js
+pages/language_lab/apps/generator/datenbanken/es/es_nouns/es_nouns.js
+pages/language_lab/apps/generator/de/de_script.js
+pages/language_lab/apps/generator/en/en_script.js
+pages/language_lab/apps/generator/es/es_script.js
+pages/language_lab/apps/generator/fr/fr_script.js
+pages/language_lab/apps/generator/it/it_script.js
+pages/language_lab/apps/generator/ru/ru_script.js
+pages/language_lab/apps/generator/shared/lang_switch.css
+pages/language_lab/apps/generator/shared/lang_switch.js
+pages/language_lab/apps/generator/shared/lg_translate.js
+pages/language_lab/apps/generator/shared/lg_tts.css
+pages/language_lab/apps/generator/shared/lg_tts.js
+pages/language_lab/apps/generator/shared/translation_panel.css
+pages/language_lab/apps/karten/en/_imported_2025_2501/script_card_en.js
+pages/language_lab/apps/karten/en/_imported_2025_2501/style_card_en.css
+pages/language_lab/apps/karten/it/_imported_2025_2501/script_card_it.js
+pages/language_lab/apps/karten/it/_imported_2025_2501/style_card_it.css
+pages/language_lab/apps/karten/karten_audio.js
+pages/language_lab/apps/karten/karten_data.js
+pages/language_lab/apps/karten/karten_export.js
+pages/language_lab/apps/karten/karten_level_data.js
+pages/language_lab/apps/karten/karten_level_logic.js
+pages/language_lab/apps/karten/karten_logic.js
+pages/language_lab/apps/karten/karten_style.css
+pages/language_lab/apps/karten/karten_tts.js
+pages/language_lab/apps/karten/preview_talklevels/karten_level_logic_tr.js
+pages/language_lab/apps/karten/_preview_from_talklevels/karten_level_data_from_talklevels.js
+pages/language_lab/apps/karten/_preview_from_talklevels/karten_level_data_from_talklevels_with_tr.js
+pages/language_lab/apps/mathe/quadratgleichung/icons/icon-192.png
+pages/language_lab/apps/mathe/quadratgleichung/icons/icon-512.png
+pages/language_lab/apps/mathe/quadratgleichung/sw.js
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/assets/bg-1920x1080.png
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.jpg
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.webp
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/assets/icon-192.png
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/assets/icon-512.png
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/data/de_en_sample.json
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/data/sentences_a1.json
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/data/talk_levels_de_en.json
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/styles.css
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/sw.js
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/assets/bg-1920x1080.png
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.jpg
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.webp
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/assets/icon-192.png
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/assets/icon-512.png
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/data/de_en_sample.json
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/data/sentences_a1.json
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/data/talk_levels_de_en.json
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/styles.css
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/sw.js
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/assets/bg-1920x1080.png
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.jpg
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.webp
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/assets/icon-192.png
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/assets/icon-512.png
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/data/de_en_sample.json
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/data/sentences_a1.json
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/data/talk_levels_de_en.json
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/styles.css
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/sw.js
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/assets/bg-1920x1080.png
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.jpg
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.webp
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/assets/icon-192.png
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/assets/icon-512.png
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/data/de_en_sample.json
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/data/sentences_a1.json
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/data/talk_levels_de_en.json
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/styles.css
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/sw.js
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/assets/bg-1920x1080.png
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.jpg
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.webp
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/assets/icon-192.png
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/assets/icon-512.png
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/data/de_en_sample.json
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/data/sentences_a1.json
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/data/talk_levels_de_en.json
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/styles.css
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/sw.js
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/assets/bg-1920x1080.png
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.jpg
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/assets/bg-de-en.webp
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/assets/icon-192.png
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/assets/icon-512.png
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/data/de_en_sample.json
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/data/sentences_a1.json
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/data/talk_levels_de_en.json
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/data/talk_levels_de_tr.json
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/styles.css
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/sw.js
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/allgemein.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/arzt_apotheke.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/bahn_flug.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/einkaufen.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/hotel.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/index.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/notfall.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/restaurant.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/telefon_internet.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/unterkunft_probleme.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/unterwegs.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/verkehr_auto.json
+pages/language_lab/apps/talk_levels/data/data_backup_REALTR2_2025-12-10_12-14-17/verkehr_auto_from_root_001.json
+pages/language_lab/apps/talk_levels/data/manifest.json
+pages/language_lab/apps/talk_levels/data/topics/allgemein.json
+pages/language_lab/apps/talk_levels/data/topics/arzt_apotheke.json
+pages/language_lab/apps/talk_levels/data/topics/bahn_flug.json
+pages/language_lab/apps/talk_levels/data/topics/einkaufen.json
+pages/language_lab/apps/talk_levels/data/topics/hotel.json
+pages/language_lab/apps/talk_levels/data/topics/index.json
+pages/language_lab/apps/talk_levels/data/topics/notfall.json
+pages/language_lab/apps/talk_levels/data/topics/restaurant.json
+pages/language_lab/apps/talk_levels/data/topics/survival_more.json
+pages/language_lab/apps/talk_levels/data/topics/survival_plus.json
+pages/language_lab/apps/talk_levels/data/topics/telefon_internet.json
+pages/language_lab/apps/talk_levels/data/topics/unterkunft_probleme.json
+pages/language_lab/apps/talk_levels/data/topics/unterwegs.json
+pages/language_lab/apps/talk_levels/data/topics/verkehr_auto.json
+pages/language_lab/apps/talk_levels/data/topics/verkehr_auto_from_root_001.json
+pages/language_lab/apps/talk_levels/data/topics_bundle.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/leitner/de-en.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/leitner/de-es.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/leitner/de-fr.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/leitner/de-it.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/leitner/de-ru.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/leitner/de-tr.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/phrasebook_levels.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/reports/language_coverage.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/reports/missing_translations.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/reports/topic_coverage.json
+pages/language_lab/apps/talk_levels/data/_generated_preview/topics_bundle.json
+pages/language_lab/apps/talk_levels/scripts/adapter_preview_to_level_db.js
+pages/language_lab/apps/talk_levels/scripts/generate_previews.js
+pages/language_lab/apps/talk_levels/scripts/migrate_level4_add_tr_and_pron.js
+pages/language_lab/apps/talk_levels/scripts/report_coverage.js
+pages/language_lab/apps/talk_levels/talk_levels_script.js
+pages/language_lab/apps/talk_levels/talk_levels_style.css
+pages/language_lab/apps/tools/auto-kauf-assistent/icons/icon-192.png
+pages/language_lab/apps/tools/auto-kauf-assistent/icons/icon-512.png
+pages/language_lab/apps/tools/auto-kauf-assistent/sw.js
+pages/language_lab/apps/tools/glossar/icons/icon-192.png
+pages/language_lab/apps/tools/glossar/icons/icon-512.png
+pages/language_lab/apps/tools/glossar/sw.js
+pages/language_lab/shared_data/sprachfuehrer_phrases.json
+pages/language_lab/shared_data/sprachfuehrer_phrase_adapter.js
+
+REFERENCES TO assets/ core/ datenbanken/ demos/ (absolute or root-relative):
+pages/language_lab/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/language_lab/index.html:8:    <script src="../../core/js/core_init.js" defer></script>
+pages/language_lab/index.html:11:    <div data-partial="header" data-partial-path="../../core/partials/header.html"></div>
+pages/language_lab/index.html:48:    <div data-partial="footer" data-partial-path="../../core/partials/footer.html"></div>
+pages/language_lab/sprachfuehrer_auswahl/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/language_lab/sprachfuehrer_auswahl/index.html:8:  <script src="/core/js/core_init.js" defer></script>
+pages/language_lab/sprachfuehrer_auswahl/index.html:46:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/language_lab/sprachfuehrer_auswahl/index.html:54:  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/language_lab/apps/talk_levels/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/talk_levels/index.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/talk_levels/index.html:45:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/talk_levels/index.html:152:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/talk_levels/scripts/report_coverage.js:7: * Safe: read-only; does not touch live site/core/assets/registries.
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:12:      "src": "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:17:      "src": "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/talk_levels/scripts/generate_previews.js:6: * - No changes to core/assets/registries; safe to run repeatedly.
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:12:      "src": "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:17:      "src": "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:12:      "src": "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:17:      "src": "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:12:      "src": "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:17:      "src": "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/werkstatt/tagbook/index.html:12:  <script src="/core/loader/loader.js"></script>
+pages/language_lab/apps/werkstatt/tagbook/index.html:15:  <div data-partial-path="/core/partials/header.html"></div>
+pages/language_lab/apps/werkstatt/tagbook/index.html:27:  <div data-partial-path="/core/partials/footer.html"></div>
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:267:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:268:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/index.html:11:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/language_lab/apps/index.html:12:    <script src="/core/loader/loader.js" defer></script>
+pages/language_lab/apps/index.html:13:    <script src="/core/js/core_init.js" defer></script>
+pages/language_lab/apps/index.html:87:    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/language_lab/apps/index.html:112:    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/language_lab/apps/apps.json:8:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:16:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:24:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:32:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:48:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:64:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:8:  <link rel="stylesheet" href="/core/assets/style.css">
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:11:  <script src="/core/loader/loader.js" defer></script>
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:12:  <script src="/core/js/core_init.js" defer></script>
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:206:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:348:  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/language_lab/apps/cards/index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/cards/index.html:10:    <script src="../../../../core/loader/loader.js" defer></script>
+pages/language_lab/apps/cards/index.html:11:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/cards/index.html:15:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/cards/index.html:110:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:12:      "src": "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:17:      "src": "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:12:      "src": "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/manifest.webmanifest:17:      "src": "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/generator/ru/ru_script.js:2:// ru_script.js – Генератор предложений (данные /datenbanken/ru)
+pages/language_lab/apps/generator/ru/ru_script.js:411:        "Русский генератор: центральные базы (/datenbanken/ru), спряжение и порядок слов – по-русски.";
+pages/language_lab/apps/generator/ru/index_ru.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/ru/index_ru.html:12:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:17:    <script src="../../../../../datenbanken/ru/ru_verbs/ru_verbs.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:18:    <script src="../../../../../datenbanken/ru/ru_pronouns/ru_pronouns.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:19:    <script src="../../../../../datenbanken/ru/ru_adjectives/ru_adjectives.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:20:    <script src="../../../../../datenbanken/ru/ru_adverbs/ru_adverbs.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:21:    <script src="../../../../../datenbanken/ru/ru_preps/ru_preps.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:28:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/ru/index_ru.html:52:          Базы берутся из <code>datenbanken/ru</code>.
+pages/language_lab/apps/generator/ru/index_ru.html:194:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/it/it_script.js:2:// it_script.js – Generatore di frasi italiano (/datenbanken/it)
+pages/language_lab/apps/generator/it/it_script.js:404:        "Generatore IT con basi centrali (/datenbanken/it).";
+pages/language_lab/apps/generator/it/index_it.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/it/index_it.html:12:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:17:    <script src="../../../../../datenbanken/it/it_verbs/it_verbs.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:18:    <script src="../../../../../datenbanken/it/it_pronouns/it_pronouns.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:19:    <script src="../../../../../datenbanken/it/it_adjectives/it_adjectives.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:20:    <script src="../../../../../datenbanken/it/it_adverbs/it_adverbs.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:21:    <script src="../../../../../datenbanken/it/it_preps/it_preps.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:28:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/it/index_it.html:52:          Dati da <code>datenbanken/it</code>.
+pages/language_lab/apps/generator/it/index_it.html:194:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/karten/level_overview.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/level_overview.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/level_overview.html:12:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/level_overview.html:91:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/generator/fr/index_fr.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/fr/index_fr.html:12:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:17:    <script src="../../../../../datenbanken/fr/fr_verbs/fr_verbs.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:18:    <script src="../../../../../datenbanken/fr/fr_pronouns/fr_pronouns.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:19:    <script src="../../../../../datenbanken/fr/fr_adjectives/fr_adjectives.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:20:    <script src="../../../../../datenbanken/fr/fr_adverbs/fr_adverbs.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:21:    <script src="../../../../../datenbanken/fr/fr_preps/fr_preps.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:28:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/fr/index_fr.html:52:          « Générer ». Les données viennent de <code>datenbanken/fr</code>.
+pages/language_lab/apps/generator/fr/index_fr.html:196:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/fr/fr_script.js:2:// fr_script.js – Générateur de phrases (données /datenbanken/fr)
+pages/language_lab/apps/generator/fr/fr_script.js:405:        "Générateur FR avec bases centrales (/datenbanken/fr).";
+pages/language_lab/apps/generator/en/index_en.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/en/index_en.html:12:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:18:    <script src="../../../../../datenbanken/en/en_verbs/en_verbs.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:19:    <script src="../../../../../datenbanken/en/en_pronouns/en_pronouns.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:20:    <script src="../../../../../datenbanken/en/en_adjectives/en_adjectives.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:21:    <script src="../../../../../datenbanken/en/en_adverbs/en_adverbs.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:22:    <script src="../../../../../datenbanken/en/en_preps/en_preps.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:29:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/en/index_en.html:53:          This version uses central datasets from <code>datenbanken/en</code>.
+pages/language_lab/apps/generator/en/index_en.html:197:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/en/en_script.js:2:// en_script.js – English sentence generator (central /datenbanken/en)
+pages/language_lab/apps/generator/en/en_script.js:380:      hint.textContent = "English generator using central databases (/datenbanken/en).";
+pages/language_lab/apps/generator/de/index_de.html:6:    <link rel="icon" href="../../../../../core/assets/favicon.ico">
+pages/language_lab/apps/generator/de/index_de.html:14:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/de/index_de.html:18:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:27:         Pfad: ../../../../../datenbanken/de/...
+pages/language_lab/apps/generator/de/index_de.html:32:    <script src="../../../../../datenbanken/de/de_pronouns/de_pronouns.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:35:    <script src="../../../../../datenbanken/de/de_verbs_main/de_verbs_main.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:36:    <script src="../../../../../datenbanken/de/de_verbs_modals/de_verbs_modals.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:37:    <script src="../../../../../datenbanken/de/de_verbs_aux/de_verbs_aux.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:40:    <script src="../../../../../datenbanken/de/de_adjectives/de_adjectives.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:43:    <script src="../../../../../datenbanken/de/de_adverbs/de_adverbs.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:46:    <script src="../../../../../datenbanken/de/de_preps/de_preps.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:48:    <script src="../../../../../datenbanken/de/de_prep_patterns.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:60:         Pfad von hier: ../../../../../core/partials/header.html
+pages/language_lab/apps/generator/de/index_de.html:64:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/de/index_de.html:90:          <code>datenbanken/de</code>.
+pages/language_lab/apps/generator/de/index_de.html:94:          This version uses central datasets from <code>datenbanken/de</code>.
+pages/language_lab/apps/generator/de/index_de.html:98:          версия использует базы из <code>datenbanken/de</code>.
+pages/language_lab/apps/generator/de/index_de.html:288:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/de/de_script.js:2:// de_script.js – Deutscher Satzgenerator (zentral /datenbanken/de)
+pages/language_lab/apps/generator/de/de_script.js:713:        "DE-Generator: zentrale Datenbanken (/datenbanken/de) – alle Zeiten aktiv.";
+pages/language_lab/apps/generator/es/index_es.html:11:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/es/index_es.html:13:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:19:    <script src="../../../../../datenbanken/es/es_pronouns/es_pronouns.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:20:    <script src="../../../../../datenbanken/es/es_verbs/es_verbs.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:21:    <script src="../../../../../datenbanken/es/es_adjectives/es_adjectives.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:22:    <script src="../../../../../datenbanken/es/es_adverbs/es_adverbs.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:23:    <script src="../../../../../datenbanken/es/es_preps/es_preps.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:24:    <script src="../../../../../datenbanken/es/es_nouns/es_nouns.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:35:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/es/index_es.html:43:          <code>datenbanken/es</code>.
+pages/language_lab/apps/generator/es/index_es.html:176:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/karten/index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/index.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/index.html:12:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/index.html:23:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/karten/preview_talklevels/de-tr/index.html:7:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/preview_talklevels/de-tr/index.html:9:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/preview_talklevels/de-tr/index.html:16:    <div data-partial="header" data-partial-path="../../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/preview_talklevels/de-tr/index.html:158:    <div data-partial="footer" data-partial-path="../../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/karten/preview_talklevels/de-en/index.html:7:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/preview_talklevels/de-en/index.html:9:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/preview_talklevels/de-en/index.html:16:    <div data-partial="header" data-partial-path="../../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/preview_talklevels/de-en/index.html:156:    <div data-partial="footer" data-partial-path="../../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/analyse_zaz/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/analyse_zaz/index.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:10:    <script src="../../../../datenbanken/de/de_pronouns/de_pronouns.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:11:    <script src="../../../../datenbanken/de/de_verbs_main/de_verbs_main.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:12:    <script src="../../../../datenbanken/de/de_verbs_aux/de_verbs_aux.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:13:    <script src="../../../../datenbanken/de/de_verbs_modals/de_verbs_modals.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:14:    <script src="../../../../datenbanken/de/de_adverbs/de_adverbs.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:15:    <script src="../../../../datenbanken/de/de_preps/de_preps.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:20:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/analyse_zaz/index.html:127:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/analyse_zaz/analyzer_de_core.js:5:  // Datenbanken aus /datenbanken/de/… (über Script-Tags geladen)
+pages/language_lab/apps/karten/de/index_level_de.html:7:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/de/index_level_de.html:9:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/de/index_level_de.html:14:    <div data-partial="header" data-partial-path="../../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/de/index_level_de.html:155:    <div data-partial="footer" data-partial-path="../../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/karten/de/index_de.html:7:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/de/index_de.html:9:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/de/index_de.html:17:    <div data-partial="header" data-partial-path="../../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/de/index_de.html:199:    <div data-partial="footer" data-partial-path="../../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/karten/en/index_en.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/en/index_en.html:10:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/en/index_en.html:13:    <div data-partial="header" data-partial-path="../../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/en/index_en.html:30:    <div data-partial="footer" data-partial-path="../../../../../core/partials/footer.html"></div>
+
+ABSOLUTE PATHS (starting with /):
+pages/language_lab/index.html:22:            <a href="/pages/language_lab/apps/generator/de/index_de.html">→ Satzgenerator öffnen</a>
+pages/language_lab/index.html:28:            <a href="/pages/language_lab/apps/analyse_zaz/index.html">→ ZAZ Analyse öffnen</a>
+pages/language_lab/index.html:34:            <a href="/pages/language_lab/apps/talk_levels/index.html#topic=all&level=all&tts=de&speed=1">
+pages/language_lab/sprachfuehrer_auswahl/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/language_lab/sprachfuehrer_auswahl/index.html:8:  <script src="/core/js/core_init.js" defer></script>
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html:478:    <a id="btnNavHome" class="btn" href="/index.html">
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html:478:    <a id="btnNavHome" class="btn" href="/index.html">
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html:478:    <a id="btnNavHome" class="btn" href="/index.html">
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html:478:    <a id="btnNavHome" class="btn" href="/index.html">
+pages/language_lab/apps/werkstatt/tagbook/index.html:12:  <script src="/core/loader/loader.js"></script>
+pages/language_lab/apps/werkstatt/tagbook/index.html:22:      <li><a href="/pages/portal/werkstatt/">Werkstatt</a></li>
+pages/language_lab/apps/werkstatt/tagbook/index.html:23:      <li><a href="/pages/language_lab/apps/talk_levels/">Talk Levels</a></li>
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html:478:    <a id="btnNavHome" class="btn" href="/index.html">
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html:478:    <a id="btnNavHome" class="btn" href="/index.html">
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:8:  <link rel="stylesheet" href="/core/assets/style.css">
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:11:  <script src="/core/loader/loader.js" defer></script>
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:12:  <script src="/core/js/core_init.js" defer></script>
+pages/language_lab/apps/index.html:11:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/language_lab/apps/index.html:12:    <script src="/core/loader/loader.js" defer></script>
+pages/language_lab/apps/index.html:13:    <script src="/core/js/core_init.js" defer></script>
+
+DUPLICATE FILENAMES (within language_lab):

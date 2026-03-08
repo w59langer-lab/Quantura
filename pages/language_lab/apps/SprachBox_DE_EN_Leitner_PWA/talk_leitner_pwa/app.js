@@ -265,12 +265,63 @@ const EXTRA_DATA_URLS = [
   "./data/sentences_a1.json",
 ];
 
-const BG_OPTIONS = [
-  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
-  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
-  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
-  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+const PAIR_CODE = "DE_EN";
+const LOCAL_BG_BASE = `/pages/language_lab/assets/backgrounds/sprachfuehrer/${PAIR_CODE}`;
+const LEGACY_BG_BASE = "/core/assets/backgrounds/sprachfuehrer";
+const FALLBACK_WEBP = [
+  "bg_00_en-de.webp",
+  "bg_01_en-de.webp",
+  "bg_02_en-de.webp",
+  "bg_03_en-de.webp",
 ];
+
+let BG_FALLBACK_LEGACY = false;
+let BG_OPTIONS = buildBgOptions(LOCAL_BG_BASE);
+let BG_DEFAULT_URL = BG_OPTIONS[0]?.url || "";
+
+function buildBgOptions(base) {
+  return FALLBACK_WEBP.map((file, idx) => ({
+    id: `bg${String(idx + 1).padStart(2, "0")}`,
+    label: `BG ${String(idx + 1).padStart(2, "0")}`,
+    url: `${base}/${file}`,
+  }));
+}
+
+function pickUniqueBackgrounds(files) {
+  const chosen = new Map();
+  for (const f of files || []) {
+    const name = String(f || "").trim();
+    if (!name) continue;
+    const base = name.replace(/\.(webp|png|jpg)$/i, "");
+    const preferWebp = /\.webp$/i.test(name);
+    if (!chosen.has(base) || preferWebp) chosen.set(base, name);
+  }
+  return Array.from(chosen.values());
+}
+
+async function ensureBgRegistry() {
+  try {
+    const res = await fetch("/pages/language_lab/shared_data/background_registry.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(res.statusText);
+    const data = await res.json();
+    const entry = Array.isArray(data) ? data.find((x) => x.pairCode === PAIR_CODE) : null;
+    if (entry && Array.isArray(entry.backgrounds) && entry.backgrounds.length) {
+      const unique = pickUniqueBackgrounds(entry.backgrounds);
+      BG_OPTIONS = unique.map((file, idx) => ({
+        id: `bg${String(idx + 1).padStart(2, "0")}`,
+        label: `BG ${String(idx + 1).padStart(2, "0")}`,
+        url: `${entry.backgroundDir}/${file}`,
+      }));
+      BG_DEFAULT_URL = entry.defaultBackground ? `${entry.backgroundDir}/${entry.defaultBackground}` : BG_OPTIONS[0].url;
+      return;
+    }
+  } catch (e) {
+    console.warn("BG registry fallback", e);
+  }
+  BG_OPTIONS = buildBgOptions(LEGACY_BG_BASE);
+  BG_DEFAULT_URL = BG_OPTIONS[0]?.url || "";
+  BG_FALLBACK_LEGACY = true;
+}
 
 const DAILY_TEMPLATES = [
   { de: "Guten Morgen! Ich lerne heute zehn Minuten Deutsch.", en: "Good morning! I am learning German for ten minutes today." },
@@ -465,8 +516,8 @@ function getBgChoice(id) {
 
 function applyBgChoice(id) {
   const choice = getBgChoice(id);
-  if (!choice) return;
-  const url = choice.url;
+  const url = choice?.url || BG_DEFAULT_URL;
+  if (!url) return;
   document.documentElement.style.setProperty("--sb-bg", `url("${url}")`);
   localStorage.setItem(BG_LS_ID, choice.id);
   if (els.bgSelect) els.bgSelect.value = choice.id;
@@ -479,7 +530,7 @@ function updateBgToggleLabel(previewOn) {
 }
 
 function loadBgPrefs() {
-  const savedId = localStorage.getItem(BG_LS_ID) || BG_OPTIONS[0].id;
+  const savedId = localStorage.getItem(BG_LS_ID) || (BG_OPTIONS[0]?.id || "bg01");
   applyBgChoice(savedId);
   document.body.classList.remove("is-bg-preview", "is-bg-hidden");
   updateBgToggleLabel(false);
@@ -3448,9 +3499,12 @@ async function fetchJson(url, timeoutMs = FETCH_TIMEOUT_MS) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeoutMs);
   let res;
+  console.log(`[SprachBox] fetch start url=${url}`);
   try {
     res = await fetch(url, { cache: "no-store", signal: ctrl.signal });
   } catch (e) {
+    fetchJson.last = { url, status: "error", error: e?.message || String(e) };
+    console.error(`[SprachBox] fetch error url=${url} err=${e?.message || e}`);
     if (e?.name === "AbortError") {
       throw new Error(`Timeout nach ${timeoutMs}ms`);
     }
@@ -3458,9 +3512,13 @@ async function fetchJson(url, timeoutMs = FETCH_TIMEOUT_MS) {
   } finally {
     clearTimeout(t);
   }
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  const statusTxt = `${res.status} ${res.statusText}`;
+  fetchJson.last = { url: res.url || url, status: res.status, statusText: res.statusText };
+  console.log(`[SprachBox] fetch status url=${res.url || url} status=${statusTxt}`);
+  if (!res.ok) throw new Error(statusTxt);
   return await res.json();
 }
+fetchJson.last = null;
 
 function extractArray(data) {
   // allow either:
@@ -3500,11 +3558,15 @@ async function loadOptionalDecks(urls) {
       if (norm.length) {
         merged.push(...norm);
         used.push(url);
+        const meta = fetchJson.last || {};
+        console.log(`[SprachBox] fetch extra url=${meta.url || url} status=${meta.status ?? "?"} items=${norm.length}`);
         debugLog(`loader.extra.ok ${url} (${norm.length})`);
       } else {
         debugLog(`loader.extra.empty ${url}`);
       }
     } catch (e) {
+      const meta = fetchJson.last || {};
+      console.error(`[SprachBox] fetch extra failed url=${meta.url || url} status=${meta.status ?? "?"} err=${e?.message || e}`);
       debugLog(`loader.extra.fail ${url} ${e?.message || e}`);
     }
   }
@@ -3512,10 +3574,20 @@ async function loadOptionalDecks(urls) {
 }
 
 async function tryLoadSharedDeck() {
-  if (!window.SprachfuehrerSharedAdapter?.loadPairDeck) return null;
+  if (!window.SprachfuehrerSharedAdapter?.loadPairDeck) {
+    console.warn(`[SprachBox] shared adapter missing for ${SHARED_PAIR_LABEL}`);
+    return null;
+  }
   try {
-    const { cards } = await window.SprachfuehrerSharedAdapter.loadPairDeck(SOURCE_LANG, TARGET_LANG);
+    const { cards, url, status } =
+      (await window.SprachfuehrerSharedAdapter.loadPairDeck(SOURCE_LANG, TARGET_LANG)) || {};
     const normalized = (cards || []).map(normalizeItem).filter(isUsableCard);
+    const meta = window.SprachfuehrerSharedAdapter.getLastFetch?.() || {};
+    const fetchUrl = url || meta.url || window.SprachfuehrerSharedAdapter.getSharedUrl?.() || "unknown";
+    const fetchStatus = status ?? meta.status ?? "unknown";
+    console.log(
+      `[SprachBox] shared fetch url=${fetchUrl} status=${fetchStatus} cards=${normalized.length}`,
+    );
     if (!normalized.length) return null;
     state.ui.loaderStatus = "shared";
     state.ui.loaderTried = [`shared ✓ ${SHARED_PAIR_LABEL} (${normalized.length})`];
@@ -3537,98 +3609,92 @@ async function tryLoadSharedDeck() {
       tried: state.ui.loaderTried,
     };
   } catch (e) {
-    console.error(`[SprachBox] shared load failed pair=${SHARED_PAIR_LABEL}`, e);
+    const meta = window.SprachfuehrerSharedAdapter.getLastFetch?.() || {};
+    console.error(
+      `[SprachBox] shared load failed pair=${SHARED_PAIR_LABEL} url=${meta.url || "unknown"} status=${meta.status ?? "?"} err=${e?.message || e}`,
+      e,
+    );
     return null;
   }
 }
 
 async function loadDeck() {
+  const tried = [];
+  state.ui.loaderTried = tried;
+
+  // 1) try shared deck
   const shared = await tryLoadSharedDeck();
   if (shared) return shared;
+  tried.push("shared ✗");
 
-  state.ui.loaderStatus = "error";
-  state.ui.loaderTried = state.ui.loaderTried?.length
-    ? state.ui.loaderTried
-    : ["shared ✗"];
-  const warning = "Gemeinsame Datenbasis konnte nicht geladen werden. Bitte neu laden.";
-  console.error(`[SprachBox] source=shared FAILED pair=${SHARED_PAIR_LABEL}`);
-  return {
-    normalized: [],
-    used: "shared:failed",
-    warning,
-    tried: state.ui.loaderTried,
-  };
-
-  let data = null;
+  // 2) fall back to pair-specific JSON
   let used = null;
-  const tried = [];
-  state.ui.loaderTried = [];
   state.ui.loaderStatus = "loading";
   updateDebugPanel();
 
   for (const url of DATA_URLS) {
     try {
-      data = await fetchJson(url);
-      used = url;
-      tried.push(`${url} ✓`);
+      const data = await fetchJson(url);
+      const arr = extractArray(data);
+      let normalized = arr.map(normalizeItem).filter(isUsableCard);
+      const meta = fetchJson.last || {};
+      const logUrl = meta.url || url;
+      const status = meta.status ?? "?";
+      console.log(`[SprachBox] pair fetch url=${logUrl} status=${status} items=${normalized.length}`);
+
+      if (!normalized.length) {
+        const why = `${logUrl} ✗ empty`;
+        tried.push(why);
+        state.ui.loaderTried = [...tried];
+        debugLog(`loader.empty ${why}`);
+        continue;
+      }
+
+      used = logUrl;
+      tried.push(`${logUrl} ✓ (${normalized.length})`);
       state.ui.loaderTried = [...tried];
-      debugLog(`loader.ok ${url}`);
-      break;
+      debugLog(`loader.ok ${logUrl}`);
+
+      // Optional additive decks (non-fatal)
+      if (EXTRA_DATA_URLS.length) {
+        const extra = await loadOptionalDecks(EXTRA_DATA_URLS);
+        if (extra.merged.length) {
+          const byId = new Map();
+          for (const it of [...normalized, ...extra.merged]) {
+            if (!it || !it.id) continue;
+            if (!byId.has(it.id)) byId.set(it.id, it);
+          }
+          normalized = Array.from(byId.values());
+          if (extra.used.length) {
+            used = `${used} + ${extra.used.join(" + ")}`;
+          }
+        }
+      }
+
+      normalized = applyDeckTextOverrides(normalized);
+      state.ui.loaderStatus = "ok";
+      return { normalized, used, warning: "", tried };
     } catch (e) {
-      const why = `${url} ✗ ${e?.message || e}`;
+      const meta = fetchJson.last || {};
+      const why = `${meta.url || url} ✗ ${e?.message || e}`;
       tried.push(why);
       state.ui.loaderTried = [...tried];
+      console.error(`[SprachBox] pair fetch failed url=${meta.url || url} status=${meta.status ?? "?"} err=${e?.message || e}`);
       debugLog(`loader.fail ${why}`);
     }
   }
 
-  if (!data) {
-    const fallback = buildDummyDeck();
-    const withOverrides = applyDeckTextOverrides(fallback);
-    state.ui.loaderStatus = "dummy";
+  // 3) final safety: dummy deck
+  const fallback = buildDummyDeck();
+  const withOverrides = applyDeckTextOverrides(fallback);
+  state.ui.loaderStatus = "dummy";
   return {
     normalized: withOverrides,
     used: "Dummy-Deck (Notfall)",
-      warning:
-        "Kein externes Deck geladen. Notfall-Dummy-Deck (10 Karten) aktiv.",
-      tried,
-    };
-  }
-
-  const arr = extractArray(data);
-  let normalized = arr.map(normalizeItem).filter(isUsableCard);
-  if (!normalized.length) {
-    const fallback = buildDummyDeck();
-    const withOverrides = applyDeckTextOverrides(fallback);
-    state.ui.loaderStatus = "dummy-empty";
-    return {
-      normalized: withOverrides,
-      used: "Dummy-Deck (JSON leer/ungültig)",
-      warning:
-        "Deck-Datei gefunden, aber ohne gültige Karten. Dummy-Deck aktiv.",
-      tried,
-    };
-  }
-
-  // Optional additive decks (e.g. large A1 sentence pack) - non-fatal if missing.
-  if (EXTRA_DATA_URLS.length) {
-    const extra = await loadOptionalDecks(EXTRA_DATA_URLS);
-    if (extra.merged.length) {
-      const byId = new Map();
-      for (const it of [...normalized, ...extra.merged]) {
-        if (!it || !it.id) continue;
-        if (!byId.has(it.id)) byId.set(it.id, it);
-      }
-      normalized = Array.from(byId.values());
-      if (extra.used.length) {
-        used = `${used} + ${extra.used.join(" + ")}`;
-      }
-    }
-  }
-
-  normalized = applyDeckTextOverrides(normalized);
-  state.ui.loaderStatus = "ok";
-  return { normalized, used, warning: "", tried };
+    warning:
+      "Kein externes Deck geladen. Notfall-Dummy-Deck (10 Karten) aktiv.",
+    tried,
+  };
 }
 
 // ---------- PWA install ----------
@@ -3725,6 +3791,7 @@ async function registerSW() {
 
 // ---------- init ----------
 async function init() {
+  await ensureBgRegistry();
   loadSettings();
   loadBgPrefs();
   loadBoxFocus();

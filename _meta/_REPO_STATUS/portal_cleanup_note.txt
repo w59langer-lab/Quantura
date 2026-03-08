@@ -1,0 +1,5 @@
+Portal cleanup 2026-03-08
+- canonical portal: /index.html
+- portal_v2 page retired; folder archived to pages/_archive/portal_v2__inactive
+- portal assets now served from /assets/portal/portal.css and /assets/portal/portal.js
+- navigation buttons route Portal -> /index.html

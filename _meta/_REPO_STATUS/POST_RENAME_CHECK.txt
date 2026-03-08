@@ -1,0 +1,10 @@
+ACTIVE LOCAL ROOT: /media/mx-ahs/ARCHIV/quantura
+GIT OK: no
+OLD PATH REFERENCES FOUND: yes
+FILES TO FIX LATER:
+- See _REPO_STATUS/old-name-references.txt (quantura-lernlab-main occurrences)
+- See _REPO_STATUS/old-path-references.txt (/media/.../quantura-lernlab-main and web&app/current)
+- Notable locations: _REPO_COMPARE/* summaries, _REPO_STATUS/* status logs, demos/language_lab/modules/sprachfuehrer/*
+SAFE TO CONTINUE WORKING: yes
+SAFE TO RENAME GITHUB REPO LATER: no (clean up references first)
+SAFE TO DELETE OLD FOLDERS LATER: no (old paths still referenced)

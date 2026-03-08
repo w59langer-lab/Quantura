@@ -1,0 +1,87 @@
+﻿:root {
+  --portal-gap: 14px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+.portal-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 12px 40px;
+  display: grid;
+  gap: var(--portal-gap);
+}
+
+.portal-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.portal-welcome h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.portal-welcome p {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+}
+
+.portal-note {
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+.portal-label {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.portal-topics h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.topic-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#topicSearch,
+#topicSelect {
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-page);
+  color: var(--text-main);
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+#topicSearch {
+  flex: 1 1 260px;
+  min-width: 220px;
+}
+
+#topicSelect {
+  flex: 0 1 260px;
+  min-width: 200px;
+}
+
+@media (max-width: 640px) {
+  .portal-welcome {
+    align-items: flex-start;
+  }
+  #topicSelect,
+  #topicSearch {
+    width: 100%;
+  }
+}

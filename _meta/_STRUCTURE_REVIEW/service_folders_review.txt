@@ -1,0 +1,7 @@
+Service folders review:
+_REPO_STATUS | directory
+_REPO_COMPARE | directory
+_POST_CLEANUP_CHECK | directory
+_STRUCTURE_REVIEW | directory
+_REPORTS | directory
+_BACKUPS | directory

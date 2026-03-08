@@ -1,0 +1,109 @@
+=== ACTIVE REPO STATUS ===
+pwd: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+.git exists: yes
+---- git rev-parse --show-toplevel ----
+/media/mx-ahs/ARCHIV/quantura-lernlab-main
+---- git status --short --branch ----
+## main...origin/main
+ M .gitignore
+ M demos/prog_min_portfolio/.vscode/settings.json
+ M demos/prog_min_portfolio/assets/css/portfolio.css
+ M demos/prog_min_portfolio/assets/js/header-widgets.js
+ M demos/prog_min_portfolio/index.html
+ M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/shared_data/sprachfuehrer_phrase_adapter.js
+ M pages/language_lab/shared_data/sprachfuehrer_phrases.json
+?? _REPO_STATUS/
+---- git remote -v ----
+origin	https://github.com/w59langer-lab/quantura-lernlab-main.git (fetch)
+origin	https://github.com/w59langer-lab/quantura-lernlab-main.git (push)
+---- git config --get remote.origin.url ----
+https://github.com/w59langer-lab/quantura-lernlab-main.git
+---- git branch -vv ----
+* main 6600003 [origin/main] Language Lab: update Sprachführer, preview cards and Talk-Leitner apps
+---- git rev-parse HEAD ----
+660000329e964dff58c0aed863437e7b8c832a11
+---- git rev-list --count HEAD ----
+7
+---- git log --oneline --decorate -n 30 ----
+6600003 (HEAD -> main, origin/main) Language Lab: update Sprachführer, preview cards and Talk-Leitner apps
+765b3c6 rescue: prog_min_portfolio update
+56c3299 rescue: prog_min_portfolio update
+cbbdb29 rescue: prog_min_portfolio update
+9f44d39 rescue: add prog_min_portfolio assets
+43ae9d4 save settings
+1f285d2 snapshot: rescue quantura-lernlab
+---- ls -la ----
+total 89
+drwxrwxrwx 1 mx-ahs mx-ahs  8192 Mar  8 16:27 .
+drwxrwxrwx 1 mx-ahs mx-ahs 12288 Mar  6 06:30 ..
+drwxrwxrwx 1 mx-ahs mx-ahs  4096 Mar  8 16:29 .git
+-rwxrwxrwx 2 mx-ahs mx-ahs   256 Mar  8 09:47 .gitignore
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  5 16:23 .vscode
+-rwxrwxrwx 1 mx-ahs mx-ahs   256 Feb 23 19:54 README.md
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  8 09:47 _BACKUPS
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  8 09:47 _REPORTS
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  8 16:27 _REPO_STATUS
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  5 16:23 apps
+drwxrwxrwx 1 mx-ahs mx-ahs  4096 Mar  6 05:20 assets
+-rwxrwxrwx 1 mx-ahs mx-ahs 10547 Feb 23 19:54 codex.sh
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  5 16:23 core
+drwxrwxrwx 1 mx-ahs mx-ahs  4096 Mar  5 16:23 datenbanken
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  5 20:21 demos
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  5 16:23 downloads
+-rwxrwxrwx 2 mx-ahs mx-ahs  3600 Feb 23 19:54 find_math_module.ps1
+-rwxrwxrwx 2 mx-ahs mx-ahs  2405 Feb 23 19:54 index.html
+drwxrwxrwx 1 mx-ahs mx-ahs  4096 Mar  5 16:23 math_module
+drwxrwxrwx 1 mx-ahs mx-ahs  4096 Mar  5 16:23 math_module__SAVE_2026-02-20_173727
+-rwxrwxrwx 2 mx-ahs mx-ahs 18292 Feb 23 19:54 mathe_grundschule.html
+drwxrwxrwx 1 mx-ahs mx-ahs  4096 Mar  5 16:23 pages
+drwxrwxrwx 1 mx-ahs mx-ahs  4096 Mar  5 16:23 sections
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  5 16:23 stories
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  6 05:20 tools
+---- top-level directories ----
+
+.git
+.vscode
+_BACKUPS
+_REPORTS
+_REPO_STATUS
+apps
+assets
+core
+datenbanken
+demos
+downloads
+math_module
+math_module__SAVE_2026-02-20_173727
+pages
+sections
+stories
+tools
+---- required directories presence ----
+apps: yes
+assets: yes
+core: yes
+demos: yes
+pages: yes
+sections: yes
+stories: yes
+tools: yes
+datenbanken: yes
+math_module: yes
+downloads: yes
+---- required files presence ----
+index.html: yes
+README.md: yes
+mathe_grundschule.html: yes
+codex.sh: yes

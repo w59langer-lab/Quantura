@@ -62,7 +62,7 @@
     },
     {
       "title": "Startseite Portal V2",
-      "url": "pages/portal_v2/index.html",
+      "url": "/index.html",
       "group": "Sonstiges",
       "type": "page"
     },

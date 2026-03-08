@@ -1,0 +1,9 @@
+ACTIVE PROJECT ROOT: /media/mx-ahs/ARCHIV/quantura
+LANGUAGE LAB ACTIVE PATH: /media/mx-ahs/ARCHIV/quantura/pages/language_lab
+MAIN WORKING ZONES: assets/, core/, pages/, demos/, datenbanken/
+SERVICE / LOG ZONES: _REPO_STATUS, _REPO_COMPARE, _POST_CLEANUP_CHECK, _MIGRATION_PLAN, _STRUCTURE_REVIEW, _REPORTS, _BACKUPS, _ARCHIVE (and variants)
+WHAT CLUTTERS THE ROOT: multiple underscored service/backup/report folders mixed with code; historical backups; archive dirs
+WHAT CAN LATER MOVE TO _meta: _REPO_STATUS, _REPO_COMPARE, _POST_CLEANUP_CHECK, _MIGRATION_PLAN, _STRUCTURE_REVIEW, _REPORTS, _BACKUPS, _ARCHIVE, _archive, _LOGS, logs
+WHAT MUST STAY IN ROOT: assets, core, pages, demos, datenbanken, tools (if present), docs/readme files
+DEPLOY CLEAN SHOULD CONTAIN: assets, core, pages (active), datenbanken (runtime data), minimal tools needed for deploy; exclude meta/backup/report/quarantine content
+SAFE NEXT STEP: create _meta/ and move service/report/backup folders there (later, with user approval), then prune unused demos for deploy build

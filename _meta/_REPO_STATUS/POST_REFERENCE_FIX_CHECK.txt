@@ -1,0 +1,42 @@
+POST REFERENCE FIX CHECK (2026-03-08)
+ACTIVE LOCAL ROOT: /media/mx-ahs/ARCHIV/quantura
+
+Git status (--short --branch):
+main...origin/main
+M .gitignore
+M demos/prog_min_portfolio/.vscode/settings.json
+M demos/prog_min_portfolio/assets/css/portfolio.css
+M demos/prog_min_portfolio/assets/js/header-widgets.js
+M demos/prog_min_portfolio/index.html
+M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js
+M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html
+M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js
+M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html
+M pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js
+M pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html
+M pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js
+M pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html
+M pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js
+M pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html
+M pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js
+M pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html
+M pages/language_lab/shared_data/sprachfuehrer_phrase_adapter.js
+M pages/language_lab/shared_data/sprachfuehrer_phrases.json
+?? _REPO_COMPARE/
+?? _REPO_STATUS/
+
+Group A changes: none required; no old path/name found in .vscode, README, *.md, *.sh, *.ps1, *.json.
+Backups: _REPO_STATUS/_before_reference_fix/ (empty).
+
+Group B skipped (manual review later): none.
+Group C skipped (historical logs): see REFERENCE_FIX_SKIPPED.txt list.
+
+File existence checks:
+- demos/sprachbox_leitner/index.html: MISSING
+- mathe_grundschule.html: OK
+- index.html: OK
+
+Residual old-path references after fix:
+- Yes, limited to archival reports: _REPO_STATUS/* logs and _REPO_COMPARE/* summaries. No matches in active code/config outside these folders.
+
+New broken absolute links to quantura-lernlab-main: none detected.

@@ -1,0 +1,7 @@
+ACTIVE SOURCE OF TRUTH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+SIBLING STATUS: incomplete
+OLD CURRENT STATUS: incomplete
+ANY UNIQUE FILES TO RESCUE: yes
+SAFE TO ARCHIVE SIBLING LATER: yes
+SAFE TO ARCHIVE OLD CURRENT LATER: yes
+NEXT RECOMMENDED ACTION: Review diff summaries, rescue any unique focus files before archiving older copies.

@@ -13,6 +13,7 @@
   --border-subtle: #d0d7e2;
   --text-main: #111827;
   --text-muted: #6b7280;
+  --footer-fg: #1f2937;
   --accent: #2563eb;
   --accent-soft: #dbeafe;
   --accent-strong: #1d4ed8;
@@ -32,6 +33,7 @@ html[data-theme="dark"] {
   --border-subtle: #1e293b;
   --text-main: #e5e7eb;
   --text-muted: #9ca3af;
+  --footer-fg: #e5e7eb;
   --accent: #60a5fa;
   --accent-soft: #0f172a;
   --accent-strong: #93c5fd;
@@ -357,6 +359,19 @@ html[data-theme="dark"] .theme-icon--dark {
   color: var(--text-muted);
 }
 
+.header-clock__row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.header-calendar-btn {
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */
@@ -366,7 +381,7 @@ html[data-theme="dark"] .theme-icon--dark {
   flex-shrink: 0;
   border-top: 1px solid var(--border-subtle);
   padding: 8px 0 16px;
-  color: #fff;
+  color: var(--footer-fg);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
@@ -376,7 +391,7 @@ footer,
 [data-partial="footer"] {
   margin-top: auto;
   flex-shrink: 0;
-  color: #fff;
+  color: var(--footer-fg);
 }
 
 .ll-footer-inner {
@@ -400,7 +415,7 @@ footer,
 
 .site-footer small {
   font-size: 0.75rem;
-  color: #fff;
+  color: var(--footer-fg);
 }
 
 .site-footer a,
@@ -408,7 +423,7 @@ footer a,
 #footer a,
 .footer a,
 [data-partial="footer"] a {
-  color: #fff;
+  color: var(--footer-fg);
   text-decoration: underline;
 }
 
@@ -422,7 +437,7 @@ footer a:focus-visible,
 .footer a:focus-visible,
 [data-partial="footer"] a:hover,
 [data-partial="footer"] a:focus-visible {
-  color: #fff;
+  color: var(--footer-fg);
   opacity: 0.9;
 }
 

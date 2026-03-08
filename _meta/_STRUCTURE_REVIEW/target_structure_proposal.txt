@@ -1,0 +1,9 @@
+Proposed simplified root layout (concept):
+- assets/            (shared CSS/JS/media)
+- core/              (partials, bootstrap, shared JS)
+- pages/             (portal pages, language_lab UI)
+- demos/             (demo/experiments kept separate)
+- tools/             (scripts, utilities)
+- datenbanken/       (data sets, JSON, DB exports)
+- docs/              (readmes, how-to, plans)
+- _meta/             (status, reports, backups, comparisons, logs)

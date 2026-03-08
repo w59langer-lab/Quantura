@@ -1,0 +1,6 @@
+assets  – zentrale statische Ressourcen (CSS/JS/Images, portal-spezifische Assets)
+core    – gemeinsame UI-Shell: Header/Footer-Partials, core_init.js, TTS, shared backgrounds
+pages   – Hauptsite & Apps (Portal, Language Lab, Tools, Store, Legacy)
+demos   – Portfolio- und Demo-Beispiele (Showcase, Sandbox)
+datenbanken – strukturierte Sprach-/Inhaltsdaten (JS/JSON) für Language Lab & Generatoren
+_meta   – Service/Reports/Backups/Audits (nicht zur Laufzeit nötig)

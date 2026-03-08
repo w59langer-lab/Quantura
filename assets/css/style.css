@@ -1,6 +1,10 @@
 :root{
   --maxw: 980px;
   --pad: 18px;
+  --footer-fg: #1f2937;
+}
+html[data-theme="dark"]{
+  --footer-fg: #e5e7eb;
 }
 html, body { height: 100%; }
 *{ box-sizing: border-box; }
@@ -20,15 +24,15 @@ main, #main, .main, #content, .content, #app, .app, .page, .page-wrapper {
 footer, #footer, .footer, .site-footer, [data-partial="footer"] {
   margin-top: auto;
   flex-shrink: 0;
-  color: #fff;
+  color: var(--footer-fg);
   text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 footer a, #footer a, .footer a, .site-footer a, [data-partial="footer"] a {
-  color: #fff;
+  color: var(--footer-fg);
   text-decoration: underline;
 }
 footer a:hover, footer a:focus-visible, #footer a:hover, #footer a:focus-visible, .footer a:hover, .footer a:focus-visible, .site-footer a:hover, .site-footer a:focus-visible, [data-partial="footer"] a:hover, [data-partial="footer"] a:focus-visible {
-  color: #fff;
+  color: var(--footer-fg);
   opacity: .9;
 }
 header{

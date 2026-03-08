@@ -1,0 +1,74 @@
+[
+  {
+    "pairCode": "DE_EN",
+    "label": "Deutsch–Englisch",
+    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN",
+    "defaultBackground": "bg_00_en-de.webp",
+    "backgrounds": [
+      "bg_00_en-de.webp",
+      "bg_01_en-de.webp",
+      "bg_02_en-de.webp",
+      "bg_03_en-de.webp"
+    ]
+  },
+  {
+    "pairCode": "DE_IT",
+    "label": "Deutsch–Italienisch",
+    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_IT",
+    "defaultBackground": "bg_00_en-de.webp",
+    "backgrounds": [
+      "bg_00_en-de.webp",
+      "bg_01_en-de.webp",
+      "bg_02_en-de.webp",
+      "bg_03_en-de.webp"
+    ]
+  },
+  {
+    "pairCode": "DE_ES",
+    "label": "Deutsch–Spanisch",
+    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_ES",
+    "defaultBackground": "bg_00_en-de.webp",
+    "backgrounds": [
+      "bg_00_en-de.webp",
+      "bg_01_en-de.webp",
+      "bg_02_en-de.webp",
+      "bg_03_en-de.webp"
+    ]
+  },
+  {
+    "pairCode": "DE_FR",
+    "label": "Deutsch–Französisch",
+    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_FR",
+    "defaultBackground": "bg_00_en-de.webp",
+    "backgrounds": [
+      "bg_00_en-de.webp",
+      "bg_01_en-de.webp",
+      "bg_02_en-de.webp",
+      "bg_03_en-de.webp"
+    ]
+  },
+  {
+    "pairCode": "DE_RU",
+    "label": "Deutsch–Russisch",
+    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_RU",
+    "defaultBackground": "bg_00_en-de.webp",
+    "backgrounds": [
+      "bg_00_en-de.webp",
+      "bg_01_en-de.webp",
+      "bg_02_en-de.webp",
+      "bg_03_en-de.webp"
+    ]
+  },
+  {
+    "pairCode": "DE_TR",
+    "label": "Deutsch–Türkisch",
+    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_TR",
+    "defaultBackground": "bg_00_en-de.webp",
+    "backgrounds": [
+      "bg_00_en-de.webp",
+      "bg_01_en-de.webp",
+      "bg_02_en-de.webp",
+      "bg_03_en-de.webp"
+    ]
+  }
+]

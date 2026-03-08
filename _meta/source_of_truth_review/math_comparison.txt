@@ -1,0 +1,24 @@
+Math comparison (no changes applied)
+
+math_module/ (current local math app)
+- Contains index.html + index_gr_mathe.html, levels/0-6, data/levels.json & tasks.json, shared core/assets.
+- Has recent backup file index.html.bak.2026-02-20_191915.
+- Focus: Grundschule levels with avatars/themes.
+
+math_module__SAVE_2026-02-20_173727/ (saved snapshot)
+- Same structure but includes tasks_level3.json and generate-levels.js (utility), likely older snapshot (timestamp 2026-02-20).
+- Treat as archive/save; not main source.
+
+Portfolio math in demos/prog_min_portfolio/demos/mathe_grundschule/
+- Similar structure (core/, data/, levels/, assets/) plus multiple *_bak_gs_fix_* backups dated 2026-02-26.
+- Likely newer iteration with fixes; includes themed assets and backups of scripts/levels.
+- Presentation-oriented (within portfolio), but content appears more recently touched than math_module snapshot.
+
+Which looks most complete/new?
+- Portfolio demo (mathe_grundschule) has later backup timestamps (2026-02-26) vs math_module backup (2026-02-20) and extra fix files, suggesting it is the fresher/cleaner version.
+- math_module current may lag the portfolio demo; saved snapshot is archival.
+
+Proposed SoT stance (no action taken):
+- Active math candidate: demos/prog_min_portfolio/demos/mathe_grundschule (newest content/fixes).
+- Secondary: math_module (local standalone copy, needs sync decision later).
+- Archive: math_module__SAVE_2026-02-20_173727.

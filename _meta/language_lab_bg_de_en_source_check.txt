@@ -1,0 +1,28 @@
+DE_EN background source check (no changes applied)
+
+Registry (background_registry.json):
+- backgroundDir: /pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN
+- defaultBackground: bg_00_en-de.webp
+- backgrounds: bg_00_en-de.webp, bg_01_en-de.webp, bg_02_en-de.webp, bg_03_en-de.webp
+
+app.js (SprachBox_DE_EN_Leitner_PWA):
+- PAIR_CODE: DE_EN
+- PRIMARY base: LOCAL_BG_BASE = /pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN
+- Registry is loaded on init; BG_OPTIONS built from registry entries -> uses DE_EN folder.
+- Fallback base: LEGACY_BG_BASE = /core/assets/backgrounds/sprachfuehrer (only if registry load fails).
+
+Active paths:
+- Uses pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN (registry + LOCAL_BG_BASE).
+- Does NOT read directly from pages/language_lab/assets/backgrounds/sprachfuehrer/ (root of sprachfuehrer) except via fallback.
+- Fallback triggers only when registry fetch fails or empty (then BG_FALLBACK_LEGACY=true and /core/assets/... is used).
+
+Root-level files (bg_00..bg_03 in core/assets/backgrounds/sprachfuehrer):
+- Currently duplicates relative to DE_EN copy.
+- Kept intact; can be cleaned/archived later after confirming fallback not needed.
+
+Summary flags:
+- ACTIVE DE_EN BACKGROUND DIR: /pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN
+- ROOT-LEVEL FILES USED: no (only via fallback)
+- FALLBACK USED: no (unless registry fails)
+- ROOT-LEVEL FILES ARE DUPLICATES: yes
+- SAFE TO CLEAN ROOT-LEVEL DUPLICATES LATER: yes (once fallback proven unnecessary)

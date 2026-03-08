@@ -1,0 +1,6 @@
+ACTIVE PROJECT ROOT: /media/mx-ahs/ARCHIV/quantura
+ACTIVE LANGUAGE LAB PATH: /media/mx-ahs/ARCHIV/quantura/pages/language_lab
+WORKING ZONES KEPT: assets/, core/, pages/, demos/, datenbanken/
+MOVED TO _meta: _REPO_STATUS,_REPO_COMPARE,_POST_CLEANUP_CHECK,_STRUCTURE_REVIEW
+NOT FOUND: _MIGRATION_PLAN
+PROJECT STILL OK: yes

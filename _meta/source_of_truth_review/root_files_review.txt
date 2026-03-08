@@ -1,0 +1,11 @@
+Root files quick review (no changes applied)
+
+index.html
+- Main portal entry; should stay in root as primary start page.
+
+mathe_grundschule.html
+- Legacy/standalone math entry; content overlaps with math_module and portfolio demo.
+- Candidate to relocate under pages/ or math_module later, but keep for now to avoid breaking links.
+
+README.md
+- Project-level documentation; should remain in root.

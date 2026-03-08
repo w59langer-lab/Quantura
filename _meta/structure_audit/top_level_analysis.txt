@@ -1,0 +1,48 @@
+assets
+  subdirs: 7
+  index.html present: no
+  js present: yesassets/js/ll_fab_nav.js
+  css present: yesassets/css/ll_fab_nav.css
+  json present: yesassets/data/mathe_grundschule_tasks.json
+  role: shared static assets (css/js/img)
+
+core
+  subdirs: 4
+  index.html present: no
+  js present: yescore/js/core_init.js
+  css present: yescore/assets/style.css
+  json present: yescore/data/apps_store.json
+  role: framework partials + core js/css
+
+pages
+  subdirs: 9
+  index.html present: yespages/bibliothek/index.html
+  js present: yespages/store/store.js
+  css present: yespages/bibliothek/bibliothek_style.css
+  json present: no
+  role: site/app pages incl. language_lab
+
+demos
+  subdirs: 1
+  index.html present: yesdemos/prog_min_portfolio/index.html
+  js present: no
+  css present: no
+  json present: no
+  role: demo and portfolio examples
+
+datenbanken
+  subdirs: 10
+  index.html present: no
+  js present: yesdatenbanken/de/de_prep_patterns.js
+  css present: no
+  json present: yesdatenbanken/bibliothek/projekte.json
+  role: data sets for language/content
+
+_meta
+  subdirs: 6
+  index.html present: no
+  js present: no
+  css present: no
+  json present: no
+  role: status/reports/backups
+

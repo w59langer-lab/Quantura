@@ -1,0 +1,4 @@
+QUARANTINE LANGUAGE LAB CHECK
+Path searched: /media/mx-ahs/ARCHIV/_TO_DELETE_LATER/quantura-lernlab
+Findings:
+- /media/mx-ahs/ARCHIV/_TO_DELETE_LATER/quantura-lernlab/demos/language_lab/modules/sprachfuehrer

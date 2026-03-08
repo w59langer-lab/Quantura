@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>SprachBox DE↔FR</title>
+
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="../../../shared_data/sprachfuehrer_phrase_adapter.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">SB</div>
+      <div class="titles">
+        <div class="h1">SprachBox</div>
+        <div class="h2">Deutsch ↔ Français · Leitner (8 Boxen)</div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button id="btnInstall" class="btn ghost" hidden>
+        <span class="lbl lbl-de">App installieren</span>
+        <span class="lbl lbl-en">Install app</span>
+      </button>
+      <button id="btnReset" class="btn ghost" title="Fortschritt löschen">
+        <span class="lbl lbl-de">Zurücksetzen</span>
+        <span class="lbl lbl-en">Reset</span>
+      </button>
+      <div id="bgControls" class="bgControls">
+        <label class="btn ghost bgSelectWrap" for="bgSelect">
+          <span class="label">
+            <span class="lbl lbl-de">Hintergrund wählen</span>
+            <span class="lbl lbl-en">Choose background</span>
+          </span>
+          <select id="bgSelect">
+            <option value="bg01">BG 01</option>
+            <option value="bg02">BG 02</option>
+            <option value="bg03">BG 03</option>
+            <option value="bg04">BG 04</option>
+          </select>
+        </label>
+        <button id="bgToggle" class="btn ghost" type="button">
+          <span class="lbl lbl-de">Hintergrund ausblenden</span>
+          <span class="lbl lbl-en">Hide background</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <div class="modeBar" role="tablist" aria-label="Lernmodus">
+      <button id="tabModeDaily" class="modeTab" type="button" data-mode="daily" role="tab" aria-selected="false" title="10 Minuten Schnell-Session mit klaren Schritten">Daily 10 / Täglich 10</button>
+      <button id="tabModeLevel" class="modeTab is-active" type="button" data-mode="level" role="tab" aria-selected="true" title="Leitner-Training wie bisher nach Thema/Level">Level / Stufe</button>
+      <button id="tabModeReview" class="modeTab" type="button" data-mode="review" role="tab" aria-selected="false" title="Nur fällige Karten wiederholen (max. 10)">Review / Wiederholen</button>
+      </div>
+      <div id="modeHelp" class="modeHelp">Level-Modus: wie bisher. Filter wählen und Leitner-Session starten.</div>
+
+      <div id="errBanner" class="msg msgError" role="alert" hidden></div>
+
+      <section id="dailyPanel" class="modePanel" hidden aria-label="Daily 10">
+        <div class="panel-head">
+          <div class="h3">Daily 10</div>
+          <div class="pill">5 Min Sprechen + 5 Min Lesen/Hören</div>
+        </div>
+        <div class="dailyGrid">
+          <div class="dailyCard">
+            <div class="dailyTitle">1. Sprechen (ca. 5 Minuten)</div>
+            <div class="dailyText">Lies diese Sätze laut. Langsam, klar, 2-3 Runden.</div>
+            <ol id="dailyTemplates" class="dailyList"></ol>
+          </div>
+          <div class="dailyCard">
+            <div class="dailyTitle">2. Lesen / Hören (ca. 5 Minuten)</div>
+            <div class="dailyText">Öffne danach eine Leitner-Karte oder lies die Sätze still und höre sie mit TTS.</div>
+            <div class="cta">
+              <button id="btnDailySpeak" class="btn primary" type="button">Sätze vorlesen</button>
+              <button id="btnDailyDone" class="btn success" type="button">Daily fertig</button>
+            </div>
+            <div id="dailyStatus" class="hint">Noch nicht erledigt heute.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviewPanel" class="modePanel" hidden aria-label="Review">
+        <div class="panel-head">
+          <div class="h3">Review</div>
+          <div class="pill">Nur fällige Karten · max. 10</div>
+        </div>
+        <div class="row">
+          <div class="stats">
+            <div class="stat">
+              <div class="k">Fällige Karten</div>
+              <div class="v" id="lblReviewDue">0</div>
+            </div>
+            <div class="stat">
+              <div class="k">Review-Limit</div>
+              <div class="v">10</div>
+            </div>
+          </div>
+          <div class="cta">
+            <button id="btnReviewStart" class="btn primary" type="button">Review starten</button>
+          </div>
+        </div>
+        <div id="reviewSummary" class="hint">Noch keine Review-Session in dieser Sitzung.</div>
+      </section>
+
+      <section id="levelPanel" class="modePanel" aria-label="Level">
+      <div class="row">
+        <label class="field">
+          <span>Thema</span>
+          <select id="selTopic"></select>
+        </label>
+
+        <label class="field">
+          <span>Stufe</span>
+          <select id="selLevel"></select>
+        </label>
+
+        <label class="field">
+          <span>TTS</span>
+          <select id="selTts">
+            <option value="off">Aus</option>
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+            <option value="both">Beide</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Tempo</span>
+          <input id="rngSpeed" type="range" min="0.40" max="1.25" step="0.05" value="0.9" />
+          <div class="mini"><span id="lblSpeed">0.90×</span></div>
+          <div class="tempoPresets">
+            <button id="btnTempoNormal" class="btn ghost" type="button">Normal / Normal</button>
+            <button id="btnTempoSlow" class="btn ghost" type="button">Langsam / Slow</button>
+            <button id="btnTempoFast" class="btn ghost" type="button">Schnell / Fast</button>
+          </div>
+        </label>
+        <label class="field">
+          <span>⭐ Filter / Starred</span>
+          <select id="selStarFilter">
+            <option value="all">Alle / All</option>
+            <option value="starred">⭐ Gemerkt / Starred</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row">
+        <div class="stats">
+          <div class="stat">
+            <div class="k">Deck</div>
+            <div class="v" id="lblDeck">–</div>
+          </div>
+          <div class="stat">
+            <div class="k">Fällig jetzt</div>
+            <div class="v" id="lblDue">0</div>
+          </div>
+          <div class="stat">
+            <div class="k">Neu</div>
+            <div class="v" id="lblNew">0</div>
+          </div>
+          <div class="stat">
+            <div class="k">Heute</div>
+            <div class="v" id="lblToday">0 min</div>
+          </div>
+          <div class="stat">
+            <div class="k">7 Tage</div>
+            <div class="v" id="lblWeek">0 min</div>
+          </div>
+          <div class="stat">
+            <div class="k">Streak</div>
+            <div class="v" id="lblStreak">0</div>
+          </div>
+          <div class="stat">
+            <div class="k">Gemerkt / Starred</div>
+            <div class="v" id="lblStarred">0</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <button id="btnStart" class="btn primary">Start</button>
+          <button id="btnBoxes" class="btn">Boxen</button>
+          <button id="btnGlossary" class="btn ghost">Wörterbuch</button>
+        </div>
+        <div class="mini" id="lblBoxFocusMain">Start-Fokus: Alle</div>
+      </div>
+      </section>
+
+      <div id="msg" class="msg" role="status"></div>
+      <section id="debugPanel" class="debugPanel" hidden aria-label="Debug">
+        <div class="panel-head">
+          <div class="h3">Debug</div>
+          <div class="mini">Status / Loader / SW</div>
+        </div>
+        <pre id="debugText" class="debugText">Debug aus</pre>
+        <details class="pronCheck" id="pronomenCheckTool">
+          <summary>Pronomen-Check (DE Verbformen)</summary>
+          <div class="row pronCheckRow">
+            <div class="cta">
+              <button id="btnPronCheckLoadDeck" class="btn ghost" type="button">Aus Deck laden</button>
+              <button id="btnPronCheckRun" class="btn ghost" type="button">Prüfen</button>
+              <button id="btnPronCheckFix" class="btn ghost" type="button">Auto-Korrektur (vorsichtig)</button>
+            </div>
+          </div>
+          <label class="field pronCheckField">
+            <span>Text (eine Zeile pro Satz optional)</span>
+            <textarea id="txtPronCheckInput" rows="6" placeholder="ich ist müde&#10;du habe Zeit"></textarea>
+          </label>
+          <pre id="txtPronCheckOutput" class="debugText pronCheckOutput">Noch kein Check.</pre>
+        </details>
+        <details class="deNormTool" id="deNormTool">
+          <summary>Tools: DE-Text-Normalisierung (Umlaute/ß/Mojibake)</summary>
+          <div class="row deNormRow">
+            <div class="cta">
+              <button id="btnDeNormPreview" class="btn ghost" type="button">Preview Normalisierung</button>
+              <button id="btnDeNormApply" class="btn ghost" type="button">Normalisierung anwenden</button>
+              <button id="btnDeNormBackup" class="btn ghost" type="button">Backup/Export</button>
+            </div>
+          </div>
+          <pre id="txtDeNormOutput" class="debugText deNormOutput">Noch keine Vorschau.</pre>
+        </details>
+      </section>
+    </section>
+
+    <section id="boxPanel" class="panel" hidden>
+      <div class="panel-head">
+        <div class="h3">Boxen (Leitner · 8 Boxen)</div>
+        <button id="btnCloseBoxes" class="btn ghost">Schließen</button>
+      </div>
+
+      <div class="row boxFocusBar">
+        <div class="mini" id="lblBoxFocusPanel">Box-Fokus: Alle</div>
+        <div class="cta">
+          <button id="btnBoxFocusReset" class="btn ghost" type="button">Fokus zurücksetzen</button>
+        </div>
+      </div>
+
+      <div class="boxes" id="boxesGrid"></div>
+
+      <div class="hint">
+        Tipp: <b>Gewusst</b> → Karte wandert eine Box nach rechts (längerer Abstand). <b>Nicht gewusst</b> → zurück in Box 1.
+      </div>
+    </section>
+
+    <section id="glossaryPanel" class="panel" hidden>
+      <div class="panel-head">
+        <div class="h3">Wörterbuch / Glossar</div>
+        <button id="btnCloseGlossary" class="btn ghost">Schließen / Close</button>
+      </div>
+
+      <div class="row">
+        <label class="field">
+          <span>Suche / Search</span>
+          <input id="inpGlossarySearch" type="search" placeholder="Wort suchen…" />
+        </label>
+        <label class="field">
+          <span>Filter</span>
+          <select id="selGlossaryType">
+            <option value="all">Alle / All</option>
+            <option value="noun">Nur Nomen / Nouns</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Sprache / Language</span>
+          <select id="selGlossaryLang">
+            <option value="all">Alle / All</option>
+            <option value="de">DE (Deutsch)</option>
+            <option value="en">EN (English)</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Artikel / Genus</span>
+          <select id="selGlossaryGenus">
+            <option value="all">Alle / All</option>
+            <option value="m">der (mask.)</option>
+            <option value="f">die (fem.)</option>
+            <option value="n">das (neutr.)</option>
+            <option value="unknown">Unbekannt / Unknown</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Sortierung / Sort</span>
+          <select id="selGlossarySort">
+            <option value="newest">Neueste zuerst / Newest</option>
+            <option value="oldest">Älteste zuerst / Oldest</option>
+            <option value="alpha">A-Z</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row">
+        <div class="mini" id="lblGlossaryCount">0 Einträge / entries</div>
+        <div class="cta">
+          <button id="btnGlossaryPracticeStart" class="btn primary" type="button">Üben / Practice</button>
+          <button id="btnGlossaryPracticeStop" class="btn ghost" type="button" hidden>Üben beenden / Stop</button>
+        </div>
+      </div>
+
+      <details class="glossaryImportWrap" id="glossaryImportWrap">
+        <summary>Import / Export</summary>
+        <div class="row glossaryImportRow">
+          <label class="field glossaryImportField">
+            <span>Zeilenformat / Line format: <code>word = translation</code></span>
+            <textarea id="txtGlossaryImport" rows="6" placeholder="another = noch ein&#10;broken = kaputt&#10;der Tisch = table"></textarea>
+          </label>
+          <div class="cta glossaryImportActions">
+            <button id="btnGlossaryImport" class="btn ghost" type="button">Importieren / Import</button>
+            <button id="btnGlossaryExport" class="btn ghost" type="button">Exportieren / Export</button>
+            <button id="btnGlossaryImportClear" class="btn ghost" type="button">Feld leeren / Clear</button>
+          </div>
+        </div>
+        <div id="lblGlossaryImportStatus" class="mini" hidden></div>
+      </details>
+
+      <section id="glossaryPracticeBox" class="glossaryPractice" hidden>
+        <div class="panel-head">
+          <div class="h3">Glossar-Üben / Glossary Practice</div>
+          <div class="mini" id="lblGlossaryPracticeProgress">0 / 0</div>
+        </div>
+        <div id="glossaryPracticeCard" class="glossaryPracticeCard">
+          <div class="glossaryPracticeFace">
+            <div class="mini" id="lblGlossaryPracticeFrontLang">DE</div>
+            <div class="text" id="txtGlossaryPracticeFront">–</div>
+          </div>
+          <div class="glossaryPracticeFace glossaryPracticeBack" id="glossaryPracticeBack" hidden>
+            <div class="mini" id="lblGlossaryPracticeBackLang">EN</div>
+            <div class="text" id="txtGlossaryPracticeBack">–</div>
+          </div>
+        </div>
+        <div class="cardBottom">
+          <div class="left">
+            <button id="btnGlossaryPracticeSpeak" class="btn ghost" type="button">🔊 Wort / Word</button>
+            <button id="btnGlossaryPracticeShow" class="btn ghost" type="button">Zeigen / Show</button>
+          </div>
+          <div class="right">
+            <button id="btnGlossaryPracticeBad" class="btn danger" type="button">Nicht gewusst / Not known</button>
+            <button id="btnGlossaryPracticeGood" class="btn success" type="button">Gewusst / Known</button>
+            <button id="btnGlossaryPracticeNext" class="btn primary" type="button" hidden>Weiter / Next</button>
+          </div>
+        </div>
+        <div class="mini" id="lblGlossaryPracticeStats">Richtig: 0 · Falsch: 0</div>
+      </section>
+
+      <div id="glossaryList" class="glossaryList"></div>
+      <div id="glossaryEmpty" class="hint">Noch keine Wörter gespeichert.</div>
+    </section>
+  </main>
+
+  <!-- Modal Card -->
+  <div id="studyOverlay" class="studyOverlay" hidden>
+    <div class="studyOverlay-backdrop"></div>
+
+    <div class="cardShell" role="dialog" aria-modal="true" aria-label="Karte">
+      <div class="cardTop">
+        <div class="pill" id="pillMeta">–</div>
+        <div class="pill" id="pillBox">Box 1</div>
+      </div>
+
+      <div id="card" class="card3d">
+        <div class="cardInner">
+        <div class="cardFace cardFront">
+          <div class="lang">DE</div>
+          <div class="text" id="txtFront">…</div>
+          <div class="mnemo" id="txtMnemo" hidden></div>
+        </div>
+        <div class="cardFace cardBack">
+          <div class="lang">EN</div>
+          <div class="text" id="txtBack">…</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cardBottom">
+        <div class="left">
+          <button id="btnSpeak" class="btn ghost">🔊</button>
+          <button id="btnMnemo" class="btn ghost" title="Mnemo bearbeiten">💡 Mnemo</button>
+          <button id="btnStar" class="btn ghost" type="button">⭐ Merken / Star</button>
+          <button id="btnFlip" class="btn ghost">Zeigen</button>
+        </div>
+
+        <div class="right">
+          <button id="btnForgot" class="btn ghost" type="button">Vergessen / Forgotten</button>
+          <button id="btnNo" class="btn danger">Nicht gewusst</button>
+          <button id="btnYes" class="btn success">Gewusst</button>
+          <button id="btnNext" class="btn primary" hidden>Weiter / Next</button>
+        </div>
+      </div>
+
+      <button id="btnClose" class="x" aria-label="Schließen">×</button>
+    </div>
+
+    <div id="wordPopup" class="wordPopup" role="dialog" aria-label="Wortübersetzung" hidden>
+      <button id="btnWordPopupClose" class="wordPopupClose" type="button" aria-label="Schließen">×</button>
+      <div class="wordPopupMeta" id="wordPopupMeta">Wort / Word</div>
+      <div class="wordPopupWordWrap">
+        <div class="wordPopupWord" id="wordPopupWord">–</div>
+        <span class="wordPopupTag" id="wordPopupPosTag" hidden>Noun</span>
+        <span class="wordPopupTag" id="wordPopupGenusTag" hidden>der</span>
+      </div>
+      <div class="wordPopupArrow" aria-hidden="true">→</div>
+      <div class="wordPopupBestLabel" id="wordPopupBestLabel">Beste Übersetzung / Best translation</div>
+      <div class="wordPopupTranslation" id="wordPopupTranslation">–</div>
+      <div class="wordPopupContext" id="wordPopupContext" hidden></div>
+      <details class="wordPopupAltWrap" id="wordPopupAltWrap" hidden>
+        <summary>Weitere Bedeutungen / More meanings</summary>
+        <div class="wordPopupAltList" id="wordPopupAltList"></div>
+      </details>
+      <div class="wordPopupHint" id="wordPopupHint" hidden>Genus unbekannt / Gender unknown</div>
+      <div class="wordPopupGenusEditor" id="wordPopupGenusEditor" hidden>
+        <label class="mini" for="selWordGenus">Artikel / Article</label>
+        <div class="wordPopupGenusRow">
+          <select id="selWordGenus">
+            <option value="">Bitte wählen / Choose</option>
+            <option value="m">der</option>
+            <option value="f">die</option>
+            <option value="n">das</option>
+          </select>
+          <button id="btnWordGenusSave" class="btn ghost" type="button">Artikel speichern / Save article</button>
+        </div>
+      </div>
+      <div class="wordPopupQuickSave" id="wordPopupQuickSave" hidden>
+        <div class="wordPopupQuickSaveTitle" id="wordPopupQuickSaveTitle">Übersetzung fehlt / Translation missing</div>
+        <label class="mini" for="inpWordQuickTranslation">Hauptübersetzung / Main translation</label>
+        <input id="inpWordQuickTranslation" type="search" placeholder="z. B. table" />
+        <label class="mini" for="inpWordQuickMore">Weitere (optional, max. 2) / More (optional, max. 2)</label>
+        <input id="inpWordQuickMore" type="search" placeholder="z. B. desk; table top" />
+        <div class="wordPopupQuickRow">
+          <label class="field wordPopupQuickField">
+            <span>Typ / Type</span>
+            <select id="selWordQuickPos">
+              <option value="auto">Auto</option>
+              <option value="noun">Nomen / Noun</option>
+              <option value="verb">Verb</option>
+              <option value="adj">Adjektiv / Adjective</option>
+              <option value="other">Sonstiges / Other</option>
+            </select>
+          </label>
+          <label class="field wordPopupQuickField" id="wordPopupQuickGenusField" hidden>
+            <span>Artikel / Article</span>
+            <select id="selWordQuickGenus">
+              <option value="">Bitte wählen / Choose</option>
+              <option value="m">der</option>
+              <option value="f">die</option>
+              <option value="n">das</option>
+            </select>
+          </label>
+        </div>
+        <div class="wordPopupQuickActions">
+          <button id="btnWordQuickSave" class="btn primary" type="button">Speichern ins Wörterbuch / Save to glossary</button>
+          <button id="btnWordQuickCancel" class="btn ghost" type="button">Abbrechen / Cancel</button>
+        </div>
+      </div>
+      <div class="wordPopupActions">
+        <button id="btnWordSpeak" class="btn ghost" type="button">🔊 Wort / Word</button>
+        <button id="btnWordCorrect" class="btn ghost" type="button">Korrigieren / Correct</button>
+        <button id="btnWordSavePhrase" class="btn ghost" type="button">Als Phrase speichern / Save phrase</button>
+        <button id="btnWordAdd" class="btn ghost" type="button" hidden>Zum Wörterbuch hinzufügen / Add to dictionary</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="bgPreviewThumb" class="bgPreviewThumb" aria-hidden="true"></div>
+  <button id="bgPreviewExit" class="btn ghost bgPreviewExit" type="button">
+    <span class="lbl lbl-de">Zurück zur App</span>
+    <span class="lbl lbl-en">Back to app</span>
+  </button>
+
+  <div class="bottom-nav">
+    <button id="btnNavBack" class="btn ghost" type="button">
+      <span class="lbl lbl-de">Zurück</span>
+      <span class="lbl lbl-en">Back</span>
+    </button>
+    <a id="btnNavHome" class="btn" href="/pages/portal_v2/index.html">
+      <span class="lbl lbl-de">Portal</span>
+      <span class="lbl lbl-en">Portal</span>
+    </a>
+  </div>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

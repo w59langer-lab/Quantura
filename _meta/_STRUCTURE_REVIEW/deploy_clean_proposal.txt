@@ -1,0 +1,11 @@
+quantura_deploy_clean should include:
+- assets/
+- core/
+- pages/ (only active portal + language_lab + required partials)
+- datenbanken/ (only necessary runtime JSON/data)
+- demos/ (optional: exclude for deploy if not needed)
+- tools/ (only build/maintenance scripts required for deployment, else omit)
+Exclude from deploy:
+- _meta folders (_REPO_STATUS, _REPO_COMPARE, _POST_CLEANUP_CHECK, _BACKUPS, _REPORTS, _STRUCTURE_REVIEW, _ARCHIVE)
+- local backups and heavy test data not used at runtime
+- quarantine copies (_TO_DELETE_LATER)

@@ -1,0 +1,30 @@
+Language Lab background relocation (no deletions)
+
+New assets:
+- pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN (copied from old global set)
+- pages/language_lab/assets/backgrounds/sprachfuehrer/DE_IT (placeholder copy)
+- pages/language_lab/assets/backgrounds/sprachfuehrer/DE_ES (placeholder copy)
+- pages/language_lab/assets/backgrounds/sprachfuehrer/DE_FR (placeholder copy)
+- pages/language_lab/assets/backgrounds/sprachfuehrer/DE_RU (placeholder copy)
+- pages/language_lab/assets/backgrounds/sprachfuehrer/DE_TR (placeholder copy)
+- pages/language_lab/shared_data/background_registry.json
+
+Backed up to: _meta/language_lab_bg_refactor_backup/ (global backgrounds + all SprachBox app.js files)
+
+Updated app.js (SprachBox Leitner PWA):
+- DE_EN, DE_ES, DE_FR, DE_IT, DE_RU, DE_TR
+  * load registry (/pages/language_lab/shared_data/background_registry.json)
+  * use pair-specific directories under pages/language_lab/assets/backgrounds/sprachfuehrer/
+  * fallback to legacy /core/assets/backgrounds/sprachfuehrer only if registry/unreachable
+
+Legacy links remaining:
+- LEGACY_BG_BASE constant in each app.js kept as fallback; original files untouched at /core/assets/backgrounds/sprachfuehrer.
+
+Checks:
+- Registry file exists with entries for DE_EN/DE_IT/DE_ES/DE_FR/DE_RU/DE_TR.
+- All six pair folders exist (seeded with DE_EN assets).
+- Old global path left intact (no deletions/moves).
+
+Next steps (manual):
+- Replace placeholder copies with real language-specific backgrounds when available.
+- Once confirmed, registry can drop fallback and old global path could be archived (after separate backup).

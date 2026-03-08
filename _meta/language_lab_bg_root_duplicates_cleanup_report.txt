@@ -1,0 +1,29 @@
+DE_EN background duplicate cleanup (images only)
+
+Registry check:
+- ACTIVE DE_EN BACKGROUND DIR: /pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN
+- defaultBackground: bg_00_en-de.webp
+- backgrounds: bg_00_en-de.webp, bg_01_en-de.webp, bg_02_en-de.webp, bg_03_en-de.webp
+
+Usage:
+- app.js uses LOCAL_BG_BASE = /pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN (registry-driven)
+- Fallback: /core/assets/backgrounds/sprachfuehrer only if registry fails (not triggered)
+- Root-level files under pages/language_lab/assets/backgrounds/sprachfuehrer were duplicates of DE_EN copy
+
+Actions performed:
+- Identical root-level images moved to backup (no deletions):
+  bg_00_en-de.jpg, bg_00_en-de.png, bg_00_en-de.webp,
+  bg_01_en-de.jpg, bg_01_en-de.png, bg_01_en-de.webp,
+  bg_02_en-de.jpg, bg_02_en-de.png, bg_02_en-de.webp,
+  bg_03_en-de.jpg, bg_03_en-de.png, bg_03_en-de.webp
+- Backup path: _meta/language_lab_bg_root_duplicates_backup
+- backgrounds.json in root left untouched
+
+Files skipped: none (all matched DE_EN and moved)
+
+Status:
+- ROOT-LEVEL FILES USED: no (only fallback would)
+- FALLBACK USED: no
+- ROOT-LEVEL FILES ARE DUPLICATES: yes (now backed up)
+- SAFE TO DELETE BACKUP LATER: yes (once verified fallback not needed)
+- Registry and app.js unchanged; DE_EN backgrounds still available in DE_EN folder

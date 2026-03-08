@@ -52,10 +52,10 @@
   function navigateSmart(url, evt) {
     if (!url) return;
     const isExternal = /^https?:\/\//.test(url);
-    const isPortal = url.startsWith("/pages/portal_v2/");
+    const isPortal = url === "/" || url.startsWith("/index.html");
     if (typeof window.LL_NAVIGATE === "function" && !isExternal && isPortal) {
       evt?.preventDefault();
-      window.LL_NAVIGATE(url);
+      window.LL_NAVIGATE("/index.html");
     } else if (!isExternal) {
       evt?.preventDefault();
       window.location.href = url;
@@ -67,7 +67,7 @@
       window.history.back();
       return;
     }
-    const portal = "/pages/portal_v2/index.html";
+    const portal = "/index.html";
     if (typeof window.LL_NAVIGATE === "function") {
       window.LL_NAVIGATE(portal);
     } else {
@@ -163,20 +163,19 @@ function updateClock() {
   const timeStr = d.toLocaleTimeString("de-DE", {
     hour: "2-digit",
     minute: "2-digit",
-    second: "2-digit",
   });
 
   const oneJan = new Date(d.getFullYear(), 0, 1);
   const numberOfDays = Math.floor((d - oneJan) / 86400000);
   const kw = Math.ceil((d.getDay() + 1 + numberOfDays) / 7);
 
-  const dateEl = document.getElementById("headerDate");
-  const timeEl = document.getElementById("headerTime");
+  const dateTimeEl = document.getElementById("headerDateTime");
   const kwEl = document.getElementById("headerKW");
+  const calendarBtn = document.getElementById("headerCalendarBtn");
 
-  if (dateEl) dateEl.textContent = dateStr;
-  if (timeEl) timeEl.textContent = timeStr;
+  if (dateTimeEl) dateTimeEl.textContent = `${dateStr} · ${timeStr}`;
   if (kwEl) kwEl.textContent = "KW " + kw;
+  if (calendarBtn) calendarBtn.title = `Kalender · KW ${kw}`;
 }
 
 // DE: Alle Sekunde Uhr aktualisieren

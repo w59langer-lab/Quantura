@@ -1,0 +1,25 @@
+# /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_COMPARE/sibling_diff_summary.txt:2:Active root: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_COMPARE/MASTER_COMPARE_DECISION.txt:1:ACTIVE SOURCE OF TRUTH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_COMPARE/current_diff_summary.txt:2:Active root: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/MASTER_DECISION.txt:1:ACTIVE WORKING ROOT: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/MASTER_DECISION.txt:8:RECOMMENDED SINGLE SOURCE OF TRUTH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/LOCAL_RENAME_TO_QUANTURA.txt:1:OLD PATH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/active_repo_status.txt:2:pwd: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/active_repo_status.txt:5:/media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/old-name-references.txt:2:./_REPO_STATUS/MASTER_DECISION.txt:1:ACTIVE WORKING ROOT: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/old-name-references.txt:4:./_REPO_STATUS/MASTER_DECISION.txt:8:RECOMMENDED SINGLE SOURCE OF TRUTH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/old-name-references.txt:5:./_REPO_STATUS/LOCAL_RENAME_TO_QUANTURA.txt:1:OLD PATH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/old-name-references.txt:9:./_REPO_COMPARE/MASTER_COMPARE_DECISION.txt:1:ACTIVE SOURCE OF TRUTH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/old-name-references.txt:10:./_REPO_COMPARE/sibling_diff_summary.txt:2:Active root: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/old-name-references.txt:1098:./_REPO_COMPARE/current_diff_summary.txt:2:Active root: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/old-name-references.txt:1099:./_REPO_STATUS/active_repo_status.txt:2:pwd: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+./_REPO_STATUS/old-name-references.txt:1100:./_REPO_STATUS/active_repo_status.txt:5:/media/mx-ahs/ARCHIV/quantura-lernlab-main
+
+# web&app/current
+./_REPO_STATUS/old_current_status.txt:2:pwd: /media/mx-ahs/ARCHIV/web&app/current
+./_REPO_COMPARE/current_diff_summary.txt:3:Old current root: /media/mx-ahs/ARCHIV/web&app/current
+
+# /media/mx-ahs/ARCHIV/web&app/current
+./_REPO_STATUS/old_current_status.txt:2:pwd: /media/mx-ahs/ARCHIV/web&app/current
+./_REPO_COMPARE/current_diff_summary.txt:3:Old current root: /media/mx-ahs/ARCHIV/web&app/current

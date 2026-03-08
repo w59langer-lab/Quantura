@@ -1,0 +1,23 @@
+README.md                           unclear
+_BACKUPS                            service/logs
+_POST_CLEANUP_CHECK                 service/logs
+_REPORTS                            service/logs
+_REPO_COMPARE                       service/logs
+_REPO_STATUS                        service/logs
+_STRUCTURE_REVIEW                   service/logs
+apps                                unclear
+assets                              shared assets
+codex.sh                            unclear
+core                                shared assets
+datenbanken                         data
+demos                               active code
+downloads                           unclear
+find_math_module.ps1                unclear
+index.html                          unclear
+math_module                         unclear
+math_module__SAVE_2026-02-20_173727 unclear
+mathe_grundschule.html              unclear
+pages                               portal/site
+sections                            unclear
+stories                             unclear
+tools                               tools/scripts

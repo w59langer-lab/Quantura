@@ -1,0 +1,9 @@
+PROJECT ROOT EXISTS: yes
+GIT EXISTS: yes
+MAIN INDEX EXISTS: yes
+LANGUAGE LAB FOUND IN QUANTURA: yes
+LANGUAGE LAB FOUND ONLY IN QUARANTINE: no (duplicate legacy copy present in quarantine)
+PREVIOUS CHECK WAS WRONG PATH: yes (active SprachBox resides under pages/language_lab in quantura; quarantine also has legacy copy)
+NEED RESTORE FROM QUARANTINE: no (active paths present in quantura)
+EXACT PATH TO ACTIVE LANGUAGE LAB: /media/mx-ahs/ARCHIV/quantura/pages/language_lab
+NEXT SAFE STEP: keep quarantine intact; verify SprachBox entry at pages/language_lab/index.html and PWAs under pages/language_lab/apps/SprachBox_*/talk_leitner_pwa/

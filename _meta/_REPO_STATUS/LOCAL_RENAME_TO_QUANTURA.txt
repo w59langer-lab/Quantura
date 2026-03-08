@@ -1,0 +1,39 @@
+OLD PATH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+NEW PATH: /media/mx-ahs/ARCHIV/quantura
+GIT OK: yes
+REMOTE ORIGIN: https://github.com/w59langer-lab/quantura-lernlab-main.git
+SPrachBox ENTRY OK: no
+PROJECT READY AFTER RENAME: yes
+
+---- git rev-parse --show-toplevel ----
+/media/mx-ahs/ARCHIV/quantura
+---- git status --short --branch ----
+## main...origin/main
+ M .gitignore
+ M demos/prog_min_portfolio/.vscode/settings.json
+ M demos/prog_min_portfolio/assets/css/portfolio.css
+ M demos/prog_min_portfolio/assets/js/header-widgets.js
+ M demos/prog_min_portfolio/index.html
+ M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js
+ M pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html
+ M pages/language_lab/shared_data/sprachfuehrer_phrase_adapter.js
+ M pages/language_lab/shared_data/sprachfuehrer_phrases.json
+?? _REPO_COMPARE/
+?? _REPO_STATUS/
+---- git remote -v ----
+origin	https://github.com/w59langer-lab/quantura-lernlab-main.git (fetch)
+origin	https://github.com/w59langer-lab/quantura-lernlab-main.git (push)
+---- file checks ----
+index.html: yes
+README.md: yes
+mathe_grundschule.html: yes

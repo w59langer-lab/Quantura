@@ -1,0 +1,11 @@
+MAIN PROJECT ROOT: /media/mx-ahs/ARCHIV/quantura
+MAIN ACTIVE WEBSITE ZONE: pages/ (portal + site entries)
+MAIN ACTIVE LANGUAGE LAB ZONE: pages/language_lab
+MAIN ACTIVE MATH ZONE: math_module (current live copy) — note: portfolio version may be fresher; decide sync later
+PORTFOLIO-ONLY ZONE: demos/prog_min_portfolio (showcase, newer visuals, demo math/story assets)
+ARCHIVE/SAVE ZONE: math_module__SAVE_2026-02-20_173727 (snapshot backup)
+ROOT FILES THAT LOOK MISPLACED: mathe_grundschule.html (legacy entry, overlaps math_module/portfolio)
+WHAT SHOULD LATER MOVE INTO pages/: updated math content (from portfolio demo) and mathe_grundschule.html if still needed as page route
+WHAT SHOULD STAY ONLY AS PORTFOLIO: portfolio-specific layouts/assets unless adopted (demos/prog_min_portfolio)
+WHAT SHOULD LATER MOVE INTO _archive: old *_bak/_backup folders in demos/prog_min_portfolio, archived portal_v2 already under pages/_archive
+SAFEST NEXT STEP: compare math_module with portfolio demo, then consolidate one source (after backup); leave current routing untouched until decision

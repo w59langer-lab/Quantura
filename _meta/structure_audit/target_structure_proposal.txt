@@ -1,0 +1,21 @@
+Proposed simplified target structure (no changes applied yet)
+A) Keep in root (runtime):
+   - assets/
+   - core/
+   - pages/ (with language_lab, portal, tools)
+   - datenbanken/
+   - index.html, README.md
+B) Move deeper (meta/service):
+   - _meta/ (already) for audits, reports, backups
+   - legacy/archives under pages/_archive
+C) Possible consolidation:
+   - unify portal-related assets into assets/portal
+   - group demos under demos/ only; avoid duplicates of stories/assets already in pages
+D) Do not touch for now:
+   - pages/language_lab apps and data links
+   - datenbanken/ datasets
+   - core/ partials and shared scripts
+E) Looks redundant/cleanup candidates (later):
+   - numerous *_bak, *_backup, *_archive folders inside demos and pages
+   - duplicated media/videos archives in demos/prog_min_portfolio/_incoming/_archive_duplicates
+   - legacy backups under pages/legacy and language_lab backups

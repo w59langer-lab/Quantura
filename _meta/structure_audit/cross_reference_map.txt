@@ -1,0 +1,973 @@
+USES core (imports/partials/scripts):
+sections/karten.html:9:    <link rel="stylesheet" href="../core/assets/style.css" />
+sections/karten.html:10:    <script src="../core/js/core_init.js" defer></script>
+sections/karten.html:13:    <div data-partial="header" data-partial-path="../core/partials/header.html"></div>
+sections/karten.html:26:    <div data-partial="footer" data-partial-path="../core/partials/footer.html"></div>
+sections/generator.html:9:    <link rel="stylesheet" href="../core/assets/style.css" />
+sections/generator.html:10:    <script src="../core/js/core_init.js" defer></script>
+sections/generator.html:16:      data-partial-path="../core/partials/header.html"
+sections/generator.html:76:      data-partial-path="../core/partials/footer.html"
+_meta/_REPO_STATUS/_before_portal_cleanup/index.html:7:    <link rel="stylesheet" href="core/assets/style.css" />
+_meta/_REPO_STATUS/_before_portal_cleanup/index.html:9:    <script src="/core/js/core_init.js" defer></script>
+_meta/_REPO_STATUS/_before_portal_cleanup/index.html:14:    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+_meta/_REPO_STATUS/_before_portal_cleanup/index.html:42:    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+_meta/_REPO_STATUS/_before_reference_fix/core/js/core_init.js:102:    if (trimmed.startsWith("/") || trimmed.startsWith("core/") || hasCoreSegment) {
+_meta/_REPO_STATUS/_before_reference_fix/core/js/core_init.js:103:      return trimmed.replace(/core\/core\//g, "core/");
+_meta/_REPO_STATUS/_before_reference_fix/core/js/core_init.js:105:    return `core/${trimmed.replace(/^\/+/, "")}`;
+_meta/_REPO_STATUS/_before_reference_fix/core/js/core_init.js:195:  const SRC = "/core/js/tts_manager.js";
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:8:    <link rel="stylesheet" href="core/assets/style.css" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:9:    <script src="core/js/core_init.js" defer></script>
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:12:    <div data-partial="header" data-partial-path="core/core/partials/header.html"></div>
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:53:    <div data-partial="footer" data-partial-path="core/core/partials/footer.html"></div>
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:54:    <script src="/core/js/sprachfuehrer_bg.js" defer></script>
+_meta/_REPO_STATUS/_before_portal_cleanup/core/js/core_init.js:102:    if (trimmed.startsWith("/") || trimmed.startsWith("core/") || hasCoreSegment) {
+_meta/_REPO_STATUS/_before_portal_cleanup/core/js/core_init.js:103:      return trimmed.replace(/core\/core\//g, "core/");
+_meta/_REPO_STATUS/_before_portal_cleanup/core/js/core_init.js:105:    return `core/${trimmed.replace(/^\/+/, "")}`;
+_meta/_REPO_STATUS/_before_portal_cleanup/core/js/core_init.js:194:  const SRC = "/core/js/tts_manager.js";
+stories/maus/maus_index.html:8:    <link rel="stylesheet" href="/core/assets/style.css" />
+stories/maus/maus_index.html:15:    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+stories/maus/maus_index.html:171:    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+stories/maus/maus_index.html:174:    <script defer src="/core/js/core_init.js"></script>
+_meta/_REPO_STATUS/_before_portal_cleanup/pages/portal_v2/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+_meta/_REPO_STATUS/_before_portal_cleanup/pages/portal_v2/index.html:9:  <script src="/core/loader/loader.js" defer></script>
+_meta/_REPO_STATUS/_before_portal_cleanup/pages/portal_v2/index.html:10:  <script src="/core/js/core_init.js" defer></script>
+_meta/_REPO_STATUS/_before_portal_cleanup/pages/portal_v2/index.html:14:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+_meta/_REPO_STATUS/_before_portal_cleanup/pages/portal_v2/index.html:34:  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+sections/faecher.html:7:    <link rel="stylesheet" href="../core/assets/style.css" />
+sections/faecher.html:8:    <script src="../core/js/core_init.js" defer></script>
+sections/faecher.html:11:    <div data-partial="header" data-partial-path="../core/partials/header.html"></div>
+sections/faecher.html:57:    <div data-partial="footer" data-partial-path="../core/partials/footer.html"></div>
+sections/bibliothek.html:8:    <link rel="stylesheet" href="../core/assets/style.css" />
+sections/bibliothek.html:9:    <script src="../core/js/core_init.js" defer></script>
+sections/bibliothek.html:14:      data-partial-path="../core/partials/header.html"
+sections/bibliothek.html:48:      data-partial-path="../core/partials/footer.html"
+sections/analyse.html:8:    <link rel="stylesheet" href="../core/assets/style.css" />
+sections/analyse.html:9:    <script src="../core/js/core_init.js" defer></script>
+sections/analyse.html:14:      data-partial-path="../core/partials/header.html"
+sections/analyse.html:48:      data-partial-path="../core/partials/footer.html"
+index.html:7:    <link rel="stylesheet" href="core/assets/style.css" />
+index.html:9:    <script src="/core/js/core_init.js" defer></script>
+index.html:14:    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+index.html:42:    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+math_module/index_gr_mathe.html:6:  <link rel="stylesheet" href="core/styles.css">
+math_module/index_gr_mathe.html:18:  <script src="core/scripts.js" defer></script>
+math_module/index.html:6:  <link rel="stylesheet" href="core/styles.css">
+math_module/index.html:7:  <script src="core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131414/index.html:6:  <link rel="stylesheet" href="core/styles.css">
+math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131414/index.html:7:  <script src="core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131841/index.html:6:  <link rel="stylesheet" href="core/styles.css">
+math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131841/index.html:7:  <script src="core/scripts.js" defer></script>
+math_module/levels/level6.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module/levels/level6.html:30:  <script src="../core/scripts.js" defer></script>
+math_module/levels/level5.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module/levels/level5.html:30:  <script src="../core/scripts.js" defer></script>
+math_module/levels/level4.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module/levels/level4.html:30:  <script src="../core/scripts.js" defer></script>
+math_module/levels/level3.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module/levels/level3.html:30:  <script src="../core/scripts.js" defer></script>
+math_module/levels/level2.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module/levels/level2.html:30:  <script src="../core/scripts.js" defer></script>
+math_module/levels/level1.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module/levels/level1.html:30:  <script src="../core/scripts.js" defer></script>
+math_module/core/scripts.js:1345:    fetch(`${MODULE_ROOT}/core/header.html`)
+math_module/core/scripts.js:1396:    fetch(`${MODULE_ROOT}/core/footer.html`)
+math_module/core/scripts.js:1777:      console.log(`[Timer] Zeitmodus aktiv: ${timeModeEnabled}, Sanduhr: ${!!document.querySelector('.hourglass, #hourglass, [data-hourglass]')}, Toast: ${!!document.getElementById('toast')}, Dateien: math_module/core/scripts.js + math_module/core/styles.css + math_module/levels/level*.html`);
+pages/_archive/portal_v2__inactive/portal_registry.json:37:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:47:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:57:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:67:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:97:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:107:      "icon": "/core/assets/favicon.ico",
+math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131414/core/scripts.js:319:    fetch(`${basePath}/core/header.html`)
+math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131414/core/scripts.js:325:    fetch(`${basePath}/core/footer.html`)
+pages/_archive/portal_v2__inactive/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/_archive/portal_v2__inactive/index.html:9:  <script src="/core/loader/loader.js" defer></script>
+pages/_archive/portal_v2__inactive/index.html:10:  <script src="/core/js/core_init.js" defer></script>
+pages/_archive/portal_v2__inactive/index.html:14:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/_archive/portal_v2__inactive/index.html:34:  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+demos/prog_min_portfolio/demos/mathe_grundschule/index_gr_mathe.html:6:  <link rel="stylesheet" href="core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/index_gr_mathe.html:18:  <script src="core/scripts.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/index.html:6:  <link rel="stylesheet" href="core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/index.html:7:  <script src="core/scripts.js" defer></script>
+demos/prog_min_portfolio/portfolio_site/stories/maus/maus_index.html:8:    <link rel="stylesheet" href="../../core/assets/style.css" />
+demos/prog_min_portfolio/portfolio_site/stories/maus/maus_index.html:11:    <script src="../../core/js/core_init.js" defer></script>
+demos/prog_min_portfolio/portfolio_site/stories/maus/maus_index.html:15:    <div data-partial="header" data-partial-path="../../core/partials/header.html"></div>
+demos/prog_min_portfolio/portfolio_site/stories/maus/maus_index.html:171:    <div data-partial="footer" data-partial-path="../../core/partials/footer.html"></div>
+demos/prog_min_portfolio/demos/quadratic_solver/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css">
+demos/prog_min_portfolio/demos/quadratic_solver/index.html:9:  <script src="/core/loader/loader.js" defer></script>
+demos/prog_min_portfolio/demos/quadratic_solver/index.html:10:  <script src="/core/js/core_init.js" defer></script>
+demos/prog_min_portfolio/demos/quadratic_solver/index.html:14:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level5.html:6:  <link rel="stylesheet" href="../core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level5.html:30:  <script src="../core/scripts.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level6.html:6:  <link rel="stylesheet" href="../core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level6.html:30:  <script src="../core/scripts.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:1395:    fetch(`${MODULE_ROOT}/core/header.html`)
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:1446:    fetch(`${MODULE_ROOT}/core/footer.html`)
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:1812:      console.log(`[Timer] Zeitmodus aktiv: ${timeModeEnabled}, Sanduhr: ${!!document.querySelector('.hourglass, #hourglass, [data-hourglass]')}, Toast: ${!!document.getElementById('toast')}, Dateien: math_module/core/scripts.js + math_module/core/styles.css + math_module/levels/level*.html`);
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level4.html:6:  <link rel="stylesheet" href="../core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level4.html:30:  <script src="../core/scripts.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level3.html:6:  <link rel="stylesheet" href="../core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level3.html:30:  <script src="../core/scripts.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level2.html:6:  <link rel="stylesheet" href="../core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level2.html:30:  <script src="../core/scripts.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level1.html:6:  <link rel="stylesheet" href="../core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level1.html:30:  <script src="../core/scripts.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level0.html:6:  <link rel="stylesheet" href="../core/styles.css">
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level0.html:30:  <script src="../core/scripts.js" defer></script>
+demos/prog_min_portfolio/stories/maus/maus_index.html:14:    <div data-partial="header" data-partial-path="../../core/partials/header.html"></div>
+demos/prog_min_portfolio/stories/maus/maus_index.html:170:    <div data-partial="footer" data-partial-path="../../core/partials/footer.html"></div>
+math_module/levels/level0.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module/levels/level0.html:30:  <script src="../core/scripts.js?v=1771599504" defer></script>
+math_module__SAVE_2026-02-20_173727/levels/level5.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module__SAVE_2026-02-20_173727/levels/level5.html:28:  <script src="../core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/levels/level6.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module__SAVE_2026-02-20_173727/levels/level6.html:28:  <script src="../core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/levels/level4.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module__SAVE_2026-02-20_173727/levels/level4.html:28:  <script src="../core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/levels/level3.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module__SAVE_2026-02-20_173727/levels/level3.html:28:  <script src="../core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/levels/level2.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module__SAVE_2026-02-20_173727/levels/level2.html:28:  <script src="../core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/levels/level1.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module__SAVE_2026-02-20_173727/levels/level1.html:28:  <script src="../core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/levels/level0.html:6:  <link rel="stylesheet" href="../core/styles.css">
+math_module__SAVE_2026-02-20_173727/levels/level0.html:28:  <script src="../core/scripts.js?v=1771599504" defer></script>
+math_module__SAVE_2026-02-20_173727/index.html:6:  <link rel="stylesheet" href="core/styles.css">
+math_module__SAVE_2026-02-20_173727/index.html:7:  <script src="core/scripts.js" defer></script>
+math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131841/core/scripts.js:370:    fetch(`${MODULE_ROOT}/core/header.html`)
+math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131841/core/scripts.js:376:    fetch(`${MODULE_ROOT}/core/footer.html`)
+math_module__SAVE_2026-02-20_173727/core/scripts.js:424:    fetch(`${MODULE_ROOT}/core/header.html`)
+math_module__SAVE_2026-02-20_173727/core/scripts.js:430:    fetch(`${MODULE_ROOT}/core/footer.html`)
+pages/store/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/store/index.html:9:  <script src="/core/loader/loader.js" defer></script>
+pages/store/index.html:10:  <script src="/core/js/core_init.js" defer></script>
+pages/store/index.html:14:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/store/index.html:65:  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/store/store.js:1:const DATA_URL = '/core/data/apps_store.json';
+pages/store/store.js:2:const DEFAULT_ICON = '/core/assets/favicon.ico';
+pages/projekte/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/projekte/index.html:8:    <script src="../../core/js/core_init.js" defer></script>
+pages/projekte/index.html:11:    <div data-partial="header" data-partial-path="../../core/partials/header.html"></div>
+pages/projekte/index.html:37:    <div data-partial="footer" data-partial-path="../../core/partials/footer.html"></div>
+pages/store/app.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/store/app.html:9:  <script src="/core/loader/loader.js" defer></script>
+pages/store/app.html:10:  <script src="/core/js/core_init.js" defer></script>
+pages/store/app.html:14:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/store/app.html:20:  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/language_lab/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/language_lab/index.html:8:    <script src="../../core/js/core_init.js" defer></script>
+pages/language_lab/index.html:11:    <div data-partial="header" data-partial-path="../../core/partials/header.html"></div>
+pages/language_lab/index.html:48:    <div data-partial="footer" data-partial-path="../../core/partials/footer.html"></div>
+pages/bibliothek/technik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/technik/index.html:9:    <script src="../../../core/js/core_init.js" defer></script>
+pages/bibliothek/technik/index.html:12:    <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/bibliothek/technik/index.html:35:    <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/bibliothek/physik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/physik/index.html:9:    <script src="../../../core/js/core_init.js" defer></script>
+pages/bibliothek/physik/index.html:12:    <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/bibliothek/physik/index.html:35:    <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/bibliothek/ressourcen/index.html:8:  <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/ressourcen/index.html:9:  <script defer src="../../../core/js/core_init.js"></script>
+pages/bibliothek/ressourcen/index.html:26:  <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/bibliothek/ressourcen/index.html:51:  <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/bibliothek/projekte/index.html:8:  <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/projekte/index.html:9:  <script defer src="../../../core/js/core_init.js"></script>
+pages/bibliothek/projekte/index.html:26:  <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/bibliothek/projekte/index.html:41:  <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/bibliothek/robotik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/robotik/index.html:9:    <script src="../../../core/js/core_init.js" defer></script>
+pages/bibliothek/robotik/index.html:12:    <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/bibliothek/robotik/index.html:35:    <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/language_lab/sprachfuehrer_auswahl/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/language_lab/sprachfuehrer_auswahl/index.html:8:  <script src="/core/js/core_init.js" defer></script>
+pages/language_lab/sprachfuehrer_auswahl/index.html:46:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/language_lab/sprachfuehrer_auswahl/index.html:54:  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/bibliothek/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/bibliothek/index.html:9:    <script src="../../core/js/core_init.js" defer></script>
+pages/bibliothek/index.html:12:    <div data-partial="header" data-partial-path="../../core/partials/header.html"></div>
+pages/bibliothek/index.html:63:    <div data-partial="footer" data-partial-path="../../core/partials/footer.html"></div>
+pages/bibliothek/projekte/maus/maus_index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/bibliothek/projekte/maus/maus_index.html:11:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/bibliothek/projekte/maus/maus_index.html:15:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/bibliothek/projekte/maus/maus_index.html:144:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/bibliothek/media/index.html:8:  <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/media/index.html:10:  <script defer src="../../../core/js/core_init.js"></script>
+pages/bibliothek/media/index.html:14:  <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/bibliothek/media/index.html:52:  <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/faecher/technik/index.html:7:  <link rel="stylesheet" href="../../../core/assets/style.css">
+pages/faecher/technik/index.html:8:  <script src="../../../core/js/core_init.js" defer></script>
+pages/faecher/technik/index.html:11:  <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/faecher/technik/index.html:31:  <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/bibliothek/informatik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/informatik/index.html:9:    <script src="../../../core/js/core_init.js" defer></script>
+pages/bibliothek/informatik/index.html:12:    <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/bibliothek/informatik/index.html:46:    <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/faecher/physik-oberstufe/kanonenkugel_physik.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/faecher/physik-oberstufe/kanonenkugel_physik.html:8:    <script src="../../../core/js/core_init.js" defer></script>
+pages/faecher/physik-oberstufe/kanonenkugel_physik.html:11:    <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/faecher/physik-oberstufe/kanonenkugel_physik.html:76:    <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/bibliothek/media/foto/index.html:8:  <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/bibliothek/media/foto/index.html:10:  <script defer src="../../../../core/js/core_init.js"></script>
+pages/bibliothek/media/foto/index.html:14:  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/bibliothek/media/foto/index.html:38:  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/bibliothek/media/audio/index.html:8:  <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/bibliothek/media/audio/index.html:10:  <script defer src="../../../../core/js/core_init.js"></script>
+pages/bibliothek/media/audio/index.html:14:  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/bibliothek/media/audio/index.html:38:  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/bibliothek/media/video/index.html:8:  <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/bibliothek/media/video/index.html:10:  <script defer src="../../../../core/js/core_init.js"></script>
+pages/bibliothek/media/video/index.html:14:  <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/bibliothek/media/video/index.html:61:  <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/faecher/index.html:8:    <script src="../../core/js/core_init.js" defer></script>
+pages/faecher/index.html:12:    <div data-partial="header" data-partial-path="../../core/core/partials/header.html"></div>
+pages/faecher/index.html:22:    <div data-partial="footer" data-partial-path="../../core/core/partials/footer.html"></div>
+pages/faecher/physik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/faecher/physik/index.html:8:    <script src="../../../core/js/core_init.js" defer></script>
+pages/faecher/physik/index.html:11:    <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/faecher/physik/index.html:40:    <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/index.html:9:    <script src="../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/index.html:12:    <div data-partial="header" data-partial-path="../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/index.html:93:    <div data-partial="footer" data-partial-path="../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/themen/termeeinfach.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/termeeinfach.html:8:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/themen/termeeinfach.html:11:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/themen/termeeinfach.html:43:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/themen/statistik.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/statistik.html:8:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/themen/statistik.html:11:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/themen/statistik.html:43:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik/realschule/index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik/realschule/index.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik/realschule/index.html:17:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik/realschule/index.html:27:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-9.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-9.html:12:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/klassen/klasse-9.html:15:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-9.html:58:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-8.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-8.html:12:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/klassen/klasse-8.html:15:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-8.html:58:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik/oberstufe/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik/oberstufe/index.html:8:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik/oberstufe/index.html:11:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik/oberstufe/index.html:21:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-7.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-7.html:12:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/klassen/klasse-7.html:15:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-7.html:59:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-6.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-6.html:12:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/klassen/klasse-6.html:15:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-6.html:60:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-5.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-5.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/klassen/klasse-5.html:12:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-5.html:56:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-10.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-10.html:12:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/klassen/klasse-10.html:15:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/klassen/klasse-10.html:57:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/informatik/web_projects/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/web_projects/index.html:11:    <script src="/core/loader/loader.js" defer></script>
+pages/faecher/informatik/web_projects/index.html:12:    <script src="/core/js/core_init.js" defer></script>
+pages/faecher/informatik/web_projects/index.html:56:    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/faecher/informatik/web_projects/index.html:74:    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/themen/prozentrechnung.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/prozentrechnung.html:8:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/themen/prozentrechnung.html:11:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/themen/prozentrechnung.html:43:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/themen/gleichungen.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/gleichungen.html:8:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/themen/gleichungen.html:11:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/themen/gleichungen.html:43:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/themen/geometrie.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/geometrie.html:8:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/themen/geometrie.html:11:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/themen/geometrie.html:43:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/themen/funktionen.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/funktionen.html:8:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/themen/funktionen.html:11:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/themen/funktionen.html:43:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/faecher/mathematik-realschule/themen/brueche.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/brueche.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/faecher/mathematik-realschule/themen/brueche.html:12:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/faecher/mathematik-realschule/themen/brueche.html:198:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/talk_levels/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/talk_levels/index.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/talk_levels/index.html:45:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/talk_levels/index.html:152:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/werkstatt/tagbook/index.html:12:  <script src="/core/loader/loader.js"></script>
+pages/language_lab/apps/werkstatt/tagbook/index.html:15:  <div data-partial-path="/core/partials/header.html"></div>
+pages/language_lab/apps/werkstatt/tagbook/index.html:27:  <div data-partial-path="/core/partials/footer.html"></div>
+pages/faecher/informatik/web_projects/p01_clock/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/web_projects/p01_clock/index.html:11:    <script src="/core/loader/loader.js" defer></script>
+pages/faecher/informatik/web_projects/p01_clock/index.html:12:    <script src="/core/js/core_init.js" defer></script>
+pages/faecher/informatik/web_projects/p01_clock/index.html:144:    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/faecher/informatik/web_projects/p01_clock/index.html:354:    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/faecher/informatik/web_projects/p02_spardose/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/web_projects/p02_spardose/index.html:12:    <script src="/core/loader/loader.js" defer></script>
+pages/faecher/informatik/web_projects/p02_spardose/index.html:13:    <script src="/core/js/core_init.js" defer></script>
+pages/faecher/informatik/web_projects/p02_spardose/index.html:17:    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/faecher/informatik/web_projects/p02_spardose/index.html:79:    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:8:  <link rel="stylesheet" href="/core/assets/style.css">
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:11:  <script src="/core/loader/loader.js" defer></script>
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:12:  <script src="/core/js/core_init.js" defer></script>
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:206:  <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:348:  <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/language_lab/apps/talk_levels/scripts/report_coverage.js:7: * Safe: read-only; does not touch live site/core/assets/registries.
+pages/language_lab/apps/talk_levels/scripts/generate_previews.js:6: * - No changes to core/assets/registries; safe to run repeatedly.
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:267:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:268:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/index.html:11:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/language_lab/apps/index.html:12:    <script src="/core/loader/loader.js" defer></script>
+pages/language_lab/apps/index.html:13:    <script src="/core/js/core_init.js" defer></script>
+pages/language_lab/apps/index.html:87:    <div data-partial="header" data-partial-path="/core/partials/header.html"></div>
+pages/language_lab/apps/index.html:112:    <div data-partial="footer" data-partial-path="/core/partials/footer.html"></div>
+pages/language_lab/apps/apps.json:8:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:16:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:24:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:32:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:48:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:64:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/cards/index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/cards/index.html:10:    <script src="../../../../core/loader/loader.js" defer></script>
+pages/language_lab/apps/cards/index.html:11:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/cards/index.html:15:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/cards/index.html:110:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/generator/ru/index_ru.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/ru/index_ru.html:12:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:28:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/ru/index_ru.html:194:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/it/index_it.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/it/index_it.html:12:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:28:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/it/index_it.html:194:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/fr/index_fr.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/fr/index_fr.html:12:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:28:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/fr/index_fr.html:196:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/es/index_es.html:11:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/es/index_es.html:13:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:35:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/es/index_es.html:176:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/de/index_de.html:6:    <link rel="icon" href="../../../../../core/assets/favicon.ico">
+pages/language_lab/apps/generator/de/index_de.html:14:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/de/index_de.html:18:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:60:         Pfad von hier: ../../../../../core/partials/header.html
+pages/language_lab/apps/generator/de/index_de.html:64:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/de/index_de.html:288:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/generator/en/index_en.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/en/index_en.html:12:    <script src="../../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:29:      data-partial-path="../../../../../core/partials/header.html"
+pages/language_lab/apps/generator/en/index_en.html:197:      data-partial-path="../../../../../core/partials/footer.html"
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/karten/level_overview.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/level_overview.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/level_overview.html:12:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/level_overview.html:91:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+pages/language_lab/apps/karten/index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/index.html:9:    <script src="../../../../core/js/core_init.js" defer></script>
+pages/language_lab/apps/karten/index.html:12:    <div data-partial="header" data-partial-path="../../../../core/partials/header.html"></div>
+pages/language_lab/apps/karten/index.html:23:    <div data-partial="footer" data-partial-path="../../../../core/partials/footer.html"></div>
+
+USES assets:
+sections/karten.html:9:    <link rel="stylesheet" href="../core/assets/style.css" />
+stories/maus/maus_style.css:115:  background: url("../../assets/illustrations/mouse_trap_story_bg.svg") center/cover no-repeat;
+stories/maus/maus_style.css:150:  background-image: url("../../assets/illustrations/mouse_trap_bg_scene.svg");
+pages/store/store.js:2:const DEFAULT_ICON = '/core/assets/favicon.ico';
+pages/projekte/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/store/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/store/app.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+_meta/_REPO_STATUS/_before_portal_cleanup/index.html:7:    <link rel="stylesheet" href="core/assets/style.css" />
+_meta/_REPO_STATUS/_before_portal_cleanup/index.html:11:  <link rel="stylesheet" href="assets/css/style.css">
+_meta/_REPO_STATUS/_before_portal_cleanup/index.html:43:    <script src="assets/js/portal_registry_loader.js"></script>
+pages/_archive/portal_v2__inactive/portal_registry.json:37:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:47:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:57:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:67:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:97:      "icon": "/core/assets/favicon.ico",
+pages/_archive/portal_v2__inactive/portal_registry.json:107:      "icon": "/core/assets/favicon.ico",
+pages/portal/analyse_sprachfuehrer/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/portal/werkstatt/index.html:12:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/portal/werkstatt/tagbook/index.html:11:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/_archive/portal_v2__inactive/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+_meta/_REPO_STATUS/_before_portal_cleanup/pages/portal_v2/portal.js:1:const DATA_URL = "/assets/data/portal_registry.json";
+_meta/_REPO_STATUS/_before_portal_cleanup/core/js/core_init.js:79:    const cssHref = "/assets/css/ll_fab_nav.css";
+_meta/_REPO_STATUS/_before_portal_cleanup/core/js/core_init.js:80:    const jsSrc = "/assets/js/ll_fab_nav.js";
+_meta/_REPO_STATUS/_before_portal_cleanup/pages/portal_v2/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:8:    <link rel="stylesheet" href="core/assets/style.css" />
+stories/maus/maus_index.html:8:    <link rel="stylesheet" href="/core/assets/style.css" />
+stories/maus/maus_index.html:278:    <script src="../../assets/js/header-widgets.js" defer></script>
+_meta/_REPO_STATUS/_before_reference_fix/core/js/core_init.js:79:    const cssHref = "/assets/css/ll_fab_nav.css";
+_meta/_REPO_STATUS/_before_reference_fix/core/js/core_init.js:80:    const jsSrc = "/assets/js/ll_fab_nav.js";
+pages/faecher/technik/index.html:7:  <link rel="stylesheet" href="../../../core/assets/style.css">
+pages/language_lab/sprachfuehrer_auswahl/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css" />
+pages/bibliothek/technik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/robotik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/ressourcen/index.html:8:  <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/physik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/projekte/index.html:8:  <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/bibliothek/media/index.html:8:  <link rel="stylesheet" href="../../../core/assets/style.css" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/bibliothek/informatik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/bibliothek/projekte/maus/maus_index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/bibliothek/media/ppt/index.html:7:  <link rel="stylesheet" href="../../../../assets/css/style.css">
+pages/bibliothek/media/video/index.html:8:  <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/bibliothek/media/foto/index.html:8:  <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/bibliothek/media/audio/index.html:8:  <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/physik-oberstufe/kanonenkugel_physik.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/faecher/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/language_lab/index.html:7:    <link rel="stylesheet" href="../../core/assets/style.css" />
+pages/faecher/physik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/statistik.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/termeeinfach.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-9.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-9.html:10:      href="../assets/mathe_style.css"
+pages/faecher/mathematik-realschule/klassen/klasse-9.html:60:      src="../assets/mathe_page.js"
+pages/faecher/mathematik-realschule/klassen/klasse-7.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-7.html:10:      href="../assets/mathe_style.css"
+pages/faecher/mathematik-realschule/klassen/klasse-7.html:61:      src="../assets/mathe_page.js"
+pages/faecher/mathematik-realschule/klassen/klasse-8.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-8.html:10:      href="../assets/mathe_style.css"
+pages/faecher/mathematik-realschule/klassen/klasse-8.html:60:      src="../assets/mathe_page.js"
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/faecher/mathematik/oberstufe/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik/realschule/index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+_meta/_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/faecher/mathematik-realschule/klassen/klasse-6.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-6.html:10:      href="../assets/mathe_style.css"
+pages/faecher/mathematik-realschule/klassen/klasse-6.html:62:      src="../assets/mathe_page.js"
+pages/faecher/mathematik-realschule/klassen/klasse-5.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-5.html:8:    <link rel="stylesheet" href="../assets/mathe_style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-5.html:57:    <script src="../assets/mathe_page.js" defer></script>
+pages/faecher/mathematik-realschule/klassen/klasse-10.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/klassen/klasse-10.html:10:      href="../assets/mathe_style.css"
+pages/faecher/mathematik-realschule/klassen/klasse-10.html:59:      src="../assets/mathe_page.js"
+pages/faecher/mathematik-realschule/themen/prozentrechnung.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/funktionen.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/gleichungen.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/geometrie.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/brueche.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/themen/brueche.html:8:    <link rel="stylesheet" href="../assets/mathe_style.css" />
+pages/faecher/mathematik-realschule/themen/brueche.html:199:    <script src="../assets/mathe_page.js" defer></script>
+pages/faecher/physik/spannende-physik/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/mathematik/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/faecher/informatik/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/javascript/lesson_02_html_js.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/javascript/lesson_02_html_js_interaktiv.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/javascript/lesson_01_rechnen.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/html/index.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/css/index.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/javascript/index.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web_kurs/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/web-basics/lesson-01.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-basics/index.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/lesson-10.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/lesson-09.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/lesson-08.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/lesson-07.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/lesson-05.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/lesson-06.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/lesson-04.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web_projects/p02_spardose/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/web_projects/p01_clock/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/web-lessons/lesson-03.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/lesson-02.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web_projects/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/web-lessons/lesson-01.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web-lessons/index.html:7:  <link rel="stylesheet" href="../../../../core/assets/style.css">
+pages/faecher/informatik/web_kurs/html_0/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/informatik/web_kurs/js_0/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/mathematik/fun-math/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/informatik/web_kurs/css_0/index.html:10:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/faecher/mathematik-realschule/index.html:7:    <link rel="stylesheet" href="../../../core/assets/style.css" />
+pages/faecher/mathematik-realschule/index.html:8:    <link rel="stylesheet" href="./assets/mathe_style.css" />
+pages/faecher/mathematik-realschule/index.html:94:    <script src="./assets/mathe_page.js" defer></script>
+pages/legacy/index.html:8:    <link rel="stylesheet" href="core/assets/style.css" />
+sections/generator.html:9:    <link rel="stylesheet" href="../core/assets/style.css" />
+sections/faecher.html:7:    <link rel="stylesheet" href="../core/assets/style.css" />
+sections/bibliothek.html:8:    <link rel="stylesheet" href="../core/assets/style.css" />
+sections/analyse.html:8:    <link rel="stylesheet" href="../core/assets/style.css" />
+pages/faecher/physik/oberstufe/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/faecher/physik/realschule/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/talk_levels/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/talk_levels/scripts/report_coverage.js:7: * Safe: read-only; does not touch live site/core/assets/registries.
+pages/language_lab/apps/talk_levels/scripts/generate_previews.js:6: * - No changes to core/assets/registries; safe to run repeatedly.
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:267:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:268:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/tools/auto-kauf-assistent/index.html:8:  <link rel="stylesheet" href="/core/assets/style.css">
+pages/faecher/mathematik-realschule/assets/mathe_page.js:4:    : new URL("assets/mathe/mathe_page.js", window.location.href);
+pages/language_lab/apps/index.html:11:    <link rel="stylesheet" href="/core/assets/style.css" />
+pages/language_lab/apps/apps.json:8:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:16:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:24:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:32:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:48:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/apps.json:64:    "icon": "/core/assets/favicon.ico"
+pages/language_lab/apps/cards/index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/sw.js:9:  "./assets/icon-192.png",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/sw.js:10:  "./assets/icon-512.png",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/sw.js:11:  "./assets/bg-de-en.webp",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/styles.css:17:  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+pages/language_lab/apps/generator/ru/index_ru.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:261:  "../talk_levels/assets/data/talk_levels.json",
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:269:  { id: "bg01", label: "BG 01", url: "/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:270:  { id: "bg02", label: "BG 02", url: "/core/assets/backgrounds/sprachfuehrer/bg_01_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:271:  { id: "bg03", label: "BG 03", url: "/core/assets/backgrounds/sprachfuehrer/bg_02_en-de.webp" },
+pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js:272:  { id: "bg04", label: "BG 04", url: "/core/assets/backgrounds/sprachfuehrer/bg_03_en-de.webp" },
+pages/language_lab/apps/analyse_zaz/index.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/fr/index_fr.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/es/index_es.html:11:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/en/index_en.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/it/index_it.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/level_overview.html:7:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/generator/de/index_de.html:6:    <link rel="icon" href="../../../../../core/assets/favicon.ico">
+pages/language_lab/apps/generator/de/index_de.html:14:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/index.html:8:    <link rel="stylesheet" href="../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/de/index_level_de.html:7:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/preview_talklevels/de-en/index.html:7:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/preview_talklevels/de-tr/index.html:7:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/de/index_de.html:7:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+pages/language_lab/apps/karten/en/index_en.html:8:    <link rel="stylesheet" href="../../../../../core/assets/style.css" />
+index.html:7:    <link rel="stylesheet" href="core/assets/style.css" />
+index.html:8:    <link rel="stylesheet" href="/assets/portal/portal.css" />
+index.html:10:    <script src="/assets/portal/portal.js" defer></script>
+index.html:11:  <link rel="stylesheet" href="assets/css/style.css">
+index.html:43:    <script src="assets/js/portal_registry_loader.js"></script>
+math_module/index_gr_mathe.html:42:          <img src="assets/avatars/pinguin.jpg" alt="Pinguin">
+math_module/index_gr_mathe.html:46:          <img src="assets/avatars/panda.jpg" alt="Panda">
+math_module/index_gr_mathe.html:50:          <img src="assets/avatars/frosch.jpg" alt="Frosch">
+math_module/index_gr_mathe.html:54:          <img src="assets/avatars/eichhoernchen.jpg" alt="Eichhörnchen">
+math_module/index_gr_mathe.html:58:          <img src="assets/avatars/tigr.jpg" alt="Tiger">
+demos/prog_min_portfolio/videos/index.html:7:  <link rel="stylesheet" href="../assets/css/portfolio.css">
+demos/prog_min_portfolio/videos/index.html:32:        <video controls preload="metadata" poster="../assets/img/thumbs/video_placeholder.svg">
+demos/prog_min_portfolio/videos/index.html:45:        <video controls preload="metadata" poster="../assets/img/thumbs/video_placeholder.svg">
+demos/prog_min_portfolio/videos/index.html:58:        <video controls preload="metadata" poster="../assets/img/thumbs/video_placeholder.svg">
+demos/prog_min_portfolio/videos/index.html:72:  <script src="../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/timer_bonus/index.html:19:  <script src="../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/stories/maus/maus_style.css:102:  background: url("../../assets/illustrations/mouse_trap_story_bg.svg") center/cover no-repeat;
+demos/prog_min_portfolio/stories/maus/maus_style.css:137:  background-image: url("../../assets/illustrations/mouse_trap_bg_scene.svg");
+demos/prog_min_portfolio/stories/maus/maus_index.html:8:    <link rel="stylesheet" href="../../assets/css/portfolio.css" />
+demos/prog_min_portfolio/stories/maus/maus_index.html:276:    <script src="../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/sprachbox_leitner/app.js:258:  "../talk_levels/assets/data/talk_levels.json",
+demos/prog_min_portfolio/demos/sprachbox_leitner/sw.js:9:  "./assets/icon-192.png",
+demos/prog_min_portfolio/demos/sprachbox_leitner/sw.js:10:  "./assets/icon-512.png",
+demos/prog_min_portfolio/demos/sprachbox_leitner/sw.js:11:  "./assets/bg-de-en.webp",
+demos/prog_min_portfolio/demos/sprachbox_leitner/styles.css:39:  background-image: url("./assets/bg-de-en.webp");
+demos/prog_min_portfolio/demos/sprachbox_leitner/index.html:10:  <link rel="icon" href="./assets/icon-192.png" />
+demos/prog_min_portfolio/demos/sprachbox_leitner/index.html:11:  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+demos/prog_min_portfolio/demos/sprachbox_leitner/index.html:465:  <script src="../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/quadratic_solver/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css">
+demos/prog_min_portfolio/demos/quadratic_solver/index.html:201:  <script src="../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/quadratic_solver/quadratic-solver_offline.html:792:    <script src="../../assets/js/header-widgets.js" defer></script>
+math_module/core/scripts.js:48:// Zeigt auf das Modul selbst, damit assets unter /math_module/assets/ gefunden werden
+math_module/core/scripts.js:54:  if (path.startsWith('/assets/')) return `${SITE_ROOT}${path}`;
+math_module/core/scripts.js:68:  `${SITE_ROOT}/assets/avatars/pinguin.jpg`,
+math_module/core/scripts.js:69:  `${SITE_ROOT}/assets/avatars/panda.jpg`,
+math_module/core/scripts.js:70:  `${SITE_ROOT}/assets/avatars/frosch.jpg`,
+math_module/core/scripts.js:71:  `${SITE_ROOT}/assets/avatars/eichhoernchen.jpg`,
+math_module/core/scripts.js:72:  `${SITE_ROOT}/assets/avatars/tigr.jpg`,
+math_module/core/scripts.js:76:  `${SITE_ROOT}/assets/themes/penguin.jpg`,
+math_module/core/scripts.js:77:  `${SITE_ROOT}/assets/themes/panda.jpg`,
+math_module/core/scripts.js:78:  `${SITE_ROOT}/assets/themes/frog.jpg`,
+math_module/core/scripts.js:79:  `${SITE_ROOT}/assets/themes/squirrel.jpg`,
+math_module/core/scripts.js:80:  `${SITE_ROOT}/assets/themes/tigr.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/index_gr_mathe.html:42:          <img src="assets/avatars/pinguin.jpg" alt="Pinguin">
+demos/prog_min_portfolio/demos/mathe_grundschule/index_gr_mathe.html:46:          <img src="assets/avatars/panda.jpg" alt="Panda">
+demos/prog_min_portfolio/demos/mathe_grundschule/index_gr_mathe.html:50:          <img src="assets/avatars/frosch.jpg" alt="Frosch">
+demos/prog_min_portfolio/demos/mathe_grundschule/index_gr_mathe.html:54:          <img src="assets/avatars/eichhoernchen.jpg" alt="Eichhörnchen">
+demos/prog_min_portfolio/demos/mathe_grundschule/index_gr_mathe.html:58:          <img src="assets/avatars/tigr.jpg" alt="Tiger">
+demos/prog_min_portfolio/demos/mathe_grundschule/index_gr_mathe.html:86:  <script src="../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/index.html:33:  <script src="../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/index.html:32:  <link rel="stylesheet" href="assets/css/portfolio.css?v=20260308">
+demos/prog_min_portfolio/index.html:33:  <script src="assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/impressum.html:7:  <link rel="stylesheet" href="assets/css/portfolio.css">
+demos/prog_min_portfolio/impressum.html:8:  <script src="assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/ADD_LINK_SNIPPET.html:25:  <script src="assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level6.html:31:  <script src="../../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:48:// Zeigt auf das Modul selbst, damit assets unter /math_module/assets/ gefunden werden
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:54:  if (path.startsWith('/assets/')) return `${SITE_ROOT}${path}`;
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:68:  `${SITE_ROOT}/assets/avatars/pinguin.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:69:  `${SITE_ROOT}/assets/avatars/panda.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:70:  `${SITE_ROOT}/assets/avatars/frosch.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:71:  `${SITE_ROOT}/assets/avatars/eichhoernchen.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:72:  `${SITE_ROOT}/assets/avatars/tigr.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:76:  `${SITE_ROOT}/assets/themes/penguin.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:77:  `${SITE_ROOT}/assets/themes/panda.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:78:  `${SITE_ROOT}/assets/themes/frog.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:79:  `${SITE_ROOT}/assets/themes/squirrel.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/core/scripts.js:80:  `${SITE_ROOT}/assets/themes/tigr.jpg`,
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level5.html:31:  <script src="../../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level4.html:31:  <script src="../../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level3.html:31:  <script src="../../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level2.html:31:  <script src="../../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level1.html:31:  <script src="../../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/materials/index.html:7:  <link rel="stylesheet" href="../assets/css/portfolio.css" />
+demos/prog_min_portfolio/materials/index.html:40:  <script src="../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/demos/mathe_grundschule/levels/level0.html:31:  <script src="../../../assets/js/header-widgets.js" defer></script>
+demos/prog_min_portfolio/portfolio_site/stories/maus/maus_style.css:102:  background: url("/assets/illustrations/mouse_trap_story_bg.svg") center/cover no-repeat;
+demos/prog_min_portfolio/portfolio_site/stories/maus/maus_style.css:137:  background-image: url("/assets/illustrations/mouse_trap_bg_scene.svg");
+demos/prog_min_portfolio/portfolio_site/stories/maus/maus_index.html:8:    <link rel="stylesheet" href="../../core/assets/style.css" />
+demos/prog_min_portfolio/portfolio_site/stories/maus/maus_index.html:277:    <script src="../../../assets/js/header-widgets.js" defer></script>
+math_module__SAVE_2026-02-20_173727/core/scripts.js:27:  '/assets/avatars/pinguin.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:28:  '/assets/avatars/panda.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:29:  '/assets/avatars/frosch.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:30:  '/assets/avatars/eichhoernchen.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:31:  '/assets/avatars/tigr.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:35:  '/assets/themes/penguin.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:36:  '/assets/themes/panda.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:37:  '/assets/themes/frog.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:38:  '/assets/themes/squirrel.jpg',
+math_module__SAVE_2026-02-20_173727/core/scripts.js:39:  '/assets/themes/tigr.jpg',
+assets/portal/portal.js:1:const DATA_URL = "/assets/data/portal_registry.json";
+apps/math/quadratic-solver/index.html:7:  <link rel="stylesheet" href="/core/assets/style.css">
+assets/js/portal_registry_loader.js:7:  const REGISTRY_URL = 'assets/data/portal_registry.json';
+core/js/core_init.js:79:    const cssHref = "/assets/css/ll_fab_nav.css";
+core/js/core_init.js:80:    const jsSrc = "/assets/js/ll_fab_nav.js";
+core/js/sprachfuehrer_bg.js:3:  const BG_DIR = "/core/assets/backgrounds/sprachfuehrer/";
+core/data/apps_store.json:22:    "icon": "/core/assets/favicon.ico",
+core/data/apps_store.json:35:    "icon": "/core/assets/favicon.ico",
+core/data/apps_store.json:48:    "icon": "/core/assets/favicon.ico",
+core/data/apps_store.json:61:    "icon": "/core/assets/favicon.ico",
+mathe_grundschule.html:7:  <link rel="stylesheet" href="core/assets/style.css" />
+mathe_grundschule.html:8:  <link rel="stylesheet" href="assets/css/style.css" />
+mathe_grundschule.html:85:    const DATA_URL = './assets/data/mathe_grundschule_toc.json';
+mathe_grundschule.html:94:    const TASKS_URL = './assets/data/mathe_grundschule_tasks.json';
+core/assets/backgrounds/sprachfuehrer/backgrounds.json:2:  "dir": "/core/assets/backgrounds/sprachfuehrer/",
+
+USES datenbanken:
+pages/language_lab/apps/analyse_zaz/index.html:10:    <script src="../../../../datenbanken/de/de_pronouns/de_pronouns.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:11:    <script src="../../../../datenbanken/de/de_verbs_main/de_verbs_main.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:12:    <script src="../../../../datenbanken/de/de_verbs_aux/de_verbs_aux.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:13:    <script src="../../../../datenbanken/de/de_verbs_modals/de_verbs_modals.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:14:    <script src="../../../../datenbanken/de/de_adverbs/de_adverbs.js" defer></script>
+pages/language_lab/apps/analyse_zaz/index.html:15:    <script src="../../../../datenbanken/de/de_preps/de_preps.js" defer></script>
+pages/language_lab/apps/analyse_zaz/analyzer_de_core.js:5:  // Datenbanken aus /datenbanken/de/… (über Script-Tags geladen)
+pages/bibliothek/ressourcen/index.html:54:    const DB_URL = "../../../datenbanken/bibliothek/ressourcen.json";
+pages/language_lab/apps/generator/ru/ru_script.js:2:// ru_script.js – Генератор предложений (данные /datenbanken/ru)
+pages/language_lab/apps/generator/ru/ru_script.js:411:        "Русский генератор: центральные базы (/datenbanken/ru), спряжение и порядок слов – по-русски.";
+pages/language_lab/apps/generator/ru/index_ru.html:17:    <script src="../../../../../datenbanken/ru/ru_verbs/ru_verbs.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:18:    <script src="../../../../../datenbanken/ru/ru_pronouns/ru_pronouns.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:19:    <script src="../../../../../datenbanken/ru/ru_adjectives/ru_adjectives.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:20:    <script src="../../../../../datenbanken/ru/ru_adverbs/ru_adverbs.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:21:    <script src="../../../../../datenbanken/ru/ru_preps/ru_preps.js" defer></script>
+pages/language_lab/apps/generator/ru/index_ru.html:52:          Базы берутся из <code>datenbanken/ru</code>.
+pages/language_lab/apps/generator/it/it_script.js:2:// it_script.js – Generatore di frasi italiano (/datenbanken/it)
+pages/language_lab/apps/generator/it/it_script.js:404:        "Generatore IT con basi centrali (/datenbanken/it).";
+pages/language_lab/apps/generator/fr/index_fr.html:17:    <script src="../../../../../datenbanken/fr/fr_verbs/fr_verbs.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:18:    <script src="../../../../../datenbanken/fr/fr_pronouns/fr_pronouns.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:19:    <script src="../../../../../datenbanken/fr/fr_adjectives/fr_adjectives.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:20:    <script src="../../../../../datenbanken/fr/fr_adverbs/fr_adverbs.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:21:    <script src="../../../../../datenbanken/fr/fr_preps/fr_preps.js" defer></script>
+pages/language_lab/apps/generator/fr/index_fr.html:52:          « Générer ». Les données viennent de <code>datenbanken/fr</code>.
+pages/language_lab/apps/generator/fr/fr_script.js:2:// fr_script.js – Générateur de phrases (données /datenbanken/fr)
+pages/language_lab/apps/generator/fr/fr_script.js:405:        "Générateur FR avec bases centrales (/datenbanken/fr).";
+pages/language_lab/apps/generator/it/index_it.html:17:    <script src="../../../../../datenbanken/it/it_verbs/it_verbs.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:18:    <script src="../../../../../datenbanken/it/it_pronouns/it_pronouns.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:19:    <script src="../../../../../datenbanken/it/it_adjectives/it_adjectives.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:20:    <script src="../../../../../datenbanken/it/it_adverbs/it_adverbs.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:21:    <script src="../../../../../datenbanken/it/it_preps/it_preps.js" defer></script>
+pages/language_lab/apps/generator/it/index_it.html:52:          Dati da <code>datenbanken/it</code>.
+pages/language_lab/apps/generator/es/index_es.html:19:    <script src="../../../../../datenbanken/es/es_pronouns/es_pronouns.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:20:    <script src="../../../../../datenbanken/es/es_verbs/es_verbs.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:21:    <script src="../../../../../datenbanken/es/es_adjectives/es_adjectives.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:22:    <script src="../../../../../datenbanken/es/es_adverbs/es_adverbs.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:23:    <script src="../../../../../datenbanken/es/es_preps/es_preps.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:24:    <script src="../../../../../datenbanken/es/es_nouns/es_nouns.js" defer></script>
+pages/language_lab/apps/generator/es/index_es.html:43:          <code>datenbanken/es</code>.
+pages/language_lab/apps/generator/en/index_en.html:18:    <script src="../../../../../datenbanken/en/en_verbs/en_verbs.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:19:    <script src="../../../../../datenbanken/en/en_pronouns/en_pronouns.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:20:    <script src="../../../../../datenbanken/en/en_adjectives/en_adjectives.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:21:    <script src="../../../../../datenbanken/en/en_adverbs/en_adverbs.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:22:    <script src="../../../../../datenbanken/en/en_preps/en_preps.js" defer></script>
+pages/language_lab/apps/generator/en/index_en.html:53:          This version uses central datasets from <code>datenbanken/en</code>.
+pages/language_lab/apps/generator/en/en_script.js:2:// en_script.js – English sentence generator (central /datenbanken/en)
+pages/language_lab/apps/generator/en/en_script.js:380:      hint.textContent = "English generator using central databases (/datenbanken/en).";
+pages/language_lab/apps/generator/de/de_script.js:2:// de_script.js – Deutscher Satzgenerator (zentral /datenbanken/de)
+pages/language_lab/apps/generator/de/de_script.js:713:        "DE-Generator: zentrale Datenbanken (/datenbanken/de) – alle Zeiten aktiv.";
+pages/language_lab/apps/generator/de/index_de.html:27:         Pfad: ../../../../../datenbanken/de/...
+pages/language_lab/apps/generator/de/index_de.html:32:    <script src="../../../../../datenbanken/de/de_pronouns/de_pronouns.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:35:    <script src="../../../../../datenbanken/de/de_verbs_main/de_verbs_main.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:36:    <script src="../../../../../datenbanken/de/de_verbs_modals/de_verbs_modals.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:37:    <script src="../../../../../datenbanken/de/de_verbs_aux/de_verbs_aux.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:40:    <script src="../../../../../datenbanken/de/de_adjectives/de_adjectives.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:43:    <script src="../../../../../datenbanken/de/de_adverbs/de_adverbs.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:46:    <script src="../../../../../datenbanken/de/de_preps/de_preps.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:48:    <script src="../../../../../datenbanken/de/de_prep_patterns.js" defer></script>
+pages/language_lab/apps/generator/de/index_de.html:90:          <code>datenbanken/de</code>.
+pages/language_lab/apps/generator/de/index_de.html:94:          This version uses central datasets from <code>datenbanken/de</code>.
+pages/language_lab/apps/generator/de/index_de.html:98:          версия использует базы из <code>datenbanken/de</code>.
+pages/bibliothek/projekte/index.html:44:    const DB_URL = "../../../datenbanken/bibliothek/projekte.json";
+pages/portal/analyse_sprachfuehrer/index.html:10:    <script src="../../../datenbanken/de/de_pronouns/de_pronouns.js" defer></script>
+pages/portal/analyse_sprachfuehrer/index.html:11:    <script src="../../../datenbanken/de/de_verbs_main/de_verbs_main.js" defer></script>
+pages/portal/analyse_sprachfuehrer/index.html:12:    <script src="../../../datenbanken/de/de_verbs_aux/de_verbs_aux.js" defer></script>
+pages/portal/analyse_sprachfuehrer/index.html:13:    <script src="../../../datenbanken/de/de_verbs_modals/de_verbs_modals.js" defer></script>
+pages/portal/analyse_sprachfuehrer/index.html:14:    <script src="../../../datenbanken/de/de_adverbs/de_adverbs.js" defer></script>
+pages/portal/analyse_sprachfuehrer/index.html:15:    <script src="../../../datenbanken/de/de_preps/de_preps.js" defer></script>
+pages/portal/analyse_sprachfuehrer/analyzer_de_core.js:5:  // Datenbanken aus /datenbanken/de/… (über Script-Tags geladen)
+datenbanken/ru/manifest.json:9:      "path": "datenbanken/ru/ru_adjectives/ru_adjectives.js",
+datenbanken/ru/manifest.json:16:      "path": "datenbanken/ru/ru_adverbs/ru_adverbs.js",
+datenbanken/ru/manifest.json:23:      "path": "datenbanken/ru/ru_possessive_pronouns/ru_possessive_pronouns.js",
+datenbanken/ru/manifest.json:30:      "path": "datenbanken/ru/ru_preps/ru_preps.js",
+datenbanken/ru/manifest.json:37:      "path": "datenbanken/ru/ru_pronouns/ru_pronouns.js",
+datenbanken/ru/manifest.json:44:      "path": "datenbanken/ru/ru_verbs/ru_verbs.js",
+datenbanken/ru/manifest.json:51:      "path": "datenbanken/ru/ru_verbs_aux/ru_verbs_aux.js",
+datenbanken/ru/manifest.json:58:      "path": "datenbanken/ru/ru_verbs_modals/ru_verbs_modals.js",
+datenbanken/db_registry.json:9:      "path": "datenbanken/de/de_adjectives/de_adjectives.js",
+datenbanken/db_registry.json:16:      "path": "datenbanken/de/de_adverbs/de_adverbs.js",
+datenbanken/db_registry.json:23:      "path": "datenbanken/de/de_nouns/de_nouns.js",
+datenbanken/db_registry.json:30:      "path": "datenbanken/de/de_possessive_pronouns/de_possessive_pronouns.js",
+datenbanken/db_registry.json:37:      "path": "datenbanken/de/de_prep_patterns.js",
+datenbanken/db_registry.json:44:      "path": "datenbanken/de/de_preps/de_preps.js",
+datenbanken/db_registry.json:51:      "path": "datenbanken/de/de_pronouns/de_pronouns.js",
+datenbanken/db_registry.json:58:      "path": "datenbanken/de/pronouns/de_pronouns_personal.js",
+datenbanken/db_registry.json:65:      "path": "datenbanken/de/de_verbs_aux/de_verbs_aux.js",
+datenbanken/db_registry.json:72:      "path": "datenbanken/de/de_verbs_main/de_verbs_main.js",
+datenbanken/db_registry.json:79:      "path": "datenbanken/de/de_verbs_modals/de_verbs_modals.js",
+datenbanken/db_registry.json:86:      "path": "datenbanken/en/en_adjectives/en_adjectives.js",
+datenbanken/db_registry.json:93:      "path": "datenbanken/en/en_adverbs/en_adverbs.js",
+datenbanken/db_registry.json:100:      "path": "datenbanken/en/en_possessive_pronouns/en_possessive_pronouns.js",
+datenbanken/db_registry.json:107:      "path": "datenbanken/en/en_preps/en_preps.js",
+datenbanken/db_registry.json:114:      "path": "datenbanken/en/en_pronouns/en_pronouns.js",
+datenbanken/db_registry.json:121:      "path": "datenbanken/en/en_verbs/en_verbs.js",
+datenbanken/db_registry.json:128:      "path": "datenbanken/en/en_verbs_aux/en_verbs_aux.js",
+datenbanken/db_registry.json:135:      "path": "datenbanken/en/en_verbs_modals/en_verbs_modals.js",
+datenbanken/db_registry.json:142:      "path": "datenbanken/es/es_adjectives/es_adjectives.js",
+datenbanken/db_registry.json:149:      "path": "datenbanken/es/es_adverbs/es_adverbs.js",
+datenbanken/db_registry.json:156:      "path": "datenbanken/es/es_possessive_pronouns/es_possessive_pronouns.js",
+datenbanken/db_registry.json:163:      "path": "datenbanken/es/es_preps/es_preps.js",
+datenbanken/db_registry.json:170:      "path": "datenbanken/es/es_pronouns/es_pronouns.js",
+datenbanken/db_registry.json:177:      "path": "datenbanken/es/es_verbs/es_verbs.js",
+datenbanken/db_registry.json:184:      "path": "datenbanken/es/es_verbs_aux/es_verbs_aux.js",
+datenbanken/db_registry.json:191:      "path": "datenbanken/es/es_verbs_modals/es_verbs_modals.js",
+datenbanken/db_registry.json:198:      "path": "datenbanken/fr/fr_adjectives/fr_adjectives.js",
+datenbanken/db_registry.json:205:      "path": "datenbanken/fr/fr_adverbs/fr_adverbs.js",
+datenbanken/db_registry.json:212:      "path": "datenbanken/fr/fr_possessive_pronouns/fr_possessive_pronouns.js",
+datenbanken/db_registry.json:219:      "path": "datenbanken/fr/fr_preps/fr_preps.js",
+datenbanken/db_registry.json:226:      "path": "datenbanken/fr/fr_pronouns/fr_pronouns.js",
+datenbanken/db_registry.json:233:      "path": "datenbanken/fr/fr_verbs/fr_verbs.js",
+datenbanken/db_registry.json:240:      "path": "datenbanken/fr/fr_verbs_aux/fr_verbs_aux.js",
+datenbanken/db_registry.json:247:      "path": "datenbanken/fr/fr_verbs_modals/fr_verbs_modals.js",
+datenbanken/db_registry.json:254:      "path": "datenbanken/it/it_adjectives/it_adjectives.js",
+datenbanken/db_registry.json:261:      "path": "datenbanken/it/it_adverbs/it_adverbs.js",
+datenbanken/db_registry.json:268:      "path": "datenbanken/it/it_possessive_pronouns/it_possessive_pronouns.js",
+datenbanken/db_registry.json:275:      "path": "datenbanken/it/it_preps/it_preps.js",
+datenbanken/db_registry.json:282:      "path": "datenbanken/it/it_pronouns/it_pronouns.js",
+datenbanken/db_registry.json:289:      "path": "datenbanken/it/it_verbs/it_verbs.js",
+datenbanken/db_registry.json:296:      "path": "datenbanken/it/it_verbs_aux/it_verbs_aux.js",
+datenbanken/db_registry.json:303:      "path": "datenbanken/it/it_verbs_modals/it_verbs_modals.js",
+datenbanken/db_registry.json:310:      "path": "datenbanken/ru/ru_adjectives/ru_adjectives.js",
+datenbanken/db_registry.json:317:      "path": "datenbanken/ru/ru_adverbs/ru_adverbs.js",
+datenbanken/db_registry.json:324:      "path": "datenbanken/ru/ru_possessive_pronouns/ru_possessive_pronouns.js",
+datenbanken/db_registry.json:331:      "path": "datenbanken/ru/ru_preps/ru_preps.js",
+datenbanken/db_registry.json:338:      "path": "datenbanken/ru/ru_pronouns/ru_pronouns.js",
+datenbanken/db_registry.json:345:      "path": "datenbanken/ru/ru_verbs/ru_verbs.js",
+datenbanken/db_registry.json:352:      "path": "datenbanken/ru/ru_verbs_aux/ru_verbs_aux.js",
+datenbanken/db_registry.json:359:      "path": "datenbanken/ru/ru_verbs_modals/ru_verbs_modals.js",
+datenbanken/db_registry.json:366:      "path": "datenbanken/grammar/lex_de_sprachen.json",
+datenbanken/db_registry.json:373:      "path": "datenbanken/grammar/manifest.json",
+datenbanken/db_registry.json:380:      "path": "datenbanken/grammar/rules_de.json",
+datenbanken/db_registry.json:387:      "path": "datenbanken/grammar/rules_shared.json",
+datenbanken/it/manifest.json:9:      "path": "datenbanken/it/it_adjectives/it_adjectives.js",
+datenbanken/it/manifest.json:16:      "path": "datenbanken/it/it_adverbs/it_adverbs.js",
+datenbanken/it/manifest.json:23:      "path": "datenbanken/it/it_possessive_pronouns/it_possessive_pronouns.js",
+datenbanken/it/manifest.json:30:      "path": "datenbanken/it/it_preps/it_preps.js",
+datenbanken/it/manifest.json:37:      "path": "datenbanken/it/it_pronouns/it_pronouns.js",
+datenbanken/it/manifest.json:44:      "path": "datenbanken/it/it_verbs/it_verbs.js",
+datenbanken/it/manifest.json:51:      "path": "datenbanken/it/it_verbs_aux/it_verbs_aux.js",
+datenbanken/it/manifest.json:58:      "path": "datenbanken/it/it_verbs_modals/it_verbs_modals.js",
+datenbanken/es/manifest.json:9:      "path": "datenbanken/es/es_adjectives/es_adjectives.js",
+datenbanken/es/manifest.json:16:      "path": "datenbanken/es/es_adverbs/es_adverbs.js",
+datenbanken/es/manifest.json:23:      "path": "datenbanken/es/es_possessive_pronouns/es_possessive_pronouns.js",
+datenbanken/es/manifest.json:30:      "path": "datenbanken/es/es_preps/es_preps.js",
+datenbanken/es/manifest.json:37:      "path": "datenbanken/es/es_pronouns/es_pronouns.js",
+datenbanken/es/manifest.json:44:      "path": "datenbanken/es/es_verbs/es_verbs.js",
+datenbanken/es/manifest.json:51:      "path": "datenbanken/es/es_verbs_aux/es_verbs_aux.js",
+datenbanken/es/manifest.json:58:      "path": "datenbanken/es/es_verbs_modals/es_verbs_modals.js",
+datenbanken/en/manifest.json:9:      "path": "datenbanken/en/en_adjectives/en_adjectives.js",
+datenbanken/en/manifest.json:16:      "path": "datenbanken/en/en_adverbs/en_adverbs.js",
+datenbanken/en/manifest.json:23:      "path": "datenbanken/en/en_possessive_pronouns/en_possessive_pronouns.js",
+datenbanken/en/manifest.json:30:      "path": "datenbanken/en/en_preps/en_preps.js",
+datenbanken/en/manifest.json:37:      "path": "datenbanken/en/en_pronouns/en_pronouns.js",
+datenbanken/en/manifest.json:44:      "path": "datenbanken/en/en_verbs/en_verbs.js",
+datenbanken/en/manifest.json:51:      "path": "datenbanken/en/en_verbs_aux/en_verbs_aux.js",
+datenbanken/en/manifest.json:58:      "path": "datenbanken/en/en_verbs_modals/en_verbs_modals.js",
+datenbanken/de/manifest.json:9:      "path": "datenbanken/de/de_adjectives/de_adjectives.js",
+datenbanken/de/manifest.json:16:      "path": "datenbanken/de/de_adverbs/de_adverbs.js",
+datenbanken/de/manifest.json:23:      "path": "datenbanken/de/de_nouns/de_nouns.js",
+datenbanken/de/manifest.json:30:      "path": "datenbanken/de/de_possessive_pronouns/de_possessive_pronouns.js",
+datenbanken/de/manifest.json:37:      "path": "datenbanken/de/de_prep_patterns.js",
+datenbanken/de/manifest.json:44:      "path": "datenbanken/de/de_preps/de_preps.js",
+datenbanken/de/manifest.json:51:      "path": "datenbanken/de/de_pronouns/de_pronouns.js",
+datenbanken/de/manifest.json:58:      "path": "datenbanken/de/pronouns/de_pronouns_personal.js",
+datenbanken/de/manifest.json:65:      "path": "datenbanken/de/de_verbs_aux/de_verbs_aux.js",
+datenbanken/de/manifest.json:72:      "path": "datenbanken/de/de_verbs_main/de_verbs_main.js",
+datenbanken/de/manifest.json:79:      "path": "datenbanken/de/de_verbs_modals/de_verbs_modals.js",
+datenbanken/fr/manifest.json:9:      "path": "datenbanken/fr/fr_adjectives/fr_adjectives.js",
+datenbanken/fr/manifest.json:16:      "path": "datenbanken/fr/fr_adverbs/fr_adverbs.js",
+datenbanken/fr/manifest.json:23:      "path": "datenbanken/fr/fr_possessive_pronouns/fr_possessive_pronouns.js",
+datenbanken/fr/manifest.json:30:      "path": "datenbanken/fr/fr_preps/fr_preps.js",
+datenbanken/fr/manifest.json:37:      "path": "datenbanken/fr/fr_pronouns/fr_pronouns.js",
+datenbanken/fr/manifest.json:44:      "path": "datenbanken/fr/fr_verbs/fr_verbs.js",
+datenbanken/fr/manifest.json:51:      "path": "datenbanken/fr/fr_verbs_aux/fr_verbs_aux.js",
+datenbanken/fr/manifest.json:58:      "path": "datenbanken/fr/fr_verbs_modals/fr_verbs_modals.js",
+datenbanken/grammar/manifest.json:9:      "path": "datenbanken/grammar/lex_de_sprachen.json",
+datenbanken/grammar/manifest.json:16:      "path": "datenbanken/grammar/manifest.json",
+datenbanken/grammar/manifest.json:23:      "path": "datenbanken/grammar/rules_de.json",
+datenbanken/grammar/manifest.json:30:      "path": "datenbanken/grammar/rules_shared.json",
+
+REFERENCES to pages/language_lab:
+pages/language_lab/sprachfuehrer_auswahl/index.html:70:      { id: "de-en", title: "Deutsch ⇄ English", sub: "German ⇄ English", flagCodes: ["de","gb"], href: "/pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
+pages/language_lab/sprachfuehrer_auswahl/index.html:71:      { id: "de-it", title: "Deutsch ⇄ Italiano", sub: "Tedesco ⇄ Italiano", flagCodes: ["de","it"], href: "/pages/language_lab/apps/SprachBox_DE_IT_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
+pages/language_lab/sprachfuehrer_auswahl/index.html:72:      { id: "de-es", title: "Deutsch ⇄ Español", sub: "Alemán ⇄ Español", flagCodes: ["de","es"], href: "/pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
+pages/language_lab/sprachfuehrer_auswahl/index.html:73:      { id: "de-fr", title: "Deutsch ⇄ Français", sub: "Allemand ⇄ Français", flagCodes: ["de","fr"], href: "/pages/language_lab/apps/SprachBox_DE_FR_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
+pages/language_lab/sprachfuehrer_auswahl/index.html:74:      { id: "de-ru", title: "Deutsch ⇄ Русский", sub: "Немецкий ⇄ Русский", flagCodes: ["de","ru"], href: "/pages/language_lab/apps/SprachBox_DE_RU_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
+pages/language_lab/sprachfuehrer_auswahl/index.html:75:      { id: "de-tr", title: "Deutsch ⇄ Türkisch", sub: "Almanca ⇄ Türkçe", flagCodes: ["de","tr"], href: "/pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html", enabled: true },
+pages/_archive/portal_v2__inactive/portal_registry.json:46:      "href": "/pages/language_lab/apps/index.html",
+pages/_archive/portal_v2__inactive/portal_registry.json:56:      "href": "/pages/language_lab/apps/index.html",
+pages/_archive/portal_v2__inactive/portal_registry.json:76:      "href": "/pages/language_lab/apps/tools/auto-kauf-assistent/index.html",
+pages/_archive/portal_v2__inactive/portal_registry.json:77:      "icon": "/pages/language_lab/apps/tools/auto-kauf-assistent/icons/icon-192.png",
+pages/_archive/portal_v2__inactive/portal_registry.json:86:      "href": "/pages/language_lab/apps/mathe/quadratgleichung/index.html",
+pages/_archive/portal_v2__inactive/portal_registry.json:87:      "icon": "/pages/language_lab/apps/mathe/quadratgleichung/icons/icon-192.png",
+pages/_archive/portal_v2__inactive/portal_registry.json:96:      "href": "/pages/language_lab/apps/talk_levels/index.html",
+pages/portal/werkstatt/index.html:84:      <a class="card-link" href="/pages/language_lab/apps/">
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:25:          <a class="portal-card" href="/pages/language_lab/apps/index.html">
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:29:          <a class="portal-card" href="/pages/language_lab/index.html">
+_meta/_REPO_STATUS/_before_reference_fix/pages/legacy/index.html:33:          <a class="portal-card" href="/pages/language_lab/apps/index.html">
+pages/legacy/index.html:25:          <a class="portal-card" href="/pages/language_lab/apps/index.html">
+pages/legacy/index.html:29:          <a class="portal-card" href="/pages/language_lab/index.html">
+pages/legacy/index.html:33:          <a class="portal-card" href="/pages/language_lab/apps/index.html">
+_meta/_REPO_STATUS/_before_reference_fix/core/partials/header.html:15:        <a href="/pages/language_lab/index.html" class="nav-link">LanguageLab</a>
+pages/language_lab/index.html:22:            <a href="/pages/language_lab/apps/generator/de/index_de.html">→ Satzgenerator öffnen</a>
+pages/language_lab/index.html:28:            <a href="/pages/language_lab/apps/analyse_zaz/index.html">→ ZAZ Analyse öffnen</a>
+pages/language_lab/index.html:34:            <a href="/pages/language_lab/apps/talk_levels/index.html#topic=all&level=all&tts=de&speed=1">
+pages/language_lab/apps/werkstatt/tagbook/index.html:23:      <li><a href="/pages/language_lab/apps/talk_levels/">Talk Levels</a></li>
+pages/language_lab/apps/karten/_preview_from_talklevels/karten_level_data_from_talklevels.js:2:// Source: pages/language_lab/apps/talk_levels/data/topics/*.json
+pages/language_lab/apps/karten/_preview_from_talklevels/karten_level_data_from_talklevels_with_tr.js:2:// Source: pages/language_lab/apps/talk_levels/data/topics/*.json
+pages/language_lab/apps/talk_levels/scripts/adapter_preview_to_level_db.js:95:    `// Source: pages/language_lab/apps/talk_levels/data/topics/*.json\n` +
+pages/language_lab/apps/apps.json:7:    "href": "/pages/language_lab/apps/generator/",
+pages/language_lab/apps/apps.json:15:    "href": "/pages/language_lab/apps/talk_levels/",
+pages/language_lab/apps/apps.json:23:    "href": "/pages/language_lab/apps/analyse_zaz/",
+pages/language_lab/apps/apps.json:39:    "href": "/pages/language_lab/apps/mathe/quadratgleichung/",
+pages/language_lab/apps/apps.json:40:    "icon": "/pages/language_lab/apps/mathe/quadratgleichung/icons/icon-192.png"
+pages/language_lab/apps/apps.json:47:    "href": "/pages/language_lab/apps/tools/auto-kauf-assistent/",
+pages/language_lab/apps/apps.json:55:    "href": "/pages/language_lab/apps/tools/glossar/",
+pages/language_lab/apps/apps.json:56:    "icon": "/pages/language_lab/apps/tools/glossar/icons/icon-192.png"
+pages/language_lab/shared_data/sprachfuehrer_phrase_adapter.js:2:  const SHARED_URL = "/pages/language_lab/shared_data/sprachfuehrer_phrases.json";
+_meta/_REPO_STATUS/_before_reference_fix/assets/data/portal_registry.json:11:      "url": "pages/language_lab/apps/index.html",
+_meta/_REPO_STATUS/_before_reference_fix/assets/data/portal_registry.json:17:      "url": "pages/language_lab/apps/index.html",
+_meta/_REPO_STATUS/_before_reference_fix/assets/data/portal_registry.json:29:      "url": "pages/language_lab/apps/tools/auto-kauf-assistent/index.html",
+_meta/_REPO_STATUS/_before_reference_fix/assets/data/portal_registry.json:35:      "url": "pages/language_lab/apps/mathe/quadratgleichung/index.html",
+_meta/_REPO_STATUS/_before_reference_fix/assets/data/portal_registry.json:41:      "url": "pages/language_lab/apps/talk_levels/index.html",
+sections/analyse.html:28:            <a href="/pages/language_lab/apps/analyse_zaz/index.html">→ Öffnen</a>
+sections/analyse.html:34:            <a href="/pages/language_lab/apps/analyse_zaz/index.html">→ Öffnen</a>
+sections/analyse.html:40:            <a href="/pages/language_lab/apps/analyse_zaz/index.html">→ EN (Platzhalter)</a>
+core/partials/header.html:15:        <a href="/pages/language_lab/index.html" class="nav-link">LanguageLab</a>
+core/data/apps_store.json:8:    "href": "/pages/language_lab/apps/tools/auto-kauf-assistent/",
+core/data/apps_store.json:9:    "icon": "/pages/language_lab/apps/tools/auto-kauf-assistent/icons/icon-192.png",
+core/data/apps_store.json:34:    "href": "/pages/language_lab/apps/talk_levels/",
+core/data/apps_store.json:47:    "href": "/pages/language_lab/apps/analyse_zaz/",
+assets/data/portal_registry.json:11:      "url": "pages/language_lab/apps/index.html",
+assets/data/portal_registry.json:17:      "url": "pages/language_lab/apps/index.html",
+assets/data/portal_registry.json:29:      "url": "pages/language_lab/apps/tools/auto-kauf-assistent/index.html",
+assets/data/portal_registry.json:35:      "url": "pages/language_lab/apps/mathe/quadratgleichung/index.html",
+assets/data/portal_registry.json:41:      "url": "pages/language_lab/apps/talk_levels/index.html",
+
+Links from pages to demos:
+
+Links from demos to pages:

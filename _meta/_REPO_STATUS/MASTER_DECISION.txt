@@ -1,0 +1,10 @@
+ACTIVE WORKING ROOT: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+ACTIVE REMOTE: https://github.com/w59langer-lab/quantura-lernlab-main.git
+ACTIVE BRANCH: main
+ACTIVE COMMIT COUNT: 7
+SIBLING REPO EXISTS: yes
+SIBLING IS INCOMPLETE OR DIFFERENT: yes
+OLD CURRENT EXISTS: yes
+RECOMMENDED SINGLE SOURCE OF TRUTH: /media/mx-ahs/ARCHIV/quantura-lernlab-main
+WHAT NOT TO TOUCH: Do not modify sibling or old_current until review
+NEXT SAFE STEP: Review status files in _REPO_STATUS and decide if sync/merge is needed

@@ -1,0 +1,27 @@
+=== OLD CURRENT STATUS ===
+pwd: /media/mx-ahs/ARCHIV/web&app/current
+.git exists: no
+---- git remote -v ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- git rev-parse HEAD ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- git rev-list --count HEAD ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- top-level ls ----
+ADD_LINK_SNIPPET.html
+_MIGRATION_PLAN
+_STRUCTURE_REPORT
+_incoming
+assets
+demos
+impressum.html
+index.html
+materials
+media
+path.php
+portfolio_site
+stories
+videos

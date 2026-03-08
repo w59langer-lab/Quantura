@@ -1,0 +1,9 @@
+Core logic (human-readable overview)
+- Core: shared UI shell (header/footer partials, core_init.js, tts_manager.js, shared backgrounds) that other pages load.
+- Assets: global static assets (css/js/images, portal registry loader) consumed by pages and demos.
+- Pages: main site and apps (portal, language_lab, tools, store, legacy); pulls shared assets/core and data.
+- Language Lab (under pages): interactive language apps (SprachBox, Karten, Talk Levels, Tools) using data from datenbanken and shared assets/core.
+- Datenbanken: structured JSON/JS datasets for language content; consumed by Language Lab apps and generator tools.
+- Demos: portfolio/demo content; some assets reused (e.g., stories/maus now synced), mostly sandbox/marketing examples.
+- _meta: service folders (status, reports, audits, backups) – not runtime.
+- Other service/backup dirs (now under _meta): historical comparisons and diagnostics.

@@ -1,0 +1,93 @@
+{
+  "topics": [
+    {
+      "title": "Mathe · Quadratische Gleichungen (Solver)",
+      "url": "apps/math/quadratic-solver/",
+      "group": "Sonstiges",
+      "type": "app"
+    },
+    {
+      "title": "Sprachen",
+      "url": "pages/language_lab/apps/index.html",
+      "group": "Apps",
+      "type": "app"
+    },
+    {
+      "title": "Apps (Launcher)",
+      "url": "pages/language_lab/apps/index.html",
+      "group": "Apps",
+      "type": "app"
+    },
+    {
+      "title": "Store",
+      "url": "pages/store/index.html",
+      "group": "Sonstiges",
+      "type": "page"
+    },
+    {
+      "title": "Auto-Kauf-Assistent",
+      "url": "pages/language_lab/apps/tools/auto-kauf-assistent/index.html",
+      "group": "Tools",
+      "type": "tool"
+    },
+    {
+      "title": "Quadratgleichung",
+      "url": "pages/language_lab/apps/mathe/quadratgleichung/index.html",
+      "group": "Apps",
+      "type": "app"
+    },
+    {
+      "title": "Talk Levels",
+      "url": "pages/language_lab/apps/talk_levels/index.html",
+      "group": "Apps",
+      "type": "app"
+    },
+    {
+      "title": "Bibliothek & Ressourcen",
+      "url": "pages/bibliothek/index.html",
+      "group": "Bibliothek",
+      "type": "page"
+    },
+    {
+      "title": "Mathematik · Grundschule (Klasse 1–4)",
+      "url": "mathe_grundschule.html",
+      "group": "Fächer",
+      "type": "page"
+    },
+    {
+      "title": "Mathematik (Realschule 5–10)",
+      "url": "pages/faecher/mathematik-realschule/index.html",
+      "group": "Fächer",
+      "type": "page"
+    },
+    {
+      "title": "Startseite Portal V2",
+      "url": "pages/portal_v2/index.html",
+      "group": "Sonstiges",
+      "type": "page"
+    },
+    {
+      "title": "Portfolio",
+      "url": "demos/prog_min_portfolio/index.html",
+      "group": "Sonstiges",
+      "type": "page"
+    },
+    {
+      "title": "Brüche · Schokolade (Visuell)",
+      "url": "pages/faecher/mathematik-realschule/apps/brueche-schokolade/index.html",
+      "group": "Fächer",
+      "type": "app"
+    },
+    {
+      "title": "PPT · Bibliothek (Downloads)",
+      "url": "pages/bibliothek/media/ppt/index.html",
+      "group": "Bibliothek"
+    },
+    {
+      "title": "Informatik · Web-Projekt P02 Spardose / Punkteglas",
+      "url": "pages/faecher/informatik/web_projects/p02_spardose/index.html",
+      "group": "Fächer",
+      "type": "page"
+    }
+  ]
+}

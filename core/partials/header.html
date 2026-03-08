@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <div class="site-header__inner">
     <div class="site-header__left">
-      <a class="site-header__brand" href="/pages/portal_v2/index.html" data-nav="/pages/portal_v2/index.html">
+      <a class="site-header__brand" href="/index.html" data-nav="/index.html">
         <span class="brand-badge">LL</span>
         <span class="brand-sep">·</span>
         <span class="brand-text">
@@ -11,7 +11,7 @@
       </a>
 
       <nav class="site-header__nav">
-        <a href="/pages/portal_v2/index.html" class="nav-link" data-nav="/pages/portal_v2/index.html">Portal</a>
+        <a href="/index.html" class="nav-link" data-nav="/index.html">Portal</a>
         <a href="/pages/language_lab/index.html" class="nav-link">LanguageLab</a>
         <a href="/pages/faecher/index.html" class="nav-link">Fächer</a>
         <a href="/pages/bibliothek/index.html" class="nav-link">Bibliothek</a>
@@ -38,9 +38,11 @@
         <span class="theme-icon theme-icon--dark">🌙</span>
       </button>
       <div class="header-clock">
-        <div id="headerDate"></div>
-        <div id="headerTime"></div>
-        <div id="headerKW"></div>
+        <div id="headerDateTime" class="header-clock__row"></div>
+        <div class="header-clock__row">
+          <span id="headerKW"></span>
+          <button id="headerCalendarBtn" class="btn btn-ghost header-calendar-btn" type="button" aria-label="Kalender">📅</button>
+        </div>
       </div>
     </div>
   </div>

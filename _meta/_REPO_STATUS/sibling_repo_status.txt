@@ -1,0 +1,50 @@
+=== SIBLING REPO STATUS ===
+pwd: /media/mx-ahs/ARCHIV/quantura-lernlab
+.git exists: no
+---- git rev-parse --show-toplevel ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- git status --short --branch ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- git remote -v ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- git config --get remote.origin.url ----
+---- git branch -vv ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- git rev-parse HEAD ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- git rev-list --count HEAD ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- git log --oneline --decorate -n 30 ----
+fatal: not a git repository (or any parent up to mount point /media/mx-ahs)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+---- ls -la ----
+total 12
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  6 05:19 .
+drwxrwxrwx 1 mx-ahs mx-ahs 12288 Mar  6 06:30 ..
+drwxrwxrwx 1 mx-ahs mx-ahs     0 Mar  6 05:19 demos
+---- top-level directories ----
+
+demos
+---- required directories presence ----
+apps: no
+assets: no
+core: no
+demos: yes
+pages: no
+sections: no
+stories: no
+tools: no
+datenbanken: no
+math_module: no
+downloads: no
+---- required files presence ----
+index.html: no
+README.md: no
+mathe_grundschule.html: no
+codex.sh: no

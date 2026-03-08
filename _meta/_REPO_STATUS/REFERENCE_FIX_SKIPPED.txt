@@ -1,0 +1,13 @@
+REFERENCE FIX SKIPPED (2026-03-08)
+Group B (review later, unchanged): none found.
+Group C (historical logs kept unchanged):
+- _REPO_STATUS/MASTER_DECISION.txt
+- _REPO_STATUS/LOCAL_RENAME_TO_QUANTURA.txt
+- _REPO_STATUS/active_repo_status.txt
+- _REPO_STATUS/old-path-references.txt
+- _REPO_STATUS/old-name-references.txt
+- _REPO_STATUS/old_current_status.txt
+- _REPO_COMPARE/MASTER_COMPARE_DECISION.txt
+- _REPO_COMPARE/current_diff_summary.txt
+- _REPO_COMPARE/sibling_diff_summary.txt
+- _REPO_COMPARE/sibling_only_in_sibling.txt

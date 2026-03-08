@@ -1,0 +1,7 @@
+language_lab – Hauptsprach-Apps (SprachBox, Karten, Talk Levels, Tools, shared_data)
+portal       – Portal-Ansichten (Analyse, Werkstatt, Tagbook, Analyzer)
+store        – Shop/Store-Seiten
+projekte     – Projektübersichten
+werkstatt    – Werkstatt/Experiment-Seiten
+dlegacy      – Alte/legacy Seiten
+d_archive    – Archivierte Inhalte (z.B. altes portal_v2)
