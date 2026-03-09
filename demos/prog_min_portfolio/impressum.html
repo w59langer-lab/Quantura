@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Impressum · Waldemar Langer</title>
   <link rel="stylesheet" href="assets/css/portfolio.css">
-  <script src="assets/js/header-widgets.js" defer></script>
+  <link rel="stylesheet" href="/assets/shared/header-widgets.css">
+  <script src="/assets/shared/header-widgets.js" defer></script>
   <style>
     main { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
     h1 { margin: 0 0 12px; }
@@ -14,7 +15,9 @@
   </style>
 </head>
 <body>
-  <header></header>
+  <header class="portfolio-topbar">
+    <div data-header-widgets-placeholder></div>
+  </header>
   <main>
     <h1>Impressum</h1>
 
@@ -58,10 +61,15 @@
       Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
     </p>
 
-    <p style="margin-top:24px;">
-      <a href="index.html">← Zurück zur Startseite</a>
-    </p>
-  </main>
+  <p style="margin-top:24px;">
+    <a href="index.html">← Zurück zur Startseite</a>
+  </p>
+</main>
+
+<div class="bottom-nav">
+  <button class="nav-btn ghost" type="button" onclick="history.back()">← Zurück</button>
+  <a class="nav-btn" href="/index.html">Portal</a>
+</div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

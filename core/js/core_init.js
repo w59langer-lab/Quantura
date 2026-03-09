@@ -94,6 +94,56 @@
     }
   })();
 
+  const ensureHeaderWidgetsAssets = (() => {
+    const cssHref = "/assets/shared/header-widgets.css";
+    const jsSrc = "/assets/shared/header-widgets.js";
+    let loadingPromise = null;
+
+    return function ensure() {
+      // CSS: nur einmal einhängen
+      if (!document.querySelector(`link[href="${cssHref}"]`)) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = cssHref;
+        document.head.appendChild(link);
+      }
+
+      // JS bereits fertig?
+      if (window.__quanturaHeaderWidgetsReady === true) {
+        return Promise.resolve();
+      }
+
+      // Lädt schon?
+      if (loadingPromise) return loadingPromise;
+
+      loadingPromise = new Promise((resolve, reject) => {
+        // Falls Script schon im DOM, aber noch nicht markiert, hänge Listener an
+        let script = document.querySelector(`script[src="${jsSrc}"]`);
+        if (!script) {
+          script = document.createElement("script");
+          script.src = jsSrc;
+          script.defer = true;
+          document.head.appendChild(script);
+        }
+
+        const markReady = () => {
+          window.__quanturaHeaderWidgetsReady = true;
+          script.dataset.loaded = "1";
+          resolve();
+        };
+
+        if (script.dataset.loaded === "1") {
+          markReady();
+        } else {
+          script.addEventListener("load", markReady, { once: true });
+          script.addEventListener("error", reject, { once: true });
+        }
+      });
+
+      return loadingPromise;
+    };
+  })();
+
   function normalizePartialPath(rawPath) {
     if (!rawPath) return rawPath;
     if (/^[a-z]+:\/\//i.test(rawPath)) return rawPath;
@@ -113,8 +163,13 @@
 
     fetch(normalizedPath)
       .then((r) => r.text())
-      .then((html) => {
+      .then(async (html) => {
         host.innerHTML = html;
+        if (type === "header") {
+          await ensureHeaderWidgetsAssets();
+        }
+        const evt = new CustomEvent("quantura:partial-loaded", { detail: { type, path: normalizedPath, host } });
+        document.dispatchEvent(evt);
 
         // DE: Keine automatische Umschreibung von Menü-Links; direkte hrefs bleiben.
         host.querySelectorAll("[data-nav]").forEach((el) => {

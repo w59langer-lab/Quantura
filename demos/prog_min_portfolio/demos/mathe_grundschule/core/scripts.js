@@ -37,6 +37,7 @@ const GENERATED_KEY = 'math_module_generated_tasks_v1';
 const TIMER_KEY = 'math_module_timer_v1';
 const AVATAR_KEY = 'math_module_avatar_v1';
 const THEME_KEY = 'math_module_theme_v1';
+const BG_MODE_KEY = 'math_module_bg_mode_v1';
 const BONUS_STORE_KEY = 'math_module_bonus_store_v1';
 const BONUS_STEP_SECONDS = 60; // Bonus-Berechnung pro Minute Restzeit
 const BONUS_POINTS_PER_STEP = 2;
@@ -294,6 +295,33 @@ function initBackgroundOnly() {
   bgOnlyBound = true;
 }
 
+function setBgMode(mode, { persist = true } = {}) {
+  const m = mode === 'light' ? 'light' : mode === 'dark' ? 'dark' : 'image';
+  document.body.dataset.bgMode = m;
+  if (m === 'light' || m === 'dark') {
+    document.documentElement.dataset.theme = m;
+    document.body.dataset.theme = m;
+    window.__force_plain_theme = true;
+  } else {
+    window.__force_plain_theme = false;
+  }
+  if (persist) {
+    try { localStorage.setItem(BG_MODE_KEY, m); } catch (_) { /* ignore */ }
+  }
+}
+
+function initBgMode() {
+  let saved = null;
+  try { saved = localStorage.getItem(BG_MODE_KEY); } catch (_) { /* ignore */ }
+  if (saved !== 'light' && saved !== 'dark' && saved !== 'image') {
+    let hdrTheme = null;
+    try { hdrTheme = localStorage.getItem('lg_theme'); } catch (_) { /* ignore */ }
+    if (hdrTheme === 'light' || hdrTheme === 'dark') saved = hdrTheme;
+    else saved = 'image';
+  }
+  setBgMode(saved, { persist: false });
+}
+
 function isVisible(el) {
   if (!el) return false;
   if (el.hidden) return false;
@@ -407,7 +435,26 @@ function resolveTheme(themeUrl) {
 }
 
 function applyTheme(themeUrl) {
+  const raw = (themeUrl || '').trim().toLowerCase();
+  const currentBgMode = (document.body.dataset.bgMode || '').toLowerCase();
+  const isPlain = raw === 'light' || raw === 'dark';
+
+  // Wenn globaler Theme-Schalter aktiv war oder BG-Mode auf hell/dunkel steht → kein Bild
+  if (window.__force_plain_theme || isPlain || currentBgMode === 'light' || currentBgMode === 'dark') {
+    const mode = isPlain
+      ? raw
+      : (currentBgMode === 'light' ? 'light' : currentBgMode === 'dark' ? 'dark' : (document.documentElement.dataset.theme || 'dark'));
+    setBgMode(mode || 'dark');
+    document.body.style.backgroundImage = 'none';
+    document.body.style.backgroundColor = 'var(--bg-page)';
+    document.body.style.backgroundAttachment = 'initial';
+    return;
+  }
+
   const resolved = resolveTheme(themeUrl);
+  setBgMode('image'); // Hintergrundbild aktiv
+  document.documentElement.dataset.theme = 'dark';
+  document.body.dataset.theme = 'dark';
   document.body.style.backgroundImage = `linear-gradient(rgba(12,16,27,0.18), rgba(12,16,27,0.18)), url(${resolved})`;
   document.body.style.backgroundSize = 'contain'; // kompletter Inhalt sichtbar
   document.body.style.backgroundRepeat = 'no-repeat';
@@ -1396,6 +1443,7 @@ function loadLayout() {
       .then(res => res.text())
       .then(html => {
         header.innerHTML = html;
+        document.dispatchEvent(new Event('ll-header-ready'));
         const homeLink = header.querySelector('[data-nav="home"]');
         if (homeLink) homeLink.href = `${MODULE_ROOT}/index.html`;
         const level0Link = header.querySelector('[data-nav="level0"]');
@@ -2391,6 +2439,7 @@ function wireResetButton() {
 // RU: Ð˜Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ Ð¿Ð¾ÑÐ»Ðµ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ DOM
 window.addEventListener('DOMContentLoaded', () => {
   initBackgroundOnly();
+  initBgMode();
   initWelcomeEnterHandler();
   applyBilingualLabels(document);
   loadLayout();
@@ -2407,6 +2456,17 @@ window.addEventListener('DOMContentLoaded', () => {
     applyBilingualLabels(document);
   });
 });
+
+// Globaler Theme-Switch aus Header (hell/dunkel ohne Hintergrundbild)
+if (!window.__math_module_theme_listener) {
+  window.__math_module_theme_listener = true;
+  document.addEventListener('quantura:theme-changed', (ev) => {
+    const mode = (ev && ev.detail && ev.detail.theme) || '';
+    if (!mode) return;
+    setBgMode(mode);
+    applyTheme(mode);
+  });
+}
 
 // Dev test:
 // 1) Klicke "Nur Hintergrund / Background only" -> nur Theme-Hintergrund bleibt sichtbar.

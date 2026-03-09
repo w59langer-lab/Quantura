@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Materialien (PDF)</title>
   <link rel="stylesheet" href="../assets/css/portfolio.css" />
+  <link rel="stylesheet" href="/assets/shared/header-widgets.css" />
 </head>
 <body>
+  <header class="portfolio-topbar">
+    <div data-header-widgets-placeholder></div>
+  </header>
   <header class="hero" style="padding-top:24px; padding-bottom:10px;">
     <div class="hero-card" style="grid-column:1/-1;">
       <p class="pill">PDF</p>
@@ -37,6 +41,11 @@
       </div>
     </article>
   </main>
-  <script src="../assets/js/header-widgets.js" defer></script>
+
+  <div class="bottom-nav">
+    <button class="nav-btn ghost" type="button" onclick="history.back()">← Zurück</button>
+    <a class="nav-btn" href="/index.html">Portal</a>
+  </div>
+  <script src="/assets/shared/header-widgets.js" defer></script>
 </body>
 </html>

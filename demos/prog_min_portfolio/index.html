@@ -30,9 +30,13 @@
     })();
   </script>
   <link rel="stylesheet" href="assets/css/portfolio.css?v=20260308">
-  <script src="assets/js/header-widgets.js" defer></script>
+  <link rel="stylesheet" href="/assets/shared/header-widgets.css">
+  <script src="/assets/shared/header-widgets.js" defer></script>
 </head>
 <body>
+  <header class="portfolio-topbar">
+    <div data-header-widgets-placeholder></div>
+  </header>
   <div class="app-shell">
     <aside class="sidebar" aria-label="Hauptmenü">
       <div class="brand">
@@ -332,6 +336,11 @@
     © <span id="y"></span> Waldemar Langer · Alle Rechte vorbehalten ·
     <a href="impressum.html">Impressum</a>
   </footer>
+
+  <div class="bottom-nav">
+    <button class="nav-btn ghost" type="button" onclick="history.back()">← Zurück</button>
+    <a class="nav-btn" href="/index.html">Portal</a>
+  </div>
 
   <script>
     const y = document.getElementById('y');

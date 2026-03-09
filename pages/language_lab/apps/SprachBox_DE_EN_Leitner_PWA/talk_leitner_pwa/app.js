@@ -234,10 +234,12 @@ const GLOSSARY_KEY = "sprachbox_glossary_v1"; // popup dictionary / glossary
 const GLOSSARY_MIN_KEY = "sprachbox_glossary_min_v1"; // mini lexicon (small)
 const PHRASE_MAP_KEY = "sprachbox_phrase_map_v1"; // small phrase-first overrides
 const BG_LS_ID = "sb_bg_id";
-const TARGET_TTS_LANG = "en-US";
 const SOURCE_LANG = "DE";
 const TARGET_LANG = "EN";
 const SHARED_PAIR_LABEL = `${SOURCE_LANG}->${TARGET_LANG}`;
+const SOURCE_TTS_LANG = "de-DE";
+const TARGET_TTS_LANG = "en-US";
+const TARGET_TTS_CODE = (TARGET_TTS_LANG || TARGET_LANG || "").toLowerCase().slice(0, 2);
 
 const BOX_COUNT = 8;
 
@@ -266,6 +268,8 @@ const EXTRA_DATA_URLS = [
 ];
 
 const PAIR_CODE = "DE_EN";
+const BUILD_TAG = "autotts_runtime_20260309_02";
+console.log(`[AUTOTTS_RUNTIME_CHECK] PAIR=${PAIR_CODE} FILE=${location.pathname} BUILD=${BUILD_TAG}`);
 const LOCAL_BG_BASE = `/pages/language_lab/assets/backgrounds/sprachfuehrer/${PAIR_CODE}`;
 const LEGACY_BG_BASE = "/core/assets/backgrounds/sprachfuehrer";
 const FALLBACK_WEBP = [
@@ -274,6 +278,8 @@ const FALLBACK_WEBP = [
   "bg_02_en-de.webp",
   "bg_03_en-de.webp",
 ];
+
+const BG_MODE_KEY = "quantura.sprachbox.backgroundMode"; // light | dark | image
 
 let BG_FALLBACK_LEGACY = false;
 let BG_OPTIONS = buildBgOptions(LOCAL_BG_BASE);
@@ -510,6 +516,38 @@ function toggleBackgroundFocusMode() {
   setBackgroundFocusMode(state.ui.uiMode !== "background");
 }
 
+function setBgMode(mode, { persist = true } = {}) {
+  const currentTheme = document.documentElement.dataset.theme === "light" ? "light" : "dark";
+  const m = mode === "light" ? "light" : mode === "image" ? "image" : "dark";
+  document.body.dataset.bgMode = m;
+  if (m === "light" || m === "dark") {
+    document.documentElement.dataset.theme = m;
+  } else {
+    document.documentElement.dataset.theme = currentTheme;
+  }
+  if (m !== "image") {
+    document.body.classList.remove("is-bg-preview");
+    document.body.classList.remove("is-bg-hidden");
+  }
+  if (persist) {
+    try { localStorage.setItem(BG_MODE_KEY, m); } catch (_) {}
+  }
+}
+
+function initBgMode() {
+  let saved = null;
+  try { saved = localStorage.getItem(BG_MODE_KEY); } catch (_) { /* ignore */ }
+  if (saved !== "light" && saved !== "dark" && saved !== "image") saved = "dark";
+  setBgMode(saved, { persist: false });
+
+  // Wenn Theme über den globalen Header umgeschaltet wird, Hintergrundbild-Modus
+  // automatisch auf klaren Light/Dark setzen (kein Bild).
+  document.addEventListener("quantura:theme-changed", (evt) => {
+    const mode = evt?.detail?.theme === "light" ? "light" : "dark";
+    setBgMode(mode);
+  });
+}
+
 function getBgChoice(id) {
   return BG_OPTIONS.find((x) => x.id === id) || BG_OPTIONS[0];
 }
@@ -521,6 +559,7 @@ function applyBgChoice(id) {
   document.documentElement.style.setProperty("--sb-bg", `url("${url}")`);
   localStorage.setItem(BG_LS_ID, choice.id);
   if (els.bgSelect) els.bgSelect.value = choice.id;
+  setBgMode("image");
 }
 
 function updateBgToggleLabel(previewOn) {
@@ -779,7 +818,7 @@ function markDailyDone() {
 function speakDailyTemplates() {
   if (!DAILY_TEMPLATES.length) return;
   const text = DAILY_TEMPLATES.map((t) => t.de).join(" ");
-  speak(text, "de-DE");
+  speak(text, SOURCE_TTS_LANG);
 }
 
 function updateDebugPanel() {
@@ -2826,9 +2865,9 @@ function glossaryPracticeSpeak() {
   const entry = p.queue[p.idx];
   if (!entry) return;
   if (p.reveal) {
-    speak(entry.translation, entry.detectedLang === "de" ? "en-US" : "de-DE");
+    speak(entry.translation, entry.detectedLang === "de" ? TARGET_TTS_LANG : SOURCE_TTS_LANG);
   } else {
-    speak(glossaryDisplayTerm(entry), entry.detectedLang === "de" ? "de-DE" : "en-US");
+    speak(glossaryDisplayTerm(entry), entry.detectedLang === "de" ? SOURCE_TTS_LANG : TARGET_TTS_LANG);
   }
 }
 
@@ -3247,10 +3286,8 @@ function nextCard() {
 
   openModal();
 
-  // Optional auto TTS on open
-  if (state.settings.tts === "de" || state.settings.tts === "both") {
-    speak(it.de, "de-DE");
-  }
+  // Optional auto TTS on open (after render)
+  triggerAutoSpeak(it);
 }
 
 function startSession({ onlyBox = null, focusBoxes = null, kind = "level", dueOnly = false, limit = null } = {}) {
@@ -3381,10 +3418,10 @@ function onFlip() {
   if (!it) return;
 
   if (flipped) {
-    if (state.settings.tts === "en" || state.settings.tts === "both") speakBack(it);
+    if (state.settings.tts === TARGET_TTS_CODE || state.settings.tts === "both") speakBack(it);
   } else {
     if (state.settings.tts === "de" || state.settings.tts === "both") {
-      speak(it.de, "de-DE");
+      speak(it.de, SOURCE_TTS_LANG);
     }
   }
 }
@@ -3460,7 +3497,10 @@ function clampSettingsToData() {
   if (!okLevels.has(state.settings.level)) state.settings.level = "all";
   if (!["all", "starred"].includes(state.settings.starFilter)) state.settings.starFilter = "all";
 
-  const okTts = new Set(["off", "de", "en", "both"]);
+  if (state.settings.tts === "en" && TARGET_TTS_CODE !== "en") {
+    state.settings.tts = TARGET_TTS_CODE;
+  }
+  const okTts = new Set(["off", "de", TARGET_TTS_CODE, "both"]);
   if (!okTts.has(state.settings.tts)) state.settings.tts = "off";
 
   const sp = Number(state.settings.speed);
@@ -3468,6 +3508,15 @@ function clampSettingsToData() {
 }
 
 // ---------- TTS ----------
+function pickVoice(lang) {
+  const voices = (speechSynthesis.getVoices && speechSynthesis.getVoices()) || [];
+  const lc = String(lang || "").toLowerCase();
+  const exact = voices.find((v) => (v.lang || "").toLowerCase() === lc);
+  if (exact) return exact;
+  const prefix = lc.slice(0, 2);
+  return voices.find((v) => (v.lang || "").toLowerCase().startsWith(prefix));
+}
+
 function speak(text, lang) {
   if (!("speechSynthesis" in window)) return;
   const clean = String(text || "").trim();
@@ -3477,15 +3526,42 @@ function speak(text, lang) {
   u.lang = lang;
   u.rate = clamp(Number(state.settings.speed) || 0.9, 0.5, 1.5);
 
-  // Best-effort voice match
-  const voices =
-    (speechSynthesis.getVoices && speechSynthesis.getVoices()) || [];
-  const target = (lang || "").toLowerCase().slice(0, 2);
-  const v = voices.find((x) => (x.lang || "").toLowerCase().startsWith(target));
+  const v = pickVoice(lang);
   if (v) u.voice = v;
 
   speechSynthesis.cancel();
   speechSynthesis.speak(u);
+}
+
+function autoSpeakCurrentCard(it) {
+  if (!it) return;
+  if (state.settings.tts === "off") return;
+
+  if (state.settings.tts === "de") {
+    console.log(`[AUTO_TTS_CALL] side=de pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
+    speak(it.de, SOURCE_TTS_LANG);
+    return;
+  }
+
+  if (state.settings.tts === TARGET_TTS_CODE) {
+    console.log(`[AUTO_TTS_CALL] side=target pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
+    speakBack(it);
+    return;
+  }
+
+  if (state.settings.tts === "both") {
+    console.log(`[AUTO_TTS_CALL] side=both pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
+    speak(it.de, SOURCE_TTS_LANG);
+    setTimeout(() => speakBack(it), 160);
+    return;
+  }
+
+  console.log(`[AUTO_TTS_SKIP] reason=mode_unknown mode=${state.settings.tts} pair=${PAIR_CODE} id=${it.id}`);
+}
+
+function triggerAutoSpeak(it) {
+  // ensure DOM is rendered and any speech cancel settles
+  requestAnimationFrame(() => autoSpeakCurrentCard(it));
 }
 
 function speakBack(it) {
@@ -3794,6 +3870,7 @@ async function init() {
   await ensureBgRegistry();
   loadSettings();
   loadBgPrefs();
+  initBgMode();
   loadBoxFocus();
   loadDeckTextOverrides();
   parseHashSettings();
@@ -3989,15 +4066,15 @@ async function init() {
 
   // word lookup popup on card text (selection or click word)
   on(els.front, "mouseup", (e) => queueWordLookup(els.front, "de", e));
-  on(els.back, "mouseup", (e) => queueWordLookup(els.back, "en", e));
+  on(els.back, "mouseup", (e) => queueWordLookup(els.back, TARGET_TTS_CODE, e));
   on(els.front, "touchend", (e) => queueWordLookup(els.front, "de", e));
-  on(els.back, "touchend", (e) => queueWordLookup(els.back, "en", e));
+  on(els.back, "touchend", (e) => queueWordLookup(els.back, TARGET_TTS_CODE, e));
   on(els.wordPopupClose, "click", hideWordPopup);
   on(els.wordSpeak, "click", () => {
     if (!els.wordPopup || els.wordPopup.hidden) return;
     const word = String(els.wordPopup.dataset.word || "").trim();
     if (!word) return;
-    const lang = els.wordPopup.dataset.lang === "en" ? "en-US" : "de-DE";
+    const lang = els.wordPopup.dataset.lang === TARGET_TTS_CODE ? TARGET_TTS_LANG : SOURCE_TTS_LANG;
     speak(word, lang);
   });
   on(els.wordCorrect, "click", correctCurrentPopupTranslation);
@@ -4103,7 +4180,7 @@ async function init() {
       return;
     }
     if (action === "speak") {
-      speak(glossaryDisplayTerm(entry), entry.detectedLang === "de" ? "de-DE" : "en-US");
+      speak(glossaryDisplayTerm(entry), entry.detectedLang === "de" ? SOURCE_TTS_LANG : TARGET_TTS_LANG);
     }
   });
 
@@ -4121,8 +4198,8 @@ async function init() {
     const it = state.all.find((x) => x.id === id);
     if (!it) return;
     const flipped = els.card && els.card.classList.contains("isFlipped");
-    if (flipped) speak(it.en, "en-US");
-    else speak(it.de, "de-DE");
+    if (flipped) speak(it.en, TARGET_TTS_LANG);
+    else speak(it.de, SOURCE_TTS_LANG);
   });
 
   on(els.yes, "click", () => grade(true));

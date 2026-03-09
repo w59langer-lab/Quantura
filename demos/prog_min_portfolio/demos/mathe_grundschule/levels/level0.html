@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Level 0 – Grundlagen</title>
   <link rel="stylesheet" href="../core/styles.css">
+  <link rel="stylesheet" href="/assets/shared/header-widgets.css">
 </head>
 <body>
   <div id="header-placeholder"></div>
@@ -27,7 +28,11 @@
     <p id="loadError" class="load-error" hidden>Aufgaben konnten nicht geladen werden.</p>
   </main>
   <div id="footer-placeholder"></div>
+  <div class="bottom-nav">
+    <button class="nav-btn ghost" type="button" onclick="history.back()">← Zurück</button>
+    <a class="nav-btn" href="/index.html">Portal</a>
+  </div>
   <script src="../core/scripts.js" defer></script>
-  <script src="../../../assets/js/header-widgets.js" defer></script>
+  <script src="/assets/shared/header-widgets.js" defer></script>
 </body>
 </html>

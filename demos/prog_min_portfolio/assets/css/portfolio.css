@@ -28,6 +28,26 @@ body{
   --max:1280px;
 }
 
+html[data-theme="light"],
+body[data-theme="light"]{
+  --bg:#eef2f7;
+  --bg-accent:#e6ebf3;
+  --bg-gradient: linear-gradient(180deg,#eef2f7 0%, #e6ebf3 40%, #e2e8f0 100%);
+  --panel:#ffffff;
+  --panel-2:#f8fafc;
+  --card:#ffffff;
+  --panelbg:var(--panel);
+  --panelbd:rgba(15,23,42,0.08);
+  --text:#0f172a;
+  --muted:#4b5563;
+  --border:rgba(15,23,42,0.12);
+  --button:linear-gradient(120deg,#3b82f6,#22c55e);
+  --button-text:#0b1220;
+  --shadow:0 12px 28px rgba(15,23,42,0.12);
+  --btn2bg:rgba(15,23,42,0.04);
+  --btn2bd:rgba(15,23,42,0.10);
+}
+
 *{box-sizing:border-box;}
 body{
   margin:0;
@@ -35,6 +55,30 @@ body{
   background:var(--bg-gradient, var(--bg));
   color:var(--text);
   min-height:100vh;
+}
+
+.portfolio-topbar{
+  position:relative;
+  z-index:30;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:12px;
+  padding:10px 14px;
+  background: rgba(15,23,42,0.9);
+  border-bottom:1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+  backdrop-filter: blur(12px);
+}
+
+.portfolio-topbar .header-widgets{
+  margin-left:auto;
+}
+
+html[data-theme="light"] .portfolio-topbar{
+  background: rgba(255,255,255,0.9);
+  border-bottom:1px solid rgba(15,23,42,0.08);
+  box-shadow: 0 8px 24px rgba(15,23,42,0.10);
 }
 
 a{text-decoration:none;color:inherit;}

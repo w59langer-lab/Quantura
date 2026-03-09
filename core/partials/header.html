@@ -21,7 +21,7 @@
       </nav>
     </div>
 
-    <div class="site-header__actions">
+    <div class="site-header__actions" data-hdr-variant="hdr-bar">
       <div class="audio-system" title="Audio-System">
         <label for="ttsProfileSelect">Audio-System:</label>
         <select id="ttsProfileSelect">
@@ -33,17 +33,7 @@
         <span id="ttsProfileInfo" class="audio-info" tabindex="0" role="button" aria-label="Audio-System Info">ⓘ</span>
         <div id="ttsProfileNote" class="audio-note"></div>
       </div>
-      <button id="themeToggle" class="btn btn-ghost" type="button">
-        <span class="theme-icon theme-icon--light">🌞</span>
-        <span class="theme-icon theme-icon--dark">🌙</span>
-      </button>
-      <div class="header-clock">
-        <div id="headerDateTime" class="header-clock__row"></div>
-        <div class="header-clock__row">
-          <span id="headerKW"></span>
-          <button id="headerCalendarBtn" class="btn btn-ghost header-calendar-btn" type="button" aria-label="Kalender">📅</button>
-        </div>
-      </div>
+      <div class="header-widgets-slot" data-header-widgets-placeholder></div>
     </div>
   </div>
 </header>
