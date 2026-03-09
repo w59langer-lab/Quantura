@@ -268,6 +268,8 @@ const EXTRA_DATA_URLS = [
 ];
 
 const PAIR_CODE = "DE_TR";
+const BUILD_TAG = "autotts_runtime_20260309_03";
+console.log(`[AUTOTTS_RUNTIME_CHECK] PAIR=${PAIR_CODE} FILE=${location.pathname} BUILD=${BUILD_TAG}`);
 const LOCAL_BG_BASE = `/pages/language_lab/assets/backgrounds/sprachfuehrer/${PAIR_CODE}`;
 const LEGACY_BG_BASE = "/core/assets/backgrounds/sprachfuehrer";
 const FALLBACK_WEBP = [
@@ -3276,6 +3278,7 @@ function nextCard() {
 
   renderMnemo(it);
   updateStarButton();
+  console.log(`[CARD_NEXT] pair=${PAIR_CODE} id=${it.id} mode=${state.settings.tts || "unset"}`);
 
   // start with front visible
   resetCardFlip();
@@ -3285,7 +3288,7 @@ function nextCard() {
   openModal();
 
   // Optional auto TTS on open (after render)
-  autoSpeakCurrentCard(it);
+  triggerAutoSpeak(it);
 }
 
 function startSession({ onlyBox = null, focusBoxes = null, kind = "level", dueOnly = false, limit = null } = {}) {
@@ -3533,22 +3536,35 @@ function speak(text, lang) {
 
 function autoSpeakCurrentCard(it) {
   if (!it) return;
-  if (state.settings.tts === "off") return;
+  if (state.settings.tts === "off") {
+    console.log(`[AUTO_TTS_SKIP] reason=mode_off pair=${PAIR_CODE} id=${it.id}`);
+    return;
+  }
 
   if (state.settings.tts === "de") {
+    console.log(`[AUTO_TTS_CALL] side=de pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
     speak(it.de, SOURCE_TTS_LANG);
     return;
   }
 
   if (state.settings.tts === TARGET_TTS_CODE) {
+    console.log(`[AUTO_TTS_CALL] side=target pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
     speakBack(it);
     return;
   }
 
   if (state.settings.tts === "both") {
+    console.log(`[AUTO_TTS_CALL] side=both pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
     speak(it.de, SOURCE_TTS_LANG);
     setTimeout(() => speakBack(it), 160);
+    return;
   }
+
+  console.log(`[AUTO_TTS_SKIP] reason=mode_unknown mode=${state.settings.tts} pair=${PAIR_CODE} id=${it.id}`);
+}
+
+function triggerAutoSpeak(it) {
+  autoSpeakCurrentCard(it);
 }
 
 function speakBack(it) {

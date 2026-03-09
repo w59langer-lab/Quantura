@@ -268,7 +268,7 @@ const EXTRA_DATA_URLS = [
 ];
 
 const PAIR_CODE = "DE_EN";
-const BUILD_TAG = "autotts_runtime_20260309_02";
+const BUILD_TAG = "autotts_runtime_20260309_03";
 console.log(`[AUTOTTS_RUNTIME_CHECK] PAIR=${PAIR_CODE} FILE=${location.pathname} BUILD=${BUILD_TAG}`);
 const LOCAL_BG_BASE = `/pages/language_lab/assets/backgrounds/sprachfuehrer/${PAIR_CODE}`;
 const LEGACY_BG_BASE = "/core/assets/backgrounds/sprachfuehrer";
@@ -387,7 +387,7 @@ const state = {
     topic: "all",
     level: "all",
     starFilter: "all", // all | starred
-    tts: "off", // off | de | en | both
+    tts: "both", // off | de | en | both
     speed: 0.9,
   },
   ui: {
@@ -3278,6 +3278,7 @@ function nextCard() {
 
   renderMnemo(it);
   updateStarButton();
+  console.log(`[CARD_NEXT] pair=${PAIR_CODE} id=${it.id} mode=${state.settings.tts || "unset"}`);
 
   // start with front visible
   resetCardFlip();
@@ -3535,7 +3536,10 @@ function speak(text, lang) {
 
 function autoSpeakCurrentCard(it) {
   if (!it) return;
-  if (state.settings.tts === "off") return;
+  if (state.settings.tts === "off") {
+    console.log(`[AUTO_TTS_SKIP] reason=mode_off pair=${PAIR_CODE} id=${it.id}`);
+    return;
+  }
 
   if (state.settings.tts === "de") {
     console.log(`[AUTO_TTS_CALL] side=de pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
@@ -3560,8 +3564,7 @@ function autoSpeakCurrentCard(it) {
 }
 
 function triggerAutoSpeak(it) {
-  // ensure DOM is rendered and any speech cancel settles
-  requestAnimationFrame(() => autoSpeakCurrentCard(it));
+  autoSpeakCurrentCard(it);
 }
 
 function speakBack(it) {
