@@ -23,3 +23,16 @@ assets/data/*.bak
 main
 _BACKUPS/
 _REPORTS/
+
+# structure freeze / archives
+_STRUCTURE_FREEZE_2026-03-10/
+_ARCHIVE_UNUSED/
+_meta/_STRUCTURE_REVIEW/
+
+# saved snapshots
+*_SAVE_*/
+
+# local junk
+tmp/
+*.log
+.DS_Store

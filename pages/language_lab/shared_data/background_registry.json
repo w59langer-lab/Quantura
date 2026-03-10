@@ -15,12 +15,11 @@
     "pairCode": "DE_IT",
     "label": "Deutsch–Italienisch",
     "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_IT",
-    "defaultBackground": "bg_00_en-de.webp",
+    "defaultBackground": "bg_00_it.webp",
     "backgrounds": [
-      "bg_00_en-de.webp",
-      "bg_01_en-de.webp",
-      "bg_02_en-de.webp",
-      "bg_03_en-de.webp"
+      "bg_00_it.webp",
+      "bg_00_it.jpg",
+      "bg_00_it.png"
     ]
   },
   {

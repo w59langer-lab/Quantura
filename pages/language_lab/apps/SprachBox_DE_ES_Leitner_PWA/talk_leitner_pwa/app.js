@@ -376,6 +376,7 @@ const state = {
     stats: null,
     awaitingNext: false,
     gradedCurrent: false,
+    side: "front", // front | back (mirrors DOM)
   },
   mnemoMap: {},
   time: {
@@ -3178,6 +3179,7 @@ function flipToAnswer() {
   if (isAnswerVisible()) return false;
   els.card.classList.add("isFlipped");
   if (els.flip) els.flip.textContent = "Zurück / Back";
+  state.session.side = "back";
   return true;
 }
 
@@ -3185,6 +3187,7 @@ function resetCardFlip() {
   if (!els.card) return;
   els.card.classList.remove("isFlipped");
   if (els.flip) els.flip.textContent = "Zeigen / Show";
+  state.session.side = "front";
 }
 
 function setRatingEnabled(on) {
@@ -3352,11 +3355,7 @@ function grade(known) {
 
   // Reveal answer first if hidden
   const revealedNow = flipToAnswer();
-
-  // Speak back side after grading (best for confirmation)
-  if ((revealedNow || isAnswerVisible()) && state.settings.tts !== "off") {
-    speakBack(it);
-  }
+  if (revealedNow || isAnswerVisible()) speakBothSides(it);
 
   const newBox = known ? clamp(currentBox + 1, 1, BOX_COUNT) : 1;
   if (state.session.stats) {
@@ -3386,9 +3385,7 @@ function gradeForgotten() {
   const currentBox = clamp(m.box ?? 1, 1, BOX_COUNT);
 
   const revealedNow = flipToAnswer();
-  if ((revealedNow || isAnswerVisible()) && state.settings.tts !== "off") {
-    speakBack(it);
-  }
+  if (revealedNow || isAnswerVisible()) speakBothSides(it);
 
   const newBox = clamp(currentBox - 1, 1, BOX_COUNT);
   if (state.session.stats) {
@@ -3413,17 +3410,15 @@ function onFlip() {
   hideWordPopup();
   const flipped = els.card.classList.toggle("isFlipped");
   if (els.flip) els.flip.textContent = flipped ? "Zurück / Back" : "Zeigen / Show";
+  state.session.side = flipped ? "back" : "front";
 
   const id = state.session.currentId;
   const it = state.all.find((x) => x.id === id);
   if (!it) return;
 
-  if (flipped) {
-    if (state.settings.tts === TARGET_TTS_CODE || state.settings.tts === "both") speakBack(it);
-  } else {
-    if (state.settings.tts === "de" || state.settings.tts === "both") {
-      speak(it.de, SOURCE_TTS_LANG);
-    }
+  const mode = state.settings.tts || "off";
+  if (mode !== "off") {
+    speakVisibleCard(it, { allowOpposite: mode === "both" });
   }
 }
 
@@ -3509,6 +3504,29 @@ function clampSettingsToData() {
 }
 
 // ---------- TTS ----------
+let speechUnlocked = false;
+function unlockSpeech(reason = "") {
+  if (!("speechSynthesis" in window)) return false;
+  try {
+    if (typeof speechSynthesis.resume === "function") speechSynthesis.resume();
+    speechSynthesis.cancel();
+  } catch (_) {}
+
+  const voices = (speechSynthesis.getVoices && speechSynthesis.getVoices()) || [];
+  if (voices.length) speechUnlocked = true;
+
+  if (!speechUnlocked && "onvoiceschanged" in speechSynthesis) {
+    speechSynthesis.onvoiceschanged = () => {
+      speechUnlocked = true;
+      try {
+        if (typeof speechSynthesis.resume === "function") speechSynthesis.resume();
+      } catch (_) {}
+    };
+  }
+
+  return speechUnlocked;
+}
+
 function pickVoice(lang) {
   const voices = (speechSynthesis.getVoices && speechSynthesis.getVoices()) || [];
   const lc = String(lang || "").toLowerCase();
@@ -3523,6 +3541,8 @@ function speak(text, lang) {
   const clean = String(text || "").trim();
   if (!clean) return;
 
+  unlockSpeech("speak");
+
   const u = new SpeechSynthesisUtterance(clean);
   u.lang = lang;
   u.rate = clamp(Number(state.settings.speed) || 0.9, 0.5, 1.5);
@@ -3530,37 +3550,30 @@ function speak(text, lang) {
   const v = pickVoice(lang);
   if (v) u.voice = v;
 
-  speechSynthesis.cancel();
-  speechSynthesis.speak(u);
+  try {
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+    if (typeof speechSynthesis.resume === "function") setTimeout(() => speechSynthesis.resume(), 0);
+  } catch (_) {}
+}
+
+function getVisibleSide() {
+  return isAnswerVisible() ? "back" : "front";
+}
+
+function getVisibleLangCode() {
+  return getVisibleSide() === "back" ? TARGET_TTS_LANG : SOURCE_TTS_LANG;
+}
+
+function getVisibleText(it) {
+  if (!it) return "";
+  return getVisibleSide() === "back" ? it.en : it.de;
 }
 
 function autoSpeakCurrentCard(it) {
-  if (!it) return;
-  if (state.settings.tts === "off") {
-    console.log(`[AUTO_TTS_SKIP] reason=mode_off pair=${PAIR_CODE} id=${it.id}`);
-    return;
-  }
-
-  if (state.settings.tts === "de") {
-    console.log(`[AUTO_TTS_CALL] side=de pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
-    speak(it.de, SOURCE_TTS_LANG);
-    return;
-  }
-
-  if (state.settings.tts === TARGET_TTS_CODE) {
-    console.log(`[AUTO_TTS_CALL] side=target pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
-    speakBack(it);
-    return;
-  }
-
-  if (state.settings.tts === "both") {
-    console.log(`[AUTO_TTS_CALL] side=both pair=${PAIR_CODE} mode=${state.settings.tts} id=${it.id}`);
-    speak(it.de, SOURCE_TTS_LANG);
-    setTimeout(() => speakBack(it), 160);
-    return;
-  }
-
-  console.log(`[AUTO_TTS_SKIP] reason=mode_unknown mode=${state.settings.tts} pair=${PAIR_CODE} id=${it.id}`);
+  const mode = state.settings.tts || "off";
+  if (mode === "off") return;
+  speakVisibleCard(it, { allowOpposite: mode === "both" });
 }
 
 function triggerAutoSpeak(it) {
@@ -3571,6 +3584,37 @@ function speakBack(it) {
   if (!it) return;
   const txt = it.en || "";
   speak(txt, TARGET_TTS_LANG);
+}
+
+function speakBothSides(it, delayMs = 220) {
+  speakVisibleCard(it, { allowOpposite: true, delayMs });
+}
+
+function speakVisibleCard(it, { allowOpposite = false, delayMs = 220, force = false } = {}) {
+  if (!it) return;
+  const mode = state.settings.tts || "off";
+  if (!force && mode === "off") return;
+
+  const side = getVisibleSide();
+  const lang = side === "back" ? TARGET_TTS_LANG : SOURCE_TTS_LANG;
+  const text = side === "back" ? it.en : it.de;
+  const spokenText = String(text || "").trim();
+  if (!spokenText) return;
+
+  console.log(`[TTS] side=${side} visibleLang=${lang} mode=${mode} spokenText=${spokenText}`);
+  speak(spokenText, lang);
+
+  if (allowOpposite && mode === "both" && side === "back") {
+    const otherSide = "front";
+    const otherLang = SOURCE_TTS_LANG;
+    const otherText = String(it.de || "").trim();
+    if (otherText) {
+      setTimeout(() => {
+        console.log(`[TTS] side=${otherSide} visibleLang=${otherLang} mode=${mode} spokenText=${otherText}`);
+        speak(otherText, otherLang);
+      }, delayMs);
+    }
+  }
 }
 
 // ---------- data loading ----------
@@ -4191,7 +4235,10 @@ async function init() {
   on(els.star, "click", () => {
     const id = state.session.currentId;
     if (!id) return;
+    const it = state.all.find((x) => x.id === id);
     toggleStarForCard(id);
+    const mode = state.settings.tts || "off";
+    if (mode !== "off") speakVisibleCard(it, { allowOpposite: mode === "both" });
   });
   on(els.forgot, "click", gradeForgotten);
   on(els.mnemoBtn, "click", editCurrentMnemo);
@@ -4200,9 +4247,7 @@ async function init() {
     const id = state.session.currentId;
     const it = state.all.find((x) => x.id === id);
     if (!it) return;
-    const flipped = els.card && els.card.classList.contains("isFlipped");
-    if (flipped) speak(it.en, TARGET_TTS_LANG);
-    else speak(it.de, SOURCE_TTS_LANG);
+    speakVisibleCard(it, { allowOpposite: state.settings.tts === "both", force: true });
   });
 
   on(els.yes, "click", () => grade(true));
@@ -4246,9 +4291,10 @@ async function init() {
     }
   }, 10000);
 
-  // ensure voices load in some browsers
-  if ("speechSynthesis" in window) {
-    speechSynthesis.onvoiceschanged = () => {};
+  // ensure voices load + unlock TTS after first user gesture
+  document.addEventListener("pointerdown", () => unlockSpeech("first-pointer"), { once: true });
+  if ("speechSynthesis" in window && !speechUnlocked) {
+    unlockSpeech("init");
   }
 
   debugLog("init.done");

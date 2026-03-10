@@ -1,4 +1,4 @@
-/* SprachBox DE↔EN — minimal, modern, offline-friendly */
+/* SprachBox DE↔IT — minimal, modern, offline-friendly */
 :root{
   /* Portal-aligned defaults (dark) */
   --bg0:#11151c;
@@ -21,7 +21,7 @@
   --r2: 26px;
   --pad: 16px;
   --max: 980px;
-  --sb-bg: url("/core/assets/backgrounds/sprachfuehrer/bg_00_en-de.webp");
+  --sb-bg: url("/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_IT/bg_00_it.webp");
   --sb-bg-opacity: 0.72;
   --sb-bg-size: contain;
   --sb-bg-position: center center;
