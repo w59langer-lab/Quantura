@@ -1,6 +1,6 @@
 *_bak directories:
-demos/prog_min_portfolio/demos/mathe_grundschule/_bak_gs_fix_20260226_084406
-demos/prog_min_portfolio/demos/mathe_grundschule/_bak_gs_fix_v2_20260226_085827
+portfolio/demos/mathe_grundschule/_bak_gs_fix_20260226_084406
+portfolio/demos/mathe_grundschule/_bak_gs_fix_v2_20260226_085827
 
 *_backup directories:
 assets/backgrounds/_backup_sprachfuehrer_20260306-053044
@@ -16,14 +16,15 @@ _backup_maus_main_before_replace_
 _backup_maus_main_before_replace_20260308_172925
 
 *_archive directories:
-demos/prog_min_portfolio/media/videos/_archive_duplicates
-demos/prog_min_portfolio/_incoming/videos/_archive_duplicates
+portfolio/media/videos/_archive_duplicates
+portfolio/_incoming/videos/_archive_duplicates
 pages/_archive
 
 inactive portal:
 pages/_archive/portal_v2__inactive
 
 duplicate story copies (maus):
-demos/prog_min_portfolio/portfolio_site/stories/maus
-demos/prog_min_portfolio/stories/maus
+portfolio/portfolio_site/stories/maus
+portfolio/stories/maus
 stories/maus
+

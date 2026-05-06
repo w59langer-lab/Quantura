@@ -1,11 +1,12 @@
 // 2026-02-23 | RU/DE/EN: Cache bump + safer update flow (skipWaiting/message).
-const CACHE = "sprachbox-v13";
+const CACHE = "sprachbox-v14-bgfix-20260310-01";
 const CORE = [
   "./",
   "./index.html",
   "./styles.css",
+  "./styles.css?v=bgfix_20260310_01",
   "./app.js",
-  "./app.js?v=autotts_runtime_20260309_03",
+  "./app.js?v=bgfix_20260310_01",
   "./manifest.webmanifest",
   "./assets/icon-192.png",
   "./assets/icon-512.png",
@@ -82,5 +83,4 @@ self.addEventListener("fetch", (event) => {
     }
   })());
 });
-
 

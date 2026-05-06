@@ -1,11 +1,12 @@
 // 2026-03-07 | DE/TR: Cache bump + safer update flow (skipWaiting/message).
-const CACHE = "sprachbox-de-tr-v2";
+const CACHE = "sprachbox-de-tr-v3-bgfix-20260310-01";
 const CORE = [
   "./",
   "./index.html",
   "./styles.css",
+  "./styles.css?v=bgfix_20260310_01",
   "./app.js",
-  "./app.js?v=autotts_runtime_20260309_03",
+  "./app.js?v=bgfix_20260310_01",
   "./manifest.webmanifest",
   "./assets/icon-192.png",
   "./assets/icon-512.png",
@@ -81,4 +82,3 @@ self.addEventListener("fetch", (event) => {
     }
   })());
 });
-

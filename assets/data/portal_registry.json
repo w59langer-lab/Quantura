@@ -68,7 +68,7 @@
     },
     {
       "title": "Portfolio",
-      "url": "demos/prog_min_portfolio/index.html",
+      "url": "portfolio/index.html",
       "group": "Sonstiges",
       "type": "page"
     },
@@ -91,3 +91,4 @@
     }
   ]
 }
+

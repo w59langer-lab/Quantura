@@ -1,0 +1,590 @@
+{
+  "0": [
+    {
+      "id": "0-1",
+      "slide": 1,
+      "text": "Rechne: 2 + 3 =",
+      "answer": "5",
+      "points": 1,
+      "solution": "2 plus 3 ergibt 5."
+    },
+    {
+      "id": "0-2",
+      "slide": 2,
+      "text": "Rechne: 9 - 4 =",
+      "answer": "5",
+      "points": 1,
+      "solution": "9 minus 4 ergibt 5."
+    },
+    {
+      "id": "0-3",
+      "slide": 3,
+      "text": "Rechne: 6 + 1 =",
+      "answer": "7",
+      "points": 1,
+      "solution": "6 plus 1 ergibt 7."
+    },
+    {
+      "id": "0-4",
+      "slide": 4,
+      "text": "Rechne: 8 - 3 =",
+      "answer": "5",
+      "points": 2,
+      "solution": "8 minus 3 ergibt 5."
+    },
+    {
+      "id": "0-5",
+      "slide": 5,
+      "text": "Fülle auf 10: 7 + ? = 10",
+      "answer": "3",
+      "points": 3,
+      "solution": "7 plus 3 ergibt 10."
+    }
+  ],
+  "1": [
+    {
+      "id": "1-1",
+      "slide": 1,
+      "text": "Rechne: 9 + 6 =",
+      "answer": "15",
+      "points": 2,
+      "solution": "9 plus 6 ergibt 15."
+    },
+    {
+      "id": "1-2",
+      "slide": 2,
+      "text": "Rechne: 12 + 7 =",
+      "answer": "19",
+      "points": 2,
+      "solution": "12 plus 7 ergibt 19."
+    },
+    {
+      "id": "1-3",
+      "slide": 3,
+      "text": "Rechne: 8 + 5 =",
+      "answer": "13",
+      "points": 1,
+      "solution": "8 plus 5 ergibt 13."
+    },
+    {
+      "id": "1-4",
+      "slide": 4,
+      "text": "Rechne: 10 + 9 =",
+      "answer": "19",
+      "points": 1,
+      "solution": "10 plus 9 ergibt 19."
+    },
+    {
+      "id": "1-5",
+      "slide": 5,
+      "text": "Rechne: 8 + 6 + 2 =",
+      "answer": "16",
+      "points": 3,
+      "solution": "8 + 6 + 2 ergibt 16."
+    }
+  ],
+  "2": [
+    {
+      "id": "2-1",
+      "slide": 1,
+      "text": "Rechne: 18 - 5 =",
+      "answer": "13",
+      "points": 2,
+      "solution": "18 minus 5 ergibt 13."
+    },
+    {
+      "id": "2-2",
+      "slide": 2,
+      "text": "Rechne: 20 - 9 =",
+      "answer": "11",
+      "points": 2,
+      "solution": "20 minus 9 ergibt 11."
+    },
+    {
+      "id": "2-3",
+      "slide": 3,
+      "text": "Rechne: 15 - 7 =",
+      "answer": "8",
+      "points": 1,
+      "solution": "15 minus 7 ergibt 8."
+    },
+    {
+      "id": "2-4",
+      "slide": 4,
+      "text": "Rechne: 14 - 6 =",
+      "answer": "8",
+      "points": 1,
+      "solution": "14 minus 6 ergibt 8."
+    },
+    {
+      "id": "2-5",
+      "slide": 5,
+      "text": "Rechne: 19 - 4 - 3 =",
+      "answer": "12",
+      "points": 3,
+      "solution": "19 - 4 - 3 ergibt 12."
+    }
+  ],
+  "3": [
+    {
+      "id": "3-1",
+      "slide": 1,
+      "text": "Rechne: 6 · 7 =",
+      "answer": "42",
+      "points": 2,
+      "solution": "6 mal 7 ergibt 42."
+    },
+    {
+      "id": "3-2",
+      "slide": 2,
+      "text": "Rechne: 9 · 8 =",
+      "answer": "72",
+      "points": 2,
+      "solution": "9 mal 8 ergibt 72."
+    },
+    {
+      "id": "3-3",
+      "slide": 3,
+      "text": "Sachaufgabe: 7 Reihen mit je 5 Äpfeln. Wie viele Äpfel?",
+      "answer": "35",
+      "points": 3,
+      "solution": "7 Reihen × 5 Äpfel = 35."
+    },
+    {
+      "id": "3-4",
+      "slide": 4,
+      "text": "Rechne: 11 · 4 =",
+      "answer": "44",
+      "points": 2,
+      "solution": "11 mal 4 ergibt 44."
+    },
+    {
+      "id": "3-5",
+      "slide": 5,
+      "text": "Kombiniert: (3 · 9) + (4 · 6) =",
+      "answer": "51",
+      "points": 3,
+      "solution": "3·9 = 27, 4·6 = 24, zusammen 51."
+    }
+  ],
+  "4": [
+    {
+      "id": "4-1",
+      "slide": 1,
+      "text": "Rechne: 24 ÷ 4 =",
+      "answer": "6",
+      "points": 2,
+      "solution": "24 geteilt durch 4 ergibt 6."
+    },
+    {
+      "id": "4-2",
+      "slide": 2,
+      "text": "Rechne: 45 ÷ 5 =",
+      "answer": "9",
+      "points": 2,
+      "solution": "45 geteilt durch 5 ergibt 9."
+    },
+    {
+      "id": "4-3",
+      "slide": 3,
+      "text": "Rechne: 63 ÷ 7 =",
+      "answer": "9",
+      "points": 2,
+      "solution": "63 geteilt durch 7 ergibt 9."
+    },
+    {
+      "id": "4-4",
+      "slide": 4,
+      "text": "Rechne: 36 ÷ 6 =",
+      "answer": "6",
+      "points": 1,
+      "solution": "36 geteilt durch 6 ergibt 6."
+    },
+    {
+      "id": "4-5",
+      "slide": 5,
+      "text": "Rechne: 90 ÷ 9 =",
+      "answer": "10",
+      "points": 3,
+      "solution": "90 geteilt durch 9 ergibt 10."
+    }
+  ],
+  "5": [
+    {
+      "id": "5-1",
+      "slide": 1,
+      "text": "Rechne: 12 + 8 - 5 =",
+      "answer": "15",
+      "points": 2,
+      "solution": "12 + 8 - 5 ergibt 15."
+    },
+    {
+      "id": "5-2",
+      "slide": 2,
+      "text": "Rechne: 20 - 6 + 3 =",
+      "answer": "17",
+      "points": 2,
+      "solution": "20 - 6 + 3 ergibt 17."
+    },
+    {
+      "id": "5-3",
+      "slide": 3,
+      "text": "Rechne: 9 + 4 - 7 =",
+      "answer": "6",
+      "points": 1,
+      "solution": "9 + 4 - 7 ergibt 6."
+    },
+    {
+      "id": "5-4",
+      "slide": 4,
+      "text": "Rechne: 14 - 5 + 9 =",
+      "answer": "18",
+      "points": 2,
+      "solution": "14 - 5 + 9 ergibt 18."
+    },
+    {
+      "id": "5-5",
+      "slide": 5,
+      "text": "Rechne: 25 - 8 + 12 =",
+      "answer": "29",
+      "points": 3,
+      "solution": "25 - 8 + 12 ergibt 29."
+    }
+  ],
+  "6": [
+    {
+      "id": "6-1",
+      "slide": 1,
+      "text": "Rechne: 8 · 3 ÷ 2 =",
+      "answer": "12",
+      "points": 2,
+      "solution": "8·3=24, 24÷2=12."
+    },
+    {
+      "id": "6-2",
+      "slide": 2,
+      "text": "Rechne: 9 · 4 ÷ 3 =",
+      "answer": "12",
+      "points": 2,
+      "solution": "9·4=36, 36÷3=12."
+    },
+    {
+      "id": "6-3",
+      "slide": 3,
+      "text": "Rechne: (5 · 6) ÷ 5 =",
+      "answer": "6",
+      "points": 1,
+      "solution": "5·6=30, 30÷5=6."
+    },
+    {
+      "id": "6-4",
+      "slide": 4,
+      "text": "Rechne: 48 ÷ 4 · 3 =",
+      "answer": "36",
+      "points": 3,
+      "solution": "48÷4=12, 12·3=36."
+    },
+    {
+      "id": "6-5",
+      "slide": 5,
+      "text": "Rechne: (7 · 6) ÷ 2 =",
+      "answer": "21",
+      "points": 2,
+      "solution": "7·6=42, 42÷2=21."
+    }
+  ],
+  "level0": [
+    {
+      "id": "0-1",
+      "slide": 1,
+      "text": "Rechne: 2 + 3 =",
+      "answer": "5",
+      "points": 1,
+      "solution": "2 plus 3 ergibt 5."
+    },
+    {
+      "id": "0-2",
+      "slide": 2,
+      "text": "Rechne: 9 - 4 =",
+      "answer": "5",
+      "points": 1,
+      "solution": "9 minus 4 ergibt 5."
+    },
+    {
+      "id": "0-3",
+      "slide": 3,
+      "text": "Rechne: 6 + 1 =",
+      "answer": "7",
+      "points": 1,
+      "solution": "6 plus 1 ergibt 7."
+    },
+    {
+      "id": "0-4",
+      "slide": 4,
+      "text": "Rechne: 8 - 3 =",
+      "answer": "5",
+      "points": 2,
+      "solution": "8 minus 3 ergibt 5."
+    },
+    {
+      "id": "0-5",
+      "slide": 5,
+      "text": "Fülle auf 10: 7 + ? = 10",
+      "answer": "3",
+      "points": 3,
+      "solution": "7 plus 3 ergibt 10."
+    }
+  ],
+  "level1": [
+    {
+      "id": "1-1",
+      "slide": 1,
+      "text": "Rechne: 9 + 6 =",
+      "answer": "15",
+      "points": 2,
+      "solution": "9 plus 6 ergibt 15."
+    },
+    {
+      "id": "1-2",
+      "slide": 2,
+      "text": "Rechne: 12 + 7 =",
+      "answer": "19",
+      "points": 2,
+      "solution": "12 plus 7 ergibt 19."
+    },
+    {
+      "id": "1-3",
+      "slide": 3,
+      "text": "Rechne: 8 + 5 =",
+      "answer": "13",
+      "points": 1,
+      "solution": "8 plus 5 ergibt 13."
+    },
+    {
+      "id": "1-4",
+      "slide": 4,
+      "text": "Rechne: 10 + 9 =",
+      "answer": "19",
+      "points": 1,
+      "solution": "10 plus 9 ergibt 19."
+    },
+    {
+      "id": "1-5",
+      "slide": 5,
+      "text": "Rechne: 8 + 6 + 2 =",
+      "answer": "16",
+      "points": 3,
+      "solution": "8 + 6 + 2 ergibt 16."
+    }
+  ],
+  "level2": [
+    {
+      "id": "2-1",
+      "slide": 1,
+      "text": "Rechne: 18 - 5 =",
+      "answer": "13",
+      "points": 2,
+      "solution": "18 minus 5 ergibt 13."
+    },
+    {
+      "id": "2-2",
+      "slide": 2,
+      "text": "Rechne: 20 - 9 =",
+      "answer": "11",
+      "points": 2,
+      "solution": "20 minus 9 ergibt 11."
+    },
+    {
+      "id": "2-3",
+      "slide": 3,
+      "text": "Rechne: 15 - 7 =",
+      "answer": "8",
+      "points": 1,
+      "solution": "15 minus 7 ergibt 8."
+    },
+    {
+      "id": "2-4",
+      "slide": 4,
+      "text": "Rechne: 14 - 6 =",
+      "answer": "8",
+      "points": 1,
+      "solution": "14 minus 6 ergibt 8."
+    },
+    {
+      "id": "2-5",
+      "slide": 5,
+      "text": "Rechne: 19 - 4 - 3 =",
+      "answer": "12",
+      "points": 3,
+      "solution": "19 - 4 - 3 ergibt 12."
+    }
+  ],
+  "level3": [
+    {
+      "id": "3-1",
+      "slide": 1,
+      "text": "Rechne: 6 · 7 =",
+      "answer": "42",
+      "points": 2,
+      "solution": "6 mal 7 ergibt 42."
+    },
+    {
+      "id": "3-2",
+      "slide": 2,
+      "text": "Rechne: 9 · 8 =",
+      "answer": "72",
+      "points": 2,
+      "solution": "9 mal 8 ergibt 72."
+    },
+    {
+      "id": "3-3",
+      "slide": 3,
+      "text": "Sachaufgabe: 7 Reihen mit je 5 Äpfeln. Wie viele Äpfel?",
+      "answer": "35",
+      "points": 3,
+      "solution": "7 Reihen × 5 Äpfel = 35."
+    },
+    {
+      "id": "3-4",
+      "slide": 4,
+      "text": "Rechne: 11 · 4 =",
+      "answer": "44",
+      "points": 2,
+      "solution": "11 mal 4 ergibt 44."
+    },
+    {
+      "id": "3-5",
+      "slide": 5,
+      "text": "Kombiniert: (3 · 9) + (4 · 6) =",
+      "answer": "51",
+      "points": 3,
+      "solution": "3·9 = 27, 4·6 = 24, zusammen 51."
+    }
+  ],
+  "level4": [
+    {
+      "id": "4-1",
+      "slide": 1,
+      "text": "Rechne: 24 ÷ 4 =",
+      "answer": "6",
+      "points": 2,
+      "solution": "24 geteilt durch 4 ergibt 6."
+    },
+    {
+      "id": "4-2",
+      "slide": 2,
+      "text": "Rechne: 45 ÷ 5 =",
+      "answer": "9",
+      "points": 2,
+      "solution": "45 geteilt durch 5 ergibt 9."
+    },
+    {
+      "id": "4-3",
+      "slide": 3,
+      "text": "Rechne: 63 ÷ 7 =",
+      "answer": "9",
+      "points": 2,
+      "solution": "63 geteilt durch 7 ergibt 9."
+    },
+    {
+      "id": "4-4",
+      "slide": 4,
+      "text": "Rechne: 36 ÷ 6 =",
+      "answer": "6",
+      "points": 1,
+      "solution": "36 geteilt durch 6 ergibt 6."
+    },
+    {
+      "id": "4-5",
+      "slide": 5,
+      "text": "Rechne: 90 ÷ 9 =",
+      "answer": "10",
+      "points": 3,
+      "solution": "90 geteilt durch 9 ergibt 10."
+    }
+  ],
+  "level5": [
+    {
+      "id": "5-1",
+      "slide": 1,
+      "text": "Rechne: 12 + 8 - 5 =",
+      "answer": "15",
+      "points": 2,
+      "solution": "12 + 8 - 5 ergibt 15."
+    },
+    {
+      "id": "5-2",
+      "slide": 2,
+      "text": "Rechne: 20 - 6 + 3 =",
+      "answer": "17",
+      "points": 2,
+      "solution": "20 - 6 + 3 ergibt 17."
+    },
+    {
+      "id": "5-3",
+      "slide": 3,
+      "text": "Rechne: 9 + 4 - 7 =",
+      "answer": "6",
+      "points": 1,
+      "solution": "9 + 4 - 7 ergibt 6."
+    },
+    {
+      "id": "5-4",
+      "slide": 4,
+      "text": "Rechne: 14 - 5 + 9 =",
+      "answer": "18",
+      "points": 2,
+      "solution": "14 - 5 + 9 ergibt 18."
+    },
+    {
+      "id": "5-5",
+      "slide": 5,
+      "text": "Rechne: 25 - 8 + 12 =",
+      "answer": "29",
+      "points": 3,
+      "solution": "25 - 8 + 12 ergibt 29."
+    }
+  ],
+  "level6": [
+    {
+      "id": "6-1",
+      "slide": 1,
+      "text": "Rechne: 8 · 3 ÷ 2 =",
+      "answer": "12",
+      "points": 2,
+      "solution": "8·3=24, 24÷2=12."
+    },
+    {
+      "id": "6-2",
+      "slide": 2,
+      "text": "Rechne: 9 · 4 ÷ 3 =",
+      "answer": "12",
+      "points": 2,
+      "solution": "9·4=36, 36÷3=12."
+    },
+    {
+      "id": "6-3",
+      "slide": 3,
+      "text": "Rechne: (5 · 6) ÷ 5 =",
+      "answer": "6",
+      "points": 1,
+      "solution": "5·6=30, 30÷5=6."
+    },
+    {
+      "id": "6-4",
+      "slide": 4,
+      "text": "Rechne: 48 ÷ 4 · 3 =",
+      "answer": "36",
+      "points": 3,
+      "solution": "48÷4=12, 12·3=36."
+    },
+    {
+      "id": "6-5",
+      "slide": 5,
+      "text": "Rechne: (7 · 6) ÷ 2 =",
+      "answer": "21",
+      "points": 2,
+      "solution": "7·6=42, 42÷2=21."
+    }
+  ]
+}

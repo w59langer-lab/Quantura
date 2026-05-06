@@ -24,7 +24,7 @@ pages
 
 demos
   subdirs: 1
-  index.html present: yesdemos/prog_min_portfolio/index.html
+  index.html present: yesportfolio/index.html
   js present: no
   css present: no
   json present: no
@@ -45,4 +45,5 @@ _meta
   css present: no
   json present: no
   role: status/reports/backups
+
 

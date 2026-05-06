@@ -7,4 +7,5 @@ SERVICE PART: _meta/ (reports, audits, backups)
 ACTIVE LANGUAGE LAB ENTRY: /media/mx-ahs/ARCHIV/quantura/pages/language_lab/index.html
 WHAT LOOKS REDUNDANT: *_bak/*, *_backup/*, *_archive/*, pages/_archive/portal_v2__inactive, multiple stories/maus copies (demos vs pages)
 WHAT MUST NOT BE MOVED YET: language_lab apps, datenbanken datasets, core partials/scripts, active portal index
-BEST NEXT CLEANUP TARGET: review and prune backup/archive duplicates in demos/prog_min_portfolio and pages/_archive after backing up
+BEST NEXT CLEANUP TARGET: review and prune backup/archive duplicates in portfolio and pages/_archive after backing up
+

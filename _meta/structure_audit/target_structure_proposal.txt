@@ -17,5 +17,6 @@ D) Do not touch for now:
    - core/ partials and shared scripts
 E) Looks redundant/cleanup candidates (later):
    - numerous *_bak, *_backup, *_archive folders inside demos and pages
-   - duplicated media/videos archives in demos/prog_min_portfolio/_incoming/_archive_duplicates
+   - duplicated media/videos archives in portfolio/_incoming/_archive_duplicates
    - legacy backups under pages/legacy and language_lab backups
+

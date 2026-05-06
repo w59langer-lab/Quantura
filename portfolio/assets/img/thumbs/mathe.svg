@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" fill="none">
+  <rect width="320" height="200" rx="18" fill="#0f172a"/>
+  <g stroke="#22d3ee" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 70h80m-40-30v60"/>
+    <path d="M190 55l60 90"/>
+    <path d="M250 55l-60 90"/>
+  </g>
+  <text x="32" y="176" fill="#e2e8f0" font-family="Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700">Mathe Grundschule</text>
+</svg>

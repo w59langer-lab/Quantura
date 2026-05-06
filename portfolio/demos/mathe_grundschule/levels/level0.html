@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 0 – Grundlagen</title>
+  <link rel="stylesheet" href="../core/styles.css">
+  <link rel="stylesheet" href="/assets/shared/header-widgets.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <div id="welcome"></div>
+    <section class="level-info-card">
+      <h2>Level 0 – Grundlagen</h2>
+      <p>Zahlen, Grundrechenarten, einfache Textaufgaben</p>
+      <label class="time-mode-toggle">
+        <input type="checkbox" id="timeModeToggle">
+        Zeitmodus (5 Minuten gesamt)
+      </label>
+      <p class="time-mode-note">Bonus: +2 Punkte pro gesparter Minute.</p>
+      <div id="timerBox" class="timer-box" hidden>
+        <span class="hourglass" aria-hidden="true">⏳</span>
+        <span id="timerText">05:00</span>
+      </div>
+    </section>
+
+    <div id="tasks"></div>
+    <p id="loadError" class="load-error" hidden>Aufgaben konnten nicht geladen werden.</p>
+  </main>
+  <div id="footer-placeholder"></div>
+  <div class="bottom-nav">
+    <button class="nav-btn ghost" type="button" onclick="history.back()">← Zurück</button>
+    <a class="nav-btn" href="/index.html">Portal</a>
+  </div>
+  <script src="../core/scripts.js" defer></script>
+  <script src="/assets/shared/header-widgets.js" defer></script>
+</body>
+</html>

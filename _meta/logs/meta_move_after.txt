@@ -21,10 +21,10 @@ GIT STATUS
  M core/assets/style.css
  M core/js/core_init.js
  M core/partials/header.html
- M demos/prog_min_portfolio/.vscode/settings.json
- M demos/prog_min_portfolio/assets/css/portfolio.css
- M demos/prog_min_portfolio/assets/js/header-widgets.js
- M demos/prog_min_portfolio/index.html
+ M portfolio/.vscode/settings.json
+ M portfolio/assets/css/portfolio.css
+ M portfolio/assets/js/header-widgets.js
+ M portfolio/index.html
  M index.html
  M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js
  M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html
@@ -54,3 +54,4 @@ GIT STATUS
 ?? assets/portal/
 ?? pages/_archive/
 ?? stories/maus/portfolio.css
+

@@ -9,4 +9,5 @@ ROLE OF datenbanken: language/data repositories consumed by language_lab/generat
 WHAT IS CLUTTER: numerous *_bak/_backup/_archive folders in demos and pages; archived portal_v2 under pages/_archive; _incoming media duplicates; service logs already in _meta
 WHAT CAN BE REORGANIZED LATER: consolidate portal assets, dedupe stories/assets between pages and demos, move remaining legacy backups under _meta/_archive
 WHAT MUST NOT BE TOUCHED YET: language_lab apps, datenbanken datasets, core partials/scripts, active portal index.html
-SAFEST NEXT STEP: map and prune backup/archive duplicates (starting with demos/prog_min_portfolio/_incoming/_archive_duplicates and *_bak folders) after verifying no live references
+SAFEST NEXT STEP: map and prune backup/archive duplicates (starting with portfolio/_incoming/_archive_duplicates and *_bak folders) after verifying no live references
+

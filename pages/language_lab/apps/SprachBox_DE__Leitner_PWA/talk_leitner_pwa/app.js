@@ -266,8 +266,7 @@ const EXTRA_DATA_URLS = [
 ];
 
 const PAIR_CODE = "DE_EN";
-const LOCAL_BG_BASE = `/pages/language_lab/assets/backgrounds/sprachfuehrer/${PAIR_CODE}`;
-const LEGACY_BG_BASE = "/core/assets/backgrounds/sprachfuehrer";
+const LOCAL_BG_BASE = "/core/assets/backgrounds/sprachfuehrer";
 const FALLBACK_WEBP = [
   "bg_00_en-de.webp",
   "bg_01_en-de.webp",
@@ -320,7 +319,7 @@ async function ensureBgRegistry() {
   } catch (e) {
     console.warn("BG registry fallback", e);
   }
-  BG_OPTIONS = buildBgOptions(LEGACY_BG_BASE);
+  BG_OPTIONS = buildBgOptions(LOCAL_BG_BASE);
   BG_DEFAULT_URL = BG_OPTIONS[0]?.url || "";
   BG_FALLBACK_LEGACY = true;
 }
@@ -2418,6 +2417,7 @@ function loadSettings() {
     const obj = JSON.parse(raw);
     if (!obj || typeof obj !== "object") return;
     state.settings = { ...state.settings, ...obj };
+    if (state.settings.tts === "off") state.settings.tts = "both";
   } catch (_) {}
 }
 function saveSettings() {
@@ -3442,7 +3442,7 @@ function parseHashSettings() {
 
   if (topic) state.settings.topic = topic;
   if (level) state.settings.level = level;
-  if (tts) state.settings.tts = tts;
+  if (tts && tts !== "off") state.settings.tts = tts;
   if (speed) state.settings.speed = Number(speed);
 }
 
@@ -3491,6 +3491,28 @@ function clampSettingsToData() {
 }
 
 // ---------- TTS ----------
+function chooseVoice(langTag) {
+  if (!("speechSynthesis" in window)) return null;
+  const voices = (speechSynthesis.getVoices && speechSynthesis.getVoices()) || [];
+  if (!voices.length) return null;
+  const wanted = String(langTag || "").toLowerCase();
+  const base = wanted.slice(0, 2);
+  return (
+    voices.find((x) => String(x?.lang || "").toLowerCase() === wanted) ||
+    voices.find((x) => String(x?.lang || "").toLowerCase().startsWith(`${base}-`)) ||
+    voices.find((x) => String(x?.lang || "").toLowerCase().startsWith(base)) ||
+    null
+  );
+}
+
+function primeSpeech() {
+  if (!("speechSynthesis" in window)) return;
+  try {
+    if (speechSynthesis.getVoices) speechSynthesis.getVoices();
+    if (typeof speechSynthesis.resume === "function") speechSynthesis.resume();
+  } catch (_) {}
+}
+
 function speak(text, lang) {
   if (!("speechSynthesis" in window)) return;
   const clean = String(text || "").trim();
@@ -3501,14 +3523,19 @@ function speak(text, lang) {
   u.rate = clamp(Number(state.settings.speed) || 0.9, 0.5, 1.5);
 
   // Best-effort voice match
-  const voices =
-    (speechSynthesis.getVoices && speechSynthesis.getVoices()) || [];
-  const target = (lang || "").toLowerCase().slice(0, 2);
-  const v = voices.find((x) => (x.lang || "").toLowerCase().startsWith(target));
+  const v = chooseVoice(u.lang);
   if (v) u.voice = v;
 
-  speechSynthesis.cancel();
-  speechSynthesis.speak(u);
+  try {
+    primeSpeech();
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+    if (typeof speechSynthesis.resume === "function") {
+      setTimeout(() => {
+        try { speechSynthesis.resume(); } catch (_) {}
+      }, 0);
+    }
+  } catch (_) {}
 }
 
 function speakBack(it) {
@@ -4196,10 +4223,14 @@ async function init() {
     }
   }, 10000);
 
-  // ensure voices load in some browsers
+  // ensure voices load/unlock in some browsers on Windows/Chrome
   if ("speechSynthesis" in window) {
-    speechSynthesis.onvoiceschanged = () => {};
+    primeSpeech();
+    speechSynthesis.onvoiceschanged = () => {
+      primeSpeech();
+    };
   }
+  document.addEventListener("pointerdown", primeSpeech, { once: true });
 
   debugLog("init.done");
   updateDebugPanel();

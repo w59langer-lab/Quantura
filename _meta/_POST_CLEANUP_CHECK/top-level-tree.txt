@@ -41,7 +41,7 @@
 ./datenbanken/ru
 ./datenbanken/sprachfuehrer
 ./demos
-./demos/prog_min_portfolio
+./portfolio
 ./downloads
 ./math_module
 ./math_module/.vscode
@@ -70,3 +70,4 @@
 ./stories/maus
 ./tools
 ./tools/hintergrund_builder
+

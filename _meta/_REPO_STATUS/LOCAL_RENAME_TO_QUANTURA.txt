@@ -10,10 +10,10 @@ PROJECT READY AFTER RENAME: yes
 ---- git status --short --branch ----
 ## main...origin/main
  M .gitignore
- M demos/prog_min_portfolio/.vscode/settings.json
- M demos/prog_min_portfolio/assets/css/portfolio.css
- M demos/prog_min_portfolio/assets/js/header-widgets.js
- M demos/prog_min_portfolio/index.html
+ M portfolio/.vscode/settings.json
+ M portfolio/assets/css/portfolio.css
+ M portfolio/assets/js/header-widgets.js
+ M portfolio/index.html
  M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/app.js
  M pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA/talk_leitner_pwa/index.html
  M pages/language_lab/apps/SprachBox_DE_ES_Leitner_PWA/talk_leitner_pwa/app.js
@@ -37,3 +37,4 @@ origin	https://github.com/w59langer-lab/quantura-lernlab-main.git (push)
 index.html: yes
 README.md: yes
 mathe_grundschule.html: yes
+

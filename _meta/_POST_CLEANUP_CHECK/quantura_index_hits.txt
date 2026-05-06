@@ -8,13 +8,13 @@
 ./_REPO_STATUS/_before_reference_fix/pages/language_lab/apps/SprachBox_DE_TR_Leitner_PWA/talk_leitner_pwa/index.html
 ./_REPO_STATUS/_before_reference_fix/pages/legacy/index.html
 ./apps/math/quadratic-solver/index.html
-./demos/prog_min_portfolio/demos/mathe_grundschule/index.html
-./demos/prog_min_portfolio/demos/quadratic_solver/index.html
-./demos/prog_min_portfolio/demos/sprachbox_leitner/index.html
-./demos/prog_min_portfolio/demos/timer_bonus/index.html
-./demos/prog_min_portfolio/index.html
-./demos/prog_min_portfolio/materials/index.html
-./demos/prog_min_portfolio/videos/index.html
+./portfolio/demos/mathe_grundschule/index.html
+./portfolio/demos/quadratic_solver/index.html
+./portfolio/demos/sprachbox_leitner/index.html
+./portfolio/demos/timer_bonus/index.html
+./portfolio/index.html
+./portfolio/materials/index.html
+./portfolio/videos/index.html
 ./index.html
 ./math_module/index.html
 ./math_module__SAVE_2026-02-20_173727/_rescue_current_20260220-131414/index.html
@@ -85,3 +85,4 @@
 ./pages/portal/werkstatt/tagbook/index.html
 ./pages/projekte/index.html
 ./pages/store/index.html
+

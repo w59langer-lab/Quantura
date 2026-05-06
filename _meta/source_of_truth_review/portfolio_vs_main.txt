@@ -1,9 +1,9 @@
 Portfolio vs Main (qualitative, no changes applied)
 
 Areas where portfolio looks better/newer:
-- stories/maus (demos/prog_min_portfolio/stories/maus) was used as improved source; current main stories/maus already synced, but portfolio retains original assets as reference.
-- Math Grundschule demo (demos/prog_min_portfolio/demos/mathe_grundschule) has newer backups/fixes (2026-02-26) than math_module (2026-02-20), likely the freshest math content.
-- Portfolio site assets (demos/prog_min_portfolio/assets/css/portfolio.css etc.) offer polished styling that could be reused for main portal cards/landing.
+- stories/maus (portfolio/stories/maus) was used as improved source; current main stories/maus already synced, but portfolio retains original assets as reference.
+- Math Grundschule demo (portfolio/demos/mathe_grundschule) has newer backups/fixes (2026-02-26) than math_module (2026-02-20), likely the freshest math content.
+- Portfolio site assets (portfolio/assets/css/portfolio.css etc.) offer polished styling that could be reused for main portal cards/landing.
 
 Areas where main project is authoritative:
 - pages/ (portal, language_lab, tools) – active production routes and data bindings.
@@ -13,3 +13,4 @@ Items to consider bringing from portfolio into main later:
 - Updated math lesson content/assets from mathe_grundschule demo into math_module or pages.
 - Refined visual styles (portfolio.css) for stories/maus and potential portal sections.
 - Any tested UX patterns from portfolio demos once validated.
+

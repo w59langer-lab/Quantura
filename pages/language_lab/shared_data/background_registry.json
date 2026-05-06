@@ -2,7 +2,7 @@
   {
     "pairCode": "DE_EN",
     "label": "Deutsch–Englisch",
-    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_EN",
+    "backgroundDir": "/core/assets/backgrounds/sprachfuehrer",
     "defaultBackground": "bg_00_en-de.webp",
     "backgrounds": [
       "bg_00_en-de.webp",
@@ -14,7 +14,7 @@
   {
     "pairCode": "DE_IT",
     "label": "Deutsch–Italienisch",
-    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_IT",
+    "backgroundDir": "/core/assets/backgrounds/sprachfuehrer/DE_IT",
     "defaultBackground": "bg_00_it.webp",
     "backgrounds": [
       "bg_00_it.webp",
@@ -25,7 +25,7 @@
   {
     "pairCode": "DE_ES",
     "label": "Deutsch–Spanisch",
-    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_ES",
+    "backgroundDir": "/core/assets/backgrounds/sprachfuehrer",
     "defaultBackground": "bg_00_en-de.webp",
     "backgrounds": [
       "bg_00_en-de.webp",
@@ -37,7 +37,7 @@
   {
     "pairCode": "DE_FR",
     "label": "Deutsch–Französisch",
-    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_FR",
+    "backgroundDir": "/core/assets/backgrounds/sprachfuehrer",
     "defaultBackground": "bg_00_en-de.webp",
     "backgrounds": [
       "bg_00_en-de.webp",
@@ -49,7 +49,7 @@
   {
     "pairCode": "DE_RU",
     "label": "Deutsch–Russisch",
-    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_RU",
+    "backgroundDir": "/core/assets/backgrounds/sprachfuehrer",
     "defaultBackground": "bg_00_en-de.webp",
     "backgrounds": [
       "bg_00_en-de.webp",
@@ -61,7 +61,7 @@
   {
     "pairCode": "DE_TR",
     "label": "Deutsch–Türkisch",
-    "backgroundDir": "/pages/language_lab/assets/backgrounds/sprachfuehrer/DE_TR",
+    "backgroundDir": "/core/assets/backgrounds/sprachfuehrer",
     "defaultBackground": "bg_00_en-de.webp",
     "backgrounds": [
       "bg_00_en-de.webp",

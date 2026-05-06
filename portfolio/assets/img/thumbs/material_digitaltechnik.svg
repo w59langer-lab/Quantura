@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" fill="none">
+  <rect width="320" height="200" rx="18" fill="#0f172a"/>
+  <rect x="32" y="52" width="256" height="96" rx="14" fill="#111827" stroke="#22d3ee" stroke-width="6"/>
+  <g stroke="#22d3ee" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 100h30"/>
+    <path d="M120 76h40v48h-40z"/>
+    <path d="M180 100h30"/>
+    <path d="M230 88l24 24"/>
+    <path d="M230 112l24-24"/>
+  </g>
+  <text x="32" y="36" fill="#e0f2fe" font-family="Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="700">Digitaltechnik · KA 1</text>
+</svg>

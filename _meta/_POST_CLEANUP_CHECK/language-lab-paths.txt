@@ -54,8 +54,8 @@
 ./core/assets/backgrounds/sprachfuehrer
 ./core/js/sprachfuehrer_bg.js
 ./datenbanken/sprachfuehrer
-./demos/prog_min_portfolio/assets/img/thumbs/sprachbox.svg
-./demos/prog_min_portfolio/demos/sprachbox_leitner
+./portfolio/assets/img/thumbs/sprachbox.svg
+./portfolio/demos/sprachbox_leitner
 ./pages/language_lab
 ./pages/language_lab/apps
 ./pages/language_lab/apps/SprachBox_DE_EN_Leitner_PWA
@@ -347,3 +347,4 @@
 ./pages/language_lab/sprachfuehrer_auswahl
 ./pages/language_lab/sprachfuehrer_auswahl/index.html
 ./pages/portal/analyse_sprachfuehrer
+
