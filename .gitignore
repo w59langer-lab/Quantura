@@ -36,3 +36,6 @@ _meta/_STRUCTURE_REVIEW/
 tmp/
 *.log
 .DS_Store
+
+# Lokale Struktur-Freeze-Backups nicht auf GitHub hochladen
+_STRUCTURE_FREEZE_*/
